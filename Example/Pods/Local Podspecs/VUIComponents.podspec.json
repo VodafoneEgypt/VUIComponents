@@ -9,10 +9,10 @@
     "file": "LICENSE"
   },
   "authors": {
-    "1RGB1": "a.ragab2012@gmail.com"
+    "VodafoneEgypt": "egypt.apps@vodafone.com"
   },
   "source": {
-    "git": "https://github.com/1RGB1/VUIComponents.git",
+    "git": "https://github.com/VodafoneEgypt/VUIComponents.git",
     "tag": "0.1.0"
   },
   "platforms": {

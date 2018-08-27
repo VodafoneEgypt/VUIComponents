@@ -3,10 +3,10 @@ Pod::Spec.new do |s|
   s.version          = '0.1.0'
   s.summary          = 'Pod contains UI components'
   s.description      = 'A pod contains all objective-c UI components you need to use'
-  s.homepage         = 'https://github.com/1RGB1/VUIComponents'
+  s.homepage         = 'https://github.com/VodafoneEgypt/VUIComponents'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '1RGB1' => 'a.ragab2012@gmail.com' }
-  s.source           = { :git => 'https://github.com/1RGB1/VUIComponents.git', :tag => s.version.to_s }
+  s.author           = { 'VodafoneEgypt' => 'egypt.apps@vodafone.com' }
+  s.source           = { :git => 'https://github.com/VodafoneEgypt/VUIComponents.git', :tag => s.version.to_s }
   
   s.ios.deployment_target = '9.0'
   s.source_files = 'VUIComponents/Classes/**/*.{h,m}'
