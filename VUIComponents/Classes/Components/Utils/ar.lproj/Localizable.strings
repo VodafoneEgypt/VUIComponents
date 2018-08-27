@@ -1,0 +1,3811 @@
+/*
+  Localizable.strings
+  Ana Vodafone
+
+  Created by Mohammed Elkassas on 11/9/15.
+  Copyright © 2015 VIS. All rights reserved.
+*/
+"You have" = "معاك ";
+"points remaining to exchange them with one can​" = "عشان تبدلهم بإزازة بيبسي 1 كان";
+"points remaining to exchange them with 3 cans" = "عشان تبدلهم بيبسي ٣ كان  ​";
+"points remaining to exchange them with Pepsi Can​" = "عشان تبدلهم ببيبسي كان​";
+
+"points & " = "بوينتس &";
+"Expiry date:" = "تاريخ الانتهاء";
+"Pepsi Points & you can exchange them with one can​" = "بيبسي بوينتس وتقدر تبدلهم بإزازة بيبسي 1 كان  ​";
+"Pepsi Points & you can exchange them with 3 cans" = "بيبسي بوينتس وتقدر تبدلهم بإزازة بيبسي 350 مل  ​";
+"Pepsi Points & you can exchange them with Pepsi Can​" = "بيبسي بوينتس وتقدر تبدلهم ببيبسي كان";
+
+"Pepsi Points & you have" = "بيبسي بوينتس و فاضلك ";
+"English" = "الانجليزية";
+"Arabic" = "العربية";
+"Change Language" = "تغيير اللغة";
+"Choose Date" = "اختر تاريخ";
+"Activate" = "تفعيل";
+"Error" = "خطأ";
+"Cancel" = "إلغاء";
+"Pepsi Points" = "بيبسي بوينتس";
+"Wrong Activation Key" = "كود التشغيل غير صحيح";
+"Number is not valid" = "للأسف هذا الرقم غير صالح";
+"You already added this number" = "هذا الرقم تم اضافته من قبل";
+"You can't add your owned number" = "للأسف غير متاح اضافة الرقم الخاص بيك";
+"You can't add more than 5 contacts" = "للأسف الحد الأقصى لإضافة الأرقام هو 5 أرقام";
+"You can't add number postpaid" = "للأسف يمكنك فقط اضافة أرقام بأنظمة كروت شحنa";
+"This number is not vodafone number" = "للأسف  يمكن فقط اضافة أرقام من فودافون";
+"Sorry, you do not have enough credit to subscribe to the service" = "للأسف رصيدك غير كافي للاشتراك في الخدمة";
+"My Static IP Configuration" = "إعدادات ال-IP الثابت";
+
+"Card added successfully" = "تم إضافه الكريديت بنجاح";
+"Card deleted successfully" = "تم مسح الكريديت بنجاح";
+
+"Internet Promo" = "هدية ال4G";
+"Shahid PLUS Promo" = "عرض Shahid Plus";
+"4G Readiness" = "إستعدادك لل 4G";
+"Enjoy your free 4GB from Vodafone 4G" = "إحتفالا بفودافون 4G ليك 4 جيجيا هدية";
+"Enjoy your free month subscription on Shahid PLUS" = "استمتع بشهر مجانا على Shahid Plus";
+"Check your 4G readiness to enjoy faster internet" = "اعرف استعدادك للـ4G واختبر سرعة الشبكة";
+
+"Remaining %d %@" = "السعة المتبقية %d %@";
+"Remaining Days: %d days" = "صالحة حتى: %d يوم";
+
+"Pass Social Title" = "PASS السوشيال";
+"Pass Social Desc" = "مع باقات PASS السوشيال, المواقع اللى بتحبها مش هتاكل من باقتك.";
+"Pass Streaming Title" = "PASS الستريمنج";
+"Pass Streaming Desc" = "مع باقات PASS الستريمنج, المواقع اللى بتحبها مش هتاكل من باقتك.";
+
+// USB Revamp
+"My USB" = "ال USB الخاص بي";
+"Manage your USB numbers" = "اتحكم في خطوط ال USB بتاعتك";
+"See which USBs are linked to your account, or add a USB to manage. Then purchase a bundle, add-on, or top up your USB." = "شوف إستخدام خطوط ال-USB واتحكم فيها عن طريق أنا ڤودافون";
+"Total sim number added:" = "عدد الخطوط المضافة:";
+"Add new USB" = "أضف USB جديد";
+
+"USB Linking" = "أضف خطوط ال- USB بتاعتك";
+"Please link your account with your USB SIM card number to be able to check consumption, purchase bundles & add-ons." = "عشان تتابع استخدام خط ال-USB، تشتري باقات اضافيه وتتحكم فيه , أدخل رقم خط ورقم شريحة ال-USB رقم الشريحة ال-USB يبدأ ب-89";
+"Add a new USB to your account." = "أضف خط جديد";
+"Enter USB mobile number" = "أدخل رقم خط ال USB";
+"Enter USB SIM Serial Number" = "أدخل رقم الشريحة";
+"Enter USB Name" = "أدخل اسم ال USB";
+"Add new number" = "أضف خط جديد";
+"Invalid Serial number, it must be 19" = "رقم السيريال غير صحيح، تأكد من انه ١٩ رقم";
+
+"USB Main Page" = "أجهزة ال USB";
+"Purchase Bundles, Add-Ons, or Top Up." = "اشترك في الباقات الأساسية و الباقات الاضافية اللى تناسبك و كمان تقدر تشحن خطك";
+"You have to add your e-mail fisrt and try again" = "من فضلك اضف البريد الالكتروني ثم حاول مره اخري";
+
+
+"USB bundles" = "باقات ال USB";
+"Check out Vodafone's latest data bundle for your portable USB." = "أختار المناسب لك من باقات ال USB المتنوعة";
+"Active this bundle" = "تفعيل هذه الباقة";
+"USB Add-ons" = "باقات إضافية";
+"Recharge" = "إشحن رصيدك";
+"Number added successfully" = "تم اضافة الرقم بنجاح";
+"Number removed successfully" = "تم مسح الرقم بنجاح";
+"Activated" = "مفعلة";
+"Not Active" = "غير مفعلة";
+"Choose amount" = "اختر مبلغ";
+"7awllohom Services" = "خدمات حوللهم";
+"Edf3lhom Services" = "خدمات ادفعلهم";
+"El7a2hom Services" = "خدمات ساعدهم";
+"You exceed number of gifts today" = "وصلت للحد الأقصي لعروض النهاردة, إلعب تاني بكرة";
+"Sunday" = "الأحد";
+"Monday" = "الاثنين";
+"Tuesday" = "الثلاثاء";
+"Wednesday" = "الأربعاء";
+"Thursday" = "الخميس";
+"Friday" = "الجمعة";
+"Saturday" = "السبت";
+"This gift has been redeemed" = "تم استبدال الهدية من قبل";
+"Do you want redeem this gift?" = "هل تريد استبدال الهدية ؟";
+"Confirm" = "تاكيد";
+"The Negm El Nogoom Card" = "اشحن كارت نجم النجوم";
+"Enjoy Gift" = "استمتع بالهدية​";
+"Confirm redeeming your Gift for" = "تأكيد استبدال هديتك ب";
+" Points" = " نقطة";
+" Vodafone minutes , SMS , and MBs &" = "دقايق و رسايل و ميجابايتس &";
+"for" = "ب";
+"Redeem this gift" = "استبدل هديتك";
+"Gift will be available soon!" = "ستصلك الهدية قريباً";
+"Dear customer your request has been done suuccessfully!" = "!مبروك لقد حصلت على الهدية";
+"Dear customer are you sure to confirm to activate this bundle?" = "هل أنت متأكد من شراء الباقة؟";
+"Are you sure you want to redeem the selected gift?"="عايز تكمل و تستمتع بالعرض ؟";
+"HawllohomServicesDescription" = "اضف قائمة لتحويل الرصيد تلقائيا كل شهر";
+"El7a2homServicesDescription" = "تقدر تعرف مين من أصحابك أو أهلك رصيده خلص علشان تساعده";
+"Edf3lhomServicesDescription" = "خلى مكالمات أصحابك و حبايبك على حسابك من غير أي مليم زيادة";
+"Vote and Ranking" = "التصويت والتصنيف";
+"Kart El 3aila" = "كارت العيلة";
+"Kart El Tawfeer" = "كارت التوفير";
+"Kart El 7aabayb" = "كارت الحبايب";
+"You have insufficient balance please recharge your balance" = "رصيدك غير كافي، يرجى شحن الخط";
+"Recharge Kart El 3aila" = "شحن كارت العيلة";
+"Recharge Kart El Tawfeer" = "شحن كارت التوفير";
+"Recharge Kart El 7aabayb" = "شحن كارت الحبايب";
+"Battle of the flavors" = "معركة من النكهات";
+"You are not allowed to access this account" = "عفوا غير مسموح لك بالدخول إلى الحساب";
+"Check out Vodafone’s latest data bundles for your  portable USB" = "اعرف كل التفاصيل عن باقات الداتا للUSB";
+"Just because your bundle is finished doesn’t mean your disconnected. See which add-on is right for you." = "لو باقتك الأساسية خلصت ممكن تشترك في الباقات الاضافية هتكمل معاك لأخر الشهر";
+"It’s easy, just top up and surf the internet." = "اشحن رصيد لخط الداتا و عيش على الانترنت";
+
+
+"Please turn on your 3G data connection as forgot password can’t be done through Wi-Fi." = "يرجي التأكد من ان الموبايل متصل بشبكة 3G حيث ان خدمة تغيير كلمة المرور لا تعمل على واي فاي";
+//Request error
+"Sorry, this voucher used before by the same number" = "عفوا, لقد تم استخدام هذا الكارت مسبقا بنفس الرقم";
+
+"Sorry, this voucher used before by another number" = " تم شحن هذا الكارت اونلاين مسبقا يرجي استخدام *858*رقم الكارت# ببلاش";
+
+"Sorry, incorrect voucher Code. Please try again" = "عفوا, كود الكارت خاطئ. برجاء المحاولة مرة أخرى";
+
+"Sorry, you have reached the maximum tries of recharge. Please contact the customer service." = "عفوا, لقد تم استخدام الحد الأقصى من محاولات الشحن, برجاء الرجوع الى خدمة العملاء";
+
+"Sorry, you cann't use this Voucher. Please try again with another Voucher." = "عفوا, لا يمكن استخدام هذا الكارت, برجاء المحاولة بكارت آخر";
+
+"Sorry, you have reached to maximum limit" = "عفوا, لقد وصلت للحد الأقصى المسموح به";
+
+"Sorry, your rate plan is not eligible to use recharge cards" = "عفوا, خطة الأسعار هذه غير متاحه لاستخدام كروت الشحن";
+
+"Sorry, this number is not active, please activate the number first." = "عفوا, هذا الرقم غير مفعل, برجاء تفعيل الرقم اولا";
+
+"Sorry, incorrect pin Code. Please try again" = "عفوا، الكود غير صحيح، برجاء المحاولة لاحقا";
+
+"The mobile number must begin with 01 followed by eight digits." = "يجب أن يبدأ رقم الهاتف ب01 ثم ثمانية أرقام.";
+
+"Error while using balance transfer, please call 888" = "حدث خطأ خلال استخدام خدمة تحويل الرصيد، يرجى الاتصال بخدمة العملاء";
+
+"Available." = "جاهزة";
+"Not available" = "غير جاهز";
+"SIM Readiness" = "فحص الشريحة";
+"Device Readiness" = "فحص الموبايل";
+
+"Ready" = "جاهز";
+"Not ready" = "غير جاهز";
+
+"Check your readiness" = "تأكد من استعدادك";
+
+"Your SIM is not 4G Ready" = "الشريحة مش جاهزة لل 4G";
+"Your Device is not 4G Ready" = "الموبايل مش جاهز لل4G";
+"Your Device and your SIM are not 4G Ready" = "الموبايل والشريحة مش جاهزين لل 4G";
+
+"The line is not eligible for the service" = "خدمة تحويل الرصيد غير متاحة لهذا الخط";
+"Balance transfer service is inactive, please contact 888" = "خدمة تحويل الرصيد موقفة، يرجى الاتصال بخدمة العملاء";
+"Redeem Now" = "إشترك الآن";
+"Redeemed" = "تم الحصول على العرض";
+"The card is recharged successfully but you have an issue in getting your gift" = "لقد تم الشحن بنجاح ولكن يوجد خطأ في ارسال الشحنة";
+"Your offer is now being processed." = "جاري الان تجهيز عرضك";
+"REQUEST_STATE_SUCCESSFUL" = "لقد تم تنفيذ طلبك بنجاح";
+"REQUEST_STATE_REGISTERED" = "يوجد حساب بنفس الرقم";
+"REQUEST_STATE_VERIFY" = "الكود الذى قمت بإدخاله غير صحيح، يرجى التأكد و اعادة المحاولة";
+"REQUEST_STATE_NOT_ACTIVE" = "يجب تشغيل الخط اولا";
+"REQUEST_STATE_DATA_LINE" = "لاداره حسابك يجب التاكد من الاتصالباستخدام ال USB modem ";
+"REQUEST_STATE_PENDING" = "برجاء الانتظار لتفعيل حسابك";
+"REQUEST_MSISDT_NOT_EXIST" = "الرقم غير مشترك في الخدمة";
+"REQUEST_STATE_NO_DATA" = "لا يوجد بيانات متاحة لهذا الحساب";
+"REQUEST_STATE_SERVER_ERR" = "حدث خطا اثناء تنفيذ طلبك";
+"REQUEST_STATE_CONNECTIOIN_ERROR" = "من فضلك تأكد من اتصالك بالإنترنت وحاول مرة أخرى";
+"REQUEST_STATE_CONNECTIOIN_TIMEOUT" = "خطأ بالاتصال بالسيرفر";
+"REQUEST_STATE_RATE_PLAN_ONCE" = "لقد قمت بتغيير خطة اسعارك مرة هذا الشهر.";
+"REQUEST_STATE_INVALID_USER" = "اسم المستخدم أو كلمة المرور خطأ";
+"REQUEST_STATE_NOT_Exist_USER"= "عفوا, هذا الرقم غير مسجل!" ;
+"REQUEST_STATE_INVALID_RECHARGE_CARD" =  "لم يتم شحن الكارت";
+"REQUEST_STATE_USER_ALREADY_SUBSCRIBED" = "أنت مشترك بالفعل";
+"REQUEST_STATE_USER_NO_ENOUGH_BALANCE" = "لم نتمكن من تفعيل خدمة  حفظ المكالمات لديك لأن رصيدك غير كافي";
+"REQUEST_STATE_USER_NO_ENOUGH_BALANCE_BLACKWHITELIST" = "رصيدك غير كافي";
+"REQUEST_STATE_USER_SUBSCRIPTION_FAILED" = "فشل تفعيل الخدمة";
+"REQUEST_STATE_USER_SERVICE_NOT_ACTIVE" = "فشل تفعيل الخدمة";
+"REQUEST_STATE_USER_EXIST_ON_ANOTHER_LIST" = "هذا الرقم مضاف الى قائمة اخرى";
+"REQUEST_STATE_NUMBER_EXIST" = "عفوا لا يمكنك إضافة رقم تم إضافته من قبل فى قائمة الأرقام";
+"REQUEST_STATE_BALANCE_TRANSFER_INCORRECT_PIN" = "عفواً، الكود الذي أدخلته ليس صحيح. برجاء التأكد من إدخال الكود بطريقة صحيحة";
+"REQUEST_STATE_NO_ENOUGH_BALANCE" = "لايوجد رصيد كافي";
+"Your gift will be available soon" = "";
+"Sign In" = "تسجيل الدخول";
+"GE SS Two" = "GE SS Two";
+"GE SS" = "GESSTextLight-Light";
+"GE SS2" = "GE SS Two";
+"GE SS Bold" = "GESSTextBold-Bold";
+"Sorry the USB information provided is not correct" = "عفواً بيانت الUSB  غير صحيحة؟";
+"REQUEST_POINTS_UNAUTHORIZED_CUST" = " عفواً ، أنت غير مصنف كعميل في برنامج ڤودافون وان ";
+"PROFILE_UPDATED" = "لقد تم تحديث حسابك بنجاح";
+"RECHARGEED_SUCCESSFULLY"="تم شحن الرصيد بنجاح";
+
+"REQUEST_STATE_RATE_PLAN_ERROR"="غير مسموح لحسابك التحويل الى Red.";
+"REQUEST_STATE_PRICE_PLAN_ERROR"="حدث خطأ اثناء تنفيذ طلبك للتحويل لRed، يرجى الاتصال ب 888.";
+
+//Sallefny Errors
+"REQUEST_STATE_SALLEFNY_ALREADY_USING" = "عفواً ، أنت بالفعل تستخدم خدمة سلفني شكراً";
+"REQUEST_STATE_SALLEFNY_EXCEEDED_LIMIT" = "لقد استخدمت الحد الأقصى لخدمة  سلّفني";
+"REQUEST_STATE_SALLEFNY_NO_ELIGIBLE" = "هذه الخدمة غير متاحة لنظام خطك";
+"REQUEST_STATE_SALLEFNY_NO_ELIGIBLE_AT_THIS_TIME" = "هذه الخدمة غير متاحة لنظام خطك في الوقت الحالي";
+"REQUEST_STATE_SALLEFNY_ALREADY_USING_MAX_LIMIT" = "لقد استخدمت الحد الأقصى لخدمة  سلّفني";
+
+"Sallefny_General_Error" = "فشل طلب سلّفني الخاص بك";
+
+//Kallemny
+"REQUEST_STATE_KALLEMNY_BEING_PROCESSED" = "طلبك قيد المعالجة";
+
+"REQUEST_STATE_MIGRATION_CODE1" = "عفواً, لا يمكنك تغيير خطة الأسعار أكثر من مرة واحدة قبل إصدار الفاتورة";
+"REQUEST_STATE_MIGRATION_CODE2" = "عفواً, هذه الخدمة غير متاحة لنظام خطك.";
+
+"REQUEST_STATE_INVALID_ADDON"= "انت بالفعل مشترك فى خطة الاسعار التى تريد التحويل اليها.";
+"REQUEST_POINTS_UNAUTHORIZED_CUST" = " عفواً ، أنت غير مصنف كعميل في برنامج ڤودافون وان ";
+
+"PROFILE_UPDATED"="لقد تم تحديث حسابك بنجاح";
+"RECHARGEED_SUCCESSFULLY"="تم شحن الرصيد بنجاح";
+
+"REQUEST_STATE_RATE_PLAN_ERROR"="غير مسموح لحسابك التحويل الى Red.";
+"REQUEST_STATE_PRICE_PLAN_ERROR"="حدث خطأ اثناء تنفيذ طلبك للتحويل لRed، يرجى الاتصال ب 888.";
+"3G_First"="لابد من تفعيل ال 3G اولآ";
+"InternalServerError" = "عفواً! حدث خطأ ، حاول مرة أخرى";
+"STILL_NOT_REGISTERD" = " رقم الموبايل غير مسجل من قبل";
+
+"Couldn't load data" = "لم نتمكن من تحميل البيانات";
+"Please check your internet connection and try again" = "من فضلك تأكد من اتصالك بالإنترنت وحاول مرة أخرى";
+
+//Forgot Password
+"Please wait..." = "برجاء الانتظار...";
+"Congratulations!" = "مبروك!";
+"Your password has been sent to you by SMS, please check your mobile" = "تم إرسال رسالة تحتوي على كلمة المرور المؤقتة إلى رقم الموبايل الخاص بك";
+
+"Ok" = "موافق";
+"OK" = "موافق";
+
+"Manage my account" = "ادارة حسابي";
+
+"Invalid number" = "رقم خطأ";
+"The mobile number is invalid" = "رقم الموبايل غير صحيح";
+"Forgot Password" = "نسيت كلمة المرور";
+
+//Login
+"Connect 3G"="تنشيط البيانات";
+"Connect 3G Body"="لإستخدام التطبيق بدون التسجيل برجاء التحقق من إتصالك بالإنترنت عبر ال";
+
+"Login required" = "تسجيل الدخول";
+"seamless login customer can't access this feature, kindly login to continue" = "برجاء ادخال كلمة المرور للاستمتاع بهذه الخدمة";
+
+"3G Connection Lost"="إعادة تنشيط البيانات";
+"seamless login not supported on WIFI"="لإستخدام التطبيق بدون التسجيل برجاء التحقق من إتصالك بالإنترنت عبر ال";
+
+"Login" = "الدخول";
+"Change Password" = "غيّر كلمة المرور";
+"Invalid Mobile Number" = "رقم الموبايل غير صحيح";
+"Do you want to Sign out from AnaVodafone?" = "هل تريد تسجيل الخروج من أنا ڤودافون؟";
+"SignOutMessage" = "هل تريد تسجيل الخروج من أنا ڤودافون؟";
+"SignOutTitle" = "تسجيل الخروج";
+
+
+//Sign Up
+"SMS Notice" = "ارسال رسالة قصيرة";
+
+
+//One string devided :
+"An SMS containing the activation key will be sent to the number" = "سيتم إرسال رسالة نصية قصيرة من ڤودافون تحتوي كود التشغيل على رقم";
+
+"from Vodafone, Are you sure?" =  "هل أنت متأكد؟";
+
+
+"Please enter at least 8-characters" = "من فضلك أدخل 8 حروف على الاقل";
+"Invalid Email" = "البريد الإلكتروني غير صحيح";
+"Passwords do not match" = "كلمتي المرور غير متطابقتين";
+"Resend Code" = "أعد إرسال الكود";
+"Next" = "التالي";
+"Resending Succeeded" = "تمّت إعادة الإرسال";
+"The activation key has been sent to you in an SMS" = "تم إرسال كود التشغيل في رسالة نصيّة قصيرة";
+
+//User Profile
+"Profile" = "الملف الشخصي";
+"Success" = "تم بنجاح";
+"You have successfully redeemed your Gift" = "لقد تم إستخدام الهدية بنجاح";
+"Delete Photo" = "حذف الصورة";
+"From Camera" = "من الكاميرا";
+"From Gallery" = "من ألبوم الصور";
+"Edit Profile" = "تعديل البيانات";
+"Sign Out" = "تسجيل الخروج";
+"Gender" = "النوع";
+"City" = "المدينة";
+"Email" = "البريد الإلكتروني";
+"Date of Birth" = "تاريخ الميلاد";
+"Interests" = "اهتماماتك";
+"First Name" = "الاسم";
+"Last Name" = "اللقب";
+"Male" = "ذكر";
+"Female" = "أنثى";
+"Agree to be contacted through email" = "أوافق على الاتصال عن طريق الايميل";
+"Sports" = "رياضة";
+"Music" = "موسيقي";
+"Movies" = "أفلام";
+"Technology" = "تكنولوجيا";
+"Travel" = "سفر";
+"Culture" = "ثقافة";
+"Gender Not Set" = "النوع غير محدد";
+"City Not Set" = "المدينة غير محددة";
+"First Name Not Set" = "الاسم غير محدد";
+"Last Name Not Set" = "الاسم غير محدد";
+"Email Not Set" = "البريد الإلكتروني غير محدد";
+"Birth Date Not Set" = "تاريخ الميلاد غير محدد";
+"Interests Not Set" = "الاهتمامات غير محددة";
+"Incorrect Email format" = "البريد الإلكتروني غير صحيح";
+
+//Settings
+"Confirm Language Change" = "تأكيد تغيير اللغة";
+"Application Language will be changed to the language you selected. Are you sure you want to change it?" = "سيتم تغيير لغة التطبيق وفقاً لاختيارك. هل أنت متأكد؟";
+"Restart Application" = "أعد تشغيل التطبيق";
+ "For the language change to take effect, kindly terminate the app and reopen it." = "لتفعيل اللغة المختارة قم بإغلاق التطبيق تماماً وأعد تشغيله";
+"Yes" = "نعم";
+"No" = "لا";
+
+//Balance
+"View Balance" = "معرفة الرصيد";
+"Loading" = "جاري التحميل";
+"Congratulations" = "مبروك";
+"Recharge Balance" = "شحن الرصيد";
+"Your bill has been paid" = "لقد تم دفع الفاتوره";
+"Please enter the recharge card number in the field below and tap Submit" =  "من فضلك أدخل رقم الكارت الشحن في الحقل المخصص بالأسفل";
+"Please enter correct card number" = "من فضلك أدخل رقم كارت صحيح";
+"Card Charging Succeeded" = "تم شحن الكارت";
+"Card Charging Failed" = "لم يتم شحن الكارت";
+"Card Was Used Before" = "تم استخدام الكارت من قبل";
+
+//Store Finder
+"List" = "القائمة";
+"Map" = "الخريطة";
+"Store Locator" = "الفروع";
+"Region" = "المنطقة";
+"Store Type" = "نوع الفرع";
+"Select Store Type" = "اختر نوع الفرع";
+"Services" = "خدمات";
+"Vodafone Store" = "فرع فودافون";
+"Select City" = "اختر المدينة";
+"Select Region" = "اختر المنطقه";
+
+"AnaVodafone is unable to access your location, please enable location services in your settings and grant access to Anavodafone" = "أنا فودافون لم يتمكن من تحديد موقعك، من فضلك قم بتشغيل خدمات تحديد الموقع في إعدادات الموبايل واسمح للتطبيق بمعرفة موقعك";
+
+"Location Inaccessible" = "الموقع غير محدد";
+
+"Location is Unknown" = "الموقع غير معروف";
+"AnaVodafone failed to obtain your location. Kindly try again later" = "لم ينجح أنا ڤودافون في تحديد موقعك. من فضلك حاول مرة أخرى لاحقاً";
+"Settings" = "الإعدادات";
+
+
+//Bill
+"Bill" = "الفاتورة";
+"Bill Management" = "إدارة الفاتورة";
+"Total bill amount" = "إجمالي قيمة الفاتورة";
+"Bill amount" = "قيمة الفاتورة";
+"Monthly Fees" = "مصاريف شهرية";
+"National" = "محلي";
+"International" = "دولي";
+"Roaming" = "تجوال";
+"Bill_Balance_Transfer" = "تحويل رصيد";
+"Other Charges" = "تكاليف أخرى";
+"Mobile Internet Bundle" = "الموبايل إنترنت";
+"Mobile Internet Extra" = "إضافات الإنترنت";
+"Current" = "الحالية";
+"No bills available for this period." = "لا توجد فواتير متاحة لتلك الفترة.";
+
+//Bill Info
+"Monthly fees" = "مصاريف شهرية";
+"Occ" = "تكاليف أخرى";
+"Usage" = "الاستخدام";
+"Bundled usage" = "الباقة المستخدمة";
+"Charges" = "التكلفة";
+"Total due amount" = "إجمالي المبلغ المستحق";
+"Others" = "أخرى";
+"GPRS/3G & live services" = "تكاليف خدمات الانترنت";
+"Call charges Voice/Video/SMS" = "تكاليف المكالمات والرسائل";
+"Monthly access fees" = "مصاريف شهرية";
+"Bill due by" = "الحد الأقصى للسداد";
+
+
+//Services Management
+"Services Management" = "إدارة الخدمات";
+"Blacklist Service" = "خدمة منع المعاكسات";
+"With blacklist service you will block the number in your blacklist from contacting you" = "مع خدمة منع المعاكسات ستمنع الأرقام الموجودة في قائمتك السوداء من الوصول إليك";
+"Whitelist Service" = "القائمة البيضاء";
+"With whitelist service you can define who can reach you anytime" = "مع خدمة القائمة البيضاء يمكنك تحديد الأرقام التي يمكنها الوصول إليك دائماً";
+"Confirm Deletion" = "تأكيد الحذف";
+"Do you really want to remove %@ from the list?" = "هل تريد حقاً حذف %@ من القائمة؟";
+"Confirm Adding" = "تأكيد الإضافة";
+"Do you really want to add %@ to the list?" = "هل تريد حقاً إضافة %@ للقائمة؟";
+"Confirm" = "تأكيد";
+"Confirmation Subscribe" = "تأكيد الاشتراك";
+"Confirmation" = "تأكيد";
+"ConfirmationPayfort" = "تأكيد";
+
+"Please confirm to subscribe" = "هل تريد الاشتراك في الخدمة؟";
+
+"Roaming confirm to subscribe Bundle" = "هل تريد الاشتراك في الباقة؟";
+"Roaming confirm to unsubscribe Bundle" = "هل تريد إيقاف في الباقة؟";
+"Roaming confirm to subscribe Addon" = "هل تريد الاشتراك في الباقة الإضافية؟";
+"Roaming confirm to unsubscribe Addon" = "هل تريد إيقاف في الباقة الإضافية؟";
+"You are Subscribed in this Bundle" = "أنت مشترك في هذة الباقة";
+"Subscribe OnDemand" = "تفعيل الباقة عند الطلب" ;
+"Subscribe Renewable" = "تفعيل الباقة متجددة";
+
+"roaming_used" = "مستهلكه" ;
+"roaming_remaining" = "متبقيه" ;
+"Deactivating Service" = "إيقاف الخدمة";
+"Do you really want to unsubscribe?" = "هل تريد إلغاء الاشتراك من الخدمة؟";
+"Blacklist Do you really want to upgrade?" = "هل أنت متأكد من أنك تريد تفعيل الاشتراك الشهري في الخدمة مقابل ٣ جنيه؟";
+"Whitelist Do you really want to upgrade?" = "هل أنت متأكد من أنك تريد تفعيل الاشتراك الشهري في الخدمة مقابل ٥ جنيه؟";
+"Invalid Mobile Number" = "رقم الموبايل غير صحيح";
+"Start adding members to the list" = "ابدأ بإضافة أعضاء للقائمة";
+"Activate for free" = "تفعيل الخدمة مجاناً";
+"You have successfully activated your missed call keeper service." = "لقد قمت بتفعيل خدمة الاحتفاظ بالمكالمات";
+"Do you really want to unsubscribe from missed call keeper service?" = "هل تريد إلغاء الاشتراك من خدمة الاحتفاظ بالمكالمات؟";
+"Do you really want to subscribe to the missed call keeper service?" = "هل تريد الاشتراك في خدمة الاحتفاظ بالمكالمات؟";
+"Confirm Unsubscribing" = "تأكيد إلغاء الاشتراك";
+"Confirm Subscription" = "تأكيد الاشتراك";
+"Members" = "الأعضاء";
+"Adding member failed" = "إضافة العضو لم تنجح";
+"Saving settings failed" = "فشل حفظ الإعدادات";
+"Upgrade to Monthly bundle for 5 LE" = "غير للباقة الشهرية ب 5 جنيه";
+"Upgrade to Monthly bundle for 3 LE" = "غير للباقة الشهرية ب 3 جنيه";
+"Activate for 3 LE monthly" = "اشترك في الباقة الشهرية بـ 3 جنيه";
+"Activate for 5 LE monthly" = "اشترك في الباقة الشهرية بـ 5 جنيه";
+
+"Shop" = "تسوّق";
+"PT" = "قرش" ;
+"12:00 AM" = "١٢:٠٠ ص";
+"1:00 AM" = "١:٠٠ ص";
+"2:00 AM" = "٢:٠٠ ص";
+"3:00 AM" = "٣:٠٠ ص";
+"4:00 AM" = "٤:٠٠ ص";
+"5:00 AM" = "٥:٠٠ ص";
+"6:00 AM" = "٦:٠٠ ص";
+"7:00 AM" = "٧:٠٠ ص";
+"8:00 AM" = "٨:٠٠ ص";
+"9:00 AM" = "٩:٠٠ ص";
+"10:00 AM" = "١٠:٠٠ ص";
+"11:00 AM" = "١١:٠٠ ص";
+"12:00 PM" = "١٢:٠٠ م";
+"1:00 PM" = "١:٠٠ م";
+"2:00 PM" = "٢:٠٠ م";
+"3:00 PM" = "٣:٠٠ م";
+"4:00 PM" = "٤:٠٠ م";
+"5:00 PM" = "٥:٠٠ م";
+"6:00 PM" = "٦:٠٠ م";
+"7:00 PM" = "٧:٠٠ م";
+"8:00 PM" = "٨:٠٠ م";
+"9:00 PM" = "٩:٠٠ م";
+"10:00 PM" = "١٠:٠٠ م";
+"11:00 PM" = "١١:٠٠ م";
+
+//Credit Services
+"Balance Transfer" = "تحويل الرصيد";
+"Kallemny Shokran" = "كلمني شكراً";
+"Sallefny Shokran" = "سلّفني شكراً";
+"Edfa3ly Shokran" = "ادفعلي شكراً";
+
+"CreditServicesBalanceTransferDescription" = "يمكنك تحويل رصيد لأهلك وصحابك حتى 50 جنيه كل مرة";
+"CreditServicesKallemnyDescription" = "محتاج تتكلم ضرورى لكن رصيدك خلص؟ دلوقتى هتقدر مع خدمة كلمنى شكراً";
+"CreditServicesSallefnyDescription" = "مع خدمة سلفني شكراً لو رصيدك أقل من 2 جنيه فودافون هتحولك 4 جنيه رصيد. .";
+"CreditServicesEdfa3lyDescription" = "مع خدمة ادفعلي شكراً كلمهم على حسابهم في أي وقت";
+
+
+//Balance Transfer
+"BalanceTransferDescription" = "دلوقتي تقدر تحول لحد ٥٠ جنيه في كل مرة ، تكلفة الخدمة %@%% من المبلغ المحول, بحد أدني %@ جنيه. رصيدك المتبقى: %@ جنيه";
+"BalanceTransferConfirmationMessage" = "يرجى تأكيد تحويل %@ جنيه الي: %@ .إجمالي المبلغ المخصوم %0.2f جنيه";
+
+"BalanceTransferReceiverInGracePeriodMessage" = "المستقبل فى حالة السماح لذلك سيتم خصم قيمة %@ جنيه";
+"BalanceTransferEnoughBalance" = "لا يوجد رصيد كافي لاتمام العملية";
+"BalanceTransferMoreThan50" = "الحد الأقصى لتحويل الرصيد هو 50 جنيه";
+"BalanceTransferSubmitSuccessTitle" = "مبروك";
+"BalanceTransferSubmitSuccessMessage" = "تم تحويل الرصيد بنجاح";
+"BalanceTransferPostPaidLimitReached" = "لقد تخطيت الحد الأقصى للتحويل هذا الشهر، يرجى أعاده المحاولة الشهر التالي";
+"UserExceededLimitOfTransfers" = "لقد تجاوزت الحد الأقصى للمحاولات";
+"BalanceTransferInvalidMobileNumber" = "يرجى ادخال الرقم بطريقة صحيحة";
+
+
+//Sallefny
+"SallefnyConfirmationMessage" = "مصاريف الخدمة جنيه واحد لكل تحويل";
+"SallefnySuccessTitle" = "تم تحديث الرصيد";
+"SallefnySuccessMessage" = "تم تنفيذ طلب سلّفني الخاص بك بنجاح";
+"SallefnyFailureMessage" = "فشل طلب سلّفني الخاص بك";
+
+//Kallemny
+"KallemnyConfirmationMessage" = "من فضلك قم بتأكيد إرسال كلمنى شكرا إلي %@";
+"KallemnySuccessTitle" = "تم الإرسال";
+"KallemnySuccessMessage" = "تم إرسال رسالة كلمني شكراً بنجاح";
+"KallemnyInvalidMobileNumber" = "رقم الموبايل غير صحيح";
+
+//upgrade version
+"Exit" = "غلق";
+"Update" ="تحديث";
+"Continue"="استمر";
+
+//Installments
+"Amount per installment" = "قيمة القسط";
+"Remaining number of installments" = "عدد الأقساط المتبقية";
+"Remaining installment total amount" = "اجمالي القيمة المتبقية";
+
+//Top Reports
+"Calls" = "مكالمة" ;
+"Cost" = "التكلفة" ;
+"Duration" = "المدة" ;
+"From" = "من" ;
+"To" = "إلي" ;
+"Bill Management" = "إدارة الفاتورة" ;
+//"LE" = "جنيه" ;
+"L.E" = "جنيه" ;
+"Top Reports" = "التقارير" ;
+"Balance Management" = "إدارة الرصيد";
+
+//App Rating
+"Rate AnaVodafone App" = "تقييم تطبيق أنا ڤودافون";
+"If you are enjoying AnaVodafone App would you mind taking a moment to rate it on the App Store? It won’t take more than a Minute. Thanks!" = "إذا كنت استمتعت باستخدام تطبيق أنا ڤودافون هل تمانع من أن تعطينا لحظة من وقتك لتقييم التطبيق على متجر أبل للتطبيقات؟ لن يستغرق الأمر أكثر من دقيقة. شكراً لك!";
+"Yes" = "نعم";
+"No" = "لا";
+"Remind Me Later" = "ذكرني لاحقاً";
+
+//Usage Details
+"Call" = "مكالمات" ;
+"SMS" = "رسائل نصية قصيرة" ;
+"MMS" = "رسائل متعددة الوسائط" ;
+"Call Time" = "وقت المكالمة";
+"Amount" = "التكلفة";
+"Type" = "النوع";
+"SMS Time" = "وقت الرسالة";
+"MMS Time" = "وقت الرسالة";
+"Total" = "الإجمالي" ;
+"Usage Time" = "وقت الاستخدام" ;
+"Usage_UsageDetails" = "حجم الاستخدام" ;
+"Internet" = "إنترنت" ;
+"No Name" = "الاسم" ;
+"M" = "دقيقة" ;
+"Please select any filter" = "برجاء اختيار تفاصيل" ;
+
+"MB" = "ميجابايت" ;
+"GB" = "جيجابايت" ;
+"KB" = "كيلوبايت" ;
+"Bytes" = "بايت" ;
+
+//Common Error Handling
+"Please check your internet connection and try again" = "من فضلك تأكد من اتصالك بالإنترنت وحاول مرة أخرى";
+"Couldn't load data. Tap to retry." = "لم نتمكن من تحميل البيانات";
+"Connection Error" = "خطأ في الاتصال";
+"No Internet Connection" = "لا يوجد اتصال بالانترنت";
+
+//Home
+"MINUTES" = "دقائق";
+"Minutes" = "دقائق";
+"FLEX" = "فليكس";
+"Flex" = "فليكس";
+"FLEX!" = "فليكسات";
+"homeSMS" = "رسائل";
+"SMSunit" = "رسالة";
+"MinutesUnit" = "دقيقة";
+"homeInternet" = "موبايل انترنت";
+"Available" = "متبقي";
+"Remaining_MI" = "متبقي";
+"Current open amount" = "القيمة المستحقة الحالية";
+"BALANCE" = "الرصيد";
+"Balance" = "الرصيد";
+"Total Balance" = "الرصيد";
+"Red Points" = "نقاط Red";
+"Consumed" = "استهلكت";
+"Current balance" = "الرصيد الحالي" ;
+
+"total voice minutes" = "إجمالي الدقائق";
+"SMS to Vodafone" = "رسائل لڤودافون";
+"SMS to Anywhere" = "رسائل لأي شبكة";
+
+"NoInternetEndUserDescription" = "لكي تستمتع بباقات الموبايل إنترنت يجب عليك الاتصال بالشخص المفوض في شركتك.";
+
+"Flex Renewal Date" = "تاريخ تجديد الفليكسات";
+"Renewal Date" = "تاريخ تجديد الباقة: ";
+
+//QuickCheck
+"Voice" = "مكالمات";
+"Data" = "إنترنت";
+"Missed call keeper" = "خدمة حفظ المكالمات";
+"Call tone" = "الكول تون";
+"Manage" = "إدارة";
+"You’ve almost finished your  inclusive Flexs." = "فاضل 0 فليكس";
+"You’ve almost finished your inclusive GBs. Manage" = "فاضل 0 ميجابايت\جيجابايت على باقة  الإنترنت";
+"Basic bundle" = "الباقة الأساسية";
+"mainQuota" = "الباقة الأساسية";
+
+"Additional bundle" = "إضافات الإنترنت";
+"QC_SMS" = "رسائل";
+"On-Net" = "ڤودافون لڤودافون";
+"X-Net" = "ڤودافون  لأي حد";
+"Vodafone to vodafone" = "ڤودافون لڤودافون";
+"Vodafone to everyone" = "ڤودافون  لأي حد";
+
+//Inbox
+"Inbox" = "رسائل";
+"inboxEdit" = "تحرير";
+"Delete" = "مسح";
+"Are you sure you want to delete this message?" = "هل أنت متأكد من مسح هذه الرسالة؟";
+"inboxToday" = "اليوم";
+"inboxOlder" = "أقدم";
+"Go" = "اذهب";
+
+//Edfa3ly Shokran
+"Credit Services" = "خدمات الرصيد" ;
+"Call the number" = "اتصل بالرقم" ;
+"Copy number to clipboard" = "نسخ الرقم في حافظة الجهاز" ;
+"Copy" = "نسخ" ;
+
+//Usage Details
+"Call" = "مكالمات" ;
+"SMS" = "رسائل نصية قصيرة" ;
+"MMS" = "رسائل متعددة الوسائط" ;
+"Call Time" = "وقت المكالمة";
+"Amount" = "التكلفة";
+"Type" = "النوع";
+"SMS Time" = "وقت الرسالة";
+"MMS Time" = "وقت الرسالة";
+"Total" = "الإجمالي" ;
+"Usage Time" = "وقت الاستخدام" ;
+"Usage_UsageDetails" = "حجم الاستخدام" ;
+"Internet" = "إنترنت" ;
+"Contact Name" = "الاسم" ;
+"M" = "دقيقة" ;
+"Please select any filter" = "برجاء اختيار تفاصيل" ;
+
+"MB" = "ميجابايت" ;
+"GB" = "جيجابايت" ;
+"KB" = "كيلوبايت" ;
+"Bytes" = "بايت" ;
+
+// Qualtrics
+"Ana Vodafone" = "أنا ڤودافون";
+"QualtricsYes" = "موافق";
+"QualtricsLater" = "لاحقاً";
+"QualtricsPopup" = "رأيك يهمنا ! من فضلك قيم تطبيق أنا ڤودافون";
+
+
+//MI konafa
+"AddonPostpaidConfirm"="سيتم إضافه تكلفه الباقة الي الفاتورة";
+"AddonPrepaidConfirm"="سيتم خصم تكلفة الباقة من رصيدك الرئيسي";
+"FollowUpConfirm"="يرجي تأكيد تنشيط خدمه حسب الاستخدام";
+"addOnQuotaConfirm"="يرجي تأكيد تنشيط الباقة الاضافية";
+"worryfreeConfirm"="يرجي تنشيط باقة كمل على النت";
+"Subscribe to control internet bundles" = "استمتع بباقات كنترول النت";
+"AlreadyHasMIAddon"="هذه الباقة الإضافية تعمل بالفعل";
+"The bundle cost will be deducted from your main bundle" = "عزيزي العميل سيتم خصم تكلفة الباقة من رصيدك الرئيسي";
+"Hello"="أهلا";
+"Add-On Quota"="باقات إضافية";
+
+"You already  subscribed for salfny shokran"="انت بالفعل مشترك فى سلفنى شكرا";
+"The user is not eligible to use Sallefny shokran service"="هذه الخدمة غير متاحة لنظام خطك";
+
+
+"Subscribe to Control Internet Bundles"="Subscribe to Control Internet Bundles";
+"Enjoy Mobile internet benefits by activating one of the below bundles"="Enjoy Mobile internet benefits by activating one of the below bundles";
+
+
+
+
+"Please confirm missed call keeper deactivation"="يرجى تأكيد إيقاف خدمة الاحتفاظ بالمكالمات";
+"You are now subscribed to monthly bundle for 3LE"="أنت الأن تستمتع بالباقة الشهرية";
+"Dear Customer you can enjoy this service for free"="عزيزي العميل يمكنك التمتع بهذه الخدمة مجانا";
+
+"Please confirm to activate missed call keeper for 5LE"="يرجى تأكيد تشغيل خدمة الاحتفاظ بالمكالمة مقابل ٥ جنيهات شهرياً";
+
+"You are now subscribed to monthly bundle"="أنت الأن تستمتع بالباقة الشهرية";
+"You are subscribed to daily bundle."="أنت الأن تستمتع بالباقة اليومية";
+"Stay connected with limited speed"="كمل عالنت بسرعة محدودة";
+"Dear Customer" = "عميلنا العزيز";
+"No data Found" = "لا توجد نتائج";
+"Renewal Date"="تاريخ تجديد الباقة";
+"Days Left"="أيام متبقية";
+"Main bundle"="الباقة الاساسية";
+
+"Change bundle"=" باقات الانترنت الشهرية";
+"Add ons"="  باقات الإضافية ";
+"Social & video bundles" = "باقات السوشيال و الفيديو";
+
+
+
+
+"Activate bundle"="تنشيط الباقة";
+
+"home_GB"="جيجا";
+"home_MB"="ميجا";
+
+"Worry free"="كمل علي النت";
+"Pay On my Bill"="ادفع على فاتورتك";
+"Pay with recharge card"="ادفع بكارت الشحن";
+
+"Sender Limits"=" لقد تخطيت الحد الأقصى للتحويل هذا الشهر، يرجى أعاده المحاولة الشهر التالي      ";
+"Change Your Plan"="غير باقتك";
+"Change Your Plan to" = "غير باقتك ل";
+
+"From:"= "من :";
+"To:"="الي :";
+
+"Save Settings"="حفظ الضبط";
+
+"Current"="الحالية";
+"Mobile is unreachable" = "الموبايل غير متاح";
+
+"Blacklist"="خدمة منع المعاكسات";
+"Whitelist" = "القائمة البيضاء";
+"Add Or Remove your numbers"=" إشترك ، و إتحكم مين يكلمك";
+"Subscribe & Manage whitlisted numbers"=" إشترك ، و إتحكم مين يكلمك";
+"You can add local number only"="يمكنك أضافة الارقام المحلية فقط";
+
+
+"Sorry,You can't add number already on your list"="عفوا، لا يمكنك إضافة رقم تم إضافته من قبل في القائمة";
+
+
+
+"USB Add-Ons" = " الاضافيةUSB باقات ال-";
+
+"Subscribe, Unsubscibe, more..."=" إشترك ، و حدد مين يكلمك";
+
+"Follow up activation" = "تفعيل المحاسبة حسب الاستهلاك";
+"Repurchase Bundle" = "تجديد الباقة";
+
+"Black list setting" = "ضبط خدمة منع المعاكسات";
+"White list setting" = "ضبط خدمة القائمة البيضاء";
+
+"Whitelist Add Numbers"="أضافة رقم للقائمة البيضاء";
+
+"Blacklist Add Numbers"="أضافة رقم للقائمة السوداء";
+"Activate for 5 L.E monthly"= "اشترك في الباقة الشهرية ب5 جنية";
+"Activate for 3 L.E monthly"= "اشترك في الباقة الشهرية ب3 جنية";
+"MCK Desc"="أعرف من اتصل بيك وموبايلك غير متاح، مشغول، أو مقفول مجانا";
+
+"All the time" = "طول الوقت";
+"Activate one day trial for 30 pts."="تفعيل الخدمة يوم واحد ب 30 قرش";
+"Voice Mail is full"="البريد الصوتي مليء";
+"Set Time"="اضبط الوقت";
+"Subscription Type:"="نوع الاشتراك";
+"Announcement Type:"="نوع الاخطار";
+"Service Activation:"="تشغيل الخدمة";
+"Confirm"= "تأكيد";
+"Please confirm your subscription" = "من فضلك أكد الاشتراك في الباقة";
+"Please Select Subscribtion Type"="من فظلك أختار الباقة";
+"Please Select Annoncement Type"="من فضلك أختار نوع الاخطار";
+"Please Select Time"="من فضلك أختار الوقت";
+"You can't select the same time"= "من فضلك ادخل وقت بدء و نهاية الخدمة مختلفين";
+
+
+
+
+"Please enter the missing data"="من فضلك أدخل البيانات المتبقية";
+"Please, select a bundle!"="لابد من أختيار باقة للتجديد";
+
+"Please Open GPS to detect your location"="من فضلك قم بفتح GPS للحصول علي موقعك";
+"Used or wrong scratch card number"="رقم الكارت غير صحيح أو مستخدم";
+"Please select any filter"="يجب أختيار واحد علي الاقل";
+"The service is not available for your account"="عفوا هذه الخدمة غير متاحة لحسابك";
+"There is no pie chart"="There is no view chart";
+
+"You have successfully set your limit"="تم الحفظ بنجاح";
+
+"Please enter first name"="من فضلك أدخل الاسم الاول";
+"Please enter last name"="من فضلك أدخل الاسم الاخير";
+"Please enter email"="من فضلك أدخل البريد الالكتروني ";
+"Please enter correct mail"="من فضلك أدخل بريد الكتروني صحيح ";
+
+
+"Warning"="تحذير";
+"WARNING!"="تحذير!";
+"You have already requested an Add-on this month"="لديك بالفعل باقة أضافيه";
+"Please, enter a value to be saved"="من فضلك أدخل قيمة";
+"Total Remaining Quota"="اجمالي سعه الباقة المتبقية";
+"success message enjoy more" = "تمت العمليه بنجاح";
+
+
+
+
+
+
+"Max Value is 160 LE per transfer"="القيمة القصوي ١٦٠ جنية للتحويل الواحد";
+
+"SpocAccess"="الخدمة غير متاحة لمفوضي الشركات";
+
+"Sorry, there are no invoices for this period."="عفوا, لا يوجد فواتير لهذه الفترة";
+
+
+"Enter a value more than" = "ادخل قيمة لا تقل عن";
+"You are now" = "انت الآن على خطة اسعار ";
+"You can change" = "ممكن تختار من بين خطط الأسعار التالية";
+"upgradeBundle"="باقات اضافية متجددة تلقائيا";
+"Please Select Add-on"="اختر من الباقات الاضافية";
+"Buy Now"="اشتري الآن";
+"contactUs" = "اتصل بنا";
+"contactUs_Content"="اتصل بنا على اى من صفحات التواصل الاجتماعى الخاصة بنا لاستفساراتك او شاركنا برأيك";
+"Please, enter a 14 digits number!"="من فضلك أدخل ١٤ او ١٦ رقم";
+
+
+
+"redPackage150" = "150 جنيه إشتراك شهري\
+·مكالمات علي راحتك: 2000 دقيقة شهريا لكل أرقام فودافون\
+· 300 دقيقة لأي شبكة أو خط أرضي\
+·رسائل علي راحتك: 1000 إس إم إس لكل أرقام فودافون\
+· إنترنت علي راحتك: 1 جيجابايت موبايل انترنت من غير رسوم إضافية عند انتهاء الباقة\
+· 15% خصم على المكالمات الدولية\
+· 1 جنيه لدقيقة الاستقبال أثناء التجوال بحد أقصي 30 دقيقة\
+· خدمات الاحتفاظ بالمكالمات ومنع المعاكسات مجاناً\
+· خدمة \"صلحلي\" المجانية: إصلاح مجاني للموبايل في حالة الحوادث الجزئية (مثال: كسر في الشاشة) في حالة الحوادث الكلية سيتم استبدال موبايلك بموبايل جديد عند دفع قيمة 2% من السعر الأصلي للموبايل عن كل شهر من تاريخ شراء الموبايل, بحد أدني 6% إذا تم الاستبدال خلال أول ثلاث شهور\
+\
+الشروط والاحكام\
+· 19 قرش سعر موحد للدقيقة الإضافية لأي رقم\
+· 30 قرش سعر موحد للرسالة الإضافية لأي رقم\
+· عند إنتهاء الباقة ستقل سرعة الإنترنت ل 64k\
+· الجيجا بايت يمكن استخدامها على جهاز واحد فقط\
+· 99 قرش سعر رسالة الدولي\
+· للاشتراك في خدمة \"العالم بين اديك\" كلم 5055 (10 جنيه اشتراك شهري و 1.99 جنيه سعر موحد للدقيقة)";
+
+
+
+
+
+"redPackage300" = "300 جنيه إشتراك شهري\
+· مكالمات علي راحتك: 2800 دقيقة شهريا لاي رقم\
+· رسائل علي راحتك: 2000 إس إم إس لأي رقم\
+· إنترنت علي راحتك: 4 جيجابايت انترنت يمكنك استخدامهم علي اي جهازين, و من غير رسوم إضافية عند انتهاء الباقة\
+· 25% خصم على المكالمات الدولية\
+· 1 جنيه لدقيقة الاستقبال أثناء التجوال بحد أقصي 1500 دقيقة\
+· خدمات الاحتفاظ بالمكالمات ومنع المعاكسات و 30 دقيقة شهريا لخدمة الدليل 2121 مجاناً\
+· خدمة \"صلحلي\" المجانية: إصلاح مجاني للموبايل في حالة الحوادث الجزئية (مثال: كسر في الشاشة) في حالة الحوادث الكلية سيتم استبدال موبايلك بموبايل جديد عند دفع قيمة 1% من السعر الأصلي للموبايل عن كل شهر من تاريخ شراء الموبايل, بحد أدني 3% إذا تم الاستبدال خلال أول ثلاث شهور\
+\
+الشروط والاحكام\
+· 19 قرش سعر موحد للدقيقة الإضافية لأي رقم\
+· 30 قرش سعر موحد للرسالة الإضافية لأي رقم\
+· عند إنتهاء الباقة ستقل سرعة الإنترنت ل 64k\
+· الجيجا بايت يمكن استخدامها على الموبايل و الUSB\
+· 99 قرش سعر رسالة الدولي";
+
+"redPackage500" = "500 جنيه إشتراك شهري\
+· مكالمات علي راحتك: 4800 دقيقة شهريا لأي رقم\
+· رسائل علي راحتك:2000 إس إم إس لأي رقم\
+· إنترنت علي راحتك: 8 جيجابايت انترنت يمكنك استخدامهم علي اي جهازين, و من غير رسوم إضافية عند انتهاء الباقة\
+· 1.99 جنيه سعر ثابت لدقيقة الدولي من غير أي رسوم إضافية\
+· 1 جنيه لدقيقة الاستقبال أثناء التجوال بحد أقصي 1500 دقيقة\
+· خدمات الاحتفاظ بالمكالمات ومنع المعاكسات و 30 دقيقة شهريا لخدمة الدليل 2121 و 30 دقيقة شهريا لخدمة حجز السفارات مجاناً\
+· خدمة \"صلحلي\" المجانية: إصلاح مجاني للموبايل في كل حالات الحوادث ماعدا السرقة\
+\
+الشروط والاحكام\
+· 19 قرش سعر موحد للدقيقة الإضافية\
+· 30 قرش سعر موحد للرسالة الإضافية\
+· عند إنتهاء الباقة ستقل سرعة الإنترنت ل 64k\
+· 99 قرش سعر رسالة الدولي";
+
+"TraficStatusTitle"="حاله أزدحام الطرق";
+"TraficStatusDesc"= "لو عايز تعرف حالة الزحمة لطريق معين ممكن تختار \"حالة ازدحام الطرق\" واختار اسم الطريق والاتجاه";
+
+
+"CrowdedRoadsTitle"="الطرق المزدحمه من مكان الي مكان";
+"Purchase Add-on" ="شراء باقات اضافية";
+"CrowdedRoadsDesc"="و عايز تعرف حالة الزحمة لمنطقة معينه ممكن تختار \"الطرق المزدحمة من مكان الى مكان\" واختار مكان البداية و النهاية";
+
+"Mail"="البريد الالكتروني";
+
+"FN"="الاسم الاول";
+"LN" = "الاسم الاخير";
+"Gender"="النوع";
+"MN"="رقم الموبايل";
+"Male"="ذكر";
+"Female"="أنثي";
+"Full Name"="الاسم الكامل";
+"AK"="كود التشغيل";
+"PA"="كلمة المرور";
+"PAC"="تاكيد كلمة المرور";
+
+"Cairo"="القاهره";
+"Alexandria"="الإسكندرية";
+
+
+
+
+
+"proceed" = "استمرار";
+"Proceed" = "استمرار";
+
+"Latest Promotion"= "احدث العروض";
+
+"More Promotions"="لمزيد من العروض";
+
+"promtionTitle"="عروض الرسائل";
+"promtionContent"="تستطيع أن تستعلم عن عروض الرسائل من فودافون عن طريق هذة الخدمه";
+"contactCode"="*9751#";
+
+
+"promtionTitle2"="عروض فودافون";
+"promtionContent2"="هذه الخدمه تتيح لعملاء فودافون أخر العروض و الخدمات";
+"contactCode2"="800";
+
+
+"promtionTitle3"="حكاوي ساعات أكتر";
+"promtionContent3"="With \" حكاوي ساعات أكتر \" Enjoy ";
+"contactTitle"="من ٦ مساءا ل ٩ مساءا";
+"contactCode3"="*966*6#";
+"contactTitle2"="من ٩xr مساءا ل ١٢ صباحا";
+"contactCode4"="*966*6#";
+
+
+
+"promtionTitle4"="حكاوي كل حاجه أكتر";
+"promtionContent4"="SMS وموبايل انترنت و كلام اكتر علي انظمه حكاوي";
+"contactCode5"="*977*2#";
+
+
+
+"Choose contact or enter number"="من فضلك أختر رقم أو أدخل رقم";
+"Please enter a valid amount"="من فضلك أدخل القيمه";
+
+
+"Thanks Message"= "Thanks message will be written out here offers its clients a communication.";
+"Personal Info"= "Personal Information";
+"PersonalDetailsMsg"= "edit and update your profile";
+"Password"= "كلمة السر";
+"ChangePassword"= "Change your Password";
+"Please enter mobile number"= "من فضلك أدخل رقم الهاتف";
+
+
+"IVR not activated"="من فضلك أتصل ب ٥٠٩٠ خطوه أخيره لتفعيل حسابك";
+
+"Activiation Key"="١-أحصل علي رمز التشغيل";
+
+"ActiviationMSG"="برجاء ادخال رقم الموبايل لكى تتمكن من استقبال  كود التشغيل واستكمال عمليه التسجيل";
+
+"NOLabel"=".٢";
+"NOLabel3"=".٣";
+
+
+"Info"= "معلوماتك";
+
+"signUpCongMSG"="Kindly note that you have a pending My Vodafone Account activation request. Please call 50 90 as a final step to activate your account";
+"DC"="عزيزي العميل";
+"Cong"="مبروك";
+"SignUpBack"="الرجوع الي فودافون";
+
+"SignUp_XIB"="SignUp_Ar";
+
+"REQUEST_STATE_RED_NEAREST_STORE_ADSL" = "لقد تم تغيير خطة اسعارك بنجاح الى Red، و ستتمكن من التحكم فى حسابك اونلاين في خلال 24 ساعة.اشترك اونلاين الان للاستمتاع بخدمة ال ADSL من ڤودافون.";
+
+"REQUEST_STATE_RED_NEAREST_STORE_SIM" = "لقد تم تغيير خطة اسعارك بنجاح الى Red، و ستتمكن من التحكم فى حسابك اونلاين في خلال 24 ساعة.يرجى التوجه الى اقرب فرع  ڤودافون للاستلام خط الداتا الخاص بك.";
+
+"REQUEST_STATE_RED_NEAREST_STORE_DISCOUNT" = "لقد تم تغيير خطة اسعارك بنجاح الى Red، و ستتمكن من التحكم فى حسابك اونلاين في خلال 24 ساعةيرجى التوجه الى اقرب فرع  ڤودافون لاستلام خط الداتا الخاص بك، اشترك اونلاين الان للاستمتاع بخدمة ال ADSL من ڤودافون.";
+
+"REQUEST_STATE_RED_REQUEST_SENT" = "جارى تنفيذ طلبك وسيتم الاتصال بك قريبا.";
+
+//Request error
+"REQUEST_POINTS_UNAUTHORIZED_CUST" = " عفواً ، أنت غير مصنف كعميل في برنامج ڤودافون وان ";
+
+"PROFILE_UPDATED"="لقد تم تحديث حسابك بنجاح";
+"RECHARGEED_SUCCESSFULLY"="تم شحن الرصيد بنجاح";
+
+"REQUEST_STATE_RATE_PLAN_ERROR"="غير مسموح لحسابك التحويل الى Red.";
+"REQUEST_STATE_PRICE_PLAN_ERROR"="حدث خطأ اثناء تنفيذ طلبك للتحويل لRed، يرجى الاتصال ب 888.";
+
+"User type not supported" = "انا ڤودافون لا يدعم نظام خطك حاليا، انتظرونا في نسخة مخصصة لك قريبا";
+
+
+
+"3G_First"="لابد من تفعيل ال 3G اولآ";
+
+"amountAlert" = "القيمه لابد ان لا تكون اقل من ";
+"monthlyFees" = " رسوم الاشتراك الشهري";
+"of"="من";
+"mins" = "دقيقة";
+"embassisNote"= "لديك 30 دقيقة مجانية إلى مركز تعيين فودافون فيزا 2121";
+"RedSubscribe" = "عميلنا العزيز، للتحويل لنظام ڤودافون Red و للاستمتاع بمميزاته، يرجى زيارة اقرب فرع ڤودافون";
+
+"changeRatePlan"="لقد تم تغيير خطة اسعارك بنجاح الي RED.و ستتمكن من التحكم فى حسابك اونلاين في خلال 24 ساعة . ";
+
+"Mobile Internet"="موبايل انترنت";
+"Mobile Internet and USB"="موبايل انترنت و USB";
+"REQUEST_STATE_CONNECTIOIN_NOBills"="لا يوجد فواتيز";
+
+"Usage Time"="وقت الاستخدام";
+"Usage"="الاستخدام";
+"SMS time"="وقت الرسالة";
+
+"Heading"="متجهة إلى :";
+
+"Please enter mobile number"="من فضلك أدخل رقم الهاتف";
+"SC"="لا يوجد رسم بياني";
+"NT"="التالي";
+
+"Thank you for using Vodafone Engezly Services"="تم تحويل الرصيد بنجاح";
+"AlreadyHasMIAddon"="هذه الباقة الإضافية تعمل بالفعل";
+
+"Continue on the internet with the limited speed" = "كمل على النت بسرعة محدودة";
+"Worry Free" = "كمل على النت";
+
+"Manage your main internet bundles" = "اختار المناسب لك من باقات الانترنت المتنوعة";
+"Add extra internet bundles" = "أضف باقات انترنت اساسية";
+"Time Based Description" = "استمتع بانترنت اكتر لفترة محدودة";
+"Enjoy Social, Videos & Music bundles" = "استمتع بباقات سوشيال، فيديو ومزيكا الاساسية";
+"Enjoy Social, Videos & Music add-ons" = "استمتع بباقات سوشيال، فيديو ومزيكا الاضافية";
+"Add extra internet add-ons" = "استمتع بباقات الانترنت الاضافيه";
+"Basic Add-Ons" = "باقات اضافية";
+"Content Add-Ons" = "باقات المحتوى الاضافية";
+"Content internet bundles" = "باقات المحتوى";
+"Time based bundles" = "باقات المحاسبة حسب الوقت";
+"MI Red Bundle" = "باقات اكستريم نت المتجددة";
+"MI Red Bundle Desc" = "استمتع بانترنت أكتر كل شهر مع باقات  اكستريم انترنت المتجددة";
+"Manage your main internet red bundles" = "باقات اكستريم نت الغير متجددة";
+"Manage your main internet red bundles desc" = "استمتع بانترنت لمدة 30 يوم مع باقات اكستريم انترنت الغير متجددة ";
+"Daily internet bundles" = "باقات الانترنت اليومية";
+"Weekly internet bundles" = "باقات الانترنت الاسبوعية";
+"Social Bundle" = "بقات سوشيال";
+"Video Bundle" = "باقات فيديو";
+"Music Bundle" = "باقات مزيكا";
+
+
+"settings have been change"="تم حفظ التغييرات";
+
+"Enjoy the internet for 25 PT per MB" = "استمتع بالإنترنت مقابل 25 قرش للميجابايت";
+"Enjoy extra internet"="استمتع بإنترنت أكتر";
+"Blackberry Bundles"="باقات البلاك بيري";
+"You need to deactivate your add-on so you can change your plan"="سيتم إيقاف الباقة الإضافية يرجى أعاده تفعيلها بعد تغير الباقة الأساسية";
+
+"Enjoy Social Networking Add-Ons" = "استمتع بباقات التواصل الاجتماعي";
+"Continue on the internet with limited speed" = "كمل انترنت بسرعة محدودة";
+"Enjoy Videos Streaming Add-Ons" = "استمتع مشاهات الفيديوهات";
+"Enjoy Music Add-Ons" = "استمتع بباقات المزيكا";
+
+
+"Stay online freely with best suits"="اتحكم في باقات الانترنت الأساسية";
+"Enjoy extra internet by activating the Add-ons" = "أضف باقات اضافية";
+"Social and Video desc" = "استمتع بالتواصل الاجتماعي و مشاهده الڤيديوهات";
+
+"Please, enter a 14 to 16 digits number!" = "برجاء ادخال من ١٤ الى ١٦ رقم";
+
+"Service has been activated"="عزيزنا العميل، تم تشغيل الخدمة";
+"Service has been deactivated"="عزيزنا العميل، تم الغاء الخدمة";
+
+"bundle has been deactivated"="عزيزنا العميل، تم الغاء الخدمة";
+
+"Upgrade to monthly bunlde for 5LE"="غير للباقة الشهرية ب 5 جنيه";
+"Service has been upgraded"="تم الاشتراك في الباقة الشهرية";
+"Follow Up"="حسب الاستخدام";
+"Purchase Add-on" ="شراء باقات اضافية";
+"upgradeBundle"="باقات اضافية متجددة تلقائيا";
+
+
+
+//Folow Us
+"Follow Us" = "تابعنا" ;
+
+//Flex Extra
+"Flex_Extra_Addons_Desc" = "خلص باقتك و متقلقش علشان دلوقتى مع كنترول فليكس هتقدر تزود فليكساتك فى أى وقت فى الشهر  " ;
+"Flex_Extra_Repurchase_Desc" = "لو باقتك خلصت جددها واستمتع بفليكساتك  من الأول  " ;
+"buy_Flex_Extras" = "فليكس اكسترا" ;
+"Repurchase current bundle" = "إعادة شراء الباقة" ;
+"repurchase current bundle" = "إعادة شراء الباقة" ;
+
+"Purchase flex extras" = "اشتري فليكس اكسترا الان" ;
+
+
+"Renew_Current_Bundle" = "سيتم تجديد باقة فليكس كنترول بعد استخدام فليكسات الباقة الأساسية " ;
+
+"Renew_Current_Bundle_rollover" = "سيتم تجديد باقة فليكس كنترول بعد استخدام فليكسات الباقة الأساسية \n ملاحظة: فليكساتك هتترحل للشهر الجاى " ;
+
+
+"Flex Extras" = "فليكس اكسترا" ;
+"Purchase_Flex_Extras" ="فليكس اكسترا" ;
+
+"Please confirm purchasing" = "يرجى تأكيد شراء باقه" ;
+"Add-on" = "الإضافية" ;
+"Flex Extras has been added to your bundle successfully" = "تم شراء باقة فليكس اكسترا بنجاح" ;
+
+"Renew your current bundle" = "جدد باقتك الحالية " ;
+"After bundle options" = "خيارات ما بعد الباقة" ;
+"Activate" = "تفعيل";
+"Activate_R" = "جدد" ;
+"for this month only" = "لشهر واحد" ;
+"every month" = "كل شهر تلقائيا" ;
+"Renew Flex Bundle" = "جدد الباقة " ;
+"Renew_Flex_Bundle_desc" = "تم تجديد باقة فليكس كنترول، إستمتع بفليكس كنترول لمدة 30 يوم من الان";
+
+"Alert!" = "تنبيه!" ;
+"Renew_Flex_Failed" = " تم تشغيل باقة فليكس اكسترا لشهر واحد، يرجي التأكد من تجديديها الشهر القادم" ;
+"Please_Check_Balance" =  "لم نتمكن من تنفيذ طلبك ! يرجى مراجعة الرصيد والمحاولة لاحقاً" ;
+
+//Retention Platform
+"Free month" = "شهر مجاناً" ;
+"Deals" = "عرض الشهر";
+"Subscribed Successfully!" = "مبروك، دلوقتي ممكن تستمتع بالعرض";
+"Now you can enjoy the offer" = "دلوقتي ممكن تستمتع بالعرض" ;
+
+"UserOfferLimit" = "تقدر تستخدم العرض مرة واحدة فالشهر ، يمكنك الاستمتاع بعرض أخر";
+"OfferExpired" = "وقت العرض خلص، جرب عرض تاني";
+"OfferSoldOut" = "العرض ده خلص، جرب عرض تاني";
+"RatePlanError" = "العرض ده مش متاح لخطه اسعارك";
+"Deal of the month" = "عرض الشهر";
+"Terms and Conditions" = "الشروط و الأحكام" ;
+"No results available" = "لا توجد نتائج" ;
+"Red Segmented Deals" = "عروض RED المميزة";
+"Red Special Deals" = "عروض RED المميزة";
+
+"BeInSportsTitle" = "BeIN SPORTS CONNECT";
+"BeInSportsDesc" = "<p>استمتع باشتراك شهري لباقاتBeIN SPORTS CONNECT تقدر تستخدمها من خلال الموبايل أو الـ Tablet أو الـ Laptop</p>" ;
+
+//"BeInSportsDesc" = "BeIN SPORTS CONNECTاستمتع باشتراك شهري لباقات تقدر تستخدمها من خلال الموبايل أو الـ Tablet أو الـ  Laptop" ;
+
+"BeInSportsTerm" = "الخدمة متوفرة علي الموبايل و تتيح للمشترك 10 قنوات رياضية يستطيع عن طريقها متابعة أهم البطولات</br>بالضغط علي اشترك ستقوم بإرسال رسالة نصية للحصول علي كوبون العرض" ;
+
+//MyPlan Description
+
+"MyPlan_RedUser_Desc" = "مع Vodafone Red ، هتستمتع بكل اللى أنت محتاجه فى نظام واحد من مكالمات ورسائل وإنترنت بالإضافة إلى مميزات حصرية مصممة لطريقة حياتك." ;
+"MyPlan_FlexUser_Desc" = "لأول مرة في مصر، أنظمة كنترول فليكس الجديدة تقدر تشكًل فيها استخدامك براحتك من غير شروط و من أول فليكس." ;
+"MyPlan_PrePaidUser_Desc" = "مع أنظمة ڤودافون الكارت ، هتلاقي كل اللى أنت محتاجه" ;
+"MyPlan_PostPaidUser_Desc" = "مع أنظمة ڤودافون الخط ، هتلاقي كل اللى أنت محتاجه" ;
+"Change to" = "حول الى" ;
+"Confirm_Change_RatePlan" = "يرجى تأكيد تغير خطة أسعارك إلي" ;
+"Check_RecommenedPlans" = "هل راجعت خطط الأسعار المناسبة لك؟" ;
+"Other_Available_rate_plan" = "خطط الأسعار المتاحة" ;
+"Aecommeneded_EmptyPlans" = "اختار خطة الأسعار المناسبة لاستخدمك" ;
+"Your rate plan can’t be changed now" = "لا يمكن تحويل خطة اسعارك الأن" ;
+
+"& paying" = "مقابل" ;
+"LE!" = "مصاريف تحويل" ;
+"Monthly access fees" = "الاشتراك الشهري" ;
+
+"Recommeneded Plans" = "خطط أسعار مناسبة لك " ;
+"Other Plans" = "أنظمة أخرى" ;
+"My plan" = "نظام حسابي" ;
+"noPlansAvailable" = "خطة اسعارك هي أكتر نظام مناسب لاستخدامك، لا يوجد نظام مقترح لك حالياً";
+"you_Tarrif_Will_change" = "نحن نعمل على تنفيذ طلبك،\nسيتم تغير نظام المحاسبة خلال الدقائق اللاحقة" ;
+"No Enough balance" = "لا يوجد رصيد كافي" ;
+"Sorry!_A" = "عذراً!" ;
+
+//UnSupported rate plans
+"Red_Plan_Unsupported_Desc" = "نحن نعمل على خدمات مخصصة لعملاء  ڤودافون RED" ;
+"Non_Supported_Flex_Desc" = "أنا ڤودافون لا يدعم نظام خطك حالياً، انتظرونا في نسخة مخصصة لك قريباً" ;
+"Stay tuned!" = "انتظرنا !" ;
+"Sorry!" = "عفواً!" ;
+"You are about to recharge with %@ L.E " = "سوف يتم شحن رصيدك ب %@ جنيه ";
+"You are about to Pay with %@ L.E " = "سوف يتم دفع  %@ جنيه لسداد الفاتوره";
+
+"Consumed %@ %@ from %@ %@" = "الاستهلاك %@ %@ من %@ %@";
+"Total Bundle %@ %@" = "إجمالي الباقة %@ %@";
+
+"Consumed %@ %@ from %@ GB" = "الاستهلاك %@ %@ من %@ جيجابايت";
+"Total bundle %@ GB" = "اجمالي الباقة %@ جيجابايت";
+"Your request has been sent successfully!" = "تم ارسال طلبك بنجاح!";
+"%.1f %@ of %.1f GB" = "%.1f %@ of %.1f جيجابايت";
+
+"Loading data, please wait" = "جاري تحميل البيانات";
+
+
+"MI_Internet_Success" = "شكرا لاستخدامك خدمات ڤودافون" ;
+"Done Successfully" = "تم الإشتراك بنجاح";
+
+//Cash
+
+"The ATM service from CIB is no longer available. To know the nearest Branch to perform a deposit or withdrawal press 'continue'" ="تم ايقاف خدمة الATM CIB. لمعرفة اقرب منفذ للسحب او الأيداع دوس ‘كمل'";
+
+"Continue" = "كمل";
+"Thank You"="شكرا";
+"Congratulations! your pin code has been changed."="تم تغيير الرقم السري الخاص بك";
+"invalid national ID, should be 14 digits" = "رقمك القومي غير صالح، ينبغي أن يكون ١٤ رقما";
+"invalid verification code, should not be empty" = "رمز التحقق غير صحيح ";
+"invalid pin code, should be 6 digits" = "الرقم السري غير صحيح، يجب أن يكون ٦ أرقام";
+"confirm pin code don't match pin code" = "كود التأكيد لا يتطابق مع الرقم السري";
+
+"Vodafone Cash" = "ڤودافون كاش";
+
+"cashTitle0" = "الفروع";
+"cashTitle1" = "رصيدك الحالي";
+"cashTitle2" = "تحويل أموال";
+"cashTitle3" = "شحن رصيد";
+"cashTitle4" = "دفع فواتير";
+"cashTitle5" = "التحويل البنكي";
+"cashTitle5" = "ATM";
+"cashTitle6" = "التبرعات";
+"cashTitle7" = "انشاء رقم سري";
+"cashTitle8" = "تغيير رقم سري";
+"cashTitle9" = "آخر العمليات";
+"cashTitle10" = "المساعدة";
+"cashTitle11" = "تجديد ال ADSL";
+"cashTitle12" = "الدفع أونلاين";
+"cashTitle13" = "فكة";
+
+"Show Fakka Cards" = "أعرض كروت الفكه المتاحه";
+"PIN Code" = "الرمز السري";
+"Please enter your PIN below and tap Show Fakka Cards" = "ادخل الرقم السري و إضغط على إعرض كروت الفكه";
+"VF cash Fakka" = "فودافون كاش فكة";
+"VF cash Fakka details" = "VF cash Fakka details";
+"1.5 LE" = "١.٥ جنيه";
+"3 LE" = "٣ جنيه";
+"1.5 Desc" = "test test test test test test test";
+"3 Desc" = "test test test test test test test";
+"Buy Fakka Card" = "إشتري كارت فكه";
+"Buy Fakka Card Desc" = "برجاء أدخل رقم لو هتشتري كارت الفكه لصديق ولو ليك متكتبش رقم";
+"Please enter a valid mobile number" = "برجاء أدخال رقم موبايل صحيح";
+"Fakka recharge confirmation message" = "هل أنت متأكد؟";
+"Fakka recharge success message" = "تم شراء كارت الفكه بنجاح";
+
+"Your password has been changed successfully" = "تم تغيير كلمة المرور بنجاح";
+
+"3gErrorDesc" = "يرجي التأكد من ان الموبايل متصل بشبكة 3G حيث ان خدمات ڤودافون كاش لا تعمل علي واي فاي";
+"3gErrorTitle" = "أنت غير متصل بشبكة الـ 3G";
+
+"Vodafone Cash" = "ڤودافون كاش" ;
+"Please enter a valid pin code" = "الرقم السري غير صحيح" ;
+"Please enter a valid mobile number" = "رقم الهاتف غير صحيح" ;
+"Amount should be less than 6000 LE" = "أدخل قيمة أقل من 6000 جنيه" ;
+"Amount should be greater than 5 LE" = "أدخل قيمة أكبر من 5 جنيه" ;
+
+"Amount should be less than 200 LE" = "أدخل قيمة أقل من 200 جنيه" ;
+"Amount should be greater than 2 LE" ="أدخل قيمة أكبر من 2 جنيه" ;
+
+"Your password has been sent to you by SMS, please check your mobile number" = "Your password has been sent to you by SMS, please check your mobile number";
+
+"This account is not belong to your mobile" = "لضمان سريه بيانتك، يرجي طلب كلمه المرور من نفس الخط";
+//Tutorial :
+"Next"="التالي";
+"Done" = "تم";
+"Done!" = "تم";
+"tutorialtitle0" = "إيه هي خدمة ڤودافون كاش؟";
+"tutorialtitle1" = "تحويل أموال";
+"tutorialtitle2" = "شحن و دفع فواتير";
+"tutorialtitle3" = "طريقة الاشتراك";
+"tutorialtitle4" = "أهمية الرقم السري";
+"tutorialtitle5" = "استمتع بخدمات ڤودافون كاش";
+
+"tutorialDesc0" = "ڤودافون كاش هي أسهل و أسرع و أأمن طريقة تبعت بيها￼ فلوس ، تشحن رصيد ، تدفع فواتيرك و تعمل خدمات تانية كتير من اي مكان و في اي وقت من موبايلك";
+
+"tutorialDesc1" = "حول فلوس لأهلك و اصحابك في اي مكان في مصر من￼ موبايلك في أي وقت بسعر جنيه واحد فقط";
+
+"tutorialDesc2" = "من ڤودافون كاش ممكن تدفع فاتورة خطك او فاتورة أي خط تاني من￼ موبايلك و كمان تقدر تشحن رصيد و تستمتع بعروض كتير";
+
+"tutorialDesc3" = "اعرف فين اقرب فرع ڤودافون ليك و اشترك ببلاش في خدمة ڤودافون كاش￼ عشان تستمتع بالخدمات المختلفة";
+
+"tutorialDesc4" = "الرقم السري يحفظ سرية عملياتك و يحافظ على فلوسك في أمان . لازم تنشئ رقم سري لحسابك لتأمين العمليات. اختار إنشاء الرقم السري من القائمة الرئيسية واتبع الخطوات";
+
+"tutorialDesc5" = "تقدر تشوف المعلومات دي تاني عن طريق المساعدة --> معلومات عن ڤودافون كاش";
+
+//Vodafone Cash Money Transfer
+"MoneyTransfer_FeesInquiry" = "برجاء تأكيد تحويل مبلغ %@ جنيه لرقم %@ و سيتم خصم مصاريف التحويل" ;
+"MoneyTransferedSuccessfully" = "شكرا لاستخدامك ڤودافون كاش" ;
+"Confirmation_EL" = "التأكيد" ;
+"Transfer Done" = "تم التحويل" ;
+
+//Transaction History
+"You will briefly receive SMS with your Vodafone Cash transactions" = "سيتم إرسال رسالة بآخر عمليات ڤودافون كاش" ;
+"Transaction History" = "آخر العمليات" ;
+
+//Pay bill
+"Amount should be greater than 5 LE" = "أدخل قيمة أكبر من 5 جنيه";
+"Amount should be less than 6000 LE" = "أدخل قيمة أقل من 6000 جنيه";
+"Bill amount:" = "قيمة الفاتورة:";
+
+"Please confirm paying" = "يرجي تأكيد دفع";
+"L.E for the bill of mobile number" = "جنيه لفاتورة الرقم";
+"to " = "ل";
+"your mobile bill" = "فاتورة موبايلك";
+"for the bill of" = "لفاتورة";
+
+"The bill has been paid" = "تم دفع الفاتورة￼";
+"Thank you for using Vodafone Cash!" = "شكرا لاستخدامك ڤودافون كاش ";
+"Amount should be from 5 LE to 6000 LE" = "أدخل قيمة بين 5 جنيه و 6000 جنيه";
+"Amount should be from 5 LE to 200 LE" = "أدخل قيمة بين 5 جنيه و 200 جنيه";
+
+//TNPS
+"We love to hear from you" = "رأيك يهمنا" ;
+
+//Create Pin
+"The entered pin codes don’t match" = "الأرقام السرية المدخلة لا تتوافق" ;
+"You have successfully created a PIN code for your account" = "تم بنجاح انشاء رقم سري لحسابك" ;
+
+
+//Him & Her super number
+"Her free number" = "الرقم المجاني";
+"Him free number" = "الرقم المجاني";
+
+"Now you can choose a Red Him number to call for free" = " دلوقتي تقدري تختاري أي نمرة Red Him تكلميها براحتك في اي وقت";
+"Now you can choose a Red Her number to call for free" = "دلوقتي تقدر تختار اي نمرة Red Her تكلمها براحتك في اي وقت";
+"*Add number" = "*رقم الموبايل";
+"Set Number" = "احفظ الرقم";
+"Change Number" = "تغيير الرقم";
+"himHerConfirmPre" = "يرجي تأكيد اضافة رقم";
+"himHerConfirmPost" = "لخدمة الرقم المجاني";
+"Current free number:" = "الرقم المجاني الحالي:";
+"himHerSuperNumberSetBeforeError" = "عفواً، لا يمكن تغيير الرقم خلال 30 يوم من التغيير السابق";
+
+
+//MI
+"RenewableAddonConfirmation" = "بشرائك لهذه الإضافة ستفقد أي إضافات إنترنت متجددة تلقائياً مفعلة حالياً" ;
+
+
+// ### Acquisation promo  ###
+
+
+
+
+"MI_promorion_title" = " ! مفيش أحلى من الانترنت ببلاش";
+"login_promotion_MI_message" = "إستمتع بجيجا هدية لمدة إسبوع";
+"login_promotion_Voucher_message" = "لكل عملاء أنا ڤودافون، استبدل كود هديتك من موزعينا, العرض صالح لمدة ٣٠ يوم من تاريخ الإشتراك";
+
+"Successful_voucher_offer_redemption" = "كود هديتك هو %@ ، استبدل كود هديتك من موزعينا, العرض صالح لمدة ٣٠ يوم";
+
+
+"Successful_MI_offer_redemption" = "إستمتع ب ١ جيجا بايت صالحه لمدة ٧ أيام مجانا";
+
+"Voucher_offer_details_in_the_Notifications_icon" = "لكل عملاء أنا ڤودافون، استبدل كود هديتك من موزعينا, العرض صالح لمدة ٣٠ يوم من تاريخ الإشتراك" ;
+"MI_offer_details_in_the_Notifications_icon" = "لكل عملاء أنا ڤودافون ، استمتع ب-١ جيجا انترنت ببلاش, العرض صالح لمدة ٣٠ يوم من تاريخ الإشتراك" ;
+"Failed_offer_redemption" = " عفوا حدث خطأ خلال تنفيذ العملية" ;
+
+"Redeem" = "احصل علي العرض";
+
+"Enjoy your gift" = "استمتع بهديتك";
+
+
+
+// Ramadan promo
+"Ramadan Promo" = "كارت العيلة";
+"Social Add-Ons" = "باقات السوشيال الاضافية";
+"Video Add-Ons" = "باقات الفيديو الاضافية";
+"Throttling Add-Ons" = "كمل على النت بسرعة محدودة";
+"Music Add-Ons" = "باقات المزيكا الاضافية";
+
+"Pause Internet" = "إيقاف الانترنت";
+"Start Internet" = "تكملة الانترنت";
+"Resume Internet" = "تكملة الانترنت";
+"Repurchase" = "إعادة شراء";
+
+"Social Description" = "";
+"Video Description" = "";
+
+"Social_ADDON_Description" = "باقة سوشيال الإضافية";
+"Video_ADDON_Description" = "باقة الفيديو الإضافية";
+
+"MI_refresh_message" = "إعادة شراء الباقة ";
+
+"Your Balance less than your bundle price do you want to use your virtual balance" = "رصيدك اقل من سعر الباقه ,هل تريد استخدام رصيد الcredit";
+
+"Your Virtule Balance less than your bundle price do you want to recharge your balance" = "رصيد الcredit اقل من سعر الباقه ,هل تريد اعادة شحن رصيدك";
+
+"addOnQuotaConfirmDeactivate" = " إيقاف الباقة الإضافية";
+
+"Service has been Deactivated" = "تم إيقاف الباقة الإضافية ";
+"SuccessRamadanGift" = "جاري تنفيذ طلبك";
+
+"pause Description"= "يتم محاسبتك الآن لكل ميجابايت " ;
+
+"play Description" = "الانترنت متوقف، تابع الإستخدام" ;
+
+
+"vodafone_splashscreen_loading" = "Loading";
+
+"MIMainTitle" = "الموبايل إنترنت" ; 
+
+// ### SECTION  ###
+
+"vodafone_main_title" = "اختبر سرعة الشبكة";
+"vodafone_main_txt" = "اختبر سرعة الشبكة بسهولة و سرعة و دقة. نتائج الاختبار تصلنا و  تساعدنا على التحسين الدائم للشبكة لنضمن لك افضل تجربة تواصل مع فودافون.";
+"vodafone_main_service" = "النتائج تصل لفودافون";
+"vodafone_main_service_deactivate" = "النتائج لا تصل لفودافون";
+"vodafone_main_service_state_active" = "Currently recording and sharing network information";
+"vodafone_main_service_state_inactive" = "Not recording or sharing network information";
+"vodafone_general_on" = "ON";
+"vodafone_general_off" = "OFF";
+"vodafone_menu_monitor" = "Network Results";
+"vodafone_menu_how_to" = "كيف يعمل اختبار السرعة؟";
+"vodafone_menu_uninstall" = "Uninstalling AppName";
+"vodafone_main_dialog_stop_service_title" = "وقف المشاركة؟";
+"vodafone_main_dialog_stop_service_summary" = "باختيار تأكيد نتائج اختبارات الشبكة سوف لا تصل لفودافون";
+"vodafone_general_yes" = "Yes";
+"vodafone_general_no" = "No";
+"vodafone_general_ok" = "تأكيد";
+"vodafone_general_deny" = "Deny";
+"vodafone_general_cancel" = "الغاء";
+"vodafone_general_close" = "Close";
+"vodafone_main_dialog_start_service_title" = "Reactivate?";
+"vodafone_main_dialog_start_service_summary" = "With \"active and sharing\" turned off, we can\'t create your network results. Turn it back on?";
+
+// ### SECTION  ###
+
+"vodafone_monitor_title" = "Network Results";
+"vodafone_monitor_mobile" = "Mobile";
+"vodafone_monitor_network_disclaimer" = "The usage information shown is for guidance only, please refer to your billing information for your billed data and voice usage.";
+"vodafone_monitor_network_title" = "Network Coverage";
+"vodafone_monitor_network_summary" = "Percentage of time spent in full coverage (past 30 days)";
+"vodafone_monitor_data_coverage_title" = "Internet Connectivity";
+"vodafone_monitor_data_coverage_summary" = "Percentage of successful connectivity tests for internet or data services (past 30 days)";
+"vodafone_no_data_available" = "Network results can only be collected from now on. Therefore, no values ​​are displayed initially.";
+"vodafone_monitor_calls_title" = "Calls made today";
+"vodafone_monitor_calls_summary" = "Duration of outgoing calls in hours minutes and seconds";
+"vodafone_monitor_calls_chart" = "Past 30 days outgoing calls";
+"vodafone_monitor_data_mobile_title" = "Data used today";
+"vodafone_monitor_data_mobile_summary" = "Mobile data used in Megabytes";
+"vodafone_monitor_data_mobile_chart" = "Past 30 days of mobile data usage";
+"vodafone_monitor_app_mobile_title" = "Apps Mobile Data Usage";
+"vodafone_monitor_app_mobile_summary" = "Apps that used the most data over the past 30 days";
+"vodafone_monitor_wifi" = "Wi-Fi";
+"vodafone_monitor_data_wifi_title" = "Wi-Fi Data used today";
+"vodafone_monitor_data_wifi_summary" = "Wi-Fi data used in megabytes";
+"vodafone_monitor_data_wifi_chart" = "Past 30 days of WiFi data usage";
+"vodafone_monitor_app_wifi_title" = "Apps Wi-Fi Data usage";
+"vodafone_monitor_app_wifi_summary" = "Top ten apps that used the most Wi-Fi data over the past 30 days";
+
+// ### SECTION  ###
+
+"vodafone_howto_title" = "كيف يعمل اختبار السرعة؟";
+"vodafone_app_name" = "اختبر سرعة الشبكة";
+"vodafone_app_descrip" = "Vodafone Net Perform";
+"vodafone_howto_txt" = "اختبار سرعة الشبكة يتيح لنا معلومات عن كيفية عمل جهازك مع الشبكة و خدمات فودافون. هذه المعلومات تصلنا فى سرية تامة بدون اى ايضاح عن المستخدم او رقم الموبايل وتساعدنا نتائج الاختبار فى التحسين الدائم للشبكة مما يضمن لعملائنا افضل تجربة تواصل مع فودافون";
+"vodafone_mobile_coverage" = "Network Coverage";
+"vodafone_mobile_coverage_content" = "This application will capture statistics about your connectivity for phone calls. This allows us to diagnose connectivity or connection quality problems and make improvements to our network in your area. We log:";
+"vodafone_mobile_coverage_content_bullet1" = "the percentage of time your phone is on the network";
+"vodafone_mobile_coverage_content_bullet2" = "the cell ID and location of the phone masts used and how you move between them, when your phone is active";
+"vodafone_mobile_coverage_content_bullet3" = "signal strength";
+"vodafone_mobile_coverage_content_bullet4" = "اماكن بدون تغطية او تغطية ضعيفة";
+"vodafone_mobile_coverage_content_bullet5" = "جودة التغطية  (2G, 3G, 4G)";
+"vodafone_internet_coverage" = "Internet Connectivity";
+"vodafone_internet_coverage_content" = "This application will capture statistics about your connectivity for internet or data services.  This allows us to diagnose connectivity or connection quality problems and improve the data network in your area. We log:";
+"vodafone_internet_coverage_content_bullet1" = "every hour, a test of whether you can connect to the internet";
+"vodafone_internet_coverage_content_bullet2" = "سرعة التحميل ورفع المعلومات";
+"vodafone_internet_coverage_content_bullet3" = "the cell ID and location of the phone masts used and how you move between them, when your phone is active ";
+"vodafone_internet_coverage_content_bullet4" = "signal strength";
+"vodafone_internet_coverage_content_bullet5" = "اماكن بدون تغطية او تغطية ضعيفة";
+"vodafone_internet_coverage_content_bullet6" = "جودة التغطية  (2G, 3G, 4G)";
+"vodafone_internet_coverage_content_bullet7" = "سرعة الاتصال بالشبكة";
+"vodafone_internet_coverage_content_bullet8" = "Wi-Fi connection quality and MAC addresses of the Wi-Fi hot spots your device can see, and how congested they are";
+"vodafone_call_quality" = "Call Quality and Usage";
+"vodafone_call_quality_content" = "The success or failure of your calling experience can be diagnosed using technical details about the network, your coverage, or your phone’s signal quality during a call. This helps us improve all aspects of your calling experience. We log:";
+"vodafone_call_quality_content_bullet1" = "the cell ID and location of the phone masts serving your incoming and outgoing calls and other masts used if you change location during the call";
+"vodafone_call_quality_content_bullet2" = "signal strength";
+"vodafone_call_quality_content_bullet3" = "call duration";
+"vodafone_call_quality_content_bullet4" = "how the call ends";
+"vodafone_call_quality_content_bullet5" = "quality of the coverage (2G, 3G, 4G)";
+"vodafone_internet_quality" = "Data Usage";
+"vodafone_internet_quality_content" = "So that we can diagnose the overall usage of the internet data use on different phone models. We capture information about how much you or your device use internet services and consume data. This helps us improve device and network data efficiency for you and other customers based on real world data usage. We log:";
+"vodafone_internet_quality_content_bullet1" = "hourly data use";
+"vodafone_internet_quality_content_bullet2" = "how much data your phone uses when it\'s in standby mode";
+"vodafone_internet_quality_content_bullet3" = "how much data goes over Wi-Fi connections vs. the cellular network";
+"vodafone_applications" = "Applications";
+"vodafone_applications_content" = "So that we can identify trends in data usage that help us allocate capacity for data heavy applications in your area, we assess the data use of the applications on your phone. We log:";
+"vodafone_applications_content_bullet1" = "what apps are installed on your phone";
+"vodafone_applications_content_bullet2" = "what apps are started each day";
+"vodafone_applications_content_bullet3" = "how long they are used";
+"vodafone_applications_content_bullet4" = "how much data and how fast each app receives and transmits ";
+"vodafone_device" = "معلومات عن الجهاز";
+"vodafone_device_content" = "لنتمكن من تقييم اداء الاجهزة المختلفة مع الشبكة و حل اى مشاكل مرتبطة بالجهاز المستخدم نقوم اثناء الاختبار بجمع المعلومات عن:";
+"vodafone_device_content_bullet1" = "نوع الموبايل";
+"vodafone_device_content_bullet2" = "نظام التشغيل";
+//"vodafone_device_content_bullet3" = "نسخة برنامج ثابت";
+//"vodafone_device_content_bullet4" = "قدرات الأجهزة";
+"vodafone_device_content_bullet5" = "اللغة";
+"vodafone_device_content_bullet6" = "حالة البطارية";
+"vodafone_device_content_bullet7" = "استهلاك الذاكرة";
+"vodafone_device_content_bullet8" = "اخر وقت لاعادة التشغيل الجهاز";
+"vodafone_location" = "الموقع";
+"vodafone_location_content" = "بقياس مستوى الشبكة وفحص الجهاز نتمكن من تحديد موقعك الحالى من خلال محطات الشبكة و من الواى فاى  المستخدم من جهازك. اذا كان جهازك او احدى التطبيقات تستخدم محدد الموقع فهذا يساعدنا على تحديد الموقع بطريقة اكثر دقة. و بذلك يمكننا تحديد المواقع التى يوجد بها ضعف بالشبكة, فنعمل على تحسين الشبكة فى هذه المنطقة لضمان افضل خدمة لعملائنا.";
+"vodafone_anon" = "سرية المعلومات";
+"vodafone_anon_content" = "البيانات الناتجة من اختبار السرعة و التى تساعدنا على تحسين الشبكة لا تتطلب اى معلومات شخصية للمستخدم. هذا يعنى ان البيانات تصل الى فودافون من نتائج الاختبار لا يوجد بها اى معلومات عن المستخدم.";
+"vodafone_anon_content_bullet1" = "عدم تسجيل رقم المحمول";
+"vodafone_anon_content_bullet2" = "عدم تسجيل ارقام المكالمات";
+//"vodafone_anon_content_bullet3" = "عدم تسجيل الرسائل الخاصة بك";
+"vodafone_anon_content_bullet4" = "عدم تسجيل الرسائل الخاصة بك";
+"vodafone_anon_content_bullet5" = "عدم تسجيل مواقع  ال Wi-Fi";
+
+// ### SECTION  ###
+
+"vodafone_settings_title" = "Settings";
+"vodafone_settings_reset_title" = "Reset all counters";
+"vodafone_settings_reset_summary" = "Clears and resets all of the network apps counters";
+"vodafone_settings_dialog_reset_summary" = "This will reset the counters within the application. Are you sure you want to proceed?";
+"vodafone_settings_reset_toast" = "All counters have been reset.";
+"vodafone_settings_about_title" = "معلومات اكثر";
+"vodafone_about_google_play_services_legal_notices" = "Google Play Services Legal Notices";
+
+// ### SECTION  ###
+
+
+"vodafone_general_bullet" = "&#8226;";
+
+// ### SECTION  ###
+
+"vodafone_footer_item_network" = "الشبكة";
+"vodafone_footer_item_speedtest" = "Speed Test";
+"vodafone_footer_item_info" = "اختبر سرعة الشبكة";
+
+// ### SECTION  ###
+
+"vodafone_menu_speedo" = "اختبر سرعة الشبكة";
+"vodafone_history_download" = "التحميل";
+"vodafone_history_upload" = "رفع الملفات";
+"vodafone_history_ping" = "Ping";
+"vodafone_speedo_request_server_url" = "Select server";
+"vodafone_speedo_alert_no_dataconnection_title" = "No data connection";
+"vodafone_speedo_alert_no_dataconnection_text" = "Please enable mobile data transfer or connect to a Wi-Fi to perform a speed test.";
+"vodafone_speedo_warning_hint" = "Warning";
+"vodafone_speed_roaming_notice" = "Please, note that your device is currently in roaming state. This can effect additional costs while using mobile data services. Would you proceed to perform a speed test?";
+"vodafone_speedo_hint" = "The speed test generates data traffic. Therefore, depending on your personal data plan, it may cause charges for cellular data traffic.";
+"vodafone_general_confirm_save" = "Confirm, don\'t ask again";
+"vodafone_dialog_wait_for_benchmark" = "Loading speed test results";
+"vodafone_dialog_wait_for_benchmark_loading" = "Loading";
+"vodafone_speedo_unit_mbps" = "ميجا/ث";
+"vodafone_speedo_result_header" = "نتيجة الاختبار";
+"vodafone_speedo_result_disclaimer" = "نتيجة الاختبار تحسب على اساس 10 ثوانى من التحميل و الرفع. السرعة لاوقات اقل او بيانات اقل (مثل بريد الكترونى) غالبا ستكون ابطئ";
+"vodafone_result_start_speedtest" = "ابدأ اختبار جديد";
+"vodafone_result_last_speedtest" = "اختبار السرعة بتاريخ";
+"vodafone_result_last_speedtest_competition" = "compared to others in my region:";
+"vodafone_result_last_speedtest_competition_better" = "better ";
+"vodafone_result_last_speedtest_competition_comparable" = "comparable";
+"vodafone_result_last_speedtest_competition_worse" = "worse";
+"vodafone_history_network" = "الشبكة";
+"vodafone_history_date" = "التاريخ";
+"vodafone_history_delete_menu" = "Delete";
+"vodafone_speedo_history_empty" = "History empty";
+"vodafone_general_empty2" = "-";
+"vodafone_result_history" = "الاختبارات السابقة";
+"vodafone_result_history_single" = "My Speed Test";
+"vodafone_history_delete_confirm" = "Do you really want to delete the selected items?";
+"vodafone_general_hint" = "Hint";
+"vodafone_about_legal_notices" = "Legal Notices";
+"vodafone_no_location_available" = "No location available.";
+"vodafone_speedo_start" = "ابدأ الاختبار";
+
+
+"Sign In" = "Sign In";
+"Edit" = "تعديل";
+
+// ### SECTION  ###
+
+"vodafone_ios_main_service_state_active" = "ستصلنا بيانات الشبكة فقط عندما تقوم باختبار السرعة – كل ما يصلنا هى بيانات عن موقعك الحالى, و بيانات عن الجهاز و مستوى عمل الشبكة.";
+"vodafone_ios_main_service_state_inactive" = "النتائج لا تصل لفودافون";
+"vodafone_ios_mobile_coverage_connectivity" = "تغطية الشبكة";
+"vodafone_ios_internet_coverage_content_bullet8" = "جودة خدمة ال Wi-Fi";
+"vodafone_ios_mobile_coverage_content" = "اختبار سرعة الشبكة يتيح لنا معلومات عن اداء الشبكة من مكالمات صوتية و خدمات الانترنت مما يساعدنا على تحسين الشبكة لضمان تمتع المستخدم بافضل خدمة من فودافون.";
+"vodafone_ios_main_dialog_start_service_summary" = "With \"active and sharing\" turned off, we can\'t measure your network performance. Turn it back on?";
+
+// red points
+"Loyality Points" = "نقاط فودافون وان";
+"Points History" = "تفاصيل النقاط";
+"Points information" = "معلومات عن النقاط";
+
+"Expiry Date" = "تاريخ الانتهاء";
+"Addition Date" = "تاريخ الاضافة";
+"Transaction Type" = "نوع العملية";
+"Added" = "مضافة";
+"Removed" = "مخصومة";
+"Date" = "التاريخ";
+"Destination" = "المكان";
+"Transaction ID" = "رقم العملية";
+"Date and time" = "الوقت والتاريخ";
+"Receipt" = "الايصال";
+
+"Red Points History Desc" = "تابع نقاطك المضافة أو المخصومة";
+"No data has been found" = "لا توجد بيانات";
+
+"Red Partners" = "شركاء RED";
+"Call" = "مكالمة";
+"View on map" = "انظر الخريطة";
+
+
+"PointsInfoDesc" = "بدون أي اشتراك أو رسوم إضافية, جمع و استبدل النقاط من مشترياتك من خلال شركاء فودافون   ";
+
+"Annual points" = "النقاط السنوية";
+"Next expiry Information" = " أقرب النقاط للانتهاء";
+"Red Points Partners" = "شركاء نقاط RED";
+"Check out our Red Points partners" = "تعرف علي شركاء نقاط RED";
+"annual Points error occurred" = "خطأ في النقاط السنوية";
+"You will receive" = "سوف تستقبل";
+"after" = "بعد";
+"My current points" = "نقاطي الحالية";
+"LE" = "جنيه";
+"Points" = "نقطه";
+"an amount of" = "بعض من";
+"will be expired by"="سوف تنتهي في";
+
+"Amount Points" = "اجمالى النقاط";
+
+"Deducated place" = "مكان التحصيل";
+"Contacts:" = "جهات الاتصال:";
+
+"Roaming Tips 1" = "راجع موقع فودافون الإلكتروني  وأعرف خدمات التجوال المتاحة وأسعار التجوال فى الدولة التى سوف تسافر اليها. \n\nكل عملاء Vodafone Open متاح لهم تشغيل التجوال ببلاش بعد التأكد من سداد 4 فواتير و دفع 750 جنيه تأمين. اذا كان لديك خط فودافون Open كلم 888 لتشغيل التجوال.\n\nاذا كان لديك خط فودافون بزنس يمكنك الاتصال بالمفوض لتشغيل التجوال.موبايلك يعمل على معظم الشبكات، لكن لو كنت بتزور أمريكا أو كندا أو أمريكا الجنوبية ستحتاج إلى تليفون ثلاثي التردد، وفى جزر الكاريبى قد تحتاج إلى تليفون رباعى التردد، أما لو مسافر إلى اليابان أو كوريا الجنوبية، فاعلم أن هذه الدول تعمل على شبكة بتكنولوجيا أخرى و تحتاج إلى موبايل خاص، لذا راجع دليل تليفونك المحمول\n\nتأكد أن لديك شاحن كهرباء مناسب للدولة التي ستقوم بزيارتها، حتى تستطيع شحن تليفونك، وننصح باستخدام شاحن World Travel Adaptor المتاح فى السوق المحلية والذى يسمح لك باستخدام شاحن تليفونك في أي دولة في العالم.\n\nتأكد أنه تم تشغيل خدمة التجوال على الخط الخاص بك من خلال الاتصال بـ 888.\n\nاذا كان لديك خط مدفوع مقدماً أو كنترول أو إيزى، تأكد أن لديك رصيد كاف للاستخدام أثناء التجوال.\n\nاذا كنت ستقوم بالشحن ع الطاير باستخدام بطاقة ائتمانك أثناء التجوال، تأكد أن لديك قائمة خدمات فودافون على تليفونك وأنك قمت بتسجيل بطاقة الائتمان الخاصة بك،\n\nأعرف أقرب فرع من فروع فودافون، و سجل بطاقة ائتمانك وتحصل على شريحة جديدة.";
+
+
+
+"Roaming Tips 2" = " افتح تليفونك.\n\nفى معظم الاحيان، سيبحث تليفونك بشكل تلقائي عن شبكة وسيقوم بالتسجيل عليها، وإذا لم يقم تليفونك بذلك، راجع دليل استخدام تليفونك لمعرفة كيفية البحث بشكل يدوى عن شبكة، وعندما تجدها، اختر شبكة فودافون المحلية المفضلة لأحسن الأسعار والخدمات.\n\nسنرسل لك رسالة لإبلاغك بأسعار التجوال على الشبكة التى تستخدمها، كما تفيد الرسالة إذا ما كانت هناك شبكة مفضلة فى الدولة التي تزورها لأفضل الأسعار والخدمات، اقرا هذه الرسالة جيداً واحفظها على تليفونك كمرجع.";
+
+"Roaming Tips 3" = "رصيدك خلص؟ \n اطلب #رقم الموبايل*٥٠٥* علشان تبعت كلمني شكرآ لأي رقم ب75 قرش اثناء التجوال علما بأن الخدمة متاحة فقط مع بعض الشبكات\n\n التحويل للبريد الصوتي\nلو كان نظامك خط مفتوح يمكنك تحويل كل المكالمات الواردة إلى البريد الصوتي لتفادي أى تكاليف أثناء التجوال.\n\n اغلق التحديثات التلقائية\nبعض التليفونات والكمبيوترات لديها برامج تقوم بتحميل التحديثات والنسخ الجديدة فور دخولها على الإنترنت، قم باغلاق التحديثات التلقائية قبل أن تشغل خدمة التجوال حيث أنها قد تستهلك حجم كبير من البيانات.\n\nاذهب إلى Start ثم Control Panel ثم Security Centre ثم Automatic Updates واختر Turn off automatic updates واضغط Ok.
+";
+
+
+"Roaming Tips 4" = "الاتصال من خارج مصر\n\nاذا كنت تريد الاتصال بمصر، تأكد أنك قمت باستبدال الصفر الاول بـ 20+\n\n(مثال: 01001888888 تصبح 201001888888+)\n\nاستقبال المكالمات أثناء التواجد بالخارج\n\nعندما تكون خارج مصر، يتم محاسبة الشخص الذى يتصل بك وفقاً لنفس التعريفة التى يدفعها عندما يتصل بك و انت فى مصر، لكنك ستدفع عند استقبال مكالمات في أي دولة فى العالم وفقاً لتعريفة الدولة التى تزورها والشبكة التى تستخدمها أثناء التجوال، هذه الرسوم لتغطية تحويل المكالمة لك أثناء تواجدك خارج مصر،  أسعار استقبال المكالمات أثناء التجوال. ";
+
+
+"Roaming Title 1" = "قبل أن تسافر" ;
+"Roaming Title 2" = "عند الوصول" ;
+"Roaming Title 3" = "كيفية التوفير أثناء التجوال" ;
+"Roaming Title 4" = " كيف تستخدم تليفونك في الخارج" ;
+
+
+"Roaming Services title" = "خدمات التجوال" ;
+"Roaming QuickCheck title" = "التجوال" ;
+"Roaming My Account title" = "التجوال" ;
+"Roaming World Map" = "التجوال" ;
+"Roaming AddOns title" = "التجوال" ;
+"Roaming Bundles title" = "التجوال" ;
+"Roaming Operators title" = "التجوال" ;
+"Roaming Tips title" = "التجوال" ;
+"Roaming Tutorials" = "التجوال" ;
+"Roaming Help title" = "التجوال" ;
+"Pay as you go description" = "تجوالك أسهل مع باقات المحاسبة علي حسب الإستخدام";
+"Roaming Not Subscribed" = "انت غير مشترك فى باقات التجوال";
+
+// MI summer promo
+"subscribe" = "اشترك";
+"You are already subscribed" = "انت بالفعل مشترك";
+"Music Bundle Promotion"="عرض باقات المزيكا";
+"Music Bundle Promotion Body"="عشان بتستخدم أنا ڤودافون ,استمتع بمزيكا أكتر عن طريق ٣٠ ميجابايت مجانا  يوميا بدلا من 20 ميجابايت";
+"subscription succeed" = "الاشتراك نجح";
+
+// MI On shelf
+"MI_ON_Shelf_Title" = "عروض الموبايل إنترنت" ;
+
+"MI ON SHELF Confirm upgrade" = "تأكيد تغيير الباقة ؟" ;
+
+"MI_Deactivate" = "هل تريد إلغاء هذة الباقة";
+
+"Deactivate" = "إيقاف الباقة";
+
+"Deactivate Bundle" = "إيقاف الباقة";
+
+// ADSL Module
+
+"Speed Addons"="باقات السرعة الاضافية";
+"Qouta Addons"="باقات الجيجابايت الاضافية";
+"You aren't subscribed to ADSL"="انت غير مشترك في خدمة ال ADSL";
+"valid till"="ساري حتى";
+"Send Request"="ارسال طلب";
+"Your requset sumbited successfully." = "تم ارسال طلبك بنجاح!";
+"Promo"="عرض";
+"Renewal Date"= " تاريخ التجديد : ";
+"Renew this bundle"="تجديد الخدمة";
+"Your request number"="رقم الطلب الخاص بيك";
+"Your request has been done successfully" = "تم تنفيذ طلبك بنجاح";
+"We will contact you in 24 hours to confirm your request."="سوف يتم التواصل معاك في خلال ٢٤ ساعة للرد على طلبك
+";
+"ADSL Managment Title"="تفاصيل الحساب";
+"ADSL Managment Subtitle"="اتحكم في حساب ال ADSLتقدر تعرف استهلاكك";
+"ADSL Change Speed section title"="تغيير سرعة ال ADSL";
+"ADSL Change Speed Subtitle" = "اختار سرعة الADSL  اللى تناسب استهلاكك";
+"New ADSL Prices"="أسعار ال ADSL الجديدة";
+"ADSL Summer Promo"="أسعار ال ADSL العادية";
+"ADSL Add-ons"="شراء باقات اضافية";
+"You are about to renew your ADSL Bundle" = "عزيزنا العميل سوف يتم تجديد باقة الADSL";
+"You are about to change your ADSL speed" = "سوف يتم تغير سرعة الADSL الخاصة بيك";
+"You are about to Activate" = "سوف يتم اضافة";
+"GB"="جيجا ";
+"from"="من";
+"Add-On"="اضافية";
+"Activate this Add-on"="تفعيل الباقة الاضافية";
+"Unlimited Speed"="سرعات بلا حدود";
+"Turbo Speed"="سرعات التربو";
+"ADSLSpeed" = "السرعة";
+"ADSLQouta" = "السعة";
+"ADSLGift" = "هدية";
+"ADSLPrice" = "الأسعار";
+
+"ADSL Speed section title"="عروض ال ADSL";
+"ADSL Speed Subtitle"="أقوى عروض ال ADSL في مصر";
+"ADSL Wiring Selection Title"="عروض ال ADSL";
+"ADSL Wiring Selection Subtitle"="أقوى عروض ال ADSL في مصر";
+"ADSL choose Wiring"="اختار نوع خطك الأرضي";
+"Copper"="نحاس";
+"Fiber"="فيبر";
+"Check Availability"="تأكد من توفر الخدمة";
+"ADSL Check Availability Title"="تأكد من توفر الخدمة";
+"ADSL Check Availability Subtitle"="تأكد من توفر الخدمة على خطك الأرضي";
+"ADSL Check Availability instructions"="اكتب رقم الموبايل و الرقم الأرضي";
+"Enter your mobile number"="رقم الموبايل";
+"Enter your landline number"="الرقم الأرضي";
+
+"Submit"="تسجيل";
+
+"ADSL Fiber Subscribe Title"="ادخل التفاصيل التالية";
+"ADSL Fiber Subscribe instructions"="ادخل رقم الموبايل و الرقم الأرضي";
+
+"ADSL Alternative Solutions Title"="تأكد من توفر الخدمة";
+"ADSL Alternative Solutions SubTitle"="تأكد من توفر الخدمة على خطك الأرضي";
+"ADSL alternative solutions Error msg"="للأسف خطك لا يدعم خدمة ال ADSL من ڤودافون";
+"ADSL alternative solutions desc"=" لو خطك الأرضي مش بيدعم ال ADSL ممكن تشتري من أجهزة الانترنت التالية";
+"Mi-Fi"="Mi-Fi";
+"WiFi USB"="WiFi USB";
+"Wireless Net"="النت الهوائى";
+"Buy now"="اشترى الان";
+"Speed Add-On"="باقة سرعة اضافية";
+"QuickCheck"="استخدامى";
+"Add-on desc" = "اشتري باقة اضافية و رجع سرعة الانترنت تاني لو خلصت باقتك الأساسية";
+
+"ADSL Managment select landline" = "اختار حساب الADSL عشان تتحكم فيه";
+
+"Your current bundle:" = "سرعتك الحالية: ";
+"Remaining" = "السعة المتبقيه: ";
+"Remaining!" = "المتبقى";
+"Speed_Add-on desc" = "اشتري باقة السرعة الاضافية و زود سرعة الانترنت";
+
+"Unlimited Quota" = "سعة بلا حدود";
+
+"Enjoy" = "استمتع ب";
+
+"Valid till renewal date" = "صالحة حتى ميعاد التجديد";
+
+"Valid for 24 hrs" = "صالحة لمدة ٢٤ ساعة";
+
+"Suspended" = "موقوف";
+
+"suspension vacation"="موقوف مؤقتاً";
+
+"suspension voluntary"="موقوف مؤقتاً";
+
+"Renewal date is Today" = "اليوم ميعاد تجديد الخدمة";
+
+"No Addons Available" = "لا يوجد باقات متاحه";
+
+"per month" = "في الشهر";
+
+"Change WiFi Password" = "تغيير كلمة المرور الخاصة بال WiFi";
+"Router Configuration" = "اعدادات الراوتر";
+"ADSL Troubleshooting Guide" = "للمساعدة في مشكلات ال ADSL";
+"Help me resolve a problem with" = "ساعدني في حل مشكلة الإنترنت";
+"My internet connection" = "ليس لدي إتصال بالانترنت";
+"My Wi-Fi" = "Wi-Fi الاتصال اللاسلكي";
+
+"View only Access"="معرفة التفاصيل فقط";
+"Manage Access"="تحكم في الحساب";
+"Delegation view title"="شريك الحساب";
+"Delegation view subTitle"="ممكن تضيف شريك للحساب و هيتحكم في الحساب أو ممكن تحدد صلاحيات الشريك و يشوف الحساب فقط بدون تحكم";
+"Delegated accounts numbers"="الأرقام المفوضة";
+"Router configuration next"="التالي";
+"ADSL Suspension vacations screen title"="ايقاف الخدمة مؤقتا";
+"ADSL Suspension vacations screen subTitle"="ممكن توقف الخدمة مؤقتا من غير ما تدفع قيمة الاشتراك الشهرية كاملة";
+"Activate this Suspension"="تفعيل";
+"Request"="اطلب الان";
+"ADSL Static IPs screen title"="ال IP الثابت";
+"ADSL Static IPs screen subTitle"="الIP الثابت هي خدمة اضافية تتيح لك تثبيت ال IP لخط ال ADSL";
+"Suspention vacations section title"="ايقاف الخط مؤقتا";
+"Static IP section title"="ال IP الثابت";
+"Select installation way"="اختر طريقة استلام الراوتر";
+"Visit"="توصيل منزلى للراوتر";
+"Pick from store"="من الفرع";
+"Invalid Landline Number"="الرقم الأرضي غير صحيح";
+"Name"="الاسم";
+"Owner name"="اسم صاحب الخط";
+"Address"="العنوان";
+"check if old subscribed"="التأكد هل الخط مشترك مع شركة اخرى";
+"Choose old subscriber"="اختار الشركة  الاخرى";
+"cancellation number"="رقم الالغاء";
+"TEData"="تي اى داتا";
+"Etisalat"="اتصالات";
+"Link dot Net"="لينك دوت نت";
+//"Other"="شركة اخرى";
+"Number deleted successfully"="تم الغاء الرقم بنجاح";
+"no numbers added yet"="لم يتم اضافة أرقام";
+"delegate number screen title"="شريك الحساب";
+"delegate number screen subTitle"="ممكن تفوض أي حد من أصحابك أو أهلك عشان يتحكم في حساب ال ADSL الخاص بيك أو لمعرفة التفاصيل";
+"delegate number screen desc"="رقمك الأرضي";
+"Delegate"="تفويض";
+"Number delegated successfully"="تم تفويض الرقم بنجاح";
+"Delegation Type"="نوع شريك الحساب";
+
+"Your Next Visit"="تاريخ  زيارتك القادمة";
+"ADSL Visits Screen Title"="تاريخ الزيارة";
+"ADSL Visits Screen subTitle"="اعرف تاريخ زيارتك القادمة";
+"ADSL Visits Screen desc"="اختار حساب ال ADSL عشان تراجع تاريخ الزيارة";
+"all landlines are view only"="عفوا, لا يمكنك مراجعة تاريخ الزيارة";
+"Suspention vacations section subTitle"="ممكن توقف الخدمة مؤقتا من غير ما تدفع قيمة الاشتراك الشهرية كاملة";
+"Static IP section subTitle"="الIP الثابت هي خدمة اضافية تتيح لك تثبيت ال IP لخط ال ADSL";
+"enter mobile number to delegate to"=" ادخل رقم الموبايل المفوض له";
+"ADSL Static IPs screen desc"="ممكن تتطلب IP خاص بيك";
+
+"ADSL Subscription Promos offer"="50% لمدة 12 شهور";
+
+"ADSL Subscription Promos"=" 50% لمدة ١٢ شهر";
+"Number Delegated Before"="هذا الرقم تم استخدامه من قبل";
+"ADSL Subscribe Data screen title"="بيانات الخط الأرضي";
+"ADSL Subscribe Data screen subTitle"="برجاء ادخال بيانات الخط الأرضي";
+//ADSL Delegation access level
+"owner"="حسابك الخاص";
+"manage"="تحكم في الحساب";
+"view"="معرفة التفاصيل فقط";
+
+"Speed Test Section Title"="اختبار سرعة ال     ADSL";
+"Visits Section Title"="الزيارة";
+"Change WiFi Password Section Title"="تغيير كلمة المرور الخاصة بال Wi-Fi";
+"Router Configuration Section Title"="اعدادات الراوتر";
+"ADSL Troubleshooting Guide Section Title"="للمساعدة في مشكلات ال ADSL";
+
+"Speed Test Section Subtitle"="اختبر سرعة ال Wi-Fi  الخاصة بيك";
+"Visits Section Subtitle"="اعرف تاريخ زيارتك القادمة";
+"Change WiFi Password Section Subtitle"="اعرف خطوات تغيير كلمة المرور الخاصة بال Wi-Fi";
+"Router Configuration Section Subtitle"="اعرف خطوات اعداد الراوتر الخاص بيك";
+"ADSL Troubleshooting Guide Section Subtitle"="بتواجهك مشكلة في الخدمة ؟ اتبع الخطوات في دليل المساعدة";
+
+"HG 520C/ HG 530"=  "افتح المتصفح الخاص بك\nاكتب في شريط العنوانhttp://192.168.1.1\nاسم المستخدم الافتراضى : vodafone\nكلمة المرور الافتراضية : vodafone\n1) من على اليسار اضغط على Basic\n2) اضغط على Wireless LAN\n3) في ال SSID = \"اسم شبكة الWi-Fi\"\n4) من Key \ Preshared Key = \"كلمة المرور\"";
+
+"HG 532e / HG 531V1"="افتح المتصفح الخاص بك\nاكتب في شريط العنوان http://192.168.1.1\nاسم المستخدم الافتراضي = vodafone\nكلمة المرور الافتراضية = vodafone\n1) من القائمة اختار Basic\n2) اضغط على WLAN\n3) في ال SSID = \"اسم شبكة ال Wi-Fi\"\n4) في ال Key أو ال Pre-shared Key = \"كلمة المرور\"";
+
+"HG532d V2"="افتح المتصفح الخاص بك\nاكتب في شريط العنوان http://192.168.1.1\nاسم المستخدم الافتراضي = vodafone\nكلمة المرور الافتراضية = vodafone\n1) اضغط على Home Network\n2) اختار WLAN Settings و اختار WLAN Encryption\n3) في ال SSID = \"اسم شبكة ال Wi-Fi\"\n4) في ال Key أو ال Pre-shared Key = \"كلمة المرور\"";
+
+"ADSL Managment"="اداره ال ADSL";
+"ADSL Offers"="اشترك في ال ADSL";
+"ADSL Delegation"="شريك الحساب";
+"ADSL Support"="الدعم";
+
+"cant delegate to your self"="عفوا, لا يمكنك تفويض حسابك لرقمك الشخصي";
+"not vodafone number"="عفوا, هذه الخدمة متاحة فقط لأرقام فودافون";
+"no visits found"="ليس لديك زيارة محددة!";
+"choose router model"="اختر موديل الراوتر الخاص بك ...";
+
+//ADSL error codes
+
+"Not registered number" = "عفوا, هذا الرقم غير مسجل!";
+
+"No enough balance"="عفوا, لا يوجد رصيد كافي لإتمام طلبك برجاء شحن رقم الموبايل الخاص بالرقم الأرضي";
+
+"Customer already has 3 activated landlines"="تم تشغيل خدمة الإنترنت المنزلى على 3 خطوط أرضيه متعلقه بهذا الرقم, يرجى تقديم رقم موبايل أخر";
+
+"Landline already active or suspended"="خدمة الإنترنت المنزلى تعمل بالفعل على هذا الرقم الأرضى / خدمة الإنترنت المنزلى متوقفه حاليا, يرجى الإتصال ب 2828 لإعادة التشغيل";
+
+"Non eligible rate plan"="لا يمكن تشغيل خدمة الإنترنت المنزلى وفقا لخطة الأسعار الحاليه لرقم الموبايل, يرجى تغيير خطة الأسعار و إعادة تقديم الطلب";
+
+"Landline was deactivated for less than three months"="  عفوا, غير متاح الاشتراك في الخدمة برجاء الاتصال ب 2828 للمساعدة !";
+
+"Corporate account"="لتشغيل خدمة الإنترنت المنزلى من خطوط موبايل الشركات, يرجى الإتصال ب 247 من رقم الموبايل المراد التشغيل من خلاله";
+
+"MSISDN does not exist"="رقم الموبايل غير موجود";
+
+"Inactive MSISDN"="رقم الموبايل غير صحيح";
+
+
+"Please Add New User" = "اضافة حساب جديد" ;
+"Delete Account" = "حذف الحساب" ;
+"Logout" = "الخروج" ;
+
+"Technical Support" = "الدعم الفني" ;
+"Online shop" = "الشراء اونلاين" ;
+
+"Trouble shooting Guide" = "دليلك لحل المشكلات";
+"Report a problem" = "الابلاغ عن مشكلة في التطبيق";
+"Contact us" = "اتصل بنا الان" ;
+
+// report problem
+
+"Report Problem Desc" = "لو بتواجهك مشكلة في التطبيق ,تقدر تبلغنا بيها لمساعدتك" ;
+"Report" = "ابلاغ";
+
+//VCN
+
+"OnlinePaymentMSG"= "سيتم اصدار كارت انترنت مؤقت بقيمة %@ ج و خصم ١٠ج رسوم الخدمة من حسابك. أول عمليه من كل شهر مجانا";
+
+"Please enter amount from value LE to value LE"="من فضلك أدخل قيمة من %@ جنيه الي %@ جنيه";
+
+"enter amount from LE to LE"=" أدخل قيمة من %.02f جنيه الي %.02f جنيه";
+
+"Amount of card"="قيمه الكارت %@ جنيه";
+
+"Virtual card details" = "برجاء إدخال الرقم السري و القيمه المراد عمل كريدت كارد بها";
+
+//Switch accounts message
+"You have reached max number of accounts to add" = "الحد الأقصي لإضافة حساب";
+"Add new account" = "أضف حساب جديد";
+"Add more than one account and manage them easily on the home screen" = "دلوقتي تقدر تضيف أكتر من حساب عشان تتحكم فيهم في نفس الوقت على الصفحة الرئيسية";
+"Enter the below data" = "أدخل البيانات التالية";
+
+//Bill Limit
+"Bill Limit" = "اتحكم في فاتورتك " ;
+"BillLimitErrorMsg" = "عفوا، لقد قمت بإدخال قيمة أقل من الحد الأدني للفاتورة";
+
+
+//ADSL Shop URLS
+"Wireless_net_URL" = "https://www.vodafone.com.eg/eshop/Catalogue/Internet-Services/Services/Wireless-Net";
+"MiFi_URL" = "https://www.vodafone.com.eg/eshop/Catalogue/Internet-Services/Devices/USB-MIFI-Promo/Mi-Fi-R207?skuId=sku250002";
+"Wi-Fi_USB_URL" = "https://www.vodafone.com.eg/eshop/Catalogue/Internet-Services/Devices/USB-MIFI-Promo/Wi-Fi-USB?skuId=sku600268";
+
+
+//Network Gurantee
+"TestGurantee Title" = "";
+"TestGurantee GoodNetowrk Desc" = "انت تستمتع بأسرع انترنت من فودافون";
+//"TestGurantee BadNetowrk Desc" =
+"TestGurantee Prize Success" = "سرعة الانترنت الان اقل من المتوسط. ليك هدية من فودافون 100 ميجا لمدة يوم";
+"TestGurantee Prize Fail" = "سرعة الانترنت الان اقل من المتوسط واستمتعت بهدية 100 ميجا لمدة يوم ببلاش من فودافون";
+"TestGurantee 2G" = "سرعة الانترنت الان اقل من المتوسط. ادخل على اعدادات الموبايل واضبط اعدادات الشبكة على 3G/4G/LTE للاستمتاع بانترنت اسرع من فودافون";
+"Speed test Title" = "اختبار سرعة الشبكة";
+"Speed test Desc"= "اختبار سرعة الانترنت";
+
+
+//ATM
+"ATMMSG"= "سوف يتم إصدار الرقم السري الخاص بماكينة الATM وسوف يرسل إليك في رسالة على هاتفك المحمول";
+
+// AVL
+"AVL no registered cards"="You don't have any registered cards, please contact your bank to be able to use this service";
+
+"LoadWalletTransferMSGConfirm"="سيتم تحويل %@ ج من كارتك البنكي الي حساب فودافون كاش و سيتم خصم %@ جنيه من حسابك بالبنك";
+
+"LoadWalletTransferTitleSuccess"="تم تحويل %@ج لحسابك في فودافون كاش. ";
+
+// MI CVM
+"MIConfirmationCVM %@" = " تم الاشتراك في %@ و ترحيل المتبقى من باقتك السابقة." ;
+
+"MIConfirmationCVM %@ downgrade" = " تم الاشتراك في %@ و إلغاء المتبقى من باقتك السابقة." ;
+
+//Donation
+
+"no data" = "لا يوجد مؤسسات للتبرع لها فى الوقت الحالى";
+"You’ll donate %@LE to (%@)" = "ستقوم بالتبرع ب %@ جنيه الى ( %@ )";
+"Thank you for donating" = "شكرا لتبرعك";
+
+// MI Red
+"Renewable" = "تجديد تلقائي" ;
+"On Demand" = " حسب الطلب" ;
+"Others" = "";
+
+
+// new scripts
+"Later" = "الغاء";
+"Today’s offers" = "قائمة عروض اليوم";
+"Click here" = "اضغط هنا";
+"social MBs" ="ميجا بايتس";
+"Facebook MBs"="ميجابايتس";
+"free flex"="فليكس";
+
+//Flex transfer
+"Flex Transfer"="حوّل فليكساتك";
+"FlexTransferDescription"="دلوقتي تقدر تحوّل لحد 250 فليكس لكل صحابك وقرايبك اللي على نظام فليكس";
+
+"50FlexDesc"="٥٠ فليكس بـ50 قرش";
+"100FlexDesc"="١٠٠ فليكس بـ1 جنيه";
+"150FlexDesc"="١٥٠ فليكس بـ1.5 جنيه";
+"200FlexDesc"="٢٠٠ فليكس بـ2 جنيه";
+"250FlexDesc"="٢٥٠فليكس بـ2.5 جنيه";
+
+"Flex Transfer Module title" = "خدمات الرصيد";
+"Flex Transfer screen title" = "حوّل فليكساتك";
+"Flex Transfer screen subTitle" = "حوّل لحد 250 فليكس لكل صحابك وقرايبك اللي على نظام فليكس";
+"Flex Transfer screen desc" = "";
+"Enter mobile number" = "أدخل رقم الموبايل";
+"Enter scratch card number" = "ادخل رقم كارت الشحن";
+"Transfer now" = "حوّل دلوقتي";
+"flex transfer succeed"="تم تحويل فليكساتك بنجاح";
+
+//error codes
+"Please try again later"="برجاء المحاولة في وقت لاحق";
+"Sorry you reached the maximum limit of flexes" = " عفوا انت وصلت للحد الاقصي من الفليكسات";
+
+"Sorry the number is eligible to less limit than requested" = "  عفوا الرقم غير مسموح له بالحد المطلوب من الفليكسات ";
+"Sorry your eligible to less limit than requested" = "  عفوا غير مسموح لك بالحد المطلوب من الفليكسات";
+"Sorry your reached the maximum transfer limit" = " عفوا انت وصلت للحد الاقصى من تحويل فليكساتك";
+"Sorry you can’t transfer your flexes" = " عفوا لا يمكنك تحويل فليكساتك";
+"Sorry your balance is not enough to transfer" = " عفوا رصيدك غير كافي";
+"Sorry your rate plan doesn’t support your transfer action" = " عفوا لا يمكنك التحويل وأنت علي خطة اسعارك الحالية";
+"Sorry you can’t transfer to your number" = " عفوا لا يمكنك التحويل لرقمك";
+"Sorry the information provided is invalid" =  "عفوا المعلومات الموجودة غير صحيحة";
+
+// repurshes error code
+
+"1099" = "غير مسموح بإعادة شراء الباقة دي أكتر من مرة في اليوم، حاول في يوم تاني";
+
+"-1992" = "انت بالفعل مشترك فى الخدمة";
+"-8025" = "لا يوجد لديك فليكسات للاشتراك فى الباقة";
+
+
+//VF Credit
+
+"Vodafone Credit" = "فودافون كريديت";
+
+"Increase your balance throughout the month with a maximum of %@ LE"  = "زود رصيدك طول الشهر بحد أقصى %@ جنيه"  ;
+
+"minimumValue" = "عفوا،لا يمكنك  الشحن بمبلغ أقل من 10 جنية";
+
+"ONnet" = "دقائق لفودافون" ;
+
+"Xnet" = "دقائق لشبكات أخرى" ;
+
+"Credit-Added" = "تم شحن الرصيد";
+
+"FreeNumber Success" = "تم اضافة الارقام بنجاح" ;
+
+"FreeNumber Fail" = "ظهر خطأ, برجاء المحاولة مرة اخري" ;
+
+"Credit Free Number Note" = "ممكن تختار رقم واحد فقط تكلمه ببلاش" ;
+
+// VF Harakat
+
+"Ragel El beit Title" = "راجل البيت" ;
+
+"Ragel El beit Desc" = "هيجيلك رسائل يومية بآخر أخبار البلد و هتختار 3 من عيلتك يكلموك من باقتك حتى لو معهومش رصيد" ;
+
+"Set El Beit Title" = "ست البيت" ;
+
+"Set El Beit Desc" = "كل يوم هيجيلك وصفات طبخ جديدة ولو رصيدك خلص هتكمّلي كلامك عالنوتة لمدة 10 دقايق بدل 3 دقايق" ;
+
+"El Negm tite" = " النجم" ;
+
+"El Negm Desc" = "هيجيلك أخبار الكورة قبل أي حد و هتدخل على موقع في الجول في أي وقت من غير ما تدفع و لا مليم" ;
+
+"El Sanyoura Title" = "السنيورة" ;
+
+"El Sanyoura Desc" = "هيجيلك نصايح لصحتك و جمالك كل يوم و هتدخل على موقع في الفن في أي وقت من غير ما تدفع و لا مليم" ;
+
+"RagelElBeit Sms Title" = "رسائل الأخبار اليومية" ;
+
+"RagelElBeit Sms Desc" = " استقبل رسائل يومية بآخر أخبار البلد مع باقة راجل البيت" ;
+
+"SetElBeit Sms Title" = "رسائل الطبخ اليومية" ;
+
+"SetElBeit Sms Desc" = "كل يوم هيجيلك وصفات طبخ جديدة مع باقة ست البيت" ;
+
+"ElNegm Sms Title" = "رسائل كرة القدم اليومية" ;
+
+"ElNegm Sms Desc" = "هيجيلك أخبار الكورة قبل أي حد مع باقة النجم" ;
+
+"ElSanyoura Sms Title" = "رسائل الجمال و الصحة اليومية" ;
+
+"ElSanyoura Sms Desc" = "كل يوم هيجيلك ر سائل عن الصحة و الجمال مع باقة السنيورة" ;
+
+
+"RagelElBeit Freebee Title" = "ادفعلى شكرا" ;
+
+"RagelElBeit Freebee Desc" = " اختار 3 من عيلتك يكلموك من باقتك حتى لو معهومش رصيد" ;
+
+"ElNegm Freebee Title" = "استمتع بموقع  FilGoal.com" ;
+
+"ElNegm Freebee Desc" = "ادخل على موقع في الجول في أي وقت من غير ما تدفع و لا مليم" ;
+
+"ElSanyoura Freebee Title" = "استمتع بموقع  FilFan.com" ;
+
+"ElSanyoura Freebee Desc" = "ادخلى على موقع في الفن في أي وقت من غير ما تدفعى و لا مليم" ;
+
+"SetElBeit Freebee Title" = "10 دقائق ع النوتة" ;
+
+"SetElBeit Freebee Desc" = "كمّلي كلامك عالنوتة لمدة 10 دقايق بدل 3 دقايق" ;
+
+"Harakat" = "خدمات حركات" ;
+
+"Harakat Desc" = "نظام حركات..نظام مش بس دقايق!" ;
+
+"Harakat AddOn Success %@" = "اشتركت فى %@ بنجاح" ;
+
+"add addon confirmation message" = "هتشترك فى ";
+
+"Deactivate SMS Title" = "إيقاف الخدمة";
+
+"Activate SMS Title" = "إشترك الآن" ;
+
+"addonClass" = "addonClassAr";
+
+"Mobile Number"="رقم الموبايل";
+
+"Sms Success" = "التغيير سيتم فى خلال ساعتين. شكرا لانتظارك" ;
+
+// last Update unit
+
+"days" = "يوم";
+
+"hours" = "ساعه";
+
+"minutes" = "دقائق" ;
+
+"seconds" = "ثانيه";
+
+"updated" = "تم التحديت منذ" ;
+
+"ago" = "،";
+
+"now" = "،تم التحديث الآن" ;
+"Now" = "الآن";
+"Click here To Refresh" = "للتحديث" ;
+
+"to refresh" = "" ;
+
+// 4G MBB
+
+"promoQuota" = "عرض الميجابايتس المجانية" ;
+
+// Social Reaction
+
+
+"Social Optin Confirmation Title" = "عرض السوشيال" ;
+
+"Social Optin Confirm Descriotion" = "ضاعف باقة الانترنت علي جميع شبكات التواصل الاجتماعي بداية من الشهر القادم اشترك دلوقتي و استمتع" ;
+
+"Confirm Optin Social" = "اشترك مجانا" ;
+
+"Social Cancel" = "لاحقا" ;
+
+"Success_Optin" = "تم الاشتراك بنجاح في عرض ضعف الباقة  (سوشيال). سوف يتم زيادة المجابيتس الاضافية بدأ من الشهر القادم" ;
+
+"Already OptedIN" = "انت بالفعل مشترك في العرض" ;
+
+"flex rollover section titile" = "رحّل فليكساتك";
+
+"flex Rollover Desc" = "دلوقتي هتقدر ترحّل فليكساتك تلقائيا للشهر التالي";
+
+"Opt-In" = "أشترك";
+
+"flex rollover confirmation msg"="هل تريد ترحيل فليكساتك تلقائيا للشهر التالي ؟";
+
+"flex rollover succeed"="تم ترحيل فليكساتك بنجاح";
+
+//Trio
+
+"Card 1 title" = "كارت الكرم" ;
+"Card 2 title" = "كارت الصحبة" ;
+"Card 3 title" = "كارت الحظ" ;
+
+"Card 1 description" = " هيجيلك 30ج اخر كرم تستخدمهم زي ما تحب" ;
+"Card 2 description" = " هيجيلك 40ج رصيد تكلم بيهم رقمين فوادفون  من اختيارك و كمان 10ج رصيد" ;
+"Card 3 description" = "لو محظوظ هيجيلك من 20ج ل50ج  تستخدمهم زي ما تحب" ;
+
+"Already Voted" = "لقد تم التصويت لأحد الكروت اليوم بالفعل " ;
+
+"vote success %@" = "تم التصويت ل%@  بنجاح";
+
+"trio subscribe Success %@" = "تم الإشتراك و التصويت ل%@  بنجاح" ;
+
+"trio recharge Success %@" =  "تم الشحن و التصويت ل%@  بنجاح" ;
+
+"trio subscribe no enpught balance" = "عميلنا العزيز، لقد تم تنفيذ طلبك بنجاح" ;
+
+"Super Number title" = "الأرقام المميزة" ;
+
+"success whitelist point"  = "عميلنا العزيز، لقد تم تنفيذ طلبك بنجاح" ;
+
+"get trio card" = "اشترك في كارت ال5 الجديد" ;
+
+"number edited successfullly" = "تم تعديل الرقم بنجاح" ;
+
+"number added successfullly" = "تم إضافة الرقم بنجاح" ;
+
+"unit" = "وحدة" ;
+
+"warning third Card %@"   = "يرجي العلم أنه في حالة شحن %@ للمرةالثالثة في خلال ٣ أيام سيتم انتهاء الرصيد المتبقي من الكارتين الي تم شحنهم من قبل " ;
+
+"OffPeak String %d" = "وكمان %d وحدة من ٦ص ل ٦ م " ;
+
+// settings
+"Language" = "اللغة";
+"App Version" = "رقم الاصدار";
+
+"You are now enjoying double the quota promo" = "انت دلوقتي بتستمتع بالعرض  " ;
+
+// 365 flex
+"check all your gifts" ="عروض اليوم";
+
+"Play Again"="العب تاني";
+"Redeem"="إشترك الأن";
+"Add Number"="أضف رقم";
+"Add your favourite number"="أضف رقمك المفضل";
+"365 Gifts"="عروض 365";
+"365 Gifts subtitle"="رج الموبايل و اكتشف عروض اليوم!";
+"365 Gifts desc"="أهلاً بيك في عالم عروض فليكس!";
+"Round"="المحاولة";
+
+"365 flex start text Swipe"="مر عبر الشاشة";
+"365 flex start text Shake"="رج الموبايل";
+
+"365 flex start text OR" = "او";
+
+// DIGITAL CVM
+
+"DCVMFlex_1"="فليكس 25";
+"DCVMFlex_2"="فليكس 25";
+"DCVMFlex_4"="فليكس 40";
+"DCVMFlex_5"="فليكس 40";
+"DCVMFlex_7"="فليكس 60";
+"DCVMFlex_8"="فليكس 60";
+"DCVMFlex_10"="فليكس 80";
+"DCVMFlex_11"="فليكس 80";
+
+"1 flex usage"="الدقيقة لڤودافون و الرسالة لأى شبكة و الميجابايت";
+"1 flex"="١ فليكس";
+"5 flex usage"="الدقيقة لأى شبكة تانية أو خط ارضى";
+"5 flex"="٥ فليكس";
+
+"DCVM not eligible"="للاسف مش هتقدر تستفيد من العرض دة";
+
+"Login to get DCVM offer"="ادخل على حسابك عشان تقدر تستمتع بالعرض";
+
+"Digital CVM Redirection Text"="العرض ده غير مناسب لنظامك ولكن عروض فودافون مبتخلصش ";
+
+"set number to get offer"="ادخل رقمك";
+
+"Digital CVM Offer Subscribe Success"="انت دلوقتى بتستمتع بالعرض";
+
+"Sorry, This offer is not available now"="عفوا هذا العرض غير سارى";
+
+// usage details
+"INTERNET" = "انترنت" ;
+"SOCIAL_MEDIA" = "مواقع تواصل إجتماعي" ;
+"BROWSING" = "تصفح مواقع " ;
+"FACEBOOK" = "فيسبوك" ;
+"FREE_TRAFFIC" = "أخرى" ;
+"MUSIC" = "موسيقي" ;
+"STREAMING" = "فيديو" ;
+"VF_LIVE" = "فودافون لايف" ;
+
+//Donation
+"Eftar Title"="إفطار صائم ٤٥ جنيه";
+"Zakat Money Title"="زكاة المال";
+"Zakat Ftr Title"="زكاة الفطر";
+"Ramadan Bag Misr Elkher Title"="كرتونة رمضان ١٤٥ جنيه";
+"Ramadan Bag Food Bank Title"="كرتونة رمضان ٢٠٠ جنيه";
+
+// Entertainment
+
+"Entertainment title" = "الخدمات الترفيهية" ;
+"Ramadan TV"= "تليفزيون ڤودافون" ;
+
+// madrid
+
+"confirm Unlock %@" = "هيتم خصم %@ جنيه علشان تقفل خاصية الاهداء" ;
+"madrid redeem gift A" = "الفرحة جاتلك ، استبدل هديتك الان!" ;
+"madrid mass warning loss" = "الاهداءات المتبقية هتروح اول ما تشحن كارت فرحة جديد." ;
+"gifts left" = "هدية متبقية";
+"left" = "متبقية";
+
+"Madrid Mass Not Elegible to receive" = "لا يمكن استلام الهدية من الرقم دة" ;
+"Madrid Mass Not Elegible to Send" = "لا يمكن ارسال هدية من الرقم دة" ;
+"units" = "وحدة" ;
+"Please try again later" = "من فضلك حاول لاحقا" ;
+
+"Fanoos state 1"  = "ادعك الفانوس وهيختارلك رقم من أرقام حبايبك" ;
+"Fanoos state 2"  = "يلّا ادعك الفانوس" ;
+"Fanoos state 3"  = "خطوة واحدة و وهيتم اختار رقم من أرقام حبايبك" ;
+"Fanoos state 4"  = "مبروك!";
+"Dedication Description %@" = " وصلك اهداء من الرقم %@" ; 
+"Redeem Confirmation %@" =  "للحصول على الهدية اللى استحقيتها ب %@ جنيه.";
+"Redeem Success %@" = "مبروك, استلمت الهدية من %@  " ;
+"Gift C %@" = "%@ استخدم الكارت اعرف هديتك!" ;
+"gift C success" = "مبروك إستلمت هديتك بنجاح" ; 
+
+// madrid red mi
+"Madrid Red MI not subscribed Title"="باقة الStreaming ببلاش";
+"Madrid Red MI subscribed Title"="عرض باقات الفيديو ل RED";
+"Madrid Red MI not subscriped desc"="استمتع بالStreaming ببلاش طول شهر رمضان على تلفزيون ڤودافون!";
+"Madrid Red MI not subscriped optin btn"="اشترك";
+
+"Madrid Red MI dedicate view title"="اهداء ميجابايتس";
+"Madrid Red MI dedicate view desc"="فرّح واحد من أصحابك و قرايبك و اهديه ميجابايتس ببلاش!";
+
+"Madrid Red MI Dedicate View Title"="اهداء ميجابايتس";
+"Madrid Red MI Dedicate View Receiver View Title"="ابعت الهدية لرقم من اختيارك";
+"Madrid Red MI Dedicate View Receiver number Placeholder"="ادخل الرقم اللي اخترته";
+"Madrid Red MI Dedicate View Auto Select Title"="أو خلّي الفانوس يختار لك!";
+"Madrid Red MI Dedicate View Auto Select Desc"="ادعك الفانوس وهنتختارلك رقم من أرقام حبايبك";
+"Madrid Red MI auto select number btn"="ادعك الفانوس";
+
+"Madrid red MI Dedicate Game Title"="ادعك الفانوس";
+"Madrid red MI Dedicate Game Desc1"="ادعك الفانوس وهيختارلك رقم من أرقام حبايبك";
+"Madrid red MI Dedicate Game Desc2"="يلا ادعك الفانوس";
+"Madrid red MI Dedicate Game Desc3"="خطوة واحدة و يتم اختيار رقم من ارقام حبايبك";
+"Madrid red MI Dedicate Game Desc4"="مبروك!";
+
+"Madrid Red MI Select Number Title"="الرقم هو";
+"Madrid Red MI Select Number Dedicate Btn"="ابعت الهدية للرقم دة !";
+"Madrid Red MI Select Number Select Another Btn"="لا، هجرب مرة تانية !";
+
+"Main Offer Quota"="استهلاك باقة العرض الأساسية";
+
+"Madrid Red MI not Subscribed gift b title"="اهداء ميجابايتس";
+"Madrid Red MI not Subscribed gift b desc"=" واحد من صحابك فرّحك و بعتلك ميجابايتس ببلاش!";
+"Madrid Red MI gift b title"="اهداء ميجابايتس";
+"Madrid Red MI gift b desc"="واحد من صحابك فرّحك و بعتلك ميجابايتس ببلاش!";
+"Madrid Red MI gift c desc"="ميجابايتس هدية";
+"Madrid Red MI gift c title"="عشان انت فرّحت واحد من أصحابك انت كمان هتفرح بميجابايتس ببلاش!";
+"Madrid red mi promo view title"="مبروك";
+"Madrid red mi promo dedecation Text"="بعتلك ميجاباتس ببلاش";
+"Madrid red mi promo desc"="عشان انت بتفرح صحابك و قرايبك, جبنالك هدية!";
+"Madrid red mi promo enjoying Text"="انت دلوقتي بتستمتع ب";
+
+"Madrid red mi no gifts title"="";
+"Madrid red mi no gifts desc"="دلوقتي تقدر تفرّح واحد من أصحابك و قرايبك و تهديه ميجابايتس ببلاش!";
+
+"madrid red mi redeem succeed"="مبروك, لقد استلمت هديتك بنجاح.";
+
+"Madrid red MI dedication succeed"="دلوقتي تم الاهداء الى الرقم:";
+
+"Madrid red mi promo Redeem"="الحصول على الهدية";
+"enjoy units"="ميجابايتس \جيجابايتس";
+"Madrid Red MI Dedicate btn"="اهداء";
+"Valid till"="ساري حتى";
+"left"="متبقية";
+"of"="من";
+"of xx left" = "من %@ متبقيه";
+"of xfGB left" = "من %.fجيجا متبقيه";
+
+"Madrid red mi notification title"="الرسائل";
+
+
+// fonts
+
+"regularFont" = "GESSTwoMedium-Medium";
+"lightFont" = "GESSTextLight-Light";
+"boldFont" = "GESSTextBold-Bold";
+
+"Congratulations" = "تهانينا";
+
+"You have an access to Ana Vodafone app" = " تهانينا!لديك حق الوصول الي تبيق انا فودافون";
+
+"Quick login" = "تسجيل الدخول السريع";
+
+
+"Containue as" = "استمر ب";
+
+"Madrid Red Voucher Vendors View Title" ="كوبونات RED";
+"Madrid Red Voucher Vendors View Dedicate Title"="اهداء كوبون";
+"Madrid Red Voucher Vendors View Dedicate desc"="فرّح أصحابك و قرايبك واهدي لواحد منهم كارت ببلاش و استمتع بهديتك!";
+"Madrid Red Voucher Vendors View Vendor List Title" ="أماكن استبدال الكوبونات";
+
+"Madrid Red Dedicate View Title"="اهداء الكوبون";
+"Madrid Red Dedicate View Receiver View Title"="ابعت الهدية لرقم من اختيارك";
+"Madrid Red Dedicate View Receiver number Placeholder"="ادخل الرقم اللي اخترته";
+"madrid red voucher dedication succeed"="انت اهديت كوبون بنجاح للرقم";
+
+"no Matches"="لم يتم العثور على تطابق";
+"Madrid Red Voucher Vendors View desc"="فرّح أصحابك واهدي واحد منهم كارت واستمتع بهديتك!";
+
+"Madrid Red Dedicate View Receiver Name Placeholder"="ادخل الأسم اللي اخترته";
+"Madrid Red Dedicate btn"="اهداء";
+"search Branch" = "البحث عن الموقع";
+
+//ADSL2
+
+"Fees" = "رسوم التوصيل";
+"City" = "المنطقة" ;
+"Area" = "تفاصيل العنوان (رقم المبنى – اسم الشارع – رقم الشقة)";
+"Full Address" = "علامة مميزة للمكان";
+"select government" = "اختر المحافظة";
+"use my current location" = "استخدم موقعي الحالي";
+"You will receive SMS"="عميلنا العزيز، ستصلك رسالة بها رابط لاستكمال طلب الاشتراك.";
+
+"Personal information" = "المعلومات الشخصيه";
+
+"Agree to be conected through email" = "أوافق على الاتصال عن طريق الايميل";
+
+"Save Change" = "حفظ التغيرات";
+
+"First name:" = "الاسم الاول :";
+"Last name:" = "اسم العائلة :";
+"City:" = "المدينه :";
+"Gender:" = "النوع :";
+"Email:" = "الايميل :";
+"Date of birth:" = "تاريخ الميلاد:";
+"Or" = "او";
+
+
+
+// payment component
+
+"Payment error title" = "حدث خطأ أثناء الدفع";
+"Recharge for others" = "شحن لرقم اخر";
+"Recharge my balance" = "شحن رصيدي";
+"Total balance is:" = "الرصيد الكلي :";
+"saved credit cards" = "بطاقاتك الائتمانية";
+"select payment option" = "عايز تدفع عن طريق؟";
+"credit card" = "البطاقة الائتمانية";
+"scratch card" = "كارت الشحن";
+"vodafone cash" = "فودافون كاش";
+"EGP" = "جنية";
+"card number"="ادخل رقم الكارت/ ثبت الكاميرا على الكارت";
+"MM/YY"="تاريخ الانتهاء";
+"CVV"="CVV";
+"Name as on card"="الاسم كما يظهر على البطاقة";
+"Total Amount Payment"="المبلغ";
+"save this card for future transactions"="تسجيل بطاقة الائتمان الخاصة بك للاستخدام بعد \nملاحظة: يتم تسجيل تفاصيل بطاقة الائتمان الخاصة بك على الهاتف المحمول على مسؤولية حامل البطاقة";
+"amount"="المبلغ بالجنيه";
+"Pay Securely"="تأكيد الدفع";
+"ending with"="تنتهي ب";
+"payment component title"="تفاصيل الدفع";
+"payment component subtitle"="";
+"add Credit card title"="تفاصيل بطاقتك الائتمانية";
+"add Credit card subtitle"="كمل تفاصيل بطاقتك الائتمانية لإتمام عملية الدفع";
+"Credit card details title"="تفاصيل بطاقتك الائتمانية";
+"Credit card details subtitle"="كمل تفاصيل بطاقتك الائتمانية لإتمام عملية الدفع";
+
+// unpaid bills
+"Unpaid Bills title"="الفواتير الغير مدفوعة";
+"Unpaid Bills subtitle"="اعرف مجموع فواتيرك الغير مدفوعة و قيمة كل شهر";
+"Pay Bill"="اتمام الدفع";
+"Total unpaid amount"="القيمة المطلوبة";
+
+"Credit card receipt view title"=" إيصال عملية الدفع";
+"Credit card receipt title" = "عملية دفع ناجحة!";
+"Credit card receipt subtitle" = "ايصال الدفع";
+"Credit card receipt transaction id" = " رقم عملية الدفع";
+"Credit card receipt paid amount" = "المبلغ المدفوع";
+
+
+"amount should be more than 10 pounds" = "عفوا! المبلغ لازم يكون أكتر من 10 جنيه";
+
+
+
+"Connect 3G Body Revamp" = "لتسجيل دخولك، لازم تستخدم الموبايل انترنت";
+
+"Invalid name" = "خطأ في الاسم";
+
+"Invalid password" = "خطأ في كلمة المرور";
+
+"You typed an invalid temp password" = "لقد قمت بإدخال كلمة المرور المؤقته غير صحيحه";
+
+"These Passwords don't match,try again" = "عفوا كلمة المرور غير متطابقه ، من فضلك حاول مرة اخري";
+
+"User name" = "إسم المستخدم";
+
+"Password_1" = "كلمة المرور";
+
+"New password" = "كلمة المرور الجديده";
+
+"Temp Password" = "كلمة المرور المؤقته";
+
+"Confirm password" = "تآكيد كلمة المرور";
+
+"Sorry your account is now locked body" = "للاسف ، لقد تم وقف حسابك، لقد ادخلت بيانات غير صحيحه اكثر من 5 مرات. انت تحتاج الي إعادة تعين كلمة المرور";
+
+"Reset your account now" = "اعادة تعين كلمة المرور الان";
+
+"Please turn on your 3G data connection as forgot password can’t be done through Wi-Fi Revamp" = "يرجي التأكد من ان الموبايل متصل بشبكة 3G حيث ان خدمة تغيير كلمة المرور لا تعمل على واي فاي";
+
+
+"Your password has been sent to you by SMS, please check your mobile" = "تم إرسال رسالة تحتوي على كلمة المرور المؤقتة إلى رقم الموبايل الخاص بك";
+
+"Register to Ana Vodafone" = "سجّل على أنا فودافون";
+
+"You have signed in successfully" = "تهانينا لقد قمت بتسجيل الدخول بنجاح";
+
+"Get activation key" = "الحصول علي كود التشغيل";
+
+"Receive activation key" = "استقبل كود التشغيل";
+
+"Please enter your mobile number to be able to receive the activation key and follow the registration proccess after me" = "من فضلك ادخل رقم هاتفك لتستقبل كود التشغيل ، واتبع عملية التسجيل بعد ذلك";
+
+"Get key now" = "الحصول علي الكود الآن";
+
+"Enter activation key" = "أدخل كود التشغيل";
+
+"Please enter the activation key you’ve just received and fill the below information"="من فضلك أدخل كود التشغيل الذي وصل إليك وقم بملئ البيانات التاليه";
+
+"Activation key" = "كود التشغيل";
+
+"You typed an invalid activation key" = "لقد ادخلت كود تفعيل غير صحيح";
+
+"You typed an invalid mobile number" = "لقد ادخلت رقم موبيل غير صحيح";
+
+"Send again" = "إعادة الإرسال";
+
+"Your information" = "بياناتك";
+
+"Please enter your information below in order to create your own account" = "أدخل بياناتك هنا عشان تقدر تنشىء حساب";
+
+"OOPs" = "للأسف";
+"OOPS" = "للأسف";
+"Oops" = "للأسف";
+"oops" = "للأسف";
+
+"You have successfully changed your password" = "تم تغيير كلمة المرور بنجاح";
+
+"Reset your password" = "غير كلمة المرور";
+
+"Welcome to Ana Vodafone" = "أهلا بيك في أنا فودافون";
+
+"Internet erorr" = "خطأ في الاتصال";
+
+"Get \n Activation key" = "الحصول علي كود التشغيل";
+
+"Enter \n Activation key" = "ادخل كود التشغيل";
+
+"Your \n information" = "معلوماتك";
+
+"برجاء اضافه كلمة المرور لم تستخدم من قبل للحساب" = "برجاء اضافه كلمة المرور لم تستخدم من قبل للحساب";
+"Choose the monthly internet bundles" = "إختر باقتك الشهريه";
+
+"Enjoy the daily, weekly and monthly social bundles" = "إستمتع بباقة السوشيال اليوميه والاسبوعيه  والشهريه";
+
+"That will keep you connected wherever you go" = "سوف تبقي متصل حيثما كنت";
+
+"No more worries about Mbps or paying extra charges" = "لا قلق بعد الان علي الميجابيتس او مزيد من الشحن";
+
+"You typed an invalid mail" = "لقد ادخلت بريد إلكتروني غير صحيح";
+
+"Your account data has been successfuly edited!" = "تم تعديل بيانات حسابك بنجاح!";
+
+"Payment methods" = "طرق الدفع";
+"Edit your profile information" = "تعديل بيانات حسابك";
+"My profile" = "الحساب الشخصي";
+"Dummy text one line description" = "سطر من البيانات الوهميه";
+"Edit my profile" = "تعديل الحساب الشخصي";
+
+"Sa7el Delivery" = "توصيلة الساحل";
+"Vodafone stadium"="استاد ڤودافون";
+"Vodafone Cinama"="عالم السينما";
+"Vodafone Mazika"="عالم المزيكا";
+
+"Add" = "اضافه";
+
+//AutoFlexTransfer
+"Flex Services"="Flex Services";
+"Super Flex Item Title"="Super Flex Item Title";
+"Super Flex Item Desc"="Super Flex Item Desc";
+"Flex Transfer Item Title"="Flex Transfer Item Title";
+"Flex Transfer Item Desc"="Flex Transfer Item Desc";
+"Auto Flex Transfer Edit Succeed"="Auto Flex Transfer Edit Succeed";
+"Auto Flex Transfer"="Auto Flex Transfer";
+"Auto Transfer View Title"="Auto Transfer View Title";
+"Auto Transfer View SubTitle"="Auto Transfer View SubTitle";
+"Auto Transfer View total flexes"="Auto Transfer View total flexes";
+"flex amount"="flex amount";
+"Phone Number"="Phone Number";
+"Contact Name"="Contact Name";
+"auto Transfer enable text"="auto Transfer enable text";
+"Transfer Flex Now"="Transfer Flex Now";
+"Auto Transfer History Title"="Auto Transfer History Title";
+"Auto Transfer History Desc"="Auto Transfer History Desc";
+"view more"="view more";
+"Auto Transfer History View Title"="Auto Transfer History View Title";
+"Auto Transfer History View SubTitle"="Auto Transfer History View SubTitle";
+"Auto Flex Transfer Delete Confirmation"="Auto Flex Transfer Delete Confirmation";
+"Edit Auto Transfer"="Edit Auto Transfer";
+"Delete Auto Transfer"="Delete Auto Transfer";
+"Auto Flex Transfer Edit Succeed"="Auto Flex Transfer Edit Succeed";
+"Auto Transfer Edit View Title"="Auto Transfer Edit View Title";
+"Auto Transfer Edit View SubTitle"="Auto Transfer Edit View SubTitle";
+"Auto Transfer Edit View Desc"="Auto Transfer Edit View Desc";
+"Save"="Save";
+
+//RedFamily
+
+"Family members" = "افراد العائلة" ;
+"Benefits" = "المزايا" ;
+"Transfer" = "تحويل إنترنت" ;
+"Requests" = "أطلب" ;
+
+"RedFamilyBenefit1Title" = "أنغامي بلس" ;
+"RedFamilyBenefit2Title" = "على حسابي" ;
+"RedFamilyBenefit3Title" = "رحلة مجانية في Careem" ;
+"RedFamilyBenefit4Title" = "خصم OSN" ;
+"RedFamilyBenefit5Title" = "تخفيض على باقات Ready Security" ;
+"RedFamilyBenefit6Title" = "" ;
+
+"RedFamilyBenefit1" = "كل أفراد Red Family يقدروا يحصلوا على اشتراك مجاني في أنغامي بلس، ويسمعوا أغانيهم المفضلة من أي مكان وفي أي وقت من غير حتى إتصال بالإنترنت." ;
+"RedFamilyBenefit2" = "مع خدمة على حسابي، هتفضل مطمن على رصيد الناس اللي تهمك وهتوصلك رسالة إذا نفذ رصيد أي فرد منهم، الخدمة مجانية لأفراد Red Family." ;
+"RedFamilyBenefit3" = "دلوقتي كل أفراد عائلة Red يقدرو يستفيدوا برحلة مجانية إضافية من تطبيق كريم، اللي بيوفرلك عربية بسائق تنقلك مكان ما تحب." ;
+"RedFamilyBenefit4" = "هيجيلك رسالة فيها بطاقة خصم 10% على كل باقات شبكة OSN، عشان تستمتع بكل المحتوى الجديد والبرامج الحصرية." ;
+"RedFamilyBenefit5" = "من خلال عائلة Red، ليك تخفيض على باقات Ready Security عشان تقدر تأمن شركتك أو بيتك وتتابع كل إللي بيحصل في أي وقت ومن أي مكان عن طريق موبايلك. كلم 2828" ;
+"RedFamilyBenefit6" = "" ;
+
+"Confirmation with promo %@" = "سيتم اضافة%@ لـ Red family، سيتم خصم 25 جنيه مصاريف الخدمة لأنكم عيلة واحدة، كل أفراد العيلة هيشوفوا مين انضم لهم" ;
+"Confirmation without promo %@" = "سيتم اضافة%@ لـ Red family،  لأنكم عيلة واحدة، كل أفراد العيلة هيشوفوا مين انضم لهم" ;
+
+"Confirm add button" = "أكد إضافة الفرد الجديد" ;
+
+"Confirm Done %@" = "فرد جديد في العائلة تم إضافة %@ لعائلتك بنجاح " ;
+
+"Confirm Delete %@" = "متأكد من حذف %@ من عائلة Red؟ فى حالة حذف فرد من العائلة لن يتم اعادة رسوم الاشتراك لرصيدك"   ;
+
+
+"Request MegaBytes" = "إطلب ميجا بايتس" ;
+"Request Balance" = "أطلب رصيد" ;
+
+"3000018" = "عفوا! الخدمة متاحة فقط لعملاء RED" ;
+"3000019" = "عفوا! نظام الخط غير متاح اضافته لRED Family" ;
+"3000020" = "عفوا! الرقم ده في عيلة تانية." ;
+"3000021" = "عفوا! تم إضافة الرقم في عيلة تانية." ;
+
+"4000022" = "Family members cannot exceed 4 members." ;
+"4000023" = "Family exceeded number of add transactions" ;
+
+"Your request Done Successfully" = "تم إرسال الطلب بنجاح " ;
+
+"Member" = "فرد" ;  
+
+
+"Family Minutes" = "دقائق العيلة" ;
+"Family SMS" = "رسائل العيلة" ;
+"Intra Minutes" = "دقائق لعيلتك" ;
+"Intra SMS" = "رسائل لعيلتك" ;
+"Extra Minutes" = "دقائق هدية " ;
+"Extra SMS" = "رسائل هدية" ;
+"used" = "مستخدمه" ;
+"redAmount" = "القيمه";
+"Family Internet" = "ميجابايتس العيلة";
+"EGP" = "جنيه";
+
+//////////////////////MI LifeCycle///////////////////
+"Mobile Internet Offers" = "عروض الموبايل انترنت";
+"Enjoy the best mobile internet" = "استمتع بأقوى عروض الموبايل انترنت";
+"Offers" = "العروض";
+"Redeemed Offers" = "العروض المستبدله";
+"Get Offer" = "استمتع بالعرض";
+"Get Next Offer" = " العرض التالي";
+"Data Special Offer" = "عروض خاصة للموبايل انترنت";
+"Enjoy  special mobile internet offers for you" = "استمتع بعروض خاصة ليك للموبايل انترنت";
+"You don't have new gifts today" = "لا يوجد هدايا جديده";
+"No Offers To show" = "لايوجد عروض";
+"Your request is being processed" = "جارى تنفيذ طلبك";
+
+
+//Mgm
+"Search" = "بحث";
+"Share mgm" = "شارك الكود";
+
+"500024" = "البرومو كود اللي انت كتبته مش صحيح، من فضلك اتأكد من البرومو كود اللي جالك وحاول مرة تانية." ;
+"500025" = "انت استفدت ببرومو كود قبل كده";
+"500026" = "ماتقدرش تستفيد بالبرومو كود الخاص بك";
+"500029" = "عفواً، حصل خطأ غير متوقع، من فضلك حاول تاني.";
+"10099" = "اقصي مبلغ للتبرع هو %@ جنيه ومتبقي لك مبلغ %@ جنيه";
+
+"No more contacts title" = "لا مزيد من الأصدقاء";
+"No more contacts message" = "لا تستطيع أن ترسل البرومو كود لأكثر من ٥٠ من الأصدقاء في اليوم الواحد";
+"No contacts title" = "أختر أحد الأصدقاء";
+"No contacts message" = "انت ماخترتش أي اسم تبعتله، من فضلك اختار اسم واحد على الأقل";
+"Messages Sent" = "تم إرسال الدعوات بنجاح";
+"Thanks" = "شكرا";
+"Invalid promo" = "هذا البرومو كود غير صالح";
+"Have promo" = "هل لديك برومو كود؟";
+"Invite and share" = "إدعو أصدقاءك و شارك البرومو كود";
+"Invite your friend" = "إبعت لأصحابك";
+"Invite a contact" = "ابعت لحد من قايمة الاتصالات";
+"Promo Via SMS" = "من فضلك اكتب البرومو كود اللي اتبعت لك في رسالة عشان يجيلك الـ 500 ميجابايت الهدية!";
+"Promo Shared Successfully" = "انت بعت البرومو كود بنجاح! أول ما اللي انت بعتله يحمل التطبيق، هديتك هتجيلك.";
+"Error" = "خطأ";
+"Welcome on board" = "آهلا بك";
+
+"Free Megabytes" = "ميجابايتس ببلاش";
+"Get Free Megabytes" = "Get FREE megabytes";
+"Step away from gift by sharing" = "500 ميجابايت ببلاش مستنينك!";
+"Gift description" = "كل اللي عليك انك تبعت لاصحابك يحملوا تطبيق أنا ڤودافون، ومع أول حد منهم يشغل التطبيق هيجيله ويجيلك 500 ميجابايتس هدية";
+"Promo Code:" = "البرومو كود:";
+"Select a contact" = "ابعت لحد من قايمة الاتصالات";
+"Get your free megabytes" = "جالك 500 ميجابايت هدية!";
+"Redeem message" = "%@ بعتتلك هدية 500 ميجابايت! حمل تطبيق أنا ڤودافون من خلال اللينك ده: %@ ودخل البرومو كود: %@ عشان تجيلك هديتك!";
+"Invite message header" = "تحب يجيلك 500 ميجابايت ببلاش ويجيلي زيهم؟";
+"Invite message body" = "لو حملت تطبيق أنا ڤودافون من اللينك ده %@ واستخدمت الكود بتاعي: %@ كل واحد مننا هيجيله 500 ميجابايتس هدية. التطبيق مليان مزايا وخدمات، والتسجيل مش هياخد منك دقيقة، بعدها تقدر تبعت لكل اصحابك ويجيلك ميجابايتس هدية زيادة.";
+"VV message header" = "ليك هدية 500 ميجابايت!";
+"VV message body" = "كل اللي عليك انك تبعت لاصحابك يحملوا تطبيق أنا ڤودافون، ومع أول حد منهم يشغل التطبيق هيجيله ويجيلك 500 ميجابايتس هدية!";
+"Step away from gift by code" = "انت على بعد خطوة واحدة من الـ 500 ميجابايت الهدية!";
+"Use promo code" = "اكتب البرومو كود ده عشان يجيلك الـ 500 ميجابايت الهدية!";
+"Enter promo code" = "إدخل البرومو كود";
+"Enter your promo code" = "إدخل البرومو كود";
+"We are Processing your request" = "ثواني ويتنفذ طلبك";
+"Welcome" = "أهلاً بيك في أنا ڤودافون! \nجالك 500 ميجابايت هدية ترحيب من %@! ";
+"Manage my account" = "إدارة حسابك";
+"To get more free MBs" = "تقدر تكسب ميجابايتس أكتر ببلاش لو بعتت لاصحابك";
+"Start inviting friends" = "ابعت لاصحابك دلوقتي";
+"Enter received promo" = "من فضلك اكتب البرومو كود اللي اتبعت لك عشان يجيلك الـ 500 ميجابايت الهدية!";
+"Congrats" = "مبروك!\nجالك هدية 500 ميجابايت ببلاش";
+"Already got the gift" = "انت جالك قبل كده 500 ميجابايت هدية. بس لسه تقدر تبعت لاصحابك ويجي لكل واحد فيهم 500 ميجابايت هدية.";
+"Congratulations" = "مبروك";
+"Redeem now" = "احصل على هديتك";
+"Ana Vodafone World" = "بفضلك انت عالم أنا ڤودافون بيكبر! \nاحصل على هديتك دلوقتي.";
+"Ana vodafone link" = "http://vf.eg/anavodafone";
+
+"Apply" = "Apply";
+"content message"="Your friends will also get 500MBs,when they download the app as a gift from you and Vodafone" ;
+"Share your invite code" = "إدعو أصدقاءك" ;
+"It has been a while since you invited" = "It has been a while since you invited %@ ,want to remind him ?";
+"Remind now" = "Remind now";
+"Your gift is waiting" = "Your gift is waiting %@ has sent you a gift! Download Ana Vodafone app through this link: %@ then add the code: %@ to claim the 500 MBs gift.";
+"Do you have promo code" = "Do you have a promo code ?";
+"Please Enter promo code you received" = "Please Enter promo code you received Please Enter promo code you receivedPlease Enter promo code you receivedPlease Enter promo code you received";
+"Please Wait" = "Please Wait";
+"Welcome back" = "Welcome back";
+"We are happy that you are here" =  "أهلا بيك في أنا ڤودافون! جالك ٥٠٠ ميجابايت هدية ترحيب %@";
+
+
+
+/////////////Enjoy more //////////////
+"back to home" = "الرجوع للرئيسيه";
+
+"Big Addons" = "فودافون Pass" ;
+"Get Free Hour" = "استمتع بساعة ببلاش" ;
+"Tell Friends" = "عرّف صحابك" ;
+"use internet" = "مع فودافون Pass استمتع بالانترنت زى ما تحب من غير ما يسحب من باقتك الأساسية استمتع بساعة ببلاش علي سوشيال، فيديو أو مزيكا دلوقتى
+";
+"Share friends" = "استمتع بعالم كله انترنت  لما تعرّف صحابك العرض دة" ;
+"subscribe hourly" = " دلوقتى تقدر تستمتع بالعرض ده ساعه كمان ب %d جنيه بس ";
+"subscribe month" = " دلوقتى تقدر تستمتع بالعرض ده شهر كمان ب %d جنيه بس ";
+
+"social addon" = "ساعة Pass السوشيال ";
+"social addon month" = "  Pass السوشيال اشهرية";
+
+"social desc" = " استمتع بساعة انترنت سوشيال علي WhatsAppوFacebook وTwitter Instagram وSnapchat";
+
+"music addon" = "ساعة Pass المزيكا";
+"music addon month" = "  Pass المزيكا اشهرية";
+
+"music desc" = "استمتع بساعة مزيكا علي انغامى SoundCloud ونجوم اف ام ونايل اف ام";
+
+"video addon" = "ساعة Pass الفيديو";
+"video addon month" = "  Pass الفيديو اشهرية";
+
+"video desc" = "استمتع بساعة فيديو علي YouTube, Shahid, VodafoneTV و  VodafoneStad";
+
+
+
+"Free hour" = "Free hour";
+"Paid" = "Paid";
+
+
+"social addon details" = "مش هيفوتك حاجة مع ساعه  Pass السوشيال";
+"social addon details month" = "مش هيفوتك حاجة مع شهر  Pass السوشيال";
+
+"social hourly details" = "دلوقتي بساعة سوشيال ببلاش تقدر تستخدمها علي WhatsAppوFacebook وTwitterوInstagram وSnapchat";
+
+"social monthly details" = "ماتفوتش حاجة علي فيسبوك, واتساب, انستجرام, سنابشات و تويتر مع Pass  السوشيال الشهري من غير ما يسحب من باقتك الاساسية
+";
+"social hourly button" = "استمتع بساعة سوشيال ببلاش";
+"Subscribe now for 2LE and enjoy Facebook, WhatsApp, Twitter, Instagram  & Snapchat for 1-Hour." = "اشترك دلوقتي ب %d جنيه واستمتع ب ساعة انترنت علي WhatsAppوFacebook وTwitterوInstagram وSnapchat
+";
+
+
+"music addon details" = " اسمع مزيكتك في اي مكان مع ساعه  Pass  المزيكا";
+"music addon details month" = " اسمع مزيكتك في اي مكان مع شهر  Pass  المزيكا";
+
+"music hourly details" = "دلوقتي بساعة مزيكا ببلاش علي Anghami, SoundCloud, Nogoum FM & Nile FM";
+
+"music monthly details" = " مع Pass  المزيكا الشهري اسمع الاغاني اللي بتحبها علي Anghami SoundCloud NogoumFM و NileFM من غير مايسحب من باقتك الاساسية";
+"music hourly button" = "استمتع بساعة مزيكا ببلاش";
+"Subscribe now for 2LE and enjoy 1-Hour of your favorite music anywhere on Anghami, SoundCloud, Nogoum FM & Nile FM" = "اشترك دلوقتي ب %d جنيه و استمتع بساعة مزيكا في اي مكان علي Anghami, SoundCloud, Nogoum FM & Nile FM
+";
+
+"Monthly Social Pass​" = " Pass السوشيال الشهري";
+"Monthly Music Pass" = " Pass المزيكا الشهري​";
+"Monthly Video Pass" = " Pass الفيديو الشهري";
+
+"Stay up to date  on Facebook, WhatsApp, Twitter, Instagram  & Snapchat without consuming from your main bundle" = " استمتع بانترنت سوشيال عليWhatsAppوFacebook وTwitter Instagram و Snapchat من غير مايسحب من باقتك الاساسية ​";
+"Enjoy your favorite  music on Anghami, SoundCloud, Nogoum FM & Nile FM without consuming from you main bundle.​" = "استمتع بمزيكا علي انغامى SoundCloud ونجوم اف ام ونايل اف ام من غير مايسحب من باقتك الاساسية";
+"Enjoy your favorite videos on YouTube, Shahid, VodafoneTV and VodafoneStad without consuming from your main bundle.​" = "استمتع بانترنت فيديو علي YouTube, Shahid, VodafoneTV و  VodafoneStad من غير ما يسحب من باقتك الاساسية​​" ;
+
+
+"video addon details" = "اتفرج علي كل فيديوهاتك مع ساعه   Pass الفيديو";
+"video addon details month" = "اتفرج علي كل فيديوهاتك مع شهر   Pass الفيديو";
+
+"video hourly details" = " استمتع  دلوقتي بساعة فيديو ببلاش عليYouTube, Shahid, VodafoneStad و VodafoneTV";
+
+"video monthly details" =  "مع Pass  الفيديو الشهري اتفرج علي كل فيديوهاتك علي يوتيوب, VodafoneTV, VodafoneStad  و Shahid من غير ما يسحب من باقتك الاساسية
+";
+"Subscribe now for 2 L.E and enjoy 1-Hour of your favorite videos on Youtube, Shahid, VodafoneStad, and VodafoneTV" = "اشترك دلوقتي بـ%dجنيه واستمتع بساعة فيديو على Youtube, Shahid, VodafoneStad, و  VodafoneTV";
+
+
+"video hourly button" = "استمتع بساعة فيديو ببلاش";
+"Subscribe Now" = "اشترك دلوقتي ب %d جنيه";
+
+"comobo addon description" = "باقة واحدة بكل المميزات اشترك دلوقتي واستمتع بعالم كله انترنت";
+
+"comobo addon details" = "اشترك دلوقتي واستمتع بانترنت ل Facebook، WhatsApp، Twitter، Instagram، Snapchat، SoundCloud، أنغامي، نجوم FM، نايل FM، YouTube و خدمة Vodafone TV";
+
+
+"monthly button" = "اشترك ب %d جنيه";
+
+
+"choose addon" = "اختر Pass";
+"comobo addon" = "كومبو pass";
+
+
+"share dialoge" = "انت بالفعل استمتعت بساعة انترنت ببلاش عرّف صحابك بالعرض دة عشان تستمتع بساعة تانية بتكلفة …… بس";
+"sharepage" = "عرّف صحابك";
+"Share now" = "عرّفهم دلوقتي";
+"letuspick" = "أو خلّي أنا فودافون تختارلك";
+"Pick for me" = "اختارلي";
+"share left" = "باقي %d مرات كمان";
+"we chose" = "اخترنالك .....";
+"Share" = "عرّف صحابك";
+"Cancel" = "الغاء";
+"Get One Hour for" = "استمتع بساعه ببلاش ب %d جنيه";
+"confirmationEnjoyMore" = "عشان تقدر تستمتع بالباقة الاضافية، اتأكد من وجود ميجابيتس في الباقة الأساسية";
+"usb mobile number" = "أدخل رقم خط ال USB";
+"usb sim serial number" = "أدخل رقم الشريحة";
+
+//success
+"Pass" = "فودافون Pass";
+
+"With the new Pass add-ons, enjoy internet as you wish without consuming from your main bundle." = "مع فودافون Pass استمتع بالنترنت اللي بتحبه من غير ما يسحب من باقتك الأساسية";
+"Pass for Mobile Internet" = "ميجابيتس أكتر للموبايل انترنت";
+"Pass for USB" = "ميجابيتس أكتر لشريحة الداتا";
+
+"Your request is being processed" = "سيتم تنفيذ طلبك";
+"L.E." = "جنيه";
+"Enter USB Details" = "ادخل بيانات الUSB";
+"Enter your USB details to enjoy the offer" = "ادخل بيانات الUSB علشان تستمتع بالعرض";
+
+
+"Monthly unlimited Video Social Music Bundle" = "باقة بلا حدود سوشيال وفيديو ومزيكا الشهرية";
+"Monthly unlimited Video Bundle" = "باقة بلا حدود فيديو الشهرية";
+"Monthly unlimited Social Bundle" = "باقة بلا حدود سوشيال الشهرية";
+"Monthly unlimited Music Bundle" = "باقة بلا حدود مزيكا الشهرية";
+
+"Hour unlimited Social Addon" = "باقة ساعة انترنت بلا حدود سوشيال";
+"Hour unlimited Video Addon" = "باقة ساعة انترنت بلا حدود فيديو";
+"Hour unlimited Music Addon" = "باقة ساعة انترنت بلا حدود مزيكا";
+"Unlimited Video Social Music Addon" = "باقة  انترنت بلا حدود سوشيال وفيديو ومزيكا";
+
+//////////////////////revamp///////////////////
+//LoginToContinueViewController
+"Login To Continue Title" = "Login to continue";
+"Login To Continue Desc" = "by turning your Wi-Fi off briefly and connect to our mobile network.";
+"Login Btn Title" = "Login";
+"Forgotten password Btn Title" = "Forgotten password";
+
+
+
+
+
+///// MainStoryboard
+
+
+"Now you can skip the usual login and registration process by turning your Wi-Fi off and connect to our mobile network" = "لو عايز تتخطى عملية تسجيل الدخول تقدر تقفل الواى فاى وتتصل بالموبايل انترنت ";
+
+
+"Don’t worry you won’t be charged; Using our App  won’t consume any megabytes!" = "استخدامك لأنا فودافون هيكون ببلاش منغير خصم أى ميجابيتس";
+
+"New user?" = "مستخدم جديد؟";
+
+"Register now" = "سجّل دلوقتي";
+
+"Forgot Password?" = "نسيت كلمة المرور؟";
+
+
+
+"Login to Ana Vodafone" = "الدخول على أنا فودافون";
+
+"Forgot your password? Just click reset your password and you’ll receive an SMS with a temporary one" = "نسيت كلمة المرور؟ اضغط غيّر كلمة المرور و هيوصلك رسالة على موبايلك بكلمةمرور مؤقتة ";
+
+
+"Please enter the temporary password" = "أدخل كلمة المرور المؤقتة";
+
+"Welcome to Ana Vodafone world" = "أهلا بيك في عالم أنا فودافون";
+
+"Turn off Wifi to login" = "اتصل بالواي فاي للدخول";
+
+"Send me the key" = "استقبل الكود";
+
+"Enter your mobile number, receive the activation key and follow the registration process" = "أدخل رقم موبايلك وهيجيلك رسالة بكود التشغيل، اتبع تعليمات التسجيل";
+
+"Please enter the activation key that you have just received via SMS" = "أدخل كود التشغيل اللي وصلك في رسالة على موبايلك";
+
+"I didn’t receive activation key" = "موصليش كود التشغيل";
+
+"An SMS will be sent with a new activation key" = "هيوصلك رسالة بكود تشغيل جديد";
+
+"Now you have joined Ana Vodafone world" = "دلوقتي تقدر تستمتع بعالم أنا فودافون";
+
+"Turn on your mobile data in order to login" = "لتسجيل دخولك، لازم تستخدم الموبايل انترنت";
+
+"Skip login" = "تخطي الدخول";
+
+"Using scratch card" = "استخدام كارت الشحن";
+
+"Scratch any Vodafone recharge card and recharge" = "إستخدم أي بطاقة شحن فودافون و إشحن";
+
+"Continue to login" = "تسجيل الدخول";
+
+"Pay" = "ادفع";
+
+
+// dashboard
+
+"Good morning, %@" = "صباح الخير يا %@";
+"Good afternoon, %@" = "مساء الخير يا %@";
+"Good evening, %@" = "مساء الخير يا %@";
+"Welcome to Ana Vodafone" = "أهلا بيك في أنا ڤودافون";
+"days to renew" = "يوم علي التجديد";
+"Refreshed at: xx" = "أخر تحديث في: %@";
+"of %@ left" = "من %@ متبقي";
+"Current spend" = "استهلاكك الحالي";
+"including %@ out of plan spend" = "شاملة %@ خارج الباقة";
+"See itemised bill" = "فاتورتك المفصلة";
+"Your balance" = "رصيدك";
+"RED points" = "نقاط RED";
+"In plan" = "في الباقة";
+"Out of plan" = "خارج الباقة";
+"phone" = "هاتف";
+"Remaining Flex" = "فليكساتك المتبقية";
+"Welcome to" = "أهلا بيك في";
+"All" = "الكل";
+"One moment please...." = "لحظه من فضلك....";
+"Dismiss" = "إلغاء";
+"Used SMS" = "استخدام الرسائل";
+"Used Internet" = "استخدام الإنترنت";
+"Used Minutes" = "استخدام الدقائق";
+"It's time to refresh your app" = "تطبيق انا فودافون محتاج تحديث";
+"Refresh Now" = "تحديث الصفحه";
+
+// credit card error code
+
+
+"50001" = "بدل شريحتك لـ4G ببلاش من اقرب فرع واستمتع بـ4جيجا هدية" ;
+"50002" = "انت بتستمتع بهدية حاليااستنى رسالة بعد انتهاء هديتك عشان تكمل الـ4 جيجا" ;
+
+
+"70001" = "ليس لديك معاملات سابقة، استخدم بطاقتك الإتمانية لمعرفة تفاصيل معاملاتك السابقة" ;
+"6002" = "عفواً، لا يمكنك إعادة الشحن أكثر من 5 مرات في الشهر الواحد." ;
+"6003" = "من فضلك ادخل قيمة بين 10 جنيه كحد أدنى، و100 جنيه كحد أقصى، عشان يتم الشحن بنجاح." ;
+"6004" = "للأسف حدث خطأ أثناء إتمام عملية الدفع مع البنك، من فضلك حاول مرة تانية" ;
+"6005" = "للأسف حدث خطأ غير متوقع، من فضلك حاول مرة تانية." ;
+
+"3006" = "عفواً! الكارت الذي تحاول استخدامه غير مصرح له بالقيام بهذه المعاملة." ;
+
+
+"500001" = "الرقم أو كلمة المرور غير صحيحة";
+"500002" = "تم إلغاء الخط";
+"500003" = "تم تغيير بيانات الخط برجاء التسجيل مجددا";
+
+// Renew ADSL
+
+"Renew ADSL" = "تجديد ال  ADSL";
+"Dear Customer, Once you activate the White list service." = "Dear Customer, Once you activate the White list service.";
+"ADSL Due Fees" = " أشتراك ال ADSL المستحق";
+"Your Wallet" = "محفظتك";
+"Renew now" = "تجديد الأن";
+
+"Conformation message?" = "رسالة التأكيد؟";
+
+"Please confirm paying" = "  لتجديد اشتراك ال ADSL برجاء الضغط علي تأكيد لخصم";
+"from your Vodafone Cash wallet for your ADSL Monthly fees by pressing ‘Confirm’" = "جنيه من محفظة فودافون كاش";
+
+"According to your consumption, we think 1 GB add on would keep you online until your next bundle renewal" = "بناءً على إستهلاك، 1 جيجابايت إضافية هتخليك تكمل أونلاين لحد ميعاد تجديد باقتك الجاي" ;
+"Buy now" = "اشتري دلوقتي" ;
+"No, thanks" = "لا، شكراً" ;
+"Choose another add-on" = "اختار باقة إضافية أخرى" ;
+
+//Amr Diab Puzzel
+"Congrats" = "مبروك!";
+"Unfortunately!" = "للأسف!";
+"You’ve proved that you are a big fan of Amr Diab and Ana Vodafone app you earned a ticket for two!" = "انت أثبت انك من معجبين عمرو دياب وأنا ڤودافون، عشان كده كسبت تذكرة لشخصين!";
+
+
+
+"Who can get a free ticket to Amr Diab’s concert?" = "عايز تروح حفلة عمرودياب؟";
+"Those who will find the riddles answers" = "معانا فوازير بدل ما تقف في طوابير";
+"Know more" = "اعرف اكتر";
+"Solve the riddle!" = "حل الفزورة!";
+
+"Solve the riddles" = "حل الفوازير!";
+"Challenge your mind and solve all the 30 riddles that you find" = "هيقابلك 30 فزورة، كل فزورة حلها هو صفحه في التطبيق";
+"Collect puzzle pieces" = "جمع و الصق اجزاء الصورة!";
+"Look for the riddles answers in the App’s section. Once you find the right section, you will find there the puzzle piece. Pick and place in the puzzle." = "في كل صفحة صح هتوصلها هتلاقي جزء من صورة، جمعها و الصقها في مكان الصورة.";
+"Be a winner" = "خليك الفائز!";
+"After you complete the puzzle, you will have the chance to enter a raffle and be one of the winners." = "لما تحل كل الفوازير وتجمع الصورة كاملة، هيبقى عندك فرصة انك تدخل السحب وتكون واحد من الفائزين";
+
+"Wait a second" = "ثواني!";
+"Get ready for a mind challenging game.." = "استعد للعبة تحدي الذكاء..";
+"Who wins?" = "مين هيكسب؟";
+
+"How to win" = "ازاي تكسب!";
+"This game consists of 30 riddles." = "اللعبه مكونه من 30 فزورة";
+"Solve the riddles you find." = "حل الفوازير اللي هتقابلك.";
+"Each riddle is about a section in the app." = "كل فزورة حلها هو صفحه في التطبيق.";
+"Solve the riddle by going to the right section." = "هتحل الفزورة لما توصل للصفحة الصح.";
+"After you complete the puzzle, you will receive one final question and you have to answer it in less than 30 seconds." = "لما تحل كل الفوازير وتجمع الصورة كاملة، هيجيلك سؤال أخير لازم تحله في خلال 18 ثانية";
+"The first 50 to solve the final question will get free tickets to Amr Diab’s concert. Subscribing into Amr Diab’s world is a prerequisite for winning." = "أول 25 شخص يحلوا السؤال الأخير ويكونوا مشتركين في عالم عمرو دياب هما اللي هيكسبوا";
+"In the right section you will find a puzzle piece, collect it." = "في كل صفحة صح هتوصلهافي كل صفحة صح هتوصلها هتلاقي جزء من صوره";
+"Drag and place puzzle pieces to complete puzzle" = "   جمع الاجزاء والزقها في مكانها عشان تكون الصورة كاملة";
+"After you complete the puzzle, you will receive one final question and you have to answer it in less than 30 seconds." = " لما تحل كل الفوازير وتجمع الصورة كاملة، هيجيلك سؤال أخير لازم تحله في خلال ١٨ ثانية";
+"The first 50 to solve the final question will get free tickets to Amr Diab’s concert." = "أول25  شخص هيحلوا السؤال الأخير هيكسبوا تذكرة لحفلة عمرو دياب.";
+"Please note: Subscribing into Amr Diab’s world is a prerequisite for winning." = " شرط أساسي للفوز أن يكون المتسابق مشترك في عالم عمرو دياب ";
+"You can take a screen shot of the completed puzzle and post it on Facebook or Instagram" = "بعد ما تكمل اجزاء الصورة،  تقدر تصورها و تنزلها على الفيس بوك او انستجرام";
+
+"Today’s riddle!" = "فزوره النهارده";
+
+"Completion level" = "قربت بنسبة";
+"Pick and place" = "جمع و الصق";
+"Pick the puzzle pieces you collected, and place them in the puzzle box" = "جمع الاجزاء و الصقها عشان تكمل الصورة";
+
+"Solve the riddle!" = "حل الفزورة!";
+"Know more" = "اعرف اكتر";
+"You solved it!" = "اجابتك صح";
+"Keep on solving more riddles to collect all puzzle pieces and get the chance to win a free ticket" = "استمر في حل الفوازير و تجمع اجزاء الصورة ويبقى عندك فرصه انك تكسب تذكرة مجانيه للحفلة";
+"Place puzzle piece" = "الصق جزء من الصورة";
+"Later" = "مش دلوقتي";
+"You did great!" = "براڤو";
+"Winners will be announced soon, Best of luck." = "براڤو أنت عملت اللي عليك! جاهز لآخر سؤال؟";
+"Buy a ticket" = "تذاكرالحفلة";
+"Take the final question" = "أنا جاهز لآخر سؤال!";
+
+"You are almost there!" = "انت قربت خلاص";
+"Solve the rest of the riddles" = "حل باقي الفوازير";
+
+"Well done! You completed 100%" = "مبروك! وصلت لـ100%";
+
+"Ticket info" = "بيانات التذكره";
+"Buy a ticket!" = "اشتري تذكرة!";
+
+"21 December, 2017" = "١٩ يناير";
+"Date" = "التاريخ";
+"350 EGP" = "350 جنيه";
+"Price" = "السعر";
+"6-9 PM" = "6-9 مساءاً";
+"Door opens" = "تُفتح الأبواب الساعة";
+"Buy a tickets" = "اشتري تذكرة";
+"Subscribing into Amr Diab’s world is a prerequisite for winning.Subscribe to Amr Diab’s world now by dialing" = "من شروط الفوز بتذكرة الحفل أنك تكون مشترك في عالم عمرو دياب. \n اشترك دلوقتي في عالم عمرو دياب اتصل ب *٦٦# \n قدامك ١٨ ثانيه تحل السؤال ده";
+"19 years ago Vodafone appeared for the first time in Egypt! By that time Amr Diab biggest hit was?" = "من 19 سنة بالضبط ڤودافون ظهرت في مصر لأول مرة! في الوقت ده عمرو دياب كانت أشهر أغانيه هي؟";
+
+"Know more info about the concert and buy a ticket." = "اعرف معلومات اكتر عن تذاكر الحفلة و اشتري تذكرة";
+
+"Ragein" = "راجعين";
+"Noor el Ein" = "نور العين ";
+"Awedoony" = "عودوني";
+"Amarein"= "قمرين";
+"Call 2121" =  "كلم ٢١٢١";
+
+"Want to know more about the game?" = "عايز تعرف عن اللعبة أكتر؟ ";
+"Win a ticket"  ="اكسب تذكرة";
+"Play a simple game and get a chance to win a free ticket to the outstanding musical event; Amr Diab’s concert.Solve some riddles and collect a puzzle, it’s fun & easy and the prize is big."= "العب لعبة بسيطة واكسب فرصة للحصول على تذكرة مجانية لحضور اكبر حدث موسيقي في مصر، حفلة عمرو دياب. \n حل فوازير وجمع صور، اللعبة سهلة ومسلية والجايزة تستاهل.";
+"Start playing" = "ابدأ اللعب";
+"Buy a ticket" = "اشتري تذكرة";
+"done" = "تم";
+"skip" = "إبدأ بسرعه";
+"Redeem your ticket!" = "ازاي اخد تذكرتي";
+"Take the final question" = "أنا جاهز لآخر سؤال!";
+"Sorry! Better luck next time. \n You still can buy a ticket" = "بالرغم من انك عملت مجهود كبير وقربت جداً من الفوز، الا ان فرصة الفوز بتذكرة فاتتك!";
+"Back to journey" = "ارجع للرحلة";
+//25
+"See, It’s easy. You are going to enjoy it, and you’ll enjoy the prize much more." = "سهلة؟ اللعبة هتعجبك والجايزة هتعجبك أكتر";
+//25-50
+"Looks like you’re going to make it! Keep the good work buddy." ="·برافو، انت فهمت اللعبة خلاص! الفوازير اللي باقية مش هتبقى صعبة عليك";
+//50-75
+"Your performance is unbelievable! the free ticket is waiting!" = "انت بتتقدم بشكل ممتاز! تذكرة حفلة عمرو دياب مستنياك!";
+//75-95
+"Can you here the music? Amr Diab is coming to stage!" = "الموسيقى بتشتغل، الناس بتهيص، وعمرو دياب خلاص هايطلع! انت قربت جداً اوعى توقف دلوقتي!" ;
+//100
+"Congratulations! You’ve perfectly completed your part! The rest is luck, and we wish you the best!Will update you soon." = "مبروك! انت عملت اللي عليك وزيادة! اللي باقي شوية حظ!";
+
+
+"Brilliant! you've solved all the available riddles, once there are any new riddle we will notify you." = "هايل، انت حليت كل الفوازير الجاهزة! أول مايبقى في فوازير جديدة هنبعتلك!";
+
+
+"unfortunately you're not a winner! although you have answered correctly, but the winner must be a subscriber of Amr DIab's world. you still can buy a ticket" = "للأسف ماكسبتش! مع انك جاوبت صح بس من شروط المسابقة انك تكون مشترك في عالم عمرو دياب. تقدر تشتري تذكرة من هنا";
+
+"Winners will be announced soon, Best of luck." = "هنعلن عن الفائزين قريبا، حظ سعيد.";
+"Buy a ticket" = "تذاكر الحفلة" ;
+"Your ticket is ready! Go to the Vodafone store in Cairo Festival City with your national ID to pick it up." = "تذكرتك موجوده في فرع ڤودافون اللي في كايرو فستيفال سيتي، روح في أقرب وقت استلمها ببطاقتك.";
+
+"Please enter your Pin  to confirm the payment transaction" = "لتاكيد عملية الدفع  برجاء ادخال الرقم السري";
+"*PIN Code" = "*الرقم السري";
+"Your ADSL is successfully renewed" = "تم تجديد اشتراك ال ADSL  بنجاح";
+
+// sim swap error codes
+
+"Successfully done!" = "تم بنجاح!";
+"You have successfully activated your new SIM card, Close the App & Switch your SIM card" = "تم تفعيل شريحتك الجديدة بنجاح، اغلق التطبيق و بدل الشريحة الجديدة";
+
+"Close the App" = "اغلاق التطبيق";
+
+"8001" = "رقم الشريحة تم استخدامه مسبقاً. برجاء شراء شريحة 4G جديدة و اعادة المحاولة.";
+"8002" = "عفوا برجاء ادخال الرقم القومى المسجل فى بيانات هذا الخط. او لتعديل البيانات راجع الأوراق المطلوبة فى قسم الشروط والأحكام ثم زور اقرب فرع";
+"8003" = "هذه الخدمه غير متاحه لنظام خطك";
+"8004" = "هذا الرقم غير صحيح";
+"8005" = "رقم الشريحة غير صحيح. برجاء التأكد من رقم الشريحه و اعادة المحاولة.";
+
+"Connection will be lost when you swap to your new SIM card" = "سيتم قطع الاتصال للتغيير للشريحة الجديدة";
+
+// FlexRevamp
+
+"My flexes" = "فليكساتي";
+"Total flexes" = "المتبقي من فليكساتي";
+"Mobile Internet" = "الموبايل انترنت";
+"Manage my mobile internet" = "تحكم ف الانترنت";
+"Vodafone numbers" = "أرقام فودافون";
+"flexes" = "فليكسات";
+"Other numbers" = "أرقام الأخرى";
+"Manage other minutes" = "تحكم ف دقائق الشبكات الاخرى";
+"flex_bundle_SMS" = "الرسايل";
+"bundle_auto_renewal" = "التجديد التلقائي للباقة";
+"Bundle_renewal_desc" = "دلوقتي تقدر تستخدم الخدمة دي و تستمتع بتجديد تلقائي لباقتك شهريا";
+"Mobile internet flexes limit" = "الحد الأقصي لفليكسات الموبايل انترنت";
+"Other minutes flexes limit" = "الحد الأقصي لفليكسات الأرقام الأخري";
+"Megabytes limit" = "أقصى حد للميجابايتس";
+"Minutes limit" = "أقصى حد للدقائق";
+"Follow Up rate" = "Follow Up rate";
+"Throttling speed" = "تقليل سرعة ال Whatsapp";
+"Whatsapp_desc" = "سرعة الWhatsapp هتقل لحد متشغل الخدمة دي و تستخدمه من باقة الفليكس/الموبايل انترنت الأساسية";
+"Flexes for mobile internet" = "فليكسات للموبايل انترنت";
+"Flexes for other numbers" = "فليكسات للأرقام الأخرى";
+
+"Please note that you can't turn on this again" = "Please note that you can't turn on this again";
+"Flex rollover" = "فليكساتك المترحلة";
+"Remaining Rollover flexs" = "الفليكسات المرحلة المتبقية %@ فليكس";
+"of X flexes left" = "من %@ فليكساتك المتبقية";
+"Consumed flexes" = "فليكسات مستخدمه";
+"Are you sure you want to opt in rollover?" = "تفعيل خاصية ترحيل الفليكسات؟";
+"Are you sure you want to opt out rollover?" = "إلغاء خاصية ترحيل الفليكسات؟";
+"Are you sure you want to turn on your monthly auto renewal option?" = "هل متأكد من تشغيل خدمة التجديد التلقائي لباقتك   شهريا";
+"Are you sure you want to turn off your monthly auto renewal option?" = "هل متأكد من إلغاء خدمة التجديد التلقائي لباقتك   شهريا";
+
+"Are you sure you want to repurchase your bundle?" = "هل متأكد من اعادة شراء الباقة؟";
+
+"Are you sure you want turn on your Whatsapp speed throttle option?" = "متأكد من تشغيل خدمة تقليل سرعة الWhatsapp?";
+"Are you sure you want turn off your Whatsapp speed throttle option?" = "متأكد من إلغاء خدمة تقليل سرعة الWhatsapp?";
+
+"Your current minutes limit is: X flex" = "أقصي حد للدقائق الحالي هو %@ فليكس";
+"Your current mobile internet limit is: X flex" = "أقصي حد للموبايل إنترنت الحالي هو %@ فليكس";
+
+"Flexes for mobile internet" = "فليكسات للموبايل انترنت";
+"Flexes for other numbers" = "فليكسات للأرقام الأخري";
+
+"FlexSave" = "حفظ";
+
+"You have successfully repurchased your bundle" = "لقد تم تجديد باقتك بنجاح";
+
+"Now you can roll over your flexes to the next month automatically" = "دلوقتي هتقدر ترحّل فليكساتك تلقائيا للشهر التالي";
+
+// Ready Compound
+"-2012" = "برجاء تآكيد الحساب عن طريق الإيميل";
+
+"Addons" = "الباقات الإضافية" ; 
+"-2011" = "لا يوجد بيانات لهذا الحساب";
+
+
+// IN Joker
+"IN Management" = "إداره IN";
+"Choose your Joker" = "اختار جوكر";
+"Use your Jokers and select your preferred extension to your tariff by dragging it in the below boxes" = "اختار الجوكر يزودلك ايه و اسحبه للمربع الفاضي";
+"You have X Joker" = "فاضلك %d جوكر";
+"You have X Jokers" = "فاضلك %d جوكر";
+"Take a tour" = "اتعرف على اللعبة";
+"Your consumption" = "استهلاكك";
+"Exchange for another one" = "بدل الجوكر بواحد تاني";
+
+"Banner_You have X Joker" = "عندك %d جوكر";
+"Banner_You have X Jokers" = "عندك %d جوكر";
+"Choose them now" = "اختارهم دلوقتي";
+"You have finished all your free Jokers" = "الجواكر المجانيه خلصت";
+"Purchase now" = "اشتري جواكر جديده";
+
+"Modify Your Joker" = "غير الجوكر";
+"Purchase extra Joker" = "اشتري جوكر زياده";
+"Main Bundle Usage" = "استهلاك نظامك";
+"Joker usage" = "استهلاك الجوكر";
+"Social & Music" = "سوشيال و مزيكا";
+
+"You have changed your Joker successfully" = "كده تمام، الجوكر اتغير";
+"You have purchased your Joker successfully" = "كده تمام، اشتريت الجوكر";
+
+"X Joker selected in X" = "اخترت %@ جوكر في %@";
+"Total Remaining X X" = "باقيلك %@ %@";
+"Total Remaining %@" = "باقيلك %@";
+
+"You chose all Jokers" = "انت اخترت كل الجواكر";
+"You can purchase an additional Joker for 5 LE" = "ممكن تشتري جوكر ب5 جنيه تزود بيه الى انت عايزه";
+"Joker Buy now" = "اشتري دلوقتي";
+
+"Change Joker" = "غير جوكر";
+"You chose to change a Joker extension, Select from the below" = "انت اخترت تبدل جوكر، اختار تبدله بايه؟";
+"Confirm replace Joker" = "تأكيد تبدل جوكر";
+
+"Purchase Joker" = "اشتري جوكر";
+"You can purchase a Joker & use it according to your preference" = "";
+"Select from the below extensions for only 5 LE" = "ممكن تشتري جوكر و زود بيه الى انت عايزه  ب 5 جنيه بس";
+
+"Not enough balance" = "رصيدك مش كفايه";
+"You don’t have enough balance to buy an additional Joker" = "رصيدك مش كفايه انك تشتري جوكر زياده";
+"Buy a Joker with credit card" = "اشتري الجوكر بالكريدت كارد";
+
+"Your Joker" = "الجوكر";
+"Each Joker can be used to choose whatever suits you, mobile internet, minutes or social & music megabytes according to your need anytime. Pick your Joker." = "اختار تزود بالجوكر، موبايل انترنت، دقايق او سوشيال و مزيكا. .براحتك اختار الى علي مزاجك";
+
+"Joker Next" = "اللي بعده";
+"Joker Previous" = "اللي قبله";
+
+"Choose Your Joker" = "اختار الجوكر";
+"Choose your Joker by Dragging the desired extension to the empty box" = "اختار الجوكر الي انت عايزه واسحبه للمربع الفاضي";
+
+"Adjust your Joker" = "غير الجوكر";
+"You can change one of the already unused chosen extension  with another preferable value for free. Drag what you want to dismiss upwards, then drag your new choice downwards" = "ممكن تغير جوكر مستخدمتوش ببلاش، اسحب الى انت عايز تغيره من اختياراتك لفوق و اسحب الي انت عايز تزوده للمربع تحت";
+
+"Locked Joker" = "جوكر استخدمته";
+"This Lock means that you have consumed from your joker and it cannot be replaced" = "علامه القفل دي يعني انت استخدمت من الجوكر ده و مينفعش تغيره";
+
+"Total Consumption" = "استهلاكك";
+"Check your total monthly consumption including the Joker extension" = "هتعرف كل استهلاكك من النظام و الجوكر";
+
+"Your consumption" = "استهلاكك";
+"Check your total consumption of the month including the Joker choices" = "تقدر تراجع استهلاكك بالتفصيل شامل استهلاكك من النظام و الجوكر";
+
+"Take a tour" = "اتعرف على الجواكر";
+"Take a tour and know how to play with the Jokers" = "هتعرف ازاي تلعب بالجواكر";
+
+"Choose Joker" = "اختار جوكر";
+"You have used your free Jokers for this month but you can buy extra ones for 5 LE only" = "انت استخدمت الجواكرالمجانية للشهر دة بس تقدر تشتري جواكر زيادة ب 5 جنيه بس";
+
+"Got it" = "فهمت";
+
+
+// November recharge promo
+"Get your gift" = "استلم هديتك";
+
+"kart_elkroot_no_gifts" = "اشحن عشان تجيلك هدايا كارت الكروت";
+
+"Kart Elkroot" = "كارت الكروت";
+
+"You've received your gift successfully." = "استلمت هديتك بنجاح";
+
+"Recharge Gift" = "هدية الشحنة";
+
+"Enjoy xx units for Vodafone minutes & SMS xx and xx Flexes with Kart Elkroot" = "استمتع ب %@ وحدة تستخدمهم في دقايق و رسايل %@ لفودافون و %@ فليكس مع كارت الكروت";
+"Enjoy xx units for Vodafone minutes & SMS xx and xx Favorite Number with Kart Elkroot" = "استمتع ب %@ وحدة تستخدمهم في دقايق و رسايل لفودافون %@ و%@ دقايق لرقمك المفضل مع كارت الكروت";
+"Enjoy xx units for Vodafone minutes & SMS xx and xx Social Megabytes with Kart Elkroot" = "استمتع ب %@ وحدة تستخدمهم في دقايق و رسايل %@ لفودافون و %@ ميجابايتس سوشيال مع كارت الكروت";
+"Enjoy xx units for Vodafone minutes & SMS xx and xx minutes to Vodafone for a week, 10 minutes daily with Kart Elkroot" = "استمتع ب %@ وحدة تستخدمهم في دقايق و رسايل %@ لفودافون و%@ دقايق لفودافون لمده اسبوع، ١٠ دقايق يوميا مع كارت الكروت";
+
+"Enjoy xx units for Vodafone minutes & SMS xx from 365 offers with Kart Elkroot" = "استمتع ب %@ وحدة تستخدمهم في دقايق و رسايل %@ لفودافون من عروض ٣٦٥ مع كارت الكروت";
+"Enjoy xx units for Vodafone minutes & SMS xx with Kart Elkroot" = "استمتع ب %@ وحدة تستخدمهم في دقايق و رسايل %@ لفودافون مع كارت الكروت";
+
+"& Megabytes" = "وميجابايتس";
+
+"xx times your recharge" = "%@ أضعاف شحنتك";
+
+"Enjoy xx times your recharge Voice units with Kart Elkroot" = "استمتع ب %@ أضعاف شحنتك مكالمات مع كارت الكروت";
+
+"Free Minutes" = "دقايق مجانية";
+
+"Favorite Number" = "رقمك المفضل";
+"Select your favorite number & enjoy xx Minutes with Kart Elkroot" = "اختار رقمك المفضل و استمتع ب %@ دقيقة مع كارت الكروت";
+
+"Choose your Favorite Number" = "اختار رقمك المفضل";
+"Add your favorite number" = "ضيف رقمك المفضل";
+
+"Social Megabytes" = "سوشيال ميجابايتس";
+"Enjoy xx Social Megabytes with Kart Elkroot" = "استمتع ب %@ سوشيال ميجابايتس مع كارت الكروت";
+
+"Free Megabytes" = "ميجابايتس ببلاش";
+"Enjoy xx Megabytes with Kart Elkroot" = "استمتع ب %@ ميجابايتس ببلاش مع كارت الكروت";
+
+"Happy Hour" = "ساعة حظك";
+"Enjoy xx minutes for Vodafone numbers with Kart Elkroot" = "استمتع ب %@ دقايق لارقام فودافون كل يوم مع كارت الكروت";
+"Enjoy xx times your recharge Happy Hour with Kart Elkroot" = "استمتع ب%@ أضعاف شحنتك ساعة ببلاش مع كارت الكروت";
+
+"Free Calls" = "مكالمات ببلاش";
+"Enjoy xx Free Calls to Vodafone numbers with Kart Elkroot" = "استمتع ب%@ مكالمات ببلاش لارقام فودافون مع كارت الكروت";
+
+"Free Minutes & Megabytes" = "دقايق و ميجابايتس ببلاش";
+"Enjoy xx Free Minutes to Vodafone numbers & Megabytes with Kart Elkroot" = "استمتع ب%@ دقايق و ميجابايتس ببلاش لارقام فودافون مع كارت الكروت";
+
+"Enjoy xx Free Minutes to Vodafone numbers with Kart Elkroot" =  "استمتع ب%@ دقايق ببلاش لارقام فودافون مع كارت الكروت";
+
+"Free Units" = "وحدات مجانية";
+"Enjoy xx Free Units with Kart Elkroot" = "استمتع ب%@ وحدات مجانية مع كارت الكروت";
+
+"Free SMS" = "رسايل ببلاش";
+"Enjoy xx Free SMS with Kart Elkroot" = "استمتع ب%@ رسايل ببلاش مع كارت الكروت";
+
+"Khair Zaman Voucher" = "50 جنيه من خير زمان";
+"Enjoy 50 L.E discount from Khair Zaman with Kart Elkroot" = "استمتع ب 50 جنيه من خير زمان مع كارت الكروت";
+
+"Cook Door Sandwich" = "ساندوتش من كوك دور";
+"Enjoy Cook Door Sandwich with Kart Elkroot" = "استمتع بساندوتش من كوك دورمع كارت الكروت";
+
+"Careem Ride" = "توصيلة من كريم";
+"Enjoy Careem Ride with Kart Elkroot" = "استمتع ب توصيلة من كريم مع كارت الكروت";
+
+"Mega Prize" = "الجايزة الكبيرة";
+"Swipe & check your Mega Prize" = "مر عبر الشاشة علشان تعرف جايزتك";
+
+//spin and win
+"Messege has been sent success" = "تم ارسال الرسالة بنجاح";
+"success spin"= "تم";
+"resend spin" = "ارسال الVoucher  تاني";
+
+
+//MI
+"Mobile Internet generic Bundle" = "باقة %@ الاضافية";
+"Video" = "فيديو";
+"Social" = "سوشيال";
+"Music" = "المزيكا";
+"Mobile Internet data management"= "ادارة حساب الموبايل انترنت";
+"Dear customer,You are not subscribed to any of internet bundles"="عزيزى العميل , \n أنت غير مشترك في اي باقة ";
+"Choose the best that suits you from a wide variety of internet bundles"="إشتري باقة إضافيه لتستمتع بسعة تحميل إضافية يمكنك استخدامها حتى تاريخ التجديد ";
+"Mobile Internet Quota Add-ons"="باقات إضافية";
+"Mobile Internet Social Bundle" = "باقة سوشيال الاضافية";
+"Mobile Internet video Bundle" = "باقة فيديو الاضافية";
+"Mobile Internet music Bundle" = "باقة المزيكا الاضافية";
+
+"Enjoy the bundle for one month" = "إستمتع بالباقه لشهر واحد";
+"Enjoy the bundle monthly" = "إستمتع بالباقه شهريا";
+"Buy this add-ons" = "إشتري الأن";
+
+//Shark
+
+"To Migrate to Flex xx and Enjoy zz Flexes and free Whatsapp, press confirm" = "لتأكيد التحويل لفليكس %@ و الاستمتاع ب%d فليكس واتساب ببلاش اضغط تأكيد";
+
+
+"You are now on Flex XX till the end of your current bundle and have ZZ Flex and free Whatsapp" = "انت دلوقتي هتكمل الباقة على فليكس %@ الجديد و معاك %d فليكس واتساب ببلاش لحد اخر الباقة";
+
+"Succes xx" = "تم تقسيط باقة فليكس %@ لعدم وجود رصيد كافي لشراء الباقة كامله. وستصلك رساله بالتفاصيل";
+
+
+// New Data Bundle
+"New Data Bundle Title" = "MI Promo Details";
+"New Data Bundle Desc" = "Appear fourth. Dominion two face appear moving replenish midst day image creature Whales first whose beginning doesn’t it kind.\n\nDry be hath night. Every upon abundantly isn’t won’t life open Good. Don’t they’re Abundantly replenish midst greater them. The green.";
+"MI Promo" = "MI Promo";
+"Not eligible" = "You are not eligible to this offer";
+
+// Payfort
+"Pay using Vodafone cash account" = "ادفع باستخدام حساب فودافون كاش";
+"Pay my bill" = "إدفع فاتورتي";
+"Pay for others" = "إدفع لغيرك";
+"Total due amount for bill is" = "المجموع الكلي المستحق للفاتورة";
+"Your bill date will be:" = "تاريخ فاتورتك في:";
+"Payment date" = "تاريخ الدفع";
+"Using my credit card" = "إستخدام الكرديت كارد الخاص بي";
+"Use your credit card to pay your bill" = "إستخدم الكريديت كارد الخاص بك لدفع فاتورتك";
+"Add new credit card" = "أضف كرديت كارد جديد";
+"Enter your CVV number" = "ادخل رقم الCVV ";
+"Enter an amount" = "ادخل المبلغ";
+"Enter your credit card CVV number" = "ادخل رقم ال CVV الخاص بالكريدت كارد";
+"Add Credit Card" = "اضافة كريديت كارد";
+"Remove this card" = "الغاء كريديت كارد";
+"Use your credit card to pay your bill" = "إستخدم الكريديت كارد الخاص بك لدفع فاتورتك";
+"Card name" = "الإسم على الكارت (إختياري)";
+"Card number" = "رقم الكارت";
+"CVV" = "CVV";
+"Add this card" = "إضافة الكارت";
+"Recharge " = "اشحن";
+"Other" = "آخرى";
+"Mobile number" = "رقم التليفون";
+"Select card" = "اختر كارت";
+"You have to enter amount first" = "برجاء ادخال المبلغ اولا";
+"There is no transactions" = "لا يوجد معاملات سابقة";
+
+// One GB Promo
+"One GB Promo Title" = "١ جيجا برومو";
+"Get this offer now" = "خد العرض الأن";
+"One GB Promo Desc" = "استمتع ب١ جيجا ببلاش دلوقتي!";
+"One GB Promo Desc Part 2" = "مش هيفوتك حاجه على Facebook, WhatsApp, Twitter, Instagram و Snapchat.\nو كمان إتفرج على كل فيديوهاتك على Youtube, Shahid, VodafoneStad و VodafoneTV";
+"Get Offer" = "احصل على العرض";
+"One GB Promo Success" = "إنت دلوقتي بتستمتع بجيجا إنترنت صالحة لمدة ٧ أيام\n\nانت ممكن تستخدم ٥٠٠ ميجابيت للسوشيال ميديا و ٥٠٠ ميجابيت للفيديو ببلاش";
+//play and win
+"Play now and answer the questions to win!" = "العب وجاوب على الأسئلة عشان تكسب";
+
+"Play and win" = "ألعب و أكسب";
+
+
+// World Cup
+
+"x members" = "%@ في فريقك";
+"x teams" = "%@ فرق";
+"other teams desc" = "اعرف الفرق اللي انت عضو فيها";
+"Redeem x unit for y EGP" = "إشترك في هديتك %@ وحدة ب%@ قرش";
+"Team name is updated" = "تم تغيير اسم الفريق";
+
+"New team name" = "اسم الفريق الجديد";
+
+"Edit team name" = "تعديل اسم فريق 010";
+"010 Team" = "فريق ٠١٠";
+"My team" = "فريق ٠١٠";
+"Create_your_team" = "جمع فريقك";
+"Create your team" = "جمع فريق ٠١٠";
+"MAKE your team" = "اعمل فريق ٠١٠";
+"Other teams" = "فرق أخرى";
+"Add team member" = "زود حد في فريق ٠١٠";
+"Team member added successfully!" = "تم اضافه العضو بنجاح";
+"Edit member" = "تعديل";
+"Remove Member from your team" = "إخراج الرقم من فريقك";
+"Team name is updated" = "تم تغيير اسم الفريق";
+"My team" = "فريق ٠١٠";
+"Are you sure you want to remove this member?" = "متأكد من إخراج الرقم من فريقك؟";
+"Remove member" = "إخراج الرقم";
+"Create & choose members" = "جمع الفريق و زود صحابك";
+
+"You’ve just redeemed X Piasters, which are X units." = "معاك %@ قرش يعني %@ وحدة";
+"You’ve just redeemed X EGP, which are X units." = "معاك %@ جنيه يعني %@ وحدة";
+
+"Redeem your gift" = "استبدل هديتك";
+"Your gift is x units for y Piasters" = "هديتك %@ وحده ب%@ قرش";
+
+"When we unite on one thing … its stronger than anything" = "لما بنتجمع على حاجة بتبقى اقوى من اي حاجة";
+"Create you team & unite 10 of your friends in your 010 team. We will  sum your team members’ daily amount spent and you’ll receive it as a gift on the following day" = "اعمل فريقك وجمّع 10 من صحابك فى فريق 010 هنجمع كل اللي أعضاء فريقك هيصرفوه وهيرجعلك اليوم اللى بعده كهدية";
+"Your gifts box" = "صندوق الهدايا";
+"Your gifts box has a lot of gifts to be redeemed" = " اشترك دلوقتي في هدايا فريق 010 للنهارده";
+"Your gifts box is empty. Unite 10 of your friends in one team and earn many gifts" = "ليس لديك هدايا. جمّع 10 من صحابك في فريقك و كل اللى هتصرفوه هيجيلكوا اليوم اللى بعده هديه";
+"Create your own team and earn many gifts" = "جمع 10 من صحابك في  فريق 010";
+"Check all the teams you are a member in" = "انت حاليا مش في أي فريق آخر";
+"The new player score will be added to your team score." = "تم اضافه فرد لفريق ٠١٠ بنجاح";
+"Score" = "جنيه";
+"Score:" = "جنيه";
+"Your team’s name" = "اسم فريقك";
+"Add Member" = "زود في فريقك";
+"What’s this" = "ايه ده";
+"What’s this?" = "ايه ده؟";
+"What's this" = "ايه ده";
+"What's this?" = "ايه ده؟";
+
+"WhatsThis1" = "اعمل فريقك واختار لاعيبته من اصحابك أو اشترك في فريق حد منهم.";
+"WhatsThis2" = "أول ما الفريق يبقى جاهز، هتجيلك جوايز في مقابل استخدامك العادي للموبايل.";
+"WhatsThis3" = "مع كل جول صلاح هيسجله مع فريقه أو المنتخب هيجيلك 11 دقيقة مجانية.";
+
+"Phone Number"="رقم الموبايل";
+
+"Check all gifts" = "اتعرف على كل الهدايا";
+
+"You’ve just redeemed" = "انت دلوقتي بتحصل علي";
+
+"Rename team" = "اسم فريقك الجديد";
+"Sorry, you have exceeded the maximum number of allowed members" = "خطأ,\nالحد الأقصى لأعضاء فريقك هو 10";
+"Sorry, the entered phone number is not eligible" = "خطأ,\nرقم الموبايل دة ماينفعش يكون من أعضاء فريقك";
+"Sorry, the entered phone number exists before" = "خطأ,\nرقم الموبايل دة موجود في فريقك";
+"Sorry, you have exceeded the maximum number of teams" = "خطأ,\nلا يمكنك الانضمام لأفراد فرق تانية";
+"Sorry, team not found" = "خطأ,\nالفريق دة مش موجود";
+"Sorry, user doesn't exist in this team" = "خطأ,\n الرقم دة مش موجود في فريقك";
+"Sorry, you have exceeded the maximum number of redeeming" = "خطأ,\n ";
+"Sorry, the entered phone number is not eligible for opt-in or opt-out" = "خطأ,\n الرقم دة ماينفعش يكون فرد في فريقك";
+
+// Alerting services
+"No services found" = "إنت مش مشترك في أي خدمة";
+"No search result" = "لا توجد نتائج لبحثك";
+"Subscribe " = "إشترك ";
+"Subscribe" = "إشترك";
+"Subscribe_Now" = "إشترك الأن";
+"Subscribe with" = "إشترك بـ";
+"Alerting services" = "خدمات إخبارية";
+"Pt" = "قرش";
+"Popular" = "الأكثر إستخدام";
+"Search result" = "نتائج البحث";
+"Service price" = "سعر الإشتراك";
+"Return" = "رجوع";
+"You've successfully opted out the service" = "تم إلغاء إشتراكك للخدمة";
+"You've successfully purchased the service" = "تم الإشتراك في الخدمة بنجاح";
+"Valid until:" = "ساري ل:";
+"Service price:" = "سعر الإشتراك:";
+"You are subscribed on this service" = "إنت مشترك في هذه الخدمه";
+"Manage your service" = "تحكم في الخدمه";
+"You will not be charged for using Ana Vodafone application locally or while roaming" = "إستخدامك لتطبيق أنا ڤودافون لا يستهلك من الرصيد أو من باقة الأنترنت محليا أو أثناء التجوال";
+"Alerting services Description" = "مش هيفوتك حاجة مع خدمة الرسايل الإخبارية, هيجيلك رسايل يومية بآخر الأخبار إختار الخدمات اللي تحبها وإشترك دلوقتي";
+"Manage your Alerting services" = "إدارة الرسايل الإخبارية";
+"My services" = "خدماتي";
+"Explore" = "إكتشف";
+"Subscribed Successfully" = "تم الإشتراك بنجاح";
+"Unsubscribed" = "تم إلغائها";
+"Unsubscribe" = "إلغاء الإشتراك";
+"Confirm subscription" = "تأكيد الإشتراك";
+"You are about to subscribe" = "إنت بتشترك في خدمة %@";
+"You’re about to unsubscribe from XX service" = "إنت بتلغي إشتراكك من خدمة %@";
+"You’ve unsubscribed from XX service successfully" = "تم إلغاء إشتراكك من خدمة %@ بنجاح";
+"You’ve subscribed to XX service successfully" = "لقد إشتركت في خدمة %@ بنجاح";
+"ASCongratsulations" = "مبروك";
+"You’re about to subscribe to XX service with XX" = "إنت دلوقتي بتشترك في خدمة %@ ب %@";
+"ASRenewal date" = "تاريخ التجديد: ";
+"Explore more services" = "إكتشف خدمات أخرى";
+"Search results" = "نتائج البحث";
+"Unsubscribe now" = "إلغاء الخدمة";
+"Explore other services" = "إكتشاف خدمات أخرى";
+"Back to my services" = "الرجوع لخدماتي";
+"You have subscribed to all services in XX" = "إنت إشتركت في كل خدمات %@";
+
+"Manage your Alerting services Desc" = "مش هيفوتك حاجة مع خدمة الرسايل الإخبارية, هيجيلك رسايل يومية بآخر الأخبار إختار الخدمات اللي تحبها وإشترك دلوقتي";
+"My services Desc" = "تابع كل الخدمات إللي إشتركت فيها، وممكن كمان تلغي إشتراكك في أي وقت";
+"Explore Desc" = "إعرف أكتر عن مجموعة كبيرة من خدمات الرسايل الإخبارية وإختار إللي تحبه";
+"Search Desc" = "هتلاقي الخدمة إللي بتدور عليها بسهولة مع خاصية البحث";
+
+"Get Started" = "إبدأ";
+
+"Tutorial screen 1 image" = "alerting_manage";
+"Tutorial screen 2 image" = "alerting_myservices_ar";
+"Tutorial screen 3 image" = "alerting_explore_ar";
+"Tutorial screen 4 image" = "alerting_search_ar";
+
+// Flex tutorial
+
+"My Balance \n" = "رصيدي \n";
+"Monitor the balance you have in your \n account this way" = "كل ما يخص رصيد  \n حسابك هتلاقيه هنا ";
+"Your Flex balance \n" = "رصيد فليكساتك \n";
+"the total remaining Flexes are \n this way" = "مجموع فليكساتك و المتبقي منها تقدر \n تعرفه من هنا";
+"Explore your internet \n" = "اكتشف تفاصيل \n";
+"bundle consumption details \n this way" = "استهلاك باقة الانترنت \n من هنا";
+"Flex consumption details \n" = "تفاصيل استهلاكك لفليكساتك \n";
+"Click here to check your Flexs \n Consumption in details" = "اضغط هنا عشان تعرف تفاصيل  \n استهلاكك لفليكساتك";
+"Close" = "اغلق";
+
+"Not now" = "مش دلوقتي";
+
+"You are about to activate x" = "هيتم الاشتراك في خدمة %@";
+"Are you sure you would like to unsubscribe from x" = "تأكيد الغاء خدمة  %@";
+
+"xx results" = "%lu نتائج";
+
+"You will find exactly what you're looking for" = "بتدور على ايه فى أنا ڤودافون";
+"Search for..." = "ابحث عن...";
+"newItemSearch"="search_here_ar";
+
+"4G Settings" = "اعدادات 4G";
+// Stars Card
+"Your card is refilled with recharges to dedicate to to others whenever anyone on your team recharges" = "كارتك بيتملى شحنات  تهديها لناس أكتر كل ما حد في فريقك يشحن";
+"Stars Card has endless recharges!" = "كارت النجوم شحناته مابتخلصش!";
+"Refilled whenever your team recharges with more dedications to be united with your loved ones" = "فريقك بيزودلك شحنات كارتك كل ما يشحن علشان تهديه لناس أكتر ونفضل متجمعين";
+
+"With Vodafone & Pepsi Recharge or drink & you will win multiples of your spend worth of Vodafone minutes , SMS , and MBs & Pepsi points for you & for Team 010 " = "اشحن أو إشرب مع ڤودافون و بيبسي اضعاف فلوسك هترجعلك هدية دقايق و رسايل ڤودافون و ميجابايتس و بيبسي بوينتس ليك و لفريقك";
+
+"You’re about to dedicate a recharge to XX for free" = "انت بتبعت شحنة لرقم %@ ببلاش";
+"You have successfully dedicated your Stars card recharge to XX" = "شحنة كارت النجوم اتبعتت بنجاح لرقم %@";
+"Stars Card Gift Consumption" = "استهلاكك لهديه كارت النجوم";
+"Recharge Gift Consumption" = "استهلاكك لهدية شحنتك";
+"Dedicate" = "ابعت شحناتك";
+"You have no gifts yetRecharge to receive gifts from Stars Card" = "لسة مفيش هدايا اشحن علشان يجيلك شحنات من كارت النجوم";
+"Dedicate your card" = "ابعت شحنات كارتك";
+"Gather your friends in Team 010 & get more recharges" = "جمع فريقك و شحنات كارتك مش هتخلص";
+"Dedicate recharges from your card" = "ابعت شحنات من كارتك";
+"Stars Card Dedications" = "شحنات كارت النجوم";
+"Team 010 Refilled Dedications" = "شحنات زيادة من فريق 010";
+"Back to promo" = "الرجوع للعرض";
+"Gifts" = "هدايا";
+"Unit" = "وحده";
+"Redeem Gift" = "استبدل هديتك";
+"Recharge now" = "اشحن دلوقتي";
+"Create Team" = "جمّع فريقك";
+"You didn't recharge any card yet" = "لم تقم بشحن كارت شحن";
+"You’ve successfully recharged" = "تم الشحن بنجاح";
+"You’ve successfully redeemed your gift" = "تم استبدال الهديه بنجاح";
+//MASSPROMO
+
+"Negm El Nogoom Gift" = "هدية كارت نجم النجوم";
+"Negm El Nogoom" = "نجم النجوم";
+"Recharge your balance" = "اشحن كارت نجم النجوم";
+"Redeem pepsi" = "استمتع ببيبسي بوينتس​";
+"Redeem Voucher" = "ادخل كود الغطا";
+"My 010 team" = "فريق 010";
+"Gift inbox" = "هداياك المتاحة";
+"Enter Voucher Code" = "ادخل كود الغطا من بيبسي";
+"Redeem Cap Code" = "استخدم كود الغطا";
+"Cap code" = "كود الغطا";
+
+"Pepsi Units" = "ببيبسي يونتس";
+"Pepsi Points" = "ببيبسي بوينتس";
+"Total Units" = "اجمالي الوحدات";
+"points" = "بوينتس";
+"2098" = "عفوا٬ تم استخدام كود الغطا من قبل";
+
+"Pepsi 1 liter​" = "بيبسي كان";
+"Pepsi 350 ml​​" = "٣ بيبسي كانز";
+"Pepsi Can​" = "ببيبسي كان​​";
+"You don’t have available gifts" = "ليس لديك هدايا متاحة";
+"Sorry" = "عفوا";
+"Done" = "نعم";
+"Skip" = "تخطي";
+"With vodafone & pepsi Recharge or drink & you will win multiples of your spend worth of vodafone minutes ,SMS ,and MBs & pepsi points for you & for your Team 010" = "اشحن أو إشرب مع ڤودافون و بيبسي اضعاف فلوسك هترجعلك دقايق و رسايل ڤودافون و ميجابايتس  و بيبسي بوينتس ليك و لفريقك";
+"Redeem your Pepsi points & Enjoy your Pepsi gift​" = "إستخدم بيبسي بوينتس الجمعتها و إستمتع ببيبسي هدية​";
+"Redeem your Pepsi Cap code​" = "دخل كود غطا بيبسي​​";
+"Check your available gifts from Vodafone & Pepsi​" = "اعرف هداياك المتاحة من ڤودافون و بيبسي";
+"Gather your team & each time a member recharges or drinks with Vodafone & Pepsi all the team will win​" = "جمع فريقك و كل ما حد يشحن أو يشرب مع ڤودافون و بيبسي الفريق كله كسبان";
+"Recharge the Negm El Nogoom recharge card & win multiples of your Recharge worth of Vodafone minutes , SMS , and MBs & Pepsi points for you & for Team 010​" = "اشحن كارت نجم النجوم و اكسب اضعاف الشحنة دقايق و رسايل ڤودافون و ميجابايتس  و بيبسي بوينتس ليك و لفريقك​";
+"Gather your team and choose the members to get endless recharges whenever they recharge" = "جمّع فريق 010 واختار أعضاءه عشان يزود شحناتك كل ما يشحنوا";
+"Dedication Reward Gift" = "شحنتك الهدية";
+"Stars card" = "كارت النجوم";
+"Remaining units" = "الوحدات المتبقية";
+"Valid to" = "صالحة حتي";
+"Blacklisted A MSISDN" = "لقد تم شحن رصيدك لكن غير متاح ليك الاستمتاع بعرض كارت النجوم!";
+
+"Not eligible A service class" =  "لقد تم شحن رصيدك لكن غير متاح ليك الاستمتاع بعرض كارت النجوم!";
+
+"MSISDN A is opted out" = "عفوا! الرقم ده غير متاح ليه الاستمتاع بعرض كارت النجوم";
+"Blacklisted B MSISDN" = "عفوا! الرقم ده غير متاح ليه الاستمتاع بعرض كارت النجوم";
+
+
+"Not eligible B service class" = "عفوا! الرقم ده غير متاح ليه الاستمتاع بعرض كارت النجوم";
+
+"MSISDN B is opted out" = "عفوا! غير متاح انك تبعت كارت النجوم لرقمك";
+"Same A and B MSISDN" = "عفوا! غير متاح انك تبعت كارت النجوم لرقمك";
+
+
+"Not enough voucher value ( voucher value is below eligible vouchers value )" = "الحد الأدنى للاستمتاع بعرض كارت النجوم هو 10 جنيه";
+
+"Voucher is already dedicated to MSISDN" = "عفوا! الرقم ده تم اهداء ليه نفس الكارت، ممكن تبعت الكارت لرقم تاني";
+
+"No dedications available" = "عفوا! الرقم ده تم اهداء ليه نفس الكارت، ممكن تبعت الكارت لرقم تاني";
+"Not enough balance" = "عفوا! رصيدك لا يكفى لاستبدال هديتك من كارت النجوم";
+
+
+"No gifts available" = "ليس لديك هدايا
+اشحن علشان يجيلك شحنات من كارت النجوم";
+
+
+"Gift Redemption" = "استبدال هديتك";
+"You're redeeming your gift with" = "انت بتستبدل هديتك ب";
+"You have successfully redeemed your gift" = "تم استبدال هديتك بنجاح";
+
+"Piasters" = "قرش";
+// NGOs
+
+"Donations" = "التبرعات";
+"Organizations" = "المؤسسات الخيرية";
+"History" = "التبرعات السابقة";
+
+"Pay via Vodafone Cash" = "التبرع من خلال فودافون كاش";
+"Pay on bill" = "التبرع علي الفاتورة";
+"Pay now_NGO" = "اتبرع الأن";
+"Donate to" = "تبرع إلى";
+"Donation amount" = "قيمة التبرع";
+"You donated XX LE to XX" = "لقد تبرعت بـ %@ جنيه لـ%@";
+"Paid" = "تبرعت بـ";
+
+"57357" = "٥٧٣٥٧";
+"The more you donate, the sooner the dream of speeding up the construction and equipping the new out-patient clinics is realized. Help us by contributing to the new clinics, and restore the happiness in our children's lives." = "مساهمتك هتساعدنا في تحقيق حلم بناء و تجهيز العيادات الخارجية الجديدة. ساعدنا نرجع السعادة في حياة أطفالنا.";
+
+"Baheya" = "بهية";
+"Help us save Egyptian women through early detection of breast cancer, which will increase their chances of survival and leading a normal life." = "ساعدنا في إنقاذ المرأة المصرية من خلال الكشف المبكر عن سرطان الثدي ، مما سيزيد من فرص النجاه و يساعدها في عيش حياة طبيعية.";
+
+"Resala" = "رسالة";
+"Your contribution will help us in serving those in need." = "مساهمتك ستساعدنا في خدمة المحتاجين";
+
+"Magdi Yacoub" = "مجدي يعقوب";
+"Magdi Yacoub Heart Foundation depends upon the financial generosity of individuals and institutions to provide free world-class medical services to the less privileged in Egypt and throughout the region in the field of cardiovascular diseases." = "تعتمد مؤسسة مجدي يعقوب للقلب على الكرم المالي للأفراد والمؤسسات لتوفير خدمات طبية مجانية على المستوى العالمي للأقل تميزاً في مصر وفي جميع أنحاء المنطقة في مجال أمراض القلب والأوعية الدموية";
+
+"Donate on bill" = "التبرع على الفاتورة";
+"Now you can donate & it will be on your next bill" = "دلوقتي هتقدر تتبرع و تتحسب على فاتورة الشهر الجاي";
+"Donate now" = "اتبرع دلوقتي";
+"No, thanks" = "لا، شكرا";
+
+//ramadan pass
+"Never miss a show with RED Stars pass during Ramadan with free Vodafone TV subscription & without consuming from your bundle" = "اتفرج على المسلسلات براحتك مع PASS النجوم من غير ما تسحب من باقتك على Youtube و Vodafone TV مجانا" ;
+
+"Subscribe now & enjoy watching" = "إشترك الأن و إستمتع بالمشاهدة";
+"Subscribe now for FREE" = "إشترك الأن ببلاش";
+"Ramadan Kareem" = "رمضان كريم";
+"You are now subscribed to RED Stars Pass for Free" = "أنت الأن مشترك في Pass لنجوم ببلاش";
+
+
+"No Bundle \n" = "لايوجد باقة \n";
+
+// Super Flex
+
+"My flex" = "فليكساتى";
+
+"Buy data bundle" = "اشترك الآن";
+"Super Flex" = "سوبر فليكس";
+"Enjoy doublue your internet flexs" = "استمتع بضعف فليكساتك";
+"Flex transfer_1" = "تحويل الفليكسات";
+"Transfer your extra flexes" = "حول فليكساتك الزيادة";
+"365 Offers" =  "عالم عروض 365";
+"Every tilme different offer" = "كل مرة هيجيلك عرض مختلف ";
+"Other services" = "خدمات اخري";
+
+"Flex_arrow_white" = "Flex_arrow_right_white";
+
+"Data Bundle will renew in xx days" = "Data Bundle will renew in %ld days";
+"days to renew internet bundle" = "أيام لتجديد باقة النت";
+"days to renew flex bundle" = "أيام لتجديد باقة فليكس";
+"You’re out MBs, renew now" = "الميجابيتس خلصت، جدد باقتك دلوقتي";
+"Your bundle expired, renew now" = "باقتك خلصت، جدد باقتك دلوقتي";
+"Your Flex bundle expired." = "باقت فليكس انتهت.";
+"Your internet bundle expired." = "باقت الانترنت انتهت.";
+"Addon" = "الإضافه";
+
+"Up to 16 Mbps Speeds" = "سرعات تصل الي ١٦ ميجا" ;
+"16 Mbps bundles" = "باقات ١٦ ميجا" ;
+
+"You will receive your gift from Negm ElNogoom within 1 Hour." = "ستصلك هدية نجم النجوم خلال ساعه" ;
+"You will receive your gift via sms when you reach the points automatically." = "ستصلك رسالة بالهدية تلقائياً عند الوصول للنقاط المطلوبة   " ;
+"Super Flex is the perfect choice if you are a heavy internet user Enjoy double your internet flexes power with Super flex service(1 Flex = 2 Megabytes instead of 1 Megabyte)" =  "سوبر فليكس هي دايما الحل \n \n  لو بتستهلك انترنت كتير ضاعف قوة فليكساتك اللى هتستخدمها عالنت مع خدمة سوبر فليكس ( 1 فليكس = 2 ميجا بدلاً من 1 فليكس = 1 ميجا";
+
+"Super Flex n" = "سوبر فليكس \n";
+
+"Are you sure you want to subscribe to Super Flex?" = "متأكد من اشتراكك لسوبر فليكس؟";
+
+"later3" = "لاحقا";
+
+"UnSubscribe" = "إلغاء الاشتراك";
+
+"Are you sure you want to unsubscribe to Super Flex?" = "متأكد من إلغاء اشتراكك لسوبر فليكس؟";
+
+"You successfully unsubscribed from Super Flex" = "تم إلغاء اشتراكك في خدمة سوبر فليكس";
+
+"You didn’t successfully unsubscribe from this service, please try again later" = "لم تتم عملية إلغاء اشتراكك للخدمة، حاول تاني";
+
+"You failed to subscribe, please try again later" = "لم تتم عملية اشتراكك، حاول تاني";
+
+"You don’t have enough balance to enjoy this service" = "رصيدك غير كافي للاشتراك في الخدمة";
+
+"You’re now enjoying your internet use with Super Flex" = "مبروك! \n انت دلوقتي بتستمتع باستهلاكك للإنترنت مع سوبر فليكس";
+
+"You will subscribe to super flex service with XX LE/Month." = "سيتم الإشتراك في خدمة سوبر فليكس \n ب %@ ج.م شهرياً.";
+
+"You will subscribe to super flex service" = "سيتم الإشتراك في خدمة سوبر فليكس.";
+
+"You don't have enough balance but you have successfully subscribed to Super flex. Please recharge your balance to activate it." = "رصيدك غير كافي بس اشتركت في سوبر فليكس بنجاح اشحن رصيدك دلوقتي لتفعيل الخدمة";
+
+//Other services
+
+"Other services" = "خدمات أخرى";
+
+"Flex Extra" = "فليكس اكستر";
+
+"Don’t worry about your bundle consumption, with Flex Extra you will be able to increase your bundle flexes at any time during the month" = "خلصت باقتك و ماتقلقش علشان دلوقتى مع فليكس اكسترا هتقدر تزود فليكساتك فى أى وقت فى الشهر";
+
+"Subscribe now2" = "اشترك دلوقتي";
+
+"Flex deals" = "فليكس ديلز";
+
+"Enjoy monthly discounts in restaurants, clothes shops, electronics and many other" = "استمتع بخصومات شهرية فى المطاعم ومحلات الملابس و الاليكترونيات وحاجات تانية كتير.";
+
+"No enough balance to subscribe" = "رصيدك غير كافي للاشتراك";
+
+"Please choose from the below Flex Extras" = "اختار اكسترا المناسب ليك";
+
+"Monthly renewable" = "تجديد تلقائي كل شهر";
+
+"On monthly demand" = "على حسب الطلب";
+
+"Success xn Flex Extras xxEGP has been added successfully to your bundle" = "نجاح \nتم اضافة فليكس اكسترا  %@ جنيه لباقتك بنجاح";
+
+"Request Failed xn An error  occurred, please try again" = "فشل طلبك \n عطل مؤقت٫ حاول تانى";
+
+"Flex Extra 3 EGP" = "فليكس اكسترا ٣ جنيه";
+
+"Flex Extra 5 EGP" = "فليكس اكسترا ٥ جنيه";
+
+"Flex Extra 10 EGP" = "فليكس اكسترا ١٠ جنيه";
+
+"60 Flexs" = "٦٠ فليكس";
+
+"120 Flexs" = "١٢٠ فليكس";
+
+"300 Flexs" = "٣٠٠ فليكس";
+
+"3EGP = 60 Flexes" = "٣ جنيه = ٦٠ فليكس";
+
+"5EGP = 120 Flexes" = "٥ جنيه = ١٢٠ فليكس";
+
+"10EGP = 300 Flexes" = "١٠ جنيه = ٣٠٠ فليكس";
+
+// flex Mangment
+
+"Flex Management" = "ادارة فليكساتك";
+"Vodafone Numbers_1" = "مكالمات فودافون";
+"Non vodafone minutes" = "دقائق لشبكات أخرى";
+"xx flexes" = "%@ فليكس";
+"You have xx carried over from last month" = "عندك %@ فليكسات مترحلة من الشهر الى فات";
+"Total consumed flexes xx flex" = "اجمالى الفليكسات المستخدمة هو %@ فليكس";
+"Consumption breakdown" = "تفاصيل فليكساتك المستخدمة";
+"Your Bundle expired!" = "باقتك انتهت!";
+"xn Renewal your bundle now" = " \n جدد باقتك دلوقتى";
+"xn Renewal Date :xx" = " \n ميعاد التجديد القادم : %@";
+"You don't have any flexes" = "للاسف لم يتبقى معك فليكسات";
+"Current Non Vodafone Limit" = "ليميت الشبكات الأخرى";
+"Current Flex Internet Limit" = "ليميت النت";
+"Control Your Limit" = "اتحكم فى استخدامك";
+"Other Flex Services" = "خدمات اخرى لفليكس";
+"Set Limit" = "اتحكم";
+"Renew" = "تجديد الباقه";
+"super_flexImg" = "super_flexRTL";
+"Flex_transferImg" = "Flex_transferRTL";
+"You are now charged 19 PT from your balance for any minute or MB" = "انت الان بتستهلك من رصيدك ب19 قرش لأى دقيقة او ميجابايت";
+"Are you sure you want to renew your bundle?" = "هل متأكد من تجدبد الباقة؟";
+"You don't have enough balance to renew the bundle" = "رصيدك لا يكفى لتجديد الباقه" ;
+
+//payfort errors messages
+"CCV_CC_ISNOT_IN_WLIST" = "عفوا! هذة البطاقة لا تصلح لاتمام العملية." ;
+"CCP_ACCOUNT_NUMBER_IS_BANNED" = "عفوا! لا يمكن اتمام هذة العلملية لرقمك." ;
+"CCP_ACCOUNT_NUMBER_BLACKLISTED" = "عفوا! لا يمكن اتمام هذة العلملية لرقمك." ;
+"TOKEN_NAME_ALREADY_EXISTS_IN_PROCESSING" = "برجاء المحاولة لاحقا حتى تتم العملية السابقة" ;
+"CUSTOMER_PROFILE_IS_BLACKLISTED" = "عفوا! لا يمكن اتمام هذة العلملية لرقمك." ;
+"GI_AMOUNT_DOES_NOT_MEET_PROFILE_LIMITS" = "عفوا! المبلغ الذي أدخلته أكبر من الحد الأقصى للعملية" ;
+"CCP_ALLOWED_FAILED_TRX_THIS_DAY_EXCEEDED" = "لقد وصلت للحد الأقصى من المحاولات اليومية, برجاء المحاولة في وقت لاحق." ;
+"ALLOWED_SUCCESSFUL_TRX_FOR_LOGIN_ACCOUNT_THIS_DAY_EXCEEDED" = "لقد وصلت للحد الأقصى لدفع الفاتورة اليومي" ;
+"ALLOWED_SUCCESSFUL_TRX_FOR_LOGIN_ACCOUNT_THIS_MONTH_EXCEEDED" = "لقد وصلت للحد الأقصى لدفع الفاتورة هذا الشهر" ;
+"ALLOWED_SUCCESSFUL_TRX_FOR_RECEIVER_ACCOUNT_THIS_DAY_EXCEEDED" = "الرقم اللى بتحاول تدفع فاتورته وصل للحد الأقصى لدفع الفاتورة اليومي" ;
+"ALLOWED_RECHARGE_AMOUNT_FOR_LOGIN_ACCOUNT_THIS_DAY_EXCEEDED" = "لقد وصلت للحد الأقصى للشحن اليومي" ;
+"ALLOWED_RECHARGE_AMOUNT_FOR_RECEIVER_ACCOUNT_THIS_DAY_EXCEEDED" = "الرقم اللى بتحاول تشحن ليه وصل للحد الأقصى للشحن اليومي" ;
+"ALLOWED_RECHARGE_AMOUNT_FOR_LOGIN_ACCOUNT_THIS_MONTH_EXCEEDED" = "لقد وصلت للحد الأقصى للشحن هذا الشهر" ;
+"ALLOWED_RECHARGE_AMOUNT_FOR_RECEIVER_ACCOUNT_THIS_MONTH_EXCEEDED" = "الرقم اللى بتحاول تشحن ليه وصل للحد الأقصى للشحن في الشهر" ;
+"ALLOWED_SUCCESSFUL_TRX_FOR_RECEIVER_ACCOUNT_THIS_MONTH_EXCEEDED" = "الرقم اللى بتحاول تدفع فاتورته وصل للحد الأقصى لدفع الفاتورة في الشهر" ;
+
+"Using my credit card desc" = "إستخدم الكريديت كارد للدفع " ; 
+"Addon" = "الإضافه";
+"Payment History" = "تفاصيل الدفع" ;
+"We need to add new credit card" = "يرجي إضافه كريديت كارد" ;
+
+// payfort errors 
+"102" = "عفوا!لقد وصلت للحد الأقصى اليومي, برجاء المحاولة غدا" ;
+"103" = "عفوا! لقد وصلت للحد الأقصى في الشهر" ;
+"104" = "عفوا! الرقم ده وصل للحد الأقصى اليومي, برجاء المحاولة غدا" ;
+"105" = "عفوا! لقد وصلت للحد الأقصى اليومي, برجاء المحاولة غدا" ;
+"106" = "عفوا! الرقم ده وصل للحد الأقصى اليومي, برجاء المحاولة غدا" ;
+"107" = "عفوا! لقد وصلت للحد الأقصى في الشهر" ;
+"108" = "عفوا! الرقم ده وصل للحد الأقصى في الشهر" ;
+"109" = "عفوا! الرقم ده وصل للحد الأقصى في الشهر";
+"605" = "عفوا! لم نتمكن من إتمام هذه العملية, برجاء المحاولة مرة أخرى أو الاتصال بالبنك للمساعدة" ;
+"301" = "عفوا! هذا الكارت غير قابل لإتمام هذه العملية
+" ;
+"302" = "عفوا! لا يمكن إتمام العملية الان، برجاء المحاولة لاحقا" ;
+"303" = "عفوا! لا يمكن إتمام هذه العملية، برجاء الاتصال بخدمة العملاء للمساعدة" ;
+"304" = "عفوا! لا يمكن إتمام هذه العملية، برجاء الاتصال بخدمة العملاء للمساعدة";
+"PayFortGeneric" = "عفوا! لقد حدث خطأ برجاء المحاولة مرة أخرى"; 
+
+"payminimumamount" = "أقل قيمة للدفع هي 10 جنية" ;
+
+"Pay Now" = "إدفع الآن" ;
+"payment_loading_text"="جارى تنفيذ طلبك. برجاء الانتظار لبعض الثوانى";
+
+"valid date" = "من فضلك إدخل تاريخ صحيح";

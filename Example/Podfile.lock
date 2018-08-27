@@ -1,0 +1,56 @@
+PODS:
+  - CommonCrypto (1.1)
+  - GSKStretchyHeaderView (1.0.0)
+  - INTUAnimationEngine (1.4.2):
+    - INTUAnimationEngine/SpringSolver (= 1.4.2)
+  - INTUAnimationEngine/SpringSolver (1.4.2)
+  - JWGCircleCounter (0.2.2)
+  - "NSAttributedString+CCLFormat (1.2.0)"
+  - RSKImageCropper (2.1.0)
+  - "UIColor+Hex (1.0.1)":
+    - "UIColor+Hex/NSColor (= 1.0.1)"
+    - "UIColor+Hex/UIColor (= 1.0.1)"
+  - "UIColor+Hex/UIColor (1.0.1)"
+  - VUIComponents (0.1.0):
+    - CommonCrypto
+    - GSKStretchyHeaderView (= 1.0.0)
+    - INTUAnimationEngine
+    - JWGCircleCounter
+    - "NSAttributedString+CCLFormat"
+    - RSKImageCropper
+    - "UIColor+Hex"
+    - WYPopoverController (~> 0.3.9)
+  - WYPopoverController (0.3.9)
+
+DEPENDENCIES:
+  - VUIComponents (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - CommonCrypto
+    - GSKStretchyHeaderView
+    - INTUAnimationEngine
+    - JWGCircleCounter
+    - "NSAttributedString+CCLFormat"
+    - RSKImageCropper
+    - "UIColor+Hex"
+    - WYPopoverController
+
+EXTERNAL SOURCES:
+  VUIComponents:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CommonCrypto: e18c8416332cca5efe80c197f2a522d471c42626
+  GSKStretchyHeaderView: daba8f035eaade6326d05ee2a382be714bb019c0
+  INTUAnimationEngine: 3a7d63738cd51af573d16848a771feedea7cc9f2
+  JWGCircleCounter: 89e25c3d5e9eb41cf666a795427712bb5e52a1a1
+  "NSAttributedString+CCLFormat": 46d1e36b72b7ab0e093323705188818b21ba9763
+  RSKImageCropper: 0d0c6d8525a2381f03fde32a47c6703817a2feed
+  "UIColor+Hex": 9fee91bb8e19f17dd40a79ae1e98949a6a84489d
+  VUIComponents: 12d1c6b0f3abe12e4b6f6f93adc96aeb028a61c4
+  WYPopoverController: a9db25ac2841a686acdc0f3a99bdb21545db32f4
+
+PODFILE CHECKSUM: 77c66a111b6df00722047d5859261a7ba0210a2d
+
+COCOAPODS: 1.5.3

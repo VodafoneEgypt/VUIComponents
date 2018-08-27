@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="VodafoneRg.ttf">
+            <string>VodafoneRg-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AlertView">
+            <connections>
+                <outlet property="bgImageView" destination="oIA-D3-udo" id="JaM-7E-59h"/>
+                <outlet property="closeButton" destination="jws-vX-mrw" id="lAQ-yh-c9P"/>
+                <outlet property="containerView" destination="FPL-8P-Iwi" id="m9x-ec-rcc"/>
+                <outlet property="headerView" destination="u1a-GY-3rs" id="XNt-PR-BiJ"/>
+                <outlet property="titleLabel" destination="NKI-Yi-GWE" id="5Q7-On-JCN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oIA-D3-udo">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u1a-GY-3rs">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="111.5"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jws-vX-mrw">
+                            <rect key="frame" x="340" y="44" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="24" id="IMB-qf-Gjj"/>
+                                <constraint firstAttribute="height" constant="24" id="fyi-6v-OWe"/>
+                            </constraints>
+                            <state key="normal" image="X"/>
+                            <connections>
+                                <action selector="closeButtonAction:" destination="-1" eventType="touchUpInside" id="VnB-RX-jtK"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NKI-Yi-GWE">
+                            <rect key="frame" x="187.5" y="69" width="0.0" height="32.5"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32.5" id="l3d-da-dcL"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="27"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="NKI-Yi-GWE" secondAttribute="bottom" constant="10" id="9Lx-uy-nuP"/>
+                        <constraint firstItem="NKI-Yi-GWE" firstAttribute="centerX" secondItem="u1a-GY-3rs" secondAttribute="centerX" id="Aco-Ez-IUk"/>
+                        <constraint firstAttribute="right" secondItem="jws-vX-mrw" secondAttribute="right" constant="11" id="YJa-pZ-zKf"/>
+                        <constraint firstItem="NKI-Yi-GWE" firstAttribute="top" secondItem="jws-vX-mrw" secondAttribute="bottom" constant="1" id="bor-Wy-ydc"/>
+                        <constraint firstItem="jws-vX-mrw" firstAttribute="top" secondItem="u1a-GY-3rs" secondAttribute="top" constant="44" id="elX-Le-EII"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FPL-8P-Iwi">
+                    <rect key="frame" x="57" y="173" width="247" height="430"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="oIA-D3-udo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="MLo-LA-AhS"/>
+                <constraint firstAttribute="trailing" secondItem="oIA-D3-udo" secondAttribute="trailing" id="Phy-uy-age"/>
+                <constraint firstAttribute="bottom" secondItem="oIA-D3-udo" secondAttribute="bottom" id="TJh-D0-LSS"/>
+                <constraint firstItem="oIA-D3-udo" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Wm6-3U-PEH"/>
+                <constraint firstItem="u1a-GY-3rs" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="glg-R5-V1g"/>
+                <constraint firstItem="u1a-GY-3rs" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="oSO-cy-J66"/>
+                <constraint firstItem="u1a-GY-3rs" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="vLC-Ih-mSe"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-883.5" y="-117.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="X" width="32" height="32"/>
+    </resources>
+</document>

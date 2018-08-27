@@ -1,42 +1,30 @@
-#
-# Be sure to run `pod lib lint VUIComponents.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = 'VUIComponents'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of VUIComponents.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
+  s.summary          = 'Pod contains UI components'
+  s.description      = 'A pod contains all objective-c UI components you need to use'
   s.homepage         = 'https://github.com/1RGB1/VUIComponents'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '1RGB1' => 'a.ragab2012@gmail.com' }
   s.source           = { :git => 'https://github.com/1RGB1/VUIComponents.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '8.0'
-
-  s.source_files = 'VUIComponents/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'VUIComponents' => ['VUIComponents/Assets/*.png']
-  # }
+  s.ios.deployment_target = '9.0'
+  s.source_files = 'VUIComponents/Classes/**/*.{h,m}'
+  s.resources = 'VUIComponents/Classes/**/*.{xib,storyboard,png,json,html,js,css,lproj,otf,ttf,xcassets}'
+#  s.resource_bundles = {
+#      'VUIComponents' => [
+#      'VUIComponents/Classes/**/*.{png,bundle,json,html,js,css}'
+#      ]
+#  }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.framework = "CommonCrypto"
+  
+  s.dependency 'NSAttributedString+CCLFormat'
+  s.dependency 'WYPopoverController', '~> 0.3.9'
+  s.dependency 'UIColor+Hex'
+  s.dependency 'GSKStretchyHeaderView', '1.0.0'
+  s.dependency 'INTUAnimationEngine'
+  s.dependency 'JWGCircleCounter'
+  s.dependency 'RSKImageCropper'
+  s.dependency 'CommonCrypto'
 end

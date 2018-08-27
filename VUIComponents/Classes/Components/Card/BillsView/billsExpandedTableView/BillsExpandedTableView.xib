@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BillsExpandedTableView">
+            <connections>
+                <outlet property="tableView" destination="pre-pI-9oo" id="8Bn-YY-Kjy"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="235"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ujZ-p6-tgQ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="235"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pre-pI-9oo">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="235"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="235" id="29h-Br-iBJ"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="qk3-dC-jal"/>
+                                <outlet property="delegate" destination="-1" id="TYT-qG-qsn"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="pre-pI-9oo" firstAttribute="width" secondItem="ujZ-p6-tgQ" secondAttribute="width" id="06q-GR-2eV"/>
+                        <constraint firstItem="pre-pI-9oo" firstAttribute="centerX" secondItem="ujZ-p6-tgQ" secondAttribute="centerX" id="h32-Xz-b87"/>
+                        <constraint firstItem="pre-pI-9oo" firstAttribute="top" secondItem="ujZ-p6-tgQ" secondAttribute="top" id="x4j-VW-GoT"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ujZ-p6-tgQ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="OA0-lu-nFv"/>
+                <constraint firstItem="ujZ-p6-tgQ" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="ZCS-7G-6Id"/>
+                <constraint firstItem="ujZ-p6-tgQ" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="jGH-Xw-fj1"/>
+                <constraint firstItem="ujZ-p6-tgQ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="jaj-Da-wlH"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="34.5" y="269.5"/>
+        </view>
+    </objects>
+</document>
