@@ -62,12 +62,12 @@
     
     NSString *cellIdentifier = @"PagerCollectionViewCell";
     
-    [collectionView registerNib:[UINib nibWithNibName:cellIdentifier bundle:nil] forCellWithReuseIdentifier:cellIdentifier];
+    [collectionView registerNib:[UINib nibWithNibName:cellIdentifier bundle:[Utilities getPodBundle]] forCellWithReuseIdentifier:cellIdentifier];
     
     PagerCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
     
     if (cell == nil) {
-        [collectionView registerNib:[UINib nibWithNibName:cellIdentifier bundle:nil] forCellWithReuseIdentifier:cellIdentifier];
+        [collectionView registerNib:[UINib nibWithNibName:cellIdentifier bundle:[Utilities getPodBundle]] forCellWithReuseIdentifier:cellIdentifier];
         
         cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
     }
