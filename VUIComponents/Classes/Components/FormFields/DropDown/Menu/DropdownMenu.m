@@ -9,6 +9,7 @@
 #import "DropDownMenuTableViewCell.h"
 #import "DropDownViewController.h"
 #import "WYPopoverController.h"
+#import <VUIComponents/Utilities.h>
 
 @interface DropdownMenu()<UITableViewDelegate, UITableViewDataSource, WYPopoverControllerDelegate> {
     DropDownViewController *dropDownViewController;
@@ -70,7 +71,7 @@
         DropDownMenuTableViewCell *cell = (DropDownMenuTableViewCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
         
         if (cell == nil) {
-            [tableView registerNib:[UINib nibWithNibName:CellIdentifier bundle:nil] forCellReuseIdentifier:CellIdentifier];
+            [tableView registerNib:[UINib nibWithNibName:CellIdentifier bundle:[Utilities getPodBundle]] forCellReuseIdentifier:CellIdentifier];
             cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
         }
         
