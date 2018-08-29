@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'VUIComponents'
-  s.version          = '0.3.2'
+  s.version          = '0.3.3'
   s.summary          = 'Pod contains UI components'
   s.description      = 'A pod contains all objective-c UI components you need to use'
   s.homepage         = 'https://github.com/VodafoneEgypt/VUIComponents'
@@ -11,11 +11,6 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.0'
   s.source_files = 'VUIComponents/Classes/**/*.{h,m}'
   s.resources = 'VUIComponents/Classes/**/*.{xib,storyboard,png,json,html,js,css,lproj,otf,ttf,xcassets}'
-#  s.resource_bundles = {
-#      'VUIComponents' => [
-#      'VUIComponents/Classes/**/*.{png,bundle,json,html,js,css}'
-#      ]
-#  }
 
   s.framework = "CommonCrypto"
   
