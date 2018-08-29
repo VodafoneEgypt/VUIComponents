@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <GSKStretchyHeaderView/GSKStretchyHeaderView.h>
 #import "BaseCardView.h"
+
 IB_DESIGNABLE
 @interface ProfileHeaderCardView : BaseCardView
 

@@ -7,6 +7,7 @@
 //
 
 #import "BaseCardViewWithButtons.h"
+
 IB_DESIGNABLE
 @interface PinCodeCardView : BaseCardViewWithButtons
 

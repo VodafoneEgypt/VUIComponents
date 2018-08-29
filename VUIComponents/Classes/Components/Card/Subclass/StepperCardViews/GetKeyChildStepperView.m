@@ -9,7 +9,8 @@
 #import "GetKeyChildStepperView.h"
 #import "UIColor+Hex.h"
 #import "BaseCardView+Protected.h"
-#import "LanguageHandler.h"
+#import <VUIComponents/LanguageHandler.h>
+#import <VUIComponents/Utilities.h>
 #import "UIColor+Hex.h"
 #import "ViewWithTitle.h"
 
