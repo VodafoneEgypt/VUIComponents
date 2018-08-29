@@ -14,33 +14,31 @@
 -(void)commonInit{
     
     self.expanded = false;
+    _animationDeuration = 0;
 }
 
 - (void) initializeExpandedView{
-    
-    expandedViewHeightConstraint.constant = 0;
-    
-    expandedView.hidden = false;
+
 }
 
 - (void) initialize{
     
     [self initializeContentView];
-    
+    CGFloat totalHeight = contentViewHeight;
     if(self.expanded == true){
         
         [self initializeExpandedView];
+        
+        totalHeight = contentViewHeight + expandedViewHeightConstraint.constant;
     }else{
         
-        expandedViewHeightConstraint.constant = 0;
+        totalHeight = contentViewHeight;
     }
     
-    expandedView.hidden = !self.expanded;
-    
-    CGFloat totalHeight = contentViewHeight + expandedViewHeightConstraint.constant;
+    NSLog(@"TotalHeightInitialize = %f", totalHeight);
     
 //    if(self.heightBlock != nil){
-//        
+//
 //        self.heightBlock(totalHeight);
 //    }else{
     
@@ -60,21 +58,37 @@
         
         if(heightConstraint != nil){
             
-            heightConstraint.constant = totalHeight;
+            heightConstraint.constant = contentViewHeight;
+            CGRect currentFrame = self.frame;
+            currentFrame.size.height = totalHeight;
+
+            [UIView animateWithDuration:_animationDeuration animations:^{
+                self.frame = currentFrame;
+                if(self.expanded == false){
+                    
+                    self->expandedViewHeightConstraint.constant = 0;
+                    [self->expandedView layoutIfNeeded];
+                }
+                heightConstraint.constant = totalHeight;
+                [self layoutIfNeeded];
+            } completion:^(BOOL finished) {}];
             
-            [self layoutIfNeeded];
         }else{
             
             CGRect currentFrame = self.frame;
             
             currentFrame.size.height = totalHeight;
-            
-            self.frame = currentFrame;
+            [UIView animateWithDuration:_animationDeuration animations:^{
+               
+                self.frame = currentFrame;
+
+            } completion:^(BOOL finished) {}];
         }
 //    }
     
     if(self.heightDidChangedBlock != nil){
         self.heightDidChangedBlock(totalHeight);
+
     }
 }
 

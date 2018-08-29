@@ -8,7 +8,6 @@
 
 #import "WelcomeBackCard.h"
 #import "BaseCardView+Protected.h"
-#import <VUIComponents/Utilities.h>
 
 @interface WelcomeBackCard ()
 @property (weak, nonatomic) IBOutlet UILabel *titleLbl;
@@ -92,7 +91,7 @@
     
     NSArray* views = nil;
     
-    views = [[Utilities getPodBundle] loadNibNamed:@"WelcomeBackCard" owner:self options:nil];
+    views = [[NSBundle mainBundle]loadNibNamed:@"WelcomeBackCard" owner:self options:nil];
     
     UIView* view = [views objectAtIndex:0];
     

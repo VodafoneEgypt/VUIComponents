@@ -9,8 +9,7 @@
 #import "GetKeyChildStepperView.h"
 #import "UIColor+Hex.h"
 #import "BaseCardView+Protected.h"
-#import <VUIComponents/LanguageHandler.h>
-#import <VUIComponents/Utilities.h>
+#import "LanguageHandler.h"
 #import "UIColor+Hex.h"
 #import "ViewWithTitle.h"
 
@@ -168,7 +167,7 @@
     
     [super commonInit];
     
-    NSArray* views = [[Utilities getPodBundle] loadNibNamed:@"GetKeyChildStepperView" owner:self options:nil];
+    NSArray* views = [[NSBundle mainBundle]loadNibNamed:@"GetKeyChildStepperView" owner:self options:nil];
     
     UIView* view = [views objectAtIndex:0];
     

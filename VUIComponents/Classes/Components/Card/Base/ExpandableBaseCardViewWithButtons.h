@@ -16,6 +16,7 @@
 }
 
 @property (nonatomic) IBInspectable BOOL expanded;
+@property (nonatomic)  float animationDeuration;
 
 - (void) initializeExpandedView;
 

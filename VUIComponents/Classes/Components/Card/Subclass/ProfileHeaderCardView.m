@@ -8,14 +8,16 @@
 
 #import "ProfileHeaderCardView.h"
 #import "BaseCardView+Protected.h"
-#import <VUIComponents/LanguageHandler.h>
+#import "LanguageHandler.h"
 #import "UIColor+Hex.h"
 
 #import "AnaVodafoneAlertController.h"
-//#import "AppUser.h"
+//#import </AppUser.h>
+
 #import "RSKImageCropper.h"
 //#import "BaseViewController.h"
 #import <VUIComponents/AnaVodafoneLabel.h>
+
 @interface ProfileHeaderCardView()<UIImagePickerControllerDelegate,RSKImageCropViewControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *BGImageView;
@@ -152,7 +154,7 @@
 
 - (void) adjustProfilePhoto {
     
-    //[_avatarIamgeView setImage:[[AppUser sharedInstance] avatarImage]];
+//    [_avatarIamgeView setImage:[[AppUser sharedInstance] avatarImage]];
 }
 
 #pragma mark - UIImagePickerController delegate methods
@@ -177,7 +179,7 @@
 
 - (void)imageCropViewController:(RSKImageCropViewController *)controller didCropImage:(UIImage *)croppedImage usingCropRect:(CGRect)cropRect {
     
-    //[[AppUser sharedInstance] setAvatarImage:croppedImage];
+//    [[AppUser sharedInstance] setAvatarImage:croppedImage];
     
     _avatarIamgeView.image = croppedImage;
     
@@ -224,8 +226,10 @@
     
     UIView* view = [views objectAtIndex:0];
     
-   self.bounds = view.frame;
-    
+    CGRect frame = view.frame;
+    frame.size.width = self.bounds.size.width;
+    view.frame = frame;
+    self.bounds = view.frame;
     [self.subviews makeObjectsPerformSelector: @selector(removeFromSuperview)];
     
     self.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"morning_sl"]];

@@ -9,9 +9,9 @@
 #import "PaybillCardView.h"
 #import "BaseCardView+Protected.h"
 #import "ValidationTextField.h"
-#import <VUIComponents/LanguageHandler.h>
+#import "LanguageHandler.h"
 #import "UIColor+Hex.h"
-#import <VUIComponents/AnaVodafoneLabel.h>
+#import "AnaVodafoneLabel.h"
 
 #define TextFieldVerticalMargin 16
 #define TextFieldHeight 45

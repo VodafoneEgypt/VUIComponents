@@ -1,9 +1,9 @@
 {
   "name": "VUIComponents",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "summary": "Pod contains UI components",
   "description": "A pod contains all objective-c UI components you need to use",
-  "homepage": "https://github.com/1RGB1/VUIComponents",
+  "homepage": "https://github.com/VodafoneEgypt/VUIComponents",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/VodafoneEgypt/VUIComponents.git",
-    "tag": "0.1.0"
+    "tag": "0.2.0"
   },
   "platforms": {
     "ios": "9.0"

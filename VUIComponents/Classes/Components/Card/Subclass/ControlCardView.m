@@ -9,7 +9,7 @@
 #import "ControlCardView.h"
 #import "BaseCardView+Protected.h"
 #import "NSAttributedString+CCLFormat.h"
-#import <VUIComponents/LanguageHandler.h>
+#import "LanguageHandler.h"
 #import "UIColor+Hex.h"
 
 @interface ControlCardView()
@@ -134,8 +134,10 @@
     
     UIView* view = [views firstObject];
     
+    CGRect frame = view.frame;
+    frame.size.width = self.bounds.size.width;
+    view.frame = frame;
     self.bounds = view.frame;
-    
     [self addSubview:view];
 }
 @end

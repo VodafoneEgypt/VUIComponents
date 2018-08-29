@@ -8,11 +8,11 @@
 
 #import "BaseCardView.h"
 #import "BaseCellCardView.h"
-#import "BaseCardViewWithButtonsOld.h"
+#import "BaseCardViewWithButtons.h"
 
 typedef void(^SelectionIndexPathBlock)(NSIndexPath *indexPath);
 
-@interface TableCardView : BaseCardViewWithButtonsOld
+@interface TableCardView : BaseCardViewWithButtons
 
 @property (nonatomic, strong) NSArray *tableCardModelArray;
 

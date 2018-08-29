@@ -8,7 +8,7 @@
 
 #import "SimpleTextWithTitleCardView.h"
 #import "BaseCardView+Protected.h"
-#import <VUIComponents/LanguageHandler.h>
+#import "LanguageHandler.h"
 #import "UIColor+Hex.h"
 
 @interface SimpleTextWithTitleCardView()
@@ -53,7 +53,7 @@
     
     _titleLabel.attributedText = attrStr1;
     
-//    [self initialize];
+    [self initialize];
 }
 
 -(void)setDesc:(NSString *)desc{
@@ -83,7 +83,7 @@
     
     _descLabel.attributedText = attrStr1;
     
-//    [self initialize];
+    [self initialize];
 }
 
 -(void)setWithoutSeprator:(BOOL *)withoutSeprator{
@@ -103,21 +103,21 @@
 
 -(void)initializeContentView{
     
-//    contentViewHeight = 0;
-//
-//    CGFloat width = self.frame.size.width-30;
-//
-//    contentViewHeight += [_desc  isEqual: @""] ? 40 : 81;
-//
-//    CGSize size = CGSizeMake(width, CGFLOAT_MAX);
-//
-//    CGRect rect = [self.titleLabel.attributedText boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading context:nil];
-//
-//    contentViewHeight += rect.size.height;
-//
-//    rect = [self.descLabel.attributedText boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading context:nil];
-//
-//    contentViewHeight += rect.size.height;
+    contentViewHeight = 0;
+
+    CGFloat width = self.frame.size.width-30;
+
+    contentViewHeight += [_desc  isEqual: @""] ? 40 : 81;
+
+    CGSize size = CGSizeMake(width, CGFLOAT_MAX);
+
+    CGRect rect = [self.titleLabel.attributedText boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading context:nil];
+
+    contentViewHeight += rect.size.height;
+
+    rect = [self.descLabel.attributedText boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading context:nil];
+
+    contentViewHeight += rect.size.height;
 }
 
 -(void)commonInit{
@@ -128,8 +128,10 @@
     
     UIView* view = [views objectAtIndex:0];
     
+    CGRect frame = view.frame;
+    frame.size.width = self.bounds.size.width;
+    view.frame = frame;
     self.bounds = view.frame;
-
     [self.subviews makeObjectsPerformSelector: @selector(removeFromSuperview)];
     
     [self addSubview:view];

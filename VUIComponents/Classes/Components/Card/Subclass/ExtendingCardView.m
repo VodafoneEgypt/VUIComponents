@@ -1,4 +1,4 @@
-//
+ //
 //  SingleLineExtendingCard.m
 //  AnaVodafoneUIRevamp
 //
@@ -9,7 +9,7 @@
 #import "ExtendingCardView.h"
 #import "BaseCardView+Protected.h"
 #import "SimpleTextCardView.h"
-#import <VUIComponents/LanguageHandler.h>
+#import "LanguageHandler.h"
 #import "UIColor+Hex.h"
 
 @interface  ExtendingCardView(){
@@ -40,11 +40,15 @@
 
 - (IBAction)changeExpandStatus:(id)sender {
     
-    //self.isExpanded = !self.isExpanded;
-    animate = true;
-    [self performExpandingAnimation:!self.isExpanded];
+//    animate = true;
+//    [self performExpandingAnimation:!self.expanded];
     
     //[self initialize];
+    
+    [self performExpandingAnimation];
+    
+    
+    
 }
 
 #pragma mark setters
@@ -127,30 +131,33 @@
     
     [self initialize];
 }
--(void)setIsExpanded:(BOOL)isExpanded{
-    //_arrowImgView.transform = (isExpanded == true) ? CGAffineTransformRotate(_arrowImgView.transform, M_PI):CGAffineTransformIdentity;
-    
-    // [_verticalLineView setHidden:expanded];
-    [self performExpandingAnimation:isExpanded];
-    
-    
-}
--(void)performExpandingAnimation:(BOOL)expand{
-    _isExpanded = expand;
-    if (!animate){
-        //handle interface builder
-        [expandedView setHidden:!expand];
 
-    }else{
+//-(void)setExpanded:(BOOL)isExpanded{
+//    //_arrowImgView.transform = (isExpanded == true) ? CGAffineTransformRotate(_arrowImgView.transform, M_PI):CGAffineTransformIdentity;
+//
+//    // [_verticalLineView setHidden:expanded];
+//
+////    [self performExpandingAnimation];
+//
+//    self.isExpanded = isExpanded;
+//
+//}
+//-(void)performExpandingAnimation:(BOOL)expand{
+//    self.expanded = expand;
+//    if (!animate){
+//        //handle interface builder
+//        [expandedView setHidden:!expand];
+//
+//    }else{
+//
         //perform animation
-        [UIView animateWithDuration:0.2 animations:^{
-            [expandedView setHidden:!expand];
-
-        } completion:^(BOOL finished) {
-            [_separator setHidden:!expand];
-
-        }];
-        
+//        [UIView animateWithDuration:0.2 animations:^{
+//            [expandedView setHidden:!expand];
+//
+//        } completion:^(BOOL finished) {
+//            [_separator setHidden:!expand];
+//
+//        }];
 //        if(expand){
 //            [expandedView setHidden:true];
 //            [_stackView addArrangedSubview:expandedView];
@@ -169,10 +176,8 @@
 //            }];
 //
 //        }
-    }
-    
-   
-}
+//    }
+//}
 
 #pragma mark height adjustment
 
@@ -247,6 +252,9 @@
     [_descView initialize];
     
     expandedViewHeightConstraint.constant = _descView.frame.size.height+1/*seperator height*/;
+    
+    NSLog(@"ExpandedViewHeightConstraint: %d", expandedViewHeightConstraint.constant);
+    
 }
 
 - (void)adjustDescViewHeightTo:(CGFloat)height{
@@ -275,5 +283,51 @@
     [self addSubview:view];
 
     self.verticalLine = false;
+    
+    [self initializeExpandedView];
 }
+
+- (void)performExpandingAnimation {
+    
+    NSLog(@"isExpanded First? %d", self.expanded);
+
+    
+//    [self setExpanded:YES];
+    self.expanded = YES;
+    
+    NSLog(@"isExpanded Second? %d", self.expanded);
+    
+    
+//    if (!animate) {
+//        //handle interface builder
+//        [expandedView setHidden: !self.expanded];
+    
+//    } else {
+//
+//        [UIView animateWithDuration:0.2 animations:^{
+//            [self->expandedView setHidden:!self.expanded];
+//
+//        } completion:^(BOOL finished) {
+//            [self->_separator setHidden:!self.expanded];
+//
+//        }];
+//    }
+    
+    
+    //    if (!animate){
+    //        //handle interface builder
+    //        [expandedView setHidden:!expand];
+    //
+    //    }else{
+    //
+    //perform animation
+    //        [UIView animateWithDuration:0.2 animations:^{
+    //            [expandedView setHidden:!expand];
+    //
+    //        } completion:^(BOOL finished) {
+    //            [_separator setHidden:!expand];
+    //
+    //        }];
+}
+
 @end

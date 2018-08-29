@@ -9,13 +9,12 @@
 #import "RegisterationChildStepperView.h"
 #import "UIColor+Hex.h"
 #import "BaseCardView+Protected.h"
+#import "LanguageHandler.h"
 #import "UIColor+Hex.h"
 #import "ViewWithTitle.h"
 #import "WYPopoverController.h"
 #import "CalendarCardView.h"
-#import <VUIComponents/LanguageHandler.h>
-#import <VUIComponents/AnaVodafoneLabel.h>
-#import <VUIComponents/Utilities.h>
+#import "AnaVodafoneLabel.h"
 #import "PickerControllView.h"
 
 @interface RegisterationChildStepperView()<WYPopoverControllerDelegate,DatePickerDelegate>{
@@ -297,7 +296,7 @@
     
     [super commonInit];
     
-    NSArray* views = [[Utilities getPodBundle] loadNibNamed:@"RegisterationChildStepperView" owner:self options:nil];
+    NSArray* views = [[NSBundle mainBundle]loadNibNamed:@"RegisterationChildStepperView" owner:self options:nil];
     
     UIView* view = [views objectAtIndex:0];
     
@@ -444,7 +443,7 @@
 
     [self endEditing:true];
     
-    self.pickerVC = [[[Utilities getPodBundle] loadNibNamed:@"PickerControllView" owner:self options:nil]lastObject];
+    self.pickerVC = [[[NSBundle mainBundle]loadNibNamed:@"PickerControllView" owner:self options:nil]lastObject];
     
     self.pickerVC.pickerDelegate = self;
 

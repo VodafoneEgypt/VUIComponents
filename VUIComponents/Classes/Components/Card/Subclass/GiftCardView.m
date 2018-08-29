@@ -7,9 +7,9 @@
 //
 
 #import "GiftCardView.h"
-#import <VUIComponents/AnaVodafoneLabel.h>
+#import "AnaVodafoneLabel.h"
 #import "BaseCardView+Protected.h"
-#import <VUIComponents/LanguageHandler.h>
+#import "LanguageHandler.h"
 
 @interface GiftCardView() {}
 

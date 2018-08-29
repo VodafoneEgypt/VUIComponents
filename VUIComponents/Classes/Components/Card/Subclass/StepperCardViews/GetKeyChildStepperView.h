@@ -8,8 +8,7 @@
 
 #import "ChildStepperView.h"
 #import "ValidationTextField.h"
-//#import "JWGCircleCounter.h"
-#import <JWGCircleCounter/JWGCircleCounter.h>
+#import "JWGCircleCounter.h"
 #import "CustomButton.h"
 
 @interface GetKeyChildStepperView : ChildStepperView

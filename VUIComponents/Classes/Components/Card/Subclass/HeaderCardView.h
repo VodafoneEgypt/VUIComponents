@@ -9,7 +9,6 @@
 #import "BaseCardView.h"
 
 IB_DESIGNABLE
-
 @interface HeaderCardView : BaseCardView
 
 @property (nonatomic , strong) IBInspectable NSString * titleString;

@@ -8,50 +8,51 @@
 
 #import "StatusConfirmationCardView.h"
 #import "BaseCardView+Protected.h"
-#import <VUIComponents/LanguageHandler.h>
+#import "LanguageHandler.h"
 #import "UIColor+Hex.h"
 
 @interface StatusConfirmationCardView (){
     
     __weak IBOutlet NSLayoutConstraint *ButtonWidthConstraint;
+    
     __weak IBOutlet UILabel *textLabel;
     
-    __weak IBOutlet NSLayoutConstraint *buttolRightPadding;
     __weak IBOutlet UIImageView *imageView;
+    
+    __weak IBOutlet NSLayoutConstraint *buttonLeadingSpacing;
     
 }
 @property (nonatomic) BOOL hideFlag;
+
+@property (nonatomic) bool isInitWithCoder;
+
+@property(nonatomic,weak) IBOutlet CustomButton *customButton;
+
 @end
 
 @implementation StatusConfirmationCardView
 
 #pragma mark setter
-
-- (void)setCustomButton:(CustomButton *)customButton{
+- (void)setButtonActionBlock:(ActionBlock)buttonActionBlock {
     
-    _customButton = customButton;
-    buttolRightPadding.constant = 15;
-    
-    CGSize titleSize =
-    [customButton.titleLabel.text sizeWithAttributes:@{NSFontAttributeName:[UIFont fontWithName:[[LanguageHandler sharedInstance] stringForKey:@"regularFont"] size:16]}];
-    
-    ButtonWidthConstraint.constant = (_buttonWidth)?_buttonWidth:titleSize.width + 25;
-    [self layoutIfNeeded];
+    [_customButton setActionBlock:buttonActionBlock];
 }
 
--(void)setButtonWidth:(float)buttonWidth{
+- (void)setButtonTitle:(NSString *)buttonTitle {
     
-    if (buttonWidth>0) {
-        buttolRightPadding.constant = 15;
+    [_customButton setTitle:buttonTitle forState:UIControlStateNormal];
+    CGSize titleSize = [_customButton.titleLabel.text sizeWithAttributes:@{NSFontAttributeName:[UIFont fontWithName:[[LanguageHandler sharedInstance] stringForKey:@"regularFont"] size:16]}];
+    [self setButtonWidth: (_buttonWidth)?_buttonWidth:titleSize.width + 50];
 
-    }else{
-        buttolRightPadding.constant = 0;
-
-    }
-    ButtonWidthConstraint.constant = buttonWidth;
-    [self layoutIfNeeded];
-    
 }
+
+- (void)setButtonStyleFilePath:(NSString *)buttonStyleFilePath {
+    
+    [_customButton setStyleFilePath: buttonStyleFilePath];
+    CGSize titleSize = [_customButton.titleLabel.text sizeWithAttributes:@{NSFontAttributeName:[UIFont fontWithName:[[LanguageHandler sharedInstance] stringForKey:@"regularFont"] size:16]}];
+    [self setButtonWidth: (_buttonWidth)?_buttonWidth:titleSize.width + 50];
+}
+
 -(void)setText:(NSString *)text{
     
     _text = text;
@@ -78,7 +79,7 @@
     
     textLabel.attributedText = attrStr1;
     
-//    [self initialize];
+    [self initialize];
 }
 
 -(void)setImage:(UIImage *)image{
@@ -97,15 +98,15 @@
 #pragma mark height adjustment
 -(void)initializeContentView{
     
-//    contentViewHeight = 46;
-//
-//    CGFloat width = self.frame.size.width - 75;
-//
-//    CGSize size = CGSizeMake(width, CGFLOAT_MAX);
-//
-//    CGRect rect = [textLabel.attributedText boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading context:nil];
-//
-//    contentViewHeight += rect.size.height;
+    contentViewHeight = 46;
+
+    CGFloat width = self.frame.size.width - 75;
+
+    CGSize size = CGSizeMake(width, CGFLOAT_MAX);
+
+    CGRect rect = [textLabel.attributedText boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading context:nil];
+
+    contentViewHeight += rect.size.height;
 }
 
 -(void)hideAfterSec:(float)seconeds{
@@ -120,8 +121,6 @@
                 [self setAlpha:0];
             }];
         }
-
-        
     });
 }
 
@@ -156,13 +155,82 @@
         view = [[NSBundle bundleForClass:[self class]]loadNibNamed:@"StatusConfirmationCardView" owner:self options:nil][0];
     }
     
+    CGRect frame = view.frame;
+    frame.size.width = self.bounds.size.width;
+    view.frame = frame;
     self.bounds = view.frame;
-
     [self.subviews makeObjectsPerformSelector: @selector(removeFromSuperview)];
-    buttolRightPadding.constant = 0;
+    buttonLeadingSpacing.constant = 0;
     ButtonWidthConstraint.constant = 0;
     _hideFlag = true;
     [self addSubview:view];
+}
+
+- (void)setButtonWidth:(float)buttonWidth {
+    _buttonWidth = buttonWidth;
+    if(_isInitWithCoder) {
+        [self layoutIfNeeded];
+        
+        if (_buttonWidth>0) {
+            buttonLeadingSpacing.constant = 15;
+            
+        }else{
+            buttonLeadingSpacing.constant = 0;
+            
+        }
+        ButtonWidthConstraint.constant = _buttonWidth;
+        [self layoutIfNeeded];
+        [super updateConstraints];
+    }
+
+}
+
+- (void)updateConstraints {
+
+    [self layoutIfNeeded];
+
+    if (_buttonWidth>0) {
+        buttonLeadingSpacing.constant = 15;
+
+    }else{
+        buttonLeadingSpacing.constant = 0;
+
+    }
+    ButtonWidthConstraint.constant = _buttonWidth;
+    [self layoutIfNeeded];
+    [super updateConstraints];
+
+}
+
+- (instancetype)initWithCoder:(NSCoder *)coder
+{
+    self = [super initWithCoder:coder];
+    NSLog(@"StatusinitWithCoder");
+    _isInitWithCoder = YES;
+
+    if (self) {
+        
+        if (_buttonWidth>0) {
+            buttonLeadingSpacing.constant = 15;
+
+        }else{
+            buttonLeadingSpacing.constant = 0;
+
+        }
+        
+        ButtonWidthConstraint.constant = _buttonWidth;
+        [self layoutIfNeeded];
+    }
+    return self;
+}
+
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        _isInitWithCoder = NO;
+    }
+    return self;
 }
 
 @end

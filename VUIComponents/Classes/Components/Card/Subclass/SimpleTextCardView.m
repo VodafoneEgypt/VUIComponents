@@ -8,7 +8,7 @@
 
 #import "SimpleTextCardView.h"
 #import "BaseCardView+Protected.h"
-#import <VUIComponents/LanguageHandler.h>
+#import "LanguageHandler.h"
 #import "UIColor+Hex.h"
 
 @interface SimpleTextCardView()
@@ -47,24 +47,24 @@
     
     self.textLabel.attributedText = attrStr1;
     
-//    [self initialize];
+    [self initialize];
 }
 
 #pragma mark height adjustment
 
 -(void)initializeContentView{
     
-//    contentViewHeight = 40;
-//
-//    CGFloat width = self.frame.size.width - 30;
-//
-//    CGSize size = CGSizeMake(width, CGFLOAT_MAX);
-//
-//    //TODO:: localize
-//
-//    CGRect rect = [self.textLabel.attributedText boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading context:nil];
-//
-//    contentViewHeight += rect.size.height;
+    contentViewHeight = 40;
+
+    CGFloat width = self.frame.size.width - 30;
+
+    CGSize size = CGSizeMake(width, CGFLOAT_MAX);
+
+    //TODO:: localize
+
+    CGRect rect = [self.textLabel.attributedText boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading context:nil];
+
+    contentViewHeight += rect.size.height;
 }
 
 -(void)commonInit{
@@ -75,8 +75,10 @@
     
     UIView* view = [views objectAtIndex:0];
     
+    CGRect frame = view.frame;
+    frame.size.width = self.bounds.size.width;
+    view.frame = frame;
     self.bounds = view.frame;
-
     [self.subviews makeObjectsPerformSelector: @selector(removeFromSuperview)];
     
     [self addSubview:view];

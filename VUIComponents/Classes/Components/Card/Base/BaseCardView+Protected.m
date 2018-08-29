@@ -33,26 +33,21 @@
     if(heightConstraint != nil){
         
         heightConstraint.constant = totalHeight;
-        
         [self layoutIfNeeded];
     }else{
         
         CGRect currentFrame = self.frame;
         
         currentFrame.size.height = totalHeight;
-        
+
         self.frame = currentFrame;
     }
     
     if(self.heightDidChangedBlock != nil){
         
         self.heightDidChangedBlock(totalHeight);
-    }
-}
 
--(void)adjustCardView{
-    
-    [self initialize];
+    }
 }
 
 - (void) commonInit{

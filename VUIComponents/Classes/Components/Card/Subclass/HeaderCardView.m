@@ -7,7 +7,7 @@
 //
 
 #import "HeaderCardView.h"
-#import <VUIComponents/AnaVodafoneLabel.h>
+#import "AnaVodafoneLabel.h"
 #import "BaseCardView+Protected.h"
 #define BtnVerticalMargin 16
 #define BtnHorizontalMargin 30
@@ -139,7 +139,10 @@
     [super commonInit];
     UIView* view = [[NSBundle bundleForClass:[self class]]loadNibNamed:@"HeaderCardView" owner:self options:nil][0];
     
-    view.frame = self.bounds;
+    CGRect frame = view.frame;
+    frame.size.width = self.bounds.size.width;
+    view.frame = frame;
+    self.bounds = view.frame;
     
     [self.subviews makeObjectsPerformSelector: @selector(removeFromSuperview)];
     self.filterSeparator.constant = 0 ;

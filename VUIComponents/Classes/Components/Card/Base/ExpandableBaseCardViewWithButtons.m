@@ -14,19 +14,22 @@
 -(void)commonInit{
     
     self.expanded = false;
+    _animationDeuration = 0;
+
 }
 
 - (void) initializeExpandedView{
     
-    expandedViewHeightConstraint.constant = 0;
+//    expandedViewHeightConstraint.constant = 0;
     
-    expandedView.hidden = true;
+//    expandedView.hidden = true;
 }
 
 - (void) initialize{
     
     [self initializeContentView];
-    
+    CGFloat totalHeight = contentViewHeight;
+
     if(self.buttons.count > 0){
         
         [self initializeButtonsView];
@@ -42,15 +45,13 @@
         
         [self initializeExpandedView];
         
+        totalHeight = contentViewHeight + expandedViewHeightConstraint.constant + buttonsViewHeightConstraint.constant;
+
     }else{
         
-        expandedViewHeightConstraint.constant = 0;
+        totalHeight = contentViewHeight + buttonsViewHeightConstraint.constant;
+
     }
-    
-    expandedView.hidden = !self.expanded;
-    
-    CGFloat totalHeight = contentViewHeight + expandedViewHeightConstraint.constant + buttonsViewHeightConstraint.constant;
-    
 //    if(self.heightBlock != nil){
 //        
 //        self.heightBlock(totalHeight);
@@ -70,23 +71,39 @@
             }
         }
         
-        if(heightConstraint != nil){
-            
+    if(heightConstraint != nil){
+        
+        heightConstraint.constant = contentViewHeight;
+        CGRect currentFrame = self.frame;
+        currentFrame.size.height = totalHeight;
+        
+        [UIView animateWithDuration:_animationDeuration animations:^{
+            self.frame = currentFrame;
+            if(self.expanded == false){
+                
+                self->expandedViewHeightConstraint.constant = 0;
+                [self->expandedView layoutIfNeeded];
+            }
             heightConstraint.constant = totalHeight;
-            
             [self layoutIfNeeded];
-        }else{
-            
-            CGRect currentFrame = self.frame;
-            
-            currentFrame.size.height = totalHeight;
+        } completion:^(BOOL finished) {}];
+        
+    }else{
+        
+        CGRect currentFrame = self.frame;
+        
+        currentFrame.size.height = totalHeight;
+        [UIView animateWithDuration:_animationDeuration animations:^{
             
             self.frame = currentFrame;
-        }
+            
+        } completion:^(BOOL finished) {}];
+    }
 //    }
     
     if(self.heightDidChangedBlock != nil){
         self.heightDidChangedBlock(totalHeight);
+
     }
 }
 

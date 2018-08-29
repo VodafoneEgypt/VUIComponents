@@ -10,7 +10,7 @@
 #import "BaseCardView+Protected.h"
 #import <VUIComponents/AnaVodafoneLabel.h>
 #import <VUIComponents/LanguageHandler.h>
-
+#import <VUIComponents/Utilities.h>
 @interface ImageStackCardView() {}
 
 @property (weak, nonatomic) IBOutlet AnaVodafoneLabel *alertLabel;

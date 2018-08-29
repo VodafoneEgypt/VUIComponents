@@ -7,8 +7,7 @@
 //
 
 #import "ExpandableSignpostsWithAvatarCardView.h"
-#import <VUIComponents/LanguageHandler.h>
-#import <VUIComponents/Utilities.h>
+#import "LanguageHandler.h"
 #import "UIColor+Hex.h"
 #import "BillsExpandedTableView.h"
 #import "TableCardModel.h"
@@ -246,11 +245,11 @@
     
     if ([LanguageHandler sharedInstance].currentDirection == RTL) {
         
-        views = [[Utilities getPodBundle] loadNibNamed:@"ExpandableSignpostsWithAvatarCardView_RTL" owner:self options:nil];
+        views = [[NSBundle mainBundle]loadNibNamed:@"ExpandableSignpostsWithAvatarCardView_RTL" owner:self options:nil];
         
     }else{
         
-        views = [[Utilities getPodBundle] loadNibNamed:@"ExpandableSignpostsWithAvatarCardView" owner:self options:nil];
+        views = [[NSBundle mainBundle]loadNibNamed:@"ExpandableSignpostsWithAvatarCardView" owner:self options:nil];
     }
     
     UIView* view = [views objectAtIndex:0];

@@ -7,9 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BaseCardViewWithButtonsOld.h"
 #import "BaseCardViewWithButtons.h"
-
 @protocol StepperProtocol <NSObject>
 
 -(void)showNextView:(BaseCardViewWithButtons*)view;
@@ -18,7 +16,7 @@
 
 @end
 
-@interface ChildStepperView : BaseCardViewWithButtonsOld
+@interface ChildStepperView : BaseCardViewWithButtons
 
 @property(nonatomic, strong) id<StepperProtocol> navigationDelegate;
 

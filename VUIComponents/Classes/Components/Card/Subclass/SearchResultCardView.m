@@ -8,7 +8,7 @@
 
 #import "SearchResultCardView.h"
 #import "BaseCardView+Protected.h"
-#import <VUIComponents/LanguageHandler.h>
+#import "LanguageHandler.h"
 #import "UIColor+Hex.h"
 
 @interface SearchResultCardView()

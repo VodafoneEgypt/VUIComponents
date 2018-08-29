@@ -15,7 +15,7 @@ IB_DESIGNABLE
 
 @property (assign, nonatomic) IBInspectable NSString *alertTitleString;
 
-@property (nonatomic, strong) NSAttributedString *alertText;
+@property (nonatomic, strong) NSAttributedString *alertAttributedText;
     
 @property (nonatomic, strong) NSAttributedString *alertTitleAttributedText;
 

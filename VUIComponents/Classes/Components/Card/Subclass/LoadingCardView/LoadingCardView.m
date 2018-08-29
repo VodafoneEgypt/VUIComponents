@@ -10,7 +10,7 @@
 #import "BaseCardView+Protected.h"
 #import <VUIComponents/AnaVodafoneLabel.h>
 #import <VUIComponents/LanguageHandler.h>
-
+#import <VUIComponents/Utilities.h>
 @interface LoadingCardView()
 
 @property (weak, nonatomic) IBOutlet AnaVodafoneLabel *titleLabel;

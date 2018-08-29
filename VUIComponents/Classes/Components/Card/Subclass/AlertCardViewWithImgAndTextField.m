@@ -9,9 +9,8 @@
 #import "AlertCardViewWithImgAndTextField.h"
 #import "BaseCardView+Protected.h"
 #import "KVNProgress.h"
-//#import "CenterViewController.h"
 #import "ValidationTextField.h"
-#import <VUIComponents/AnaVodafoneLabel.h>
+#import "AnaVodafoneLabel.h"
 #import <VUIComponents/LanguageHandler.h>
 
 @interface AlertCardViewWithImgAndTextField()
@@ -45,9 +44,9 @@
     [_alertTextField setActionButtonHidden:hide];
 }
 
--(void)setAlertText:(NSAttributedString *)alertText {
-    _alertText = alertText;
-    _alertLabel.attributedText = alertText;
+-(void)setAlertAttributedText:(NSAttributedString *)alertAttributedText {
+    _alertAttributedText = alertAttributedText;
+    _alertLabel.attributedText = alertAttributedText;
 }
 
 -(void)setAlertString:(NSString *)alertString {
@@ -153,8 +152,10 @@
         
     UIView* view =  [[[NSBundle bundleForClass:[self class]] loadNibNamed:@"AlertCardViewWithImgAndTextField" owner:self options:nil] firstObject];
     
+    CGRect frame = view.frame;
+    frame.size.width = self.bounds.size.width;
+    view.frame = frame;
     self.bounds = view.frame;
-    
     [self addSubview:view];
 }
 

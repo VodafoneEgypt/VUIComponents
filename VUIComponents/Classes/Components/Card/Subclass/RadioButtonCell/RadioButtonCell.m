@@ -7,10 +7,9 @@
 //
 
 #import "RadioButtonCell.h"
-#import <VUIComponents/LanguageHandler.h>
 #import <VUIComponents/AnaVodafoneLabel.h>
+#import <VUIComponents/LanguageHandler.h>
 #import "HexColor.h"
-
 @interface RadioButtonCell()
 
 @property (weak, nonatomic) IBOutlet AnaVodafoneLabel *rightLabel;

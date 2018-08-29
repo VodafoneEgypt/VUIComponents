@@ -9,8 +9,7 @@
 #import "SignpostsWithAvatarCardViewOld.h"
 #import "BaseCardView+Protected.h"
 #import "ExpandSignpostWithAvatarCardView.h"
-#import <VUIComponents/LanguageHandler.h>
-#import <VUIComponents/Utilities.h>
+#import "LanguageHandler.h"
 #import "UIColor+Hex.h"
 
 @interface SignpostsWithAvatarCardViewOld ()
@@ -209,9 +208,7 @@
     }
     
     arrowImgView.transform = (value == true) ? CGAffineTransformRotate(arrowImgView.transform, M_PI):CGAffineTransformIdentity;
-    
-    [_expandSignpostWithAvatarCardView setHidden:!value];
-    
+        
     [super setExpanded:value];
 }
 
@@ -314,7 +311,7 @@
     [_expandSignpostWithAvatarCardView initialize];
     
     _expandSignpostWithAvatarCardView.heightDidChangedBlock = ^(CGFloat height) {
-        expandedViewHeightConstraint.constant = height;
+        self->expandedViewHeightConstraint.constant = height;
     };
     
 }
@@ -327,11 +324,11 @@
     
     if ([LanguageHandler sharedInstance].currentDirection == RTL) {
         
-        views = [[Utilities getPodBundle] loadNibNamed:@"SignpostsWithAvatarCardViewRTLOld" owner:self options:nil];
+        views = [[NSBundle mainBundle]loadNibNamed:@"SignpostsWithAvatarCardViewRTLOld" owner:self options:nil];
         
     }else{
         
-        views = [[Utilities getPodBundle] loadNibNamed:@"SignpostsWithAvatarCardViewOld" owner:self options:nil];
+        views = [[NSBundle mainBundle]loadNibNamed:@"SignpostsWithAvatarCardViewOld" owner:self options:nil];
     }
     
     UIView* view = [views objectAtIndex:0];

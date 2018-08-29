@@ -9,7 +9,7 @@
 #import "SignpostsWithAvatarCardView.h"
 #import "BaseCardView+Protected.h"
 #import "ExpandSignpostWithAvatarCardView.h"
-#import <VUIComponents/LanguageHandler.h>
+#import "LanguageHandler.h"
 #import "UIColor+Hex.h"
 
 @interface SignpostsWithAvatarCardView ()
@@ -292,8 +292,6 @@
         [expandedView setHidden:!expand];
     }];
 }
-
-
 
 -(void)setButtons:(NSArray *)buttons{
     

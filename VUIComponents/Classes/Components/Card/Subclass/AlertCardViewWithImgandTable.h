@@ -6,11 +6,11 @@
 //  Copyright © 2018 Vodafone Egypt. All rights reserved.
 //
 
-#import "BaseCardViewWithButtonsOld.h"
+#import "BaseCardViewWithButtons.h"
 #import "TableCardView.h"
 
 IB_DESIGNABLE
-@interface AlertCardViewWithImgandTable : BaseCardViewWithButtonsOld
+@interface AlertCardViewWithImgandTable : BaseCardViewWithButtons
 
 @property (assign, nonatomic) IBInspectable NSString *alertString;
 

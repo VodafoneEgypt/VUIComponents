@@ -96,8 +96,10 @@
     
     UIView* view = [[NSBundle bundleForClass:[self class]]loadNibNamed:@"TextFieldCardView" owner:self options:nil][0];
     
+    CGRect frame = view.frame;
+    frame.size.width = self.bounds.size.width;
+    view.frame = frame;
     self.bounds = view.frame;
-
     [self.subviews makeObjectsPerformSelector: @selector(removeFromSuperview)];
     
     

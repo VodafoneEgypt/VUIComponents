@@ -22,7 +22,7 @@ IB_DESIGNABLE
 
 @property (nonatomic, strong) IBInspectable NSString *alertString;
 
-@property (nonatomic, strong) NSAttributedString *alertText;
+@property (nonatomic, strong) NSAttributedString *alertAttributedText;
 
 @property (nonatomic, strong) IBInspectable UIImage *alertImage;
 

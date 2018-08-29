@@ -8,7 +8,7 @@
 
 #import "SignpostCardView.h"
 #import "BaseCardView+Protected.h"
-#import <VUIComponents/LanguageHandler.h>
+#import "LanguageHandler.h"
 #import "UIColor+Hex.h"
 
 @implementation SignpostCardView
@@ -39,7 +39,7 @@
     
     verticalLineViewWidthConstraint.constant = verticalLine ? 6:0;
     
-   // [self initialize];
+    [self initialize];
 }
 
 -(void)setTitle:(NSString *)title{
@@ -128,33 +128,33 @@
 -(void)initializeContentView{
     
     CGFloat height = 0;
-    
+
     //TODO:: localize
-    
+
     CGFloat width = self.frame.size.width - 60 - (_verticalLine ? 6 : 0);
-    
+
     CGSize size = CGSizeMake(width, CGFLOAT_MAX);
-    
+
     CGRect rect = [titleLabel.attributedText boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading context:nil];
-    
+
     height += rect.size.height;
-    
+
     if(self.subTitle.length > 0){
-        
+
         titleLabelTopConstraint.constant = 25;
-        
+
         height += 54;
-        
+
         rect = [subTitleLabel.attributedText boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading context:nil];
-        
+
         height += rect.size.height;
     }else{
-        
+
         titleLabelTopConstraint.constant = 30;
-        
+
         height += 64;
     }
-    
+
     contentViewHeight = height;
 }
 
@@ -175,12 +175,16 @@
     
     UIView* view = [views objectAtIndex:0];
     
-    view.frame = self.bounds;
+    CGRect frame = view.frame;
+    frame.size.width = self.bounds.size.width;
+    view.frame = frame;
+    self.bounds = view.frame;
     
     [self.subviews makeObjectsPerformSelector: @selector(removeFromSuperview)];
     
     [self addSubview:view];
     
     self.targetBlock = nil;
+    
 }
 @end

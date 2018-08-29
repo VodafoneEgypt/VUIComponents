@@ -18,6 +18,6 @@ IB_DESIGNABLE
 
 @property (nonatomic,strong) IBInspectable NSString* desc;
 
-@property (nonatomic) IBInspectable BOOL isExpanded;
+//@property (nonatomic) IBInspectable BOOL isExpanded;
 
 @end

@@ -100,7 +100,7 @@
     
     NSString* nibFileName = ([LanguageHandler sharedInstance].currentDirection == RTL)?@"VoiceOfVodafoneNotificationCardView_RTL":@"VoiceOfVodafoneNotificationCardView";
     
-    NSArray* views = [[Utilities getPodBundle] loadNibNamed:nibFileName owner:self options:nil];
+    NSArray* views = [[NSBundle mainBundle]loadNibNamed:nibFileName owner:self options:nil];
     
     UIView* view = [views objectAtIndex:0];
     

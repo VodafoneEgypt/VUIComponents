@@ -8,20 +8,25 @@
 
 #import "SignpostWithBigImgCardView.h"
 #import "BaseCardView+Protected.h"
-#import <VUIComponents/LanguageHandler.h>
+#import "LanguageHandler.h"
 #import "UIColor+Hex.h"
 #import "KAProgressLabelVF.h"
-
-@interface SignpostWithBigImgCardView () {
+@interface SignpostWithBigImgCardView (){
     __weak IBOutlet KAProgressLabelVF *progressLabel;
     __weak IBOutlet UILabel *progressPresentage;
+    
     __weak IBOutlet UIView *signPostMainView;
     __weak IBOutlet UIView *progressView;
     __weak IBOutlet UIImageView *arrowImgView;
+    
     __weak IBOutlet UILabel *subTitleLabel;
+    
     __weak IBOutlet UILabel *titleLabel;
+    
     __weak IBOutlet UIButton *viewButton;
+    
     __weak IBOutlet UIImageView *imgView;
+    
 }
 @end
 
@@ -144,6 +149,9 @@
         } else {
             self.backgroundColor = [UIColor clearColor];
         }
+    }else{
+        self.backgroundColor = [UIColor clearColor];
+
     }
 }
 -(void) setMainViewBackground:(UIColor*)mainBackground{
@@ -186,6 +194,9 @@
     
     UIView* view = [views objectAtIndex:0];
     
+    CGRect frame = view.frame;
+    frame.size.width = self.bounds.size.width;
+    view.frame = frame;
     self.bounds = view.frame;
 
     [self.subviews makeObjectsPerformSelector: @selector(removeFromSuperview)];
@@ -193,6 +204,7 @@
     self.layer.borderColor = [UIColor colorWithWhite:1.0f alpha:0.25f].CGColor;
 
     [self addSubview:view];
+    
 }
 
 @end

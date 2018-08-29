@@ -10,7 +10,7 @@
 #import "ExpandSignpostCell.h"
 #import "ExpandSignpostCellModel.h"
 #import "ExpandSignpostCellRTL.h"
-#import <VUIComponents/LanguageHandler.h>
+#import "LanguageHandler.h"
 #import "RadioButtonCell.h"
 
 #define cellHeight 44
@@ -58,14 +58,13 @@
         NSIndexPath *indexPath = [NSIndexPath indexPathForRow:selecetdIndexRow inSection:0];
         
         [self.tableView selectRowAtIndexPath:indexPath animated:true scrollPosition:UITableViewScrollPositionNone];
+
     }
-
-
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"%ld", (long)indexPath.row); // you can see selected row number in your console;
+    NSLog(@"didSelectRowAtIndexPath %ld", (long)indexPath.row); // you can see selected row number in your console;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -78,7 +77,7 @@
         
         if (cell == nil){
             
-            [tableView registerNib:[UINib nibWithNibName:CellIdentifier bundle:[Utilities getPodBundle]] forCellReuseIdentifier:CellIdentifier];
+            [tableView registerNib:[UINib nibWithNibName:CellIdentifier bundle:nil] forCellReuseIdentifier:CellIdentifier];
             
             cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
         }
@@ -97,7 +96,7 @@
             
             if (cell == nil){
                 
-                [tableView registerNib:[UINib nibWithNibName:CellIdentifier bundle:[Utilities getPodBundle]] forCellReuseIdentifier:CellIdentifier];
+                [tableView registerNib:[UINib nibWithNibName:CellIdentifier bundle:nil] forCellReuseIdentifier:CellIdentifier];
                 
                 cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
             }
@@ -115,7 +114,7 @@
             
             if (cell == nil){
                 
-                [tableView registerNib:[UINib nibWithNibName:CellIdentifier bundle:[Utilities getPodBundle]] forCellReuseIdentifier:CellIdentifier];
+                [tableView registerNib:[UINib nibWithNibName:CellIdentifier bundle:nil] forCellReuseIdentifier:CellIdentifier];
                 
                 cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
             }

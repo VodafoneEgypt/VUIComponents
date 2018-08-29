@@ -169,7 +169,7 @@
     
     [attrStr1 addAttribute:NSParagraphStyleAttributeName value:style range:NSMakeRange(0,attrStr1.length)];
     
-    alertCardViewWithImg.alertText = attrStr1;
+    alertCardViewWithImg.alertAttributedText = attrStr1;
     alertCardViewWithImg.alertImage = [UIImage imageNamed:imgName];
     
     AlertView *alertViewController = [[AlertView alloc] initWithTitle:title andCard:alertCardViewWithImg];

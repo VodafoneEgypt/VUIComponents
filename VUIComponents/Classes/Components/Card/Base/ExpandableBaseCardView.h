@@ -13,9 +13,11 @@
     __weak IBOutlet NSLayoutConstraint *expandedViewHeightConstraint;
     
     __weak IBOutlet UIView *expandedView;
+    
 }
 
-@property (nonatomic)  BOOL expanded;
+@property (nonatomic, readwrite)  BOOL expanded;
+@property (nonatomic)  float animationDeuration;
 
 - (void) initializeExpandedView;
 

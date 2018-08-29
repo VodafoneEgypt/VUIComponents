@@ -8,7 +8,7 @@
 
 #import "DonationLikeCardView.h"
 #import "BaseCardView+Protected.h"
-#import <VUIComponents/LanguageHandler.h>
+#import "LanguageHandler.h"
 #import "UIColor+Hex.h"
 #import "SignpostCardView.h"
 
@@ -109,8 +109,10 @@
     
     UIView* view = [[[NSBundle bundleForClass:[self class]] loadNibNamed:@"DonationLikeCardView" owner:self options:nil] firstObject];
     
+    CGRect frame = view.frame;
+    frame.size.width = self.bounds.size.width;
+    view.frame = frame;
     self.bounds = view.frame;
-    
     [self addSubview:view];
 }
 

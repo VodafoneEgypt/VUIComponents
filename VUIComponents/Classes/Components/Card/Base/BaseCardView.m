@@ -17,6 +17,8 @@
 
 -(instancetype)initWithFrame:(CGRect)frame{
     
+    NSLog(@"initWithFrame");
+    
     self = [super initWithFrame:frame];
     
     if(self){
@@ -29,6 +31,9 @@
 
 - (instancetype)initWithCoder:(NSCoder *)coder
 {
+    
+    NSLog(@"initWithCoder");
+
     self = [super initWithCoder:coder];
     
     if (self) {
@@ -37,6 +42,11 @@
     }
     
     return self;
+}
+
+-(void)adjustCardView{
+    
+    [self initialize];
 }
 
 @end

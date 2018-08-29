@@ -6,10 +6,10 @@
 //  Copyright © 2017 Karim Mousa. All rights reserved.
 //
 
-#import "BaseCardViewWithButtonsOld.h"
+#import "BaseCardViewWithButtons.h"
 
 IB_DESIGNABLE
-@interface ConfirmationAlertCardView : BaseCardViewWithButtonsOld
+@interface ConfirmationAlertCardView : BaseCardViewWithButtons
 
 @property (nonatomic, strong) NSAttributedString *attributedText;
 @property (nonatomic, strong) IBInspectable NSString *titleText;

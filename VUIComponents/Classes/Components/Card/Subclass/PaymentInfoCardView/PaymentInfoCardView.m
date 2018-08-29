@@ -8,10 +8,10 @@
 
 #import "PaymentInfoCardView.h"
 #import "CustomButton.h"
-#import "AnaVodafoneTextField.h"
+#import <VUIComponents/AnaVodafoneTextField.h>
 #import <VUIComponents/AnaVodafoneLabel.h>
 #import <VUIComponents/LanguageHandler.h>
-
+#import <VUIComponents/Utilities.h>
 @interface PaymentInfoCardView()
 
 @property (weak, nonatomic) IBOutlet UIImageView *cardImageView;
@@ -200,8 +200,10 @@
 -(void) commonInit {
     
     UIView* view = [[[NSBundle bundleForClass:[self class]]loadNibNamed:@"PaymentInfoCardView" owner:self options:nil] firstObject];
+    CGRect frame = view.frame;
+    frame.size.width = self.bounds.size.width;
+    view.frame = frame;
     self.bounds = view.frame;
-    
     [self addSubview:view];
     
     _deleteThisCardButton.txt = @"Remove this card";

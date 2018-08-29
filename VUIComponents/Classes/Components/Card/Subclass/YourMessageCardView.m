@@ -8,8 +8,7 @@
 
 #import "YourMessageCardView.h"
 #import "BaseCardView+Protected.h"
-#import <VUIComponents/LanguageHandler.h>
-#import <VUIComponents/Utilities.h>
+#import "LanguageHandler.h"
 #import "UIColor+Hex.h"
 
 @interface YourMessageCardView ()
@@ -118,10 +117,10 @@
     
     if ([LanguageHandler sharedInstance].currentDirection == RTL) {
         
-        views = [[Utilities getPodBundle] loadNibNamed:@"YourMessageCardViewRTL" owner:self options:nil];
+        views = [[NSBundle mainBundle]loadNibNamed:@"YourMessageCardViewRTL" owner:self options:nil];
     }else{
         
-        views = [[Utilities getPodBundle] loadNibNamed:@"YourMessageCardView" owner:self options:nil];
+        views = [[NSBundle mainBundle]loadNibNamed:@"YourMessageCardView" owner:self options:nil];
     }
     
     UIView* view = [views objectAtIndex:0];

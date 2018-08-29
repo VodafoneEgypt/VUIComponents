@@ -10,7 +10,7 @@
 #import "BaseCardView+Protected.h"
 #import "FSCalendar.h"
 #import "UIColor+Hex.h"
-#import <VUIComponents/AnaVodafoneLabel.h>
+#import "AnaVodafoneLabel.h"
 
 @interface CalendarCardView()<FSCalendarDataSource,FSCalendarDelegate,FSCalendarDelegateAppearance>
 @property (weak, nonatomic) IBOutlet UIButton *nextYearButton;
@@ -117,8 +117,10 @@
     
     UIView* view = [[[NSBundle bundleForClass:[self class]] loadNibNamed:@"CalendarCardView" owner:self options:nil] firstObject];
     
+    CGRect frame = view.frame;
+    frame.size.width = self.bounds.size.width;
+    view.frame = frame;
     self.bounds = view.frame;
-    
     self.dateFormatter1 = [[NSDateFormatter alloc] init];
     
     self.dateFormatter2 = [[NSDateFormatter alloc] init];
@@ -280,6 +282,7 @@
     }
 
 }
+
 - (IBAction)nextYearAction:(id)sender {
     
     NSDate *date = self.calendar.selectedDate;
@@ -295,6 +298,5 @@
         
         [_calendar reloadData];
     }
-    
 }
 @end

@@ -68,6 +68,7 @@
     
     if(self.heightDidChangedBlock != nil){
         self.heightDidChangedBlock(totalHeight);
+
     }
 }
 

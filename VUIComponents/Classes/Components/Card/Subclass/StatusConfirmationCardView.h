@@ -16,7 +16,11 @@ IB_DESIGNABLE
 
 @property(nonatomic, strong) IBInspectable UIImage* image;
 
-@property(nonatomic,weak) IBOutlet CustomButton *customButton;
+@property(nonatomic, strong) IBInspectable NSString* buttonTitle;
+
+@property(nonatomic, strong) IBInspectable NSString* buttonStyleFilePath;
+
+@property(nonatomic, strong) ActionBlock buttonActionBlock;
 
 @property(nonatomic) float buttonWidth;
 

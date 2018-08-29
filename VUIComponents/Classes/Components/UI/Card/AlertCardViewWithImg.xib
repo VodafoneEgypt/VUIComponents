@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -18,7 +18,9 @@
             <connections>
                 <outlet property="alertImgView" destination="NbW-1p-cEm" id="2LR-DX-N5Q"/>
                 <outlet property="alertLabel" destination="3Yz-bi-bRb" id="gcM-fO-I60"/>
+                <outlet property="alertLabelHeightConstraint" destination="Z4O-VC-FSW" id="jAG-Ma-Ams"/>
                 <outlet property="alertTitleLabel" destination="nrX-6w-edY" id="lH9-Wy-bve"/>
+                <outlet property="alertTitleLabelHeightConstraint" destination="W76-MU-WqM" id="uh2-K2-sEo"/>
                 <outlet property="backgroundView" destination="MRN-z6-she" id="zFD-u3-8f3"/>
                 <outlet property="backgroundViewTop" destination="8en-zm-8Ap" id="lOO-Wb-pHl"/>
                 <outlet property="buttonsView" destination="LC5-Uh-TpS" id="k6K-5U-ANK"/>
@@ -28,21 +30,20 @@
                 <outlet property="imageTopConstraint" destination="08d-VY-6wq" id="KRW-16-810"/>
                 <outlet property="imageWidth" destination="qxh-yO-kCB" id="rsx-Op-6pw"/>
                 <outlet property="lableTopConstraint" destination="bdb-Fc-qtA" id="TYS-Ru-MgX"/>
-                <outlet property="titleLabelHeightConstraint" destination="W76-MU-WqM" id="pLj-qk-zbM"/>
                 <outlet property="titleLabelTopConstraint" destination="wUr-kI-RLy" id="ZpQ-0R-tHJ"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="350" height="528"/>
+            <rect key="frame" x="0.0" y="0.0" width="350" height="258"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MRN-z6-she">
-                    <rect key="frame" x="0.0" y="0.0" width="350" height="528"/>
+                    <rect key="frame" x="0.0" y="0.0" width="350" height="258"/>
                     <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hcQ-Aa-WBH">
-                    <rect key="frame" x="0.0" y="0.0" width="350" height="518"/>
+                    <rect key="frame" x="0.0" y="0.0" width="350" height="248"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VFLogoFlat" translatesAutoresizingMaskIntoConstraints="NO" id="NbW-1p-cEm">
                             <rect key="frame" x="109.5" y="70" width="132" height="126"/>
@@ -51,43 +52,46 @@
                                 <constraint firstAttribute="width" constant="132" id="qxh-yO-kCB"/>
                             </constraints>
                         </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Sample text" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Yz-bi-bRb" customClass="AnaVodafoneLabel">
-                            <rect key="frame" x="15.5" y="226" width="320" height="276"/>
-                            <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="18"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <nil key="highlightedColor"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nrX-6w-edY" customClass="AnaVodafoneLabel">
+                            <rect key="frame" x="15" y="35" width="320" height="0.0"/>
+                            <constraints>
+                                <constraint firstAttribute="height" id="W76-MU-WqM"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="22"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="highlightedColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="boolean" keyPath="ignoresLanguageAllignment" value="YES"/>
                             </userDefinedRuntimeAttributes>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nrX-6w-edY" customClass="AnaVodafoneLabel">
-                            <rect key="frame" x="60" y="34" width="230" height="0.0"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Sample text" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Yz-bi-bRb" customClass="AnaVodafoneLabel">
+                            <rect key="frame" x="15" y="226" width="320" height="0.0"/>
                             <constraints>
-                                <constraint firstAttribute="height" relation="greaterThanOrEqual" id="W76-MU-WqM"/>
+                                <constraint firstAttribute="height" id="Z4O-VC-FSW"/>
                             </constraints>
-                            <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="22"/>
-                            <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <color key="highlightedColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="boolean" keyPath="ignoresLanguageAllignment" value="YES"/>
                             </userDefinedRuntimeAttributes>
                         </label>
                     </subviews>
                     <constraints>
-                        <constraint firstItem="NbW-1p-cEm" firstAttribute="top" secondItem="nrX-6w-edY" secondAttribute="bottom" constant="36" id="08d-VY-6wq"/>
+                        <constraint firstItem="NbW-1p-cEm" firstAttribute="top" secondItem="nrX-6w-edY" secondAttribute="bottom" constant="35" id="08d-VY-6wq"/>
                         <constraint firstItem="3Yz-bi-bRb" firstAttribute="centerX" secondItem="NbW-1p-cEm" secondAttribute="centerX" id="0HA-B3-GlP"/>
                         <constraint firstItem="nrX-6w-edY" firstAttribute="centerX" secondItem="hcQ-Aa-WBH" secondAttribute="centerX" id="3UK-fm-atN"/>
                         <constraint firstItem="NbW-1p-cEm" firstAttribute="centerX" secondItem="hcQ-Aa-WBH" secondAttribute="centerX" id="AY4-w8-mkY"/>
-                        <constraint firstItem="nrX-6w-edY" firstAttribute="leading" secondItem="hcQ-Aa-WBH" secondAttribute="leading" constant="60" id="Dcq-6L-V7f"/>
+                        <constraint firstItem="nrX-6w-edY" firstAttribute="leading" secondItem="hcQ-Aa-WBH" secondAttribute="leading" constant="15" id="Dcq-6L-V7f"/>
                         <constraint firstItem="3Yz-bi-bRb" firstAttribute="width" secondItem="hcQ-Aa-WBH" secondAttribute="width" constant="-30" id="Mfn-cj-kr8"/>
                         <constraint firstAttribute="bottom" secondItem="3Yz-bi-bRb" secondAttribute="bottom" constant="16" id="bNY-Ah-YiD"/>
                         <constraint firstItem="3Yz-bi-bRb" firstAttribute="top" secondItem="NbW-1p-cEm" secondAttribute="bottom" constant="30" id="bdb-Fc-qtA"/>
-                        <constraint firstAttribute="trailing" secondItem="nrX-6w-edY" secondAttribute="trailing" constant="60" id="q1t-Hs-DX8"/>
-                        <constraint firstItem="nrX-6w-edY" firstAttribute="top" secondItem="hcQ-Aa-WBH" secondAttribute="top" constant="34" id="wUr-kI-RLy"/>
+                        <constraint firstAttribute="trailing" secondItem="nrX-6w-edY" secondAttribute="trailing" constant="15" id="q1t-Hs-DX8"/>
+                        <constraint firstItem="nrX-6w-edY" firstAttribute="top" secondItem="hcQ-Aa-WBH" secondAttribute="top" constant="35" id="wUr-kI-RLy"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LC5-Uh-TpS">
-                    <rect key="frame" x="0.0" y="528" width="350" height="0.0"/>
+                    <rect key="frame" x="0.0" y="258" width="350" height="0.0"/>
                     <constraints>
                         <constraint firstAttribute="height" id="nx5-dh-NpN"/>
                     </constraints>
@@ -110,7 +114,7 @@
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="-484" y="-159"/>
+            <point key="canvasLocation" x="-484" y="-294"/>
         </view>
     </objects>
     <resources>

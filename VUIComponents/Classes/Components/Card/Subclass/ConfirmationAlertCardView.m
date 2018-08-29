@@ -8,10 +8,9 @@
 
 #import "ConfirmationAlertCardView.h"
 #import "BaseCardView+Protected.h"
-#import <VUIComponents/LanguageHandler.h>
+#import "LanguageHandler.h"
 #import "UIColor+Hex.h"
-#import <VUIComponents/AnaVodafoneLabel.h>
-#import <VUIComponents/Utilities.h>
+#import "AnaVodafoneLabel.h"
 
 @interface ConfirmationAlertCardView ()
 
@@ -24,7 +23,6 @@
 -(void)setTitleText:(NSString *)titleText {
     _titleText = titleText;
     _titleLabel.text = titleText;
-    
     [self layoutIfNeeded];
 }
 
@@ -32,43 +30,40 @@
     
     _attributedText = attributedText;
     
-    CGFloat width = self.frame.size.width - 30;
-    
-    CGSize size = CGSizeMake(width, CGFLOAT_MAX);
-    
-    CGRect rect = [attributedText boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading context:nil];
-    contentViewHeight = 40;
-    
-    contentViewHeight += rect.size.height;
-    
     _titleLabel.attributedText = attributedText;
-    
+   
+    [self layoutIfNeeded];
+
     [self initialize];
 }
 
 #pragma mark height adjustment
 -(void)initializeContentView{
     
-        contentViewHeight = 30;
+    contentViewHeight = 30;
     
-        CGFloat width = self.frame.size.width - 30;
+    //        CGFloat width = self.frame.size.width - 30;
+    //
+    //        CGSize size = CGSizeMake(width, CGFLOAT_MAX);
+    //
+    //        CGRect rect = [_titleLabel.attributedText boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading context:nil];
     
-        CGSize size = CGSizeMake(width, CGFLOAT_MAX);
-    
-        CGRect rect = [_titleLabel.attributedText boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading context:nil];
-    
-        contentViewHeight += rect.size.height;
+    [_titleLabel sizeToFit];
+    contentViewHeight += _titleLabel.frame.size.height;
 }
 
 -(void)commonInit{
     
     [super commonInit];
     
-    UIView* view = [[Utilities getPodBundle] loadNibNamed:@"ConfirmationAlertCardView" owner:self options:nil][0];
+    UIView* view = [[NSBundle mainBundle]loadNibNamed:@"ConfirmationAlertCardView" owner:self options:nil][0];
     
-    view.frame = self.bounds;
+    CGRect frame = view.frame;
+    frame.size.width = self.bounds.size.width;
+    view.frame = frame;
+    self.bounds = view.frame;
     
-    [self.subviews makeObjectsPerformSelector: @selector(removeFromSuperview)];
+//    [self.subviews makeObjectsPerformSelector: @selector(removeFromSuperview)];
     
     [self addSubview:view];
 }
