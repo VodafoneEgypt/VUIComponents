@@ -301,7 +301,7 @@
     
     _tableView.delegate = self;
     _tableView.dataSource = self;
-    UIView* view = [[NSBundle mainBundle]loadNibNamed:@"AlertCardViewWithImgandTable" owner:self options:nil][0];
+    UIView* view = [[Utilities getPodBundle]loadNibNamed:@"AlertCardViewWithImgandTable" owner:self options:nil][0];
     
     view.frame = self.bounds;
     

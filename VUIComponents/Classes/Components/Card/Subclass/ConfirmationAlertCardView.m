@@ -11,6 +11,7 @@
 #import "LanguageHandler.h"
 #import "UIColor+Hex.h"
 #import "AnaVodafoneLabel.h"
+#import <VUIComponents/Utilities.h>
 
 @interface ConfirmationAlertCardView ()
 
@@ -56,7 +57,7 @@
     
     [super commonInit];
     
-    UIView* view = [[NSBundle mainBundle]loadNibNamed:@"ConfirmationAlertCardView" owner:self options:nil][0];
+    UIView* view = [[Utilities getPodBundle]loadNibNamed:@"ConfirmationAlertCardView" owner:self options:nil][0];
     
     CGRect frame = view.frame;
     frame.size.width = self.bounds.size.width;

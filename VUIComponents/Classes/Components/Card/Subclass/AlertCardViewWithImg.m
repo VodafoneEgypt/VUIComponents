@@ -12,6 +12,7 @@
 #import "AnaVodafoneLabel.h"
 #import "UIColor+Hex.h"
 #import <VUIComponents/LanguageHandler.h>
+#import <VUIComponents/Utilities.h>
 
 @interface AlertCardViewWithImg()
 
@@ -172,7 +173,7 @@
     
     [super commonInit];
     
-    UIView* view = [[NSBundle mainBundle]loadNibNamed:@"AlertCardViewWithImg" owner:self options:nil][0];
+    UIView* view = [[Utilities getPodBundle]loadNibNamed:@"AlertCardViewWithImg" owner:self options:nil][0];
     CGRect frame = view.frame;
     frame.size.width = self.bounds.size.width;
     view.frame = frame;

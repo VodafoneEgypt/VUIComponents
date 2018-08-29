@@ -181,7 +181,7 @@
 
 -(void)commonInit{
     
-    UIView* view = [[NSBundle mainBundle]loadNibNamed:@"BillsExpandedTableView" owner:self options:nil][0];
+    UIView* view = [[Utilities getPodBundle] loadNibNamed:@"BillsExpandedTableView" owner:self options:nil][0];
     
     view.frame = self.bounds;
     

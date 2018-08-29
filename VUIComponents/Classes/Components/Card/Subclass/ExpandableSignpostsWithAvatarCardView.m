@@ -11,6 +11,7 @@
 #import "UIColor+Hex.h"
 #import "BillsExpandedTableView.h"
 #import "TableCardModel.h"
+#import <VUIComponents/Utilities.h>
 
 @interface ExpandableSignpostsWithAvatarCardView()
 
@@ -245,11 +246,11 @@
     
     if ([LanguageHandler sharedInstance].currentDirection == RTL) {
         
-        views = [[NSBundle mainBundle]loadNibNamed:@"ExpandableSignpostsWithAvatarCardView_RTL" owner:self options:nil];
+        views = [[Utilities getPodBundle]loadNibNamed:@"ExpandableSignpostsWithAvatarCardView_RTL" owner:self options:nil];
         
     }else{
         
-        views = [[NSBundle mainBundle]loadNibNamed:@"ExpandableSignpostsWithAvatarCardView" owner:self options:nil];
+        views = [[Utilities getPodBundle]loadNibNamed:@"ExpandableSignpostsWithAvatarCardView" owner:self options:nil];
     }
     
     UIView* view = [views objectAtIndex:0];
