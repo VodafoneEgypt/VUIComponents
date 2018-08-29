@@ -19,7 +19,6 @@
 #import "BaseCardView+Protected.h"
 #import "BaseCardView.h"
 #import "BaseCardViewWithButtons.h"
-#import "BaseCardViewWithButtonsOld.h"
 #import "BaseCardwithHorizontalButtons.h"
 #import "ExpandableBaseCardView.h"
 #import "ExpandableBaseCardViewWithButtons.h"
