@@ -7,8 +7,7 @@
 //
 
 #import "TableCardView.h"
-#import <VUIComponents/LanguageHandler.h>
-#import <VUIComponents/Utilities.h>
+#import "LanguageHandler.h"
 #import "BaseCardView+Protected.h"
 #import "TableCardModel.h"
 #import "BaseTableCell.h"
@@ -26,6 +25,8 @@
 -(void)setTableCardModelArray:(NSArray *)tableCardModelArray{
     
     _tableCardModelArray = tableCardModelArray;
+
+    NSLog(@"tableCardModelArray First Object: %@", ((MultiLineRadioButtonCellModel*)[((TableCardModel*)[_tableCardModelArray objectAtIndex:0]).data objectAtIndex:0]).subTitleString);
     
     [_tableView reloadData];
     
@@ -70,12 +71,13 @@
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    
+    NSLog(@"%lu", (unsigned long)_tableCardModelArray.count);
     return _tableCardModelArray.count;
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    
+    NSLog(@"dmlkmdmlkvfmld");
+    NSLog(@"TableCount: @%lu", (unsigned long)((TableCardModel*)(_tableCardModelArray[section])).data.count);
     return ((TableCardModel*)(_tableCardModelArray[section])).data.count;
 }
 
@@ -111,7 +113,7 @@
     
     if (cell == nil){
         
-        [tableView registerNib:[UINib nibWithNibName:CellIdentifier bundle:[Utilities getPodBundle]] forCellReuseIdentifier:CellIdentifier];
+        [tableView registerNib:[UINib nibWithNibName:CellIdentifier bundle:nil] forCellReuseIdentifier:CellIdentifier];
         
         cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     }
@@ -162,7 +164,7 @@
     
     [super commonInit];
     
-    UIView* view = [[Utilities getPodBundle] loadNibNamed:@"TableCardView" owner:self options:nil][0];
+    UIView* view = [[NSBundle mainBundle]loadNibNamed:@"TableCardView" owner:self options:nil][0];
     
     view.frame = self.bounds;
     

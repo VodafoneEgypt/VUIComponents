@@ -1,4 +1,4 @@
- //
+//
 //  SingleLineExtendingCard.m
 //  AnaVodafoneUIRevamp
 //
@@ -12,9 +12,7 @@
 #import "LanguageHandler.h"
 #import "UIColor+Hex.h"
 
-@interface  ExtendingCardView(){
-    BOOL animate;
-}
+@interface  ExtendingCardView()
 
 @property (strong, nonatomic) IBOutlet SimpleTextCardView* descView;
 
@@ -27,10 +25,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *subTitleLabel;
 
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
-@property (weak, nonatomic) IBOutlet UIView *separator;
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *titleLabelTopConstraint;
-@property (weak, nonatomic) IBOutlet UIStackView *stackView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *subTitleBottomConstraint;
 
 @end
 
@@ -40,18 +37,17 @@
 
 - (IBAction)changeExpandStatus:(id)sender {
     
-//    animate = true;
-//    [self performExpandingAnimation:!self.expanded];
+    self.expanded = !self.expanded;
     
-    //[self initialize];
-    
-    [self performExpandingAnimation];
-    
-    
-    
+    [self initialize];
 }
 
 #pragma mark setters
+
+-(void)setDescButtonsArray:(NSArray *)descButtonsArray{
+    
+    _descView.buttons = descButtonsArray;
+}
 
 -(void)setVerticalLine:(BOOL)verticalLine{
     
@@ -102,7 +98,7 @@
     
     // create attributed string
     NSDictionary* attributes;
-
+    
     if([LanguageHandler sharedInstance].currentDirection ==RTL){
         
         [style setAlignment:NSTextAlignmentRight];
@@ -132,52 +128,16 @@
     [self initialize];
 }
 
-//-(void)setExpanded:(BOOL)isExpanded{
-//    //_arrowImgView.transform = (isExpanded == true) ? CGAffineTransformRotate(_arrowImgView.transform, M_PI):CGAffineTransformIdentity;
-//
-//    // [_verticalLineView setHidden:expanded];
-//
-////    [self performExpandingAnimation];
-//
-//    self.isExpanded = isExpanded;
-//
-//}
-//-(void)performExpandingAnimation:(BOOL)expand{
-//    self.expanded = expand;
-//    if (!animate){
-//        //handle interface builder
-//        [expandedView setHidden:!expand];
-//
-//    }else{
-//
-        //perform animation
-//        [UIView animateWithDuration:0.2 animations:^{
-//            [expandedView setHidden:!expand];
-//
-//        } completion:^(BOOL finished) {
-//            [_separator setHidden:!expand];
-//
-//        }];
-//        if(expand){
-//            [expandedView setHidden:true];
-//            [_stackView addArrangedSubview:expandedView];
-//            [UIView animateWithDuration:1 animations:^{
-//                [expandedView setHidden:false];
-//                [_separator setExclusiveTouch:false];
-//
-//            }];
-//        }else{
-//            [_separator setHidden:true];
-//            [UIView animateWithDuration:1 animations:^{
-//                [expandedView setHidden:true];
-//
-//            } completion:^(BOOL finished) {
-//                [_stackView removeArrangedSubview:expandedView];
-//            }];
-//
-//        }
-//    }
-//}
+-(void)setExpanded:(BOOL)expanded{
+    
+    _arrowImgView.transform = (expanded == true) ? CGAffineTransformRotate(_arrowImgView.transform, M_PI):CGAffineTransformIdentity;
+    
+    [_verticalLineView setHidden:expanded];
+    
+    [_descView setHidden:!expanded];
+    
+    [super setExpanded:expanded];
+}
 
 #pragma mark height adjustment
 
@@ -188,19 +148,21 @@
     //TODO:: localize
     
     CGFloat width = self.frame.size.width - 60 - (_verticalLine ? 6 : 0);
-    
-    CGSize size = CGSizeMake(width, CGFLOAT_MAX);
+//
+//    CGSize size = CGSizeMake(width, CGFLOAT_MAX);
     
     if(self.expanded == true){
         
         _titleLabelTopConstraint.constant = 25;
-        
-        height += 45;
-        
+        _subTitleBottomConstraint.constant = 25;
+
+        height += _titleLabelTopConstraint.constant + _subTitleBottomConstraint.constant;
+
         /*calculate title height*/
-        CGRect rect = [self.titleLabel.attributedText boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading context:nil];
+//        CGRect rect = [self.titleLabel.attributedText boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading context:nil];
         
-        height += rect.size.height;
+        [self.titleLabel sizeToFit];
+        height += _titleLabel.frame.size.height;
         
         /*calculate desc height*/
         
@@ -208,37 +170,49 @@
             
             /*calculate subtitle height*/
             
-            rect = [self.subTitleLabel.attributedText boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading context:nil];
-            
-            height += rect.size.height;
+//            rect = [self.subTitleLabel.attributedText boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading context:nil];
+            CGRect labelFrame = _subTitleLabel.frame;
+            labelFrame.size.width = width;
+            _subTitleLabel.frame = labelFrame;
+            [_subTitleLabel sizeToFit];
+            height += _subTitleLabel.frame.size.height;
         }
     }else{
         
         /*calculate title height*/
-        CGRect rect = [self.titleLabel.attributedText boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading context:nil];
+//        CGRect rect = [self.titleLabel.attributedText boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading context:nil];
         
-        height += rect.size.height;
-        
+        CGRect labelFrame = _titleLabel.frame;
+        labelFrame.size.width = width;
+        _titleLabel.frame = labelFrame;
+        [self.titleLabel sizeToFit];
+        height += _titleLabel.frame.size.height;
         if(self.subTitle.length > 0){
             
             _titleLabelTopConstraint.constant = 25;
-            
-            height += 50;
-            
+            _subTitleBottomConstraint.constant = 25;
+            height += _titleLabelTopConstraint.constant + _subTitleBottomConstraint.constant;
+
             /*calculate subtitle height*/
             
-            CGRect rect = [self.subTitleLabel.attributedText boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading context:nil];
+//            CGRect rect = [self.subTitleLabel.attributedText boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading context:nil];
             
-            height += rect.size.height;
+            CGRect labelFrame = _subTitleLabel.frame;
+            labelFrame.size.width = width;
+            _subTitleLabel.frame = labelFrame;
+            [_subTitleLabel sizeToFit];
+            height += _subTitleLabel.frame.size.height;
+            
         }else{
             
             _titleLabelTopConstraint.constant = 30;
-            
-            height += 60;
+            _subTitleBottomConstraint.constant =30;
+            height += _titleLabelTopConstraint.constant + _subTitleBottomConstraint.constant;
         }
     }
     
     contentViewHeight = height;
+    NSLog(@"±±contentViewHeight = %f",contentViewHeight);
 }
 
 - (void)initializeExpandedView{
@@ -252,9 +226,6 @@
     [_descView initialize];
     
     expandedViewHeightConstraint.constant = _descView.frame.size.height+1/*seperator height*/;
-    
-    NSLog(@"ExpandedViewHeightConstraint: %d", expandedViewHeightConstraint.constant);
-    
 }
 
 - (void)adjustDescViewHeightTo:(CGFloat)height{
@@ -270,10 +241,10 @@
     
     if ([LanguageHandler sharedInstance].currentDirection == RTL) {
         
-        views = [[NSBundle bundleForClass:[self class]]loadNibNamed:@"ExtendingCardViewRTL" owner:self options:nil];
+        views = [[NSBundle mainBundle]loadNibNamed:@"ExtendingCardViewRTL" owner:self options:nil];
     }else{
         
-        views = [[NSBundle bundleForClass:[self class]]loadNibNamed:@"ExtendingCardView" owner:self options:nil];
+        views = [[NSBundle mainBundle]loadNibNamed:@"ExtendingCardView" owner:self options:nil];
     }
     
     UIView* view = [views objectAtIndex:0];
@@ -281,53 +252,7 @@
     view.frame = self.bounds;
     
     [self addSubview:view];
-
+    
     self.verticalLine = false;
-    
-    [self initializeExpandedView];
 }
-
-- (void)performExpandingAnimation {
-    
-    NSLog(@"isExpanded First? %d", self.expanded);
-
-    
-//    [self setExpanded:YES];
-    self.expanded = YES;
-    
-    NSLog(@"isExpanded Second? %d", self.expanded);
-    
-    
-//    if (!animate) {
-//        //handle interface builder
-//        [expandedView setHidden: !self.expanded];
-    
-//    } else {
-//
-//        [UIView animateWithDuration:0.2 animations:^{
-//            [self->expandedView setHidden:!self.expanded];
-//
-//        } completion:^(BOOL finished) {
-//            [self->_separator setHidden:!self.expanded];
-//
-//        }];
-//    }
-    
-    
-    //    if (!animate){
-    //        //handle interface builder
-    //        [expandedView setHidden:!expand];
-    //
-    //    }else{
-    //
-    //perform animation
-    //        [UIView animateWithDuration:0.2 animations:^{
-    //            [expandedView setHidden:!expand];
-    //
-    //        } completion:^(BOOL finished) {
-    //            [_separator setHidden:!expand];
-    //
-    //        }];
-}
-
 @end

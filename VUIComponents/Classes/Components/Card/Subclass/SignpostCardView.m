@@ -121,7 +121,7 @@
 -(void)setVerticalLineColor:(UIColor *)verticalLineColor{
     verticalLineView.backgroundColor = verticalLineColor;
 }
--(void)setBootmViewVisibality:(BOOL)bootmViewVisibality{
+-(void)setBottomViewVisibality:(BOOL)bootmViewVisibality{
     bottomView.hidden = !bootmViewVisibality;
 }
 #pragma mark height adjustment

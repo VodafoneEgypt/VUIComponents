@@ -7,7 +7,6 @@
 //
 
 #import "ConfirmationAlertView.h"
-#import <VUIComponents/Utilities.h>
 
 #define BGViewFadeIn 0.266666667
 #define ContainerViewSlideUp 0.5
@@ -117,8 +116,14 @@
     
     if (self) {
         
+//        [card adjustCardView];
+        
+        [card layoutIfNeeded];
+        
         _alertView = card;
-
+        
+        _alertView.frame = CGRectMake(_alertView.frame.origin.x, 0, _alertView.frame.size.width, _alertView.frame.size.height);
+        
         CGRect alertFrame = _alertView.frame;
         
         alertFrame.origin = _containerView.frame.origin;
@@ -139,7 +144,7 @@
     
     self.frame = CGRectMake(0, 0, screenSize.width, screenSize.height);
     
-    NSArray* views = [[Utilities getPodBundle] loadNibNamed:@"ConfirmationAlertView" owner:self options:nil];
+    NSArray* views = [[NSBundle mainBundle]loadNibNamed:@"ConfirmationAlertView" owner:self options:nil];
     
     UIView* view = [views objectAtIndex:0];
     

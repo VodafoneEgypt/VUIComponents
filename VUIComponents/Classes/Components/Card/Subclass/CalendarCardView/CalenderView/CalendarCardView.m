@@ -21,7 +21,6 @@
 @property (weak, nonatomic) IBOutlet FSCalendar *calendar;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *subTitleTopConstraint;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *subTitleBottomConsrtraint;
-
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *titleTopConsrtaint;
 @property (strong, nonatomic) NSDateFormatter *dateFormatter1;
 @property (strong, nonatomic) NSDateFormatter *dateFormatter2;
@@ -32,14 +31,40 @@
 
 #pragma mark setter
 
+-(void)setTitleLabelTopConsrtaint:(float)titleLabelTopConsrtaint{
+    
+    _titleLabelTopConsrtaint = titleLabelTopConsrtaint;
+    _titleTopConsrtaint.constant = titleLabelTopConsrtaint;
+    [self initialize];
+    
+}
+
+-(void)setSubTitleLabelTopConsrtaint:(float)subTitleLabelTopConsrtaint{
+    
+    _subTitleLabelTopConsrtaint = subTitleLabelTopConsrtaint;
+    _subTitleTopConstraint.constant = subTitleLabelTopConsrtaint;
+    [self initialize];
+    
+}
+-(void)setSubTitleLabelBottomConsrtaint:(float)subTitleLabelBottomConsrtaint{
+    
+    _subTitleLabelBottomConsrtaint = subTitleLabelBottomConsrtaint;
+    _subTitleBottomConsrtraint.constant = subTitleLabelBottomConsrtaint;
+    [self initialize];
+
+}
 -(void)setTitleString:(NSString *)titleString {
     _titleString = titleString;
     _titleLabel.txt = titleString;
+    [self initialize];
+
 }
 
 -(void)setSubTitleString:(NSString *)subTitleString {
     _subTitleString = subTitleString;
     _subTitleLabel.txt = subTitleString;
+    [self initialize];
+
 }
 
 -(void)setTitleAttributedString:(NSAttributedString *)titleAttributedString{
@@ -49,6 +74,8 @@
     _titleLabel.attributedText = titleAttributedString;
     
     _titleTopConsrtaint.constant = 20;
+    [self initialize];
+
 }
 
 -(void)setSubTitleAttributedString:(NSAttributedString *)subTitleAttributedString{
@@ -58,6 +85,8 @@
     _subTitleLabel.attributedText =subTitleAttributedString;
     _subTitleTopConstraint.constant = 15;
     _subTitleBottomConsrtraint.constant = 20;
+    [self initialize];
+
 }
 
 -(void)setDateFormat:(NSString *)dateFormat{
@@ -109,6 +138,28 @@
     _minimumDateForCalendar = minimumDateForCalendar;
     
     [_calendar reloadData];
+}
+
+#pragma mark height adjustment
+
+-(void)initializeContentView{
+
+    contentViewHeight = _calendarHeightConstraint.constant+_titleTopConsrtaint.constant+_subTitleTopConstraint.constant+_subTitleBottomConsrtraint.constant /* for Calendar height && button margin && Labels Margin */ + 16;
+
+    if (_subTitleAttributedString || _subTitleString) {
+
+        [_subTitleLabel adjustHeight];
+        
+        contentViewHeight += _subTitleLabel.frame.size.height;
+    }
+
+    if (_titleAttributedString || _titleString) {
+
+        [_titleLabel adjustHeight];
+        
+        contentViewHeight += _titleLabel.frame.size.height;
+    }
+    
 }
 
 -(void)commonInit{
@@ -186,7 +237,10 @@
 {
     NSLog(@"did select date");
     
-    _selectedDateBlock(date);
+    if (_selectedDateBlock) {
+        _selectedDateBlock(date);
+
+    }
     
     [self.dateFormatter1 stringFromDate:date];
     
@@ -265,6 +319,7 @@
     }
     return self;
 }
+
 - (IBAction)previousYearAction:(id)sender {
     
     NSDate *date = self.calendar.selectedDate;
@@ -280,7 +335,6 @@
         
         [_calendar reloadData];
     }
-
 }
 
 - (IBAction)nextYearAction:(id)sender {

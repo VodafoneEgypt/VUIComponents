@@ -9,7 +9,7 @@
 #import "CustomButton.h"
 #import "CustomButtonStyleModel.h"
 #import "UIColor+Hex.h"
-#import <VUIComponents/LanguageHandler.h>
+#import "LanguageHandler.h"
 
 #define height 45
 

@@ -9,9 +9,7 @@
 #import "VoiceOfVodafoneWelcomeCardView.h"
 #import "BaseCardView+Protected.h"
 #import "INTUAnimationEngine.h"
-#import <VUIComponents/AnaVodafoneLabel.h>
-#import <VUIComponents/LanguageHandler.h>
-#import <VUIComponents/Utilities.h>
+#import "AnaVodafoneLabel.h"
 
 @interface VoiceOfVodafoneWelcomeCardView() {
     BOOL isRTL;
@@ -94,11 +92,14 @@
 
 -(void)setUsername:(NSString*)username{
     
-    NSString *morningString = [[LanguageHandler sharedInstance] stringForKey:@"Good morning"];
+    NSString *morningString = [[[LanguageHandler sharedInstance] stringForKey:@"Good morning"] stringByAppendingString:@", "];
     NSString *welcomeString = [[LanguageHandler sharedInstance] stringForKey:@"Welcome to Ana Vodafone"];
     
-    _titleLabel.text = [NSString stringWithFormat:morningString, username];
-    _descLabel.text = [NSString stringWithFormat:welcomeString, username];
+    //    _titleLabel.text = [NSString stringWithFormat:morningString, username];
+    //    _descLabel.text = [NSString stringWithFormat:welcomeString, username];
+    
+    _titleLabel.text = [morningString stringByAppendingString:username];
+    _descLabel.text = welcomeString;
     
     [self initialize];
 }
@@ -119,7 +120,7 @@
     
     NSString* nibFileName = isRTL ?@"VoiceOfVodafoneWelcomeCardView_RTL":@"VoiceOfVodafoneWelcomeCardView";
     
-    NSArray* views = [[Utilities getPodBundle]loadNibNamed:nibFileName owner:self options:nil];
+    NSArray* views = [[NSBundle mainBundle]loadNibNamed:nibFileName owner:self options:nil];
     
     UIView* view = [views objectAtIndex:0];
     

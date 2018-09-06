@@ -1,22 +1,21 @@
 //
-//  ExpandSignpostWithAvatarCardView.m
+//  TableSignpostWithAvatarCardView.m
 //  AnaVodafoneUIRevamp
 //
 //  Created by Taha on 3/6/17.
 //  Copyright © 2017 Karim Mousa. All rights reserved.
 //
 #import "BaseCardView+Protected.h"
-#import "ExpandSignpostWithAvatarCardView.h"
+#import "TableSignpostWithAvatarCardView.h"
 #import "ExpandSignpostCell.h"
 #import "ExpandSignpostCellModel.h"
 #import "ExpandSignpostCellRTL.h"
 #import "LanguageHandler.h"
 #import "RadioButtonCell.h"
-#import <VUIComponents/Utilities.h>
 
 #define cellHeight 44
 
-@interface ExpandSignpostWithAvatarCardView ()<UITableViewDelegate,UITableViewDataSource>
+@interface TableSignpostWithAvatarCardView ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
@@ -24,7 +23,7 @@
 
 @end
 
-@implementation ExpandSignpostWithAvatarCardView
+@implementation TableSignpostWithAvatarCardView
 
 #pragma mark setter
 
@@ -78,7 +77,7 @@
         
         if (cell == nil){
             
-            [tableView registerNib:[UINib nibWithNibName:CellIdentifier bundle:[Utilities getPodBundle]] forCellReuseIdentifier:CellIdentifier];
+            [tableView registerNib:[UINib nibWithNibName:CellIdentifier bundle:nil] forCellReuseIdentifier:CellIdentifier];
             
             cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
         }
@@ -97,7 +96,7 @@
             
             if (cell == nil){
                 
-                [tableView registerNib:[UINib nibWithNibName:CellIdentifier bundle:[Utilities getPodBundle]] forCellReuseIdentifier:CellIdentifier];
+                [tableView registerNib:[UINib nibWithNibName:CellIdentifier bundle:nil] forCellReuseIdentifier:CellIdentifier];
                 
                 cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
             }
@@ -115,7 +114,7 @@
             
             if (cell == nil){
                 
-                [tableView registerNib:[UINib nibWithNibName:CellIdentifier bundle:[Utilities getPodBundle]] forCellReuseIdentifier:CellIdentifier];
+                [tableView registerNib:[UINib nibWithNibName:CellIdentifier bundle:nil] forCellReuseIdentifier:CellIdentifier];
                 
                 cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
             }
@@ -149,7 +148,7 @@
     
     [super commonInit];
     
-    UIView* view = [[NSBundle bundleForClass:[self class]]loadNibNamed:@"ExpandSignpostWithAvatarCardView" owner:self options:nil][0];
+    UIView* view = [[NSBundle bundleForClass:[self class]]loadNibNamed:@"TableSignpostWithAvatarCardView" owner:self options:nil][0];
     
     view.frame = self.bounds;
     

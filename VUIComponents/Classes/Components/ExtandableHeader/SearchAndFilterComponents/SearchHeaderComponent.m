@@ -7,7 +7,6 @@
 //
 
 #import "SearchHeaderComponent.h"
-#import <VUIComponents/Utilities.h>
 
 @interface SearchHeaderComponent(){
     CGFloat maxHeight;
@@ -160,7 +159,7 @@
     
     SearchHeaderComponent *headerView;
     
-    NSArray* nibViews = [[Utilities getPodBundle]  loadNibNamed:@"SearchHeaderComponent"
+    NSArray* nibViews = [[NSBundle mainBundle] loadNibNamed:@"SearchHeaderComponent"
                                                       owner:self
                                                     options:nil];
     headerView = nibViews.firstObject;

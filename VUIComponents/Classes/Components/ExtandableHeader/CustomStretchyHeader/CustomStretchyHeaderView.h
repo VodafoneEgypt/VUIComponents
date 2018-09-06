@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <GSKStretchyHeaderView/GSKStretchyHeaderView.h>
+#import "GSKStretchyHeaderView.h"
 #import "BaseCardView.h"
 
 @interface CustomStretchyHeaderView : GSKStretchyHeaderView

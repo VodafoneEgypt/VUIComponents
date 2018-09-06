@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -13,11 +14,11 @@
                 <outlet property="BGcontentView" destination="WYF-p5-GJX" id="LJj-yW-kWb"/>
                 <outlet property="arrowImgView" destination="ugc-bQ-sqG" id="GXX-l1-wfc"/>
                 <outlet property="contentView" destination="WHw-GN-tqH" id="f4d-5g-2Q3"/>
-                <outlet property="expandSignpostWithAvatarCardView" destination="OLe-tO-Ixe" id="ww4-xJ-ds6"/>
                 <outlet property="expandedView" destination="s8v-uC-WrX" id="qBr-zb-sg1"/>
                 <outlet property="expandedViewHeightConstraint" destination="QQT-td-x2f" id="abU-LX-Z5d"/>
                 <outlet property="leftLabel" destination="ZIn-s8-LO9" id="P0P-8X-I7g"/>
                 <outlet property="rightLabel" destination="N5I-Kg-XYd" id="rqE-Rd-WEr"/>
+                <outlet property="tableSignpostWithAvatarCardView" destination="OLe-tO-Ixe" id="ww4-xJ-ds6"/>
                 <outlet property="viewButton" destination="RKX-fk-L6v" id="llG-Rg-SLL"/>
             </connections>
         </placeholder>
@@ -100,7 +101,7 @@
                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s8v-uC-WrX">
                     <rect key="frame" x="0.0" y="153" width="380" height="200"/>
                     <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OLe-tO-Ixe" customClass="ExpandSignpostWithAvatarCardView">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OLe-tO-Ixe" customClass="TableSignpostWithAvatarCardView">
                             <rect key="frame" x="20" y="0.0" width="360" height="200"/>
                             <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </view>

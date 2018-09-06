@@ -21,7 +21,6 @@ IB_DESIGNABLE
 
 @property (nonatomic) float alertLabelTopConstraint;
 
-
 -(CGFloat) getContentViewHeight ;
 
 @end

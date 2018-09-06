@@ -6,7 +6,7 @@
 //  Copyright © 2017 Karim Mousa. All rights reserved.
 //
 
-#import <VUIComponents/BaseCardTableViewController.h>
+#import "BaseCardTableViewController.h"
 
 @interface BaseCardTableViewController ()<UITableViewDelegate,UITableViewDataSource>{
     

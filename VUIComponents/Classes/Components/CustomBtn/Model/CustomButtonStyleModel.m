@@ -7,7 +7,6 @@
 //
 
 #import "CustomButtonStyleModel.h"
-#import "Utilities.h"
 
 @implementation CustomButtonStyleModel
 
@@ -17,7 +16,7 @@
     
     if(self){
         
-        NSString *filePath = [[Utilities getPodBundle] pathForResource:styleFilePath ofType:@"json"];
+        NSString *filePath = [[NSBundle mainBundle] pathForResource:styleFilePath ofType:@"json"];
         NSData *data = [NSData dataWithContentsOfFile:filePath];
         NSDictionary *customButtonDataFirst = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
         

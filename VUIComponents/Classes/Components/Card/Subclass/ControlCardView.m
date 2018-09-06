@@ -73,6 +73,8 @@
     NSAttributedString* completeAttributedString = [NSAttributedString attributedStringWithFormat:@"%@ %@",attrStr1,attrStr2];
     
     self.titleLabel.attributedText = completeAttributedString;
+    [self initialize];
+
 }
 
 -(void)setDesc:(NSString *)desc{
@@ -101,6 +103,8 @@
     [attrStr1 addAttribute:NSParagraphStyleAttributeName value:style range:NSMakeRange(0,attrStr1.length)];
     
     self.descLabel.attributedText = attrStr1;
+    [self initialize];
+
 }
 
 #pragma mark actions
@@ -117,6 +121,32 @@
     }
 }
 
+#pragma mark height adjustment
+
+-(void)initializeContentView{
+    
+    contentViewHeight = 80 + 1 /*seperator height*/;
+    
+    /*calculate desc height*/
+    //TODO:: localize
+    
+    CGFloat width = self.frame.size.width-30;
+    
+    CGSize size = CGSizeMake(width, CGFLOAT_MAX);
+    
+    CGRect rect = [self.descLabel.attributedText boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading context:nil];
+    
+    contentViewHeight += rect.size.height;
+    
+    /*calculate title height*/
+    width -= 66;
+    
+    size = CGSizeMake(width, CGFLOAT_MAX);
+    
+    rect = [self.titleLabel.attributedText boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading context:nil];
+    
+    contentViewHeight += (rect.size.height >31) ? rect.size.height : 31;
+}
 
 -(void)commonInit{
     

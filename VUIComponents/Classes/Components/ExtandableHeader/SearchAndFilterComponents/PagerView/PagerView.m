@@ -8,7 +8,7 @@
 
 #import "PagerView.h"
 #import "PagerCollectionViewCell.h"
-#import <VUIComponents/Utilities.h>
+
 
 @interface PagerView()<UICollectionViewDelegate,UICollectionViewDataSource>{
     
@@ -62,12 +62,12 @@
     
     NSString *cellIdentifier = @"PagerCollectionViewCell";
     
-    [collectionView registerNib:[UINib nibWithNibName:cellIdentifier bundle:[Utilities getPodBundle]] forCellWithReuseIdentifier:cellIdentifier];
+    [collectionView registerNib:[UINib nibWithNibName:cellIdentifier bundle:nil] forCellWithReuseIdentifier:cellIdentifier];
     
     PagerCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
     
     if (cell == nil) {
-        [collectionView registerNib:[UINib nibWithNibName:cellIdentifier bundle:[Utilities getPodBundle]] forCellWithReuseIdentifier:cellIdentifier];
+        [collectionView registerNib:[UINib nibWithNibName:cellIdentifier bundle:nil] forCellWithReuseIdentifier:cellIdentifier];
         
         cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
     }
@@ -278,7 +278,7 @@ shouldShowMenuForItemAtIndexPath:(NSIndexPath *)indexPath{
 
 -(void)commonInit{
     
-    NSArray* views = [[Utilities getPodBundle] loadNibNamed:@"PagerView" owner:self options:nil];
+    NSArray* views = [[NSBundle mainBundle]loadNibNamed:@"PagerView" owner:self options:nil];
     
     collectionPagerView.delegate = self;
     

@@ -8,8 +8,7 @@
 
 #import "SimpleDropDownView.h"
 #import "CustomDropDownStyleModel.h"
-#import <VUIComponents/LanguageHandler.h>
-#import <VUIComponents/Utilities.h>
+#import "LanguageHandler.h"
 
 @class SimpleDropDownView;
 
@@ -71,7 +70,7 @@
     
     if ([LanguageHandler sharedInstance].currentDirection == RTL) {
         
-        NSArray* views = [[Utilities getPodBundle] loadNibNamed:@"SimpleDropDownViewRTL" owner:self options:nil];
+        NSArray* views = [[NSBundle mainBundle]loadNibNamed:@"SimpleDropDownViewRTL" owner:self options:nil];
         
         UIView* view = [views objectAtIndex:0];
         
@@ -85,7 +84,7 @@
     }else{
         
         
-        NSArray* views = [[Utilities getPodBundle] loadNibNamed:@"SimpleDropDownView" owner:self options:nil];
+        NSArray* views = [[NSBundle mainBundle]loadNibNamed:@"SimpleDropDownView" owner:self options:nil];
         
         UIView* view = [views objectAtIndex:0];
         

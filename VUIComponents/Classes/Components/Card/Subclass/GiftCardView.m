@@ -63,7 +63,33 @@
     _giftImg = giftImg;
     _giftImageView.image = giftImg;
 }
- 
+
+#pragma mark height adjustment
+-(void)initializeContentView{
+
+    contentViewHeight = 0;
+
+    CGFloat height = 0;
+
+    CGFloat width = self.frame.size.width - 30 ;
+
+    CGSize size = CGSizeMake(width, CGFLOAT_MAX);
+
+    CGRect rect = [_titleLabel.attributedText boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading context:nil];
+
+    height += rect.size.height;
+
+    rect = [_descLabel.attributedText boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading context:nil];
+
+    height += rect.size.height;
+
+    rect = [_dateLabel.attributedText boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading context:nil];
+
+    height += rect.size.height;
+
+    contentViewHeight = height+16/*image top margin*/+160/*image Height*/+25/*TitleLabel top margin*/+35+_descLableTopConstraint.constant +90 /*2 buttons height */ + 16+ /*button buttom margin */25  /*button buttom margin */ +38 /*date view margin*/ ;
+}
+
 -(void)commonInit {
     
     [super commonInit];

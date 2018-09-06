@@ -7,8 +7,7 @@
 //
 
 #import "AlertView.h"
-#import <VUIComponents/LanguageHandler.h>
-#import <VUIComponents/Utilities.h>
+#import "LanguageHandler.h"
 #import <QuartzCore/QuartzCore.h>
 #import "INTUAnimationEngine.h"
 
@@ -76,7 +75,7 @@
     [webView setTintColor:UIColor.clearColor];
     [webView setUserInteractionEnabled:NO];
     
-    NSString *html = [[Utilities getPodBundle] pathForResource:@"GlamourAnimation" ofType:@"html"];
+    NSString *html = [[NSBundle mainBundle] pathForResource:@"GlamourAnimation" ofType:@"html"];
     NSURL *url = [NSURL fileURLWithPath:html];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     
@@ -132,8 +131,8 @@
 }
 
 - (IBAction)closeAction{
-    if(_performback && _actionBlock ){
-        _actionBlock();
+    if(_performback && _closeActionBlock ){
+        _closeActionBlock();
     }
     
     [UIView animateWithDuration:HeaderViewBGFadeOut delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
@@ -256,10 +255,10 @@
     
     if([LanguageHandler sharedInstance].currentDirection == LTR){
         
-        views = [[Utilities getPodBundle] loadNibNamed:@"AlertView" owner:self options:nil];
+        views = [[NSBundle mainBundle]loadNibNamed:@"AlertView" owner:self options:nil];
     }else{
         
-        views = [[Utilities getPodBundle] loadNibNamed:@"AlertView_RTL" owner:self options:nil];
+        views = [[NSBundle mainBundle]loadNibNamed:@"AlertView_RTL" owner:self options:nil];
     }
     
     UIView* view = [views objectAtIndex:0];

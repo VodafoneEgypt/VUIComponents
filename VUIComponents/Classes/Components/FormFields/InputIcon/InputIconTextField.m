@@ -9,7 +9,7 @@
 #import "InputIconTextField.h"
 #import "ValidationTextFieldStyleModel.h"
 #import "UIColor+Hex.h"
-#import <VUIComponents/LanguageHandler.h>
+#import "LanguageHandler.h"
 
 @interface InputIconTextField(){
     

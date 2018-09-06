@@ -9,13 +9,12 @@
 #import "DropDownMenuTableViewCell.h"
 #import "DropDownViewController.h"
 #import "WYPopoverController.h"
-#import <VUIComponents/Utilities.h>
 
 @interface DropdownMenu()<UITableViewDelegate, UITableViewDataSource, WYPopoverControllerDelegate> {
     DropDownViewController *dropDownViewController;
     WYPopoverController *popoverController;
     NSString *footerTableViewCellName;
-    //BOOL hasFooter;
+    BOOL hasFooter;
 }
     
     @end
@@ -24,20 +23,19 @@
     
 #pragma mark tableView delegate
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    //return _data.count + (hasFooter ? 1 : 0);
-    return _data.count;
+    return _data.count + (hasFooter ? 1 : 0);
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-//    if (hasFooter && indexPath.row >= _data.count) {
-//        return 50;
-//    }
+    if (hasFooter && indexPath.row >= _data.count) {
+        return 50;
+    }
     return self.bounds.size.height;
 }
 
 -(void) setFooterTableViewCellWithName:(NSString *)footerCell {
     footerTableViewCellName = footerCell;
-    //hasFooter = true;
+    hasFooter = true;
 }
 
 #pragma mark tableView delegate
@@ -54,24 +52,24 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-//    if (hasFooter && indexPath.row >= _data.count) {
-//
-//        AddCreditCardFooterTableViewCell *cell = (AddCreditCardFooterTableViewCell *) [tableView dequeueReusableCellWithIdentifier:footerTableViewCellName];
-//
-//        if (cell == nil) {
-//            [tableView registerNib:[UINib nibWithNibName:footerTableViewCellName bundle:[Utilities getPodBundle]] forCellReuseIdentifier:footerTableViewCellName];
-//            cell = [tableView dequeueReusableCellWithIdentifier:footerTableViewCellName];
-//        }
-//
-//        return cell;
-//
-//    } else {
+    if (hasFooter && indexPath.row >= _data.count) {
+
+        AddCreditCardFooterTableViewCell *cell = (AddCreditCardFooterTableViewCell *) [tableView dequeueReusableCellWithIdentifier:footerTableViewCellName];
+        
+        if (cell == nil) {
+            [tableView registerNib:[UINib nibWithNibName:footerTableViewCellName bundle:nil] forCellReuseIdentifier:footerTableViewCellName];
+            cell = [tableView dequeueReusableCellWithIdentifier:footerTableViewCellName];
+        }
+        
+        return cell;
+        
+    } else {
         NSString *CellIdentifier = @"DropDownMenuTableViewCell";
         
         DropDownMenuTableViewCell *cell = (DropDownMenuTableViewCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
         
         if (cell == nil) {
-            [tableView registerNib:[UINib nibWithNibName:CellIdentifier bundle:[Utilities getPodBundle]] forCellReuseIdentifier:CellIdentifier];
+            [tableView registerNib:[UINib nibWithNibName:CellIdentifier bundle:nil] forCellReuseIdentifier:CellIdentifier];
             cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
         }
         
@@ -81,13 +79,13 @@
         cell.dropDownView.model = _data[indexPath.row];
         
         return cell;
-//    }
+    }
 }
 
 -(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
-//    if (!hasFooter || indexPath.row < _data.count) {
+    if (!hasFooter || indexPath.row < _data.count) {
         ((DropDownMenuTableViewCell *)cell).dropDownView.frame = cell.contentView.bounds;
-//    }
+    }
 }
     
 #pragma action method
@@ -151,7 +149,7 @@
         self.data = data;
     }
     
-    //hasFooter = false;
+    hasFooter = false;
     
     return self;
 }

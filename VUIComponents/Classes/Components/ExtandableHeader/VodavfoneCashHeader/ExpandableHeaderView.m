@@ -8,7 +8,6 @@
 
 #import "ExpandableHeaderView.h"
 #import <GSKStretchyHeaderView/GSKGeometry.h>
-#import <VUIComponents/Utilities.h>
 
 @interface ExpandableHeaderView(){
     __weak IBOutlet UIImageView *BGImageView;
@@ -150,7 +149,7 @@
     
     ExpandableHeaderView *headerView;
     
-    NSArray* nibViews = [[Utilities getPodBundle]  loadNibNamed:@"ExpandableHeaderView"
+    NSArray* nibViews = [[NSBundle mainBundle] loadNibNamed:@"ExpandableHeaderView"
                                                       owner:self
                                                     options:nil];
     headerView = nibViews.firstObject;

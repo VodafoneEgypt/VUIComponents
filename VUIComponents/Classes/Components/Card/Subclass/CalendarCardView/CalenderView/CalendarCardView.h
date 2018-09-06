@@ -17,7 +17,9 @@ IB_DESIGNABLE
 @property (nonatomic, strong) IBInspectable NSString *titleString;
 @property (nonatomic, strong) IBInspectable NSString *subTitleString;
 
-
+@property (nonatomic) float titleLabelTopConsrtaint;
+@property (nonatomic) float subTitleLabelTopConsrtaint;
+@property (nonatomic) float subTitleLabelBottomConsrtaint;
 
 @property (nonatomic, strong) NSAttributedString *titleAttributedString;
 

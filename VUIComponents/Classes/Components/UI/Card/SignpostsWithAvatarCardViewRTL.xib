@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignpostsWithAvatarCardView">
             <connections>
                 <outlet property="arrowImgView" destination="Ob3-Ug-6El" id="jWj-uz-Yw4"/>
+                <outlet property="avatarImageWidthConstraint" destination="evH-Dj-ET8" id="Mdl-Pl-Ug1"/>
                 <outlet property="avatarImgView" destination="W4v-NH-Tyi" id="n34-Gs-bIa"/>
                 <outlet property="contentView" destination="JHE-EH-dBF" id="VFu-L8-urP"/>
-                <outlet property="expandSignpostWithAvatarCardView" destination="ga0-si-0Fs" id="rZX-95-Tvu"/>
                 <outlet property="expandedView" destination="kB8-nD-W5R" id="5cA-uW-696"/>
                 <outlet property="expandedViewHeightConstraint" destination="k3N-A0-i07" id="RfL-sj-Ohe"/>
                 <outlet property="secondTitleLabel" destination="diC-LQ-9f6" id="ntq-iq-NKa"/>
                 <outlet property="subTitleLabel" destination="5G4-Dp-XrU" id="ORg-lG-8Q8"/>
+                <outlet property="tableSignpostWithAvatarCardView" destination="ga0-si-0Fs" id="rZX-95-Tvu"/>
                 <outlet property="titleLabel" destination="DEg-Qh-TV4" id="6dl-dr-pRT"/>
-                <outlet property="titleLabelBottomConstraint" destination="Qqh-0C-xrt" id="KGc-RR-7kr"/>
-                <outlet property="titleLabelTopConstraint" destination="Pvr-kC-VKu" id="wYV-9s-DKt"/>
+                <outlet property="titleLabelTopConstraint" destination="Z3a-Hy-jlr" id="cJ4-77-YJP"/>
                 <outlet property="verticalLineView" destination="emB-Bw-hMM" id="Ruo-D5-yt6"/>
                 <outlet property="verticalLineViewWidthConstraint" destination="TdY-nV-bk9" id="o2p-xL-Eir"/>
                 <outlet property="viewButton" destination="gFJ-IW-V9i" id="inz-LS-MJ9"/>
@@ -48,34 +48,31 @@
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VJq-3M-qwq" userLabel="Content">
                                     <rect key="frame" x="15" y="0.0" width="349" height="153"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VFLogoFlat" translatesAutoresizingMaskIntoConstraints="NO" id="W4v-NH-Tyi">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="W4v-NH-Tyi">
                                             <rect key="frame" x="304" y="54" width="45" height="45"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="45" id="evH-Dj-ET8"/>
                                                 <constraint firstAttribute="height" constant="45" id="tnU-l0-3on"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DEg-Qh-TV4" customClass="AnaVodafoneLabel">
-                                            <rect key="frame" x="30" y="16" width="259" height="112"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DEg-Qh-TV4">
+                                            <rect key="frame" x="30" y="25" width="259" height="0.0"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" id="XMy-pX-vfs"/>
                                             </constraints>
                                             <attributedString key="attributedText"/>
                                             <nil key="highlightedColor"/>
-                                            <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="boolean" keyPath="useRegularFont" value="YES"/>
-                                            </userDefinedRuntimeAttributes>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5G4-Dp-XrU" customClass="AnaVodafoneLabel">
-                                            <rect key="frame" x="30" y="132" width="259" height="0.0"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5G4-Dp-XrU">
+                                            <rect key="frame" x="30" y="29" width="259" height="0.0"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" id="cEZ-ME-oci"/>
                                             </constraints>
                                             <attributedString key="attributedText"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="diC-LQ-9f6" customClass="AnaVodafoneLabel">
-                                            <rect key="frame" x="30" y="137" width="259" height="0.0"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="diC-LQ-9f6">
+                                            <rect key="frame" x="30" y="34" width="259" height="0.0"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" id="bxI-ya-Vh9"/>
                                             </constraints>
@@ -101,11 +98,10 @@
                                         <constraint firstItem="Ob3-Ug-6El" firstAttribute="left" secondItem="VJq-3M-qwq" secondAttribute="left" id="4oP-zm-j79"/>
                                         <constraint firstItem="diC-LQ-9f6" firstAttribute="centerX" secondItem="5G4-Dp-XrU" secondAttribute="centerX" id="AYe-ZB-tWy"/>
                                         <constraint firstItem="5G4-Dp-XrU" firstAttribute="width" secondItem="DEg-Qh-TV4" secondAttribute="width" id="Fyt-12-BeM"/>
-                                        <constraint firstItem="DEg-Qh-TV4" firstAttribute="top" secondItem="VJq-3M-qwq" secondAttribute="top" constant="16" id="Pvr-kC-VKu"/>
                                         <constraint firstItem="5G4-Dp-XrU" firstAttribute="top" secondItem="DEg-Qh-TV4" secondAttribute="bottom" constant="4" id="Qqh-0C-xrt"/>
-                                        <constraint firstItem="DEg-Qh-TV4" firstAttribute="width" secondItem="VJq-3M-qwq" secondAttribute="width" constant="-90" id="RxU-KD-Mfb"/>
                                         <constraint firstItem="5G4-Dp-XrU" firstAttribute="centerX" secondItem="DEg-Qh-TV4" secondAttribute="centerX" id="Tir-FD-wJQ"/>
-                                        <constraint firstAttribute="bottom" secondItem="diC-LQ-9f6" secondAttribute="bottom" constant="16" id="XQY-eK-z4s"/>
+                                        <constraint firstItem="W4v-NH-Tyi" firstAttribute="left" secondItem="DEg-Qh-TV4" secondAttribute="right" constant="15" id="Yb2-TY-lMW"/>
+                                        <constraint firstItem="DEg-Qh-TV4" firstAttribute="top" secondItem="VJq-3M-qwq" secondAttribute="top" constant="25" id="Z3a-Hy-jlr"/>
                                         <constraint firstItem="diC-LQ-9f6" firstAttribute="top" secondItem="5G4-Dp-XrU" secondAttribute="bottom" constant="5" id="anu-pv-ke8"/>
                                         <constraint firstAttribute="right" secondItem="W4v-NH-Tyi" secondAttribute="right" id="eMR-le-uPk"/>
                                         <constraint firstItem="DEg-Qh-TV4" firstAttribute="left" secondItem="VJq-3M-qwq" secondAttribute="left" constant="30" id="lIe-Yz-3Nz"/>
@@ -123,7 +119,6 @@
                                 <constraint firstItem="W4v-NH-Tyi" firstAttribute="centerY" secondItem="aDO-Jm-g9q" secondAttribute="centerY" id="QRJ-cY-mcz"/>
                                 <constraint firstItem="emB-Bw-hMM" firstAttribute="height" secondItem="aDO-Jm-g9q" secondAttribute="height" id="SmW-oB-bol"/>
                                 <constraint firstItem="VJq-3M-qwq" firstAttribute="top" secondItem="aDO-Jm-g9q" secondAttribute="top" id="v5t-iZ-d8C"/>
-                                <constraint firstAttribute="bottom" secondItem="VJq-3M-qwq" secondAttribute="bottom" id="xAX-xw-DzE"/>
                                 <constraint firstItem="VJq-3M-qwq" firstAttribute="left" secondItem="aDO-Jm-g9q" secondAttribute="left" constant="15" id="xyW-gm-jUJ"/>
                             </constraints>
                         </view>
@@ -143,7 +138,7 @@
                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kB8-nD-W5R">
                     <rect key="frame" x="0.0" y="153" width="380" height="200"/>
                     <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ga0-si-0Fs" customClass="ExpandSignpostWithAvatarCardView">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ga0-si-0Fs" customClass="TableSignpostWithAvatarCardView">
                             <rect key="frame" x="0.0" y="0.0" width="380" height="200"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </view>
@@ -177,6 +172,5 @@
     </objects>
     <resources>
         <image name="CardArrowRTL" width="64" height="64"/>
-        <image name="VFLogoFlat" width="1299" height="1299"/>
     </resources>
 </document>

@@ -11,6 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SimpleTextCardView">
             <connections>
+                <outlet property="buttonsView" destination="hOm-J8-51F" id="Yu1-At-IbT"/>
+                <outlet property="buttonsViewHeightConstraint" destination="7we-BD-gLx" id="0Au-BV-bL6"/>
                 <outlet property="contentView" destination="RpQ-C6-9Gv" id="uS2-BQ-hbn"/>
                 <outlet property="textLabel" destination="29b-qW-gwM" id="Snf-X4-Yu0"/>
             </connections>
@@ -61,19 +63,29 @@
                         <constraint firstItem="iN0-l3-epB" firstAttribute="width" secondItem="RpQ-C6-9Gv" secondAttribute="width" id="h4Y-oH-1KD"/>
                     </constraints>
                 </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hOm-J8-51F">
+                    <rect key="frame" x="-0.5" y="353" width="339" height="0.0"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" id="7we-BD-gLx"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="hOm-J8-51F" firstAttribute="centerX" secondItem="bx5-AA-tdq" secondAttribute="centerX" id="2Bp-6f-9Lt"/>
                 <constraint firstItem="RpQ-C6-9Gv" firstAttribute="centerX" secondItem="bx5-AA-tdq" secondAttribute="centerX" id="BTl-ZD-C8g"/>
+                <constraint firstItem="hOm-J8-51F" firstAttribute="top" secondItem="RpQ-C6-9Gv" secondAttribute="bottom" id="CAb-5Q-0ng"/>
                 <constraint firstItem="RpQ-C6-9Gv" firstAttribute="width" secondItem="bx5-AA-tdq" secondAttribute="width" id="ICe-MF-w9t"/>
                 <constraint firstItem="RpQ-C6-9Gv" firstAttribute="top" secondItem="bx5-AA-tdq" secondAttribute="top" id="SGR-ZI-upe"/>
-                <constraint firstAttribute="bottom" secondItem="RpQ-C6-9Gv" secondAttribute="bottom" id="jDf-Rz-leb"/>
+                <constraint firstItem="hOm-J8-51F" firstAttribute="width" secondItem="bx5-AA-tdq" secondAttribute="width" id="Y8I-xD-OEx"/>
+                <constraint firstAttribute="bottom" secondItem="hOm-J8-51F" secondAttribute="bottom" id="wu6-wq-WBg"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="34" y="-27"/>
+            <point key="canvasLocation" x="33.5" y="-27.5"/>
         </view>
     </objects>
 </document>

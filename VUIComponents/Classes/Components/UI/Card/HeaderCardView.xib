@@ -56,8 +56,8 @@
                                 <constraint firstItem="4cC-LQ-qqB" firstAttribute="width" secondItem="MVV-Q3-oy2" secondAttribute="width" id="hBt-4L-g1J"/>
                             </constraints>
                         </view>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Sample Text" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ae3-MQ-vad" customClass="AnaVodafoneLabel">
-                            <rect key="frame" x="81" y="30" width="173.5" height="35"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Sample Text" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ae3-MQ-vad" customClass="AnaVodafoneLabel">
+                            <rect key="frame" x="21" y="30" width="295" height="35"/>
                             <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="28"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <nil key="highlightedColor"/>
@@ -137,7 +137,7 @@
                                     </userDefinedRuntimeAttributes>
                                 </label>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PVW-T6-H5n">
-                                    <rect key="frame" x="-0.5" y="71.5" width="295" height="0.0"/>
+                                    <rect key="frame" x="-0.5" y="72" width="295" height="0.0"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstAttribute="height" id="FtH-9i-IbP"/>
@@ -154,7 +154,9 @@
                                 <constraint firstItem="FKv-nw-mMm" firstAttribute="width" secondItem="sFy-rS-SW4" secondAttribute="width" constant="-30" id="Upz-rW-0fq"/>
                                 <constraint firstItem="dT7-ub-WGp" firstAttribute="top" secondItem="FKv-nw-mMm" secondAttribute="bottom" id="Wpe-ss-DzW"/>
                                 <constraint firstItem="dT7-ub-WGp" firstAttribute="width" secondItem="FKv-nw-mMm" secondAttribute="width" id="en3-ju-VPp"/>
+                                <constraint firstAttribute="right" secondItem="FKv-nw-mMm" secondAttribute="right" constant="15" id="gcC-4Y-24O"/>
                                 <constraint firstItem="FKv-nw-mMm" firstAttribute="top" secondItem="sFy-rS-SW4" secondAttribute="top" id="kRC-al-1Ew"/>
+                                <constraint firstItem="FKv-nw-mMm" firstAttribute="left" secondItem="sFy-rS-SW4" secondAttribute="left" constant="15" id="o6o-xO-bBq"/>
                                 <constraint firstAttribute="bottom" secondItem="PVW-T6-H5n" secondAttribute="bottom" id="xgV-fn-20k"/>
                             </constraints>
                         </view>
@@ -175,10 +177,12 @@
                         <constraint firstItem="Tpb-Uv-IaG" firstAttribute="bottom" secondItem="hvu-RO-Fdw" secondAttribute="bottom" constant="-36" id="Pov-56-3jO"/>
                         <constraint firstItem="KVJ-n6-iVS" firstAttribute="centerX" secondItem="sFy-rS-SW4" secondAttribute="centerX" id="Rc8-CY-q5F"/>
                         <constraint firstItem="KVJ-n6-iVS" firstAttribute="height" secondItem="sFy-rS-SW4" secondAttribute="height" id="Wrn-Qu-anF"/>
+                        <constraint firstItem="ae3-MQ-vad" firstAttribute="width" secondItem="sFy-rS-SW4" secondAttribute="width" id="XPo-RF-8eh"/>
                         <constraint firstItem="sFy-rS-SW4" firstAttribute="width" secondItem="07k-xf-VjW" secondAttribute="width" constant="-40" id="Xvi-um-0go"/>
                         <constraint firstItem="MVV-Q3-oy2" firstAttribute="centerY" secondItem="07k-xf-VjW" secondAttribute="centerY" id="Yi6-Xm-wIC"/>
                         <constraint firstItem="sFy-rS-SW4" firstAttribute="top" secondItem="ae3-MQ-vad" secondAttribute="bottom" constant="20" id="hUA-Yf-cJL"/>
                         <constraint firstItem="ae3-MQ-vad" firstAttribute="top" secondItem="07k-xf-VjW" secondAttribute="top" constant="30" id="mfE-lw-aDt"/>
+                        <constraint firstItem="FKv-nw-mMm" firstAttribute="centerX" secondItem="Tpb-Uv-IaG" secondAttribute="centerX" id="rdk-Os-Yij"/>
                         <constraint firstItem="ae3-MQ-vad" firstAttribute="centerX" secondItem="07k-xf-VjW" secondAttribute="centerX" id="uuI-lk-ch3"/>
                         <constraint firstItem="sFy-rS-SW4" firstAttribute="centerX" secondItem="07k-xf-VjW" secondAttribute="centerX" id="vXF-zU-wbx"/>
                         <constraint firstItem="MVV-Q3-oy2" firstAttribute="centerX" secondItem="07k-xf-VjW" secondAttribute="centerX" id="wOh-YV-og1"/>

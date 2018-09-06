@@ -8,9 +8,8 @@
 
 #import "LoadingCardView.h"
 #import "BaseCardView+Protected.h"
-#import <VUIComponents/AnaVodafoneLabel.h>
-#import <VUIComponents/LanguageHandler.h>
-#import <VUIComponents/Utilities.h>
+#import "AnaVodafoneLabel.h"
+
 @interface LoadingCardView()
 
 @property (weak, nonatomic) IBOutlet AnaVodafoneLabel *titleLabel;
@@ -25,9 +24,10 @@
 }
 
 -(void)setTitle:(NSString *)title {
+    NSLog(@"LoadingTitle: %@", title);
     _titleText = title;
     _titleLabel.text = title;
-    [_titleLabel sizeToFit];
+//    [_titleLabel sizeToFit];
 }
 
 -(void)commonInit {

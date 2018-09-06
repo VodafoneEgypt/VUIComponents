@@ -19,14 +19,14 @@
     NSLayoutConstraint *heightConstraint = nil;
     
     for (NSLayoutConstraint *constraint in self.constraints) {
-        
+
         if(!(([constraint.firstItem isDescendantOfView:self] && (constraint.firstItem != self)) ||
              ([constraint.secondItem isDescendantOfView:self] && (constraint.secondItem != self)))){
-            
+
             heightConstraint = constraint;
-            
+
             break;
-            
+
         }
     }
     

@@ -91,6 +91,7 @@
 
 -(void)setTextFields:(NSArray *)textFields {
     _textFields = textFields;
+    [self initialize];
 }
 
 - (void) initializeTextFieldViewView {
@@ -111,19 +112,45 @@
     textFieldViewHeightConstraint.constant = (_textFields > 0) ? textFieldHeight-TextFieldVerticalMargin : 0 ;
 }
 
+#pragma mark height adjustment
+-(void)initializeContentView{
+    
+    CGFloat height = 106;
+    
+    CGFloat width = self.frame.size.width  - 110 ;
+    
+    CGSize size = CGSizeMake(width, CGFLOAT_MAX);
+    
+    CGRect rect = [titleLabel.attributedText boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading context:nil];
+    
+    height += rect.size.height;
+    
+    rect = [subTitleLabel.attributedText boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading context:nil];
+    
+    height += rect.size.height;
+    
+    // recalculate considering btns
+    
+    if (_textFields.count > 0) {
+        
+        [self initializeTextFieldViewView];
+    }
+    
+    contentViewHeight = height + textFieldViewHeightConstraint.constant;
+}
 -(void)commonInit{
     
     [super commonInit];
     
     UIView* view = nil;
     
-//    if ([LanguageHandler sharedInstance].currentDirection == RTL) {
-//        view = [[NSBundle bundleForClass:[self class]] loadNibNamed:@"PaybillCardViewRTL" owner:self options:nil][0];
-//    } else {
-//        view = [[NSBundle bundleForClass:[self class]] loadNibNamed:@"PaybillCardView" owner:self options:nil][0];
-//    }
-    
-    view = [[NSBundle bundleForClass:[self class]] loadNibNamed:@"PaybillCardViewRTL" owner:self options:nil][0];
+    if ([LanguageHandler sharedInstance].currentDirection == RTL) {
+        
+        view = [[NSBundle mainBundle]loadNibNamed:@"PaybillCardViewRTL" owner:self options:nil][0];
+    }else{
+        
+        view = [[NSBundle mainBundle]loadNibNamed:@"PaybillCardView" owner:self options:nil][0];
+    }
     
     view.frame = self.bounds;
     [self.subviews makeObjectsPerformSelector: @selector(removeFromSuperview)];

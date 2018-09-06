@@ -9,9 +9,6 @@
 #import "AlertCardViewWithImgandTable.h"
 #import "RadioButtonCell.h"
 #import "BaseCardView+Protected.h"
-#import <VUIComponents/AnaVodafoneLabel.h>
-#import <VUIComponents/LanguageHandler.h>
-#import <VUIComponents/Utilities.h>
 
 @interface AlertCardViewWithImgandTable()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *tableViewContainerTopConstraint;
@@ -223,7 +220,7 @@
     
     if (cell == nil){
         
-        [tableView registerNib:[UINib nibWithNibName:CellIdentifier bundle:[Utilities getPodBundle]] forCellReuseIdentifier:CellIdentifier];
+        [tableView registerNib:[UINib nibWithNibName:CellIdentifier bundle:nil] forCellReuseIdentifier:CellIdentifier];
         
         cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     }
@@ -301,7 +298,7 @@
     
     _tableView.delegate = self;
     _tableView.dataSource = self;
-    UIView* view = [[Utilities getPodBundle]loadNibNamed:@"AlertCardViewWithImgandTable" owner:self options:nil][0];
+    UIView* view = [[NSBundle mainBundle]loadNibNamed:@"AlertCardViewWithImgandTable" owner:self options:nil][0];
     
     view.frame = self.bounds;
     

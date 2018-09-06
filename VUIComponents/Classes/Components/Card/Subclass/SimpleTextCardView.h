@@ -6,10 +6,10 @@
 //  Copyright © 2017 Karim Mousa. All rights reserved.
 //
 
-#import "BaseCardView.h"
+#import "BaseCardViewWithButtons.h"
 
 IB_DESIGNABLE
-@interface SimpleTextCardView : BaseCardView
+@interface SimpleTextCardView : BaseCardViewWithButtons
 
 @property(nonatomic,strong) IBInspectable NSString *text;
 

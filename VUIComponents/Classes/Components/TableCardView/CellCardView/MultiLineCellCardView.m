@@ -8,8 +8,7 @@
 
 #import "MultiLineCellCardView.h"
 #import "MultiLineRadioButtonCellModel.h"
-#import <VUIComponents/LanguageHandler.h>
-#import <VUIComponents/Utilities.h>
+#import "LanguageHandler.h"
 #import "BaseCardView+Protected.h"
 #import "UIColor+Hex.h"
 
@@ -78,7 +77,7 @@
     
     [super commonInit];
     
-    NSArray* views = [[Utilities getPodBundle] loadNibNamed:@"MultiLineCellCardView" owner:self options:nil];
+    NSArray* views = [[NSBundle mainBundle]loadNibNamed:@"MultiLineCellCardView" owner:self options:nil];
     
     UIView* view = [views objectAtIndex:0];
     

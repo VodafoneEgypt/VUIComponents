@@ -39,6 +39,7 @@
     _titleLabel.txt = titleString;
     
     [self layoutIfNeeded];
+    [self initialize];
 
 }
 
@@ -61,7 +62,7 @@
         v.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.69];
     }
     [self layoutIfNeeded];
-
+    [self initialize];
 }
 
 -(void)setDescAttributedString:(NSAttributedString *)descAttributedString{
@@ -77,7 +78,7 @@
     
     self.filterSeparator.constant = 1;
     [self layoutIfNeeded];
-    
+    [self initialize];
 }
 
 - (void)setButtons:(NSArray *)buttons{
@@ -90,8 +91,6 @@
         [self layoutIfNeeded];
 
     }
-    [self layoutIfNeeded];
-
 }
 
 - (void) initializeButtonsView{
@@ -114,11 +113,9 @@
     
     _buttonsViewHeighConstraint.constant = (self.buttons.count > 0) ? btnsHeight-BtnVerticalMargin : 0 ;
     [_buttonViewContainer layoutIfNeeded];
+    [self initialize];
     [self layoutIfNeeded];
 }
-
-
-
 
 -(void)setTitleTopConstraintConstant:(int)titleTopConstraintConstant{
     
@@ -127,13 +124,36 @@
     _titleLabelTopConstraint.constant = titleTopConstraintConstant;
 
     [self layoutIfNeeded];
+    [self initialize];
 
 }
 
 -(void)layoutSubviews{
     [super layoutSubviews];
 }
+#pragma mark height adjustment
 
+-(void)initializeContentView{
+
+    contentViewHeight = 77;
+
+    if ([_titleString length] > 0){
+
+        [_titleLabel adjustHeight];
+        contentViewHeight += _titleLabel.frame.size.height;
+    }
+    if ([_subTitleAttributedString length] > 0){
+
+        [_subtitleLabel adjustHeight];
+        contentViewHeight += _subtitleLabel.frame.size.height;
+    }
+    if ([_descAttributedString length] > 0){
+
+        [_descLabel adjustHeight];
+        contentViewHeight += _descLabel.frame.size.height;
+    }
+    contentViewHeight += _subttileLabelTopConstraint.constant + _descLabelTopConstraint.constant + _descLabelBottomConstraint.constant + _titleLabelTopConstraint.constant +_buttonsViewHeighConstraint.constant + _buttonsViewBottomConstraint.constant;
+}
 -(void)commonInit{
     
     [super commonInit];

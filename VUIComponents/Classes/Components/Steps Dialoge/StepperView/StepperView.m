@@ -8,7 +8,7 @@
 
 #import "StepperView.h"
 #import "UIColor+Hex.h"
-#import <VUIComponents/LanguageHandler.h>
+#import "LanguageHandler.h"
 
 #define seperatorMargin 5
 #define dehighlightedLabelBGColor [UIColor colorWithCSS:@"666666"]

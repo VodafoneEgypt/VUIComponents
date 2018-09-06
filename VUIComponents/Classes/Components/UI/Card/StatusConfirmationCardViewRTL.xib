@@ -12,7 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StatusConfirmationCardView">
             <connections>
                 <outlet property="ButtonWidthConstraint" destination="ZV4-AB-sc7" id="982-do-50T"/>
-                <outlet property="buttolRightPadding" destination="8px-sV-ck0" id="Ri6-ey-IeI"/>
+                <outlet property="buttonLeadingSpacing" destination="8px-sV-ck0" id="gaR-48-ZCI"/>
                 <outlet property="contentView" destination="6so-PT-TXp" id="Lpr-fO-d1d"/>
                 <outlet property="customButton" destination="PCX-Aw-TpC" id="2e8-xU-RvD"/>
                 <outlet property="imageView" destination="kGO-eq-10I" id="TKh-fH-TG4"/>

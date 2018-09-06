@@ -7,8 +7,7 @@
 //
 
 #import "TableWithHeaderCardView.h"
-#import <VUIComponents/LanguageHandler.h>
-#import <VUIComponents/Utilities.h>
+#import "LanguageHandler.h"
 #import "BaseCardView+Protected.h"
 #import "RadioButtonHeaderCardView.h"
 #import "TableCardModel.h"
@@ -67,6 +66,7 @@
 
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     
+    NSLog(@"SectionNo: %ld", (long)section);
     if(headerHeights[[NSString stringWithFormat:@"%ld",(long)section]] != nil){
         
         return [headerHeights[[NSString stringWithFormat:@"%ld",(long)section]] floatValue];
@@ -130,7 +130,7 @@
     
     if (cell == nil){
         
-        [tableView registerNib:[UINib nibWithNibName:CellIdentifier bundle:[Utilities getPodBundle]] forCellReuseIdentifier:CellIdentifier];
+        [tableView registerNib:[UINib nibWithNibName:CellIdentifier bundle:nil] forCellReuseIdentifier:CellIdentifier];
         
         cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     }
@@ -175,7 +175,7 @@
     
     [super commonInit];
     
-    UIView* view = [[Utilities getPodBundle] loadNibNamed:@"TableWithHeaderCardView" owner:self options:nil][0];
+    UIView* view = [[NSBundle mainBundle]loadNibNamed:@"TableWithHeaderCardView" owner:self options:nil][0];
     
     view.frame = self.bounds;
     

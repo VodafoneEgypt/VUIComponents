@@ -1,15 +1,15 @@
 //
-//  SignpostsWithAvatarView.h
+//  SignpostsWithAvatarCardView.h
 //  AnaVodafoneUIRevamp
 //
-//  Created by Taha on 2/12/17.
+//  Created by NTG on 2/12/17.
 //  Copyright © 2017 Karim Mousa. All rights reserved.
 //
 
 #import "ExpandableBaseCardView.h"
 
 typedef void(^TargetBlock)(void);
-IB_DESIGNABLE
+
 @interface SignpostsWithAvatarCardView : ExpandableBaseCardView{
     
     __weak IBOutlet NSLayoutConstraint *verticalLineViewWidthConstraint;
@@ -27,33 +27,39 @@ IB_DESIGNABLE
     __weak IBOutlet UIButton *viewButton;
 }
 
-@property (weak, nonatomic) IBOutlet UIImageView *avatarImgView;
+@property (strong, nonatomic) UIColor *avatarImgViewBGColor;
 
 @property (nonatomic, strong) NSArray* buttons;
 
 @property (nonatomic) IBInspectable BOOL verticalLine;
 
-@property (nonatomic,strong)IBInspectable NSString* title;
+@property (nonatomic,strong) IBInspectable UIColor* verticalLinColor;
 
-@property (nonatomic,strong) IBInspectable NSString* subTitle;
+@property (nonatomic,strong) NSString* title;
+
+@property (nonatomic)IBInspectable float titleFontSize;
+
+@property (nonatomic,strong) NSString* subTitle;
+
+@property (nonatomic) IBInspectable float subTitleFontSize;
 
 @property (strong ,nonatomic) TargetBlock targetBlock;
 
-@property(nonatomic,strong) IBInspectable NSString* secondTitle;
+@property(nonatomic,strong) NSString* secondTitle;
 
 @property(nonatomic,strong) IBInspectable UIImage* avatarImage;
 
+@property (nonatomic) IBInspectable BOOL withoutAvatarImage;
+
 @property (nonatomic ,strong) NSArray *expandTableArray;
 
-@property (nonatomic) IBInspectable BOOL isExpandable;
+@property (nonatomic) int tableViewSelectedIndexRow;
+
+@property(nonatomic) BOOL withRadioButtons;
+
+@property (nonatomic) BOOL expandable;
 
 @property (nonatomic) IBInspectable BOOL withoutCircleImage;
-
--(void)setSecondTitle:(NSString *)secondTitle WithFontSize:(int)fontSize;
-
--(void)setSubTitle:(NSString *)subTitle WithFontSize:(int)fontSize;
-
--(void)setTitle:(NSString *)title WithFontSize:(int)fontSize;
 
 -(void)setSubTitleLabelAdjustsFontSizeToFitWidth:(Boolean)F andNumberOfLine:(NSInteger)N;
 

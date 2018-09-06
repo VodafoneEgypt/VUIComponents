@@ -9,8 +9,7 @@
 #import "StepperCardViewWithLabels.h"
 #import "StepperView.h"
 #import "BaseCardView+Protected.h"
-#import <VUIComponents/LanguageHandler.h>
-#import <VUIComponents/Utilities.h>
+#import "LanguageHandler.h"
 #import "UIColor+Hex.h"
 
 #define highlightedLabelTextColor [UIColor colorWithCSS:@"ffffff"]
@@ -248,7 +247,7 @@
     
     [super commonInit];
     
-    NSArray* views = [[Utilities getPodBundle] loadNibNamed:@"StepperCardViewWithLabels" owner:self options:nil];
+    NSArray* views = [[NSBundle mainBundle]loadNibNamed:@"StepperCardViewWithLabels" owner:self options:nil];
     
     UIView* view = [views objectAtIndex:0];
     

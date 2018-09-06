@@ -1,5 +1,5 @@
 //
-//  ExpandableSignpostsWithAvatarCardView.h
+//  BillsView.h
 //  AnaVodafoneUIRevamp
 //
 //  Created by Taha on 7/24/17.
@@ -11,7 +11,7 @@
 
 typedef void (^ billsViewHeightChangedBlock)(CGFloat height);
 
-@interface ExpandableSignpostsWithAvatarCardView : UIView{
+@interface BillsView : UIView{
 
     __weak IBOutlet UIImageView *arrowImgView;
     

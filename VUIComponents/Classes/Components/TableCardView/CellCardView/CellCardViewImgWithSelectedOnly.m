@@ -8,8 +8,7 @@
 
 #import "CellCardViewImgWithSelectedOnly.h"
 #import "MultiLineRadioButtonCellModel.h"
-#import <VUIComponents/LanguageHandler.h>
-#import <VUIComponents/Utilities.h>
+#import "LanguageHandler.h"
 #import "BaseCardView+Protected.h"
 #import "UIColor+Hex.h"
 
@@ -89,7 +88,7 @@ CGFloat unSelectedimgViewWidth;
     
     [super commonInit];
     
-    NSArray* views = [[Utilities getPodBundle] loadNibNamed:@"CellCardViewImgWithSelectedOnly" owner:self options:nil];
+    NSArray* views = [[NSBundle mainBundle]loadNibNamed:@"CellCardViewImgWithSelectedOnly" owner:self options:nil];
     
     UIView* view = [views objectAtIndex:0];
     

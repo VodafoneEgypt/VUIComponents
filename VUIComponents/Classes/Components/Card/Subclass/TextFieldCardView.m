@@ -8,12 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import "TextFieldCardView.h"
-
+#import "AnaVodafoneLabel.h"
 #import "BaseCardView+Protected.h"
 #import "ValidationTextField.h"
 @interface TextFieldCardView()
 
-@property (weak, nonatomic) IBOutlet UILabel *alertLabel;
+@property (weak, nonatomic) IBOutlet AnaVodafoneLabel *alertLabel;
 @property (weak, nonatomic) IBOutlet ValidationTextField *alertTextField;
 
 
@@ -75,19 +75,26 @@
 #pragma mark height adjustment
 -(void)initializeContentView{
     
-//    contentViewHeight = 0;
-//
-//    CGFloat height = 0;
-//
+    contentViewHeight = 120;
+
+    CGFloat height = 0;
+
 //    CGFloat width = self.frame.size.width - 30 ;
 //
 //    CGSize size = CGSizeMake(width, CGFLOAT_MAX);
 //
 //    CGRect rect = [_alertLabel.attributedText boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading context:nil];
-//
-//    height += rect.size.height;
-//
-//    contentViewHeight = height+20/*textfield top margin*/+35/*textfield Height*/+30/*label top margin*/+20/*label buttom margin*/+16/*ButtonView top margin*/;
+
+    [_alertLabel adjustHeight];
+    
+    height += _alertLabel.frame.size.height;
+
+    if (self.buttons.count >0) {
+        contentViewHeight += 16;
+    }
+    
+    contentViewHeight += height;
+//    +20/*textfield top margin*/+35/*textfield Height*/+30/*label top margin*/+20/*label buttom margin*/+16/*ButtonView top margin*/;
 }
 
 -(void)commonInit{

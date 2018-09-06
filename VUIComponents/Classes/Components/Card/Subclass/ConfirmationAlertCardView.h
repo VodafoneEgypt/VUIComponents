@@ -6,6 +6,7 @@
 //  Copyright © 2017 Karim Mousa. All rights reserved.
 //
 
+//#import "BaseCardViewWithButtonsOld.h"
 #import "BaseCardViewWithButtons.h"
 
 IB_DESIGNABLE

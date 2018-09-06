@@ -14,22 +14,19 @@
 -(void)commonInit{
     
     self.expanded = false;
-    _animationDeuration = 0;
-
 }
 
 - (void) initializeExpandedView{
     
-//    expandedViewHeightConstraint.constant = 0;
+    expandedViewHeightConstraint.constant = 0;
     
-//    expandedView.hidden = true;
+    expandedView.hidden = true;
 }
 
 - (void) initialize{
     
     [self initializeContentView];
-    CGFloat totalHeight = contentViewHeight;
-
+    
     if(self.buttons.count > 0){
         
         [self initializeButtonsView];
@@ -45,65 +42,51 @@
         
         [self initializeExpandedView];
         
-        totalHeight = contentViewHeight + expandedViewHeightConstraint.constant + buttonsViewHeightConstraint.constant;
-
     }else{
         
-        totalHeight = contentViewHeight + buttonsViewHeightConstraint.constant;
-
+        expandedViewHeightConstraint.constant = 0;
     }
-//    if(self.heightBlock != nil){
-//        
-//        self.heightBlock(totalHeight);
-//    }else{
     
-        NSLayoutConstraint *heightConstraint = nil;
+    expandedView.hidden = !self.expanded;
+    
+    CGFloat totalHeight = contentViewHeight + expandedViewHeightConstraint.constant + buttonsViewHeightConstraint.constant;
+    
+    //    if(self.heightBlock != nil){
+    //
+    //        self.heightBlock(totalHeight);
+    //    }else{
+    
+    NSLayoutConstraint *heightConstraint = nil;
+    
+    for (NSLayoutConstraint *constraint in self.constraints) {
         
-        for (NSLayoutConstraint *constraint in self.constraints) {
+        if(!(([constraint.firstItem isDescendantOfView:self] && (constraint.firstItem != self)) ||
+             ([constraint.secondItem isDescendantOfView:self] && (constraint.secondItem != self)))){
             
-            if(!(([constraint.firstItem isDescendantOfView:self] && (constraint.firstItem != self)) ||
-                 ([constraint.secondItem isDescendantOfView:self] && (constraint.secondItem != self)))){
-                
-                heightConstraint = constraint;
-                
-                break;
-                
-            }
+            heightConstraint = constraint;
+            
+            break;
+            
         }
-        
+    }
+    
     if(heightConstraint != nil){
         
-        heightConstraint.constant = contentViewHeight;
-        CGRect currentFrame = self.frame;
-        currentFrame.size.height = totalHeight;
+        heightConstraint.constant = totalHeight;
         
-        [UIView animateWithDuration:_animationDeuration animations:^{
-            self.frame = currentFrame;
-            if(self.expanded == false){
-                
-                self->expandedViewHeightConstraint.constant = 0;
-                [self->expandedView layoutIfNeeded];
-            }
-            heightConstraint.constant = totalHeight;
-            [self layoutIfNeeded];
-        } completion:^(BOOL finished) {}];
-        
+        [self layoutIfNeeded];
     }else{
         
         CGRect currentFrame = self.frame;
         
         currentFrame.size.height = totalHeight;
-        [UIView animateWithDuration:_animationDeuration animations:^{
-            
-            self.frame = currentFrame;
-            
-        } completion:^(BOOL finished) {}];
+        
+        self.frame = currentFrame;
     }
-//    }
+    //    }
     
     if(self.heightDidChangedBlock != nil){
         self.heightDidChangedBlock(totalHeight);
-
     }
 }
 
@@ -113,5 +96,6 @@
     
     [self initialize];
 }
+
 
 @end

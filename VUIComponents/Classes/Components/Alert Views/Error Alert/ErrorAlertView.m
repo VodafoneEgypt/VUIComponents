@@ -6,9 +6,8 @@
 //  Copyright © 2017 VIS. All rights reserved.
 //
 
-#import <VUIComponents/ErrorAlertView.h>
-#import <VUIComponents/AnaVodafoneLabel.h>
-#import <VUIComponents/Utilities.h>
+#import "ErrorAlertView.h"
+#import "AnaVodafoneLabel.h"
 #import "CustomButton.h"
 #import "INTUAnimationEngine.h"
 
@@ -55,7 +54,7 @@
     
     self.frame = CGRectMake(0, 0, screenSize.width, screenSize.height);
     
-    NSArray* views = [[Utilities getPodBundle] loadNibNamed:@"ErrorAlertView" owner:self options:nil];
+    NSArray* views = [[NSBundle mainBundle]loadNibNamed:@"ErrorAlertView" owner:self options:nil];
     
     UIView* view = [views objectAtIndex:0];
     

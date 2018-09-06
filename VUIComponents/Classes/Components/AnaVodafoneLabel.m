@@ -6,9 +6,12 @@
 //  Copyright © 2015 VIS. All rights reserved.
 //
 
-#import <VUIComponents/AnaVodafoneLabel.h>
+#import "AnaVodafoneLabel.h"
+
 #import "Utilities.h"
-#import <VUIComponents/LanguageHandler.h>
+
+
+#import "LanguageHandler.h"
 
 @implementation AnaVodafoneLabel
 
@@ -30,6 +33,18 @@
             self.textAlignment = NSTextAlignmentLeft;
         }
     }
+}
+
+-(void)adjustHeight{
+    
+    CGRect frame = self.frame;
+    
+    [self sizeToFit];
+    
+    frame.size.height = self.frame.size.height;
+    
+    self.frame = frame;
+    
 }
 
 -(void)adjustFont{

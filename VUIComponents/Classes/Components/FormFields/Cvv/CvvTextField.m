@@ -8,7 +8,7 @@
 
 #import "CvvTextField.h"
 #import "ValidationTextFieldStyleModel.h"
-#import <VUIComponents/LanguageHandler.h>
+#import "LanguageHandler.h"
 #import "UIColor+Hex.h"
 
 #define height 45

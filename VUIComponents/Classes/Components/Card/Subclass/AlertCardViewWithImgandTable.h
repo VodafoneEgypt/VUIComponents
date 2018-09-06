@@ -6,7 +6,7 @@
 //  Copyright © 2018 Vodafone Egypt. All rights reserved.
 //
 
-#import "BaseCardViewWithButtons.h"
+#import "BaseCardViewWithButtonsOld.h"
 #import "TableCardView.h"
 
 IB_DESIGNABLE

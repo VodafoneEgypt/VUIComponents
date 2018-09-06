@@ -1,14 +1,14 @@
 //
-//  ExpandSignpostWithAvatarCardView.h
+//  TableSignpostWithAvatarCardView.h
 //  AnaVodafoneUIRevamp
 //
 //  Created by Taha on 3/6/17.
 //  Copyright © 2017 Karim Mousa. All rights reserved.
 //
 
-#import "BaseCardViewWithButtons.h"
+#import "BaseCardViewWithButtonsOld.h"
 
-@interface ExpandSignpostWithAvatarCardView : BaseCardViewWithButtons
+@interface TableSignpostWithAvatarCardView : BaseCardViewWithButtonsOld
 
 @property (nonatomic ,strong) NSArray *expandTableArray;
 

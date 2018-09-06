@@ -6,7 +6,7 @@
 //  Copyright © 2017 Karim Mousa. All rights reserved.
 //
 
-#import <GSKStretchyHeaderView/GSKStretchyHeaderView.h>
+#import "GSKStretchyHeaderView.h"
 
 typedef void(^LocationAction)(void);
 

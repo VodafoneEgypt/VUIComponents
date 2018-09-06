@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "BaseCardView.h"
+#import "CustomButton.h"
 
 @interface AlertView : UIView
 @property (nonatomic) BOOL performback;
-@property (nonatomic, copy) void (^actionBlock)(void);
-@property (nonatomic, copy) void (^falseActionBlock)(void);
+@property (strong ,nonatomic) ActionBlock closeActionBlock;
 @property (nonatomic,strong) UIColor *headerColor;
 @property (nonatomic,strong) UIColor *containerViewColor;
 

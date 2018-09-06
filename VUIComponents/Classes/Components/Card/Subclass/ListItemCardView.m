@@ -46,7 +46,7 @@
 
     _titleLabel.attributedText = attrStr1;
     
-    [self initialize];
+//    [self initialize];
 }
 
 -(void)setDesc:(NSString *)desc {
@@ -74,7 +74,7 @@
 
     _descLabel.attributedText = attrStr1;
     
-    [self initialize];
+//    [self initialize];
 }
 
 -(void)commonInit {

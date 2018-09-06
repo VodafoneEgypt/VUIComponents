@@ -19,5 +19,6 @@
 
 -(void)adjustFont;
 -(void)adjustLabel;
+-(void)adjustHeight;
 
 @end

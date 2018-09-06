@@ -8,7 +8,6 @@
 
 #import "CustomStretchyHeaderView.h"
 #import "PagerView.h"
-#import <VUIComponents/Utilities.h>
 
 @interface CustomStretchyHeaderView()
 
@@ -145,7 +144,7 @@
     
     CustomStretchyHeaderView *headerView;
     
-    NSArray* nibViews = [[Utilities getPodBundle]  loadNibNamed:@"CustomStretchyHeaderView"
+    NSArray* nibViews = [[NSBundle mainBundle] loadNibNamed:@"CustomStretchyHeaderView"
                                                       owner:self
                                                     options:nil];
     headerView = nibViews.firstObject;

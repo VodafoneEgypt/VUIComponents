@@ -9,7 +9,7 @@
 #import "ValidationTextField.h"
 #import "InvalidTooltipView.h"
 #import "ValidationTextFieldStyleModel.h"
-#import <VUIComponents/LanguageHandler.h>
+#import "LanguageHandler.h"
 #import "UIColor+Hex.h"
 
 #define constantHeight 45

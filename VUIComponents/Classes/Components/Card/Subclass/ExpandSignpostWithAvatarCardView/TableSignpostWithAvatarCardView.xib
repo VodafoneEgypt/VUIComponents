@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ExpandSignpostWithAvatarCardView">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TableSignpostWithAvatarCardView">
             <connections>
                 <outlet property="buttonsView" destination="kyu-3G-Ehn" id="D9h-XI-8Qf"/>
                 <outlet property="buttonsViewHeightConstraint" destination="JQC-BD-bjw" id="1EP-d6-D43"/>

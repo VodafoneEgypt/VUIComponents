@@ -8,9 +8,8 @@
 
 #import "ExpandCellCardView.h"
 #import "BaseCardView+Protected.h"
-#import "ExpandSignpostWithAvatarCardView.h"
-#import <VUIComponents/LanguageHandler.h>
-#import <VUIComponents/Utilities.h>
+#import "TableSignpostWithAvatarCardView.h"
+#import "LanguageHandler.h"
 #import "UIColor+Hex.h"
 #import "ExpandCellCardModel.h"
 
@@ -25,7 +24,7 @@
     __weak IBOutlet UIView *BGcontentView;
 }
 
-@property (weak, nonatomic) IBOutlet ExpandSignpostWithAvatarCardView *expandSignpostWithAvatarCardView;
+@property (weak, nonatomic) IBOutlet TableSignpostWithAvatarCardView *tableSignpostWithAvatarCardView;
 
 @end
 
@@ -111,13 +110,10 @@
     
     rightLabel.attributedText = attrStr1;
     
-    
-    
-    _expandSignpostWithAvatarCardView.expandTableArray = ((ExpandCellCardModel*)self.model).expandTableArray;
+    _tableSignpostWithAvatarCardView.expandTableArray = ((ExpandCellCardModel*)self.model).expandTableArray;
 
     [self initialize];
 }
-
 
 -(void)setExpanded:(BOOL)expanded{
     
@@ -127,7 +123,6 @@
         
         value = false;
     }
-
     
     arrowImgView.transform = (value == true) ? CGAffineTransformRotate(arrowImgView.transform, M_PI):CGAffineTransformIdentity;
     
@@ -135,14 +130,14 @@
     
     [leftLabel setFont:[UIFont fontWithName:[[LanguageHandler sharedInstance] stringForKey:(value == true) ? @"boldFont" : @"regularFont"] size:16]];
 
-    [_expandSignpostWithAvatarCardView setHidden:!value];
+    [_tableSignpostWithAvatarCardView setHidden:!value];
     
     [super setExpanded:value];
 }
 
 -(void)setButtons:(NSArray *)buttons{
     
-    _expandSignpostWithAvatarCardView.buttons = buttons;
+    _tableSignpostWithAvatarCardView.buttons = buttons;
 }
 
 #pragma mark height adjustment
@@ -154,9 +149,9 @@
 
 - (void)initializeExpandedView{
     
-    [_expandSignpostWithAvatarCardView initialize];
+    [_tableSignpostWithAvatarCardView initialize];
     
-    expandedViewHeightConstraint.constant = _expandSignpostWithAvatarCardView.frame.size.height;
+    expandedViewHeightConstraint.constant = _tableSignpostWithAvatarCardView.frame.size.height;
 }
 
 - (void)adjustDescViewHeightTo:(CGFloat)height{
@@ -172,11 +167,11 @@
     
     if ([LanguageHandler sharedInstance].currentDirection == RTL) {
         
-        views = [[Utilities getPodBundle] loadNibNamed:@"ExpandCellCardView" owner:self options:nil];
+        views = [[NSBundle mainBundle]loadNibNamed:@"ExpandCellCardView" owner:self options:nil];
         
     }else{
         
-        views = [[Utilities getPodBundle] loadNibNamed:@"ExpandCellCardView" owner:self options:nil];
+        views = [[NSBundle mainBundle]loadNibNamed:@"ExpandCellCardView" owner:self options:nil];
     }
     
     UIView* view = [views objectAtIndex:0];

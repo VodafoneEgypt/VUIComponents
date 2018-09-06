@@ -10,13 +10,12 @@
 #import "BaseCardView+Protected.h"
 #import "LanguageHandler.h"
 #import "UIColor+Hex.h"
-#import <VUIComponents/Utilities.h>
-
+#import "AnaVodafoneLabel.h"
 @interface YourMessageCardView ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *avatarImgView;
-@property (weak, nonatomic) IBOutlet UILabel *messageLabel;
-@property (weak, nonatomic) IBOutlet UILabel *dateLabel;
+@property (weak, nonatomic) IBOutlet AnaVodafoneLabel *messageLabel;
+@property (weak, nonatomic) IBOutlet AnaVodafoneLabel *dateLabel;
 
 @end
 
@@ -92,22 +91,19 @@
 
 #pragma mark height adjustment
 -(void)initializeContentView{
+
+    contentViewHeight = 45;
+
+    [_messageLabel adjustHeight];
+  
+    contentViewHeight += _messageLabel.frame.size.height;
     
-    contentViewHeight = 0;
+    if (_date) {
+        [_dateLabel adjustHeight];
+        contentViewHeight += _dateLabel.frame.size.height;
+    }
     
-    //TODO:: localize
-    
-    CGFloat width = self.frame.size.width - 75;
-    
-    contentViewHeight += 45;
-    
-    CGSize size = CGSizeMake(width, CGFLOAT_MAX);
-    
-    CGRect rect = [_messageLabel.attributedText boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading context:nil];
-    
-    contentViewHeight += rect.size.height;
-    
-    contentViewHeight += 18;
+//    contentViewHeight += 18;
 }
 
 -(void)commonInit{
@@ -118,10 +114,10 @@
     
     if ([LanguageHandler sharedInstance].currentDirection == RTL) {
         
-        views = [[Utilities getPodBundle]loadNibNamed:@"YourMessageCardViewRTL" owner:self options:nil];
+        views = [[NSBundle mainBundle]loadNibNamed:@"YourMessageCardViewRTL" owner:self options:nil];
     }else{
         
-        views = [[Utilities getPodBundle]loadNibNamed:@"YourMessageCardView" owner:self options:nil];
+        views = [[NSBundle mainBundle]loadNibNamed:@"YourMessageCardView" owner:self options:nil];
     }
     
     UIView* view = [views objectAtIndex:0];

@@ -9,7 +9,6 @@
 #import "YourMessageCardViewHeader.h"
 #import "BaseCardView+Protected.h"
 #import "LanguageHandler.h"
-#import <VUIComponents/Utilities.h>
 
 @interface YourMessageCardViewHeader()
 
@@ -71,7 +70,7 @@
     
     [super commonInit];
     
-    NSArray* views = [[Utilities getPodBundle]loadNibNamed:@"YourMessageCardViewHeader" owner:self options:nil];
+    NSArray* views = [[NSBundle mainBundle]loadNibNamed:@"YourMessageCardViewHeader" owner:self options:nil];
     
     UIView* view = [views objectAtIndex:0];
     

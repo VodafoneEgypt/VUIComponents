@@ -8,6 +8,7 @@
 
 #import "BaseCardView.h"
 
+IB_DESIGNABLE
 @interface YourMessageCardView : BaseCardView
 
 @property(nonatomic,strong) NSString* message;

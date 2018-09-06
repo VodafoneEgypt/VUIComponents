@@ -42,7 +42,7 @@ IB_DESIGNABLE
 
 @property (strong,nonatomic) IBInspectable UIColor *verticalLineColor;
 
-@property (nonatomic) IBInspectable BOOL bootmViewVisibality;
+@property (nonatomic) IBInspectable BOOL bottomViewVisibality;
 @end
 
 

@@ -1,19 +1,18 @@
 //
-//  ExpandableSignpostsWithAvatarCardView.m
+//  BillsView.m
 //  AnaVodafoneUIRevamp
 //
 //  Created by Taha on 7/24/17.
 //  Copyright © 2017 Karim Mousa. All rights reserved.
 //
 
-#import "ExpandableSignpostsWithAvatarCardView.h"
+#import "BillsView.h"
 #import "LanguageHandler.h"
 #import "UIColor+Hex.h"
 #import "BillsExpandedTableView.h"
 #import "TableCardModel.h"
-#import <VUIComponents/Utilities.h>
 
-@interface ExpandableSignpostsWithAvatarCardView()
+@interface BillsView()
 
 @property (weak, nonatomic) IBOutlet BillsExpandedTableView *billsExpandedTableView;
 
@@ -31,7 +30,7 @@
 
 @end
 
-@implementation ExpandableSignpostsWithAvatarCardView
+@implementation BillsView
 
 
 - (IBAction)HandleViewTappedAction:(id)sender {
@@ -246,11 +245,11 @@
     
     if ([LanguageHandler sharedInstance].currentDirection == RTL) {
         
-        views = [[Utilities getPodBundle]loadNibNamed:@"ExpandableSignpostsWithAvatarCardView_RTL" owner:self options:nil];
+        views = [[NSBundle mainBundle]loadNibNamed:@"BillsView_RTL" owner:self options:nil];
         
     }else{
         
-        views = [[Utilities getPodBundle]loadNibNamed:@"ExpandableSignpostsWithAvatarCardView" owner:self options:nil];
+        views = [[NSBundle mainBundle]loadNibNamed:@"BillsView" owner:self options:nil];
     }
     
     UIView* view = [views objectAtIndex:0];
