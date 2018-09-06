@@ -9,9 +9,9 @@
 #import "AlertCardViewWithImgAndTextField.h"
 #import "BaseCardView+Protected.h"
 #import "KVNProgress.h"
-#import "CenterViewController.h"
 #import "ValidationTextField.h"
 #import "AnaVodafoneLabel.h"
+#import <VUIComponents/LanguageHandler.h>
 
 @interface AlertCardViewWithImgAndTextField()
 @property (weak, nonatomic) IBOutlet ValidationTextField *alertTextField;

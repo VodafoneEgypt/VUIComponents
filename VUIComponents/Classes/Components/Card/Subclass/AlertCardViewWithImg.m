@@ -9,9 +9,10 @@
 #import "AlertCardViewWithImg.h"
 #import "BaseCardView+Protected.h"
 #import "KVNProgress.h"
-#import "CenterViewController.h"
 #import "AnaVodafoneLabel.h"
 #import "UIColor+Hex.h"
+#import <VUIComponents/LanguageHandler.h>
+#import <VUIComponents/Utilities.h>
 
 @interface AlertCardViewWithImg()
 

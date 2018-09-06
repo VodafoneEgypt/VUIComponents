@@ -15,7 +15,7 @@
 
 @end
 
-@interface BaseCardTableViewController : AVBaseViewController<CellHeightChangedDelegate,BaseCardTableViewControllerCellsProtocol>
+@interface BaseCardTableViewController : UIViewController<CellHeightChangedDelegate,BaseCardTableViewControllerCellsProtocol>
 
 @property (nonatomic) IBInspectable CGFloat spacing;
 
