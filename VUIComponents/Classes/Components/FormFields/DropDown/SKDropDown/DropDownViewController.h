@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BaseViewController.h"
 
-@interface DropDownViewController : BaseViewController
+@interface DropDownViewController : UIViewController
 
 @property (strong, nonatomic) UITableView *table;
 

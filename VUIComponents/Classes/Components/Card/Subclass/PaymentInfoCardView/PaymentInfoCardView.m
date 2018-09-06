@@ -8,7 +8,10 @@
 
 #import "PaymentInfoCardView.h"
 #import "CustomButton.h"
-#import "AnaVodafoneTextField.h"
+#import <VUIComponents/AnaVodafoneTextField.h>
+#import <VUIComponents/AnaVodafoneLabel.h>
+#import <VUIComponents/LanguageHandler.h>
+#import <VUIComponents/Utilities.h>
 
 @interface PaymentInfoCardView()
 

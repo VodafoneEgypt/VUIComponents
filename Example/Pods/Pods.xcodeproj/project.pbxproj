@@ -122,7 +122,6 @@
 		31A6EDF2F14522AAF5306D1FFC998656 /* GlamourAnimation.html in Resources */ = {isa = PBXBuildFile; fileRef = D60179B0080D39CC4B9F14C7FCF3EDC6 /* GlamourAnimation.html */; };
 		31C7F72B410E8926B4D80CF4A736FE77 /* FSCalendarTransitionCoordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AA6CD3BC6895262791DFA3D36A1CFCE /* FSCalendarTransitionCoordinator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		31EA5D001C7A4BF6E592680422DD58D0 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = D36EC2188626322E914B24D87B443F0A /* Utilities.m */; };
-		32A971B2D1D4AC33E7261F30F64C98DA /* BaseCardViewWithButtonsOld.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B39B92A04C41F567C237464402A7503 /* BaseCardViewWithButtonsOld.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		32D951E63EFFF2C406F4277900DBF3FC /* FSCalendarWeekdayView.m in Sources */ = {isa = PBXBuildFile; fileRef = B29DA3D919DDC6B0E43A079FE261A241 /* FSCalendarWeekdayView.m */; };
 		33B080C2E4F2AA3DEBC5DD6A019AF67F /* RadioButtonHeaderCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4288BB68E23094E278FEBE70994F17E /* RadioButtonHeaderCardView.m */; };
 		33C2C98228EE53CB437A583A15ABBC30 /* SignpostCardView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E71797DB0719DBDEE972635F4136308 /* SignpostCardView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -453,7 +452,6 @@
 		E101FFB7B33670A9A0328B3D9D90F93B /* FSCalendarCalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = 99D41457F71EE68205C35120682CD1D7 /* FSCalendarCalculator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E1433217C1557CADF9E19A0D8998B4E9 /* SelectDateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE74E50223CDD36DA46E21BA62042EB8 /* SelectDateView.xib */; };
 		E171B04489580982B2483526043FE879 /* GetContacts.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D95C0108B5EEA417298D29154029E3 /* GetContacts.m */; };
-		E183CEFF74454CF393F3FCCF772DAC21 /* BaseCardViewWithButtonsOld.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C5AC4FE1955CC1B6C500AF850BCEA0 /* BaseCardViewWithButtonsOld.m */; };
 		E1DB60A9CD4796BD94556F4B4247694B /* LocalizableTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9130C2B263784128FE464B5E4A85F314 /* LocalizableTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E1E6FAC64729504610CCC40347B1FF14 /* ProgressArc.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AED9304837D7ABD1774BE008087A264 /* ProgressArc.m */; };
 		E20A0CCC2D8280E731D6B8A1349CA1AD /* PinCodeCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADA335B89AE264A467B9C81A07ECC7C9 /* PinCodeCardView.xib */; };
@@ -643,26 +641,25 @@
 		01792F2A8F8676595A78D2707A93F462 /* UIColor+Hex-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex-umbrella.h"; sourceTree = "<group>"; };
 		01984A54DAB0EC417060729C0CCF4199 /* MultiLineCellCardView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = MultiLineCellCardView.xib; sourceTree = "<group>"; };
 		01E7FF1E32D5289EF7F3273183675E54 /* DropDownViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DropDownViewController.m; sourceTree = "<group>"; };
-		0454B8A237278E61ADD6042511B16592 /* RSKImageCropper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RSKImageCropper.framework; path = RSKImageCropper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0454B8A237278E61ADD6042511B16592 /* RSKImageCropper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RSKImageCropper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0608B9F02A27E63B0CBB7DA151ADC728 /* RSKImageCropViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSKImageCropViewController.m; path = RSKImageCropper/RSKImageCropViewController.m; sourceTree = "<group>"; };
 		06674CD1D1B4F733997B4C076E24A9E3 /* RSKImageCropper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RSKImageCropper-dummy.m"; sourceTree = "<group>"; };
 		06B5079F40FB4704E138418BEF11A01D /* ExtendingCardView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = ExtendingCardView.xib; sourceTree = "<group>"; };
 		06BBBF9964FD29E87B2C7A92C24B988F /* AnaVodafoneTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AnaVodafoneTextField.m; path = VUIComponents/Classes/Components/AnaVodafoneTextField.m; sourceTree = "<group>"; };
-		06C5AC4FE1955CC1B6C500AF850BCEA0 /* BaseCardViewWithButtonsOld.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BaseCardViewWithButtonsOld.m; sourceTree = "<group>"; };
 		075E1CD772958537FC04787A2E9A8591 /* PagerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PagerView.m; sourceTree = "<group>"; };
 		08CD6F6ECE7DC5B2FF800BC928190FA5 /* INTUAnimationEngine.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = INTUAnimationEngine.modulemap; sourceTree = "<group>"; };
 		08E12B43092536389F63D5955A6CBCD8 /* INTUAnimationEngine-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "INTUAnimationEngine-dummy.m"; sourceTree = "<group>"; };
 		0922CD1C708C6904395214A80B85E036 /* UIColor+Hex-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex-prefix.pch"; sourceTree = "<group>"; };
 		097FB3594DA15239F4B04415E089EF6E /* NSAttributedString+CCLFormat-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+CCLFormat-dummy.m"; sourceTree = "<group>"; };
-		0B945A85D92249FE1D89D6D05F480D5D /* VodafoneRgBd.ttf */ = {isa = PBXFileReference; includeInIndex = 1; path = VodafoneRgBd.ttf; sourceTree = "<group>"; };
+		0B945A85D92249FE1D89D6D05F480D5D /* VodafoneRgBd.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; path = VodafoneRgBd.ttf; sourceTree = "<group>"; };
 		0BC26ABB31F68BF4950E72CAF17AA02A /* HeaderCardView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HeaderCardView.m; sourceTree = "<group>"; };
 		0BDB4D5D24E048836854B5A05DA53A98 /* ExpandableHeaderView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ExpandableHeaderView.h; sourceTree = "<group>"; };
 		0BFF5BA7DD44C06F84CD43D32D572FC8 /* VUIComponents-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VUIComponents-umbrella.h"; sourceTree = "<group>"; };
 		0C0C2CA2C3DACB5AEE77CEF6DFA67AED /* RSKImageCropperStrings.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = RSKImageCropperStrings.bundle; path = RSKImageCropper/RSKImageCropperStrings.bundle; sourceTree = "<group>"; };
 		0CF08751789867A4E3F5E2769F9F7E62 /* BaseDropDownView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BaseDropDownView.m; sourceTree = "<group>"; };
-		0D24AF4E4419CFE8FDBA3B0BAAD094F8 /* FormFieldOnCardsStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; path = FormFieldOnCardsStyle.json; sourceTree = "<group>"; };
+		0D24AF4E4419CFE8FDBA3B0BAAD094F8 /* FormFieldOnCardsStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; path = FormFieldOnCardsStyle.json; sourceTree = "<group>"; };
 		0D867EF0E44207F18D32CCC8B595326D /* MultiLineDropDownViewRTL.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = MultiLineDropDownViewRTL.xib; sourceTree = "<group>"; };
-		0E6FBC631318077F7801A383CC541F28 /* UIColor_Hex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = UIColor_Hex.framework; path = "UIColor+Hex.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E6FBC631318077F7801A383CC541F28 /* UIColor_Hex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIColor_Hex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EDBF67E7099D7A3E1A5854CF0537A10 /* CustomStretchyHeaderView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CustomStretchyHeaderView.h; sourceTree = "<group>"; };
 		0FA8A02FD1959E482B35A1DA6A22E5B9 /* UIView+GSKTransplantSubviews.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+GSKTransplantSubviews.h"; path = "GSKStretchyHeaderView/Classes/UIView+GSKTransplantSubviews.h"; sourceTree = "<group>"; };
 		0FECE54D551803F6AA461245F7CE1367 /* SignpostWithBigImgCardView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = SignpostWithBigImgCardView.xib; sourceTree = "<group>"; };
@@ -686,19 +683,19 @@
 		19A5AEB948124E33CAF1ABFA5ABDD840 /* GSKGeometry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GSKGeometry.h; path = GSKStretchyHeaderView/Classes/GSKGeometry.h; sourceTree = "<group>"; };
 		1A3A1E05C890C0F72EFE0B58F361E58E /* SimpleTextWithTitleCardView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = SimpleTextWithTitleCardView.xib; sourceTree = "<group>"; };
 		1AC64325309C68C048AFBF9C2F300EC7 /* SearchResultHeaderCardView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SearchResultHeaderCardView.h; sourceTree = "<group>"; };
-		1B96A9FE62E6CD537E2A092CED24DEB7 /* GSKGeometry.c */ = {isa = PBXFileReference; includeInIndex = 1; name = GSKGeometry.c; path = GSKStretchyHeaderView/Classes/GSKGeometry.c; sourceTree = "<group>"; };
+		1B96A9FE62E6CD537E2A092CED24DEB7 /* GSKGeometry.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = GSKGeometry.c; path = GSKStretchyHeaderView/Classes/GSKGeometry.c; sourceTree = "<group>"; };
 		1C53538B6B7828CCA434BB30C3A98C26 /* AlertCardViewWithImgAndTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AlertCardViewWithImgAndTextField.m; sourceTree = "<group>"; };
 		1C80A66C43F9838A7DA9F328F84F8951 /* Pods-VUIComponents_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VUIComponents_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		1CACDA41D8FBD8A3F82662991C754C58 /* TableCardView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = TableCardView.xib; sourceTree = "<group>"; };
 		1D3C86959F9BEB024D8B1A9A838A8A93 /* FSCalendarCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FSCalendarCollectionView.m; sourceTree = "<group>"; };
 		1E54931D5E3C62DB43080E71E6DB93CB /* MonthPickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MonthPickerView.h; sourceTree = "<group>"; };
 		1FFA3D7FB00AE5C77D6D1818F040B585 /* CommonCrypto-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CommonCrypto-prefix.pch"; sourceTree = "<group>"; };
-		2033C9EF97856C346C147554284FB420 /* GE_SS_Bold.otf */ = {isa = PBXFileReference; includeInIndex = 1; path = GE_SS_Bold.otf; sourceTree = "<group>"; };
+		2033C9EF97856C346C147554284FB420 /* GE_SS_Bold.otf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; path = GE_SS_Bold.otf; sourceTree = "<group>"; };
 		20461D404D256FB865178EBC71B0F53C /* BillsExpandedTableView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BillsExpandedTableView.m; sourceTree = "<group>"; };
 		20D13F3E5752A5DA2C6AA57AC81D8125 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2126C27EC8F1BB161ADDAA0092139C89 /* VodafoneLt.ttf */ = {isa = PBXFileReference; includeInIndex = 1; path = VodafoneLt.ttf; sourceTree = "<group>"; };
+		2126C27EC8F1BB161ADDAA0092139C89 /* VodafoneLt.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; path = VodafoneLt.ttf; sourceTree = "<group>"; };
 		2133AB766B44DA3F967C007BD621F70F /* VUIComponents.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VUIComponents.xcconfig; sourceTree = "<group>"; };
-		213A2F35DE66778AA29AEA743670C8C0 /* GE_SS_Text_Light.otf */ = {isa = PBXFileReference; includeInIndex = 1; path = GE_SS_Text_Light.otf; sourceTree = "<group>"; };
+		213A2F35DE66778AA29AEA743670C8C0 /* GE_SS_Text_Light.otf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; path = GE_SS_Text_Light.otf; sourceTree = "<group>"; };
 		219CC7432B7ED55BE9A798A8380E83B6 /* MultiLineDropDownView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MultiLineDropDownView.h; sourceTree = "<group>"; };
 		2219D4BD098586C5A00BD1466013BAE6 /* PagerCollectionViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = PagerCollectionViewCell.xib; sourceTree = "<group>"; };
 		223B89B86DA80080B71FCD2F0EF5C776 /* UIColor+Hex.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Hex.m"; path = "UIColor/UIColor+Hex.m"; sourceTree = "<group>"; };
@@ -718,14 +715,13 @@
 		270344D727AE40CCEE3EC0A8DD47431E /* PickerControllView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = PickerControllView.xib; sourceTree = "<group>"; };
 		27676659B4A7A7CB01A660322A2ECB2B /* SimpleCellCardView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SimpleCellCardView.h; sourceTree = "<group>"; };
 		27E6408958822855DD0E77AC70C0BA6A /* BaseCardView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BaseCardView.m; sourceTree = "<group>"; };
-		2821CC1E465B6A1C51C61B039DCC4BD2 /* OverlayButtonTertiaryStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; path = OverlayButtonTertiaryStyle.json; sourceTree = "<group>"; };
+		2821CC1E465B6A1C51C61B039DCC4BD2 /* OverlayButtonTertiaryStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; path = OverlayButtonTertiaryStyle.json; sourceTree = "<group>"; };
 		28282EE711545DA281D988874861D101 /* SearchResultHeaderCardView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = SearchResultHeaderCardView.xib; sourceTree = "<group>"; };
 		284CE90ACC919401AAE8CA6F0C8F63F0 /* NSData+CommonCrypto.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSData+CommonCrypto.m"; sourceTree = "<group>"; };
 		28BBFCE3540699F7FA7A9876B4A0B7CF /* SelectDateView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SelectDateView.m; sourceTree = "<group>"; };
 		2907C57FDF01B440650A133ED7CFEBAB /* BaseCardCollectionViewContainerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BaseCardCollectionViewContainerView.m; sourceTree = "<group>"; };
 		2940FAE1D40C2726A2B3839A3F3B38EF /* SimpleCellCardView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SimpleCellCardView.m; sourceTree = "<group>"; };
-		29E204E5486EF22B3D79FCD19EA35BB3 /* CardButtonSecondaryStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; path = CardButtonSecondaryStyle.json; sourceTree = "<group>"; };
-		2B39B92A04C41F567C237464402A7503 /* BaseCardViewWithButtonsOld.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BaseCardViewWithButtonsOld.h; sourceTree = "<group>"; };
+		29E204E5486EF22B3D79FCD19EA35BB3 /* CardButtonSecondaryStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; path = CardButtonSecondaryStyle.json; sourceTree = "<group>"; };
 		2BE94925B8E109514E6694E3D2D8D12E /* CGGeometry+RSKImageCropper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CGGeometry+RSKImageCropper.h"; path = "RSKImageCropper/CGGeometry+RSKImageCropper.h"; sourceTree = "<group>"; };
 		2C4278BB7F1A34B8944366BC365ED332 /* SearchHeaderComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SearchHeaderComponent.m; sourceTree = "<group>"; };
 		2CB11E3A5166C7153E86C709A524003F /* UIColor+Hex.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UIColor+Hex.xcconfig"; sourceTree = "<group>"; };
@@ -736,17 +732,17 @@
 		2E49BF3542399A52B1C3B780DB74E0EA /* ControlCardView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = ControlCardView.xib; sourceTree = "<group>"; };
 		2E8CAF31AA6633BAE1EBF5B48AAECC22 /* CalendarCardView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CalendarCardView.h; sourceTree = "<group>"; };
 		2E9EB4BAFE704C4CEB8F316482CD93E4 /* DeviceFunctionalityUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DeviceFunctionalityUtils.m; sourceTree = "<group>"; };
-		2F22152BA775B8431FDB5825975D2654 /* OverlayButtonSecondaryStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; path = OverlayButtonSecondaryStyle.json; sourceTree = "<group>"; };
+		2F22152BA775B8431FDB5825975D2654 /* OverlayButtonSecondaryStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; path = OverlayButtonSecondaryStyle.json; sourceTree = "<group>"; };
 		2F25212DF93AEBCA2D65AACA37345312 /* KVNRotationViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KVNRotationViewController.m; sourceTree = "<group>"; };
 		2F73E0D277450176F93F5ED0D2BA870B /* AnaVodafoneLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AnaVodafoneLabel.h; path = VUIComponents/Classes/Components/AnaVodafoneLabel.h; sourceTree = "<group>"; };
 		2FC08F0F4DCC0F158966D3ECE72EA0F6 /* BaseCardViewWithButtons.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BaseCardViewWithButtons.h; sourceTree = "<group>"; };
 		306B46C7EF0999B9DA04C13BDFAB7F22 /* SignpostWithBigImgCardViewRTL.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = SignpostWithBigImgCardViewRTL.xib; sourceTree = "<group>"; };
 		30CFCA7D7D4E2D14D111F8DCC489BDA8 /* INTUAnimationEngineDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = INTUAnimationEngineDefines.h; path = INTUAnimationEngine/INTUAnimationEngineDefines.h; sourceTree = "<group>"; };
-		31E203497935736CCE7F14B4C91034AE /* NSAttributedString_CCLFormat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NSAttributedString_CCLFormat.framework; path = "NSAttributedString+CCLFormat.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		31E203497935736CCE7F14B4C91034AE /* NSAttributedString_CCLFormat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NSAttributedString_CCLFormat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3419E63F8E7947D670810E3D09A558E8 /* LocalizableTextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LocalizableTextView.m; sourceTree = "<group>"; };
 		345BBD5CFAF8B8AD2B851A3033AD23FA /* TooltipView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TooltipView.h; sourceTree = "<group>"; };
 		368D091F07C84A4288F4643C4394F7D3 /* GSKStretchyHeaderView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GSKStretchyHeaderView.m; path = GSKStretchyHeaderView/Classes/GSKStretchyHeaderView.m; sourceTree = "<group>"; };
-		36D4577AA71E7B75E697797DF4AC241E /* INTUSpringSolver.c */ = {isa = PBXFileReference; includeInIndex = 1; name = INTUSpringSolver.c; path = INTUAnimationEngine/SpringSolver/INTUSpringSolver.c; sourceTree = "<group>"; };
+		36D4577AA71E7B75E697797DF4AC241E /* INTUSpringSolver.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = INTUSpringSolver.c; path = INTUAnimationEngine/SpringSolver/INTUSpringSolver.c; sourceTree = "<group>"; };
 		38656CC65BE757504911471C2F11D6A0 /* ConfirmationAlertCardView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ConfirmationAlertCardView.m; sourceTree = "<group>"; };
 		392A69975A6534DB4F8D8C19BAC82D9F /* BaseTableCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BaseTableCell.m; sourceTree = "<group>"; };
 		3954754EC5B5112608738854D5A30496 /* DropdownMenu.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DropdownMenu.m; sourceTree = "<group>"; };
@@ -761,7 +757,7 @@
 		404DEC7177E83B04F0815057557190FA /* HexColor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HexColor.m; sourceTree = "<group>"; };
 		40F0F0BA4C089882C2C78E0BF75A133C /* Pods-VUIComponents_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VUIComponents_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		4151F20189405853A52420EDFA777ED0 /* SignpostCardView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SignpostCardView.m; sourceTree = "<group>"; };
-		4276CC29434C4D7468CF49537EBD6EF1 /* CommonCrypto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CommonCrypto.framework; path = CommonCrypto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4276CC29434C4D7468CF49537EBD6EF1 /* CommonCrypto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CommonCrypto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42A6CDF2D575EF625211C5A3ADC30B84 /* Contact.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
 		42C44104370DD67F41AC1F87D9D4F083 /* SignpostsWithAvatarCardViewRTL.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = SignpostsWithAvatarCardViewRTL.xib; sourceTree = "<group>"; };
 		43C4F51A02CAA0D887AEC6506AB79A41 /* TableSignpostWithAvatarCardView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TableSignpostWithAvatarCardView.m; sourceTree = "<group>"; };
@@ -769,17 +765,17 @@
 		451D542B0343DD92D042FAAC28311E28 /* CustomDropDownStyleModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CustomDropDownStyleModel.h; sourceTree = "<group>"; };
 		45324257AE8E0477DF008A896035FB92 /* FSCalendarAppearance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FSCalendarAppearance.h; sourceTree = "<group>"; };
 		453C1CE425000D1FCF06D8DAC45A02EE /* DonationLikeCardView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = DonationLikeCardView.xib; sourceTree = "<group>"; };
-		459C7F440AEC9E80888495C206571950 /* DropDownOnOverlaysStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; path = DropDownOnOverlaysStyle.json; sourceTree = "<group>"; };
+		459C7F440AEC9E80888495C206571950 /* DropDownOnOverlaysStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; path = DropDownOnOverlaysStyle.json; sourceTree = "<group>"; };
 		45D72165D3CF38D6B1AA515D9AAAFAD7 /* VoiceOfVodafoneWelcomeCardView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VoiceOfVodafoneWelcomeCardView.h; sourceTree = "<group>"; };
 		45E23776AA5F387F6A83BC7F8DB1F9CF /* AlertCardViewWithImgandTable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AlertCardViewWithImgandTable.h; sourceTree = "<group>"; };
 		4602E393AB17869D0AE2295608B994A3 /* BillsView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BillsView.m; sourceTree = "<group>"; };
 		46491CBB0DF2B075436330BDED136E42 /* VoiceOfVodafoneNotificationCardView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VoiceOfVodafoneNotificationCardView.h; sourceTree = "<group>"; };
 		4667DC1C1421FFC153F6C9369C01E471 /* ExpandableBaseCardView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ExpandableBaseCardView.h; sourceTree = "<group>"; };
 		46D132E06E71AF3886DF8FB177107E7A /* BillsView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BillsView.h; sourceTree = "<group>"; };
-		47C8E6A5EB71311A2212137AE9C3483F /* HeroButtonTertiaryStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; path = HeroButtonTertiaryStyle.json; sourceTree = "<group>"; };
+		47C8E6A5EB71311A2212137AE9C3483F /* HeroButtonTertiaryStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; path = HeroButtonTertiaryStyle.json; sourceTree = "<group>"; };
 		484A4E676C5EA0BB22791BF5F806B0D1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48B246FB34D6B1C305CE7FC490F7874A /* ProfileHeaderCardView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ProfileHeaderCardView.h; sourceTree = "<group>"; };
-		48D102BA2E0FFE913057854A7E1FC126 /* HeroButtonPrimaryStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; path = HeroButtonPrimaryStyle.json; sourceTree = "<group>"; };
+		48D102BA2E0FFE913057854A7E1FC126 /* HeroButtonPrimaryStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; path = HeroButtonPrimaryStyle.json; sourceTree = "<group>"; };
 		48F12D383CA0C88D54AF1DF363E59FFA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4998ADC5F547A75025795B5B5D7A39DD /* RSKImageCropper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RSKImageCropper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A2BC9F03DD5464F72AB1F88F08F3E5C /* CustomStretchyHeaderView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = CustomStretchyHeaderView.xib; sourceTree = "<group>"; };
@@ -798,7 +794,7 @@
 		4F971F0CB8BC9853AEBB8427A405201B /* LanguageHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LanguageHandler.m; sourceTree = "<group>"; };
 		4FDFBD5158926458E46F4AFD2B9F15AF /* KVNProgressConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KVNProgressConfiguration.h; sourceTree = "<group>"; };
 		4FF7915DE840CA69D9EEE183A007C969 /* VoiceOfVodafoneWelcomeCardView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VoiceOfVodafoneWelcomeCardView.m; sourceTree = "<group>"; };
-		501B92C6AE5C01E0C76F2422FB6E9C4E /* PageNudgeButtonPrimaryStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; path = PageNudgeButtonPrimaryStyle.json; sourceTree = "<group>"; };
+		501B92C6AE5C01E0C76F2422FB6E9C4E /* PageNudgeButtonPrimaryStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; path = PageNudgeButtonPrimaryStyle.json; sourceTree = "<group>"; };
 		50766F8229BBA0F1A5ECCCFC4177811E /* ProfileHeaderView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = ProfileHeaderView.xib; sourceTree = "<group>"; };
 		5107F3B887EB5F395C7B6190E631996A /* INTUAnimationEngine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = INTUAnimationEngine.m; path = INTUAnimationEngine/INTUAnimationEngine.m; sourceTree = "<group>"; };
 		515176EAEC9BD09C475091231948B5DA /* TableCardView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TableCardView.h; sourceTree = "<group>"; };
@@ -837,13 +833,13 @@
 		61192482457B6250325384623D408EDD /* DropDownMenuTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DropDownMenuTableViewCell.h; sourceTree = "<group>"; };
 		615366F180DE613910611F98F2D1CA15 /* ExpandableHeaderView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = ExpandableHeaderView.xib; sourceTree = "<group>"; };
 		6219BF3D11A9C62BAF30182BD88AD5A2 /* HeaderCardView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HeaderCardView.h; sourceTree = "<group>"; };
-		6288A33F3D159672BCA5A7CC9DD246C2 /* GSKStretchyHeaderView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GSKStretchyHeaderView.framework; path = GSKStretchyHeaderView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6288A33F3D159672BCA5A7CC9DD246C2 /* GSKStretchyHeaderView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GSKStretchyHeaderView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6359F105D6F4C908F6875E195267D291 /* CommonCrypto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CommonCrypto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6445075F8F253A6B74354BC42B539460 /* VUIComponents-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VUIComponents-dummy.m"; sourceTree = "<group>"; };
 		64C2B1A8511B999FF1FF055351E15294 /* BaseCardWithHeaderTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BaseCardWithHeaderTableViewController.m; sourceTree = "<group>"; };
 		652EB3657AA351F8589EA2AC01A7E435 /* ErrorAlertView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ErrorAlertView.m; sourceTree = "<group>"; };
 		654DF15DDA2E3FC48A949B91891CB89F /* ExpandSignpostCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ExpandSignpostCell.m; sourceTree = "<group>"; };
-		664FE5A79F670F74B97859DF1CB3252A /* FormFieldOnOverlaysStyle2.json */ = {isa = PBXFileReference; includeInIndex = 1; path = FormFieldOnOverlaysStyle2.json; sourceTree = "<group>"; };
+		664FE5A79F670F74B97859DF1CB3252A /* FormFieldOnOverlaysStyle2.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; path = FormFieldOnOverlaysStyle2.json; sourceTree = "<group>"; };
 		66BE6E51CF1D83F27DD3578C95BBC33D /* InvalidTooltipView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = InvalidTooltipView.h; sourceTree = "<group>"; };
 		66E8E6122AC7F947E6A8A1C9D3634E3C /* DayPickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DayPickerView.h; sourceTree = "<group>"; };
 		6750666B97582B9F80D67D66A28F324D /* AlertView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = AlertView.xib; sourceTree = "<group>"; };
@@ -851,14 +847,14 @@
 		678D07B845B797EAB597182FC9B9D8E9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		68560B41C848CA68C44BB8B34B4B5E20 /* RSKInternalUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSKInternalUtility.m; path = RSKImageCropper/RSKInternalUtility.m; sourceTree = "<group>"; };
 		68A17CD91E42BACF04BE869125ABFEAB /* RSKImageCropViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSKImageCropViewController.h; path = RSKImageCropper/RSKImageCropViewController.h; sourceTree = "<group>"; };
-		69CB25C3472F66A3D33BF7463238D457 /* VUIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = VUIComponents.framework; path = VUIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		69CB25C3472F66A3D33BF7463238D457 /* VUIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VUIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A90210625ED5A0C98D15018AE01782C /* BaseCardTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BaseCardTableViewController.m; sourceTree = "<group>"; };
 		6C1AC4E34958AF9E269E6864F308B91B /* JWGCircleCounter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JWGCircleCounter-dummy.m"; sourceTree = "<group>"; };
-		6C26BFF256D776352C9E16051106FA53 /* WYPopoverController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WYPopoverController.framework; path = WYPopoverController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C26BFF256D776352C9E16051106FA53 /* WYPopoverController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WYPopoverController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CEEB76DC38B5BD2ED38922F99FFCA2D /* TableCardView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TableCardView.m; sourceTree = "<group>"; };
 		6DFDCA86A62329FEB3CDB5D5B05DB787 /* RadioButtonCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = RadioButtonCell.xib; sourceTree = "<group>"; };
 		6EEEB847354B984426F893A13B166D12 /* Pods-VUIComponents_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VUIComponents_Tests-dummy.m"; sourceTree = "<group>"; };
-		6F84428025549A793DC68453F065FF5E /* OverlayButtonPrimaryStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; path = OverlayButtonPrimaryStyle.json; sourceTree = "<group>"; };
+		6F84428025549A793DC68453F065FF5E /* OverlayButtonPrimaryStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; path = OverlayButtonPrimaryStyle.json; sourceTree = "<group>"; };
 		6FB6F154542D1CA24F1EF7D3BFD52F29 /* BaseCardCollectionViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BaseCardCollectionViewCell.h; sourceTree = "<group>"; };
 		6FE99DA3EA4FA3BEC2445327EC1A9CDE /* MonthPickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MonthPickerView.m; sourceTree = "<group>"; };
 		6FEC2B6BE008B409E12C16E317CE58AB /* SearchHeaderComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SearchHeaderComponent.h; sourceTree = "<group>"; };
@@ -868,11 +864,11 @@
 		7142E3189C0AA338CA0CE5526EC25745 /* SearchResultHeaderCardView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SearchResultHeaderCardView.m; sourceTree = "<group>"; };
 		7199DC29367A13AC42BBDBEF22E67ACE /* UIView+GSKTransplantSubviews.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+GSKTransplantSubviews.m"; path = "GSKStretchyHeaderView/Classes/UIView+GSKTransplantSubviews.m"; sourceTree = "<group>"; };
 		723A92F6236EEB18BF8FA6F76F4A663D /* RSKImageCropper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RSKImageCropper-prefix.pch"; sourceTree = "<group>"; };
-		72BFA9C1A72CA364344B574CC068FD40 /* VodafoneRg.ttf */ = {isa = PBXFileReference; includeInIndex = 1; path = VodafoneRg.ttf; sourceTree = "<group>"; };
+		72BFA9C1A72CA364344B574CC068FD40 /* VodafoneRg.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; path = VodafoneRg.ttf; sourceTree = "<group>"; };
 		72E4FD4B0785EFDB06E38D3F6E48066E /* YourMessageCardViewHeader.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = YourMessageCardViewHeader.xib; sourceTree = "<group>"; };
 		73C2DECADBED78489A864D6992142778 /* PagerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PagerView.h; sourceTree = "<group>"; };
 		73DA834865E8A21C678F3A0912401443 /* RSKImageCropper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSKImageCropper.h; path = RSKImageCropper/RSKImageCropper.h; sourceTree = "<group>"; };
-		744A7562CF08DCD7C4FC487C24C73C76 /* JWGCircleCounter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JWGCircleCounter.framework; path = JWGCircleCounter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		744A7562CF08DCD7C4FC487C24C73C76 /* JWGCircleCounter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JWGCircleCounter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		745A5187E137F0B9CD64820048CB105A /* UIImage+KVNImageEffects.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+KVNImageEffects.h"; sourceTree = "<group>"; };
 		74B09FB1F4749480EB07DCC86954DE5C /* CvvTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CvvTextField.h; sourceTree = "<group>"; };
 		7598F8B054F0B6B1C62C5095C1651767 /* TableCardModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TableCardModel.m; sourceTree = "<group>"; };
@@ -880,13 +876,13 @@
 		75EE0E63B05DE0516767DA1EBA2E864B /* AnaVodafoneTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AnaVodafoneTextField.h; path = VUIComponents/Classes/Components/AnaVodafoneTextField.h; sourceTree = "<group>"; };
 		76B08CD7871124DD6958D04BAD00D63A /* LoadingCardView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LoadingCardView.h; sourceTree = "<group>"; };
 		7720F66F0ADF8EC89F7F7BF9B21851B0 /* AddonAlertCardView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AddonAlertCardView.m; sourceTree = "<group>"; };
-		776157F8DC876C9592EEE31BB77CA588 /* GlamourAnimation.js */ = {isa = PBXFileReference; includeInIndex = 1; path = GlamourAnimation.js; sourceTree = "<group>"; };
+		776157F8DC876C9592EEE31BB77CA588 /* GlamourAnimation.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; path = GlamourAnimation.js; sourceTree = "<group>"; };
 		77ABB34BC4FAAED05FB796009CE19A40 /* LocalizableTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LocalizableTextField.m; sourceTree = "<group>"; };
 		7818B8D8FE7E742A90A8BE22B575A24F /* StatusConfirmationCardView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = StatusConfirmationCardView.h; sourceTree = "<group>"; };
 		787D00151F19F8DF2311C5A49DFDDE39 /* ExpandCellCardModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ExpandCellCardModel.h; sourceTree = "<group>"; };
 		78FA7A5BE65522C40FC4A5848F2919F1 /* KVNProgressView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = KVNProgressView.xib; sourceTree = "<group>"; };
 		792FF9D403E3B2E9034AA2C74552A652 /* Pods-VUIComponents_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VUIComponents_Example-resources.sh"; sourceTree = "<group>"; };
-		7978A4019561CB65BD2A5F4F832E1D88 /* CardButtonPrimaryStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; path = CardButtonPrimaryStyle.json; sourceTree = "<group>"; };
+		7978A4019561CB65BD2A5F4F832E1D88 /* CardButtonPrimaryStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; path = CardButtonPrimaryStyle.json; sourceTree = "<group>"; };
 		7A125EF554C2FC372574DBFE26B5A7FD /* WYPopoverController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WYPopoverController.m; path = WYPopoverController/WYPopoverController.m; sourceTree = "<group>"; };
 		7A77C72F60D013D88442A60CDCC194C0 /* image_tooltip_invalidRtl.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = image_tooltip_invalidRtl.png; sourceTree = "<group>"; };
 		7A812EEA80D9453B6CED5A2BE57EAE94 /* JWGCircleCounter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JWGCircleCounter.xcconfig; sourceTree = "<group>"; };
@@ -904,12 +900,12 @@
 		8011E85797733EF6FC748F251046B462 /* VUIComponents-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VUIComponents-prefix.pch"; sourceTree = "<group>"; };
 		804FFFE3EDF88EBD18F7C2D0B2D67EA2 /* ConfirmationAlertCardView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = ConfirmationAlertCardView.xib; sourceTree = "<group>"; };
 		80A6B0856AD9BAE5428CC77233AECD45 /* SearchResultCardView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SearchResultCardView.h; sourceTree = "<group>"; };
-		8175D228497A83938B72F972CA127797 /* FormFieldOnOverlaysStyle4.json */ = {isa = PBXFileReference; includeInIndex = 1; path = FormFieldOnOverlaysStyle4.json; sourceTree = "<group>"; };
-		81E54F232D28ECC27E5BB8D31CAE7795 /* PageNudgeButtonSecondaryStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; path = PageNudgeButtonSecondaryStyle.json; sourceTree = "<group>"; };
+		8175D228497A83938B72F972CA127797 /* FormFieldOnOverlaysStyle4.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; path = FormFieldOnOverlaysStyle4.json; sourceTree = "<group>"; };
+		81E54F232D28ECC27E5BB8D31CAE7795 /* PageNudgeButtonSecondaryStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; path = PageNudgeButtonSecondaryStyle.json; sourceTree = "<group>"; };
 		81ECABBCF9D46DE7528BB6AFFD3F45CD /* INTUAnimationEngine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = INTUAnimationEngine.h; path = INTUAnimationEngine/INTUAnimationEngine.h; sourceTree = "<group>"; };
 		8247D2C9CC64A0CBA2A89A2C2B93EA0A /* BaseCardTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BaseCardTableViewCell.h; sourceTree = "<group>"; };
 		82D7E1648D7A4DE6E63EACE7B1827DF1 /* CustomButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CustomButton.h; sourceTree = "<group>"; };
-		82FAACB464B7BEC4890A2B6E4FCB5D79 /* GlamourAnimation.css */ = {isa = PBXFileReference; includeInIndex = 1; path = GlamourAnimation.css; sourceTree = "<group>"; };
+		82FAACB464B7BEC4890A2B6E4FCB5D79 /* GlamourAnimation.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; path = GlamourAnimation.css; sourceTree = "<group>"; };
 		84EF666306B56658E275635DAA4AF8BF /* TPPropertyAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TPPropertyAnimation.h; sourceTree = "<group>"; };
 		855BEE42ECD65E4DC100C48F5B7A74D4 /* BillsView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = BillsView.xib; sourceTree = "<group>"; };
 		85AEF4825654B5E5E6944A563409786C /* BaseCellCardView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BaseCellCardView.h; sourceTree = "<group>"; };
@@ -917,7 +913,7 @@
 		862D3273C0FC7739E53A6549393F32AA /* PinCodeCardView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PinCodeCardView.h; sourceTree = "<group>"; };
 		86A4332C213E58D6EB6659788EE0D945 /* HeaderCardView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = HeaderCardView.xib; sourceTree = "<group>"; };
 		8714FD7166D51B6538E18ADF2669062B /* StatusConfirmationCardView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = StatusConfirmationCardView.m; sourceTree = "<group>"; };
-		8744877DD1EF481DD7C7DCCAD2BB5BB1 /* Pods_VUIComponents_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_VUIComponents_Example.framework; path = "Pods-VUIComponents_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8744877DD1EF481DD7C7DCCAD2BB5BB1 /* Pods_VUIComponents_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VUIComponents_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		875F7F4FFB79E267B4B767D6945DA3DC /* JWGCircleCounter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JWGCircleCounter.h; path = JWGCircleCounter/JWGCircleCounter.h; sourceTree = "<group>"; };
 		87751FAD8C202A68E2805BA963DFCBFE /* FSCalendarDelegationProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FSCalendarDelegationProxy.m; sourceTree = "<group>"; };
 		880CC36874C9ACC54A042817623C38FA /* CellCardViewImgWithSelectedOnly.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CellCardViewImgWithSelectedOnly.m; sourceTree = "<group>"; };
@@ -927,7 +923,7 @@
 		8A25400538D5633805BCC1F1DF464384 /* TableCardModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TableCardModel.h; sourceTree = "<group>"; };
 		8AA6CD3BC6895262791DFA3D36A1CFCE /* FSCalendarTransitionCoordinator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FSCalendarTransitionCoordinator.h; sourceTree = "<group>"; };
 		8ADA84809578C667771E69F108A46513 /* WYPopoverController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WYPopoverController-dummy.m"; sourceTree = "<group>"; };
-		8ADB22D6A55F25BE4B16CB3384DEADB3 /* HeroButtonSecondaryStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; path = HeroButtonSecondaryStyle.json; sourceTree = "<group>"; };
+		8ADB22D6A55F25BE4B16CB3384DEADB3 /* HeroButtonSecondaryStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; path = HeroButtonSecondaryStyle.json; sourceTree = "<group>"; };
 		8B07C517C9C6633960FEDC73F63D837F /* FSCalendarExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FSCalendarExtensions.m; sourceTree = "<group>"; };
 		8B1A6D2767B10BE6953826F0E866B566 /* INTUInterpolationFunctions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = INTUInterpolationFunctions.m; path = INTUAnimationEngine/INTUInterpolationFunctions.m; sourceTree = "<group>"; };
 		8B76A7BB943E22A69E4CBE6F9E863963 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -949,7 +945,7 @@
 		92FECF21CA59008EED5B6B5F83A9ADA9 /* ProfileHeaderView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ProfileHeaderView.h; sourceTree = "<group>"; };
 		930A878ABE071CEF89CA38D9FBAB23C4 /* ExpandSignpostCellRTL.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = ExpandSignpostCellRTL.xib; sourceTree = "<group>"; };
 		9342C985776D192C32FBFEF170424AFE /* Pods-VUIComponents_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VUIComponents_Example-dummy.m"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		93BC234F67579EA69953C26E9BACD710 /* RegisterationChildStepperView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RegisterationChildStepperView.m; sourceTree = "<group>"; };
 		94CDB8843E7A182682BE11DDE13DB2A3 /* ValidationTextFieldStyleModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ValidationTextFieldStyleModel.h; sourceTree = "<group>"; };
 		94F8FE48BCE662E340192453B0B971F8 /* ListItemCardView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ListItemCardView.h; sourceTree = "<group>"; };
@@ -968,7 +964,7 @@
 		9AF50537B3F7936F26E66D4D4CE23382 /* SignpostWithBigImgCardView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SignpostWithBigImgCardView.h; sourceTree = "<group>"; };
 		9B15D94694C0366E8272F55E14959DA2 /* ControlCardView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ControlCardView.h; sourceTree = "<group>"; };
 		9C1BBE14207F74DC301359F388D2A256 /* WelcomeBackCard.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = WelcomeBackCard.xib; sourceTree = "<group>"; };
-		9C6C8442DFC8FAA009BE2C69D1C6099B /* VodafoneAR_NumEn.otf */ = {isa = PBXFileReference; includeInIndex = 1; path = VodafoneAR_NumEn.otf; sourceTree = "<group>"; };
+		9C6C8442DFC8FAA009BE2C69D1C6099B /* VodafoneAR_NumEn.otf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; path = VodafoneAR_NumEn.otf; sourceTree = "<group>"; };
 		9CD6A093F903BC8615982B3B64BAE55E /* WYPopoverController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WYPopoverController-umbrella.h"; sourceTree = "<group>"; };
 		9CDE57F8EE8537A4AFDF2A2FE476713E /* MultiDropDownModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MultiDropDownModel.m; sourceTree = "<group>"; };
 		9D1257415F7D9BE2A72B695F4FB6E405 /* Pods-VUIComponents_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VUIComponents_Tests-resources.sh"; sourceTree = "<group>"; };
@@ -1010,12 +1006,12 @@
 		AC837D9854769CE59F19E681D6046169 /* ExpandSignpostCellRTL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ExpandSignpostCellRTL.m; sourceTree = "<group>"; };
 		ADA335B89AE264A467B9C81A07ECC7C9 /* PinCodeCardView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = PinCodeCardView.xib; sourceTree = "<group>"; };
 		ADC7E565DD8C802F4B1CA726CE24EF33 /* PickerSubView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PickerSubView.m; sourceTree = "<group>"; };
-		AE28AB2CC9A45B2A385BFC1EBFE97655 /* VUIComponents.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = VUIComponents.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AE28AB2CC9A45B2A385BFC1EBFE97655 /* VUIComponents.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = VUIComponents.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AE74E50223CDD36DA46E21BA62042EB8 /* SelectDateView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = SelectDateView.xib; sourceTree = "<group>"; };
 		AEBC28FC0194E73DB617EE66A5D132C5 /* LocalizableButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LocalizableButton.h; sourceTree = "<group>"; };
 		AF3ED5670C12E98E3F9B64CE4F2CF8F3 /* WYPopoverController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WYPopoverController.modulemap; sourceTree = "<group>"; };
 		AFA3F58CAE510D58B810D6EF51EC2075 /* INTUAnimationEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = INTUAnimationEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B09ACAC545F8745D7B6CD0DC18F865F0 /* INTUAnimationEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = INTUAnimationEngine.framework; path = INTUAnimationEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B09ACAC545F8745D7B6CD0DC18F865F0 /* INTUAnimationEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = INTUAnimationEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0F0E0C2C9FE822302985CFF8ED13D2E /* CommonCrypto.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CommonCrypto.xcconfig; sourceTree = "<group>"; };
 		B1677AD011A39E358932E61E4BC5E01D /* FSCalendarStickyHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FSCalendarStickyHeader.m; sourceTree = "<group>"; };
 		B200ED85465B82EC4ECC0D2AF1F6E206 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -1024,7 +1020,7 @@
 		B46C70DB459AA4859B467BC91B926DFD /* AlertCardViewWithImgAndTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AlertCardViewWithImgAndTextField.h; sourceTree = "<group>"; };
 		B5F23B12F2CBC9FC333D8FB992E7D0DF /* KVNProgress.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KVNProgress.m; sourceTree = "<group>"; };
 		B5F331D34D2F7A56BBBD89E89B653605 /* DayPickerView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = DayPickerView.xib; sourceTree = "<group>"; };
-		B658F26CBB8A65570674DDA662316953 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		B658F26CBB8A65570674DDA662316953 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		B74C1F7C47090DB51A2C453BEDE7FF0A /* MultiLineRadioButtonCellModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MultiLineRadioButtonCellModel.h; sourceTree = "<group>"; };
 		B796F9DFF9F729D63531E5F8F2A1FFDF /* DeviceFunctionalityUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DeviceFunctionalityUtils.h; sourceTree = "<group>"; };
 		B7A1D36C59266C20BD83F9E5D065B5D7 /* ExpandSignpostCellRTL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ExpandSignpostCellRTL.h; sourceTree = "<group>"; };
@@ -1036,7 +1032,7 @@
 		BAA163B193CD7A189D81E0523B48FCBB /* FSCalendarScopeHandle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FSCalendarScopeHandle.m; sourceTree = "<group>"; };
 		BB134B76609602F2552821D3D7FE0510 /* FSCalendarStickyHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FSCalendarStickyHeader.h; sourceTree = "<group>"; };
 		BB1AF82F066E1F658E4F43B4EBB03C06 /* Utilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
-		BB2BBC6CFF0E9694B476A66024C2E3AB /* DropDownOnCardsStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; path = DropDownOnCardsStyle.json; sourceTree = "<group>"; };
+		BB2BBC6CFF0E9694B476A66024C2E3AB /* DropDownOnCardsStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; path = DropDownOnCardsStyle.json; sourceTree = "<group>"; };
 		BC907284266152B8E9AE19A170575C2C /* FSCalendarConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FSCalendarConstants.h; sourceTree = "<group>"; };
 		BD3D15BD54170877344497C5D4A6FC23 /* MultiLineDropDownView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = MultiLineDropDownView.xib; sourceTree = "<group>"; };
 		BDCD4C3841D5EF564F6BFFED0BAE6953 /* FSCalendar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FSCalendar.m; sourceTree = "<group>"; };
@@ -1046,7 +1042,7 @@
 		C1892DA3D064D07EB274369BFAC96ACC /* FSCalendarCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FSCalendarCell.h; sourceTree = "<group>"; };
 		C1E424A4BFEDAD1BCB2874FB2CA07909 /* CommonCrypto.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CommonCrypto.modulemap; sourceTree = "<group>"; };
 		C2CCBF92D8856C247E02EC9463908CB7 /* DonationLikeCardView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DonationLikeCardView.h; sourceTree = "<group>"; };
-		C4179FA1CC912A102D45DFF4DF8F4032 /* CardButtonTertiaryStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; path = CardButtonTertiaryStyle.json; sourceTree = "<group>"; };
+		C4179FA1CC912A102D45DFF4DF8F4032 /* CardButtonTertiaryStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; path = CardButtonTertiaryStyle.json; sourceTree = "<group>"; };
 		C52F2D3EBA42698CAEF1F5F3A62F2A36 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C54352BEB6DA8D41AE9B775718C0E3B7 /* AlertView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AlertView.h; sourceTree = "<group>"; };
 		C6132ED0E2E7A1EECA1C194843483167 /* SearchResultCardView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = SearchResultCardView.xib; sourceTree = "<group>"; };
@@ -1067,7 +1063,7 @@
 		CD3E49F8670720F97FD25E6087CD9458 /* KAProgressLabelVF.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KAProgressLabelVF.m; sourceTree = "<group>"; };
 		CD713C58D74F27DB70EBD9542E2CC51E /* UIImage+KVNImageEffects.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImage+KVNImageEffects.m"; sourceTree = "<group>"; };
 		CDB1B824496C7A440D13B0E6ED92CF5E /* RegisterationChildStepperView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RegisterationChildStepperView.h; sourceTree = "<group>"; };
-		CDBC42F0FD639B1363C90649587FF4BB /* GE_SS_Two_Light.otf */ = {isa = PBXFileReference; includeInIndex = 1; path = GE_SS_Two_Light.otf; sourceTree = "<group>"; };
+		CDBC42F0FD639B1363C90649587FF4BB /* GE_SS_Two_Light.otf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; path = GE_SS_Two_Light.otf; sourceTree = "<group>"; };
 		CDC98E2446176B6F813D16D46222B1E7 /* ErrorAlertView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ErrorAlertView.h; sourceTree = "<group>"; };
 		CDDAF6CECF94414400D0DEF61BF196EE /* AlertCardViewWithImg.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AlertCardViewWithImg.m; sourceTree = "<group>"; };
 		CE09623AA2310B65170CE72CEB8CD2C5 /* NSAttributedString_CCLFormat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NSAttributedString_CCLFormat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1082,7 +1078,7 @@
 		D0C7681358107CA654838EF9E1BE6603 /* YearPickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = YearPickerView.m; sourceTree = "<group>"; };
 		D102D6BC77A24356C41C166E99821AEF /* SimpleTextCardView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SimpleTextCardView.m; sourceTree = "<group>"; };
 		D122DE06335F2170C1E4B6FECBF5D851 /* SpinningView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SpinningView.m; sourceTree = "<group>"; };
-		D14F364104E011B85308467CEB29AFD9 /* GE SS Two Medium.otf */ = {isa = PBXFileReference; includeInIndex = 1; path = "GE SS Two Medium.otf"; sourceTree = "<group>"; };
+		D14F364104E011B85308467CEB29AFD9 /* GE SS Two Medium.otf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; path = "GE SS Two Medium.otf"; sourceTree = "<group>"; };
 		D18590AB1E97403FFEA2883E6B18A8C9 /* MonthPickerView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = MonthPickerView.xib; sourceTree = "<group>"; };
 		D1EC1862872D9D741ED1D31FDF4F434B /* YourMessageCardViewHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YourMessageCardViewHeader.h; sourceTree = "<group>"; };
 		D20EDB9B3C613D40626FF118AAD2A4F0 /* NSAttributedString+CCLFormat.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "NSAttributedString+CCLFormat.modulemap"; sourceTree = "<group>"; };
@@ -1097,9 +1093,9 @@
 		D41FC352EFDD2B720C4B22B5AE6147D3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4A3C0C60045F27C893E649D0384B219 /* TooltipView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TooltipView.m; sourceTree = "<group>"; };
 		D5AB626936FA7AFC6DD896D57E382A81 /* ValidationTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ValidationTextField.h; sourceTree = "<group>"; };
-		D60179B0080D39CC4B9F14C7FCF3EDC6 /* GlamourAnimation.html */ = {isa = PBXFileReference; includeInIndex = 1; path = GlamourAnimation.html; sourceTree = "<group>"; };
+		D60179B0080D39CC4B9F14C7FCF3EDC6 /* GlamourAnimation.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; path = GlamourAnimation.html; sourceTree = "<group>"; };
 		D68FF5AD878376A5849960165848074F /* UIScrollView+GSKStretchyHeaderView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+GSKStretchyHeaderView.h"; path = "GSKStretchyHeaderView/Classes/Private/UIScrollView+GSKStretchyHeaderView.h"; sourceTree = "<group>"; };
-		D6A3EFC19E7F837EDE42EBD7CB0556E5 /* ar.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = ar.lproj; sourceTree = "<group>"; };
+		D6A3EFC19E7F837EDE42EBD7CB0556E5 /* ar.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = ar.lproj; sourceTree = "<group>"; };
 		D6B54601E8221117B3EF9433843A4DAE /* CGGeometry+RSKImageCropper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CGGeometry+RSKImageCropper.m"; path = "RSKImageCropper/CGGeometry+RSKImageCropper.m"; sourceTree = "<group>"; };
 		D6E84A2B822DE542083412C3166DC9F3 /* Pods-VUIComponents_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VUIComponents_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		D75B534F92F8CE175E06FE53682AEA4A /* ValidationTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ValidationTextField.m; sourceTree = "<group>"; };
@@ -1115,11 +1111,11 @@
 		DA4FC34EC191251575A631DD6B65E64D /* WYPopoverController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WYPopoverController-prefix.pch"; sourceTree = "<group>"; };
 		DA55ED0FB76D6049502812E32A43C26C /* PaymentInfoCardView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = PaymentInfoCardView.xib; sourceTree = "<group>"; };
 		DAB42CC201266E150F1FF9480A3A1101 /* BillsView_RTL.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = BillsView_RTL.xib; sourceTree = "<group>"; };
-		DB09D009697DE58AC8B7813CF97A11D6 /* Base.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = Base.lproj; sourceTree = "<group>"; };
+		DB09D009697DE58AC8B7813CF97A11D6 /* Base.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = Base.lproj; sourceTree = "<group>"; };
 		DBA8D28C883F30F8F5132FA93DC9935F /* AnaVodafoneLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AnaVodafoneLabel.m; path = VUIComponents/Classes/Components/AnaVodafoneLabel.m; sourceTree = "<group>"; };
 		DC0358238C504C8DDD8EBBB649D88064 /* Pods-VUIComponents_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VUIComponents_Example-umbrella.h"; sourceTree = "<group>"; };
 		DC13CF2513FB1F569EB1CC9CE2A050EE /* Pods-VUIComponents_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VUIComponents_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		DC5EE5EB9536D64FF2254BB9047174BD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		DC5EE5EB9536D64FF2254BB9047174BD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DCCBD99BF2E87623FC90692553AEBCCE /* JWGCircleCounter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JWGCircleCounter-prefix.pch"; sourceTree = "<group>"; };
 		DDC84E9FFCA1543C2DEEE4B5DAF70CD9 /* ControlCardView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ControlCardView.m; sourceTree = "<group>"; };
 		DE37708797CB2C31C372C4B94D44D8FA /* SimpleTextCardView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = SimpleTextCardView.xib; sourceTree = "<group>"; };
@@ -1148,7 +1144,7 @@
 		EB125DF757BCCACD5C7401A97E4995F7 /* AlertCardViewWithImgandTable.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = AlertCardViewWithImgandTable.xib; sourceTree = "<group>"; };
 		EBB5506C071DCD603A4AE4419ABF03E0 /* NSAttributedString+CCLFormat-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+CCLFormat-umbrella.h"; sourceTree = "<group>"; };
 		EBC92971D632A26E891FD8FB4186E8EE /* VoiceOfVodafoneNotificationCardView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VoiceOfVodafoneNotificationCardView.m; sourceTree = "<group>"; };
-		EC0A015365B1EB9AF031DD7C759DD4B8 /* ExternalGlamourAnimation.js */ = {isa = PBXFileReference; includeInIndex = 1; path = ExternalGlamourAnimation.js; sourceTree = "<group>"; };
+		EC0A015365B1EB9AF031DD7C759DD4B8 /* ExternalGlamourAnimation.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; path = ExternalGlamourAnimation.js; sourceTree = "<group>"; };
 		ECF3B82E6FC55A6470D061E6C592EC7D /* CommonCrypto-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CommonCrypto-umbrella.h"; sourceTree = "<group>"; };
 		ED0D3956351B223F9C157DFD90DD76EF /* BaseCardTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BaseCardTableViewCell.m; sourceTree = "<group>"; };
 		ED3B9E5EEAAF5B6965313927E5E4D7E1 /* DropDownMenuTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = DropDownMenuTableViewCell.xib; sourceTree = "<group>"; };
@@ -1168,23 +1164,23 @@
 		F44D68173ACBF2B12B48239059776BBE /* DropdownMenu.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DropdownMenu.h; sourceTree = "<group>"; };
 		F500C604A535B9AE5C31E65F3CA87BD1 /* PaybillCardView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PaybillCardView.m; sourceTree = "<group>"; };
 		F5C7BDB60162EC4DFCCFCBB61E0339F8 /* AlertCardViewWithImgandTable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AlertCardViewWithImgandTable.m; sourceTree = "<group>"; };
-		F5F0F89403A4FD273F4B50ECE3AFA1E4 /* HeroButtonTertiaryStyleWithoutBorder.json */ = {isa = PBXFileReference; includeInIndex = 1; path = HeroButtonTertiaryStyleWithoutBorder.json; sourceTree = "<group>"; };
+		F5F0F89403A4FD273F4B50ECE3AFA1E4 /* HeroButtonTertiaryStyleWithoutBorder.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; path = HeroButtonTertiaryStyleWithoutBorder.json; sourceTree = "<group>"; };
 		F6B337F3C0C8755932331762BB60FB7A /* ExtendingCardViewRTL.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = ExtendingCardViewRTL.xib; sourceTree = "<group>"; };
 		F74E67E169DDBCB013D92ACED010522D /* LoadingCardView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = LoadingCardView.xib; sourceTree = "<group>"; };
 		F78BF02E50A4ADFF8A6878A82B861D8E /* InputIconTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = InputIconTextField.h; sourceTree = "<group>"; };
 		F7A08E0DBCD5CF7D6857520142637F05 /* JWGCircleCounter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JWGCircleCounter-umbrella.h"; sourceTree = "<group>"; };
 		F7CAD45E5991EF37277E92162C996C4F /* BaseCellCardView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BaseCellCardView.m; sourceTree = "<group>"; };
-		F80251EB92D4AD34B961B16ED1DCC350 /* Pods_VUIComponents_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_VUIComponents_Tests.framework; path = "Pods-VUIComponents_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F80251EB92D4AD34B961B16ED1DCC350 /* Pods_VUIComponents_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VUIComponents_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F85C1A3FE0EB94EF9F9AD2A63DF932CE /* YourMessageCardView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YourMessageCardView.h; sourceTree = "<group>"; };
 		F8E8C6B53B66304B70E41FF04AC7EB7D /* GetKeyChildStepperView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GetKeyChildStepperView.m; sourceTree = "<group>"; };
 		F91C5695B697765FF02349D752A507A8 /* TextFieldCardView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TextFieldCardView.m; sourceTree = "<group>"; };
 		F9D24AF1A153FEDA0D7ACF0FE2468A5B /* ExpandableHeaderView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ExpandableHeaderView.m; sourceTree = "<group>"; };
 		F9D7DC32E9BD2F2711DC4FB4DE9BE5F6 /* StatusConfirmationCardView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = StatusConfirmationCardView.xib; sourceTree = "<group>"; };
 		FC10FD0666EA49C12B8F2D4BB4C4396A /* SignpostsWithAvatarCardView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = SignpostsWithAvatarCardView.xib; sourceTree = "<group>"; };
-		FCD688695678701FEDE1FCBBC9BBAF0F /* FormFieldOnOverlaysStyle3.json */ = {isa = PBXFileReference; includeInIndex = 1; path = FormFieldOnOverlaysStyle3.json; sourceTree = "<group>"; };
+		FCD688695678701FEDE1FCBBC9BBAF0F /* FormFieldOnOverlaysStyle3.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; path = FormFieldOnOverlaysStyle3.json; sourceTree = "<group>"; };
 		FEA5C18AC917ED8264617D3FDF77FAFD /* BaseTableCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BaseTableCell.h; sourceTree = "<group>"; };
 		FEACD5CD0F91552BEEA5EB94D297BF21 /* PinCodeCardView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PinCodeCardView.m; sourceTree = "<group>"; };
-		FF4D791BE5256709E3F94A34BC5AD910 /* MgmButtonStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; path = MgmButtonStyle.json; sourceTree = "<group>"; };
+		FF4D791BE5256709E3F94A34BC5AD910 /* MgmButtonStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; path = MgmButtonStyle.json; sourceTree = "<group>"; };
 		FF9F276643DA65B9A2EDE63F5B0A0307 /* ProfileHeaderView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ProfileHeaderView.m; sourceTree = "<group>"; };
 		FFC539544CD95C6367F9C44384F53A75 /* Pods-VUIComponents_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VUIComponents_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		FFE02739208CCC20A5C2D4B0F44BF9C6 /* FSCalendarCollectionViewLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FSCalendarCollectionViewLayout.h; sourceTree = "<group>"; };
@@ -1312,7 +1308,6 @@
 				7AE67BA45BB2B783D4F788C75F603FC0 /* YearPickerView.h */,
 				D0C7681358107CA654838EF9E1BE6603 /* YearPickerView.m */,
 			);
-			name = DatePicker;
 			path = DatePicker;
 			sourceTree = "<group>";
 		};
@@ -1336,7 +1331,6 @@
 				7F4B861C61A7F5EBB3C67DF2B8588BAE /* ViewWithTitle.h */,
 				B283F67A67C10FB952F85905676B3007 /* ViewWithTitle.m */,
 			);
-			name = ViewWithTitle;
 			path = ViewWithTitle;
 			sourceTree = "<group>";
 		};
@@ -1366,7 +1360,6 @@
 				2E8CAF31AA6633BAE1EBF5B48AAECC22 /* CalendarCardView.h */,
 				7F84CF07175D7B0DE2E1125E2633739A /* CalendarCardView.m */,
 			);
-			name = CalenderView;
 			path = CalenderView;
 			sourceTree = "<group>";
 		};
@@ -1375,7 +1368,6 @@
 			children = (
 				E5E2499018E4163F714C4230F62A5115 /* ViewWithTitle.xib */,
 			);
-			name = ViewWithTitle;
 			path = ViewWithTitle;
 			sourceTree = "<group>";
 		};
@@ -1385,7 +1377,6 @@
 				C9BF36F19BA4B38C7FC4F634AA0E5ECF /* BillsExpandedTableView.h */,
 				20461D404D256FB865178EBC71B0F53C /* BillsExpandedTableView.m */,
 			);
-			name = billsExpandedTableView;
 			path = billsExpandedTableView;
 			sourceTree = "<group>";
 		};
@@ -1395,7 +1386,6 @@
 				C54352BEB6DA8D41AE9B775718C0E3B7 /* AlertView.h */,
 				D3A5A9E7F955272213512D0FF0E023E9 /* AlertView.m */,
 			);
-			name = "Alert page";
 			path = "Alert page";
 			sourceTree = "<group>";
 		};
@@ -1408,7 +1398,6 @@
 				88E6AA08C1C4A8BBE99C2C08A9A6D903 /* WYStoryboardPopoverSegue.m */,
 				A7E81CE67EC33BE7766CC7150ED1A337 /* Support Files */,
 			);
-			name = WYPopoverController;
 			path = WYPopoverController;
 			sourceTree = "<group>";
 		};
@@ -1448,7 +1437,6 @@
 				9E699FFC0FB5A7797044504249CFB3ED /* BaseCardCollectionViewContainerView.h */,
 				2907C57FDF01B440650A133ED7CFEBAB /* BaseCardCollectionViewContainerView.m */,
 			);
-			name = Base;
 			path = Base;
 			sourceTree = "<group>";
 		};
@@ -1480,7 +1468,6 @@
 			children = (
 				4F27F47BF10772AE1E6CF2057063D4B5 /* ToolTipViewImages */,
 			);
-			name = ToolTipView;
 			path = ToolTipView;
 			sourceTree = "<group>";
 		};
@@ -1489,7 +1476,6 @@
 			children = (
 				09B182691FD0CBFC0432131CD1AB2669 /* CalenderView */,
 			);
-			name = CalendarCardView;
 			path = CalendarCardView;
 			sourceTree = "<group>";
 		};
@@ -1499,7 +1485,6 @@
 				13293BD6D4498E5438783175A73E6C98 /* SpinningView.h */,
 				D122DE06335F2170C1E4B6FECBF5D851 /* SpinningView.m */,
 			);
-			name = SpinningView;
 			path = SpinningView;
 			sourceTree = "<group>";
 		};
@@ -1512,7 +1497,6 @@
 				2766AAE2DB832B6A76B2B897ED284A9C /* SKDropDown */,
 				3A85138AE30AE5FA5EEED95CB3C885D1 /* View */,
 			);
-			name = DropDown;
 			path = DropDown;
 			sourceTree = "<group>";
 		};
@@ -1533,7 +1517,6 @@
 				4B3F49726FD286D008B39A2D535EF5E4 /* DropDownViewController.h */,
 				01E7FF1E32D5289EF7F3273183675E54 /* DropDownViewController.m */,
 			);
-			name = SKDropDown;
 			path = SKDropDown;
 			sourceTree = "<group>";
 		};
@@ -1549,7 +1532,6 @@
 				84EF666306B56658E275635DAA4AF8BF /* TPPropertyAnimation.h */,
 				52F7CDB61B49F0879BD0164CC5C8F573 /* TPPropertyAnimation.m */,
 			);
-			name = KAProgressLabel;
 			path = KAProgressLabel;
 			sourceTree = "<group>";
 		};
@@ -1559,7 +1541,6 @@
 				CDC98E2446176B6F813D16D46222B1E7 /* ErrorAlertView.h */,
 				652EB3657AA351F8589EA2AC01A7E435 /* ErrorAlertView.m */,
 			);
-			name = "Error Alert";
 			path = "Error Alert";
 			sourceTree = "<group>";
 		};
@@ -1580,7 +1561,6 @@
 				1238127B8C4074DD57B91AB6B8534445 /* LoadingCardView.m */,
 				1AEFEE2694FC8408F9C7EB9D276F47E1 /* SpinningView */,
 			);
-			name = LoadingCardView;
 			path = LoadingCardView;
 			sourceTree = "<group>";
 		};
@@ -1590,7 +1570,6 @@
 				38EA86BEE07138D52CFC52A4B8276456 /* Support Files */,
 				F5A58643D88DF84D77FE0D16FAB8C561 /* UIColor */,
 			);
-			name = "UIColor+Hex";
 			path = "UIColor+Hex";
 			sourceTree = "<group>";
 		};
@@ -1599,7 +1578,6 @@
 			children = (
 				E5BD104B92AD06CAFB67578C45F7476E /* ConfirmationAlertView.xib */,
 			);
-			name = "Confirmation Alert";
 			path = "Confirmation Alert";
 			sourceTree = "<group>";
 		};
@@ -1611,7 +1589,6 @@
 				45D72165D3CF38D6B1AA515D9AAAFAD7 /* VoiceOfVodafoneWelcomeCardView.h */,
 				4FF7915DE840CA69D9EEE183A007C969 /* VoiceOfVodafoneWelcomeCardView.m */,
 			);
-			name = Home;
 			path = Home;
 			sourceTree = "<group>";
 		};
@@ -1651,7 +1628,6 @@
 				246A785701021E4098136B3182F80978 /* SimpleDropDownView.h */,
 				DA056F399322AD9EEF08D65DFFEE98A3 /* SimpleDropDownView.m */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -1698,7 +1674,6 @@
 			children = (
 				A55A2B3C637615E743B64F906661CD93 /* RadioButtonHeaderCardView.xib */,
 			);
-			name = HeaderView;
 			path = HeaderView;
 			sourceTree = "<group>";
 		};
@@ -1711,7 +1686,6 @@
 				93BC234F67579EA69953C26E9BACD710 /* RegisterationChildStepperView.m */,
 				C3231D942ADF9B63E273226802623E3A /* Base */,
 			);
-			name = StepperCardViews;
 			path = StepperCardViews;
 			sourceTree = "<group>";
 		};
@@ -1755,7 +1729,6 @@
 				6750666B97582B9F80D67D66A28F324D /* AlertView.xib */,
 				4BE15670DC28610269EAACACF086892E /* AlertView_RTL.xib */,
 			);
-			name = "Alert page";
 			path = "Alert page";
 			sourceTree = "<group>";
 		};
@@ -1766,7 +1739,6 @@
 				2C4278BB7F1A34B8944366BC365ED332 /* SearchHeaderComponent.m */,
 				AF9B722754C89ABF538D991ECA151D3E /* PagerView */,
 			);
-			name = SearchAndFilterComponents;
 			path = SearchAndFilterComponents;
 			sourceTree = "<group>";
 		};
@@ -1792,7 +1764,6 @@
 				8889A4AB60ACCF295357FDA990441532 /* Resources */,
 				D2B32CB9C17938D8777D1A872180A54B /* Support Files */,
 			);
-			name = RSKImageCropper;
 			path = RSKImageCropper;
 			sourceTree = "<group>";
 		};
@@ -1801,7 +1772,6 @@
 			children = (
 				ED3B9E5EEAAF5B6965313927E5E4D7E1 /* DropDownMenuTableViewCell.xib */,
 			);
-			name = Menu;
 			path = Menu;
 			sourceTree = "<group>";
 		};
@@ -1810,7 +1780,6 @@
 			children = (
 				4A2BC9F03DD5464F72AB1F88F08F3E5C /* CustomStretchyHeaderView.xib */,
 			);
-			name = CustomStretchyHeader;
 			path = CustomStretchyHeader;
 			sourceTree = "<group>";
 		};
@@ -1822,7 +1791,6 @@
 				F2EB2B9BDA5B217C91E6C41C5E244AD6 /* SimpleDropDownView.xib */,
 				A26F5F4C0671EE238B696D98AC842FB3 /* SimpleDropDownViewRTL.xib */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -1833,7 +1801,6 @@
 				284CE90ACC919401AAE8CA6F0C8F63F0 /* NSData+CommonCrypto.m */,
 				E26C4868A77959FF23757AE52F264C35 /* Support Files */,
 			);
-			name = CommonCrypto;
 			path = CommonCrypto;
 			sourceTree = "<group>";
 		};
@@ -1843,7 +1810,6 @@
 				5B01440A64EEBEAFBB09E1F9ED1D52A7 /* image_tooltip_invalid.png */,
 				7A77C72F60D013D88442A60CDCC194C0 /* image_tooltip_invalidRtl.png */,
 			);
-			name = ToolTipViewImages;
 			path = ToolTipViewImages;
 			sourceTree = "<group>";
 		};
@@ -1859,7 +1825,6 @@
 				2314FA2870DDB52C85C3E737569B85F8 /* TableSignpostWithAvatarCardView.h */,
 				43C4F51A02CAA0D887AEC6506AB79A41 /* TableSignpostWithAvatarCardView.m */,
 			);
-			name = ExpandSignpostWithAvatarCardView;
 			path = ExpandSignpostWithAvatarCardView;
 			sourceTree = "<group>";
 		};
@@ -1879,7 +1844,6 @@
 				5C0AA9E4F5C30C0FED242ECF6536ECEA /* RadioButtonCell */,
 				BAFA7F1FE06B610AE3B5702F1FC13981 /* StepperCardViews */,
 			);
-			name = Subclass;
 			path = Subclass;
 			sourceTree = "<group>";
 		};
@@ -1915,7 +1879,6 @@
 				8DB43283DB0359A35A7363F8C9B64768 /* BaseCardWithHeaderTableViewController.h */,
 				64C2B1A8511B999FF1FF055351E15294 /* BaseCardWithHeaderTableViewController.m */,
 			);
-			name = Base;
 			path = Base;
 			sourceTree = "<group>";
 		};
@@ -1924,7 +1887,6 @@
 			children = (
 				6DFDCA86A62329FEB3CDB5D5B05DB787 /* RadioButtonCell.xib */,
 			);
-			name = RadioButtonCell;
 			path = RadioButtonCell;
 			sourceTree = "<group>";
 		};
@@ -1934,7 +1896,6 @@
 				9ED787266E6E22F2F62BE70EFFFDF7C6 /* StepperView.h */,
 				56B20169475B0ACFD2A508E368982C9B /* StepperView.m */,
 			);
-			name = StepperView;
 			path = StepperView;
 			sourceTree = "<group>";
 		};
@@ -1952,7 +1913,6 @@
 				7199DC29367A13AC42BBDBEF22E67ACE /* UIView+GSKTransplantSubviews.m */,
 				8DF77310D428F4C7D59907D94071FFE5 /* Support Files */,
 			);
-			name = GSKStretchyHeaderView;
 			path = GSKStretchyHeaderView;
 			sourceTree = "<group>";
 		};
@@ -1962,7 +1922,6 @@
 				FEA5C18AC917ED8264617D3FDF77FAFD /* BaseTableCell.h */,
 				392A69975A6534DB4F8D8C19BAC82D9F /* BaseTableCell.m */,
 			);
-			name = BaseTableCell;
 			path = BaseTableCell;
 			sourceTree = "<group>";
 		};
@@ -1971,7 +1930,6 @@
 			children = (
 				D326A03F3891A1C324B2547F33FD8847 /* ErrorAlertView.xib */,
 			);
-			name = "Error Alert";
 			path = "Error Alert";
 			sourceTree = "<group>";
 		};
@@ -1980,7 +1938,6 @@
 			children = (
 				BDFA8A98F2C3586F8F3F8251FEF23003 /* FSCalendar */,
 			);
-			name = FSCalendar;
 			path = FSCalendar;
 			sourceTree = "<group>";
 		};
@@ -2005,7 +1962,6 @@
 				61192482457B6250325384623D408EDD /* DropDownMenuTableViewCell.h */,
 				8CB79479AE19042C4CA7EA358C1FAFA4 /* DropDownMenuTableViewCell.m */,
 			);
-			name = Menu;
 			path = Menu;
 			sourceTree = "<group>";
 		};
@@ -2075,7 +2031,6 @@
 				3D579EDF33D6480C9494A6FD396758C6 /* StepperCardViews */,
 				E1AD95D16DD0157FC10B6CF011674656 /* WelcomeBack */,
 			);
-			name = Subclass;
 			path = Subclass;
 			sourceTree = "<group>";
 		};
@@ -2084,7 +2039,6 @@
 			children = (
 				78FA7A5BE65522C40FC4A5848F2919F1 /* KVNProgressView.xib */,
 			);
-			name = Resources;
 			path = Resources;
 			sourceTree = "<group>";
 		};
@@ -2093,7 +2047,6 @@
 			children = (
 				615366F180DE613910611F98F2D1CA15 /* ExpandableHeaderView.xib */,
 			);
-			name = VodavfoneCashHeader;
 			path = VodavfoneCashHeader;
 			sourceTree = "<group>";
 		};
@@ -2114,7 +2067,6 @@
 				0BDB4D5D24E048836854B5A05DA53A98 /* ExpandableHeaderView.h */,
 				F9D24AF1A153FEDA0D7ACF0FE2468A5B /* ExpandableHeaderView.m */,
 			);
-			name = VodavfoneCashHeader;
 			path = VodavfoneCashHeader;
 			sourceTree = "<group>";
 		};
@@ -2134,7 +2086,6 @@
 				94CDB8843E7A182682BE11DDE13DB2A3 /* ValidationTextFieldStyleModel.h */,
 				95C5F87240842EF2EE99CC08EA1DC600 /* ValidationTextFieldStyleModel.m */,
 			);
-			name = Model;
 			path = Model;
 			sourceTree = "<group>";
 		};
@@ -2145,7 +2096,6 @@
 				930A878ABE071CEF89CA38D9FBAB23C4 /* ExpandSignpostCellRTL.xib */,
 				9A8DD40194C1DC22BE1B389EEB9B0B4E /* TableSignpostWithAvatarCardView.xib */,
 			);
-			name = ExpandSignpostWithAvatarCardView;
 			path = ExpandSignpostWithAvatarCardView;
 			sourceTree = "<group>";
 		};
@@ -2161,7 +2111,6 @@
 				27676659B4A7A7CB01A660322A2ECB2B /* SimpleCellCardView.h */,
 				2940FAE1D40C2726A2B3839A3F3B38EF /* SimpleCellCardView.m */,
 			);
-			name = CellCardView;
 			path = CellCardView;
 			sourceTree = "<group>";
 		};
@@ -2184,7 +2133,6 @@
 				9229C6F1366F9720600454E216E5A486 /* RadioButtonHeaderCardView.h */,
 				E4288BB68E23094E278FEBE70994F17E /* RadioButtonHeaderCardView.m */,
 			);
-			name = HeaderView;
 			path = HeaderView;
 			sourceTree = "<group>";
 		};
@@ -2197,7 +2145,6 @@
 				AE74E50223CDD36DA46E21BA62042EB8 /* SelectDateView.xib */,
 				9D925AB9EFFC743DC1EAEFDE1FCEE632 /* YearPickerView.xib */,
 			);
-			name = DatePicker;
 			path = DatePicker;
 			sourceTree = "<group>";
 		};
@@ -2223,7 +2170,6 @@
 				8A25400538D5633805BCC1F1DF464384 /* TableCardModel.h */,
 				7598F8B054F0B6B1C62C5095C1651767 /* TableCardModel.m */,
 			);
-			name = Model;
 			path = Model;
 			sourceTree = "<group>";
 		};
@@ -2232,7 +2178,6 @@
 			children = (
 				557757CE4D1E88246A132C4F42829FE6 /* BaseTableCell.xib */,
 			);
-			name = BaseTableCell;
 			path = BaseTableCell;
 			sourceTree = "<group>";
 		};
@@ -2244,7 +2189,6 @@
 				CD2C124BE08F763E9661E54077CA84EA /* MultiDropDownModel.h */,
 				9CDE57F8EE8537A4AFDF2A2FE476713E /* MultiDropDownModel.m */,
 			);
-			name = Model;
 			path = Model;
 			sourceTree = "<group>";
 		};
@@ -2264,7 +2208,6 @@
 				D60179B0080D39CC4B9F14C7FCF3EDC6 /* GlamourAnimation.html */,
 				776157F8DC876C9592EEE31BB77CA588 /* GlamourAnimation.js */,
 			);
-			name = GlamourAnimations;
 			path = GlamourAnimations;
 			sourceTree = "<group>";
 		};
@@ -2288,7 +2231,6 @@
 				A344186B31209DC6E730D753C4373F51 /* SearchHeaderComponent.xib */,
 				BBA1B45E9AD6EF38D24161822ACAF6E4 /* PagerView */,
 			);
-			name = SearchAndFilterComponents;
 			path = SearchAndFilterComponents;
 			sourceTree = "<group>";
 		};
@@ -2326,7 +2268,6 @@
 				C423EE6A2E4C1F4A320BD5C71A26A72A /* Categories */,
 				F799BBBA12EE425A1AE3C673D3C3CCB4 /* Classes */,
 			);
-			name = KVNProgress;
 			path = KVNProgress;
 			sourceTree = "<group>";
 		};
@@ -2335,7 +2276,6 @@
 			children = (
 				0CBC293A9DF2EF2DA462808C1630C55C /* billsExpandedTableView */,
 			);
-			name = BillsView;
 			path = BillsView;
 			sourceTree = "<group>";
 		};
@@ -2344,7 +2284,6 @@
 			children = (
 				D91FEE0CD95C04BF3250FDB26EA4FE81 /* billsExpandedTableView */,
 			);
-			name = BillsView;
 			path = BillsView;
 			sourceTree = "<group>";
 		};
@@ -2354,7 +2293,6 @@
 				74B09FB1F4749480EB07DCC86954DE5C /* CvvTextField.h */,
 				E4EDBD0F057A694A094E961A3D61B77F /* CvvTextField.m */,
 			);
-			name = Cvv;
 			path = Cvv;
 			sourceTree = "<group>";
 		};
@@ -2380,7 +2318,6 @@
 				D00197F0F762344D19348CCA4BE374C7 /* VoiceOfVodafoneWelcomeCardView.xib */,
 				8D35DE0E500E0A24CCF639CC40BD393C /* VoiceOfVodafoneWelcomeCardView_RTL.xib */,
 			);
-			name = Home;
 			path = Home;
 			sourceTree = "<group>";
 		};
@@ -2392,7 +2329,6 @@
 				73C2DECADBED78489A864D6992142778 /* PagerView.h */,
 				075E1CD772958537FC04787A2E9A8591 /* PagerView.m */,
 			);
-			name = PagerView;
 			path = PagerView;
 			sourceTree = "<group>";
 		};
@@ -2404,7 +2340,6 @@
 				01984A54DAB0EC417060729C0CCF4199 /* MultiLineCellCardView.xib */,
 				EF3D405FC8902ABAC67BA9D34E4BF902 /* SimpleCellCardView.xib */,
 			);
-			name = CellCardView;
 			path = CellCardView;
 			sourceTree = "<group>";
 		};
@@ -2436,7 +2371,6 @@
 				16C19CD8BFC03D99DA05545EDF4D9AFB /* HexColor.h */,
 				404DEC7177E83B04F0815057557190FA /* HexColor.m */,
 			);
-			name = HexColor;
 			path = HexColor;
 			sourceTree = "<group>";
 		};
@@ -2447,7 +2381,6 @@
 				1927CD54AD6CB7D08DEA4414337F6998 /* JWGCircleCounter.m */,
 				D8E9D5C5079D1781C7BA75C0378D9655 /* Support Files */,
 			);
-			name = JWGCircleCounter;
 			path = JWGCircleCounter;
 			sourceTree = "<group>";
 		};
@@ -2466,7 +2399,6 @@
 				58DC7BB8EE8E85B91455E5A82811030A /* CustomButtonStyleModel.h */,
 				F2018DE7097CCECE152DC88723BB97B0 /* CustomButtonStyleModel.m */,
 			);
-			name = Model;
 			path = Model;
 			sourceTree = "<group>";
 		};
@@ -2476,7 +2408,6 @@
 				F78BF02E50A4ADFF8A6878A82B861D8E /* InputIconTextField.h */,
 				D99AF1D600C8711300FC4B14155789DD /* InputIconTextField.m */,
 			);
-			name = InputIcon;
 			path = InputIcon;
 			sourceTree = "<group>";
 		};
@@ -2489,8 +2420,6 @@
 				9DFCD0D0C91818B98A6A72A7CBD00F69 /* BaseCardView+Protected.m */,
 				2FC08F0F4DCC0F158966D3ECE72EA0F6 /* BaseCardViewWithButtons.h */,
 				51F13C2B32EE5D1695D5267669A833F1 /* BaseCardViewWithButtons.m */,
-				2B39B92A04C41F567C237464402A7503 /* BaseCardViewWithButtonsOld.h */,
-				06C5AC4FE1955CC1B6C500AF850BCEA0 /* BaseCardViewWithButtonsOld.m */,
 				CED3A1500CD3F23A368E4C7BD63F8074 /* BaseCardwithHorizontalButtons.h */,
 				9A4D282E989BA7F384B912E168E250CB /* BaseCardwithHorizontalButtons.m */,
 				4667DC1C1421FFC153F6C9369C01E471 /* ExpandableBaseCardView.h */,
@@ -2498,7 +2427,6 @@
 				D03011568F81C76118CECC2F3AFB5B3D /* ExpandableBaseCardViewWithButtons.h */,
 				A84865A8FF69E19E1261C4CB58FC4262 /* ExpandableBaseCardViewWithButtons.m */,
 			);
-			name = Base;
 			path = Base;
 			sourceTree = "<group>";
 		};
@@ -2508,7 +2436,6 @@
 				EE092BBF24946CCA584C8A1226D75770 /* GetKeyChildStepperView.xib */,
 				E39793FE958CF40316E3DE7CE9FD1D3C /* RegisterationChildStepperView.xib */,
 			);
-			name = StepperCardViews;
 			path = StepperCardViews;
 			sourceTree = "<group>";
 		};
@@ -2518,7 +2445,6 @@
 				2219D4BD098586C5A00BD1466013BAE6 /* PagerCollectionViewCell.xib */,
 				E0ADAB4931A9FE1C6FD97D4638E88B37 /* PagerView.xib */,
 			);
-			name = PagerView;
 			path = PagerView;
 			sourceTree = "<group>";
 		};
@@ -2557,7 +2483,6 @@
 				501B92C6AE5C01E0C76F2422FB6E9C4E /* PageNudgeButtonPrimaryStyle.json */,
 				81E54F232D28ECC27E5BB8D31CAE7795 /* PageNudgeButtonSecondaryStyle.json */,
 			);
-			name = resource;
 			path = resource;
 			sourceTree = "<group>";
 		};
@@ -2597,7 +2522,6 @@
 				12A60BD8683D364A86C936C5CBEF2EE9 /* FSCalendarWeekdayView.h */,
 				B29DA3D919DDC6B0E43A079FE261A241 /* FSCalendarWeekdayView.m */,
 			);
-			name = FSCalendar;
 			path = FSCalendar;
 			sourceTree = "<group>";
 		};
@@ -2607,7 +2531,6 @@
 				25EA0BA43B2D81EF91A5D27E8E9AE515 /* RadioButtonCell.h */,
 				25F77D41D56501917FF57BE7393D88E6 /* RadioButtonCell.m */,
 			);
-			name = RadioButtonCell;
 			path = RadioButtonCell;
 			sourceTree = "<group>";
 		};
@@ -2617,7 +2540,6 @@
 				A4414872FA8EC85D1BA31D659EF531DC /* ChildStepperView.h */,
 				70683F9AD1E5583BA3CA8EC3B09AB976 /* ChildStepperView.m */,
 			);
-			name = Base;
 			path = Base;
 			sourceTree = "<group>";
 		};
@@ -2645,7 +2567,6 @@
 				745A5187E137F0B9CD64820048CB105A /* UIImage+KVNImageEffects.h */,
 				CD713C58D74F27DB70EBD9542E2CC51E /* UIImage+KVNImageEffects.m */,
 			);
-			name = Categories;
 			path = Categories;
 			sourceTree = "<group>";
 		};
@@ -2672,7 +2593,6 @@
 				2CA8D5D27B5165B805BAD9EE98C2CED8 /* SpringSolver */,
 				034E218DF9E3EB35F0568AA2596A2C95 /* Support Files */,
 			);
-			name = INTUAnimationEngine;
 			path = INTUAnimationEngine;
 			sourceTree = "<group>";
 		};
@@ -2700,7 +2620,6 @@
 				FCD688695678701FEDE1FCBBC9BBAF0F /* FormFieldOnOverlaysStyle3.json */,
 				8175D228497A83938B72F972CA127797 /* FormFieldOnOverlaysStyle4.json */,
 			);
-			name = resource;
 			path = resource;
 			sourceTree = "<group>";
 		};
@@ -2719,7 +2638,6 @@
 				4E441BEFD9F1D6EAAA5F2B6E576813FC /* ConfirmationAlertView.h */,
 				1688DBAFE95DF67BC8660AE8CF517D73 /* ConfirmationAlertView.m */,
 			);
-			name = "Confirmation Alert";
 			path = "Confirmation Alert";
 			sourceTree = "<group>";
 		};
@@ -2729,7 +2647,6 @@
 				424B1629CCC7B591F32F592EC50A6D7F /* Menu */,
 				47E70465FB785E32D7D3D201AC5807E1 /* View */,
 			);
-			name = DropDown;
 			path = DropDown;
 			sourceTree = "<group>";
 		};
@@ -2739,7 +2656,6 @@
 				CE99B0E06A165F739AD9AA4A2A4735CF /* PaymentInfoCardView.h */,
 				00D63844BAC296BDBDF90EC565ECAB16 /* PaymentInfoCardView.m */,
 			);
-			name = PaymentInfoCardView;
 			path = PaymentInfoCardView;
 			sourceTree = "<group>";
 		};
@@ -2752,7 +2668,6 @@
 				D4A3C0C60045F27C893E649D0384B219 /* TooltipView.m */,
 				16B79AE13CB578AAD48DB160C54736D6 /* TooltipViewPrivate.h */,
 			);
-			name = ToolTipView;
 			path = ToolTipView;
 			sourceTree = "<group>";
 		};
@@ -2775,7 +2690,6 @@
 				92FECF21CA59008EED5B6B5F83A9ADA9 /* ProfileHeaderView.h */,
 				FF9F276643DA65B9A2EDE63F5B0A0307 /* ProfileHeaderView.m */,
 			);
-			name = ProfileHeader;
 			path = ProfileHeader;
 			sourceTree = "<group>";
 		};
@@ -2785,7 +2699,6 @@
 				85AEF4825654B5E5E6944A563409786C /* BaseCellCardView.h */,
 				F7CAD45E5991EF37277E92162C996C4F /* BaseCellCardView.m */,
 			);
-			name = BaseCellCardView;
 			path = BaseCellCardView;
 			sourceTree = "<group>";
 		};
@@ -2808,7 +2721,6 @@
 			children = (
 				EF7A602D42942E7869DD83D6B46A1F7A /* BillsExpandedTableView.xib */,
 			);
-			name = billsExpandedTableView;
 			path = billsExpandedTableView;
 			sourceTree = "<group>";
 		};
@@ -2885,7 +2797,6 @@
 				72E4FD4B0785EFDB06E38D3F6E48066E /* YourMessageCardViewHeader.xib */,
 				187C0B4E13CD54906DB72ED175C6E438 /* YourMessageCardViewRTL.xib */,
 			);
-			name = Card;
 			path = Card;
 			sourceTree = "<group>";
 		};
@@ -2895,7 +2806,6 @@
 				0EDBF67E7099D7A3E1A5854CF0537A10 /* CustomStretchyHeaderView.h */,
 				D32B6F1B9374010690BC697541527E6F /* CustomStretchyHeaderView.m */,
 			);
-			name = CustomStretchyHeader;
 			path = CustomStretchyHeader;
 			sourceTree = "<group>";
 		};
@@ -2905,7 +2815,6 @@
 				2685BA14C82CC64D0C8413D6FAAD33C7 /* BaseDropDownView.h */,
 				0CF08751789867A4E3F5E2769F9F7E62 /* BaseDropDownView.m */,
 			);
-			name = Base;
 			path = Base;
 			sourceTree = "<group>";
 		};
@@ -2914,7 +2823,6 @@
 			children = (
 				50766F8229BBA0F1A5ECCCFC4177811E /* ProfileHeaderView.xib */,
 			);
-			name = ProfileHeader;
 			path = ProfileHeader;
 			sourceTree = "<group>";
 		};
@@ -2923,7 +2831,6 @@
 			children = (
 				6C4192D8C9756D6B166AAC194D00801C /* Resources */,
 			);
-			name = KVNProgress;
 			path = KVNProgress;
 			sourceTree = "<group>";
 		};
@@ -2933,7 +2840,6 @@
 				D2B6CAD2D668A442FFAC8DD6F1A0EEAC /* WelcomeBackCard.h */,
 				D26DEBA7953F59F4DCCA14F7234E94FF /* WelcomeBackCard.m */,
 			);
-			name = WelcomeBack;
 			path = WelcomeBack;
 			sourceTree = "<group>";
 		};
@@ -3002,7 +2908,6 @@
 				54853A8B4410A119371443F6D65CF377 /* NSAttributedString+CCLFormat.m */,
 				F731EA69D3DCF97B6227006806A88CCF /* Support Files */,
 			);
-			name = "NSAttributedString+CCLFormat";
 			path = "NSAttributedString+CCLFormat";
 			sourceTree = "<group>";
 		};
@@ -3013,7 +2918,6 @@
 				D75B534F92F8CE175E06FE53682AEA4A /* ValidationTextField.m */,
 				7383D31CAACD1607B4067142F359DF64 /* Model */,
 			);
-			name = TextField;
 			path = TextField;
 			sourceTree = "<group>";
 		};
@@ -3072,7 +2976,6 @@
 				A5C2D39DE5280D4C429DFD4E2D8CCB63 /* KVNRotationViewController.h */,
 				2F25212DF93AEBCA2D65AACA37345312 /* KVNRotationViewController.m */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -3202,7 +3105,6 @@
 				8E9EC5F80DF1ACDA051930B08ED3AF5D /* BaseCardView+Protected.h in Headers */,
 				A3CD2CBA41C1D6F24D934E90AE94525B /* BaseCardView.h in Headers */,
 				7378DF6AC6876D6374C5795B6C9F99F4 /* BaseCardViewWithButtons.h in Headers */,
-				32A971B2D1D4AC33E7261F30F64C98DA /* BaseCardViewWithButtonsOld.h in Headers */,
 				A6869702E5F259D835EF618A883E8D00 /* BaseCardWithHeaderTableViewController.h in Headers */,
 				8DADE893BCC82D8E4EFB09541AE017E1 /* BaseCardwithHorizontalButtons.h in Headers */,
 				244E8FAFBDF412804F47D6BC15C60F48 /* BaseCellCardView.h in Headers */,
@@ -3804,7 +3706,6 @@
 				B3CE0408500EE8B8BF7F8DC322BDA96F /* BaseCardView+Protected.m in Sources */,
 				C8FCD3720C59E77F25EE24EDD47CC9D5 /* BaseCardView.m in Sources */,
 				1574E25356622906D99AE5D1C6CB9EC2 /* BaseCardViewWithButtons.m in Sources */,
-				E183CEFF74454CF393F3FCCF772DAC21 /* BaseCardViewWithButtonsOld.m in Sources */,
 				A2726AFC1B2B8F9892B97AF445929C70 /* BaseCardWithHeaderTableViewController.m in Sources */,
 				5B201099C6705CA561D8028EC9C12069 /* BaseCardwithHorizontalButtons.m in Sources */,
 				3C1EC53DAF176CE7445B67E36D274959 /* BaseCellCardView.m in Sources */,

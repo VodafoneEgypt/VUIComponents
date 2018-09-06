@@ -6,9 +6,9 @@
 //  Copyright © 2017 Karim Mousa. All rights reserved.
 //
 
-#import "BaseCardViewWithButtonsOld.h"
+#import "BaseCardViewWithButtons.h"
 
-@interface TableSignpostWithAvatarCardView : BaseCardViewWithButtonsOld
+@interface TableSignpostWithAvatarCardView : BaseCardViewWithButtons
 
 @property (nonatomic ,strong) NSArray *expandTableArray;
 

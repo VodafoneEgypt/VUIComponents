@@ -10,6 +10,7 @@
 #import "BaseCardView+Protected.h"
 #import "INTUAnimationEngine.h"
 #import "AnaVodafoneLabel.h"
+#import <VUIComponents/LanguageHandler.h>
 
 @interface VoiceOfVodafoneWelcomeCardView() {
     BOOL isRTL;
@@ -26,6 +27,7 @@
 @implementation VoiceOfVodafoneWelcomeCardView
 
 -(void)animateCard{
+    
     isRTL ? [self animateRTL] : [self animateLTR];
 }
 

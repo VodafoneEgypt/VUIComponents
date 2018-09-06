@@ -19,8 +19,6 @@
 
 -(void)viewDidLoad{
 
-     [self emptyTrackStateKey];
-
     [super viewDidLoad];
     
 }

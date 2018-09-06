@@ -9,6 +9,8 @@
 #import "AlertCardViewWithImgandTable.h"
 #import "RadioButtonCell.h"
 #import "BaseCardView+Protected.h"
+#import <VUIComponents/LanguageHandler.h>
+#import <VUIComponents/AnaVodafoneLabel.h>
 
 @interface AlertCardViewWithImgandTable()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *tableViewContainerTopConstraint;

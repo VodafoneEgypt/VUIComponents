@@ -10,9 +10,9 @@
 #import "LanguageHandler.h"
 #import "UIColor+Hex.h"
 #import "AnaVodafoneAlertController.h"
-#import "AppUser.h"
+//#import "AppUser.h"
 #import "RSKImageCropper.h"
-#import "BaseViewController.h"
+//#import "BaseViewController.h"
 
 @interface ProfileHeaderView()<UIImagePickerControllerDelegate,RSKImageCropViewControllerDelegate>
 
@@ -150,16 +150,16 @@
         [self showImagePickerWithSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
     }]];
     
-    if ([[AppUser sharedInstance] isAvatarDataSet] ) {
-        [alertController addAction:[UIAlertAction actionWithTitle:[[LanguageHandler sharedInstance] stringForKey:@"Delete Photo"] style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
-            //Implementation
-            dispatch_async(dispatch_get_main_queue(), ^{
-                _avatarIamgeView.image = [UIImage imageNamed:@"default_profilePhoto"];
-            });
-            
-            [self adjustProfilePhoto];
-        }]];
-    }
+//    if ([[AppUser sharedInstance] isAvatarDataSet] ) {
+//        [alertController addAction:[UIAlertAction actionWithTitle:[[LanguageHandler sharedInstance] stringForKey:@"Delete Photo"] style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
+//            //Implementation
+//            dispatch_async(dispatch_get_main_queue(), ^{
+//                _avatarIamgeView.image = [UIImage imageNamed:@"default_profilePhoto"];
+//            });
+//            
+//            [self adjustProfilePhoto];
+//        }]];
+//    }
     
     [alertController addAction:[UIAlertAction actionWithTitle:[[LanguageHandler sharedInstance] stringForKey:@"Cancel"] style:UIAlertActionStyleCancel handler:nil]];
     
@@ -169,7 +169,7 @@
 
 - (void) adjustProfilePhoto {
     
-    [_avatarIamgeView setImage:[[AppUser sharedInstance] avatarImage]];
+//    [_avatarIamgeView setImage:[[AppUser sharedInstance] avatarImage]];
 }
 
 #pragma mark - UIImagePickerController delegate methods
@@ -198,7 +198,7 @@
 
 - (void)imageCropViewController:(RSKImageCropViewController *)controller didCropImage:(UIImage *)croppedImage usingCropRect:(CGRect)cropRect {
     
-    [[AppUser sharedInstance] setAvatarImage:croppedImage];
+//    [[AppUser sharedInstance] setAvatarImage:croppedImage];
     
     _avatarIamgeView.image = croppedImage;
     

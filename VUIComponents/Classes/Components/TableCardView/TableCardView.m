@@ -7,7 +7,8 @@
 //
 
 #import "TableCardView.h"
-#import "LanguageHandler.h"
+#import <VUIComponents/LanguageHandler.h>
+#import <VUIComponents/Utilities.h>
 #import "BaseCardView+Protected.h"
 #import "TableCardModel.h"
 #import "BaseTableCell.h"
@@ -25,8 +26,6 @@
 -(void)setTableCardModelArray:(NSArray *)tableCardModelArray{
     
     _tableCardModelArray = tableCardModelArray;
-
-    NSLog(@"tableCardModelArray First Object: %@", ((MultiLineRadioButtonCellModel*)[((TableCardModel*)[_tableCardModelArray objectAtIndex:0]).data objectAtIndex:0]).subTitleString);
     
     [_tableView reloadData];
     
