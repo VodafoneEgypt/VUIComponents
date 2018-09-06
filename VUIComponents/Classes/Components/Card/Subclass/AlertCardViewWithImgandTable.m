@@ -11,6 +11,8 @@
 #import "BaseCardView+Protected.h"
 #import <VUIComponents/LanguageHandler.h>
 #import <VUIComponents/AnaVodafoneLabel.h>
+#import <VUIComponents/Utilities.h>
+
 
 @interface AlertCardViewWithImgandTable()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *tableViewContainerTopConstraint;
@@ -222,7 +224,7 @@
     
     if (cell == nil){
         
-        [tableView registerNib:[UINib nibWithNibName:CellIdentifier bundle:nil] forCellReuseIdentifier:CellIdentifier];
+        [tableView registerNib:[UINib nibWithNibName:CellIdentifier bundle:[Utilities getPodBundle]] forCellReuseIdentifier:CellIdentifier];
         
         cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     }
