@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2659" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -23,7 +24,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="610" height="358"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QyO-8h-hKE">
-                    <rect key="frame" x="35" y="50" width="540" height="35"/>
+                    <rect key="frame" x="35" y="50" width="540" height="34.5"/>
                     <attributedString key="attributedText">
                         <fragment content="Vodafone cash locator">
                             <attributes>
@@ -36,10 +37,10 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bdw-Nr-Om6">
-                    <rect key="frame" x="20" y="105" width="570" height="160"/>
+                    <rect key="frame" x="20" y="104.5" width="570" height="159.5"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="672-vw-ALQ">
-                            <rect key="frame" x="15" y="25" width="540" height="30"/>
+                            <rect key="frame" x="15" y="25" width="540" height="29.5"/>
                             <attributedString key="attributedText">
                                 <fragment content="Find your nearest Vodafone shop">
                                     <attributes>
@@ -52,7 +53,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nIi-DY-UnU" userLabel="searchView">
-                            <rect key="frame" x="15" y="80" width="540" height="55"/>
+                            <rect key="frame" x="15" y="79.5" width="540" height="55"/>
                             <subviews>
                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="search" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uwx-Bz-lNd">
                                     <rect key="frame" x="8" y="5" width="421" height="45"/>
@@ -144,7 +145,7 @@
     </objects>
     <resources>
         <image name="morning_sl" width="540" height="960"/>
-        <image name="pin" width="32" height="32"/>
+        <image name="pin" width="31" height="31"/>
         <image name="search" width="32" height="32"/>
     </resources>
 </document>
