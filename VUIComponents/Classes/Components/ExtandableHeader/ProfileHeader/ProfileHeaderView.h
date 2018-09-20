@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "GSKStretchyHeaderView.h"
+#import <GSKStretchyHeaderView/GSKStretchyHeaderView.h>
 
 @interface ProfileHeaderView : GSKStretchyHeaderView
 
