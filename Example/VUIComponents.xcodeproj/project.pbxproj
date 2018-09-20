@@ -249,6 +249,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = 1RGB1;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = LQVUT2443V;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -503,6 +506,7 @@
 			baseConfigurationReference = E096EB244F7EAE66E1274BF2 /* Pods-VUIComponents_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LQVUT2443V;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VUIComponents/VUIComponents-Prefix.pch";
 				INFOPLIST_FILE = "VUIComponents/VUIComponents-Info.plist";
@@ -518,6 +522,7 @@
 			baseConfigurationReference = FB1105F8D336A2561DB0FD39 /* Pods-VUIComponents_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LQVUT2443V;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VUIComponents/VUIComponents-Prefix.pch";
 				INFOPLIST_FILE = "VUIComponents/VUIComponents-Info.plist";

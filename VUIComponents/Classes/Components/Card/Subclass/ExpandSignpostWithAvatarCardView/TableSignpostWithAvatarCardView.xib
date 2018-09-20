@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TableSignpostWithAvatarCardView">
             <connections>
+                <outlet property="bottomConstraint" destination="VeH-3i-vty" id="kbs-wI-Yeq"/>
                 <outlet property="buttonsView" destination="kyu-3G-Ehn" id="D9h-XI-8Qf"/>
                 <outlet property="buttonsViewHeightConstraint" destination="JQC-BD-bjw" id="1EP-d6-D43"/>
                 <outlet property="contentView" destination="rfU-Y1-urB" id="hn8-IA-NlG"/>
@@ -26,19 +27,18 @@
                     <rect key="frame" x="0.0" y="0.0" width="339" height="353"/>
                     <subviews>
                         <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iN0-l3-epB">
-                            <rect key="frame" x="0.0" y="-0.5" width="339" height="353"/>
+                            <rect key="frame" x="0.0" y="0.0" width="339" height="353"/>
                             <subviews>
                                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ayd-gb-ba2">
-                                    <rect key="frame" x="0.0" y="0.0" width="339" height="337"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="339" height="353"/>
                                     <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </tableView>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <constraints>
-                                <constraint firstItem="ayd-gb-ba2" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" constant="-16" id="HKR-Yj-XPa"/>
                                 <constraint firstItem="ayd-gb-ba2" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="LYO-d1-YfC"/>
                                 <constraint firstItem="ayd-gb-ba2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="OeJ-2o-h8Q"/>
-                                <constraint firstAttribute="bottom" secondItem="ayd-gb-ba2" secondAttribute="bottom" constant="16" id="VeH-3i-vty"/>
+                                <constraint firstAttribute="bottom" secondItem="ayd-gb-ba2" secondAttribute="bottom" id="VeH-3i-vty"/>
                                 <constraint firstItem="ayd-gb-ba2" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="p8d-lJ-j0k"/>
                             </constraints>
                         </view>

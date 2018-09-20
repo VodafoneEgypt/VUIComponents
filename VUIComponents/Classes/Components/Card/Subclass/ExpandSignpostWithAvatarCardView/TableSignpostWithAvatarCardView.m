@@ -19,6 +19,7 @@
 @interface TableSignpostWithAvatarCardView ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *bottomConstraint;
 
 @property (nonatomic) float buttonTopHeight;
 
@@ -32,6 +33,8 @@
     
     _expandTableArray = expandTableArray;
     
+    self.bottomConstraint.constant = 16;
+    
     [_tableView reloadData];
 }
 
@@ -42,7 +45,7 @@
     [_tableView reloadData];
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-        
+    
     return cellHeight;
 }
 
@@ -54,12 +57,12 @@
 -(void)setSelecetdIndexRow:(int)selecetdIndexRow{
     
     if (_expandTableArray.count > selecetdIndexRow) {
-     
+        
         _selecetdIndexRow = selecetdIndexRow;
         NSIndexPath *indexPath = [NSIndexPath indexPathForRow:selecetdIndexRow inSection:0];
         
         [self.tableView selectRowAtIndexPath:indexPath animated:true scrollPosition:UITableViewScrollPositionNone];
-
+        
     }
 }
 
@@ -162,7 +165,7 @@
     [self.subviews makeObjectsPerformSelector: @selector(removeFromSuperview)];
     
     _buttonTopHeight = 0;
-
+    
     [self addSubview:view];
     
 }

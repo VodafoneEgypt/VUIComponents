@@ -18,7 +18,7 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *avatarImgView;
 
-@property (weak, nonatomic) IBOutlet UILabel *secondTitleLabel;
+@property (weak, nonatomic) IBOutlet AnaVodafoneLabel *secondTitleLabel;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *avatarImageWidthConstraint;
 
 @end
@@ -35,7 +35,7 @@
     }else{
         
         if(_targetBlock){
-        
+            
             _targetBlock();
         }
     }
@@ -170,7 +170,7 @@
 -(void)setAvatarImage:(UIImage *)avatarImage{
     
     self.avatarImageWidthConstraint.constant = 45;
-
+    
     _avatarImage = avatarImage;
     
     _avatarImgView.image = avatarImage;
@@ -226,7 +226,7 @@
     }
     
     arrowImgView.transform = (value == true) ? CGAffineTransformRotate(arrowImgView.transform, M_PI):CGAffineTransformIdentity;
-        
+    
     [super setExpanded:value];
 }
 
@@ -263,7 +263,7 @@
         self.avatarImageWidthConstraint.constant = 0;
     }else{
         self.avatarImageWidthConstraint.constant = 45;
-
+        
     }
     [self initialize];
 }
@@ -291,13 +291,10 @@
     
     //TODO:: localize
     
-    CGFloat width = self.frame.size.width  - 86 - (self.verticalLine ? 6 : 0) - _avatarImageWidthConstraint.constant;
+    //    CGFloat width = self.frame.size.width  - 86 - (self.verticalLine ? 6 : 0) - _avatarImageWidthConstraint.constant;
     
-    CGSize size = CGSizeMake(width, CGFLOAT_MAX);
-    
-    CGRect rect = [titleLabel.attributedText boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading context:nil];
-    
-    height += rect.size.height;
+    [titleLabel adjustHeight];
+    height += titleLabel.frame.size.height;
     
     if(self.subTitle.length > 0){
         
@@ -305,9 +302,8 @@
         
         paddingHeight = 50;
         
-        rect = [subTitleLabel.attributedText boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading context:nil];
-        
-        height += rect.size.height+4;
+        [subTitleLabel adjustHeight];
+        height += subTitleLabel.frame.size.height+4;
     }else{
         
         titleLabelTopConstraint.constant = 30;
@@ -319,16 +315,14 @@
         
         titleLabelTopConstraint.constant = 20;
         
-        CGSize size = CGSizeMake(width, CGFLOAT_MAX);
-        
-        CGRect rect = [_secondTitleLabel.attributedText boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading context:nil];
-        
         paddingHeight = 40;
         
-        height += rect.size.height+5;
+        [_secondTitleLabel adjustHeight];
+        height += _secondTitleLabel.frame.size.height+5;
     }
     
     contentViewHeight = height+paddingHeight;
+    
 }
 
 - (void)initializeExpandedView{
@@ -368,7 +362,8 @@
     
     self.expandable = false;
     self.avatarImageWidthConstraint.constant = 0;
-
+    
 }
 
 @end
+
