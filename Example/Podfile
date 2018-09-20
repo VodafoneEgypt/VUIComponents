@@ -1,7 +1,7 @@
 use_frameworks!
 
 target 'VUIComponents_Example' do
-  pod 'VUIComponents', :path => '../'
+    pod 'VUIComponents', :path => '../'
 
   target 'VUIComponents_Tests' do
     inherit! :search_paths
