@@ -16,6 +16,7 @@
 #import "CalendarCardView.h"
 #import "AnaVodafoneLabel.h"
 #import "PickerControllView.h"
+#import <VUIComponents/Utilities.h>
 
 @interface RegisterationChildStepperView()<WYPopoverControllerDelegate,DatePickerDelegate>{
     WYPopoverController* popoverController;
@@ -296,7 +297,7 @@
     
     [super commonInit];
     
-    NSArray* views = [[NSBundle mainBundle]loadNibNamed:@"RegisterationChildStepperView" owner:self options:nil];
+    NSArray* views = [[Utilities getPodBundle]loadNibNamed:@"RegisterationChildStepperView" owner:self options:nil];
     
     UIView* view = [views objectAtIndex:0];
     
@@ -443,7 +444,7 @@
 
     [self endEditing:true];
     
-    self.pickerVC = [[[NSBundle mainBundle]loadNibNamed:@"PickerControllView" owner:self options:nil]lastObject];
+    self.pickerVC = [[[Utilities getPodBundle]loadNibNamed:@"PickerControllView" owner:self options:nil]lastObject];
     
     self.pickerVC.pickerDelegate = self;
 

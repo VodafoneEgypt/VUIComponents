@@ -12,6 +12,7 @@
 #import "RadioButtonHeaderCardView.h"
 #import "TableCardModel.h"
 #import "BaseTableCell.h"
+#import <VUIComponents/Utilities.h>
 
 @interface TableWithHeaderCardView()<UITableViewDelegate,UITableViewDataSource,CellHeightChangedDelegate>{
   
