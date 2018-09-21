@@ -11,6 +11,7 @@
 #import "LanguageHandler.h"
 #import "UIColor+Hex.h"
 #import "SignpostCardView.h"
+#import <VUIComponents/Utilities.h>
 
 @interface DonationLikeCardView(){
 
@@ -137,7 +138,7 @@
     
     [super commonInit];
     
-    UIView* view = [[NSBundle mainBundle]loadNibNamed:@"DonationLikeCardView" owner:self options:nil][0];
+    UIView* view = [[Utilities getPodBundle]loadNibNamed:@"DonationLikeCardView" owner:self options:nil][0];
     
     view.frame = self.bounds;
     

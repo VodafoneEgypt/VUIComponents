@@ -7,6 +7,7 @@
 //
 
 #import "ConfirmationAlertView.h"
+#import <VUIComponents/Utilities.h>
 
 #define BGViewFadeIn 0.266666667
 #define ContainerViewSlideUp 0.5
@@ -144,7 +145,7 @@
     
     self.frame = CGRectMake(0, 0, screenSize.width, screenSize.height);
     
-    NSArray* views = [[NSBundle mainBundle]loadNibNamed:@"ConfirmationAlertView" owner:self options:nil];
+    NSArray* views = [[Utilities getPodBundle]loadNibNamed:@"ConfirmationAlertView" owner:self options:nil];
     
     UIView* view = [views objectAtIndex:0];
     

@@ -278,7 +278,7 @@ shouldShowMenuForItemAtIndexPath:(NSIndexPath *)indexPath{
 
 -(void)commonInit{
     
-    NSArray* views = [[NSBundle mainBundle]loadNibNamed:@"PagerView" owner:self options:nil];
+    NSArray* views = [[Utilities getPodBundle]loadNibNamed:@"PagerView" owner:self options:nil];
     
     collectionPagerView.delegate = self;
     

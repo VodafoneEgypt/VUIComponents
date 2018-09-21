@@ -324,7 +324,6 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-VUIComponents_Example/Pods-VUIComponents_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/CommonCrypto/CommonCrypto.framework",
 				"${BUILT_PRODUCTS_DIR}/GSKStretchyHeaderView/GSKStretchyHeaderView.framework",
 				"${BUILT_PRODUCTS_DIR}/INTUAnimationEngine/INTUAnimationEngine.framework",
 				"${BUILT_PRODUCTS_DIR}/JWGCircleCounter/JWGCircleCounter.framework",
@@ -336,7 +335,6 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CommonCrypto.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GSKStretchyHeaderView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/INTUAnimationEngine.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JWGCircleCounter.framework",

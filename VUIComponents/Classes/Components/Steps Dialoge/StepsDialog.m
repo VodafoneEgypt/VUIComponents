@@ -9,6 +9,7 @@
 #import "StepsDialog.h"
 #import "childStepperView.h"
 #import "BaseCardView+Protected.h"
+#import <VUIComponents/Utilities.h>
 
 @interface StepsDialog ()<StepperProtocol>{
     
@@ -208,7 +209,7 @@
 
 -(void)commonInit{
     
-    NSArray* views = [[NSBundle mainBundle]loadNibNamed:@"StepsDialog" owner:self options:nil];
+    NSArray* views = [[Utilities getPodBundle]loadNibNamed:@"StepsDialog" owner:self options:nil];
     
     UIView* view = [views objectAtIndex:0];
     

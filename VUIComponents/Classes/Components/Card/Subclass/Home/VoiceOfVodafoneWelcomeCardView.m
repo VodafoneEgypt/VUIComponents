@@ -11,6 +11,7 @@
 #import "INTUAnimationEngine.h"
 #import "AnaVodafoneLabel.h"
 #import <VUIComponents/LanguageHandler.h>
+#import <VUIComponents/Utilities.h>
 
 @interface VoiceOfVodafoneWelcomeCardView() {
     BOOL isRTL;
@@ -122,7 +123,7 @@
     
     NSString* nibFileName = isRTL ?@"VoiceOfVodafoneWelcomeCardView_RTL":@"VoiceOfVodafoneWelcomeCardView";
     
-    NSArray* views = [[NSBundle mainBundle]loadNibNamed:nibFileName owner:self options:nil];
+    NSArray* views = [[Utilities getPodBundle]loadNibNamed:nibFileName owner:self options:nil];
     
     UIView* view = [views objectAtIndex:0];
     

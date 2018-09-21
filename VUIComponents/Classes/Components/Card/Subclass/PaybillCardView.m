@@ -12,6 +12,7 @@
 #import "LanguageHandler.h"
 #import "UIColor+Hex.h"
 #import "AnaVodafoneLabel.h"
+#import <VUIComponents/Utilities.h>
 
 #define TextFieldVerticalMargin 16
 #define TextFieldHeight 45
@@ -146,10 +147,10 @@
     
     if ([LanguageHandler sharedInstance].currentDirection == RTL) {
         
-        view = [[NSBundle mainBundle]loadNibNamed:@"PaybillCardViewRTL" owner:self options:nil][0];
+        view = [[Utilities getPodBundle]loadNibNamed:@"PaybillCardViewRTL" owner:self options:nil][0];
     }else{
         
-        view = [[NSBundle mainBundle]loadNibNamed:@"PaybillCardView" owner:self options:nil][0];
+        view = [[Utilities getPodBundle]loadNibNamed:@"PaybillCardView" owner:self options:nil][0];
     }
     
     view.frame = self.bounds;

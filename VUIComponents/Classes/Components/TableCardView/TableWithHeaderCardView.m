@@ -176,7 +176,7 @@
     
     [super commonInit];
     
-    UIView* view = [[NSBundle mainBundle]loadNibNamed:@"TableWithHeaderCardView" owner:self options:nil][0];
+    UIView* view = [[Utilities getPodBundle]loadNibNamed:@"TableWithHeaderCardView" owner:self options:nil][0];
     
     view.frame = self.bounds;
     

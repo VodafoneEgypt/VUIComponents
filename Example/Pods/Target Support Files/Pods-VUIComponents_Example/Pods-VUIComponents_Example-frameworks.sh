@@ -143,7 +143,6 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/CommonCrypto/CommonCrypto.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/GSKStretchyHeaderView/GSKStretchyHeaderView.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/INTUAnimationEngine/INTUAnimationEngine.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/JWGCircleCounter/JWGCircleCounter.framework"
@@ -154,7 +153,6 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/WYPopoverController/WYPopoverController.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/CommonCrypto/CommonCrypto.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/GSKStretchyHeaderView/GSKStretchyHeaderView.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/INTUAnimationEngine/INTUAnimationEngine.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/JWGCircleCounter/JWGCircleCounter.framework"

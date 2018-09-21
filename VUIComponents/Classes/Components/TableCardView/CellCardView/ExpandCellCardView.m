@@ -12,6 +12,7 @@
 #import "LanguageHandler.h"
 #import "UIColor+Hex.h"
 #import "ExpandCellCardModel.h"
+#import <VUIComponents/Utilities.h>
 
 @interface ExpandCellCardView(){
     __weak IBOutlet UILabel *rightLabel;
@@ -167,11 +168,11 @@
     
     if ([LanguageHandler sharedInstance].currentDirection == RTL) {
         
-        views = [[NSBundle mainBundle]loadNibNamed:@"ExpandCellCardView" owner:self options:nil];
+        views = [[Utilities getPodBundle]loadNibNamed:@"ExpandCellCardView" owner:self options:nil];
         
     }else{
         
-        views = [[NSBundle mainBundle]loadNibNamed:@"ExpandCellCardView" owner:self options:nil];
+        views = [[Utilities getPodBundle]loadNibNamed:@"ExpandCellCardView" owner:self options:nil];
     }
     
     UIView* view = [views objectAtIndex:0];

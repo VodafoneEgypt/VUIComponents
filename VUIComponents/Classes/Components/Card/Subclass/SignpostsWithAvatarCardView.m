@@ -11,6 +11,7 @@
 #import "TableSignpostWithAvatarCardView.h"
 #import "LanguageHandler.h"
 #import "UIColor+Hex.h"
+#import <VUIComponents/Utilities.h>
 
 @interface SignpostsWithAvatarCardView ()
 
@@ -351,11 +352,11 @@
     
     if ([LanguageHandler sharedInstance].currentDirection == RTL) {
         
-        views = [[NSBundle mainBundle]loadNibNamed:@"SignpostsWithAvatarCardViewRTL" owner:self options:nil];
+        views = [[Utilities getPodBundle]loadNibNamed:@"SignpostsWithAvatarCardViewRTL" owner:self options:nil];
         
     }else{
         
-        views = [[NSBundle mainBundle]loadNibNamed:@"SignpostsWithAvatarCardView" owner:self options:nil];
+        views = [[Utilities getPodBundle]loadNibNamed:@"SignpostsWithAvatarCardView" owner:self options:nil];
     }
     
     UIView* view = [views objectAtIndex:0];

@@ -10,6 +10,7 @@
 #import "AnaVodafoneLabel.h"
 #import "CustomButton.h"
 #import "INTUAnimationEngine.h"
+#import <VUIComponents/Utilities.h>
 
 @interface ErrorAlertView()
 
@@ -54,7 +55,7 @@
     
     self.frame = CGRectMake(0, 0, screenSize.width, screenSize.height);
     
-    NSArray* views = [[NSBundle mainBundle]loadNibNamed:@"ErrorAlertView" owner:self options:nil];
+    NSArray* views = [[Utilities getPodBundle]loadNibNamed:@"ErrorAlertView" owner:self options:nil];
     
     UIView* view = [views objectAtIndex:0];
     

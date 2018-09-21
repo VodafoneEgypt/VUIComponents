@@ -10,6 +10,7 @@
 #import "MultiDropDownModel.h"
 #import "CustomDropDownStyleModel.h"
 #import "LanguageHandler.h"
+#import <VUIComponents/Utilities.h>
 
 @interface MultiLineDropDownView() {
     
@@ -96,7 +97,7 @@
     
     if ([LanguageHandler sharedInstance].currentDirection == RTL) {
         
-        NSArray* views = [[NSBundle mainBundle]loadNibNamed:@"MultiLineDropDownViewRTL" owner:self options:nil];
+        NSArray* views = [[Utilities getPodBundle]loadNibNamed:@"MultiLineDropDownViewRTL" owner:self options:nil];
         
         UIView* view = [views objectAtIndex:0];
         
@@ -109,7 +110,7 @@
         [self addSubview:view];
     }else{
         
-        NSArray* views = [[NSBundle mainBundle]loadNibNamed:@"MultiLineDropDownView" owner:self options:nil];
+        NSArray* views = [[Utilities getPodBundle]loadNibNamed:@"MultiLineDropDownView" owner:self options:nil];
         
         UIView* view = [views objectAtIndex:0];
         

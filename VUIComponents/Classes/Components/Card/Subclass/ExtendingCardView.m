@@ -11,6 +11,7 @@
 #import "SimpleTextCardView.h"
 #import "LanguageHandler.h"
 #import "UIColor+Hex.h"
+#import <VUIComponents/Utilities.h>
 
 @interface  ExtendingCardView()
 
@@ -241,10 +242,10 @@
     
     if ([LanguageHandler sharedInstance].currentDirection == RTL) {
         
-        views = [[NSBundle mainBundle]loadNibNamed:@"ExtendingCardViewRTL" owner:self options:nil];
+        views = [[Utilities getPodBundle]loadNibNamed:@"ExtendingCardViewRTL" owner:self options:nil];
     }else{
         
-        views = [[NSBundle mainBundle]loadNibNamed:@"ExtendingCardView" owner:self options:nil];
+        views = [[Utilities getPodBundle]loadNibNamed:@"ExtendingCardView" owner:self options:nil];
     }
     
     UIView* view = [views objectAtIndex:0];

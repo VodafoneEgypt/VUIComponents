@@ -11,6 +11,7 @@
 #import "UIColor+Hex.h"
 #import "BillsExpandedTableView.h"
 #import "TableCardModel.h"
+#import <VUIComponents/Utilities.h>
 
 @interface BillsView()
 
@@ -245,11 +246,11 @@
     
     if ([LanguageHandler sharedInstance].currentDirection == RTL) {
         
-        views = [[NSBundle mainBundle]loadNibNamed:@"BillsView_RTL" owner:self options:nil];
+        views = [[Utilities getPodBundle]loadNibNamed:@"BillsView_RTL" owner:self options:nil];
         
     }else{
         
-        views = [[NSBundle mainBundle]loadNibNamed:@"BillsView" owner:self options:nil];
+        views = [[Utilities getPodBundle]loadNibNamed:@"BillsView" owner:self options:nil];
     }
     
     UIView* view = [views objectAtIndex:0];

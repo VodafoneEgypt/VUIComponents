@@ -11,6 +11,7 @@
 #import "BaseCardView+Protected.h"
 #import "LanguageHandler.h"
 #import "UIColor+Hex.h"
+#import <VUIComponents/Utilities.h>
 
 #define highlightedLabelTextColor [UIColor colorWithCSS:@"ffffff"]
 #define animationDuration 0.3
@@ -247,7 +248,7 @@
     
     [super commonInit];
     
-    NSArray* views = [[NSBundle mainBundle]loadNibNamed:@"StepperCardViewWithLabels" owner:self options:nil];
+    NSArray* views = [[Utilities getPodBundle]loadNibNamed:@"StepperCardViewWithLabels" owner:self options:nil];
     
     UIView* view = [views objectAtIndex:0];
     

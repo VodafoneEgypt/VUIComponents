@@ -8,6 +8,7 @@
 
 #import "RadioButtonHeaderCardView.h"
 #import "BaseCardView+Protected.h"
+#import <VUIComponents/Utilities.h>
 
 @interface RadioButtonHeaderCardView ()
 
@@ -56,7 +57,7 @@
     
     [super commonInit];
     
-    NSArray* views = [[NSBundle mainBundle]loadNibNamed:@"RadioButtonHeaderCardView" owner:self options:nil];
+    NSArray* views = [[Utilities getPodBundle]loadNibNamed:@"RadioButtonHeaderCardView" owner:self options:nil];
     
     UIView* view = [views objectAtIndex:0];
     

@@ -11,6 +11,7 @@
 #import "LanguageHandler.h"
 #import "BaseCardView+Protected.h"
 #import "UIColor+Hex.h"
+#import <VUIComponents/Utilities.h>
 
 @interface CellCardViewImgWithSelectedOnly (){
     __weak IBOutlet UIImageView *arrowImgView;
@@ -88,7 +89,7 @@ CGFloat unSelectedimgViewWidth;
     
     [super commonInit];
     
-    NSArray* views = [[NSBundle mainBundle]loadNibNamed:@"CellCardViewImgWithSelectedOnly" owner:self options:nil];
+    NSArray* views = [[Utilities getPodBundle]loadNibNamed:@"CellCardViewImgWithSelectedOnly" owner:self options:nil];
     
     UIView* view = [views objectAtIndex:0];
     

@@ -7,6 +7,7 @@
 //
 
 #import "StretchHeaderView.h"
+#import <VUIComponents/Utilities.h>
 
 @interface StretchHeaderView()
 
@@ -125,7 +126,7 @@
     
     StretchHeaderView *headerView;
     
-    NSArray* nibViews = [[NSBundle mainBundle] loadNibNamed:@"StretchHeaderView"
+    NSArray* nibViews = [[Utilities getPodBundle] loadNibNamed:@"StretchHeaderView"
                                                       owner:self
                                                     options:nil];
     headerView = nibViews.firstObject;

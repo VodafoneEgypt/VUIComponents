@@ -11,6 +11,7 @@
 #import "LanguageHandler.h"
 #import "BaseCardView+Protected.h"
 #import "UIColor+Hex.h"
+#import <VUIComponents/Utilities.h>
 
 @interface MultiLineCellCardView ()
 
@@ -77,7 +78,7 @@
     
     [super commonInit];
     
-    NSArray* views = [[NSBundle mainBundle]loadNibNamed:@"MultiLineCellCardView" owner:self options:nil];
+    NSArray* views = [[Utilities getPodBundle]loadNibNamed:@"MultiLineCellCardView" owner:self options:nil];
     
     UIView* view = [views objectAtIndex:0];
     

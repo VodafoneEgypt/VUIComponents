@@ -1,6 +1,6 @@
 {
   "name": "VUIComponents",
-  "version": "0.3.11",
+  "version": "0.3.17",
   "summary": "Pod contains UI components",
   "description": "A pod contains all objective-c UI components you need to use",
   "homepage": "https://github.com/VodafoneEgypt/VUIComponents",
@@ -13,14 +13,13 @@
   },
   "source": {
     "git": "https://github.com/VodafoneEgypt/VUIComponents.git",
-    "tag": "0.3.11"
+    "tag": "0.3.17"
   },
   "platforms": {
     "ios": "9.0"
   },
   "source_files": "VUIComponents/Classes/**/*.{h,m}",
   "resources": "VUIComponents/Classes/**/*.{xib,storyboard,png,json,html,js,css,lproj,otf,ttf,xcassets}",
-  "frameworks": "CommonCrypto",
   "dependencies": {
     "NSAttributedString+CCLFormat": [
 
@@ -41,9 +40,6 @@
 
     ],
     "RSKImageCropper": [
-
-    ],
-    "CommonCrypto": [
 
     ]
   }

@@ -163,7 +163,7 @@
     
     [super commonInit];
     
-    UIView* view = [[NSBundle mainBundle]loadNibNamed:@"TableCardView" owner:self options:nil][0];
+    UIView* view = [[Utilities getPodBundle]loadNibNamed:@"TableCardView" owner:self options:nil][0];
     
     view.frame = self.bounds;
     

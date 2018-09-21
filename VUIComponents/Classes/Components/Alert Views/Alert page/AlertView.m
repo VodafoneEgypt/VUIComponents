@@ -10,7 +10,7 @@
 #import "LanguageHandler.h"
 #import <QuartzCore/QuartzCore.h>
 #import "INTUAnimationEngine.h"
-
+#import <VUIComponents/Utilities.h>
 
 #define HeaderViewBGFadeIn 0.266666667
 #define ContentsFadeIn 0.166666667
@@ -75,7 +75,7 @@
     [webView setTintColor:UIColor.clearColor];
     [webView setUserInteractionEnabled:NO];
     
-    NSString *html = [[NSBundle mainBundle] pathForResource:@"GlamourAnimation" ofType:@"html"];
+    NSString *html = [[Utilities getPodBundle] pathForResource:@"GlamourAnimation" ofType:@"html"];
     NSURL *url = [NSURL fileURLWithPath:html];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     
@@ -255,10 +255,10 @@
     
     if([LanguageHandler sharedInstance].currentDirection == LTR){
         
-        views = [[NSBundle mainBundle]loadNibNamed:@"AlertView" owner:self options:nil];
+        views = [[Utilities getPodBundle]loadNibNamed:@"AlertView" owner:self options:nil];
     }else{
         
-        views = [[NSBundle mainBundle]loadNibNamed:@"AlertView_RTL" owner:self options:nil];
+        views = [[Utilities getPodBundle]loadNibNamed:@"AlertView_RTL" owner:self options:nil];
     }
     
     UIView* view = [views objectAtIndex:0];

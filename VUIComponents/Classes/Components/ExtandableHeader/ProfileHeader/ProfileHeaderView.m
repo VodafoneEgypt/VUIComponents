@@ -10,6 +10,7 @@
 #import "LanguageHandler.h"
 #import "UIColor+Hex.h"
 #import "AnaVodafoneAlertController.h"
+#import <VUIComponents/Utilities.h>
 //#import "AppUser.h"
 #import "RSKImageCropper.h"
 //#import "BaseViewController.h"
@@ -300,7 +301,7 @@
     
     ProfileHeaderView *headerView;
     
-    NSArray* nibViews = [[NSBundle mainBundle] loadNibNamed:@"ProfileHeaderView"
+    NSArray* nibViews = [[Utilities getPodBundle] loadNibNamed:@"ProfileHeaderView"
                                                       owner:self
                                                     options:nil];
     headerView = nibViews.firstObject;
