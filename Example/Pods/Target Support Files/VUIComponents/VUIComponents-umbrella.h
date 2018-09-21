@@ -37,6 +37,7 @@
 #import "ExpandSignpostCell.h"
 #import "ExpandSignpostCellModel.h"
 #import "ExpandSignpostCellRTL.h"
+#import "ExpandSignpostWithAvatarCardView.h"
 #import "TableSignpostWithAvatarCardView.h"
 #import "ExtendingCardView.h"
 #import "GiftCardView.h"
