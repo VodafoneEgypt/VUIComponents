@@ -43,6 +43,14 @@
 
 #pragma mark setters
 
+-(UIImageView *)getAvatarImageView {
+    return _avatarImgView;
+}
+
+-(void)setAvatarImageView:(UIImageView *)imageView {
+    _avatarImgView = imageView;
+}
+
 -(void)setSubTitleLabelAdjustsFontSizeToFitWidth:(Boolean)F andNumberOfLine:(NSInteger)N{
     
     subTitleLabel.numberOfLines = N;

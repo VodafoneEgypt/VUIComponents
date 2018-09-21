@@ -63,5 +63,7 @@ typedef void(^TargetBlock)(void);
 @property (nonatomic) IBInspectable BOOL withoutCircleImage;
 
 -(void)setSubTitleLabelAdjustsFontSizeToFitWidth:(Boolean)F andNumberOfLine:(NSInteger)N;
+-(UIImageView *)getAvatarImageView;
+-(void)setAvatarImageView:(UIImageView *)imageView;
 
 @end

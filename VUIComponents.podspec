@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'VUIComponents'
-  s.version          = '0.3.13'
+  s.version          = '0.3.14'
   s.summary          = 'Pod contains UI components'
   s.description      = 'A pod contains all objective-c UI components you need to use'
   s.homepage         = 'https://github.com/VodafoneEgypt/VUIComponents'
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.source_files = 'VUIComponents/Classes/**/*.{h,m}'
   s.resources = 'VUIComponents/Classes/**/*.{xib,storyboard,png,json,html,js,css,lproj,otf,ttf,xcassets}'
 
-  s.framework = "CommonCrypto"
+  #s.framework = "CommonCrypto"
   
   s.dependency 'NSAttributedString+CCLFormat'
   s.dependency 'WYPopoverController', '~> 0.3.9'
