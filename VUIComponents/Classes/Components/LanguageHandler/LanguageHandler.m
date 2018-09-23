@@ -54,7 +54,7 @@
             lang = @"ar";
     }
     
-    NSString *bundlePath = [[NSBundle bundleForClass:[self class]] pathForResource:lang ofType:@"lproj"];
+    NSString *bundlePath = [[NSBundle mainBundle] pathForResource:lang ofType:@"lproj"];
     _currentBundle = [NSBundle bundleWithPath:bundlePath];
     
     //    [[NSNotificationCenter defaultCenter] postNotificationName:LanguageChangedNotification object:nil];
