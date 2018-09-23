@@ -8,7 +8,7 @@
 
 #import "PickerControllView.h"
 #import "SelectDateView.h"
-
+#import "Utilities.h"
 #define ScreenWidth         [UIScreen mainScreen].bounds.size.width
 #define ScreenHeight        [UIScreen mainScreen].bounds.size.height
 
@@ -38,7 +38,7 @@
 #pragma mark - Private Methods
 -(void)loadSelectDateView{
     self.dvWidth = ScreenWidth;
-    self.selectDateView = [[[NSBundle mainBundle] loadNibNamed:@"SelectDateView" owner:self options:nil]lastObject];
+    self.selectDateView = [[[Utilities getPodBundle] loadNibNamed:@"SelectDateView" owner:self options:nil]lastObject];
     [self.selectDateView loadWithChooseDate:self.chosenDate];
     self.dvHeight = self.selectDateView.frame.size.height;
     [self.selectDateView setFrame:CGRectMake(0, ScreenHeight, self.dvWidth, self.dvHeight)];

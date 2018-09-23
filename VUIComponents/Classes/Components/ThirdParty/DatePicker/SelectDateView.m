@@ -11,7 +11,7 @@
 #import "MonthPickerView.h"
 #import "DayPickerView.h"
 #import "PickerSubView.h"
-
+#import "Utilities.h"
 #define kSubViewGap 0.0f
 #define ScreenWidth         [UIScreen mainScreen].bounds.size.width
 
@@ -32,7 +32,7 @@
     NSMutableArray  *subViewArray = [[NSMutableArray alloc]initWithObjects:@"DayPickerView", @"MonthPickerView",@"YearPickerView", nil];
     //加载每个子模块
     for (NSString *classString in subViewArray) {
-        NSArray *nibs = [[NSBundle mainBundle] loadNibNamed:classString owner:self options:nil];
+        NSArray *nibs = [[Utilities getPodBundle] loadNibNamed:classString owner:self options:nil];
         PickerSubView *pickerSubView = [nibs lastObject];
         CGRect rect = pickerSubView.frame;
         CGFloat dpvWidth = (ScreenWidth - kSubViewGap * 2)/3;
