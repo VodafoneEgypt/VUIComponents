@@ -11,11 +11,12 @@
 #import "UIColor+Hex.h"
 #import "LanguageHandler.h"
 
-#define height 45
+#define ButtonHeight 45
 
 @interface CustomButton(){
     
     CustomButtonStyleModel *objCustomButtonModel;
+    UIActivityIndicatorView *indicatorView;
 }
 @end
 
@@ -28,9 +29,9 @@
     _styleFilePath = styleFilePath;
     
     self.titleLabel.font = [UIFont fontWithName:[[LanguageHandler sharedInstance] stringForKey:@"regularFont"] size:18];
-
+    
     objCustomButtonModel = [[CustomButtonStyleModel alloc] initWithStyleFilePath:styleFilePath];
-
+    
     [self setTitleColor:[UIColor colorWithCSS:objCustomButtonModel.normalTitleColor] forState:UIControlStateNormal];
     [self setTitleColor:[UIColor colorWithCSS:objCustomButtonModel.highlightedTitleColor] forState:UIControlStateHighlighted];
     [self setTitleColor:[UIColor colorWithCSS:objCustomButtonModel.disabledTitleColor] forState:UIControlStateDisabled];
@@ -39,10 +40,18 @@
     [self handleUnSelected];
 }
 
+- (void)setStyleFile:(StyleFilePath )styleFile{
+    
+    _styleFile = styleFile;
+    
+    [self setStyleFilePath:[CustomButton styleFilePathToString:styleFile]];
+    
+}
+
 #pragma mark event handling
 
 -(void)performAction{
-
+    
     [self handleUnSelected];
     
     if (_actionBlock != nil) {
@@ -71,8 +80,19 @@
 
 #pragma mark overided
 -(void)setFrame:(CGRect)frame{
-     
-    [super setFrame:CGRectMake(frame.origin.x, frame.origin.y, frame.size.width, height)];
+    
+    [super setFrame:CGRectMake(frame.origin.x, frame.origin.y, frame.size.width, ButtonHeight)];
+    
+    CGRect indicatorViewFrame =  indicatorView.frame;
+    if(([LanguageHandler sharedInstance].currentLanguage == ARABIC))
+    {
+        indicatorViewFrame.origin.x = 5;
+    }else{
+        indicatorViewFrame.origin.x = frame.size.width-30;
+        
+    }
+    indicatorView.frame = indicatorViewFrame;
+    
 }
 
 -(void)setEnabled:(BOOL)enabled{
@@ -80,7 +100,7 @@
     [super setEnabled:enabled];
     
     if (enabled) {
-       
+        
         [self handleUnSelected];
     }else{
         
@@ -94,8 +114,14 @@
 
 #pragma mark initialize
 
--(instancetype) initWithTxt:(NSString*)txt AndStyleFilePath:(NSString *)styleFilePath AndActinBlock:(ActionBlock)actionBlock{
 
++(instancetype) ButtonWithTxt:(NSString*)txt AndStyleFilePathEnym:(StyleFilePath)styleFilePath AndActinBlock:(ActionBlock)actionBlock{
+    
+    return [[CustomButton alloc] initWithTxt:txt AndStyleFilePath:[self styleFilePathToString:styleFilePath] AndActinBlock:actionBlock];
+}
+
+-(instancetype) initWithTxt:(NSString*)txt AndStyleFilePath:(NSString *)styleFilePath AndActinBlock:(ActionBlock)actionBlock{
+    
     self = [super init];
     
     if(self){
@@ -113,7 +139,7 @@
 }
 
 +(instancetype) ButtonWithTxt:(NSString*)txt AndStyleFilePath:(NSString *)styleFilePath AndActinBlock:(ActionBlock)actionBlock{
-
+    
     return [[CustomButton alloc] initWithTxt:txt AndStyleFilePath:styleFilePath AndActinBlock:actionBlock];
 }
 
@@ -139,6 +165,79 @@
     }
     
     return self;
+}
+
++(NSString*)styleFilePathToString:(StyleFilePath)styleFilePath {
+    NSString *result = nil;
+    
+    switch(styleFilePath) {
+        case CardButtonPrimaryStyle:
+            result = @"CardButtonPrimaryStyle";
+            break;
+        case CardButtonSecondaryStyle:
+            result = @"CardButtonSecondaryStyle";
+            break;
+        case CardButtonTertiaryStyle:
+            result = @"CardButtonTertiaryStyle";
+            break;
+        case HeroButtonPrimaryStyle:
+            result = @"HeroButtonPrimaryStyle";
+            break;
+        case HeroButtonSecondaryStyle:
+            result = @"HeroButtonSecondaryStyle";
+            break;
+        case HeroButtonTertiaryStyle:
+            result = @"HeroButtonTertiaryStyle";
+            break;
+        case OverlayButtonPrimaryStyle:
+            result = @"OverlayButtonPrimaryStyle";
+            break;
+        case OverlayButtonSecondaryStyle:
+            result = @"OverlayButtonSecondaryStyle";
+            break;
+        case OverlayButtonTertiaryStyle:
+            result = @"OverlayButtonTertiaryStyle";
+            break;
+        case PageNudgeButtonPrimaryStyle:
+            result = @"PageNudgeButtonPrimaryStyle";
+            break;
+        case PageNudgeButtonSecondaryStyle:
+            result = @"PageNudgeButtonSecondaryStyle";
+            break;
+            
+        default:
+            [NSException raise:NSGenericException format:@"Unexpected Custom Button StyleFilePath."];
+    }
+    
+    return result;
+}
+
+
+-(void)showProgressLoginNormal:(BOOL)show andColor:(UIColor *)color andBlockedView:(UIView *)view
+{
+    if(show)
+    {
+        int x = self.frame.size.width - 30;
+        
+        if(([LanguageHandler sharedInstance].currentLanguage == ARABIC))
+        {
+            x = self.frame.origin.x+ 5;
+        }
+        indicatorView = [[UIActivityIndicatorView alloc] initWithFrame:CGRectMake(x, self.frame.size.height/2 - 25/2, 25, 25)];
+        
+        indicatorView.tag = -100;
+        indicatorView.color = color;
+        [indicatorView startAnimating];
+        [self addSubview:indicatorView];
+        view.userInteractionEnabled = false;
+    }
+    else
+    {
+        
+        [indicatorView removeFromSuperview];
+        view.userInteractionEnabled = true;
+        
+    }
 }
 
 -(void)commonInit{
