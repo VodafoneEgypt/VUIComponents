@@ -88,6 +88,7 @@
 #import "CustomDropDownStyleModel.h"
 #import "MultiDropDownModel.h"
 #import "DropDownViewController.h"
+#import "AddCreditCardFooterTableViewCell.h"
 #import "MultiLineDropDownView.h"
 #import "SimpleDropDownView.h"
 #import "InputIconTextField.h"

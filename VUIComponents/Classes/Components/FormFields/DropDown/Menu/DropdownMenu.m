@@ -24,7 +24,7 @@
     
 #pragma mark tableView delegate
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return _data.count;
+
     return _data.count + (hasFooter ? 1 : 0);
 }
 
