@@ -45,8 +45,8 @@
                                 <action selector="closeButtonAction:" destination="-1" eventType="touchUpInside" id="VnB-RX-jtK"/>
                             </connections>
                         </button>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NKI-Yi-GWE">
-                            <rect key="frame" x="30" y="69" width="315" height="32.5"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NKI-Yi-GWE">
+                            <rect key="frame" x="20" y="69" width="335" height="32.5"/>
                             <constraints>
                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32.5" id="l3d-da-dcL"/>
                             </constraints>
@@ -57,7 +57,7 @@
                     </subviews>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstItem="NKI-Yi-GWE" firstAttribute="width" secondItem="u1a-GY-3rs" secondAttribute="width" constant="-60" id="4jD-yA-1OR"/>
+                        <constraint firstItem="NKI-Yi-GWE" firstAttribute="width" secondItem="u1a-GY-3rs" secondAttribute="width" constant="-40" id="4jD-yA-1OR"/>
                         <constraint firstAttribute="bottom" secondItem="NKI-Yi-GWE" secondAttribute="bottom" constant="10" id="9Lx-uy-nuP"/>
                         <constraint firstItem="NKI-Yi-GWE" firstAttribute="centerX" secondItem="u1a-GY-3rs" secondAttribute="centerX" id="Aco-Ez-IUk"/>
                         <constraint firstAttribute="right" secondItem="jws-vX-mrw" secondAttribute="right" constant="11" id="YJa-pZ-zKf"/>

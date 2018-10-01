@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -45,8 +45,8 @@
                                 <action selector="closeButtonAction:" destination="-1" eventType="touchUpInside" id="4Bt-Me-KjQ"/>
                             </connections>
                         </button>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NKI-Yi-GWE">
-                            <rect key="frame" x="187.5" y="48" width="0.0" height="33"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NKI-Yi-GWE">
+                            <rect key="frame" x="20" y="48" width="335" height="33"/>
                             <constraints>
                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32.5" id="fea-u9-fPV"/>
                             </constraints>
@@ -60,6 +60,7 @@
                         <constraint firstAttribute="bottom" secondItem="NKI-Yi-GWE" secondAttribute="bottom" constant="10" id="9Lx-uy-nuP"/>
                         <constraint firstItem="NKI-Yi-GWE" firstAttribute="centerX" secondItem="u1a-GY-3rs" secondAttribute="centerX" id="Aco-Ez-IUk"/>
                         <constraint firstItem="jws-vX-mrw" firstAttribute="left" secondItem="u1a-GY-3rs" secondAttribute="left" constant="11" id="Vke-Os-WDL"/>
+                        <constraint firstItem="NKI-Yi-GWE" firstAttribute="width" secondItem="u1a-GY-3rs" secondAttribute="width" constant="-40" id="bhj-wl-HxT"/>
                         <constraint firstItem="NKI-Yi-GWE" firstAttribute="top" secondItem="jws-vX-mrw" secondAttribute="bottom" constant="1" id="bor-Wy-ydc"/>
                         <constraint firstItem="jws-vX-mrw" firstAttribute="top" secondItem="u1a-GY-3rs" secondAttribute="top" constant="23" id="elX-Le-EII"/>
                     </constraints>
