@@ -59,7 +59,7 @@
         AddCreditCardFooterTableViewCell *cell = (AddCreditCardFooterTableViewCell *) [tableView dequeueReusableCellWithIdentifier:footerTableViewCellName];
 
         if (cell == nil) {
-            [tableView registerNib:[UINib nibWithNibName:footerTableViewCellName bundle:nil] forCellReuseIdentifier:footerTableViewCellName];
+            [tableView registerNib:[UINib nibWithNibName:footerTableViewCellName bundle:[Utilities getPodBundle]] forCellReuseIdentifier:footerTableViewCellName];
             cell = [tableView dequeueReusableCellWithIdentifier:footerTableViewCellName];
         }
 
