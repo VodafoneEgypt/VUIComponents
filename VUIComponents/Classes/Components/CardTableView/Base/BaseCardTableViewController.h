@@ -21,6 +21,8 @@
 
 @property (weak, nonatomic) IBOutlet UITableView *cardsTableView;
 
+-(void)hideBackButton;
+
 - (void) prepareCells;
 
 @end

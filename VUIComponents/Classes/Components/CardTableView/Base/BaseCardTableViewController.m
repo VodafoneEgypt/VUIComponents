@@ -7,12 +7,16 @@
 //
 
 #import "BaseCardTableViewController.h"
-
+#import "LanguageHandler.h"
 @interface BaseCardTableViewController ()<UITableViewDelegate,UITableViewDataSource>{
     
     NSMutableDictionary* heights;
     
     NSMutableDictionary* cells;
+    
+    BOOL navigationItemsAdded;
+    
+    UIButton* backButton;
 }
 
 @end
@@ -23,9 +27,22 @@
     
     [super viewDidLoad];
     
+    navigationItemsAdded = false;
+    
     heights = [NSMutableDictionary new];
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+    
+    [super viewWillAppear:animated];
+    
+    [self.navigationController setNavigationBarHidden:true animated:false];
+    
+    if(navigationItemsAdded == false){
+        
+        [self adjustNavigationItems];
+    }
+}
 #pragma mark - public -
 
 - (void)prepareCells{
@@ -59,6 +76,55 @@
     }
     
     [self.cardsTableView reloadData];
+}
+
+#pragma mark - setters
+
+-(void)hideBackButton{
+    [backButton removeFromSuperview];
+}
+
+-(void)adjustNavigationItems{
+    
+    navigationItemsAdded = true;
+    
+    CGRect btnFrame;
+    
+    if(([LanguageHandler sharedInstance].currentLanguage == ARABIC)){
+        
+        btnFrame = CGRectMake(15, 28, 30, 25);
+    }else{
+        
+        btnFrame = CGRectMake([UIScreen mainScreen].bounds.size.width - 15 - 30, 28, 30, 25);
+    }
+    
+    
+    
+    if(self.navigationController.viewControllers.count > 1){
+        
+        if(([LanguageHandler sharedInstance].currentLanguage == ARABIC)){
+            
+            btnFrame = CGRectMake([UIScreen mainScreen].bounds.size.width - 15 - 30, 28, 30, 30);
+        }else{
+            
+            btnFrame = CGRectMake(15, 28, 30, 30);
+        }
+        
+        UIImage * backButtonImage = [UIImage imageNamed:([LanguageHandler sharedInstance].currentLanguage == ARABIC)?@"back-arrow-Ar":@"back-arrow"];
+        
+        backButton = [[UIButton alloc] initWithFrame:btnFrame];
+        [backButton setImage:backButtonImage forState:UIControlStateNormal];
+        [backButton setImage:backButtonImage forState:UIControlStateHighlighted];
+        [backButton addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
+        
+        [self.view addSubview:backButton];
+    }
+    
+}
+
+#pragma mark actions
+-(void)back{
+    [self.navigationController popViewControllerAnimated:true];
 }
 
 #pragma mark should override
