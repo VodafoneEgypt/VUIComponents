@@ -13,7 +13,7 @@
 #import <VUIComponents/LanguageHandler.h>
 #import <VUIComponents/Utilities.h>
 
-@interface PaymentInfoCardView()
+@interface PaymentInfoCardView()<UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *cardImageView;
 @property (weak, nonatomic) IBOutlet AnaVodafoneLabel *titleLabel;
@@ -73,10 +73,10 @@
         if ([value isEqualToString:@"Other"]) {
             value = [[LanguageHandler sharedInstance] stringForKey:@"Other"];
         }
-    else {
-        [amount.titleLabel setFont: [UIFont fontWithName:[[LanguageHandler sharedInstance] stringForKey:@"regularFont"] size:12.0 ] ];
+        else {
+            [amount.titleLabel setFont: [UIFont fontWithName:[[LanguageHandler sharedInstance] stringForKey:@"regularFont"] size:12.0 ] ];
         }
-//
+        //
         [amount setTitle:value forState:UIControlStateNormal];
     }
 }
@@ -196,6 +196,17 @@
 
 - (IBAction)amountPressed:(UIButton *)sender {
     [_delegate amountBtnWasTapped:sender];
+}
+
+-(BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+    if (textField == self.codeTextField) {
+        if (textField.text.length < 4 || string.length == 0) {
+            return YES;
+        } else {
+            return NO;
+        }
+    }
+    return YES;
 }
 
 -(void) commonInit {
