@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -61,16 +60,16 @@
                     </userDefinedRuntimeAttributes>
                 </label>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="RBA-K3-hyf">
-                    <rect key="frame" x="15" y="286.5" width="385" height="408"/>
+                    <rect key="frame" x="15" y="286.5" width="385" height="407.5"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yut-Qd-uFv">
-                            <rect key="frame" x="0.0" y="0.0" width="385" height="83"/>
+                            <rect key="frame" x="0.0" y="0.0" width="385" height="82.5"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="neb-AY-VkN" userLabel="Amounts Stack">
-                                    <rect key="frame" x="5" y="0.0" width="375" height="83"/>
+                                    <rect key="frame" x="5" y="0.0" width="375" height="82.5"/>
                                     <subviews>
                                         <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vzp-jI-ser">
-                                            <rect key="frame" x="0.0" y="0.0" width="82.5" height="83"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="82.5" height="82.5"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="Vzp-jI-ser" secondAttribute="height" multiplier="1:1" id="ruK-G3-nWQ"/>
@@ -83,7 +82,7 @@
                                             </connections>
                                         </button>
                                         <button opaque="NO" tag="50" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lpd-tq-JzU">
-                                            <rect key="frame" x="97.5" y="0.0" width="82.5" height="83"/>
+                                            <rect key="frame" x="97.5" y="0.0" width="82.5" height="82.5"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="Lpd-tq-JzU" secondAttribute="height" multiplier="1:1" id="zOv-c0-zJz"/>
@@ -96,7 +95,7 @@
                                             </connections>
                                         </button>
                                         <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZAg-LF-A6b">
-                                            <rect key="frame" x="195" y="0.0" width="82.5" height="83"/>
+                                            <rect key="frame" x="195" y="0.0" width="82.5" height="82.5"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="ZAg-LF-A6b" secondAttribute="height" multiplier="1:1" id="mLj-SD-c3o"/>
@@ -109,7 +108,7 @@
                                             </connections>
                                         </button>
                                         <button opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tUT-IP-CUB">
-                                            <rect key="frame" x="292.5" y="0.0" width="82.5" height="83"/>
+                                            <rect key="frame" x="292.5" y="0.0" width="82.5" height="82.5"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="tUT-IP-CUB" secondAttribute="height" multiplier="1:1" id="elk-5R-ivd"/>
@@ -133,7 +132,7 @@
                             </constraints>
                         </view>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dWR-db-c1g">
-                            <rect key="frame" x="0.0" y="103" width="385" height="45"/>
+                            <rect key="frame" x="0.0" y="102.5" width="385" height="45"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="45" id="pYz-EP-WA2"/>
                             </constraints>
@@ -145,7 +144,7 @@
                             </userDefinedRuntimeAttributes>
                         </textField>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ULG-Ga-0Kw">
-                            <rect key="frame" x="0.0" y="168" width="385" height="45"/>
+                            <rect key="frame" x="0.0" y="167.5" width="385" height="45"/>
                             <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="45" id="2Mf-Ts-XuK"/>
@@ -156,9 +155,12 @@
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="boolean" keyPath="addPadding" value="YES"/>
                             </userDefinedRuntimeAttributes>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="aIM-6Q-7TP"/>
+                            </connections>
                         </textField>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dip-z1-UXd" customClass="CustomButton">
-                            <rect key="frame" x="0.0" y="233" width="385" height="45"/>
+                            <rect key="frame" x="0.0" y="232.5" width="385" height="45"/>
                             <color key="backgroundColor" red="0.90196078431372551" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="45" id="naE-ks-ocT"/>
@@ -176,7 +178,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ma-to-ceT" userLabel="Delete this card" customClass="CustomButton">
-                            <rect key="frame" x="0.0" y="298" width="385" height="45"/>
+                            <rect key="frame" x="0.0" y="297.5" width="385" height="45"/>
                             <color key="backgroundColor" red="0.90196078430000004" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="45" id="Y0n-zA-j4w"/>
@@ -194,7 +196,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BoE-yw-NmM" customClass="CustomButton">
-                            <rect key="frame" x="0.0" y="363" width="385" height="45"/>
+                            <rect key="frame" x="0.0" y="362.5" width="385" height="45"/>
                             <color key="backgroundColor" red="0.68627450980392157" green="0.68627450980392157" blue="0.68627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="45" id="bHG-AI-r20"/>
@@ -232,7 +234,7 @@
     </objects>
     <resources>
         <image name="creditCard" width="33" height="22"/>
-        <image name="grey_circle" width="170" height="170"/>
-        <image name="red_circle" width="170" height="170"/>
+        <image name="grey_circle" width="170.5" height="170.5"/>
+        <image name="red_circle" width="170.5" height="170.5"/>
     </resources>
 </document>
