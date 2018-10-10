@@ -1,6 +1,6 @@
 {
   "name": "VUIComponents",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "summary": "Pod contains UI components",
   "description": "A pod contains all objective-c UI components you need to use",
   "homepage": "https://github.com/VodafoneEgypt/VUIComponents",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/VodafoneEgypt/VUIComponents.git",
-    "tag": "0.5.2"
+    "tag": "0.5.3"
   },
   "platforms": {
     "ios": "9.0"
