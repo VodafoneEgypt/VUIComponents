@@ -39,7 +39,7 @@
 -(void)awakeFromNib{
     [super awakeFromNib];
     _monthArray = [[NSArray alloc] init];
-        _monthArray = @[[[LanguageHandler sharedInstance] stringForKey:@"January"],[[LanguageHandler sharedInstance] stringForKey:@"February"],[[LanguageHandler sharedInstance] stringForKey:@"March"],[[LanguageHandler sharedInstance] stringForKey:@"April"],[[LanguageHandler sharedInstance] stringForKey:@"May"],[[LanguageHandler sharedInstance] stringForKey:@"June"],[[LanguageHandler sharedInstance] stringForKey:@"July "],[[LanguageHandler sharedInstance] stringForKey:@"August"],[[LanguageHandler sharedInstance] stringForKey:@"September"],[[LanguageHandler sharedInstance] stringForKey:@"October"],[[LanguageHandler sharedInstance] stringForKey:@"November "],[[LanguageHandler sharedInstance] stringForKey:@"December"]];
+        _monthArray = @[[[LanguageHandler sharedInstance] stringForKey:@"January"],[[LanguageHandler sharedInstance] stringForKey:@"February"],[[LanguageHandler sharedInstance] stringForKey:@"March"],[[LanguageHandler sharedInstance] stringForKey:@"April"],[[LanguageHandler sharedInstance] stringForKey:@"May"],[[LanguageHandler sharedInstance] stringForKey:@"June"],[[LanguageHandler sharedInstance] stringForKey:@"July"],[[LanguageHandler sharedInstance] stringForKey:@"August"],[[LanguageHandler sharedInstance] stringForKey:@"September"],[[LanguageHandler sharedInstance] stringForKey:@"October"],[[LanguageHandler sharedInstance] stringForKey:@"November"],[[LanguageHandler sharedInstance] stringForKey:@"December"]];
     
 }
 
