@@ -7,6 +7,7 @@
 //
 
 #import "DayPickerView.h"
+#import <VUIComponents/AnaVodafoneLabel.h>
 #define kMainProjColor      [UIColor colorWithRed:255.f/255 green:255.f/255 blue:255.f/255 alpha:1.0f]
 
 @interface DayPickerView ()
@@ -99,12 +100,14 @@
             viewForRow:(NSInteger)row
           forComponent:(NSInteger)component
            reusingView:(UIView *)view{
-    UILabel *dateLabel = (UILabel *)view;
-    dateLabel = [[UILabel alloc] init];
+    AnaVodafoneLabel *dateLabel = (AnaVodafoneLabel *)view;
+    dateLabel = [[AnaVodafoneLabel alloc] init];
     [dateLabel setTextColor:kMainProjColor];
     [dateLabel setBackgroundColor:[UIColor clearColor]];
     NSString *currentDay = [NSString stringWithFormat:@"%lu", row + 1 ];
-    [dateLabel setText:currentDay];
+    dateLabel.useRegularFont = true;
+    dateLabel.ignoresLanguageAllignment = true;
+    [dateLabel setTxt:currentDay];
     dateLabel.textAlignment = NSTextAlignmentLeft;
     return dateLabel;
 }

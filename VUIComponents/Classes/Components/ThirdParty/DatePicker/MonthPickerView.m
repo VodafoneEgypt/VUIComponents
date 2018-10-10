@@ -7,6 +7,7 @@
 //
 
 #import "MonthPickerView.h"
+#import <VUIComponents/LanguageHandler.h>
 #define kMainProjColor      [UIColor colorWithRed:255.f/255 green:255.f/255 blue:255.f/255 alpha:1.0f]
 
 @interface MonthPickerView ()
@@ -38,7 +39,13 @@
 -(void)awakeFromNib{
     [super awakeFromNib];
     _monthArray = [[NSArray alloc] init];
-    _monthArray = @[@"January",@"February",@"March",@"April",@"May",@"June ",@"July ",@"August",@"September",@"October",@"November ",@"December"];
+    if ([LanguageHandler sharedInstance].currentLanguage == ENGLISH){
+        _monthArray = @[@"January",@"February",@"March",@"April",@"May",@"June ",@"July ",@"August",@"September",@"October",@"November ",@"December"];
+        
+    }else{
+        _monthArray = @[@"يناير",@"فبراير",@"مارس",@"أبريل",@"مايو",@"يونيه ",@"يوليه ",@"أغسطس",@"سبتمبر",@"أكتوبر",@"نوفمبر ",@"ديسمبر"];
+
+    }
 }
 
 #pragma mark - UIPickerView DataSource Methods
