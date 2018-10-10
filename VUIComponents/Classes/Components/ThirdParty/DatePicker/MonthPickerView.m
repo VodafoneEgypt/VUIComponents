@@ -39,13 +39,8 @@
 -(void)awakeFromNib{
     [super awakeFromNib];
     _monthArray = [[NSArray alloc] init];
-    if ([LanguageHandler sharedInstance].currentLanguage == ENGLISH){
-        _monthArray = @[@"January",@"February",@"March",@"April",@"May",@"June ",@"July ",@"August",@"September",@"October",@"November ",@"December"];
-        
-    }else{
-        _monthArray = @[@"يناير",@"فبراير",@"مارس",@"أبريل",@"مايو",@"يونيه ",@"يوليه ",@"أغسطس",@"سبتمبر",@"أكتوبر",@"نوفمبر ",@"ديسمبر"];
-
-    }
+        _monthArray = @[[[LanguageHandler sharedInstance] stringForKey:@"January"],[[LanguageHandler sharedInstance] stringForKey:@"February"],[[LanguageHandler sharedInstance] stringForKey:@"March"],[[LanguageHandler sharedInstance] stringForKey:@"April"],[[LanguageHandler sharedInstance] stringForKey:@"May"],[[LanguageHandler sharedInstance] stringForKey:@"June"],[[LanguageHandler sharedInstance] stringForKey:@"July "],[[LanguageHandler sharedInstance] stringForKey:@"August"],[[LanguageHandler sharedInstance] stringForKey:@"September"],[[LanguageHandler sharedInstance] stringForKey:@"October"],[[LanguageHandler sharedInstance] stringForKey:@"November "],[[LanguageHandler sharedInstance] stringForKey:@"December"]];
+    
 }
 
 #pragma mark - UIPickerView DataSource Methods
