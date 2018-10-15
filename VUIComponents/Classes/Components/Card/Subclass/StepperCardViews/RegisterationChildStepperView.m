@@ -208,7 +208,7 @@
         dateOfBirthTextField.valid = dateOfBirthTextField.validationBlock(dateOfBirthTextField.text);
         
     }
-    if (firstNameTextField.valid && lastNameTextField.valid && emailTextField.valid && passwordTextField.valid && dateOfBirthTextField.valid) {
+    if (firstNameTextField.valid && lastNameTextField.valid && emailTextField.valid && passwordTextField.valid && confirmPasswordTextField.valid && dateOfBirthTextField.valid) {
         
         valid = true;
     }else{
