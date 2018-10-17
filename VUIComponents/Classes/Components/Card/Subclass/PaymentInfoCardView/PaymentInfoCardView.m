@@ -199,7 +199,10 @@
 }
 
 -(BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
-    if (textField == self.codeTextField) {
+    
+    if ([string isEqualToString:@" "]){
+        return  NO;
+    }else if (textField == self.codeTextField) {
         if (textField.text.length < 4 || string.length == 0) {
             return YES;
         } else {
@@ -217,7 +220,7 @@
     view.frame = frame;
     self.bounds = view.frame;
     [self addSubview:view];
-    
+    _amountTextField.delegate = self;
     _deleteThisCardButton.txt = @"Remove this card";
     _confirmButton.txt = @"Confirmation";
     _resendCodeButton.txt = @"Resend Code";
