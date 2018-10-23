@@ -10,6 +10,8 @@
 #endif
 #endif
 
+#import "AKPickerView.h"
+#import "PickerCollectionViewCell.h"
 #import "AlertView.h"
 #import "ConfirmationAlertView.h"
 #import "ErrorAlertView.h"

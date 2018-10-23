@@ -5,12 +5,12 @@ PODS:
   - INTUAnimationEngine/SpringSolver (1.4.2)
   - JWGCircleCounter (0.2.2)
   - "NSAttributedString+CCLFormat (1.2.0)"
-  - RSKImageCropper (2.2.0)
+  - RSKImageCropper (2.2.1)
   - "UIColor+Hex (1.0.1)":
     - "UIColor+Hex/NSColor (= 1.0.1)"
     - "UIColor+Hex/UIColor (= 1.0.1)"
   - "UIColor+Hex/UIColor (1.0.1)"
-  - VUIComponents (0.5.6):
+  - VUIComponents (0.5.7):
     - GSKStretchyHeaderView (= 1.0.0)
     - INTUAnimationEngine
     - JWGCircleCounter
@@ -42,9 +42,9 @@ SPEC CHECKSUMS:
   INTUAnimationEngine: 3a7d63738cd51af573d16848a771feedea7cc9f2
   JWGCircleCounter: 89e25c3d5e9eb41cf666a795427712bb5e52a1a1
   "NSAttributedString+CCLFormat": 46d1e36b72b7ab0e093323705188818b21ba9763
-  RSKImageCropper: bd0bdf765b27c046c89728d65075b363a3b665c2
+  RSKImageCropper: 98296ad26b41753f796b6898d015509598f13d97
   "UIColor+Hex": 9fee91bb8e19f17dd40a79ae1e98949a6a84489d
-  VUIComponents: 384d321987606b906739375fea3b60b61b5b6d83
+  VUIComponents: 52cfd6a9eedc16043c6cbc9ff46a7d4bdeafdc86
   WYPopoverController: a9db25ac2841a686acdc0f3a99bdb21545db32f4
 
 PODFILE CHECKSUM: 569668706fabd44c87d515d31b929f111a60e96e
