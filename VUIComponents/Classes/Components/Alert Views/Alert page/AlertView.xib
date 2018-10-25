@@ -49,8 +49,8 @@
                                         <action selector="closeButtonAction:" destination="-1" eventType="touchUpInside" id="VnB-RX-jtK"/>
                                     </connections>
                                 </button>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NKI-Yi-GWE">
-                                    <rect key="frame" x="187.5" y="69" width="0.0" height="32.5"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NKI-Yi-GWE">
+                                    <rect key="frame" x="35" y="69" width="305" height="32.5"/>
                                     <constraints>
                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32.5" id="l3d-da-dcL"/>
                                     </constraints>
@@ -63,6 +63,7 @@
                             <constraints>
                                 <constraint firstAttribute="bottom" secondItem="NKI-Yi-GWE" secondAttribute="bottom" constant="10" id="9Lx-uy-nuP"/>
                                 <constraint firstItem="NKI-Yi-GWE" firstAttribute="centerX" secondItem="u1a-GY-3rs" secondAttribute="centerX" id="Aco-Ez-IUk"/>
+                                <constraint firstItem="NKI-Yi-GWE" firstAttribute="width" secondItem="u1a-GY-3rs" secondAttribute="width" constant="-70" id="Wft-o6-kl3"/>
                                 <constraint firstAttribute="right" secondItem="jws-vX-mrw" secondAttribute="right" constant="11" id="YJa-pZ-zKf"/>
                                 <constraint firstItem="NKI-Yi-GWE" firstAttribute="top" secondItem="jws-vX-mrw" secondAttribute="bottom" constant="1" id="bor-Wy-ydc"/>
                                 <constraint firstItem="jws-vX-mrw" firstAttribute="top" secondItem="u1a-GY-3rs" secondAttribute="top" constant="44" id="elX-Le-EII"/>
