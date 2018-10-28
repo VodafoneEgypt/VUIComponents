@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <VUIComponents/AlertCardViewWithImg.h>
-#import <VUIComponents/LanguageHandler.h>
+#import <Languagehandlerpod/LanguageHandler.h>
 #import <VUIComponents/KVNProgress.h>
 #import <CommonCrypto/CommonDigest.h>
 #import <CommonCrypto/CommonCryptor.h>

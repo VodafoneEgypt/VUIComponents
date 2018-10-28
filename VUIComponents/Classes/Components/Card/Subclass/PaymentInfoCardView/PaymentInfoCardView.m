@@ -10,7 +10,7 @@
 #import "CustomButton.h"
 #import <VUIComponents/AnaVodafoneTextField.h>
 #import <VUIComponents/AnaVodafoneLabel.h>
-#import <VUIComponents/LanguageHandler.h>
+#import <Languagehandlerpod/LanguageHandler.h>
 #import <VUIComponents/Utilities.h>
 
 @interface PaymentInfoCardView()<UITextFieldDelegate>

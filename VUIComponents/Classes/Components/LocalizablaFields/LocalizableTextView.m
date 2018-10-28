@@ -7,7 +7,7 @@
 //
 
 #import "LocalizableTextView.h"
-#import <VUIComponents/LanguageHandler.h>
+#import <Languagehandlerpod/LanguageHandler.h>
 
 @implementation LocalizableTextView
 

@@ -10,7 +10,7 @@
 #import "BaseCardView+Protected.h"
 #import "INTUAnimationEngine.h"
 #import "AnaVodafoneLabel.h"
-#import <VUIComponents/LanguageHandler.h>
+#import <Languagehandlerpod/LanguageHandler.h>
 #import <VUIComponents/Utilities.h>
 
 @interface VoiceOfVodafoneWelcomeCardView() {

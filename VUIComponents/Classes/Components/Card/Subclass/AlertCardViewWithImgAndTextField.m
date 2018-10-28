@@ -11,7 +11,7 @@
 #import "KVNProgress.h"
 #import "ValidationTextField.h"
 #import "AnaVodafoneLabel.h"
-#import <VUIComponents/LanguageHandler.h>
+#import <Languagehandlerpod/LanguageHandler.h>
 
 @interface AlertCardViewWithImgAndTextField()
 @property (weak, nonatomic) IBOutlet ValidationTextField *alertTextField;

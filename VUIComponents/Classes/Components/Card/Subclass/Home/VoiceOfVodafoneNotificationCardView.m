@@ -8,7 +8,7 @@
 
 #import "VoiceOfVodafoneNotificationCardView.h"
 #import "BaseCardView+Protected.h"
-#import <VUIComponents/LanguageHandler.h>
+#import <Languagehandlerpod/LanguageHandler.h>
 #import <VUIComponents/Utilities.h>
 #define BtnHorizontalMargin 16
 

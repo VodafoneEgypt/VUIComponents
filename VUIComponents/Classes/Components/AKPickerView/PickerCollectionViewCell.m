@@ -8,7 +8,7 @@
 //
 
 #import "PickerCollectionViewCell.h"
-#import <VUIComponents/LanguageHandler.h>
+#import <Languagehandlerpod/LanguageHandler.h>
 #import "UIColor+Hex.h"
 #import "NSAttributedString+CCLFormat.h"
 

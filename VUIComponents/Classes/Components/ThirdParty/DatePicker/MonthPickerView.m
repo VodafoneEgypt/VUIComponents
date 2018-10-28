@@ -7,7 +7,7 @@
 //
 
 #import "MonthPickerView.h"
-#import <VUIComponents/LanguageHandler.h>
+#import <Languagehandlerpod/LanguageHandler.h>
 #define kMainProjColor      [UIColor colorWithRed:255.f/255 green:255.f/255 blue:255.f/255 alpha:1.0f]
 
 @interface MonthPickerView ()

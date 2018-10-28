@@ -7,7 +7,7 @@
 //
 
 #import "LocalizableButton.h"
-#import <VUIComponents/LanguageHandler.h>
+#import <Languagehandlerpod/LanguageHandler.h>
 
 @implementation LocalizableButton
 

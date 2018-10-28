@@ -7,7 +7,7 @@
 //
 
 #import "ExpandableSignpostsWithAvatarCardView.h"
-#import <VUIComponents/LanguageHandler.h>
+#import <Languagehandlerpod/LanguageHandler.h>
 #import <VUIComponents/Utilities.h>
 #import "UIColor+Hex.h"
 #import "BillsExpandedTableView.h"

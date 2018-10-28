@@ -25,7 +25,7 @@
 
 #import "InvalidTooltipView.h"
 #import "TooltipViewPrivate.h"
-#import <VUIComponents/LanguageHandler.h>
+#import <Languagehandlerpod/LanguageHandler.h>
 
 @implementation InvalidTooltipView
 

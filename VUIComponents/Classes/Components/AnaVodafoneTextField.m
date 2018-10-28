@@ -7,7 +7,7 @@
 //
 
 #import "AnaVodafoneTextField.h"
-#import <VUIComponents/LanguageHandler.h>
+#import <Languagehandlerpod/LanguageHandler.h>
 #import <VUIComponents/AnaVodafoneLabel.h>
 #import "Utilities.h"
 

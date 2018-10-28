@@ -8,7 +8,7 @@
 
 #import "AnaVodafoneAlertController.h"
 #import "Utilities.h"
-#import <VUIComponents/LanguageHandler.h>
+#import <Languagehandlerpod/LanguageHandler.h>
 
 @interface AnaVodafoneAlertController ()
 

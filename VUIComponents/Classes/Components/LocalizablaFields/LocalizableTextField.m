@@ -7,7 +7,7 @@
 //
 
 #import "LocalizableTextField.h"
-#import <VUIComponents/LanguageHandler.h>
+#import <Languagehandlerpod/LanguageHandler.h>
 
 @implementation LocalizableTextField
 

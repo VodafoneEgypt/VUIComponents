@@ -9,7 +9,7 @@
 #import "AlertCardViewWithImgandTable.h"
 #import "RadioButtonCell.h"
 #import "BaseCardView+Protected.h"
-#import <VUIComponents/LanguageHandler.h>
+#import <Languagehandlerpod/LanguageHandler.h>
 #import <VUIComponents/AnaVodafoneLabel.h>
 #import <VUIComponents/Utilities.h>
 

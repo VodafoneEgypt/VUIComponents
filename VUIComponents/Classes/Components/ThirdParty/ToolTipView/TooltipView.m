@@ -25,7 +25,7 @@
 
 #import "TooltipView.h"
 #import "TooltipViewPrivate.h"
-#import <VUIComponents/LanguageHandler.h>
+#import <Languagehandlerpod/LanguageHandler.h>
 
 static const CGFloat kMarginWithImage = 40.0;
 

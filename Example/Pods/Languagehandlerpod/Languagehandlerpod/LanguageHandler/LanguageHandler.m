@@ -6,8 +6,7 @@
 //  Copyright (c) 2015 Karim Mousa. All rights reserved.
 //
 
-#import <VUIComponents/LanguageHandler.h>
-#import <VUIComponents/Utilities.h>
+#import "LanguageHandler.h"
 
 /**
  * LanguageHandler : singlton to handle language, direction and bundle

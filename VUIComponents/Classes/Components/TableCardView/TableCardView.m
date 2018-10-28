@@ -7,7 +7,7 @@
 //
 
 #import "TableCardView.h"
-#import <VUIComponents/LanguageHandler.h>
+#import <Languagehandlerpod/LanguageHandler.h>
 #import <VUIComponents/Utilities.h>
 #import "BaseCardView+Protected.h"
 #import "TableCardModel.h"

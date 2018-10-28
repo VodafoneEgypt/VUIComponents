@@ -100,7 +100,6 @@
 #import "Contact.h"
 #import "GetContacts.h"
 #import "Utilities.h"
-#import "LanguageHandler.h"
 #import "LocalizableButton.h"
 #import "LocalizableTextField.h"
 #import "LocalizableTextView.h"
