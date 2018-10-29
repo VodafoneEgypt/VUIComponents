@@ -213,7 +213,7 @@
             arrowImgView.image = [UIImage imageNamed:@"CardArrowRTL"];
         }else{
             
-            arrowImgView.image = [UIImage imageNamed:@"CardArrow"];
+            arrowImgView.image = [UIImage imageNamed:@"cardArrow"];
         }
     }
 }

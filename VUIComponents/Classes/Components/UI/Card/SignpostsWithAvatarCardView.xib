@@ -79,7 +79,7 @@
                                             <attributedString key="attributedText"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CardArrow" translatesAutoresizingMaskIntoConstraints="NO" id="Yqk-DM-7TO">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cardArrow" translatesAutoresizingMaskIntoConstraints="NO" id="Yqk-DM-7TO">
                                             <rect key="frame" x="323" y="164.5" width="24" height="24"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="24" id="Iej-12-OOe"/>
@@ -171,6 +171,6 @@
         </view>
     </objects>
     <resources>
-        <image name="CardArrow" width="64" height="64"/>
+        <image name="cardArrow" width="102.40000152587891" height="102.40000152587891"/>
     </resources>
 </document>
