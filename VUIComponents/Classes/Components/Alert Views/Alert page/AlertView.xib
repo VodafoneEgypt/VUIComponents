@@ -36,10 +36,10 @@
                             <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         </imageView>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u1a-GY-3rs">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="111.5"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="90.5"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jws-vX-mrw">
-                                    <rect key="frame" x="340" y="44" width="24" height="24"/>
+                                    <rect key="frame" x="340" y="23" width="24" height="24"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="24" id="IMB-qf-Gjj"/>
                                         <constraint firstAttribute="height" constant="24" id="fyi-6v-OWe"/>
@@ -50,7 +50,7 @@
                                     </connections>
                                 </button>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NKI-Yi-GWE">
-                                    <rect key="frame" x="35" y="69" width="305" height="32.5"/>
+                                    <rect key="frame" x="35" y="48" width="305" height="32.5"/>
                                     <constraints>
                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32.5" id="l3d-da-dcL"/>
                                     </constraints>
@@ -66,7 +66,7 @@
                                 <constraint firstItem="NKI-Yi-GWE" firstAttribute="width" secondItem="u1a-GY-3rs" secondAttribute="width" constant="-70" id="Wft-o6-kl3"/>
                                 <constraint firstAttribute="right" secondItem="jws-vX-mrw" secondAttribute="right" constant="11" id="YJa-pZ-zKf"/>
                                 <constraint firstItem="NKI-Yi-GWE" firstAttribute="top" secondItem="jws-vX-mrw" secondAttribute="bottom" constant="1" id="bor-Wy-ydc"/>
-                                <constraint firstItem="jws-vX-mrw" firstAttribute="top" secondItem="u1a-GY-3rs" secondAttribute="top" constant="44" id="elX-Le-EII"/>
+                                <constraint firstItem="jws-vX-mrw" firstAttribute="top" secondItem="u1a-GY-3rs" secondAttribute="top" constant="23" id="elX-Le-EII"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FPL-8P-Iwi">
