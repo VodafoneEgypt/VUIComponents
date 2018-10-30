@@ -49,7 +49,7 @@
                                         <action selector="closeButtonAction:" destination="-1" eventType="touchUpInside" id="4Bt-Me-KjQ"/>
                                     </connections>
                                 </button>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NKI-Yi-GWE">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NKI-Yi-GWE">
                                     <rect key="frame" x="35" y="48" width="305" height="32.5"/>
                                     <constraints>
                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32.5" id="fea-u9-fPV"/>
@@ -98,6 +98,6 @@
         </view>
     </objects>
     <resources>
-        <image name="X" width="32" height="32"/>
+        <image name="X" width="51.200000762939453" height="51.200000762939453"/>
     </resources>
 </document>
