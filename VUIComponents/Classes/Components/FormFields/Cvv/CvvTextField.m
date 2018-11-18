@@ -20,8 +20,6 @@
     UIView *paddingView;
 }
 
-@property (strong, nonatomic)  UIImage *img;
-
 @end
 
 @implementation CvvTextField
@@ -42,14 +40,6 @@
     self.backgroundColor =[UIColor colorWithCSS: objValidationTextFieldStyleModel.backgroundColor];
 }
 
--(void)setImg:(UIImage *)img{
-    
-    _img = img;
-    
-    [cvvButtonImage setImage:img forState:UIControlStateNormal];
-    [cvvButtonImage setImage:img forState:UIControlStateHighlighted];
-    [cvvButtonImage setImage:img forState:UIControlStateDisabled];
-}
 
 #pragma mark textField delegate
 
@@ -63,7 +53,7 @@
     
     BOOL returnKey = [string rangeOfString: @"\n"].location != NSNotFound;
     
-    return newLength <= 3 || returnKey;
+    return newLength <= 4 || returnKey;
 }
 
 -(void)setFrame:(CGRect)frame{
@@ -71,6 +61,16 @@
     [super setFrame:CGRectMake(frame.origin.x, frame.origin.y, frame.size.width, height)];
 }
 
+-(void)setCardImg:(UIImage *)cardImg{
+    
+    _cardImg = cardImg;
+    
+    [cvvButtonImage setImage:cardImg forState:UIControlStateNormal];
+    [cvvButtonImage setImage:cardImg forState:UIControlStateHighlighted];
+    [cvvButtonImage setImage:cardImg forState:UIControlStateDisabled];
+    
+    cvvButtonImage.alpha = 1;
+}
 #pragma mark initialize
 
 -(id)initWithStyleFilePath:(NSString*)styleFilePath {
@@ -114,12 +114,12 @@
 -(void)commonInit{
     
     self.secureTextEntry = true;
-
+    
     cvvButtonImage = [UIButton buttonWithType:UIButtonTypeCustom];
-   
+    
     cvvButtonImage.userInteractionEnabled = false;
     
-    self.img = [UIImage imageNamed:@"CreditCard"];
+    //    self.cardImg = [UIImage imageNamed:@"CreditCard"];
     
     self.delegate = self;
     
@@ -139,7 +139,7 @@
         self.rightViewMode = UITextFieldViewModeAlways;
         
         cvvButtonImage.imageEdgeInsets = UIEdgeInsetsMake(0, 10, 0, 10);
-        cvvButtonImage.frame = CGRectMake(0,0, 50, 15);
+        cvvButtonImage.frame = CGRectMake(0,0, 70, 35);
         self.leftView = cvvButtonImage;
         
         self.leftViewMode = UITextFieldViewModeAlways;
@@ -153,14 +153,15 @@
         self.leftViewMode = UITextFieldViewModeAlways;
         
         cvvButtonImage.imageEdgeInsets = UIEdgeInsetsMake(0, 10, 0, 10);
-        cvvButtonImage.frame = CGRectMake(0,0, 50, 15);
+        cvvButtonImage.frame = CGRectMake(0,0, 70, 35);
         self.rightView = cvvButtonImage;
         self.rightViewMode = UITextFieldViewModeAlways;
     }
     
+    cvvButtonImage.alpha = 0;
     
     if ([LanguageHandler sharedInstance].currentDirection == RTL) {
-
+        
         self.textAlignment = NSTextAlignmentRight;
     }else{
         

@@ -877,6 +877,23 @@
     return is24h;
 }
 
++ (BOOL)validateStringIsNumbers:(NSString *)string
+{
+    NSError *error = nil;
+    NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:@"^[0-9]+$" options:NSRegularExpressionCaseInsensitive error:&error];
+    
+    NSAssert(regex, @"Unable to create regular expression");
+    
+    NSRange textRange = NSMakeRange(0, string.length);
+    NSRange matchRange = [regex rangeOfFirstMatchInString:string options:NSMatchingReportProgress range:textRange];
+    
+    BOOL didValidate = NO;
+    
+    if (matchRange.location != NSNotFound)
+        didValidate = YES;
+    
+    return didValidate;
+}
 
 
 @end

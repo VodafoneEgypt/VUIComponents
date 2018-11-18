@@ -12,7 +12,7 @@
 @interface CvvTextField : LocalizableTextField
 
 @property (strong, nonatomic) IBInspectable NSString *styleFilePath;
-
+@property (strong, nonatomic) IBInspectable UIImage * cardImg;
 -(id)initWithStyleFilePath:(NSString*)styleFilePath ;
 
 @end

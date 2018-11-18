@@ -8,10 +8,14 @@
 
 #import "RechargeCardView.h"
 #import "BaseCardView+Protected.h"
-#import "AnaVodafoneLabel.h"
 #import "UIColor+Hex.h"
-#import "ValidationTextField.h"
-#import "CvvTextField.h"
+#import <VUIComponents/CvvTextField.h>
+#import "CustomButton.h"
+#import <VUIComponents/AnaVodafoneTextField.h>
+#import <VUIComponents/AnaVodafoneLabel.h>
+#import <Languagehandlerpod/LanguageHandler.h>
+#import <VUIComponents/Utilities.h>
+
 @interface RechargeCardView ()<UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet AnaVodafoneLabel *titleLabel;
@@ -95,9 +99,17 @@
     }
 }
 
+-(void)setBGcolor:(UIColor *)BGcolor{
+    
+    _BGcolor = BGcolor;
+    
+    _BGView.backgroundColor = BGcolor;
+    
+}
+
 -(BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
     
-    if ([string isEqualToString:@" "] || (![self validateStringIsNumbers:string] && ![string isEqualToString:@""])){
+    if ([string isEqualToString:@" "] || (![Utilities validateStringIsNumbers:string] && ![string isEqualToString:@""])){
         NSLog(@"not an number");
         return  NO;
     }else if (textField == self.cvvTextField) {
@@ -159,23 +171,6 @@
     return YES;
 }
 
-- (BOOL)validateStringIsNumbers:(NSString *)string
-{
-    NSError *error = nil;
-    NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:@"^[0-9]+$" options:NSRegularExpressionCaseInsensitive error:&error];
-    
-    NSAssert(regex, @"Unable to create regular expression");
-    
-    NSRange textRange = NSMakeRange(0, string.length);
-    NSRange matchRange = [regex rangeOfFirstMatchInString:string options:NSMatchingReportProgress range:textRange];
-    
-    BOOL didValidate = NO;
-    
-    if (matchRange.location != NSNotFound)
-        didValidate = YES;
-    
-    return didValidate;
-}
 #pragma mark height adjustment
 -(void)initializeContentView{
     

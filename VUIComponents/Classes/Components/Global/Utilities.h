@@ -22,9 +22,7 @@
 +(NSString *)GetDateWithCustomFormat:(double)timestamp;
 +(NSString *)GetDate:(double)timestamp withCustomFormat:(NSString *)format;
 +(NSLocale*)getCurrentLocale;
-
-
-
++(BOOL)validateStringIsNumbers:(NSString *)string;
 
 +(void)showAlertWithtitle:(NSString*)title WithText:(NSString*)text andImgName:(NSString*)imgName;
 
