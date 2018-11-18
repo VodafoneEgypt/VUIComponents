@@ -63,21 +63,15 @@
 
 -(void)setAmountString:(NSString *)amountString{
     
-    _amountString = amountString;
-    
     _amountTextField.text = amountString;
 }
 
 -(void)setCvvString:(NSString *)cvvString{
-    
-    _cvvString = cvvString;
-    
+        
     _cvvTextField.text = cvvString;
 }
 
 -(void)setGrantedString:(NSString *)grantedString{
-    
-    _grantedString = grantedString;
     
     _grantedTextField.text = grantedString;
 }
@@ -140,6 +134,21 @@
     
     _BGView.backgroundColor = BGcolor;
     
+}
+
+-(NSString *)cvvString{
+
+    return _cvvTextField.text;
+}
+
+-(NSString *)amountString{
+
+    return _amountTextField.text;
+}
+
+-(NSString *)grantedString{
+
+    return _grantedTextField.text;
 }
 
 -(BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
