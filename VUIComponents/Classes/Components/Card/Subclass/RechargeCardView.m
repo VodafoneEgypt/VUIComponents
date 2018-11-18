@@ -126,9 +126,11 @@
     if (conversionRatio < 0) {
         
         _amountTextFieldTrailingConstraint.constant = 0;
+        _grantedLabel.hidden = true;
     } else {
         
         _amountTextFieldTrailingConstraint.constant = _amountTextField.superview.frame.size.width - _converterImgView.frame.origin.x;
+        _grantedLabel.hidden = false;
     }
 }
 
