@@ -18,10 +18,15 @@ IB_DESIGNABLE
 @property (strong, nonatomic) IBInspectable NSString *titleString;
 @property (strong, nonatomic) IBInspectable UIColor *BGcolor;
 @property (strong, nonatomic) IBInspectable NSString *amountString;
+@property (strong, nonatomic) IBInspectable NSString *grantedString;
 @property (strong, nonatomic) IBInspectable NSString *cvvString;
+
+@property (weak, nonatomic) IBInspectable NSString *amountLabelString;
+@property (weak, nonatomic) IBInspectable NSString *grantedLabelString;
 
 @property (strong, nonatomic) IBInspectable NSString *amountPlaceHolder;
 @property (strong, nonatomic) IBInspectable NSString *cvvPlaceHolder;
+@property (strong, nonatomic) IBInspectable NSString *grantedPlaceHolder;
 
 @property (nonatomic) IBInspectable float conversionRatio;
 

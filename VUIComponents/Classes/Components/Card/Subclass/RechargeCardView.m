@@ -19,6 +19,9 @@
 @interface RechargeCardView ()<UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet AnaVodafoneLabel *titleLabel;
+@property (weak, nonatomic) IBOutlet AnaVodafoneLabel *amountLabel;
+@property (weak, nonatomic) IBOutlet AnaVodafoneLabel *grantedLabel;
+
 @property (weak, nonatomic) IBOutlet UITextField *amountTextField;
 @property (weak, nonatomic) IBOutlet UITextField *grantedTextField;
 @property (weak, nonatomic) IBOutlet CvvTextField *cvvTextField;
@@ -72,6 +75,34 @@
     _cvvTextField.text = cvvString;
 }
 
+-(void)setGrantedString:(NSString *)grantedString{
+    
+    _grantedString = grantedString;
+    
+    _grantedTextField.text = grantedString;
+}
+
+-(void)setGrantedLabelString:(NSString *)grantedLabelString{
+    
+    _grantedLabelString = grantedLabelString;
+    
+    _grantedLabel.text = grantedLabelString;
+}
+
+-(void)setAmountLabelString:(NSString *)amountLabelString{
+    
+    _amountLabelString = amountLabelString;
+    
+    _amountLabel.text = amountLabelString;
+}
+
+-(void)setGrantedPlaceHolder:(NSString *)grantedPlaceHolder{
+    
+    _grantedPlaceHolder = grantedPlaceHolder;
+    
+    _grantedTextField.placeholder = grantedPlaceHolder;
+}
+
 -(void)setAmountPlaceHolder:(NSString *)amountPlaceHolder{
     
     _amountPlaceHolder = amountPlaceHolder;
@@ -89,7 +120,9 @@
 -(void)setConversionRatio:(float)conversionRatio{
     
     _conversionRatio = conversionRatio;
-
+    
+    [self layoutIfNeeded];
+    
     if (conversionRatio < 0) {
         
         _amountTextFieldTrailingConstraint.constant = 0;
@@ -174,22 +207,22 @@
 #pragma mark height adjustment
 -(void)initializeContentView{
     
-    contentViewHeight = 76 + 126 + 30 + 28 + 45 + 16 + 45 + 16;
+    contentViewHeight = 76 + 126 + 30 + 40 + 45 + 16 + 45 + 16;
     
     if ([_titleLabel.text length] > 0) {
-
+        
         [_titleLabel adjustHeight];
         _tittleLabelHeightConstraint.constant = _titleLabel.frame.size.height;
         contentViewHeight += _titleLabel.frame.size.height;
     }
-
+    
 }
 
 -(void)commonInit{
     
     [super commonInit];
     
-    UIView* view = [[NSBundle mainBundle]loadNibNamed:@"RechargeCardView" owner:self options:nil][0];
+    UIView* view = [[Utilities getPodBundle]loadNibNamed:@"RechargeCardView" owner:self options:nil][0];
     CGRect frame = view.frame;
     frame.size.width = self.bounds.size.width;
     view.frame = frame;
@@ -200,6 +233,6 @@
     _cvvTextField.cardImg = [UIImage imageNamed:@"CVVicon"];
     [self addSubview:view];
     [self layoutIfNeeded];
-
+    
 }
 @end
