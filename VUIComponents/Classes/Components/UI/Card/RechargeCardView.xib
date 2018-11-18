@@ -18,6 +18,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RechargeCardView">
             <connections>
                 <outlet property="BGView" destination="Xc8-Q4-dXd" id="oOz-31-CME"/>
+                <outlet property="amountLabel" destination="qut-R8-Z8P" id="vMW-Zb-Zv5"/>
                 <outlet property="amountTextField" destination="lZJ-cu-hi4" id="tYe-Py-q15"/>
                 <outlet property="amountTextFieldTrailingConstraint" destination="tJx-5o-N63" id="jHR-3W-zG4"/>
                 <outlet property="buttonsView" destination="yP2-fK-r36" id="QRq-qv-5ql"/>
@@ -25,6 +26,7 @@
                 <outlet property="contentView" destination="bdK-cp-q17" id="KO1-nP-Xoi"/>
                 <outlet property="converterImgView" destination="JzB-xd-Nxz" id="9fk-je-U0n"/>
                 <outlet property="cvvTextField" destination="IIr-kb-fLN" id="HuJ-ID-eKZ"/>
+                <outlet property="grantedLabel" destination="zQN-KO-Aq5" id="luG-F9-Tiq"/>
                 <outlet property="grantedTextField" destination="WgW-SN-2SZ" id="vFG-nc-yKa"/>
                 <outlet property="imgView" destination="IiN-02-iK8" id="54O-dz-PEN"/>
                 <outlet property="titleLabel" destination="gQH-LH-Mwe" id="zaM-gQ-a1t"/>
