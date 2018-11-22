@@ -204,8 +204,8 @@
         }
         
         newValue = newValue * 1/self.conversionRatio;
-    
-        self.amountTextField.text = [NSString stringWithFormat:@"%.2f",ceil(newValue)];
+        
+        self.amountTextField.text = [NSString stringWithFormat:@"%.0f",ceil(newValue)];
         
         return YES;
     }
