@@ -215,7 +215,7 @@
 #pragma mark height adjustment
 -(void)initializeContentView{
     
-    contentViewHeight = 76 + 126 + 30 + 40 + 45 + 16 + 45 + 16;
+    contentViewHeight = 60 + 140 + 30 + 40 + 45 + 16 + 45 + 16;
     
     if ([_titleLabel.text length] > 0) {
         
