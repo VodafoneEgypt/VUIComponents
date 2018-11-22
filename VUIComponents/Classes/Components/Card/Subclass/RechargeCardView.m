@@ -67,7 +67,7 @@
 }
 
 -(void)setCvvString:(NSString *)cvvString{
-        
+    
     _cvvTextField.text = cvvString;
 }
 
@@ -137,17 +137,17 @@
 }
 
 -(NSString *)cvvString{
-
+    
     return _cvvTextField.text;
 }
 
 -(NSString *)amountString{
-
+    
     return _amountTextField.text;
 }
 
 -(NSString *)grantedString{
-
+    
     return _grantedTextField.text;
 }
 
@@ -156,12 +156,9 @@
     if ([string isEqualToString:@" "] || (![Utilities validateStringIsNumbers:string] && ![string isEqualToString:@""])){
         NSLog(@"not an number");
         return  NO;
-    }else if (textField == self.cvvTextField) {
-        if (textField.text.length < 4 || string.length == 0) {
-            return YES;
-        } else {
-            return NO;
-        }
+    }else if ([textField.text containsString:@"."] && [string isEqualToString:@"."]) {
+        
+        return NO;
     }else if (textField == self.amountTextField){
         
         float newValue;
@@ -240,6 +237,9 @@
     self.bounds = view.frame;
     _amountTextField.delegate = self;
     _grantedTextField.delegate = self;
+    _amountTextField.textAlignment = ([LanguageHandler sharedInstance].currentLanguage == ENGLISH) ? NSTextAlignmentLeft : NSTextAlignmentRight;
+    _grantedTextField.textAlignment =  ([LanguageHandler sharedInstance].currentLanguage == ENGLISH) ? NSTextAlignmentLeft : NSTextAlignmentRight;
+
     _conversionRatio = -1;
     _cvvTextField.cardImg = [UIImage imageNamed:@"CVVicon"];
     [self addSubview:view];
