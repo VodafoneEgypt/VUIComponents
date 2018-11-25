@@ -239,6 +239,9 @@
     _grantedTextField.delegate = self;
     _amountTextField.textAlignment = ([LanguageHandler sharedInstance].currentLanguage == ENGLISH) ? NSTextAlignmentLeft : NSTextAlignmentRight;
     _grantedTextField.textAlignment =  ([LanguageHandler sharedInstance].currentLanguage == ENGLISH) ? NSTextAlignmentLeft : NSTextAlignmentRight;
+    self.amountTextField.font = [UIFont fontWithName:[[LanguageHandler sharedInstance] stringForKey:@"regularFont"] size:16];
+    self.grantedTextField.font = [UIFont fontWithName:[[LanguageHandler sharedInstance] stringForKey:@"regularFont"] size:16];
+    self.cvvTextField.font = [UIFont fontWithName:[[LanguageHandler sharedInstance] stringForKey:@"regularFont"] size:16];
 
     _conversionRatio = -1;
     _cvvTextField.cardImg = [UIImage imageNamed:@"CVVicon"];
