@@ -14,6 +14,7 @@
 @property(nonatomic)IBInspectable BOOL useLightFont;
 @property(nonatomic)IBInspectable BOOL useRegularFont;
 @property(nonatomic)IBInspectable BOOL useBoldFont;
+@property(nonatomic)IBInspectable BOOL useExtraBoldFont;
 
 @property (nonatomic,strong) IBInspectable NSString* txt;
 

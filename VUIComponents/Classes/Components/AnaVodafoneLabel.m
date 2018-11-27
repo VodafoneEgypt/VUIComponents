@@ -64,6 +64,11 @@
         NSString *fontname = [[LanguageHandler sharedInstance] stringForKey:@"lightFont"];
         
         [self setFont:[Utilities getFontWithName:fontname AndSize:self.font.pointSize]];
+    }else if (_useExtraBoldFont == true) {
+        
+        NSString *fontname = [[LanguageHandler sharedInstance] stringForKey:@"extraBoldFont"];
+        
+        [self setFont:[Utilities getFontWithName:fontname AndSize:self.font.pointSize]];
     }else{
         
         [self setFont:[Utilities getAppFontWithSize:self.font.pointSize isBold:[self.font.fontName containsString:@"Bold"]]];
@@ -86,6 +91,7 @@
     _useBoldFont = false;
     _useLightFont = false;
     _useRegularFont = false;
+    _useExtraBoldFont = false;
     
     return self;
 }
