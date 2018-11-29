@@ -456,6 +456,15 @@
     return [formatter stringFromDate:date];
 }
 
++(NSString *)getFormattedDateFromDate:(NSDate *)date andFormat:(NSString *)format withLocale:(NSLocale *)locale {
+    
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:format];
+    [formatter setLocale:locale];
+    
+    return [formatter stringFromDate:date];
+}
+
 +(NSDate *)getDateFromTimeInterval:(double)timeInterval
 {
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];

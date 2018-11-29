@@ -49,6 +49,7 @@
 +(NSDate *)discardTimeFromDate:(NSDate*)date;
 +(NSString*)getFormattedDateFromDate:(NSDate*)date;
 +(NSString*)getFormattedDateFromDate:(NSDate*)date andFormat: (NSString *)format;
++(NSString *)getFormattedDateFromDate:(NSDate *)date andFormat:(NSString *)format withLocale:(NSLocale *)locale;
 +(NSString*)getFormattedDateFromString:(NSString *)stringDate;
 +(NSString*)getShortFormattedDateFromInterval:(double)interval;
 +(NSString*)getShortFormattedDateFromDate:(NSDate *)date;

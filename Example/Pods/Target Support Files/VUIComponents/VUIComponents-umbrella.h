@@ -55,6 +55,7 @@
 #import "PinCodeCardView.h"
 #import "ProfileHeaderCardView.h"
 #import "RadioButtonCell.h"
+#import "RechargeCardView.h"
 #import "SearchResultCardView.h"
 #import "SearchResultHeaderCardView.h"
 #import "SignpostCardView.h"

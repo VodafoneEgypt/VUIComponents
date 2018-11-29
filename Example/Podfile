@@ -1,4 +1,4 @@
-source 'https://github.com/VodafoneEgypt/Specs.git'
+source 'https://gitlab.com/TahaElsheikh1/specs.git'
 source 'https://github.com/CocoaPods/Specs'
 
 use_frameworks!

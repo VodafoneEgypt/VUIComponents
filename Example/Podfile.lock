@@ -5,53 +5,41 @@ PODS:
   - INTUAnimationEngine/SpringSolver (1.4.2)
   - JWGCircleCounter (0.2.2)
   - Languagehandlerpod (0.1.3)
-  - "NSAttributedString+CCLFormat (1.2.0)"
+  - NSAttributedString+CCLFormat (1.2.0)
   - RSKImageCropper (2.2.1)
-  - "UIColor+Hex (1.0.1)":
-    - "UIColor+Hex/NSColor (= 1.0.1)"
-    - "UIColor+Hex/UIColor (= 1.0.1)"
-  - "UIColor+Hex/UIColor (1.0.1)"
-  - VUIComponents (0.6.3):
+  - UIColor+Hex (1.0.1):
+    - UIColor+Hex/NSColor (= 1.0.1)
+    - UIColor+Hex/UIColor (= 1.0.1)
+  - UIColor+Hex/UIColor (1.0.1)
+  - VUIComponents (0.6.8.8):
     - GSKStretchyHeaderView (= 1.0.0)
     - INTUAnimationEngine
     - JWGCircleCounter
     - Languagehandlerpod
-    - "NSAttributedString+CCLFormat"
+    - NSAttributedString+CCLFormat
     - RSKImageCropper
-    - "UIColor+Hex"
+    - UIColor+Hex
     - WYPopoverController (~> 0.3.9)
   - WYPopoverController (0.3.9)
 
 DEPENDENCIES:
   - VUIComponents (from `../`)
 
-SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
-    - GSKStretchyHeaderView
-    - INTUAnimationEngine
-    - JWGCircleCounter
-    - "NSAttributedString+CCLFormat"
-    - RSKImageCropper
-    - "UIColor+Hex"
-    - WYPopoverController
-  https://github.com/VodafoneEgypt/Specs.git:
-    - Languagehandlerpod
-
 EXTERNAL SOURCES:
   VUIComponents:
-    :path: "../"
+    :path: ../
 
 SPEC CHECKSUMS:
   GSKStretchyHeaderView: daba8f035eaade6326d05ee2a382be714bb019c0
   INTUAnimationEngine: 3a7d63738cd51af573d16848a771feedea7cc9f2
   JWGCircleCounter: 89e25c3d5e9eb41cf666a795427712bb5e52a1a1
   Languagehandlerpod: 521f4098e83ebbbfbdf50202d6531a5668c46c08
-  "NSAttributedString+CCLFormat": 46d1e36b72b7ab0e093323705188818b21ba9763
+  NSAttributedString+CCLFormat: 46d1e36b72b7ab0e093323705188818b21ba9763
   RSKImageCropper: 98296ad26b41753f796b6898d015509598f13d97
-  "UIColor+Hex": 9fee91bb8e19f17dd40a79ae1e98949a6a84489d
-  VUIComponents: 2f7c6c55b21479bf08a5211ce0398e3cd7b127e0
+  UIColor+Hex: 9fee91bb8e19f17dd40a79ae1e98949a6a84489d
+  VUIComponents: 351366749b4da6814b17069fc09cc9924301d5ad
   WYPopoverController: a9db25ac2841a686acdc0f3a99bdb21545db32f4
 
 PODFILE CHECKSUM: 8f7810013c4f323b3ba45816d2835da47f2c54fa
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.4.0
