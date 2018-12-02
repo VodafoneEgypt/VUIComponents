@@ -13,11 +13,15 @@
 #import "TableCardModel.h"
 #import "BaseTableCell.h"
 
+#define IS_IPHONE_4Pod ([ [ UIScreen mainScreen ] bounds ].size.height == 480)
+#define IS_IPHONE_5Pod ( fabs( ( double )[ [ UIScreen mainScreen ] bounds ].size.height - ( double )568 ) < DBL_EPSILON )
+
 @interface TableCardView ()<UITableViewDelegate,UITableViewDataSource,CellHeightChangedDelegate>{
     
     NSMutableDictionary* cellsHeights;
 }
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
+@property (nonatomic) CGFloat titleLabelHeight;
 
 @end
 
@@ -27,7 +31,7 @@
     
     _tableCardModelArray = tableCardModelArray;
     
-    [_tableView reloadData];
+    [tableView reloadData];
     
     [self initialize];
 }
@@ -46,9 +50,9 @@
         
         cellsHeights[[NSString stringWithFormat:@"%@",indexPath]] = [NSNumber numberWithFloat:height];
         
-        [self.tableView reloadData];
-//        [self initialize];
-
+        [tableView reloadData];
+        //        [self initialize];
+        
     }
     
     [self initialize];
@@ -70,20 +74,19 @@
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    NSLog(@"%lu", (unsigned long)_tableCardModelArray.count);
+    
     return _tableCardModelArray.count;
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    NSLog(@"dmlkmdmlkvfmld");
-    NSLog(@"TableCount: @%lu", (unsigned long)((TableCardModel*)(_tableCardModelArray[section])).data.count);
+    
     return ((TableCardModel*)(_tableCardModelArray[section])).data.count;
 }
 
 -(NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
     NSLog(@"willSelectRowAtIndexPath  %ld", (long)indexPath.row); // you can see selected row number in your console;
-
+    
     if(self.selectionIndexPathBlock != nil){
         
         self.selectionIndexPathBlock(indexPath);
@@ -101,7 +104,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSLog(@"didSelectRowAtIndexPath  %ld", (long)indexPath.row); // you can see selected row number in your console;
-  
+    
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -112,7 +115,7 @@
     
     if (cell == nil){
         
-        [tableView registerNib:[UINib nibWithNibName:CellIdentifier bundle:[Utilities getPodBundle]] forCellReuseIdentifier:CellIdentifier];
+        [tableView registerNib:[UINib nibWithNibName:CellIdentifier bundle:nil] forCellReuseIdentifier:CellIdentifier];
         
         cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     }
@@ -141,23 +144,52 @@
     
     _selectedIndexPath = selectedIndexPath;
     
-    [self.tableView selectRowAtIndexPath:selectedIndexPath animated:true scrollPosition:UITableViewScrollPositionNone];    
+    [tableView selectRowAtIndexPath:selectedIndexPath animated:true scrollPosition:UITableViewScrollPositionNone];
 }
 
+-(void)setTitleAttributedString:(NSAttributedString *)titleAttributedString{
+    
+    _titleAttributedString = titleAttributedString;
+    
+    titleLabel.attributedText = titleAttributedString;
+    if (IS_IPHONE_5Pod||IS_IPHONE_4Pod) {
+        
+        tableViewTopConstraint.constant = 0;
+    }else{
+        
+        tableViewTopConstraint.constant = 50;
+    }
+    
+    [self initialize];
+}
 -(void)initializeContentView{
     
     contentViewHeight = 1000;
     if (cellsHeights.count > 0){
         
-        contentViewHeight = (self.buttons)?16:2;
-    }
-        for (int row = 0; row<cellsHeights.count; row++) {
+        contentViewHeight = (self.buttons)?16:2+tableViewTopConstraint.constant;
+        
+        if (_titleAttributedString) {
             
-            contentViewHeight += [cellsHeights[[NSString stringWithFormat:@"%@",[NSIndexPath indexPathForRow:row inSection:0]]] floatValue];
+            CGFloat width = self.frame.size.width - 30;
             
-            self.heightDidChangedBlock(contentViewHeight);
+            
+            CGSize size = CGSizeMake(width, CGFLOAT_MAX);
+            
+            CGRect rect = [titleLabel.attributedText boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading context:nil];
+            
+            contentViewHeight += rect.size.height;
         }
+        
+    }
+    for (int row = 0; row<cellsHeights.count; row++) {
+        
+        contentViewHeight += [cellsHeights[[NSString stringWithFormat:@"%@",[NSIndexPath indexPathForRow:row inSection:0]]] floatValue];
+        
+        self.heightDidChangedBlock(contentViewHeight);
+    }
 }
+
 
 -(void)commonInit{
     
@@ -167,13 +199,13 @@
     
     view.frame = self.bounds;
     
-    _tableView.delegate = self;
+    tableView.delegate = self;
     
-    _tableView.dataSource = self;
+    tableView.dataSource = self;
     
-    _tableView.scrollEnabled = false;
+    tableView.scrollEnabled = false;
     
-    _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     _allowSelection = true;
     cellsHeights = [NSMutableDictionary new];
     

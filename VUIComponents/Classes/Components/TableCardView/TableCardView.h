@@ -9,10 +9,17 @@
 #import "BaseCardView.h"
 #import "BaseCellCardView.h"
 #import "BaseCardViewWithButtons.h"
+#import "AnaVodafoneLabel.h"
 
 typedef void(^SelectionIndexPathBlock)(NSIndexPath *indexPath);
 
-@interface TableCardView : BaseCardViewWithButtons
+@interface TableCardView : BaseCardViewWithButtons{
+    
+    __weak IBOutlet NSLayoutConstraint *tableViewTopConstraint;
+    __weak IBOutlet AnaVodafoneLabel *titleLabel;
+    __weak IBOutlet UITableView *tableView;
+    
+}
 
 @property (nonatomic, strong) NSArray *tableCardModelArray;
 
@@ -24,4 +31,5 @@ typedef void(^SelectionIndexPathBlock)(NSIndexPath *indexPath);
 
 @property (nonatomic) BOOL allowSelection;
 
+@property (nonatomic, strong) NSAttributedString * titleAttributedString;
 @end

@@ -18,4 +18,8 @@
 
 @property (nonatomic , strong) UIImage *arrowImage;
 
+@property (nonatomic) float titleFontSize;
+
+@property (nonatomic) float subTitleFontSize;
+
 @end

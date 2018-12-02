@@ -14,4 +14,7 @@
 
 @property (strong , nonatomic) BaseCellCardView* headerCardView;
 
+-(void) setImage: (NSString *)imgName;
+
 @end
+

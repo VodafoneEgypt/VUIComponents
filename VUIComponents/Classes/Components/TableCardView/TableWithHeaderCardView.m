@@ -21,7 +21,9 @@
     
 }
 
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (nonatomic) CGFloat titleLabelHeight;
+@property (weak, nonatomic) IBOutlet UIImageView *cardImageView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *cardImageViewHeightConstraint;
 
 @end
 @implementation TableWithHeaderCardView
@@ -30,7 +32,7 @@
     
     [super setTableCardModelArray:tableCardModelArray];
     
-    [_tableView reloadData];
+    [tableView reloadData];
     
     [self initialize];
 }
@@ -49,7 +51,7 @@
         
         cellsHeights[[NSString stringWithFormat:@"%@",indexPath]] = [NSNumber numberWithFloat:height];
         
-        [self.tableView reloadData];
+        [tableView reloadData];
     }
     
     [self initialize];
@@ -67,7 +69,6 @@
 
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     
-    NSLog(@"SectionNo: %ld", (long)section);
     if(headerHeights[[NSString stringWithFormat:@"%ld",(long)section]] != nil){
         
         return [headerHeights[[NSString stringWithFormat:@"%ld",(long)section]] floatValue];
@@ -131,12 +132,12 @@
     
     if (cell == nil){
         
-        [tableView registerNib:[UINib nibWithNibName:CellIdentifier bundle:[Utilities getPodBundle]] forCellReuseIdentifier:CellIdentifier];
+        [tableView registerNib:[UINib nibWithNibName:CellIdentifier bundle:nil] forCellReuseIdentifier:CellIdentifier];
         
         cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     }
     cell.indexPath = indexPath;
-
+    
     if(cell.cellCardView == nil){
         
         NSLog(@"allocate new card for index %ld",(long)indexPath.row);
@@ -146,20 +147,32 @@
         BaseCellCardView *baseCellCardView = [[self.cellCardView class] new];
         
         cell.cellCardView = baseCellCardView;
-       
+        
         cell.width = self.frame.size.width;
         
         cell.cellCardView.model =  ((TableCardModel*)(self.tableCardModelArray[indexPath.section])).data[indexPath.row];
     }
     
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
-
+    
     return cell;
 }
 
+-(void)initializeButtonsView{
+    
+    [super initializeButtonsView];
+    
+}
 -(void)initializeContentView{
     
-    contentViewHeight = 2;
+    contentViewHeight = (self.buttons)?100:100+tableViewTopConstraint.constant;
+    
+    if (self.titleAttributedString) {
+        
+        [titleLabel adjustHeight];
+        
+        contentViewHeight += titleLabel.frame.size.height;
+    }
     
     for (int i = 0; i<headerHeights.count; i++) {
         
@@ -170,6 +183,17 @@
             contentViewHeight += [cellsHeights[[NSString stringWithFormat:@"%@",[NSIndexPath indexPathForRow:row inSection:i]]] floatValue];
         }
     }
+    
+    if (_cardImageViewHeightConstraint.constant > 0) {
+        contentViewHeight += _cardImageViewHeightConstraint.constant + 16 - 50;
+    }
+}
+
+-(void)setImage:(NSString *)imgName {
+    _cardImageViewHeightConstraint.constant = 100;
+    _cardImageView.image = [UIImage imageNamed:imgName];
+    [self initialize];
+    
 }
 
 -(void)commonInit{
@@ -180,15 +204,15 @@
     
     view.frame = self.bounds;
     
-    _tableView.delegate = self;
+    tableView.delegate = self;
     
-    _tableView.dataSource = self;
+    tableView.dataSource = self;
     
-    _tableView.scrollEnabled = false;
+    tableView.scrollEnabled = false;
     
     self.allowSelection = true;
 
-    _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
     cellsHeights = [NSMutableDictionary new];
     headerHeights = [NSMutableDictionary new];
