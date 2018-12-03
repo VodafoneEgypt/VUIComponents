@@ -10,7 +10,7 @@
 #import "BaseCellCardView.h"
 #import "BaseCardViewWithButtons.h"
 #import "AnaVodafoneLabel.h"
-
+#import "TableCardModel.h"
 typedef void(^SelectionIndexPathBlock)(NSIndexPath *indexPath);
 
 @interface TableCardView : BaseCardViewWithButtons{
@@ -21,7 +21,7 @@ typedef void(^SelectionIndexPathBlock)(NSIndexPath *indexPath);
     
 }
 
-@property (nonatomic, strong) NSArray *tableCardModelArray;
+@property (nonatomic, strong) NSArray *tableCardModelArray;// TableCardModel
 
 @property (strong,nonatomic) SelectionIndexPathBlock selectionIndexPathBlock;
 

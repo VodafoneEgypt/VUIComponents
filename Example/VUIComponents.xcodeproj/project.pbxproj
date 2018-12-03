@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0FD944A021B543B700C1D728 /* ViewControllerTableCardSample.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD9449F21B543B700C1D728 /* ViewControllerTableCardSample.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -39,6 +40,8 @@
 /* Begin PBXFileReference section */
 		074F4F0306F150198BB754C6 /* VUIComponents.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = VUIComponents.podspec; path = ../VUIComponents.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		0E62E03C3CD971F5CC7210BA /* Pods_VUIComponents_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VUIComponents_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FD9449E21B543B700C1D728 /* ViewControllerTableCardSample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerTableCardSample.h; sourceTree = "<group>"; };
+		0FD9449F21B543B700C1D728 /* ViewControllerTableCardSample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerTableCardSample.m; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* VUIComponents_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VUIComponents_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -96,6 +99,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0FD9449D21B5435F00C1D728 /* TableCardViewSample */ = {
+			isa = PBXGroup;
+			children = (
+				0FD9449E21B543B700C1D728 /* ViewControllerTableCardSample.h */,
+				0FD9449F21B543B700C1D728 /* ViewControllerTableCardSample.m */,
+			);
+			name = TableCardViewSample;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +151,7 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* VUViewController.h */,
 				6003F5A6195388D20070C39A /* VUViewController.m */,
+				0FD9449D21B5435F00C1D728 /* TableCardViewSample */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -437,6 +450,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* VUAppDelegate.m in Sources */,
+				0FD944A021B543B700C1D728 /* ViewControllerTableCardSample.m in Sources */,
 				6003F5A7195388D20070C39A /* VUViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);

@@ -79,7 +79,7 @@
         cell.dropDownView = [[_dropDownMenuView class] new];
         cell.dropDownView.withArrowImage = false;
         cell.dropDownView.model = _data[indexPath.row];
-        
+        cell.dropDownView.styleFilePath = _dropDownMenuView.styleFilePath;
         return cell;
     }
 }
