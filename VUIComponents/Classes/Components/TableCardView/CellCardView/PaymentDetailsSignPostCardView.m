@@ -220,6 +220,8 @@
 
 -(void)setAvatarImage:(UIImage *)avatarImage{
     
+    _avatarImageWidthConstraint.constant = 45;
+    
     _avatarImgView.image = avatarImage;
     
     _avatarImgView.layer.cornerRadius = _avatarImgView.frame.size.height / 2;

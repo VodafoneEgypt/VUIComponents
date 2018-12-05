@@ -49,14 +49,14 @@
                                     <rect key="frame" x="16" y="0.0" width="347" height="353"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6ui-Mh-dab">
-                                            <rect key="frame" x="0.0" y="154" width="45" height="45"/>
+                                            <rect key="frame" x="0.0" y="154" width="0.0" height="45"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="45" id="Jbm-Ik-YlS"/>
+                                                <constraint firstAttribute="width" id="Jbm-Ik-YlS"/>
                                                 <constraint firstAttribute="height" constant="45" id="QPH-YZ-Wzf"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MBD-I4-Y6l">
-                                            <rect key="frame" x="60" y="25" width="247" height="0.0"/>
+                                            <rect key="frame" x="15" y="25" width="292" height="0.0"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" id="YMM-KW-t32"/>
                                             </constraints>
@@ -64,7 +64,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s21-k0-1uu">
-                                            <rect key="frame" x="60" y="29" width="247" height="0.0"/>
+                                            <rect key="frame" x="15" y="29" width="292" height="0.0"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" id="h9r-Wn-bLH"/>
                                             </constraints>
@@ -72,7 +72,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ILh-eS-hED">
-                                            <rect key="frame" x="60" y="34" width="247" height="0.0"/>
+                                            <rect key="frame" x="15" y="34" width="292" height="0.0"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" id="1cR-VC-T5m"/>
                                             </constraints>
