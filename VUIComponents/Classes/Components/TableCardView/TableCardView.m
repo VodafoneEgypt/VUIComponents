@@ -50,12 +50,14 @@
         
         cellsHeights[[NSString stringWithFormat:@"%@",indexPath]] = [NSNumber numberWithFloat:height];
         
-        [tableView reloadData];
         //        [self initialize];
+        //        [tableView reloadData];
         
     }
     
     [self initialize];
+    [tableView reloadData];
+    
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{

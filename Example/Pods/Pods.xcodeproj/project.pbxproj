@@ -38,6 +38,12 @@
 		0F968E2921B41D9500CFF43E /* PointsDetailsCardView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F968E2421B41D1E00CFF43E /* PointsDetailsCardView.h */; };
 		0F968E2A21B41D9B00CFF43E /* PointsDetailsCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F968E2321B41D1E00CFF43E /* PointsDetailsCardView.m */; };
 		0F968E2B21B41DA100CFF43E /* PointsDetailsCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F968E2721B41D2F00CFF43E /* PointsDetailsCardView.xib */; };
+		0FAF035321B7EECF00B898F7 /* PaymentDetailsSignPostCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FAF034F21B7EECE00B898F7 /* PaymentDetailsSignPostCardView.m */; };
+		0FAF035421B7EECF00B898F7 /* PaymentDetailsSignPostCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FAF035021B7EECE00B898F7 /* PaymentDetailsSignPostCardView.xib */; };
+		0FAF035521B7EECF00B898F7 /* PaymentDetailsSignPostCardView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FAF035121B7EECF00B898F7 /* PaymentDetailsSignPostCardView.h */; };
+		0FAF035621B7EECF00B898F7 /* PaymentDetailsSignPostCardViewRTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FAF035221B7EECF00B898F7 /* PaymentDetailsSignPostCardViewRTL.xib */; };
+		0FAF035921B7EEFF00B898F7 /* PaymentDetailsSignPostCardViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FAF035721B7EEFF00B898F7 /* PaymentDetailsSignPostCardViewModel.h */; };
+		0FAF035A21B7EEFF00B898F7 /* PaymentDetailsSignPostCardViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FAF035821B7EEFF00B898F7 /* PaymentDetailsSignPostCardViewModel.m */; };
 		0FF97091FF7A2CF948CBC7715712367D /* GlamourAnimation.css in Resources */ = {isa = PBXBuildFile; fileRef = 31FF979A122828BC7B172CB177DAABA3 /* GlamourAnimation.css */; };
 		1095CBAE361818B7BE9C9C2219776BDC /* BaseCellCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 75B95AFDF9F0DB17714D22F6DE5C0393 /* BaseCellCardView.m */; };
 		1219467218D73A907B96304AB19ED570 /* ProfileHeaderCardView.h in Headers */ = {isa = PBXBuildFile; fileRef = A673D7D4B66B2D897A5A12BB26382849 /* ProfileHeaderCardView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -665,6 +671,12 @@
 		0F968E2321B41D1E00CFF43E /* PointsDetailsCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointsDetailsCardView.m; sourceTree = "<group>"; };
 		0F968E2421B41D1E00CFF43E /* PointsDetailsCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointsDetailsCardView.h; sourceTree = "<group>"; };
 		0F968E2721B41D2F00CFF43E /* PointsDetailsCardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PointsDetailsCardView.xib; sourceTree = "<group>"; };
+		0FAF034F21B7EECE00B898F7 /* PaymentDetailsSignPostCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentDetailsSignPostCardView.m; sourceTree = "<group>"; };
+		0FAF035021B7EECE00B898F7 /* PaymentDetailsSignPostCardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PaymentDetailsSignPostCardView.xib; sourceTree = "<group>"; };
+		0FAF035121B7EECF00B898F7 /* PaymentDetailsSignPostCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentDetailsSignPostCardView.h; sourceTree = "<group>"; };
+		0FAF035221B7EECF00B898F7 /* PaymentDetailsSignPostCardViewRTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PaymentDetailsSignPostCardViewRTL.xib; sourceTree = "<group>"; };
+		0FAF035721B7EEFF00B898F7 /* PaymentDetailsSignPostCardViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentDetailsSignPostCardViewModel.h; sourceTree = "<group>"; };
+		0FAF035821B7EEFF00B898F7 /* PaymentDetailsSignPostCardViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentDetailsSignPostCardViewModel.m; sourceTree = "<group>"; };
 		0FB63D3DABD1442D274877CEDAEFB4A1 /* RSKImageCropper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RSKImageCropper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FB8E431F5F818A6621E321747BC4DC8 /* DropDownOnOverlaysStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; path = DropDownOnOverlaysStyle.json; sourceTree = "<group>"; };
 		109B87B2AA17D25A2678D6DD04F60402 /* SignpostWithBigImgCardViewRTL.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = SignpostWithBigImgCardViewRTL.xib; sourceTree = "<group>"; };
@@ -2333,6 +2345,10 @@
 		902A459DB9C6978500A4FEC052487B1E /* CellCardView */ = {
 			isa = PBXGroup;
 			children = (
+				0FAF035121B7EECF00B898F7 /* PaymentDetailsSignPostCardView.h */,
+				0FAF034F21B7EECE00B898F7 /* PaymentDetailsSignPostCardView.m */,
+				0FAF035021B7EECE00B898F7 /* PaymentDetailsSignPostCardView.xib */,
+				0FAF035221B7EECF00B898F7 /* PaymentDetailsSignPostCardViewRTL.xib */,
 				BDD5DFE995AC516E446AC8CBDAC4F996 /* CellCardViewImgWithSelectedOnly.h */,
 				79933B2F9DFDBCCE4E9669ED9F52DE5F /* CellCardViewImgWithSelectedOnly.m */,
 				DC4F4092C625FA912670E4195EE2F8D9 /* ExpandCellCardView.h */,
@@ -2357,6 +2373,8 @@
 		9252FC76EF6DA992ED6A5103F826764C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0FAF035721B7EEFF00B898F7 /* PaymentDetailsSignPostCardViewModel.h */,
+				0FAF035821B7EEFF00B898F7 /* PaymentDetailsSignPostCardViewModel.m */,
 				3E3BBB992798B5F2A73D639939B2C07C /* ExpandCellCardModel.h */,
 				249529EC254BCDA9F05CF406944DAEB3 /* ExpandCellCardModel.m */,
 				79316D4E0ACDD222AD88B5F98936AD64 /* MultiLineRadioButtonCellModel.h */,
@@ -3271,9 +3289,11 @@
 				DE32C8C56E1CBF81E4B4903E34D070A0 /* TooltipView.h in Headers */,
 				1F01FDC2786ED956A45684473458AD2F /* TooltipViewPrivate.h in Headers */,
 				17AA5D3BA243FB6E8F110BDEA35B9121 /* TPPropertyAnimation.h in Headers */,
+				0FAF035521B7EECF00B898F7 /* PaymentDetailsSignPostCardView.h in Headers */,
 				B6AA2F7953B5FA8678CA6F8C0E4FD4FC /* UIColor+KVNContrast.h in Headers */,
 				E262919C6AC28526AF64A0B095417BF5 /* UIImage+KVNEmpty.h in Headers */,
 				D4286AF690BFF5B74A400F7EA5583A98 /* UIImage+KVNImageEffects.h in Headers */,
+				0FAF035921B7EEFF00B898F7 /* PaymentDetailsSignPostCardViewModel.h in Headers */,
 				80D5F6C201C5F523EED24215314F3339 /* Utilities.h in Headers */,
 				D84BB69F1C65230995AB9A0D6182050F /* ValidationTextField.h in Headers */,
 				C38DBF2B90FFA8129C51129FD216A5EE /* ValidationTextFieldStyleModel.h in Headers */,
@@ -3677,6 +3697,7 @@
 				912BCCFFC301BA5EE74300C2D4A36643 /* PaybillCardViewRTL.xib in Resources */,
 				8FB5448390999A217BC9E3831BDDF6A2 /* PaymentInfoCardView.xib in Resources */,
 				560D5A43789DDEAF269134C02B508F09 /* PickerCollectionViewCell.xib in Resources */,
+				0FAF035421B7EECF00B898F7 /* PaymentDetailsSignPostCardView.xib in Resources */,
 				7B8BA4B28116A98344A08ECE92FCD34E /* PickerControllView.xib in Resources */,
 				8BFAAF9AD0EA9BD537747F74A1F8946C /* PinCodeCardView.xib in Resources */,
 				6EC2B6E08285820AD2647444D285ED8A /* ProfileHeaderCardView.xib in Resources */,
@@ -3700,6 +3721,7 @@
 				A5AE51C450230FE9BC138411FB2D8ABE /* SimpleCellCardView.xib in Resources */,
 				6E729D06EB2A6DDD4FF7AC78C44FE709 /* SimpleDropDownView.xib in Resources */,
 				47EF858C04CF85E7EE796033147C894C /* SimpleDropDownViewRTL.xib in Resources */,
+				0FAF035621B7EECF00B898F7 /* PaymentDetailsSignPostCardViewRTL.xib in Resources */,
 				2C6ABC33CA64B66C04BE89B391281E78 /* SimpleTextCardView.xib in Resources */,
 				17D9AAB774DAFC75E7B4271C34CDE345 /* SimpleTextWithTitleCardView.xib in Resources */,
 				1F822CD154C5A8EEB7251BB40F83F91D /* StatusConfirmationCardView.xib in Resources */,
@@ -3882,6 +3904,7 @@
 				66757F69B588A020A8BFAA2512F3F8CD /* FSCalendarStickyHeader.m in Sources */,
 				434B4D03EA3150C391825C4D6B967212 /* FSCalendarTransitionCoordinator.m in Sources */,
 				FCC3B92A2956074F20FFBCC50B31E0FD /* FSCalendarWeekdayView.m in Sources */,
+				0FAF035321B7EECF00B898F7 /* PaymentDetailsSignPostCardView.m in Sources */,
 				50ADD8AB9F802396576E311E91AB48FB /* GetContacts.m in Sources */,
 				0B1A280D80A122FF1937B9A1AF2A4670 /* GetKeyChildStepperView.m in Sources */,
 				5D7E340A7794E6EC4BA0300D6C84B9BB /* GiftCardView.m in Sources */,
@@ -3955,6 +3978,7 @@
 				06B8B766B8240310EB4C19798FFB986C /* ViewWithTitle.m in Sources */,
 				D4D1CA9276A7D9743DAEBBAD9266AA9F /* VoiceOfVodafoneNotificationCardView.m in Sources */,
 				01545328D821A892E47FF56935299A29 /* VoiceOfVodafoneWelcomeCardView.m in Sources */,
+				0FAF035A21B7EEFF00B898F7 /* PaymentDetailsSignPostCardViewModel.m in Sources */,
 				2699FE235C7565E710C99D0FC395933F /* VUIComponents-dummy.m in Sources */,
 				5952B79135D2FDAD7EB68F9FC328898D /* WelcomeBackCard.m in Sources */,
 				6B37CFBC6426AF9EDC152FFA3E8048C2 /* YearPickerView.m in Sources */,
