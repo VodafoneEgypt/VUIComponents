@@ -48,7 +48,7 @@
         
         NSLog(@"forCellAtIndexPath %@",indexPath);
         
-        cellsHeights[[NSString stringWithFormat:@"%@",indexPath]] = [NSNumber numberWithFloat:height+spaceBetweenCells];
+        cellsHeights[[NSString stringWithFormat:@"%@",indexPath]] = [NSNumber numberWithFloat:height+_spaceBetweenCells];
         
         //        [self initialize];
         //        [tableView reloadData];
