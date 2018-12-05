@@ -22,13 +22,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic) float titleFontSize;
 
-@property (nonatomic,strong) NSString* subTitle;
-
-@property (nonatomic)  float subTitleFontSize;
+@property (nonatomic,strong) NSAttributedString* subTitle;
 
 @property (strong ,nonatomic) TargetBlock targetBlock;
 
-@property(nonatomic,strong) NSString* secondTitle;
+@property(nonatomic,strong) NSAttributedString* secondTitle;
 
 @property(nonatomic,strong)  UIImage* avatarImage;
 

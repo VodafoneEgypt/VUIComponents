@@ -49,12 +49,13 @@
         
         NSLog(@"forCellAtIndexPath %@",indexPath);
         
-        cellsHeights[[NSString stringWithFormat:@"%@",indexPath]] = [NSNumber numberWithFloat:height];
+        cellsHeights[[NSString stringWithFormat:@"%@",indexPath]] = [NSNumber numberWithFloat:height + self.spaceBetweenCells];
         
-        [tableView reloadData];
     }
     
     [self initialize];
+    [tableView reloadData];
+
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{

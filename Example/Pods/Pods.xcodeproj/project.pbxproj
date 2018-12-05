@@ -41,7 +41,6 @@
 		0FAF035321B7EECF00B898F7 /* PaymentDetailsSignPostCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FAF034F21B7EECE00B898F7 /* PaymentDetailsSignPostCardView.m */; };
 		0FAF035421B7EECF00B898F7 /* PaymentDetailsSignPostCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FAF035021B7EECE00B898F7 /* PaymentDetailsSignPostCardView.xib */; };
 		0FAF035521B7EECF00B898F7 /* PaymentDetailsSignPostCardView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FAF035121B7EECF00B898F7 /* PaymentDetailsSignPostCardView.h */; };
-		0FAF035621B7EECF00B898F7 /* PaymentDetailsSignPostCardViewRTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FAF035221B7EECF00B898F7 /* PaymentDetailsSignPostCardViewRTL.xib */; };
 		0FAF035921B7EEFF00B898F7 /* PaymentDetailsSignPostCardViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FAF035721B7EEFF00B898F7 /* PaymentDetailsSignPostCardViewModel.h */; };
 		0FAF035A21B7EEFF00B898F7 /* PaymentDetailsSignPostCardViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FAF035821B7EEFF00B898F7 /* PaymentDetailsSignPostCardViewModel.m */; };
 		0FF97091FF7A2CF948CBC7715712367D /* GlamourAnimation.css in Resources */ = {isa = PBXBuildFile; fileRef = 31FF979A122828BC7B172CB177DAABA3 /* GlamourAnimation.css */; };
@@ -674,7 +673,6 @@
 		0FAF034F21B7EECE00B898F7 /* PaymentDetailsSignPostCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentDetailsSignPostCardView.m; sourceTree = "<group>"; };
 		0FAF035021B7EECE00B898F7 /* PaymentDetailsSignPostCardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PaymentDetailsSignPostCardView.xib; sourceTree = "<group>"; };
 		0FAF035121B7EECF00B898F7 /* PaymentDetailsSignPostCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentDetailsSignPostCardView.h; sourceTree = "<group>"; };
-		0FAF035221B7EECF00B898F7 /* PaymentDetailsSignPostCardViewRTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PaymentDetailsSignPostCardViewRTL.xib; sourceTree = "<group>"; };
 		0FAF035721B7EEFF00B898F7 /* PaymentDetailsSignPostCardViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentDetailsSignPostCardViewModel.h; sourceTree = "<group>"; };
 		0FAF035821B7EEFF00B898F7 /* PaymentDetailsSignPostCardViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentDetailsSignPostCardViewModel.m; sourceTree = "<group>"; };
 		0FB63D3DABD1442D274877CEDAEFB4A1 /* RSKImageCropper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RSKImageCropper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -2348,7 +2346,6 @@
 				0FAF035121B7EECF00B898F7 /* PaymentDetailsSignPostCardView.h */,
 				0FAF034F21B7EECE00B898F7 /* PaymentDetailsSignPostCardView.m */,
 				0FAF035021B7EECE00B898F7 /* PaymentDetailsSignPostCardView.xib */,
-				0FAF035221B7EECF00B898F7 /* PaymentDetailsSignPostCardViewRTL.xib */,
 				BDD5DFE995AC516E446AC8CBDAC4F996 /* CellCardViewImgWithSelectedOnly.h */,
 				79933B2F9DFDBCCE4E9669ED9F52DE5F /* CellCardViewImgWithSelectedOnly.m */,
 				DC4F4092C625FA912670E4195EE2F8D9 /* ExpandCellCardView.h */,
@@ -3721,7 +3718,6 @@
 				A5AE51C450230FE9BC138411FB2D8ABE /* SimpleCellCardView.xib in Resources */,
 				6E729D06EB2A6DDD4FF7AC78C44FE709 /* SimpleDropDownView.xib in Resources */,
 				47EF858C04CF85E7EE796033147C894C /* SimpleDropDownViewRTL.xib in Resources */,
-				0FAF035621B7EECF00B898F7 /* PaymentDetailsSignPostCardViewRTL.xib in Resources */,
 				2C6ABC33CA64B66C04BE89B391281E78 /* SimpleTextCardView.xib in Resources */,
 				17D9AAB774DAFC75E7B4271C34CDE345 /* SimpleTextWithTitleCardView.xib in Resources */,
 				1F822CD154C5A8EEB7251BB40F83F91D /* StatusConfirmationCardView.xib in Resources */,

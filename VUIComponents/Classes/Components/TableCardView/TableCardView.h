@@ -31,5 +31,10 @@ typedef void(^SelectionIndexPathBlock)(NSIndexPath *indexPath);
 
 @property (nonatomic) BOOL allowSelection;
 
+@property (nonatomic,strong) UIColor *tableViewBackgroundColor;
+
 @property (nonatomic, strong) NSAttributedString * titleAttributedString;
+
+@property (nonatomic) float spaceBetweenCells;
+
 @end

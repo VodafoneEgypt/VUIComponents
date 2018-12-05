@@ -20,7 +20,7 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *avatarImgView;
 
-@property (weak, nonatomic) IBOutlet UILabel *secondTitleLabel;
+@property (weak, nonatomic) IBOutlet AnaVodafoneLabel *secondTitleLabel;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *avatarImageWidthConstraint;
 
 @end
@@ -37,7 +37,7 @@
     }else{
         
         if(((PaymentDetailsSignPostCardViewModel*)self.model).targetBlock){
-        
+            
             ((PaymentDetailsSignPostCardViewModel*)self.model).targetBlock();
         }
     }
@@ -55,7 +55,7 @@
     if ((((PaymentDetailsSignPostCardViewModel*)self.model).verticalLine)) {
         
         verticalLineViewWidthConstraint.constant = (((PaymentDetailsSignPostCardViewModel*)self.model).verticalLine) ? 6:0;
-
+        
     }
     
     if ((((PaymentDetailsSignPostCardViewModel*)self.model).title)) {
@@ -85,11 +85,6 @@
     if ((((PaymentDetailsSignPostCardViewModel*)self.model).tableViewSelectedIndexRow)) {
         
         [self setTableViewSelectedIndexRow:(((PaymentDetailsSignPostCardViewModel*)self.model).tableViewSelectedIndexRow)];
-        
-    }
-    if ((((PaymentDetailsSignPostCardViewModel*)self.model).subTitleFontSize)) {
-        
-        [self setSubTitleFontSize:(((PaymentDetailsSignPostCardViewModel*)self.model).subTitleFontSize)];
         
     }
     if ((((PaymentDetailsSignPostCardViewModel*)self.model).titleFontSize)) {
@@ -161,66 +156,23 @@
     [self initialize];
 }
 
--(void)setSubTitle:(NSString *)subTitle{
+-(void)setSubTitle:(NSAttributedString *)subTitle{
     
-    NSMutableParagraphStyle *style = [[NSMutableParagraphStyle alloc] init];
-    [style setLineSpacing:5];
-    
-    // create attributed string
-    NSDictionary* attributes;
-    
-    if([LanguageHandler sharedInstance].currentDirection ==RTL){
-        
-        [style setAlignment:NSTextAlignmentRight];
-    }else{
-        
-        [style setAlignment:NSTextAlignmentLeft];
-    }
-    
-    attributes = @{NSFontAttributeName:[UIFont fontWithName:[[LanguageHandler sharedInstance] stringForKey:@"regularFont"] size:(((PaymentDetailsSignPostCardViewModel*)self.model).subTitleFontSize)?((PaymentDetailsSignPostCardViewModel*)self.model).subTitleFontSize:16],
-                   NSForegroundColorAttributeName:[UIColor colorWithCSS:@"333333"]};
-    
-    
-    NSMutableAttributedString* attrStr1 = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@",subTitle] attributes:attributes];
-    
-    [attrStr1 addAttribute:NSParagraphStyleAttributeName value:style range:NSMakeRange(0,attrStr1.length)];
-    
-    subTitleLabel.attributedText = attrStr1;
+    subTitleLabel.attributedText = subTitle;
     
     [self initialize];
 }
 
--(void)setSecondTitle:(NSString *)secondTitle{
+-(void)setSecondTitle:(NSAttributedString *)secondTitle{
     
-    
-    NSMutableParagraphStyle *style = [[NSMutableParagraphStyle alloc] init];
-    [style setLineSpacing:4];
-    
-    NSDictionary* attributes;
-    
-    if([LanguageHandler sharedInstance].currentDirection ==RTL){
-        
-        [style setAlignment:NSTextAlignmentRight];
-    }else{
-        
-        [style setAlignment:NSTextAlignmentLeft];
-    }
-    
-    attributes = @{NSFontAttributeName:[UIFont fontWithName:[[LanguageHandler sharedInstance] stringForKey:@"boldFont"] size:20],
-                   NSForegroundColorAttributeName:[UIColor colorWithCSS:@"333333"]};
-    
-    NSMutableAttributedString* attrStr1 = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@",secondTitle] attributes:attributes];
-    
-    [attrStr1 addAttribute:NSParagraphStyleAttributeName value:style range:NSMakeRange(0,attrStr1.length)];
-    
-    _secondTitleLabel.attributedText = attrStr1;
+    _secondTitleLabel.attributedText = secondTitle;
     
     [self initialize];
 }
 
 -(void)setAvatarImage:(UIImage *)avatarImage{
     
-    _avatarImageWidthConstraint.constant = 45;
+    _avatarImageWidthConstraint.constant = 8;
     
     _avatarImgView.image = avatarImage;
     
@@ -269,17 +221,8 @@
     }
     
     arrowImgView.transform = (value == true) ? CGAffineTransformRotate(arrowImgView.transform, M_PI):CGAffineTransformIdentity;
-        
+    
     [super setExpanded:value];
-}
-
--(void)setSubTitleFontSize:(float)subTitleFontSize{
-    
-    
-    if (((PaymentDetailsSignPostCardViewModel*)self.model).subTitle) {
-        
-        [self setSubTitle:((PaymentDetailsSignPostCardViewModel*)self.model).subTitle];
-    }
 }
 
 - (void)setTitleFontSize:(float)titleFontSize{
@@ -294,7 +237,7 @@
 -(void)setSubButtons:(NSArray *)subButtons{
     
     _expandSignpostWithAvatarCardView.buttons = subButtons;
-
+    
 }
 -(void)setWithoutAvatarImage:(BOOL)withoutAvatarImage{
     
@@ -302,8 +245,8 @@
     if (withoutAvatarImage) {
         self.avatarImageWidthConstraint.constant = 0;
     }else{
-        self.avatarImageWidthConstraint.constant = 45;
-
+        self.avatarImageWidthConstraint.constant = 8;
+        
     }
     [self initialize];
 }
@@ -318,45 +261,29 @@
     
     CGFloat height = 0;
     
-    CGFloat paddingHeight = 0;
+    CGFloat paddingHeight = 30;
     
     //TODO:: localize
     
-    CGFloat width = self.frame.size.width  - 86 - (((PaymentDetailsSignPostCardViewModel*)self.model).verticalLine ? 6 : 0) - _avatarImageWidthConstraint.constant;
-    
-    CGSize size = CGSizeMake(width, CGFLOAT_MAX);
-    
-    CGRect rect = [titleLabel.attributedText boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading context:nil];
-    
-    height += rect.size.height;
+    [titleLabel adjustHeight];
+    height += titleLabel.frame.size.height;
     
     if(((PaymentDetailsSignPostCardViewModel*)self.model).subTitle.length > 0){
         
-        titleLabelTopConstraint.constant = 25;
         
-        paddingHeight = 50;
+        [subTitleLabel adjustHeight];
         
-        rect = [subTitleLabel.attributedText boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading context:nil];
-        
-        height += rect.size.height+4;
+        height += subTitleLabel.frame.size.height;
     }else{
         
-        titleLabelTopConstraint.constant = 30;
-        
-        paddingHeight = 60;
     }
     
     if(((PaymentDetailsSignPostCardViewModel*)self.model).secondTitle.length > 0){
         
-        titleLabelTopConstraint.constant = 20;
         
-        CGSize size = CGSizeMake(width, CGFLOAT_MAX);
+        [_secondTitleLabel adjustHeight];
         
-        CGRect rect = [_secondTitleLabel.attributedText boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading context:nil];
-        
-        paddingHeight = 40;
-        
-        height += rect.size.height+5;
+        height += _secondTitleLabel.frame.size.height;
     }
     
     contentViewHeight = height+paddingHeight;
@@ -376,17 +303,8 @@
     
     [super commonInit];
     
-    NSArray* views = nil;
-    
-    if ([LanguageHandler sharedInstance].currentDirection == RTL) {
+    NSArray* views = [[NSBundle bundleForClass:[self class]]loadNibNamed:@"PaymentDetailsSignPostCardView" owner:self options:nil];
         
-        views = [[NSBundle bundleForClass:[self class]]loadNibNamed:@"PaymentDetailsSignPostCardViewRTL" owner:self options:nil];
-        
-    }else{
-        
-        views = [[NSBundle bundleForClass:[self class]]loadNibNamed:@"PaymentDetailsSignPostCardView" owner:self options:nil];
-    }
-    
     UIView* view = [views objectAtIndex:0];
     
     view.frame = self.bounds;

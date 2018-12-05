@@ -48,7 +48,7 @@
         
         NSLog(@"forCellAtIndexPath %@",indexPath);
         
-        cellsHeights[[NSString stringWithFormat:@"%@",indexPath]] = [NSNumber numberWithFloat:height];
+        cellsHeights[[NSString stringWithFormat:@"%@",indexPath]] = [NSNumber numberWithFloat:height+spaceBetweenCells];
         
         //        [self initialize];
         //        [tableView reloadData];
@@ -139,6 +139,10 @@
     }
     
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    
+    cell.backgroundColor = [UIColor clearColor];
+    cell.contentView.backgroundColor = [UIColor clearColor];
+    cell.contentView.subviews[0].backgroundColor = [UIColor clearColor];
     return cell;
 }
 
@@ -147,6 +151,13 @@
     _selectedIndexPath = selectedIndexPath;
     
     [tableView selectRowAtIndexPath:selectedIndexPath animated:true scrollPosition:UITableViewScrollPositionNone];
+}
+
+- (void)setTableViewBackgroundColor:(UIColor *)tableViewBackgroundColor{
+    
+    _tableViewBackgroundColor = tableViewBackgroundColor;
+    
+    tableView.backgroundColor = tableViewBackgroundColor;
 }
 
 -(void)setTitleAttributedString:(NSAttributedString *)titleAttributedString{

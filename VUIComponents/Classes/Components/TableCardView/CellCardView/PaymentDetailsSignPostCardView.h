@@ -21,9 +21,9 @@ typedef void(^TargetBlock)(void);
     
     __weak IBOutlet UIImageView *arrowImgView;
     
-    __weak IBOutlet UILabel *subTitleLabel;
+    __weak IBOutlet AnaVodafoneLabel *subTitleLabel;
     
-    __weak IBOutlet UILabel *titleLabel;
+    __weak IBOutlet AnaVodafoneLabel *titleLabel;
     
     __weak IBOutlet NSLayoutConstraint *titleLabelTopConstraint;
     
