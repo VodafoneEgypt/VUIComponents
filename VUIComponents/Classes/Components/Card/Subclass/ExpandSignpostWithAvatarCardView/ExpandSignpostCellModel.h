@@ -14,7 +14,11 @@
 
 @property (nonatomic ,strong) NSString *leftText;
 
+@property (nonatomic ,strong) UIColor *leftTextColor;
+
 @property (nonatomic ,strong) NSString *rightText;
+
+@property (nonatomic ,strong) UIColor *rightTextColor;
 
 @property (nonatomic ,strong) UIImage *image;
 

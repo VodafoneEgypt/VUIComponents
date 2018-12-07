@@ -28,7 +28,14 @@
         
         leftLabel.text = model.leftText;
     }
-    
+    if (model.leftTextColor) {
+        
+        leftLabel.tintColor = model.leftTextColor;
+    }
+    if (model.rightTextColor) {
+        
+        rightLabel.tintColor = model.rightTextColor;
+    }
     if (model.rightText) {
         
         rightLabel.text = model.rightText;
