@@ -3,7 +3,7 @@
 //  AnaVodafoneUIRevamp
 //
 //  Created by Taha on 5/2/17.
-//  Copyright © 2017 Karim Mousa. All rights reserved.
+//  Copyright © 2017 Vodafone. All rights reserved.
 //
 
 #import "TableCardView.h"
@@ -138,6 +138,11 @@
         cell.cellCardView.model =  ((TableCardModel*)(_tableCardModelArray[indexPath.section])).data[indexPath.row];
     }
     
+    if (cell.cellCardView.model != ((TableCardModel*)(_tableCardModelArray[indexPath.section])).data[indexPath.row]){
+        
+        cell.cellCardView.model =  ((TableCardModel*)(_tableCardModelArray[indexPath.section])).data[indexPath.row];
+        
+    }
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     
     cell.backgroundColor = [UIColor clearColor];
@@ -228,3 +233,4 @@
 }
 
 @end
+
