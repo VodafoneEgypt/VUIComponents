@@ -22,7 +22,8 @@ typedef enum : NSUInteger {
     OverlayButtonSecondaryStyle,
     OverlayButtonTertiaryStyle,
     PageNudgeButtonPrimaryStyle,
-    PageNudgeButtonSecondaryStyle
+    PageNudgeButtonSecondaryStyle,
+    BlackButtonStyle
 } StyleFilePath;
 
 

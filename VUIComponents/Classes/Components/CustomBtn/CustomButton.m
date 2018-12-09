@@ -204,7 +204,9 @@
         case PageNudgeButtonSecondaryStyle:
             result = @"PageNudgeButtonSecondaryStyle";
             break;
-            
+        case BlackButtonStyle:
+            result = @"BlackButtonStyle";
+            break;
         default:
             [NSException raise:NSGenericException format:@"Unexpected Custom Button StyleFilePath."];
     }

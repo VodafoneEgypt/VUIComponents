@@ -145,7 +145,7 @@
     }
     
     attributes = @{NSFontAttributeName:[UIFont fontWithName:[[LanguageHandler sharedInstance] stringForKey:@"regularFont"] size:(((PaymentDetailsSignPostCardViewModel*)self.model).titleFontSize)?((PaymentDetailsSignPostCardViewModel*)self.model).titleFontSize:20],
-                   NSForegroundColorAttributeName:[UIColor colorWithCSS:@"333333"]};
+                   NSForegroundColorAttributeName:[UIColor colorWithCSS:@"999999"]};
     
     NSMutableAttributedString* attrStr1 = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@",title] attributes:attributes];
     

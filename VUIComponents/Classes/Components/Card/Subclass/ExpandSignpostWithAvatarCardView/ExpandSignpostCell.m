@@ -30,11 +30,11 @@
     }
     if (model.leftTextColor) {
         
-        leftLabel.tintColor = model.leftTextColor;
+        leftLabel.textColor = model.leftTextColor;
     }
     if (model.rightTextColor) {
         
-        rightLabel.tintColor = model.rightTextColor;
+        rightLabel.textColor = model.rightTextColor;
     }
     if (model.rightText) {
         

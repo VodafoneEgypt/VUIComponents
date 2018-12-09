@@ -37,12 +37,18 @@
         
         _leftLabel.txt = model.leftText;
     }
-    
+    if (_model.leftTextColor) {
+        
+        _leftLabel.textColor = _model.leftTextColor;
+    }
     if (_model.rightText) {
         
         _rightLabel.txt = model.rightText;
     }
-    
+    if (_model.rightTextColor) {
+        
+        _rightLabel.textColor = _model.rightTextColor;
+    }
     if (_model.image) {
         
         _imgView.image = model.image;
@@ -56,7 +62,7 @@
     self.imgView.layer.borderWidth = 0.5;
     self.imgView.layer.borderColor = [UIColor colorWithHexString:@"707070"].CGColor;
     self.imgView.layer.cornerRadius = self.imgView.frame.size.height/2;
-
+    
 }
 
 -(void)setSelectedStyle:(SelectionStyle)selectedStyle{

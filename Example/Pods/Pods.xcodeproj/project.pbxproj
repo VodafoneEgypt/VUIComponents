@@ -44,6 +44,7 @@
 		0FAF035921B7EEFF00B898F7 /* PaymentDetailsSignPostCardViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FAF035721B7EEFF00B898F7 /* PaymentDetailsSignPostCardViewModel.h */; };
 		0FAF035A21B7EEFF00B898F7 /* PaymentDetailsSignPostCardViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FAF035821B7EEFF00B898F7 /* PaymentDetailsSignPostCardViewModel.m */; };
 		0FF97091FF7A2CF948CBC7715712367D /* GlamourAnimation.css in Resources */ = {isa = PBXBuildFile; fileRef = 31FF979A122828BC7B172CB177DAABA3 /* GlamourAnimation.css */; };
+		0FFDAD7E21BD38A700491DED /* BlackButtonStyle.json in Resources */ = {isa = PBXBuildFile; fileRef = 0FFDAD7D21BD38A600491DED /* BlackButtonStyle.json */; };
 		1095CBAE361818B7BE9C9C2219776BDC /* BaseCellCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 75B95AFDF9F0DB17714D22F6DE5C0393 /* BaseCellCardView.m */; };
 		1219467218D73A907B96304AB19ED570 /* ProfileHeaderCardView.h in Headers */ = {isa = PBXBuildFile; fileRef = A673D7D4B66B2D897A5A12BB26382849 /* ProfileHeaderCardView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		124B47E9B07DBBD5DB3A54B140D809B3 /* RSKImageCropper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF5D8CE8F0ACE5596A65457643856A2 /* RSKImageCropper-dummy.m */; };
@@ -677,6 +678,7 @@
 		0FAF035821B7EEFF00B898F7 /* PaymentDetailsSignPostCardViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentDetailsSignPostCardViewModel.m; sourceTree = "<group>"; };
 		0FB63D3DABD1442D274877CEDAEFB4A1 /* RSKImageCropper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RSKImageCropper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FB8E431F5F818A6621E321747BC4DC8 /* DropDownOnOverlaysStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; path = DropDownOnOverlaysStyle.json; sourceTree = "<group>"; };
+		0FFDAD7D21BD38A600491DED /* BlackButtonStyle.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BlackButtonStyle.json; sourceTree = "<group>"; };
 		109B87B2AA17D25A2678D6DD04F60402 /* SignpostWithBigImgCardViewRTL.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = SignpostWithBigImgCardViewRTL.xib; sourceTree = "<group>"; };
 		10FAA4E98086E8B0A1133C2E28FF0310 /* GSKStretchyHeaderView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GSKStretchyHeaderView-dummy.m"; sourceTree = "<group>"; };
 		1112E7BC4CF61A8BF0B04C03B6C2991E /* BaseCardViewWithButtons.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BaseCardViewWithButtons.m; sourceTree = "<group>"; };
@@ -2831,6 +2833,7 @@
 		EB52E35301855CF75DAB544C2BCCA3D7 /* resource */ = {
 			isa = PBXGroup;
 			children = (
+				0FFDAD7D21BD38A600491DED /* BlackButtonStyle.json */,
 				5A60BC5346794FC607930A782E1E732D /* CardButtonPrimaryStyle.json */,
 				1EAEED1E9B5B08C21652EEA5BC4A2DDA /* CardButtonSecondaryStyle.json */,
 				B2F287F6C143A07797E86C03C0041BCF /* CardButtonTertiaryStyle.json */,
@@ -3646,6 +3649,7 @@
 				D7DBD7CB86F9476AA159366076D1548A /* DropDownMenuTableViewCell.xib in Resources */,
 				E5A4DC89C7A4E120C3F4A215D33D8CE2 /* DropDownOnCardsStyle.json in Resources */,
 				ACB1B480D6A144BA4541B489B79F5F8F /* DropDownOnOverlaysStyle.json in Resources */,
+				0FFDAD7E21BD38A700491DED /* BlackButtonStyle.json in Resources */,
 				22797F57495FC17823AC94E621DFBD15 /* ErrorAlertView.xib in Resources */,
 				34288E828C5ECC05CC97BC9A5B64954A /* ExpandableHeaderView.xib in Resources */,
 				C90DAD4C5471E7676738A1DFDB48FBA8 /* ExpandableSignpostsWithAvatarCardView.xib in Resources */,
