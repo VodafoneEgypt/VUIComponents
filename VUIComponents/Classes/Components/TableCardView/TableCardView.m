@@ -140,6 +140,12 @@
     
     if (cell.cellCardView.model != ((TableCardModel*)(_tableCardModelArray[indexPath.section])).data[indexPath.row]){
         
+        BaseCellCardView *baseCellCardView = [[_cellCardView class] new];
+        
+        cell.cellCardView = baseCellCardView;
+        
+        cell.width = self.frame.size.width;
+        
         cell.cellCardView.model =  ((TableCardModel*)(_tableCardModelArray[indexPath.section])).data[indexPath.row];
         
     }
