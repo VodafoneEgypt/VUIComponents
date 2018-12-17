@@ -119,10 +119,13 @@
     
     cvvButtonImage.userInteractionEnabled = false;
     
-    //    self.cardImg = [UIImage imageNamed:@"CreditCard"];
-    
     self.delegate = self;
-    
+    CGFloat paddingViewWidth = 20;
+    CGRect imgViewFrame = CGRectMake(0,0, 70, 35);
+    if (self.frame.size.width <= ([UIScreen mainScreen].bounds.size.width /2 ) ){
+        paddingViewWidth = 10;
+        imgViewFrame = CGRectMake(0,0, 40, 20);
+    }
     BOOL deviseDirectionRightToLeft;
     
     if ([UIApplication sharedApplication].userInterfaceLayoutDirection == UIUserInterfaceLayoutDirectionRightToLeft) {
@@ -133,13 +136,13 @@
     }
     if (deviseDirectionRightToLeft){
         
-        paddingView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 20, 0)];
+        paddingView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, paddingViewWidth, 0)];
         
         self.rightView = paddingView;
         self.rightViewMode = UITextFieldViewModeAlways;
         
         cvvButtonImage.imageEdgeInsets = UIEdgeInsetsMake(0, 10, 0, 10);
-        cvvButtonImage.frame = CGRectMake(0,0, 70, 35);
+        cvvButtonImage.frame = imgViewFrame;
         self.leftView = cvvButtonImage;
         
         self.leftViewMode = UITextFieldViewModeAlways;
@@ -147,13 +150,13 @@
     }else{
         
         
-        paddingView = [[UIView alloc] initWithFrame:CGRectMake(0, 0,20, 0)];
+        paddingView = [[UIView alloc] initWithFrame:CGRectMake(0, 0,paddingViewWidth, 0)];
         
         self.leftView = paddingView;
         self.leftViewMode = UITextFieldViewModeAlways;
         
         cvvButtonImage.imageEdgeInsets = UIEdgeInsetsMake(0, 10, 0, 10);
-        cvvButtonImage.frame = CGRectMake(0,0, 70, 35);
+        cvvButtonImage.frame = imgViewFrame;
         self.rightView = cvvButtonImage;
         self.rightViewMode = UITextFieldViewModeAlways;
     }
