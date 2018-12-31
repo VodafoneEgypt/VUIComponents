@@ -11,7 +11,7 @@ PODS:
     - "UIColor+Hex/NSColor (= 1.0.1)"
     - "UIColor+Hex/UIColor (= 1.0.1)"
   - "UIColor+Hex/UIColor (1.0.1)"
-  - VUIComponents (0.7.1.0):
+  - VUIComponents (0.7.1.1):
     - GSKStretchyHeaderView (= 1.0.0)
     - INTUAnimationEngine
     - JWGCircleCounter
@@ -49,7 +49,7 @@ SPEC CHECKSUMS:
   "NSAttributedString+CCLFormat": 46d1e36b72b7ab0e093323705188818b21ba9763
   RSKImageCropper: 98296ad26b41753f796b6898d015509598f13d97
   "UIColor+Hex": 9fee91bb8e19f17dd40a79ae1e98949a6a84489d
-  VUIComponents: d2325e3e0b9b93dfec4b483451cbbdd697facbab
+  VUIComponents: b338cfb86a5657c650f165b1315043cae5ace623
   WYPopoverController: a9db25ac2841a686acdc0f3a99bdb21545db32f4
 
 PODFILE CHECKSUM: 66e8c0dfc610c30f1e77a861d14c01dd436da211

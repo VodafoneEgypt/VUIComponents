@@ -52,7 +52,6 @@
 
 -(void)setContentViewHeight:(CGFloat)height {
     contentViewHeight = height;
-    [self initialize];
 }
 
 @end
