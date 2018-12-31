@@ -34,6 +34,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic ,strong) NSArray *expandTableArray;
 
+@property (nonatomic ,strong) NSString *tableTitle;
+
 @property (nonatomic) int tableViewSelectedIndexRow;
 
 @property(nonatomic) BOOL withRadioButtons;

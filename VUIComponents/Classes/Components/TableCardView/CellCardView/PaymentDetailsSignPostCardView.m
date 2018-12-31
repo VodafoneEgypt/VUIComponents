@@ -21,6 +21,9 @@
 @property (weak, nonatomic) IBOutlet UIImageView *avatarImgView;
 
 @property (weak, nonatomic) IBOutlet AnaVodafoneLabel *secondTitleLabel;
+@property (weak, nonatomic) IBOutlet AnaVodafoneLabel *tableTitleLabel;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *tableTitleLabelHeightConstraint;
+
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *avatarImageWidthConstraint;
 
 @end
@@ -70,8 +73,13 @@
         
         [self setSecondTitle:(((PaymentDetailsSignPostCardViewModel*)self.model).secondTitle)];
         
-        
     }
+
+    if (((((PaymentDetailsSignPostCardViewModel*)self.model).tableTitle))) {
+        
+        [self setTableTitle:((PaymentDetailsSignPostCardViewModel*)self.model).tableTitle];
+    }
+    
     if ((((PaymentDetailsSignPostCardViewModel*)self.model).expandTableArray)) {
         
         [self setExpandTableArray:(((PaymentDetailsSignPostCardViewModel*)self.model).expandTableArray)];
@@ -110,6 +118,7 @@
         [self setAvatarImage:(((PaymentDetailsSignPostCardViewModel*)self.model).avatarImage)];
     }
     
+    [self initialize];
 }
 
 //-(void)setWithRadioButtons:(BOOL)withRadioButtons{
@@ -181,6 +190,11 @@
     _avatarImgView.layer.masksToBounds = YES;
     
     _avatarImgView.layer.borderWidth = 0;
+}
+
+-(void)setTableTitle:(NSString *)tableTitle{
+    
+    _tableTitleLabel.text = tableTitle;
 }
 
 -(void)setExpandTableArray:(NSArray *)expandTableArray{
@@ -293,8 +307,16 @@
     
     [_expandSignpostWithAvatarCardView initialize];
     
+    if ([self.tableTitleLabel.text length] > 0) {
+        [_tableTitleLabel adjustHeight];
+        self.tableTitleLabelHeightConstraint.constant = _tableTitleLabel.frame.size.height + 20;
+    }else{
+        
+        self.tableTitleLabelHeightConstraint.constant = 0;
+
+    }
     _expandSignpostWithAvatarCardView.heightDidChangedBlock = ^(CGFloat height) {
-        self->expandedViewHeightConstraint.constant = height;
+        self->expandedViewHeightConstraint.constant = height + self->_tableTitleLabelHeightConstraint.constant ;
     };
     
 }
