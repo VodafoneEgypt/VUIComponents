@@ -19,5 +19,6 @@
 @property (nonatomic)  float animationDeuration;
 
 - (void) initializeExpandedView;
+- (void) setExpandViewHeigh:(CGFloat)height;
 
 @end

@@ -97,5 +97,10 @@
     [self initialize];
 }
 
+- (void) setExpandViewHeigh:(CGFloat)height {
+    expandedViewHeightConstraint.constant = height;
+    [self initialize];
+}
+
 
 @end

@@ -20,5 +20,6 @@ typedef void (^ HeightDidChangedBlock)(CGFloat height);
 @property (nonatomic, strong) HeightDidChangedBlock heightDidChangedBlock;
 
 -(void)adjustCardView;
+-(void)setContentViewHeight:(CGFloat)height;
 
 @end
