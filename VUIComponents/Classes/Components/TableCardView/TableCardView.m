@@ -31,6 +31,8 @@
     
     _tableCardModelArray = tableCardModelArray;
     
+    cellsHeights = [NSMutableDictionary new];
+    
     [tableView reloadData];
     
     [self initialize];
@@ -42,11 +44,7 @@
     
     NSNumber* oldHeight = cellsHeights[[NSString stringWithFormat:@"%@",indexPath]];
     
-    NSLog(@"old height %f and new Height %f",oldHeight.floatValue, height);
-    
     if(oldHeight == nil || oldHeight.intValue != [NSNumber numberWithFloat:height].intValue){
-        
-        NSLog(@"forCellAtIndexPath %@",indexPath);
         
         cellsHeights[[NSString stringWithFormat:@"%@",indexPath]] = [NSNumber numberWithFloat:height+_spaceBetweenCells];
         
@@ -87,8 +85,6 @@
 
 -(NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    NSLog(@"willSelectRowAtIndexPath  %ld", (long)indexPath.row); // you can see selected row number in your console;
-    
     if(self.selectionIndexPathBlock != nil){
         
         self.selectionIndexPathBlock(indexPath);
@@ -105,7 +101,6 @@
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"didSelectRowAtIndexPath  %ld", (long)indexPath.row); // you can see selected row number in your console;
     
 }
 
@@ -124,8 +119,6 @@
     cell.indexPath = indexPath;
     
     if(cell.cellCardView == nil){
-        
-        NSLog(@"allocate new card for index %ld",(long)indexPath.row);
         
         cell.heightChangeDelegate = self;
         
@@ -204,16 +197,19 @@
             
             contentViewHeight += rect.size.height;
         }
-        
     }
+    
     for (int row = 0; row<cellsHeights.count; row++) {
         
         contentViewHeight += [cellsHeights[[NSString stringWithFormat:@"%@",[NSIndexPath indexPathForRow:row inSection:0]]] floatValue];
         
-        self.heightDidChangedBlock(contentViewHeight);
+        if (self.heightDidChangedBlock) {
+            
+            self.heightDidChangedBlock(contentViewHeight);
+            
+        }
     }
 }
-
 
 -(void)commonInit{
     
@@ -239,4 +235,3 @@
 }
 
 @end
-
