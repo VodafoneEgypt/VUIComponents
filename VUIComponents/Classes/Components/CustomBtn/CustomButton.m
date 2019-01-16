@@ -249,6 +249,7 @@
     [self addTarget:self action:@selector(handleUnSelected) forControlEvents:UIControlEventTouchUpOutside];
     [self addTarget:self action:@selector(performAction) forControlEvents:UIControlEventTouchUpInside];
     self.layer.masksToBounds = YES;
+    self.titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
 }
 
 @end
