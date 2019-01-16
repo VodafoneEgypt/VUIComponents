@@ -65,6 +65,8 @@
 		0FE2CC3F21EF422400E65177 /* VFCashCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE2CC3C21EF422400E65177 /* VFCashCardView.m */; };
 		0FE2CC4221EF438700E65177 /* CreditCardViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FE2CC4021EF438700E65177 /* CreditCardViewModel.h */; };
 		0FE2CC4321EF438700E65177 /* CreditCardViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE2CC4121EF438700E65177 /* CreditCardViewModel.m */; };
+		0FE2CC4621EF467400E65177 /* RoundedCardButtonStyle.json in Resources */ = {isa = PBXBuildFile; fileRef = 0FE2CC4421EF467300E65177 /* RoundedCardButtonStyle.json */; };
+		0FE2CC4721EF467400E65177 /* RoundedOverlayButtonStyle.json in Resources */ = {isa = PBXBuildFile; fileRef = 0FE2CC4521EF467300E65177 /* RoundedOverlayButtonStyle.json */; };
 		0FF84AC36B82791AA0789B27B952746F /* InputIconTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = EE3738D26A39CB879531D9F2C313A30D /* InputIconTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		109354F0B4A22FAE3E465EA0207FD68A /* PagerCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1484B286EEB8DDFB3E7701FA28E212DB /* PagerCollectionViewCell.m */; };
 		10E4AFA8DE7A1A28A417645713CC2F69 /* AKPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D4E095696274459A4EE040E7FFB208D /* AKPickerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -721,6 +723,8 @@
 		0FE2CC3C21EF422400E65177 /* VFCashCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VFCashCardView.m; sourceTree = "<group>"; };
 		0FE2CC4021EF438700E65177 /* CreditCardViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreditCardViewModel.h; sourceTree = "<group>"; };
 		0FE2CC4121EF438700E65177 /* CreditCardViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreditCardViewModel.m; sourceTree = "<group>"; };
+		0FE2CC4421EF467300E65177 /* RoundedCardButtonStyle.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RoundedCardButtonStyle.json; sourceTree = "<group>"; };
+		0FE2CC4521EF467300E65177 /* RoundedOverlayButtonStyle.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RoundedOverlayButtonStyle.json; sourceTree = "<group>"; };
 		10FAA4E98086E8B0A1133C2E28FF0310 /* GSKStretchyHeaderView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GSKStretchyHeaderView-dummy.m"; sourceTree = "<group>"; };
 		118FBDE5456749F3755A925D7F57BCF7 /* LocalizableTextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LocalizableTextView.m; sourceTree = "<group>"; };
 		11B0BADBA59277B702A55CDBC2269605 /* GetKeyChildStepperView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GetKeyChildStepperView.m; sourceTree = "<group>"; };
@@ -2013,6 +2017,8 @@
 		579ECEBF7C08EE18C5AC2A086C42EB02 /* resource */ = {
 			isa = PBXGroup;
 			children = (
+				0FE2CC4421EF467300E65177 /* RoundedCardButtonStyle.json */,
+				0FE2CC4521EF467300E65177 /* RoundedOverlayButtonStyle.json */,
 				8B4E61A3D4C2C3315FF76C45710CB0A8 /* BlackButtonStyle.json */,
 				D67148016966A1D414108697C655E119 /* CardButtonPrimaryStyle.json */,
 				AE8D5F7C68E1C08617378F2E3546CDBE /* CardButtonSecondaryStyle.json */,
@@ -3746,6 +3752,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				08662E32A0455910AF026B31C72F81A7 /* AddCreditCardFooterTableViewCell.xib in Resources */,
+				0FE2CC4621EF467400E65177 /* RoundedCardButtonStyle.json in Resources */,
 				C60698EAC2D397662374EE4C892F68B1 /* AddonAlertCardView.xib in Resources */,
 				E2BF3A4F5CE2399B3F0654E9976C9EAE /* AlertCardViewWithImg.xib in Resources */,
 				A2F33041620955B3169CF562F436D0D6 /* AlertCardViewWithImgandTable.xib in Resources */,
@@ -3816,6 +3823,7 @@
 				E361E68750256793EFFEF937E3C7C85B /* OverlayButtonPrimaryStyle.json in Resources */,
 				40DD98B8784EC18EDA2AF7DB5FC1F4CA /* OverlayButtonSecondaryStyle.json in Resources */,
 				3A4EAE54C96900587A5896AA2B9A8757 /* OverlayButtonTertiaryStyle.json in Resources */,
+				0FE2CC4721EF467400E65177 /* RoundedOverlayButtonStyle.json in Resources */,
 				3A69E742C5F206558A67C584A16A0B62 /* PageNudgeButtonPrimaryStyle.json in Resources */,
 				8E6057B12DA0CC8FF86D5C0B2A97F8B0 /* PageNudgeButtonSecondaryStyle.json in Resources */,
 				304D4EBC0120D9B105E8839CA90CA3E4 /* PagerCollectionViewCell.xib in Resources */,
