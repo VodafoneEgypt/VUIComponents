@@ -228,7 +228,7 @@
                                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xIY-pd-yni" userLabel="Converter View">
                                     <rect key="frame" x="16" y="85" width="343" height="45"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="converterArrowImg" translatesAutoresizingMaskIntoConstraints="NO" id="9or-xQ-CHm">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Chevron_down" translatesAutoresizingMaskIntoConstraints="NO" id="9or-xQ-CHm">
                                             <rect key="frame" x="149" y="0.0" width="45" height="45"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="45" id="PW8-le-Ybu"/>
@@ -438,7 +438,6 @@
     <resources>
         <image name="Arrow_up_purple" width="24" height="13"/>
         <image name="Chevron_down" width="30" height="30"/>
-        <image name="converterArrowImg" width="21.5" height="28.5"/>
         <image name="correct" width="20" height="20"/>
         <image name="information-1" width="44" height="44"/>
         <image name="radio_off" width="22" height="22"/>
