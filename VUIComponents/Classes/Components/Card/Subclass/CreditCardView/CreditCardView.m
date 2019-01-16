@@ -579,7 +579,7 @@
     self.expanded = false;
     
 //    _bottomSheetVC = [ScrollableBottomSheetViewController new];
-    _bottomSheet = [BottomSheetView new];
+    _bottomSheet = [[BottomSheetView alloc] initWithNibName:@"BottomSheetView" bundle:[NSBundle bundleForClass:[self class]]];
     _cvvTextField.cardImg = [UIImage imageNamed:@"CVVicon"];
     _amountTextField.delegate = self;
     _grantedTextField.delegate = self;
