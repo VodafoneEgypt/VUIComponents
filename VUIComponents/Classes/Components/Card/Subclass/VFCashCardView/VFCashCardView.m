@@ -392,7 +392,7 @@
 -(BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
     
     if ([string isEqualToString:@" "] || (![Utilities validateStringIsNumbers:string] && ![string isEqualToString:@""])){
-        NSLog(@"not an number");
+
         return  NO;
     }else if ([textField.text containsString:@"."] && [string isEqualToString:@"."]) {
         
