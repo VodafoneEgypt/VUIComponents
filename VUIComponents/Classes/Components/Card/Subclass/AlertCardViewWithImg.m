@@ -154,14 +154,14 @@
     
     if ([_alertTitleLabel.attributedText length]>0) {
         
-        [_alertTitleLabel sizeToFit];
+        [_alertTitleLabel adjustHeight];
         _alertTitleLabelHeightConstraint.constant = _alertTitleLabel.frame.size.height;
         contentViewHeight += _alertTitleLabelHeightConstraint.constant;
     }
     
     if ([_alertLabel.attributedText length]>0) {
       
-        [_alertLabel sizeToFit];
+        [_alertLabel adjustHeight];
         _alertLabelHeightConstraint.constant = _alertLabel.frame.size.height;
         contentViewHeight += _alertLabelHeightConstraint.constant;
     }

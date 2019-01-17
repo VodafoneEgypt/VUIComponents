@@ -301,7 +301,7 @@
         
         __weak typeof(self) weekSelf = self;
         _bottomSheet.selectedActionBlock = ^(NSInteger index) {
-            NSLog(@"select = %ld",(long)index);
+
             weekSelf.selectedCreditCard = weekSelf.creditCardArray[index];
             
             NSString *securSubTitle = [((CreditCardViewModel*)weekSelf.creditCardArray[index]).cardNumber substringWithRange:NSMakeRange(((CreditCardViewModel*)weekSelf.creditCardArray[index]).cardNumber.length - 4, 4)];
@@ -506,7 +506,7 @@
 -(BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
     
     if ([string isEqualToString:@" "] || (![Utilities validateStringIsNumbers:string] && ![string isEqualToString:@""])){
-        NSLog(@"not an number");
+
         return  NO;
     }else if ([textField.text containsString:@"."] && [string isEqualToString:@"."]) {
         
