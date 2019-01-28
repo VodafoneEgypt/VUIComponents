@@ -106,12 +106,13 @@ CGFloat fullView = 100 ;
         
         [recognizer setTranslation:CGPointZero inView:self.view];
         
-    }else{
+    }else if (translation.y > 0 ){
         
         [self dismissView];
         
         return;
     }
+
     if (recognizer.state == UIGestureRecognizerStateEnded ){
         //velocity.y < 0 ? Double((y - fullView) / -velocity.y) : Double((partialView - y) / velocity.y )
         double duration = (velocity.y < 0)?(y - fullView)/ -velocity.y:(partialView - y)/velocity.y ;
