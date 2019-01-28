@@ -48,6 +48,9 @@
 		0E0DB48CF9F99DE39CDDCEEAA699164F /* LanguageHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = BD71D5DEC2C63B2DBE0F2BD6B94FB953 /* LanguageHandler.m */; };
 		0E5478071AE5BB29EBD89B2E88600554 /* UIView+GSKTransplantSubviews.h in Headers */ = {isa = PBXBuildFile; fileRef = E68BB6F85F5F8CB73FC09EE4787F3B40 /* UIView+GSKTransplantSubviews.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0EE825E4EF27AA91D13C09CFADDAEECF /* VoiceOfVodafoneNotificationCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D73AADB89D7B616A6CE18AEE10D0E55 /* VoiceOfVodafoneNotificationCardView.xib */; };
+		0F0EBB0821FF30A20078167A /* CreditCardTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F0EBB0521FF30A10078167A /* CreditCardTableView.xib */; };
+		0F0EBB0921FF30A20078167A /* CreditCardTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0EBB0621FF30A10078167A /* CreditCardTableView.m */; };
+		0F0EBB0A21FF30A20078167A /* CreditCardTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0EBB0721FF30A10078167A /* CreditCardTableView.h */; };
 		0F4B0F53D5AE2F867C545E16100965D6 /* PickerControllView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C0AF56C7974FA2208E3C250BC89E207 /* PickerControllView.m */; };
 		0FF51FD75377FA47DCE6CC1227EB98AF /* PagerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C7AA2A3167CC1EB73DF6761FA309472 /* PagerCollectionViewCell.xib */; };
 		10267926B6215387F8F3FA7A704A5629 /* StatusConfirmationCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB17C9DDE9AED8DB21371B925403D866 /* StatusConfirmationCardView.xib */; };
@@ -702,6 +705,9 @@
 		0D7C029EA1FDECBEC8FB7FB3985D39D9 /* StatusConfirmationCardViewRTL.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = StatusConfirmationCardViewRTL.xib; sourceTree = "<group>"; };
 		0DB1C04EC7BF3E0F9ABF52B3554C777B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E448198DB11A250E6823327EBFE41BF /* SimpleTextCardView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SimpleTextCardView.m; sourceTree = "<group>"; };
+		0F0EBB0521FF30A10078167A /* CreditCardTableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreditCardTableView.xib; sourceTree = "<group>"; };
+		0F0EBB0621FF30A10078167A /* CreditCardTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreditCardTableView.m; sourceTree = "<group>"; };
+		0F0EBB0721FF30A10078167A /* CreditCardTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreditCardTableView.h; sourceTree = "<group>"; };
 		0FA9E1069DA852372E380FD02F6BC109 /* SimpleTextWithTitleCardView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SimpleTextWithTitleCardView.h; sourceTree = "<group>"; };
 		0FB63D3DABD1442D274877CEDAEFB4A1 /* RSKImageCropper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RSKImageCropper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FD6CF9621C9146E517DBDF93D8DEA72 /* PaymentDetailsSignPostCardView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = PaymentDetailsSignPostCardView.xib; sourceTree = "<group>"; };
@@ -1491,6 +1497,16 @@
 				CD23D86A4481B6F71823A0E71CD6A42A /* PagerView */,
 			);
 			path = SearchAndFilterComponents;
+			sourceTree = "<group>";
+		};
+		0F0EBB0421FF30A10078167A /* CreditCardTableView */ = {
+			isa = PBXGroup;
+			children = (
+				0F0EBB0521FF30A10078167A /* CreditCardTableView.xib */,
+				0F0EBB0621FF30A10078167A /* CreditCardTableView.m */,
+				0F0EBB0721FF30A10078167A /* CreditCardTableView.h */,
+			);
+			path = CreditCardTableView;
 			sourceTree = "<group>";
 		};
 		0F74105276389CDA354920203C72B945 /* bottomSheetCell */ = {
@@ -3027,6 +3043,7 @@
 		F1D96C154E5494EDEDE9BC32A38C0C47 /* Subclass */ = {
 			isa = PBXGroup;
 			children = (
+				0F0EBB0421FF30A10078167A /* CreditCardTableView */,
 				4D28BA13E3EC46435D583D03CF5AAD3A /* AddonAlertCardView.h */,
 				28E9F3B79A7F8FA619C6FD79CA90E00F /* AddonAlertCardView.m */,
 				CEAC3F05F346ADC8A3F2857B74975736 /* AlertCardViewWithImg.h */,
@@ -3354,6 +3371,7 @@
 				990F14683121711EA402FEB03BF3F197 /* HeaderCardView.h in Headers */,
 				32533040B2EA06E334AAF0927066278B /* HexColor.h in Headers */,
 				111D95B634CAAEE8DC586DB14C245BD9 /* ImageStackCardView.h in Headers */,
+				0F0EBB0A21FF30A20078167A /* CreditCardTableView.h in Headers */,
 				1E95EBBC7E47321938D43781EFA1F349 /* InputIconTextField.h in Headers */,
 				24E10024442FC253DEBFF0B17E6A13A0 /* InvalidTooltipView.h in Headers */,
 				AB0198AE0DAAF531C97337BCF6F18B5F /* KAProgressLabel.h in Headers */,
@@ -3826,6 +3844,7 @@
 				D978FA4E9904A73DE1E8B7F5F8D19F0F /* image_tooltip_invalidRtl.png in Resources */,
 				3E68C21B0812A7F0CA3B06A6846300D4 /* ImageStackCardView.xib in Resources */,
 				D47A2B8513CC200702B16F2A68907556 /* KVNProgressView.xib in Resources */,
+				0F0EBB0821FF30A20078167A /* CreditCardTableView.xib in Resources */,
 				8543C7833E5AE62A15C363A917B31D05 /* ListItemCardView.xib in Resources */,
 				47780B3A21D3EF8CD168BA6160EEBF5D /* LoadingCardView.xib in Resources */,
 				C63BDC6E58787B98098B3A4A084DE005 /* MgmButtonStyle.json in Resources */,
@@ -4050,6 +4069,7 @@
 				EE0E7C71649A978753191E84D1314380 /* GetKeyChildStepperView.m in Sources */,
 				01D472004717B98BE08F2C3159343C1B /* GiftCardView.m in Sources */,
 				9DD43D74869154ADA3DA44DBA47FDF92 /* HeaderCardView.m in Sources */,
+				0F0EBB0921FF30A20078167A /* CreditCardTableView.m in Sources */,
 				817B4484D5DE29A8FB5C8A085BB880EF /* HexColor.m in Sources */,
 				56D09DCE24BD99E4C44950EE72680AE8 /* ImageStackCardView.m in Sources */,
 				BA0AC8C65A3E8DCA92DA5CA7EE4B9771 /* InputIconTextField.m in Sources */,
