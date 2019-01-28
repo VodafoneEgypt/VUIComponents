@@ -12,9 +12,9 @@
 <objects>
 <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BottomSheetView">
 <connections>
-<outlet property="containerView" destination="5oh-y4-mot" id="EgH-HS-mg6"/>
 <outlet property="headerView" destination="bxh-7O-T3j" id="Ptr-Ep-Fxl"/>
 <outlet property="holdView" destination="cjr-T8-JVd" id="aVK-cb-CjH"/>
+<outlet property="tableView" destination="m7w-xI-tgE" id="bCh-bb-Blr"/>
 <outlet property="tableViewTitle" destination="LyG-SJ-ayW" id="x1W-Sk-2CZ"/>
 <outlet property="view" destination="Cm2-Oj-d1l" id="lR2-6C-Lcv"/>
 </connections>
@@ -85,10 +85,10 @@
 <constraint firstItem="YJo-wl-cuG" firstAttribute="top" secondItem="bxh-7O-T3j" secondAttribute="top" id="pw6-Hp-5yT"/>
 </constraints>
 </view>
-<view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5oh-y4-mot">
+<tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="m7w-xI-tgE">
 <rect key="frame" x="0.0" y="50" width="375" height="617"/>
-<color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-</view>
+<color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+</tableView>
 </subviews>
 </stackView>
 </subviews>

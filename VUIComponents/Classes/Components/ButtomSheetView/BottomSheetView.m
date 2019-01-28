@@ -13,19 +13,23 @@
 #import "TableViewFooter.h"
 #import <Languagehandlerpod/LanguageHandler.h>
 
-@interface BottomSheetView ()<UIGestureRecognizerDelegate>
+@interface BottomSheetView ()<UIGestureRecognizerDelegate,UITableViewDelegate,UITableViewDataSource>
 
-@property (weak, nonatomic) IBOutlet UIView *containerView;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UIView *headerView;
 @property (weak, nonatomic) IBOutlet AnaVodafoneLabel *tableViewTitle;
 @property (weak, nonatomic) IBOutlet UIView *holdView;
 
+@property (nonatomic,strong) NSIndexPath* selectedIndexPath;
+
 @property (strong, nonatomic) UIViewController *viewController;
 
+@property (strong, nonatomic) TableViewFooter* footerView;
 
 @end
 @implementation BottomSheetView
 
+static NSString *cellIdentifier = @"default";
 
 CGFloat durationTime = 0.5;
 
@@ -40,7 +44,7 @@ CGFloat fullView = 100 ;
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    //    [self.tableView reloadData];
+    [self.tableView reloadData];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -50,6 +54,12 @@ CGFloat fullView = 100 ;
 }
 
 -(void) prepareForInit{
+    
+    [self.tableView registerNib:[UINib nibWithNibName:@"BottomSheetTableViewCell" bundle:[NSBundle bundleForClass:[self class]]]
+         forCellReuseIdentifier:cellIdentifier];
+    
+    _tableView.delegate = self ;
+    _tableView.dataSource = self ;
     
     UIPanGestureRecognizer *panRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panGesture:)];
     
@@ -61,6 +71,7 @@ CGFloat fullView = 100 ;
     
     self.holdView.layer.cornerRadius = 3 ;
     
+    self.selectedIndexPath = [NSIndexPath indexPathForRow:0 inSection:0];
 }
 
 -(void) prepareUI{
@@ -70,6 +81,8 @@ CGFloat fullView = 100 ;
         CGFloat yComponent = partialView ;
         self.view.frame = CGRectMake(0, yComponent, frame.size.width, frame.size.height-100);
     }];
+    
+    [_tableView selectRowAtIndexPath:self.selectedIndexPath animated:false scrollPosition:UITableViewScrollPositionNone];
     
     UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:self.view.bounds byRoundingCorners:( UIRectCornerTopLeft | UIRectCornerTopRight) cornerRadii:CGSizeMake(20.0, 20.0)];
     
@@ -125,32 +138,30 @@ CGFloat fullView = 100 ;
             
         } completion:^(BOOL finished) {
             if (velocity.y < 0){
-                //                self.tableView.scrollEnabled = YES ;
+                self.tableView.scrollEnabled = YES ;
             }
+            
         }];
     }
 }
 
--(void)showBottomSheetWithView:(UIView *)view andViewController:(UIViewController *)viewController onSuperView:(UIView *)superView{
+-(void)showBottomSheet:(UIViewController *)viewController :(UIView *)view {
     
     self.viewController = viewController ;
+    
     [self.viewController addChildViewController:self];
-    [superView addSubview:self.view];
+    [self.viewController.view addSubview:self.view];
     [self didMoveToParentViewController:self.viewController];
-    CGFloat height = superView.frame.size.height;
-    CGFloat width  = superView.frame.size.width;
+    CGFloat height = self.viewController.view.frame.size.height ;
+    CGFloat width  = self.viewController.view.frame.size.width ;
     
     self.view.frame = CGRectMake(0, [UIScreen mainScreen].bounds.size.height, width, height);
-    
-    CGRect frame = view.frame;
-    frame.origin = CGPointMake(0, 0);
-    view.frame = frame;
-    [self.containerView addSubview:view];
     
     [UIView animateWithDuration:durationTime animations:^{
         
         self.view.frame = CGRectMake(0, CGRectGetMinY(self.view.frame), width, height);
     }];
+    
 }
 
 -(void)dismissView {
@@ -169,6 +180,95 @@ CGFloat fullView = 100 ;
     });
 }
 
+#pragma mark - UITableViewDataSource
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)theTableView
+{
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)theTableView numberOfRowsInSection:(NSInteger)section
+{
+    return _creditCardModelArray.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)theTableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    BottomSheetTableViewCell  *cell = (BottomSheetTableViewCell *)[theTableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    if (cell == nil) {
+        cell = [[BottomSheetTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+    }
+    
+    [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
+    cell.withCorrectImage  = YES ;
+    cell.withRemoveImageBtn = NO ;
+    [cell setModel:_creditCardModelArray[indexPath.row]];
+    
+    return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 50;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
+{
+    if (section == 0)
+    {
+        return 100;
+    }
+    else
+    {
+        return 0;
+    }
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
+{
+    if (section == 0){
+        
+        _footerView = [[TableViewFooter alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+        
+        __weak typeof(self) weakSelf = self;
+        _footerView.manageCreditCardActionBlock = ^{
+            
+            [weakSelf dismissView];
+            if (weakSelf.manageCreditCardActionBlock){
+                
+                weakSelf.manageCreditCardActionBlock();
+            }
+        };
+        
+        _footerView.addCreditCardActionBlock =  ^{
+            
+            [weakSelf dismissView];
+            
+            if(weakSelf.addCreditCardActionBlock){
+                
+                weakSelf.addCreditCardActionBlock();
+            }
+        };
+        
+        return _footerView;
+        
+    }else{
+        
+        return nil;
+    }
+}
+
+#pragma mark - UITableViewDelegate
+- (void)tableView:(UITableView *)theTableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    self.selectedActionBlock(indexPath.row);
+    self.selectedCard = self.creditCardModelArray[indexPath.row];
+    self.selectedIndexPath = indexPath;
+    [self dismissView];
+    
+}
+
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
     
     UIPanGestureRecognizer  *gesture = ((UIPanGestureRecognizer*)gestureRecognizer);
@@ -177,11 +277,11 @@ CGFloat fullView = 100 ;
     CGFloat direction = velocity.y ;
     CGFloat y = CGRectGetMinY(self.view.frame)  ;
     
-    //    if((y == fullView && self.tableView.contentOffset.y == 0 && direction > 0) || (y == partialView)) {
-    //        _tableView.scrollEnabled = NO ;
-    //    }else {
-    //        _tableView.scrollEnabled = YES ;
-    //    }
+    if((y == fullView && self.tableView.contentOffset.y == 0 && direction > 0) || (y == partialView)) {
+        _tableView.scrollEnabled = NO ;
+    }else {
+        _tableView.scrollEnabled = YES ;
+    }
     
     return false ;
 }

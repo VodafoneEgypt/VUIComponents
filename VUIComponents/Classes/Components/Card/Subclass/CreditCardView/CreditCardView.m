@@ -10,7 +10,6 @@
 #import "CreditCardView.h"
 #import "BottomSheetView.h"
 #import "TableViewFooter.h"
-//#import "CreditCardTableView.h"
 #import "HexColor.h"
 #import <Languagehandlerpod/LanguageHandler.h>
 #import "CvvTextField.h"
@@ -301,29 +300,25 @@
         }
         
         __weak typeof(self) weekSelf = self;
+        _bottomSheet.selectedActionBlock = ^(NSInteger index) {
+            
+            weekSelf.selectedCreditCard = weekSelf.creditCardArray[index];
+            
+            NSString *securSubTitle = [((CreditCardViewModel*)weekSelf.creditCardArray[index]).cardNumber substringWithRange:NSMakeRange(((CreditCardViewModel*)weekSelf.creditCardArray[index]).cardNumber.length - 4, 4)];
+            
+            weekSelf.creditCardLabel.text = [NSString stringWithFormat:@"%@ *%@",((CreditCardViewModel*)weekSelf.creditCardArray[index]).name,securSubTitle];
+            //            [NSString stringwi]
+            
+            if (weekSelf.selectedActionBlock){
+                weekSelf.selectedActionBlock(index);
+            }
+        };
         
-        
-        /*    //temp     _bottomSheet.selectedActionBlock = ^(NSInteger index) {
-         
-         weekSelf.selectedCreditCard = weekSelf.creditCardArray[index];
-         
-         NSString *securSubTitle = [((CreditCardViewModel*)weekSelf.creditCardArray[index]).cardNumber substringWithRange:NSMakeRange(((CreditCardViewModel*)weekSelf.creditCardArray[index]).cardNumber.length - 4, 4)];
-         
-         weekSelf.creditCardLabel.text = [NSString stringWithFormat:@"%@ *%@",((CreditCardViewModel*)weekSelf.creditCardArray[index]).name,securSubTitle];
-         //            [NSString stringwi]
-         
-         if (weekSelf.selectedActionBlock){
-         weekSelf.selectedActionBlock(index);
-         }
-         };
-         
-         */  // temp
-        
-        //        _bottomSheet.selectedActionBlock(0);     temp
+        _bottomSheet.selectedActionBlock(0);
     }
     
     //    _bottomSheetVC.creditCardModel = self.creditCardArray;
-    //    _bottomSheet.creditCardModelArray = self.creditCardArray ;   temp
+    _bottomSheet.creditCardModelArray = self.creditCardArray ;
     
     [self initialize];
     
@@ -426,17 +421,13 @@
         if ([self.creditCardArray count] > 0) {
             
             //   [_bottomSheetVC showBottomSheetWithViewController:self.bottomSheetViewController isShow:true view:self.bottomSheetViewController.view];
-            
-            UIView * vv = [[UIView alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
-            vv.backgroundColor = [UIColor redColor];
-            
-            [_bottomSheet showBottomSheetWithView:vv andViewController:self.bottomSheetViewController onSuperView:self.bottomSheetViewController.view];
+            [_bottomSheet showBottomSheet:self.bottomSheetViewController :self.bottomSheetViewController.view];
             
             //            _bottomSheetVC.addCreditCardActionBlock = _addCreditCardActionBlock;
             //            _bottomSheetVC.manageCreditCardActionBlock = _manageCreditCardActionBlock;
             
-            //            _bottomSheet.addCreditCardActionBlock = _addCreditCardActionBlock ;
-            //            _bottomSheet.manageCreditCardActionBlock = _manageCreditCardActionBlock ;
+            _bottomSheet.addCreditCardActionBlock = _addCreditCardActionBlock ;
+            _bottomSheet.manageCreditCardActionBlock = _manageCreditCardActionBlock ;
             
             
         }
