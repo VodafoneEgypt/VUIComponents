@@ -14,11 +14,12 @@
 #import "ExpandCellCardView.h"
 #import <Languagehandlerpod/LanguageHandler.h>
 #import "MultiLineCellCardView.h"
-
+#import "SimpleTextCardView.h"
 
 @interface ViewControllerTableCardSample ()
 
 @property (weak, nonatomic) IBOutlet TableCardView *tableCardView;
+@property (weak, nonatomic) IBOutlet SimpleTextCardView *simpleTextCardView;
 
 @end
 
@@ -31,7 +32,8 @@
 -(void)viewWillAppear:(BOOL)animated{
     
     [super viewWillAppear:animated];
-    [self setupTableCardView];
+//    [self setupTableCardView];
+    [self setupSimpleTextCardView];
 
 }
 
@@ -108,4 +110,8 @@
     
 }
 
+-(void)setupSimpleTextCardView{
+    
+    _simpleTextCardView.text = @"test test test test";
+}
 @end

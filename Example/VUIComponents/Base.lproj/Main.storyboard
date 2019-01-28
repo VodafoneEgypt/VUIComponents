@@ -103,6 +103,13 @@
                                     <constraint firstAttribute="height" constant="10" id="yeg-5M-IbI"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r0M-9Y-kR1" customClass="SimpleTextCardView">
+                                <rect key="frame" x="0.0" y="73" width="375" height="12"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="Kny-yk-0bJ"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -111,17 +118,21 @@
                             <constraint firstItem="t6D-00-jRm" firstAttribute="width" secondItem="lJP-eP-jK6" secondAttribute="width" id="MQN-QH-DB0"/>
                             <constraint firstItem="t6D-00-jRm" firstAttribute="height" secondItem="lJP-eP-jK6" secondAttribute="height" id="P1n-lx-dAz"/>
                             <constraint firstItem="t6D-00-jRm" firstAttribute="centerY" secondItem="lJP-eP-jK6" secondAttribute="centerY" id="Psm-t2-qbd"/>
+                            <constraint firstItem="r0M-9Y-kR1" firstAttribute="top" secondItem="AJ9-PW-mpl" secondAttribute="bottom" constant="35" id="T1s-aN-Hsc"/>
+                            <constraint firstItem="r0M-9Y-kR1" firstAttribute="width" secondItem="t6D-00-jRm" secondAttribute="width" id="Vle-Xb-Lwz"/>
                             <constraint firstItem="AJ9-PW-mpl" firstAttribute="top" secondItem="jeg-o0-jpP" secondAttribute="bottom" constant="8" id="g5l-L7-fgC"/>
+                            <constraint firstItem="r0M-9Y-kR1" firstAttribute="centerX" secondItem="t6D-00-jRm" secondAttribute="centerX" id="mqi-P4-Lid"/>
                             <constraint firstItem="AJ9-PW-mpl" firstAttribute="centerX" secondItem="lJP-eP-jK6" secondAttribute="centerX" id="oQk-px-5VT"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="simpleTextCardView" destination="r0M-9Y-kR1" id="wjc-hV-9XX"/>
                         <outlet property="tableCardView" destination="AJ9-PW-mpl" id="B7P-ZM-XQp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="obd-t8-fVD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="888.79999999999995" y="334.18290854572717"/>
+            <point key="canvasLocation" x="849" y="282"/>
         </scene>
     </scenes>
     <resources>
