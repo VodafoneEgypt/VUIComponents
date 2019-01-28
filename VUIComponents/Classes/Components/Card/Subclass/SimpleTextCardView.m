@@ -28,7 +28,7 @@
     NSMutableParagraphStyle *style = [[NSMutableParagraphStyle alloc] init];
     [style setLineSpacing:5];
     
-    NSDictionary* attributes;
+    
     
     if ([LanguageHandler sharedInstance].currentDirection == RTL) {
         
@@ -38,7 +38,7 @@
         [style setAlignment:NSTextAlignmentLeft];
     }
     
-    attributes = @{NSFontAttributeName:[UIFont fontWithName:[[LanguageHandler sharedInstance] stringForKey:@"regularFont"] size:16],
+    NSDictionary* attributes  = @{NSFontAttributeName:[UIFont fontWithName:[[LanguageHandler sharedInstance] stringForKey:@"regularFont"] size:16],
                    NSForegroundColorAttributeName:[UIColor colorWithCSS:@"333333"]};
 
     NSMutableAttributedString* attrStr1 = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@",text] attributes:attributes];

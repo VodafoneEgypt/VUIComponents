@@ -10,6 +10,7 @@
 #import "CreditCardView.h"
 #import "BottomSheetView.h"
 #import "TableViewFooter.h"
+//#import "CreditCardTableView.h"
 #import "HexColor.h"
 #import <Languagehandlerpod/LanguageHandler.h>
 #import "CvvTextField.h"
@@ -66,7 +67,7 @@
 - (IBAction)expandAction:(id)sender {
     
     [self hideKeybboard];
-
+    
     if (_expandActionBlock)
     {
         _expandActionBlock();
@@ -83,19 +84,19 @@
     
     _dropDownImageView.transform = (expanded == true) ? CGAffineTransformMakeRotation(M_PI):CGAffineTransformIdentity;
     _dropDownImageView.hidden = (expanded == true) ? true:false;
-
+    
     contentView.backgroundColor = (expanded == true) ? [UIColor colorWithHexString:@"F4F4F4"] : [UIColor whiteColor];
     
     if (!expanded) {
-
+        
         [_bottomSheet dismissView];
         _ShowbottomSheetVC = false;
-
+        
     }
     
     [super setExpanded:expanded];
     [self setTitleString:_titleString];
-
+    
 }
 
 - (void)setTitleString:(NSString *)titleString{
@@ -217,7 +218,7 @@
     if (_creditCardArray.count < 1) {
         
         _creditCardLabel.text = creditCardString;
-
+        
     }
 }
 
@@ -275,7 +276,7 @@
             _hintContainerView.hidden = false;
             _amountLabel.hidden = false;
             break;
-
+            
         default:
             break;
     }
@@ -289,43 +290,47 @@
         
         _creditCardViewHeightConstraint.constant = 0;
         _creditCardViewBottomConstraint.constant = 0;
-
+        
     }else{
         _creditCardViewHeightConstraint.constant = 45;
         _creditCardViewBottomConstraint.constant = 16;
-
+        
         if (_payButtonTitle) {
             
             _payBtn.txt = _payButtonTitle;
         }
         
         __weak typeof(self) weekSelf = self;
-        _bottomSheet.selectedActionBlock = ^(NSInteger index) {
-
-            weekSelf.selectedCreditCard = weekSelf.creditCardArray[index];
-            
-            NSString *securSubTitle = [((CreditCardViewModel*)weekSelf.creditCardArray[index]).cardNumber substringWithRange:NSMakeRange(((CreditCardViewModel*)weekSelf.creditCardArray[index]).cardNumber.length - 4, 4)];
-            
-            weekSelf.creditCardLabel.text = [NSString stringWithFormat:@"%@ *%@",((CreditCardViewModel*)weekSelf.creditCardArray[index]).name,securSubTitle];
-            //            [NSString stringwi]
-            
-            if (weekSelf.selectedActionBlock){
-                weekSelf.selectedActionBlock(index);
-            }
-        };
         
-        _bottomSheet.selectedActionBlock(0);
+        
+        /*    //temp     _bottomSheet.selectedActionBlock = ^(NSInteger index) {
+         
+         weekSelf.selectedCreditCard = weekSelf.creditCardArray[index];
+         
+         NSString *securSubTitle = [((CreditCardViewModel*)weekSelf.creditCardArray[index]).cardNumber substringWithRange:NSMakeRange(((CreditCardViewModel*)weekSelf.creditCardArray[index]).cardNumber.length - 4, 4)];
+         
+         weekSelf.creditCardLabel.text = [NSString stringWithFormat:@"%@ *%@",((CreditCardViewModel*)weekSelf.creditCardArray[index]).name,securSubTitle];
+         //            [NSString stringwi]
+         
+         if (weekSelf.selectedActionBlock){
+         weekSelf.selectedActionBlock(index);
+         }
+         };
+         
+         */  // temp
+        
+        //        _bottomSheet.selectedActionBlock(0);     temp
     }
     
-//    _bottomSheetVC.creditCardModel = self.creditCardArray;
-    _bottomSheet.creditCardModelArray = self.creditCardArray ;
+    //    _bottomSheetVC.creditCardModel = self.creditCardArray;
+    //    _bottomSheet.creditCardModelArray = self.creditCardArray ;   temp
     
     [self initialize];
     
 }
 
 -(void)setPayButtonTitle:(NSString *)payButtonTitle{
-
+    
     _payButtonTitle = payButtonTitle;
     
     _payBtn.txt =  (_creditCardArray.count > 0) ? _payButtonTitle:[LanguageHandler.sharedInstance stringForKey:@"Add Credit Card"];
@@ -358,7 +363,7 @@
     [self hideKeybboard];
     
     if (_creditCardArray.count > 0) {
-       
+        
         if (self.payActionBlock) {
             
             self.payActionBlock();
@@ -371,13 +376,13 @@
         }
     }
     
-
+    
 }
 
 - (IBAction)firstRadioBtnAction:(id)sender {
     
     [self hideKeybboard];
-
+    
     _converterContainerHeightConstraint.constant = 0;
     _firstRadioImg.image = [UIImage imageNamed:@"correct"];
     _seconedRadioImg.image = [UIImage imageNamed:@"radio_off"];
@@ -401,39 +406,43 @@
     [self.amountTextField becomeFirstResponder];
     [self setFirstRadioBtnTitle:_firstRadioBtnTitle];
     [self setSeconedRadioBtnTitle:_seconedRadioBtnTitle];
-
+    
 }
 
 - (IBAction)showCreditCardBottomSheet:(id)sender{
     
     _addBottomSheetBtn.enabled = NO ;
-
+    
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-       
+        
         self->_addBottomSheetBtn.enabled = YES ;
     });
     
     if (!_ShowbottomSheetVC) {
-
+        
         [self hideKeybboard];
-
+        
         _ShowbottomSheetVC = true;
         if ([self.creditCardArray count] > 0) {
-
-         //   [_bottomSheetVC showBottomSheetWithViewController:self.bottomSheetViewController isShow:true view:self.bottomSheetViewController.view];
-            [_bottomSheet showBottomSheet:self.bottomSheetViewController :self.bottomSheetViewController.view];
             
-//            _bottomSheetVC.addCreditCardActionBlock = _addCreditCardActionBlock;
-//            _bottomSheetVC.manageCreditCardActionBlock = _manageCreditCardActionBlock;
+            //   [_bottomSheetVC showBottomSheetWithViewController:self.bottomSheetViewController isShow:true view:self.bottomSheetViewController.view];
             
-            _bottomSheet.addCreditCardActionBlock = _addCreditCardActionBlock ;
-            _bottomSheet.manageCreditCardActionBlock = _manageCreditCardActionBlock ;
+            UIView * vv = [[UIView alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
+            vv.backgroundColor = [UIColor redColor];
             
-
+            [_bottomSheet showBottomSheetWithView:vv andViewController:self.bottomSheetViewController onSuperView:self.bottomSheetViewController.view];
+            
+            //            _bottomSheetVC.addCreditCardActionBlock = _addCreditCardActionBlock;
+            //            _bottomSheetVC.manageCreditCardActionBlock = _manageCreditCardActionBlock;
+            
+            //            _bottomSheet.addCreditCardActionBlock = _addCreditCardActionBlock ;
+            //            _bottomSheet.manageCreditCardActionBlock = _manageCreditCardActionBlock ;
+            
+            
         }
     }else{
-
-//        [_bottomSheetVC dismissView];
+        
+        //        [_bottomSheetVC dismissView];
         [_bottomSheet dismissView];
         _ShowbottomSheetVC = false;
     }
@@ -456,7 +465,7 @@
     if ([_titleString length] > 0) {
         
         [_titleLabel adjustHeight];
-    
+        
         contentViewHeight = 45 + _titleLabel.frame.size.height;
     }
 }
@@ -469,11 +478,11 @@
                 //15+firstLabel + 15 +seconedLabel + 15  = 45 +2 label
                 [_firstRadioBtnTitleLabel adjustHeight];
                 [_seconedRadioBtnTitleLabel adjustHeight];
-
+                
                 _radioBtnsContainerHeightConstraint.constant = 15 + _firstRadioBtnTitleLabel.frame.size.height + 15 + _seconedRadioBtnTitleLabel.frame.size.height + 15;
                 [self layoutIfNeeded];
                 [_radioBtnsContainerView layoutIfNeeded];
-
+                
                 expandedViewHeightConstraint.constant = _radioBtnsContainerHeightConstraint.constant + _creditCardTopConstraint.constant + _converterContainerHeightConstraint.constant + _creditCardViewHeightConstraint.constant + 45 + _creditCardViewBottomConstraint.constant + 16 ;
                 
             }else{
@@ -482,7 +491,7 @@
             break;
         case rechargeMyBalance:
         case rechargeForOther:
-
+            
             if (self.expanded){
                 
                 expandedViewHeightConstraint.constant = _radioBtnsContainerHeightConstraint.constant + _creditCardTopConstraint.constant + _converterContainerHeightConstraint.constant + _creditCardViewHeightConstraint.constant + 45 + _creditCardViewBottomConstraint.constant + 16 ;
@@ -492,7 +501,7 @@
             }
             break;
         case payForOther:
-
+            
             expandedViewHeightConstraint.constant = _radioBtnsContainerHeightConstraint.constant + _creditCardTopConstraint.constant + _converterContainerHeightConstraint.constant + _creditCardViewHeightConstraint.constant + 45 + _creditCardViewBottomConstraint.constant + 16 ;
             break;
         default:
@@ -506,7 +515,7 @@
 -(BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
     
     if ([string isEqualToString:@" "] || (![Utilities validateStringIsNumbers:string] && ![string isEqualToString:@""])){
-
+        
         return  NO;
     }else if ([textField.text containsString:@"."] && [string isEqualToString:@"."]) {
         
@@ -578,7 +587,7 @@
     
     self.expanded = false;
     
-//    _bottomSheetVC = [ScrollableBottomSheetViewController new];
+    //    _bottomSheetVC = [ScrollableBottomSheetViewController new];
     _bottomSheet = [[BottomSheetView alloc] initWithNibName:@"BottomSheetView" bundle:[NSBundle bundleForClass:[self class]]];
     _cvvTextField.cardImg = [UIImage imageNamed:@"CVVicon"];
     _amountTextField.delegate = self;

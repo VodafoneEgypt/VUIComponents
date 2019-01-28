@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'VUIComponents'
-  s.version          = '0.7.1.8'
+  s.version          = '0.7.2.0'
   s.summary          = 'Pod contains UI components'
   s.description      = 'A pod contains all objective-c UI components you need to use'
   s.homepage         = 'https://github.com/VodafoneEgypt/VUIComponents'

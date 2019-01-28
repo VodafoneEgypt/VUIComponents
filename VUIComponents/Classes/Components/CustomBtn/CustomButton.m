@@ -207,6 +207,12 @@
         case BlackButtonStyle:
             result = @"BlackButtonStyle";
             break;
+        case RoundedCardButtonStyle:
+            result = @"RoundedCardButtonStyle";
+            break;
+        case RoundedOverlayButtonStyle:
+            result = @"RoundedOverlayButtonStyle";
+            break;
         default:
             [NSException raise:NSGenericException format:@"Unexpected Custom Button StyleFilePath."];
     }
