@@ -10,10 +10,12 @@
 #import "CreditCardView.h"
 #import "BottomSheetView.h"
 #import "TableViewFooter.h"
+//#import "CreditCardTableView.h"
 #import "HexColor.h"
 #import <Languagehandlerpod/LanguageHandler.h>
 #import "CvvTextField.h"
 #import "Utilities.h"
+#import "CreditCardTableView.h"
 @interface CreditCardView ()<UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet AnaVodafoneLabel *titleLabel;
@@ -57,6 +59,7 @@
 
 @property (nonatomic,strong)  BottomSheetView *bottomSheet;
 
+@property (nonatomic,strong)  CreditCardTableView *creditCardTableView;
 @end
 
 
@@ -300,7 +303,9 @@
         }
         
         __weak typeof(self) weekSelf = self;
-        _bottomSheet.selectedActionBlock = ^(NSInteger index) {
+        
+        
+        _creditCardTableView.selectedActionBlock = ^(NSInteger index) {
             
             weekSelf.selectedCreditCard = weekSelf.creditCardArray[index];
             
@@ -309,16 +314,16 @@
             weekSelf.creditCardLabel.text = [NSString stringWithFormat:@"%@ *%@",((CreditCardViewModel*)weekSelf.creditCardArray[index]).name,securSubTitle];
             //            [NSString stringwi]
             
+            [_bottomSheet dismissView];
             if (weekSelf.selectedActionBlock){
                 weekSelf.selectedActionBlock(index);
             }
         };
         
-        _bottomSheet.selectedActionBlock(0);
+        _creditCardTableView.selectedActionBlock(0);
     }
     
-    //    _bottomSheetVC.creditCardModel = self.creditCardArray;
-    _bottomSheet.creditCardModelArray = self.creditCardArray ;
+    _creditCardTableView.creditCardModelArray = self.creditCardArray ;
     
     [self initialize];
     
@@ -420,20 +425,26 @@
         _ShowbottomSheetVC = true;
         if ([self.creditCardArray count] > 0) {
             
-            //   [_bottomSheetVC showBottomSheetWithViewController:self.bottomSheetViewController isShow:true view:self.bottomSheetViewController.view];
-            [_bottomSheet showBottomSheet:self.bottomSheetViewController :self.bottomSheetViewController.view];
+            [_bottomSheet showBottomSheetWithView:_creditCardTableView andViewController:self.bottomSheetViewController onSuperView:self.bottomSheetViewController.view];
             
-            //            _bottomSheetVC.addCreditCardActionBlock = _addCreditCardActionBlock;
-            //            _bottomSheetVC.manageCreditCardActionBlock = _manageCreditCardActionBlock;
-            
-            _bottomSheet.addCreditCardActionBlock = _addCreditCardActionBlock ;
-            _bottomSheet.manageCreditCardActionBlock = _manageCreditCardActionBlock ;
-            
+            _creditCardTableView.addCreditCardActionBlock = ^{
+                
+                [_bottomSheet dismissView];
+                
+                _addCreditCardActionBlock();
+                //
+            };
+            _creditCardTableView.manageCreditCardActionBlock = ^{
+                
+                [_bottomSheet dismissView];
+                
+                _manageCreditCardActionBlock();
+                
+            };
             
         }
     }else{
         
-        //        [_bottomSheetVC dismissView];
         [_bottomSheet dismissView];
         _ShowbottomSheetVC = false;
     }
@@ -578,8 +589,8 @@
     
     self.expanded = false;
     
-    //    _bottomSheetVC = [ScrollableBottomSheetViewController new];
     _bottomSheet = [[BottomSheetView alloc] initWithNibName:@"BottomSheetView" bundle:[NSBundle bundleForClass:[self class]]];
+    _creditCardTableView = [[CreditCardTableView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, 10)];
     _cvvTextField.cardImg = [UIImage imageNamed:@"CVVicon"];
     _amountTextField.delegate = self;
     _grantedTextField.delegate = self;

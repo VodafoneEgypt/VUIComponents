@@ -1503,8 +1503,8 @@
 			isa = PBXGroup;
 			children = (
 				0F0EBB0521FF30A10078167A /* CreditCardTableView.xib */,
-				0F0EBB0621FF30A10078167A /* CreditCardTableView.m */,
 				0F0EBB0721FF30A10078167A /* CreditCardTableView.h */,
+				0F0EBB0621FF30A10078167A /* CreditCardTableView.m */,
 			);
 			path = CreditCardTableView;
 			sourceTree = "<group>";

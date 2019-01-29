@@ -28,6 +28,10 @@ static NSString *cellIdentifier = @"default";
     _creditCardModelArray = creditCardModelArray;
     
     [self initialize];
+    
+    [_tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] animated:true scrollPosition:UITableViewScrollPositionNone];
+    
+    
 }
 
 
@@ -122,6 +126,7 @@ static NSString *cellIdentifier = @"default";
     contentViewHeight = 100;
     
     contentViewHeight += _creditCardModelArray.count * 50;
+    
 }
 
 -(void)commonInit{
@@ -143,7 +148,7 @@ static NSString *cellIdentifier = @"default";
     [self.tableView registerNib:[UINib nibWithNibName:@"BottomSheetTableViewCell" bundle:[NSBundle bundleForClass:[self class]]]
          forCellReuseIdentifier:cellIdentifier];
     [self addSubview:view];
-
+    
 }
 
 @end
