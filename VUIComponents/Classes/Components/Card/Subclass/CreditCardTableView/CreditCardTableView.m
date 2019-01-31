@@ -29,6 +29,8 @@ static NSString *cellIdentifier = @"default";
     
     [self initialize];
     
+    [self.tableView reloadData];
+    
     [_tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] animated:true scrollPosition:UITableViewScrollPositionNone];
     
     
