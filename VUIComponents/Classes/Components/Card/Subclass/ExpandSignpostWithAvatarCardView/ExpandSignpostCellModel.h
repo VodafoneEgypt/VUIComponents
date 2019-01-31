@@ -24,6 +24,10 @@
 
 @property (nonatomic ,strong) UIImage *seletedImage;
 
+@property (nonatomic , strong)UIImage *leftImgView ;
+
+@property (nonatomic) CGFloat widthLeftImg ;
+
 @property (strong ,nonatomic) ActionBlock actionBlock;
 
 @end

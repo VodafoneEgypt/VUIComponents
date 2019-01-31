@@ -7,6 +7,7 @@
 //
 
 #import "BaseCardViewWithButtons.h"
+#import "DropdownMenu.h"
 
 @interface TableSignpostWithAvatarCardView : BaseCardViewWithButtons
 
@@ -15,5 +16,11 @@
 @property (nonatomic) BOOL isRadioButton;
 
 @property (nonatomic) int selecetdIndexRow;
+
+@property (nonatomic) CGFloat cellHeight;
+
+@property (strong,nonatomic) SelectionBlock selectionBlock;
+
+@property (nonatomic ,strong) UIColor* cellBGColor ;
 
 @end

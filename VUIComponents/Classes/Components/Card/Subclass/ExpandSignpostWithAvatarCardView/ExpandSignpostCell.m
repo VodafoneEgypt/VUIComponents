@@ -15,6 +15,12 @@
     __weak IBOutlet UILabel *rightLabel;
     
     __weak IBOutlet UIImageView *imgView;
+    
+    __weak IBOutlet UIImageView *leftImgView;
+    
+    __weak IBOutlet NSLayoutConstraint *widthLeftImg;
+        
+    
 }
 
 @end
@@ -45,6 +51,17 @@
         
         imgView.image = model.image;
     }
+    
+    if (model.leftImgView){
+        
+        leftImgView.image = model.leftImgView ;
+    }
+    
+    if (model.widthLeftImg){
+        
+        widthLeftImg.constant = model.widthLeftImg ;
+    }
+
 }
 
 @end

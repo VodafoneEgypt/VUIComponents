@@ -8,6 +8,7 @@
 
 #import "ExpandableBaseCardView.h"
 #import <VUIComponents/AnaVodafoneLabel.h>
+#import "DropdownMenu.h"
 
 typedef void(^TargetBlock)(void);
 
@@ -62,8 +63,18 @@ typedef void(^TargetBlock)(void);
 
 @property (nonatomic) IBInspectable BOOL withoutCircleImage;
 
+@property (nonatomic) CGFloat cellHeight ;
+
+@property (nonatomic ,strong) UIColor* cellColor ;
+
+@property (nonatomic ,strong) UIColor* ExpandTableViewColor ;
+
+@property (strong,nonatomic) SelectionBlock selectionBlock;
+
 -(void)setSubTitleLabelAdjustsFontSizeToFitWidth:(Boolean)F andNumberOfLine:(NSInteger)N;
+
 -(UIImageView *)getAvatarImageView;
+
 -(void)setAvatarImageView:(UIImageView *)imageView;
 
 @end

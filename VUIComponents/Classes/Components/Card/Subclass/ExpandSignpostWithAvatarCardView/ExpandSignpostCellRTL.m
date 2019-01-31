@@ -9,12 +9,17 @@
 #import "ExpandSignpostCellRTL.h"
 
 @interface ExpandSignpostCellRTL(){
-
+    
     __weak IBOutlet UILabel *leftLabel;
     
     __weak IBOutlet UILabel *rightLabel;
     
     __weak IBOutlet UIImageView *imgView;
+    
+    __weak IBOutlet UIImageView *rightImgView;
+    
+    __weak IBOutlet NSLayoutConstraint *widthRightImg;
+    
 }
 
 @end
@@ -44,6 +49,16 @@
     if (model.image) {
         
         imgView.image = model.image;
+    }
+    
+    if (model.leftImgView) {
+        
+        rightImgView.image = model.leftImgView;
+    }
+    
+    if (model.widthLeftImg) {
+        
+        widthRightImg.constant = model.widthLeftImg;
     }
 }
 

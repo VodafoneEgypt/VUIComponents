@@ -14,8 +14,6 @@
 #import "RadioButtonCell.h"
 #import <VUIComponents/Utilities.h>
 
-#define cellHeight 44
-
 @interface TableSignpostWithAvatarCardView ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -46,7 +44,7 @@
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    return cellHeight;
+    return _cellHeight;
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -68,7 +66,11 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"didSelectRowAtIndexPath %ld", (long)indexPath.row); // you can see selected row number in your console;
+    NSLog(@"TableSignpostWithAvatarCardView new %ld", (long)indexPath.row); // you can see selected row number in your console;
+    
+    if (self.selectionBlock != nil) {
+        self.selectionBlock(indexPath.row);
+    }
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -90,7 +92,11 @@
         cell.model = _expandTableArray[[indexPath row]];
         
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        if (self.cellBGColor) {
+            cell.contentView.backgroundColor = _cellBGColor;
+        }
         return cell;
+        
     }else{
         if ([LanguageHandler sharedInstance].currentDirection == RTL) {
             
@@ -109,6 +115,9 @@
             
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
             
+            if (self.cellBGColor) {
+                cell.contentView.backgroundColor = _cellBGColor;
+            }
             return cell;
             
         }else{
@@ -126,12 +135,16 @@
             cell.model =  _expandTableArray[indexPath.row];
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
             
+            if (self.cellBGColor) {
+                cell.contentView.backgroundColor = _cellBGColor;
+            }
+            
             return cell;
             
         }
-        
     }
 }
+
 #pragma mark height adjustment
 
 - (void)setButtons:(NSArray *)buttons{
@@ -145,7 +158,7 @@
     
     contentViewHeight = _buttonTopHeight ;
     
-    contentViewHeight += (_expandTableArray.count * cellHeight /* for button margin */);
+    contentViewHeight += (_expandTableArray.count * _cellHeight /* for button margin */);
 }
 
 -(void)commonInit{
@@ -165,6 +178,8 @@
     [self.subviews makeObjectsPerformSelector: @selector(removeFromSuperview)];
     
     _buttonTopHeight = 0;
+    
+    _cellHeight = 44;
     
     [self addSubview:view];
     

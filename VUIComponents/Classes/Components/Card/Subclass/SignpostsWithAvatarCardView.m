@@ -16,11 +16,10 @@
 @interface SignpostsWithAvatarCardView ()
 
 @property (weak, nonatomic) IBOutlet TableSignpostWithAvatarCardView *tableSignpostWithAvatarCardView;
-
 @property (weak, nonatomic) IBOutlet UIImageView *avatarImgView;
-
 @property (weak, nonatomic) IBOutlet AnaVodafoneLabel *secondTitleLabel;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *avatarImageWidthConstraint;
+@property (weak, nonatomic) IBOutlet UIView *containerView;
 
 @end
 
@@ -43,6 +42,18 @@
 }
 
 #pragma mark setters
+
+-(void)setCellHeight:(CGFloat)cellHeight{
+    
+    _cellHeight = cellHeight;
+    _tableSignpostWithAvatarCardView.cellHeight = cellHeight;
+}
+
+-(void)setCellColor:(UIColor*)cellColor{
+    
+    _cellColor = cellColor;
+    _containerView.backgroundColor = cellColor ;
+}
 
 -(UIImageView *)getAvatarImageView {
     return _avatarImgView;
@@ -184,7 +195,10 @@
     
     _avatarImgView.image = avatarImage;
     
-    _avatarImgView.layer.cornerRadius = _avatarImgView.frame.size.height / 2;
+    if (!_withoutCircleImage) {
+        
+        _avatarImgView.layer.cornerRadius = _avatarImgView.frame.size.height / 2;
+    }
     
     _avatarImgView.layer.masksToBounds = YES;
     
@@ -368,6 +382,12 @@
     [self addSubview:view];
     
     self.verticalLine = false;
+    _tableSignpostWithAvatarCardView.selectionBlock = ^(int index) {
+        
+        if (self.selectionBlock) {
+            self.selectionBlock(index);
+        }
+    };
     
     self.expandable = false;
     self.avatarImageWidthConstraint.constant = 0;
@@ -375,4 +395,3 @@
 }
 
 @end
-
