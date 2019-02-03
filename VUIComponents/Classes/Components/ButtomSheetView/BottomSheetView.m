@@ -19,8 +19,10 @@
 @property (weak, nonatomic) IBOutlet UIView *headerView;
 @property (weak, nonatomic) IBOutlet AnaVodafoneLabel *tableViewTitle;
 @property (weak, nonatomic) IBOutlet UIView *holdView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *bottomSheetTitleHeightConstraint;
 
 @property (strong, nonatomic) UIViewController *viewController;
+@property (weak, nonatomic) IBOutlet UIView *titleBGView;
 
 
 @end
@@ -29,13 +31,23 @@
 
 CGFloat durationTime = 0.5;
 
-CGFloat fullView = 100 ;
+CGFloat fullView = 0 ;
 #define partialView  [[UIScreen mainScreen ] bounds ].size.height - 360
 
 - (void)viewDidLoad {
     
     [super viewDidLoad];
     [self prepareForInit];
+    
+    if ([self.bottomSheetTitle length] > 0) {
+        
+        self.tableViewTitle.text = self.bottomSheetTitle;
+        self.tableViewTitle.font = [UIFont fontWithName:@"regularFont" size:16.0];
+        _bottomSheetTitleHeightConstraint.constant = 21;
+        
+    }else{
+        _bottomSheetTitleHeightConstraint.constant = 0;
+    }
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -56,11 +68,6 @@ CGFloat fullView = 100 ;
     panRecognizer.delegate = self ;
     [self.view addGestureRecognizer:panRecognizer];
     
-    self.tableViewTitle.text = [LanguageHandler.sharedInstance stringForKey:@"Choose a card"];
-    self.tableViewTitle.font = [UIFont fontWithName:@"regularFont" size:16.0];
-    
-    self.holdView.layer.cornerRadius = 3 ;
-    
 }
 
 -(void) prepareUI{
@@ -77,7 +84,7 @@ CGFloat fullView = 100 ;
     maskLayer.frame = self.view.bounds;
     maskLayer.path  = maskPath.CGPath;
     
-    self.view.layer.mask = maskLayer;
+    self.titleBGView.layer.mask = maskLayer;
 }
 
 -(void)panGesture:(UIPanGestureRecognizer *)recognizer {
