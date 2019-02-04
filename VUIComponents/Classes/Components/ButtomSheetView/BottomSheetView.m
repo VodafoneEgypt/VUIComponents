@@ -23,6 +23,7 @@
 
 @property (strong, nonatomic) UIViewController *viewController;
 @property (weak, nonatomic) IBOutlet UIView *titleBGView;
+@property (weak, nonatomic) IBOutlet UIView *seprateView;
 
 @property (weak, nonatomic) IBOutlet UIView *shadowView;
 
@@ -44,10 +45,12 @@ CGFloat fullView = 70 ;
         
         self.tableViewTitle.text = self.bottomSheetTitle;
         self.tableViewTitle.font = [UIFont fontWithName:@"regularFont" size:16.0];
-        _bottomSheetTitleHeightConstraint.constant = 21;
-        
+        _bottomSheetTitleHeightConstraint.constant = 41;
+        _seprateView.hidden = false;
     }else{
         _bottomSheetTitleHeightConstraint.constant = 0;
+        _seprateView.hidden = true;
+        
     }
     
 }
@@ -74,6 +77,8 @@ CGFloat fullView = 70 ;
 
 -(void) prepareUI{
     
+    _holdView.clipsToBounds = true;
+    _holdView.layer.cornerRadius = 2;
     if (self.containerView.subviews.count > 0) {
         CGRect frame = self.containerView.subviews[0].frame;
         
@@ -180,6 +185,7 @@ CGFloat fullView = 70 ;
     CGRect frame = view.frame;
     
     frame.size.height =  (frame.size.height > self.containerView.frame.size.height) ? self.containerView.frame.size.height : frame.size.height ;
+    frame.size.width =  self.containerView.frame.size.width;
     frame.origin = CGPointMake(0, 0);
     view.frame = frame;
     [self.containerView addSubview:view];
