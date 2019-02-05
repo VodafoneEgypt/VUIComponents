@@ -11,6 +11,7 @@
 
 @interface BottomSheetView : UIViewController
 @property (strong, nonatomic) IBInspectable NSString *bottomSheetTitle;
+@property (strong, nonatomic) IBInspectable NSString *swipeTitle;
 
 -(void)showBottomSheetWithView:(UIView*)view andViewController:(UIViewController *)viewController onSuperView:(UIView *)superView ;
 -(void)dismissView ;

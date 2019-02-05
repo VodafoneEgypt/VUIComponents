@@ -23,7 +23,10 @@
 
 @property (strong, nonatomic) UIViewController *viewController;
 @property (weak, nonatomic) IBOutlet UIView *titleBGView;
+@property (weak, nonatomic) IBOutlet UIView *seprateView;
 
+@property (weak, nonatomic) IBOutlet UIView *shadowView;
+@property (weak, nonatomic) IBOutlet AnaVodafoneLabel *swipeLabel;
 
 @end
 @implementation BottomSheetView
@@ -31,7 +34,7 @@
 
 CGFloat durationTime = 0.5;
 
-CGFloat fullView = 0 ;
+CGFloat fullView = 70 ;
 #define partialView  [[UIScreen mainScreen ] bounds ].size.height - 360
 
 - (void)viewDidLoad {
@@ -43,11 +46,24 @@ CGFloat fullView = 0 ;
         
         self.tableViewTitle.text = self.bottomSheetTitle;
         self.tableViewTitle.font = [UIFont fontWithName:@"regularFont" size:16.0];
-        _bottomSheetTitleHeightConstraint.constant = 21;
-        
+        _bottomSheetTitleHeightConstraint.constant = 41;
+        _seprateView.hidden = false;
     }else{
         _bottomSheetTitleHeightConstraint.constant = 0;
+        _seprateView.hidden = true;
+        
     }
+    
+    if ([_swipeTitle length] > 0) {
+        
+        _swipeLabel.hidden = false;
+
+        _swipeLabel.text = _swipeTitle;
+        
+    }else{
+        _swipeLabel.hidden = true;
+    }
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -72,10 +88,23 @@ CGFloat fullView = 0 ;
 
 -(void) prepareUI{
     
+    _holdView.clipsToBounds = true;
+    _holdView.layer.cornerRadius = 2;
+    if (self.containerView.subviews.count > 0) {
+        CGRect frame = self.containerView.subviews[0].frame;
+        
+        frame.size.height = (frame.size.height > self.containerView.frame.size.height) ? self.containerView.frame.size.height : frame.size.height;
+        frame.origin = CGPointMake(0, 0);
+        //        self.containerView.subviews[0].frame = frame;
+    }
+    
     [UIView animateWithDuration:0.6 animations:^{
         CGRect frame = self.view.frame;
-        CGFloat yComponent = partialView ;
-        self.view.frame = CGRectMake(0, yComponent, frame.size.width, frame.size.height-100);
+        
+        self.view.frame = CGRectMake(0, fullView, frame.size.width, frame.size.height);
+        NSLog(@"####self.view.frame.y = %f" ,self.view.frame.origin.y);
+        NSLog(@"####self.view.frame.height = %f" ,self.view.frame.size.height);
+        
     }];
     
     UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:self.view.bounds byRoundingCorners:( UIRectCornerTopLeft | UIRectCornerTopRight) cornerRadii:CGSizeMake(20.0, 20.0)];
@@ -84,7 +113,21 @@ CGFloat fullView = 0 ;
     maskLayer.frame = self.view.bounds;
     maskLayer.path  = maskPath.CGPath;
     
-    self.titleBGView.layer.mask = maskLayer;
+    if ([self.bottomSheetTitle length] > 0) {
+        
+        self.titleBGView.layer.mask = maskLayer;
+        
+    }else{
+        self.containerView.layer.mask = maskLayer;
+    }
+    
+    UIBezierPath *shadowPath = [UIBezierPath bezierPathWithRoundedRect:CGRectMake(self.shadowView.bounds.origin.x , self.shadowView.bounds.origin.y, self.shadowView.bounds.size.width  , 100) byRoundingCorners:( UIRectCornerTopLeft | UIRectCornerTopRight) cornerRadii:CGSizeMake(20.0, 20.0)];
+    self.shadowView.layer.masksToBounds = NO;
+    self.shadowView.layer.shadowColor = [UIColor blackColor].CGColor;
+    self.shadowView.layer.shadowOffset = CGSizeMake(0.0f, -50.0f);
+    self.shadowView.layer.shadowOpacity = 0.2f;
+    self.shadowView.layer.shadowPath = shadowPath.CGPath;
+    
 }
 
 -(void)panGesture:(UIPanGestureRecognizer *)recognizer {
@@ -140,6 +183,7 @@ CGFloat fullView = 0 ;
 
 -(void)showBottomSheetWithView:(UIView *)view andViewController:(UIViewController *)viewController onSuperView:(UIView *)superView{
     
+    
     self.viewController = viewController ;
     [self.viewController addChildViewController:self];
     [superView addSubview:self.view];
@@ -147,17 +191,20 @@ CGFloat fullView = 0 ;
     CGFloat height = superView.frame.size.height;
     CGFloat width  = superView.frame.size.width;
     
-    self.view.frame = CGRectMake(0, [UIScreen mainScreen].bounds.size.height, width, height);
+    self.view.frame = CGRectMake(0, [UIScreen mainScreen].bounds.size.height, width, [UIScreen mainScreen].bounds.size.height - fullView - 20);
     
     CGRect frame = view.frame;
+    
+    frame.size.height =  (frame.size.height > self.containerView.frame.size.height) ? self.containerView.frame.size.height : frame.size.height ;
+    frame.size.width =  self.containerView.frame.size.width;
     frame.origin = CGPointMake(0, 0);
     view.frame = frame;
     [self.containerView addSubview:view];
     
-    [UIView animateWithDuration:durationTime animations:^{
-        
-        self.view.frame = CGRectMake(0, CGRectGetMinY(self.view.frame), width, height);
-    }];
+    //    [UIView animateWithDuration:durationTime animations:^{
+    //
+    //        self.view.frame = CGRectMake(0, CGRectGetMinY(self.view.frame), width, height);
+    //    }];
 }
 
 -(void)dismissView {
