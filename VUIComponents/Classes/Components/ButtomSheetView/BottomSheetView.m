@@ -26,6 +26,7 @@
 @property (weak, nonatomic) IBOutlet UIView *seprateView;
 
 @property (weak, nonatomic) IBOutlet UIView *shadowView;
+@property (weak, nonatomic) IBOutlet AnaVodafoneLabel *swipeLabel;
 
 @end
 @implementation BottomSheetView
@@ -51,6 +52,16 @@ CGFloat fullView = 70 ;
         _bottomSheetTitleHeightConstraint.constant = 0;
         _seprateView.hidden = true;
         
+    }
+    
+    if ([_swipeTitle length] > 0) {
+        
+        _swipeLabel.hidden = false;
+
+        _swipeLabel.text = _swipeTitle;
+        
+    }else{
+        _swipeLabel.hidden = true;
     }
     
 }

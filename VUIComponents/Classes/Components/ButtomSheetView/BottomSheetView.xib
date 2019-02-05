@@ -18,6 +18,7 @@
                 <outlet property="holdView" destination="cjr-T8-JVd" id="aVK-cb-CjH"/>
                 <outlet property="seprateView" destination="3uA-9o-PJC" id="g1b-Af-eOo"/>
                 <outlet property="shadowView" destination="NHC-yE-ITu" id="5x9-Nj-h9f"/>
+                <outlet property="swipeLabel" destination="WQC-lq-kSn" id="DX5-AF-frE"/>
                 <outlet property="tableViewTitle" destination="LyG-SJ-ayW" id="x1W-Sk-2CZ"/>
                 <outlet property="titleBGView" destination="rVJ-Jl-gcP" id="xgs-qh-Vsi"/>
                 <outlet property="view" destination="Cm2-Oj-d1l" id="lR2-6C-Lcv"/>
