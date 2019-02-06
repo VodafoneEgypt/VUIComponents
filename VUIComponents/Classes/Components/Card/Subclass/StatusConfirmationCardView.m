@@ -205,7 +205,7 @@
 - (instancetype)initWithCoder:(NSCoder *)coder
 {
     self = [super initWithCoder:coder];
-    NSLog(@"StatusinitWithCoder");
+    
     _isInitWithCoder = YES;
 
     if (self) {

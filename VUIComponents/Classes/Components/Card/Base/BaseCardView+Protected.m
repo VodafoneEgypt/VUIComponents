@@ -53,6 +53,19 @@
 - (void) commonInit{
     
     [self setClipsToBounds:true];
+    
+    [self.layer setCornerRadius:6.0f];
+    
+    // border
+    //    [self.layer setBorderColor:[UIColor lightGrayColor].CGColor];
+    //    [self.layer setBorderWidth:1.5f];
+    
+    // drop shadow
+    //    [self.layer setShadowColor:[UIColor redColor].CGColor];
+    //    [self.layer setShadowOpacity:0.8];
+    //    [self.layer setShadowRadius:3.0];
+    //    [self.layer setShadowOffset:CGSizeMake(2.0, 2.0)];
+    
 }
 
 - (void) initializeContentView{

@@ -184,7 +184,7 @@
 
 -(NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    NSLog(@"willSelectRowAtIndexPath  %ld", (long)indexPath.row); // you can see selected row number in your console;
+    // you can see selected row number in your console;
     
     if(self.selectionIndexPathBlock != nil){
         
@@ -212,7 +212,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"didSelectRowAtIndexPath  %ld", (long)indexPath.row); // you can see selected row number in your console;
+    // you can see selected row number in your console;
     
 }
 
@@ -282,7 +282,6 @@
         height += rect.size.height;
         _tableViewHeaderHeightConstraint.constant = rect.size.height;
     }
-
 
     contentViewHeight = height+_alertImageTopConstraint/*image top margin*/+_imageHeight.constant/*image Height*/+_alertLabelTopConstraint/*label top margin*/+40/*label buttom margin*/+16/*ButtonView top margin*/ + _tableViewContainerTopConstraint.constant + _tableViewContainerBottomConstraint.constant + _tableViewTopConstraint.constant +_tableViewHeightConstraint.constant + _tableViewTitleTopConstraint.constant ;
 }

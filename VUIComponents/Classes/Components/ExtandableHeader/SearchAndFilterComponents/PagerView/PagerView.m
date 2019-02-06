@@ -110,7 +110,6 @@ shouldShowMenuForItemAtIndexPath:(NSIndexPath *)indexPath{
     forItemAtIndexPath:(NSIndexPath *)indexPath
             withSender:(id)sender{
     
-    NSLog(@"test : @%lu", indexPath.row);
 }
 
 
@@ -121,7 +120,6 @@ shouldShowMenuForItemAtIndexPath:(NSIndexPath *)indexPath{
         self.selectionBlock((int)indexPath.row);
     }
     
-    NSLog(@"##Scroll to Index : %lu",indexPath.row);
     [self setCurrentPage:(int)indexPath.row];
 }
 
@@ -210,9 +208,7 @@ shouldShowMenuForItemAtIndexPath:(NSIndexPath *)indexPath{
 }
 
 -(void)scrollTraingleContainerViewAtIndexPath:(NSIndexPath *)indexPath{
-    
-    NSLog(@"#scrollTraingle to Index : %lu",indexPath.row);
-    
+        
     CGRect frame = triangleContainerView.frame;
     
     CGRect collectionPagerViewframe = [collectionPagerView cellForItemAtIndexPath:indexPath].frame; //convertRect:[collectionPagerView cellForItemAtIndexPath:indexPath].bounds toView:self];

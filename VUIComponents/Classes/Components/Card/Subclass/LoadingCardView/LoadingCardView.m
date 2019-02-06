@@ -24,10 +24,9 @@
 }
 
 -(void)setTitle:(NSString *)title {
-    NSLog(@"LoadingTitle: %@", title);
+
     _titleText = title;
     _titleLabel.text = title;
-//    [_titleLabel sizeToFit];
 }
 
 -(void)commonInit {

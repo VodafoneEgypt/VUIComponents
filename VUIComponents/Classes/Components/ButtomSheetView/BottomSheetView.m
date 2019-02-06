@@ -102,8 +102,6 @@ CGFloat fullView = 70 ;
         CGRect frame = self.view.frame;
         
         self.view.frame = CGRectMake(0, fullView, frame.size.width, frame.size.height);
-        NSLog(@"####self.view.frame.y = %f" ,self.view.frame.origin.y);
-        NSLog(@"####self.view.frame.height = %f" ,self.view.frame.size.height);
         
     }];
     
@@ -182,7 +180,6 @@ CGFloat fullView = 70 ;
 }
 
 -(void)showBottomSheetWithView:(UIView *)view andViewController:(UIViewController *)viewController onSuperView:(UIView *)superView{
-    
     
     self.viewController = viewController ;
     [self.viewController addChildViewController:self];

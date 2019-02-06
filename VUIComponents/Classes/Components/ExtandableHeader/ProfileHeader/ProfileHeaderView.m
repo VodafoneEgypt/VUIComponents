@@ -221,7 +221,7 @@
     CGFloat blurAlpha = 1;
     if (stretchFactor > 1) {
         alpha = CGFloatTranslateRange(stretchFactor, 1, 1.12, 1, 0);
-        NSLog(@"blurAlpha : %f",alpha);
+
         blurAlpha = alpha;
     }
     else if (stretchFactor <= 0.8) {
@@ -236,7 +236,6 @@
         
         _avatarIamgeView.layer.cornerRadius = _avatarImgHeightConstraint.constant/2;
         
-        NSLog(@"alpha : %f",alpha);
     }
 
 

@@ -213,7 +213,6 @@
     }
     
     contentViewHeight = height;
-    NSLog(@"±±contentViewHeight = %f",contentViewHeight);
 }
 
 - (void)initializeExpandedView{

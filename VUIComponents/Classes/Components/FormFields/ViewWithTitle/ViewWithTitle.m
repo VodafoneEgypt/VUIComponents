@@ -62,7 +62,6 @@
             
             [self initialize];
             
-            NSLog(@"height: %f",height);
         };
     }
     

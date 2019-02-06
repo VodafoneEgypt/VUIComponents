@@ -35,9 +35,7 @@
     if(((ExpandCellCardModel*)self.model).expandable == true){
         
         self.expanded = !self.expanded;
-        NSLog(@"setSelected");
         [self initialize];
-        NSLog(@"testExpand");
         return;
     }
 

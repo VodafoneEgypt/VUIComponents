@@ -211,15 +211,14 @@
     if (_availableDates) {
         BOOL shouldSelect = [_availableDates containsObject:[self.dateFormatter1 stringFromDate:date]];
         if (!shouldSelect) {
-            
-            NSLog(@"Unavailable Date %@",[self.dateFormatter1 stringFromDate:date]);
+           
             //        [[[UIAlertView alloc] initWithTitle:@"Sorry"
             //                                    message:[NSString stringWithFormat:@"the date : %@ unavailable ",[self.dateFormatter1 stringFromDate:date]]
             //                                   delegate:nil
             //                          cancelButtonTitle:@"OK"
             //                          otherButtonTitles:nil, nil] show];
         } else {
-            NSLog(@"Should select date %@",[self.dateFormatter1 stringFromDate:date]);
+           
         }
         return shouldSelect;
     }else{
@@ -235,7 +234,7 @@
 
 - (void)calendar:(FSCalendar *)calendar didSelectDate:(NSDate *)date atMonthPosition:(FSCalendarMonthPosition)monthPosition
 {
-    NSLog(@"did select date");
+    
     
     if (_selectedDateBlock) {
         _selectedDateBlock(date);
@@ -252,8 +251,6 @@
 - (void)calendarCurrentPageDidChange:(FSCalendar *)calendar
 {
 
-    
-    NSLog(@"did change to page");
 }
 
 - (void)calendar:(FSCalendar *)calendar boundingRectWillChange:(CGRect)bounds animated:(BOOL)animated

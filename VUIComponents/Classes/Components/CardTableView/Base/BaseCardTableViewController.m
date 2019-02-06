@@ -141,12 +141,8 @@
     
     NSNumber* oldHeight = heights[[NSString stringWithFormat:@"%ld",(long)indexPath.row]];
     
-    NSLog(@"old height %f and new Height %f",oldHeight.floatValue, height);
-    
     if(oldHeight == nil ||
        oldHeight.intValue != [NSNumber numberWithFloat:height].intValue){
-        
-        NSLog(@"forCellAtIndexPath %ld",(long)indexPath.row);
         
         heights[[NSString stringWithFormat:@"%ld",(long)indexPath.row]] = [NSNumber numberWithFloat:height];
         
@@ -177,9 +173,7 @@
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-    NSLog(@"cellForRowAtIndexPath %ld",(long)indexPath.row);
-    
+        
     return [cells objectForKey:[NSString stringWithFormat:@"%ld-%ld",(long)indexPath.section,(long)indexPath.row]];
 }
 

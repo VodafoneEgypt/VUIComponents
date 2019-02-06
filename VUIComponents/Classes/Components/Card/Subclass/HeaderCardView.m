@@ -270,6 +270,8 @@
     _buttonsViewBottomConstraint.constant = 16;
     
     [self addSubview:view];
+        
+    [self.layer setCornerRadius:0.0f];
 }
 @end
 

@@ -76,7 +76,7 @@
     
     if ([string  isEqual: @""]) {
         if (mainTextField.text.length<=labelsArray.count) {
-            NSLog(@"mainTextField.text.length %lu",mainTextField.text.length);
+            
             ((UILabel*)[labelsArray objectAtIndex:mainTextField.text.length-1]).text = @"" ;
         
         }

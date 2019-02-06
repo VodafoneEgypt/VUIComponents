@@ -92,7 +92,6 @@
     multiLineRadioButtonCellModel1.verticalLine = true;
     
     multiLineRadioButtonCellModel1.targetBlock = ^{
-        NSLog(@"test2");
     };
     
     multiLineRadioButtonCellModel1.expandable = true;

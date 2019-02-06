@@ -321,7 +321,6 @@
         
         [self initialize];
         
-        NSLog(@"height: %f",height);
     };
     
     lastNameTextField.errorMsg = [[LanguageHandler sharedInstance] stringForKey:@"You typed an invalid name"];
@@ -333,7 +332,6 @@
         
         [self initialize];
         
-        NSLog(@"height: %f",height);
     };
     emailTextField.errorMsg = [[LanguageHandler sharedInstance] stringForKey:@"Invalid Email"];
     emailTextField.toolTipImage = [UIImage imageNamed:@"warning"];
@@ -344,7 +342,6 @@
         
         [self initialize];
         
-        NSLog(@"height: %f",height);
     };
     
     passwordTextField.errorMsg = [[LanguageHandler sharedInstance] stringForKey:@"You typed an invalid password"];
@@ -356,7 +353,6 @@
         
         [self initialize];
         
-        NSLog(@"height: %f",height);
     };
     
     confirmPasswordTextField.errorMsg = [[LanguageHandler sharedInstance] stringForKey:@"These Passwords don't match"];
@@ -373,7 +369,6 @@
         
         [self initialize];
         
-        NSLog(@"height: %f",height);
     };
 
     
@@ -395,7 +390,6 @@
         
         [self initialize];
         
-        NSLog(@"height: %f",height);
     };
     
     _checkButton.layer.cornerRadius = 3;

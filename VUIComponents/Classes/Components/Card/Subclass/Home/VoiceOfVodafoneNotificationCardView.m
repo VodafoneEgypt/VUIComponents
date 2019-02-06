@@ -39,8 +39,6 @@
 
 -(void)initializeContentView{
     
-    NSLog(@"***** initializeContentView");
-    
     contentViewHeight = 0;
     
     CGFloat height = 0;
@@ -61,8 +59,6 @@
 }
 
 - (void) initializeButtonsView{
-    
-    NSLog(@"***** initializeButtonsView");
     
     [buttonsView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
     
@@ -92,8 +88,6 @@
 }
 
 -(void)commonInit{
-    
-    NSLog(@"***** commonInit");
     
     [super commonInit];
     

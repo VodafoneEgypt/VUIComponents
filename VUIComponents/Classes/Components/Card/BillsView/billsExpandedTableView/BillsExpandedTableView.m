@@ -38,11 +38,9 @@
     NSNumber* oldHeight = cellsHeights[[NSString stringWithFormat:@"%@",indexPath]];
     if (height) {
     }
-    NSLog(@"old height %f and new Height %f",oldHeight.floatValue, height);
     
     if(oldHeight == nil || oldHeight.intValue != [NSNumber numberWithFloat:height].intValue){
         
-        NSLog(@"forCellAtIndexPath %@",indexPath);
         
         cellsHeights[[NSString stringWithFormat:@"%@",indexPath]] = [NSNumber numberWithFloat:height];
         
@@ -93,7 +91,7 @@
 
 -(NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    NSLog(@"willSelectRowAtIndexPath  %ld", (long)indexPath.row); // you can see selected row number in your console;
+    // you can see selected row number in your console;
     
     if(self.selectionIndexPathBlock != nil){
         
@@ -111,7 +109,7 @@
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"didSelectRowAtIndexPath  %ld", (long)indexPath.row); // you can see selected row number in your console;
+    // you can see selected row number in your console;
     
 }
 
@@ -131,7 +129,6 @@
     
     if(cell.cellCardView == nil){
         
-        NSLog(@"allocate new card for index %ld",(long)indexPath.row);
         
         cell.heightChangeDelegate = self;
         

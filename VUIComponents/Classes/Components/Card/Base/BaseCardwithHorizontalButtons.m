@@ -107,7 +107,7 @@
             btnHeight = btn.frame.size.height  ;
             first = false;
         }
-        NSLog(@"XIndex:%f",btnYIndex);
+
         [buttonsView addSubview:btn];
     }
     

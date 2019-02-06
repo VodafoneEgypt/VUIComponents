@@ -13,6 +13,8 @@
 
 -(void)commonInit{
     
+    [super commonInit];
+
     self.expanded = false;
 }
 

@@ -11,9 +11,9 @@
     "highlightedTitleColor":"FFFFFF",
     "disabledTitleColor":"333333",
     
-    "normalBorderRadius":10.0,
-    "highlightedBorderRadius":0.0,
-    "disabledBorderRadius":0.0,
+    "normalCornerRadius":10.0,
+    "highlightedCornerRadius":10.0,
+    "disabledCornerRadius":10.0,
     
     "normalBorderWidth": 1.0,
     "highlightedBorderWidth": 0.0,

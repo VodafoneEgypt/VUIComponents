@@ -184,7 +184,6 @@
         
         [self initialize];
         
-        NSLog(@"height: %f",height);
     };
 
     [self addSubview:view];
