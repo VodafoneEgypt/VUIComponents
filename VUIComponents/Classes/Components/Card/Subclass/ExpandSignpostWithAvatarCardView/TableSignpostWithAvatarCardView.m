@@ -66,7 +66,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // you can see selected row number in your console;
+    NSLog(@"TableSignpostWithAvatarCardView new %ld", (long)indexPath.row); // you can see selected row number in your console;
     
     if (self.selectionBlock != nil) {
         self.selectionBlock(indexPath.row);
@@ -89,9 +89,11 @@
         }
         //    cell.indexPath = indexPath;
         cell.selectedStyle = none;
+      
         cell.model = _expandTableArray[[indexPath row]];
         
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        
         if (self.cellBGColor) {
             cell.contentView.backgroundColor = _cellBGColor;
         }
@@ -115,6 +117,11 @@
             
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
             
+            if (self.withDashedViewCell){
+                [self drawDashedLineBottom:cell];
+                
+            }
+            
             if (self.cellBGColor) {
                 cell.contentView.backgroundColor = _cellBGColor;
             }
@@ -134,6 +141,12 @@
             
             cell.model =  _expandTableArray[indexPath.row];
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
+            
+            
+            if (self.withDashedViewCell){
+                [self drawDashedLineBottom:cell];
+            }
+            
             
             if (self.cellBGColor) {
                 cell.contentView.backgroundColor = _cellBGColor;
@@ -161,6 +174,21 @@
     contentViewHeight += (_expandTableArray.count * _cellHeight /* for button margin */);
 }
 
+-(void)drawDashedLineBottom:(UITableViewCell *)cell{
+    
+    CAShapeLayer *yourViewBorder = [CAShapeLayer layer];
+    
+    yourViewBorder = [CAShapeLayer layer];
+    yourViewBorder.strokeColor = [UIColor lightGrayColor].CGColor;
+    yourViewBorder.fillColor = nil;
+    yourViewBorder.lineDashPattern = @[@7, @3];
+    yourViewBorder.frame = CGRectMake(0, _cellHeight, cell.bounds.size.width + 60 , 0) ;
+    yourViewBorder.path = [UIBezierPath bezierPathWithRoundedRect:CGRectMake(0, 0 ,414 , 0) cornerRadius:0].CGPath;
+    cell.backgroundColor = UIColor.clearColor ;
+    [cell.layer addSublayer:yourViewBorder];
+}
+
+
 -(void)commonInit{
     
     [super commonInit];
@@ -183,6 +211,10 @@
     
     [self addSubview:view];
     
+    // if (self.withDashedViewCell){
+    _tableView.separatorStyle = UITableViewCellSeparatorStyleNone ;
+    _tableView.separatorStyle = [UIColor clearColor] ;
+    //  }
 }
 
 @end

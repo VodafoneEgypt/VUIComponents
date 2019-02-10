@@ -27,18 +27,19 @@
 <autoresizingMask key="autoresizingMask"/>
 <subviews>
 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="y72-0L-MRc" userLabel="Right ImgView">
-<rect key="frame" x="315" y="6" width="0.0" height="31"/>
+<rect key="frame" x="280" y="7" width="30" height="30"/>
 <constraints>
-<constraint firstAttribute="width" id="bY9-ag-Kdy"/>
+<constraint firstAttribute="width" constant="30" id="bY9-ag-Kdy"/>
+<constraint firstAttribute="height" constant="30" id="pRl-mr-70f"/>
 </constraints>
 </imageView>
 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GAe-hR-BmR">
-<rect key="frame" x="315" y="22" width="0.0" height="0.0"/>
+<rect key="frame" x="255" y="22" width="0.0" height="0.0"/>
 <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="16"/>
 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
 <nil key="highlightedColor"/>
 </label>
-<imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CardArrowRTL" translatesAutoresizingMaskIntoConstraints="NO" id="0Vz-nF-kep">
+<imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CardArrowRTL" translatesAutoresizingMaskIntoConstraints="NO" id="0Vz-nF-kep">
 <rect key="frame" x="16" y="13.5" width="17" height="17"/>
 <constraints>
 <constraint firstAttribute="width" constant="17" id="jcT-o5-sW1"/>
@@ -54,15 +55,14 @@
 </subviews>
 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
 <constraints>
+<constraint firstItem="jfH-gj-VJT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="43" id="28z-FR-vNi"/>
+<constraint firstItem="y72-0L-MRc" firstAttribute="centerY" secondItem="GAe-hR-BmR" secondAttribute="centerY" id="7WR-bq-UdE"/>
 <constraint firstItem="jfH-gj-VJT" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Bc0-xr-kSn"/>
-<constraint firstAttribute="right" secondItem="y72-0L-MRc" secondAttribute="right" constant="5" id="cST-CH-iAa"/>
-<constraint firstAttribute="bottom" secondItem="y72-0L-MRc" secondAttribute="bottom" constant="6.5" id="dlr-EE-am0"/>
-<constraint firstItem="y72-0L-MRc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="fqG-RS-O5O"/>
-<constraint firstItem="GAe-hR-BmR" firstAttribute="right" secondItem="y72-0L-MRc" secondAttribute="right" id="mYb-qT-6ja"/>
+<constraint firstAttribute="right" secondItem="y72-0L-MRc" secondAttribute="right" constant="10" id="cST-CH-iAa"/>
 <constraint firstItem="0Vz-nF-kep" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="qNx-II-fAt"/>
 <constraint firstItem="GAe-hR-BmR" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="rGh-hi-5bt"/>
-<constraint firstItem="jfH-gj-VJT" firstAttribute="left" secondItem="0Vz-nF-kep" secondAttribute="right" constant="10" id="ruj-fx-cZd"/>
 <constraint firstAttribute="leftMargin" secondItem="0Vz-nF-kep" secondAttribute="left" id="ulK-Qt-rTH"/>
+<constraint firstAttribute="right" secondItem="GAe-hR-BmR" secondAttribute="right" constant="65" id="vn2-wC-M4E"/>
 </constraints>
 </tableViewCellContentView>
 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>

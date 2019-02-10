@@ -13,13 +13,17 @@
 #import "UIColor+Hex.h"
 #import <VUIComponents/Utilities.h>
 
-@interface SignpostsWithAvatarCardView ()
+@interface SignpostsWithAvatarCardView (){
+    
+    CAShapeLayer *dashedViewShapeLayer;
+}
 
 @property (weak, nonatomic) IBOutlet TableSignpostWithAvatarCardView *tableSignpostWithAvatarCardView;
 @property (weak, nonatomic) IBOutlet UIImageView *avatarImgView;
 @property (weak, nonatomic) IBOutlet AnaVodafoneLabel *secondTitleLabel;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *avatarImageWidthConstraint;
 @property (weak, nonatomic) IBOutlet UIView *containerView;
+@property (weak, nonatomic) IBOutlet UIView *dashedView;
 
 @end
 
@@ -43,10 +47,33 @@
 
 #pragma mark setters
 
+-(void)setWithoutArrowImageView:(BOOL)withoutArrowImageView{
+    
+    _withoutArrowImageView = withoutArrowImageView;
+    arrowImgView.hidden = withoutArrowImageView ;
+}
+
 -(void)setCellHeight:(CGFloat)cellHeight{
     
     _cellHeight = cellHeight;
     _tableSignpostWithAvatarCardView.cellHeight = cellHeight;
+}
+
+-(void)setExpandTableViewColor:(UIColor*)expandTableViewColor{
+    
+    _expandTableViewColor = expandTableViewColor;
+    _tableSignpostWithAvatarCardView.cellBGColor = expandTableViewColor;
+}
+
+-(void)setWithDashedViewCell:(BOOL)withDashedViewCell{
+    
+    _withDashedViewCell = withDashedViewCell;
+    _tableSignpostWithAvatarCardView.withDashedViewCell = withDashedViewCell ;
+}
+
+-(void)setWithDashedView:(BOOL)withDashedView{
+    
+    _withDashedView = withDashedView;
 }
 
 -(void)setCellColor:(UIColor*)cellColor{
@@ -148,7 +175,6 @@
     attributes = @{NSFontAttributeName:[UIFont fontWithName:[[LanguageHandler sharedInstance] stringForKey:@"regularFont"] size:(_subTitleFontSize)?_subTitleFontSize:16],
                    NSForegroundColorAttributeName:[UIColor colorWithCSS:@"333333"]};
     
-    
     NSMutableAttributedString* attrStr1 = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@",subTitle] attributes:attributes];
     
     [attrStr1 addAttribute:NSParagraphStyleAttributeName value:style range:NSMakeRange(0,attrStr1.length)];
@@ -187,9 +213,21 @@
     [self initialize];
 }
 
+- (void)setAvatarImgSize:(CGSize)avatarImgSize{
+    
+    _avatarImgSize = avatarImgSize;
+    
+    self.avatarImageWidthConstraint.constant = _avatarImgSize.width;
+
+    if (_avatarImage) {
+        
+        [self  setAvatarImage:_avatarImage];
+    }
+}
+
 -(void)setAvatarImage:(UIImage *)avatarImage{
     
-    self.avatarImageWidthConstraint.constant = 45;
+    self.avatarImageWidthConstraint.constant = (_avatarImgSize.width > 0)? _avatarImgSize.width : 45;
     
     _avatarImage = avatarImage;
     
@@ -314,7 +352,6 @@
     
     //TODO:: localize
     
-    //    CGFloat width = self.frame.size.width  - 86 - (self.verticalLine ? 6 : 0) - _avatarImageWidthConstraint.constant;
     
     [titleLabel adjustHeight];
     height += titleLabel.frame.size.height;
@@ -358,6 +395,29 @@
     
 }
 
+-(void)layoutSubviews{
+    
+    [super layoutSubviews];
+    
+    if (_withDashedView){
+        
+        [self drawDashedLineBottom];
+    }
+}
+
+-(void)drawDashedLineBottom {
+    
+    dashedViewShapeLayer = [CAShapeLayer layer];
+    dashedViewShapeLayer.strokeColor = [UIColor lightGrayColor].CGColor;
+    dashedViewShapeLayer.fillColor = nil;
+    dashedViewShapeLayer.lineDashPattern = @[@7, @3];
+    dashedViewShapeLayer.frame = self.dashedView.bounds;
+    dashedViewShapeLayer.path = [UIBezierPath bezierPathWithRoundedRect:CGRectMake(0, 0 ,414 , 0) cornerRadius:0].CGPath;
+    self.dashedView.backgroundColor = UIColor.clearColor ;
+    [self.dashedView.layer addSublayer:dashedViewShapeLayer];
+    
+}
+
 -(void)commonInit{
     
     [super commonInit];
@@ -391,7 +451,6 @@
     
     self.expandable = false;
     self.avatarImageWidthConstraint.constant = 0;
-    
-}
+    }
 
 @end

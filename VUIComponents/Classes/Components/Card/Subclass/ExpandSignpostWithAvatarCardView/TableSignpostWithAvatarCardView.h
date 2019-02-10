@@ -23,4 +23,6 @@
 
 @property (nonatomic ,strong) UIColor* cellBGColor ;
 
+@property (nonatomic) BOOL withDashedViewCell ;
+
 @end
