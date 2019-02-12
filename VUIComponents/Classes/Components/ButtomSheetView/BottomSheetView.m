@@ -57,7 +57,7 @@ CGFloat fullView = 70 ;
     if ([_swipeTitle length] > 0) {
         
         _swipeLabel.hidden = false;
-
+        
         _swipeLabel.text = _swipeTitle;
         
     }else{
@@ -75,6 +75,7 @@ CGFloat fullView = 70 ;
     [super viewDidAppear:animated];
     
     [self prepareUI];
+    
 }
 
 -(void) prepareForInit{
@@ -88,20 +89,17 @@ CGFloat fullView = 70 ;
 
 -(void) prepareUI{
     
+    self.view.frame = CGRectMake(0, [UIScreen mainScreen].bounds.size.height, self.view.frame.size.width, [UIScreen mainScreen].bounds.size.height - fullView - 20);
+    
+    [self.view layoutIfNeeded];
+    
     _holdView.clipsToBounds = true;
     _holdView.layer.cornerRadius = 2;
-    if (self.containerView.subviews.count > 0) {
-        CGRect frame = self.containerView.subviews[0].frame;
-        
-        frame.size.height = (frame.size.height > self.containerView.frame.size.height) ? self.containerView.frame.size.height : frame.size.height;
-        frame.origin = CGPointMake(0, 0);
-        //        self.containerView.subviews[0].frame = frame;
-    }
     
     [UIView animateWithDuration:0.6 animations:^{
         CGRect frame = self.view.frame;
         
-        self.view.frame = CGRectMake(0, fullView, frame.size.width, frame.size.height);
+        self.view.frame = CGRectMake(0, (_openingPostion == CenterPostion)? partialView : fullView, frame.size.width, frame.size.height);
         
     }];
     
@@ -185,10 +183,12 @@ CGFloat fullView = 70 ;
     [self.viewController addChildViewController:self];
     [superView addSubview:self.view];
     [self didMoveToParentViewController:self.viewController];
-    CGFloat height = superView.frame.size.height;
-    CGFloat width  = superView.frame.size.width;
+    CGFloat height = superView.bounds.size.height;
+    CGFloat width  = superView.bounds.size.width;
     
     self.view.frame = CGRectMake(0, [UIScreen mainScreen].bounds.size.height, width, [UIScreen mainScreen].bounds.size.height - fullView - 20);
+    
+    [self.view layoutIfNeeded];
     
     CGRect frame = view.frame;
     

@@ -591,6 +591,7 @@
     
     _bottomSheet = [[BottomSheetView alloc] initWithNibName:@"BottomSheetView" bundle:[NSBundle bundleForClass:[self class]]];
     _bottomSheet.bottomSheetTitle = [LanguageHandler.sharedInstance stringForKey:@"Choose a card"];
+    _bottomSheet.openingPostion = CenterPostion;
     
     _creditCardTableView = [[CreditCardTableView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, 10)];
     _cvvTextField.cardImg = [UIImage imageNamed:@"CVVicon"];
