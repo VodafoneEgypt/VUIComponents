@@ -27,4 +27,5 @@
 
 -(void)prepareCells;
 
+-(void)hideNavigationBar;
 @end

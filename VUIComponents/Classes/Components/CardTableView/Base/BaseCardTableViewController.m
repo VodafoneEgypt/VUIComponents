@@ -34,7 +34,7 @@
     
     whiteBar = [[UIView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 50)];
     
-    whiteBar.backgroundColor = [UIColor orangeColor];
+    whiteBar.backgroundColor = [UIColor whiteColor];
     
     whiteBar.alpha = 1;
     
@@ -113,8 +113,8 @@
     }
     
     sideMenuButton = [[UIButton alloc] initWithFrame:btnFrame];
-    [sideMenuButton setImage:[UIImage imageNamed:@"ic_menu_white"] forState:UIControlStateNormal];
-    [sideMenuButton setImage:[UIImage imageNamed:@"ic_menu_white"] forState:UIControlStateHighlighted];
+    [sideMenuButton setImage:[UIImage imageNamed:@"menu"] forState:UIControlStateNormal];
+    [sideMenuButton setImage:[UIImage imageNamed:@"menu"] forState:UIControlStateHighlighted];
     [sideMenuButton addTarget:self action:@selector(openSideMenu) forControlEvents:UIControlEventTouchUpInside];
     
     [whiteBar addSubview:sideMenuButton];
@@ -129,7 +129,7 @@
             btnFrame = CGRectMake(15, 15, 30, 30);
         }
         
-        UIImage * backButtonImage = [UIImage imageNamed:([LanguageHandler sharedInstance].currentLanguage == ARABIC)?@"back-arrow-Ar":@"back-arrow"];
+        UIImage * backButtonImage = [UIImage imageNamed:([LanguageHandler sharedInstance].currentLanguage == ARABIC)?@"BlackBackArrow_AR":@"BlackBackArrow_EN"];
         
         backButton = [[UIButton alloc] initWithFrame:btnFrame];
         [backButton setImage:backButtonImage forState:UIControlStateNormal];
@@ -143,6 +143,11 @@
 #pragma mark actions
 -(void)back{
     [self.navigationController popViewControllerAnimated:true];
+}
+
+-(void)hideNavigationBar{
+    
+    whiteBar.hidden = true;
 }
 
 -(void)openSideMenu{
