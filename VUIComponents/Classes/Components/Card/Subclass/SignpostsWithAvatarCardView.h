@@ -67,9 +67,19 @@ typedef void(^TargetBlock)(void);
 
 @property (nonatomic ,strong) UIColor* cellColor ;
 
-@property (nonatomic ,strong) UIColor* ExpandTableViewColor ;
+@property (nonatomic ,strong) UIColor* expandTableViewColor ;
 
 @property (strong,nonatomic) SelectionBlock selectionBlock;
+
+@property(nonatomic) BOOL withoutArrowImageView;
+
+@property(nonatomic) BOOL withDashedView;
+
+@property (nonatomic) BOOL withDashedViewCell ;
+
+@property(nonatomic,strong) IBInspectable UIImage* arrowImageView;
+
+@property (nonatomic) CGSize avatarImgSize;
 
 -(void)setSubTitleLabelAdjustsFontSizeToFitWidth:(Boolean)F andNumberOfLine:(NSInteger)N;
 

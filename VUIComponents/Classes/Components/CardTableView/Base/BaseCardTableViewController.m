@@ -17,6 +17,11 @@
     BOOL navigationItemsAdded;
     
     UIButton* backButton;
+    
+    UIView *whiteBar;
+    
+    UIButton* sideMenuButton;
+    
 }
 
 @end
@@ -26,6 +31,12 @@
 -(void)viewDidLoad{
     
     [super viewDidLoad];
+    
+    whiteBar = [[UIView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 50)];
+    
+    whiteBar.backgroundColor = [UIColor whiteColor];
+    
+    whiteBar.alpha = 1;
     
     navigationItemsAdded = false;
     
@@ -80,11 +91,14 @@
 
 #pragma mark - setters
 
--(void)hideBackButton{
-    [backButton removeFromSuperview];
+-(void) addNavigationBar{
+    
+    [self.view addSubview:whiteBar];
 }
 
 -(void)adjustNavigationItems{
+    
+    [self addNavigationBar];
     
     navigationItemsAdded = true;
     
@@ -92,39 +106,52 @@
     
     if(([LanguageHandler sharedInstance].currentLanguage == ARABIC)){
         
-        btnFrame = CGRectMake(15, 28, 30, 25);
+        btnFrame = CGRectMake(15, 15, 30, 25);
     }else{
         
-        btnFrame = CGRectMake([UIScreen mainScreen].bounds.size.width - 15 - 30, 28, 30, 25);
+        btnFrame = CGRectMake([UIScreen mainScreen].bounds.size.width - 15 - 30, 15, 30, 25);
     }
     
+    sideMenuButton = [[UIButton alloc] initWithFrame:btnFrame];
+    [sideMenuButton setImage:[UIImage imageNamed:@"menu"] forState:UIControlStateNormal];
+    [sideMenuButton setImage:[UIImage imageNamed:@"menu"] forState:UIControlStateHighlighted];
+    [sideMenuButton addTarget:self action:@selector(openSideMenu) forControlEvents:UIControlEventTouchUpInside];
     
+    [whiteBar addSubview:sideMenuButton];
     
     if(self.navigationController.viewControllers.count > 1){
         
         if(([LanguageHandler sharedInstance].currentLanguage == ARABIC)){
             
-            btnFrame = CGRectMake([UIScreen mainScreen].bounds.size.width - 15 - 30, 28, 30, 30);
+            btnFrame = CGRectMake([UIScreen mainScreen].bounds.size.width - 15 - 30, 15, 30, 30);
         }else{
             
-            btnFrame = CGRectMake(15, 28, 30, 30);
+            btnFrame = CGRectMake(15, 15, 30, 30);
         }
         
-        UIImage * backButtonImage = [UIImage imageNamed:([LanguageHandler sharedInstance].currentLanguage == ARABIC)?@"back-arrow-Ar":@"back-arrow"];
+        UIImage * backButtonImage = [UIImage imageNamed:([LanguageHandler sharedInstance].currentLanguage == ARABIC)?@"BlackBackArrow_AR":@"BlackBackArrow_EN"];
         
         backButton = [[UIButton alloc] initWithFrame:btnFrame];
         [backButton setImage:backButtonImage forState:UIControlStateNormal];
         [backButton setImage:backButtonImage forState:UIControlStateHighlighted];
         [backButton addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
         
-        [self.view addSubview:backButton];
+        [whiteBar addSubview:backButton];
     }
-    
 }
 
 #pragma mark actions
 -(void)back{
     [self.navigationController popViewControllerAnimated:true];
+}
+
+-(void)hideNavigationBar{
+    
+    whiteBar.hidden = true;
+}
+
+-(void)openSideMenu{
+    
 }
 
 #pragma mark should override
@@ -173,7 +200,7 @@
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-        
+    
     return [cells objectForKey:[NSString stringWithFormat:@"%ld-%ld",(long)indexPath.section,(long)indexPath.row]];
 }
 

@@ -16,6 +16,7 @@
                 <outlet property="avatarImgView" destination="W4v-NH-Tyi" id="n34-Gs-bIa"/>
                 <outlet property="containerView" destination="aDO-Jm-g9q" id="Lsx-Qa-gEY"/>
                 <outlet property="contentView" destination="JHE-EH-dBF" id="VFu-L8-urP"/>
+                <outlet property="dashedView" destination="dN8-J7-DdF" id="FEI-rR-hds"/>
                 <outlet property="expandedView" destination="kB8-nD-W5R" id="5cA-uW-696"/>
                 <outlet property="expandedViewHeightConstraint" destination="k3N-A0-i07" id="RfL-sj-Ohe"/>
                 <outlet property="secondTitleLabel" destination="diC-LQ-9f6" id="ntq-iq-NKa"/>
@@ -52,8 +53,8 @@
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="W4v-NH-Tyi">
                                             <rect key="frame" x="304" y="54" width="45" height="45"/>
                                             <constraints>
+                                                <constraint firstAttribute="width" secondItem="W4v-NH-Tyi" secondAttribute="height" multiplier="1:1" id="Yns-nk-Qmg"/>
                                                 <constraint firstAttribute="width" constant="45" id="evH-Dj-ET8"/>
-                                                <constraint firstAttribute="height" constant="45" id="tnU-l0-3on"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DEg-Qh-TV4" customClass="AnaVodafoneLabel">
@@ -93,6 +94,13 @@
                                                 <action selector="HandleViewTappedAction:" destination="-1" eventType="touchUpInside" id="MHZ-kR-qD5"/>
                                             </connections>
                                         </button>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dN8-J7-DdF">
+                                            <rect key="frame" x="-15" y="152.5" width="380" height="0.5"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="0.5" id="Sss-RK-beI"/>
+                                            </constraints>
+                                        </view>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     <constraints>
@@ -114,11 +122,14 @@
                             <constraints>
                                 <constraint firstAttribute="right" secondItem="emB-Bw-hMM" secondAttribute="right" id="0IZ-ML-Kvg"/>
                                 <constraint firstItem="emB-Bw-hMM" firstAttribute="left" secondItem="VJq-3M-qwq" secondAttribute="right" constant="10" id="30f-TX-dsp"/>
+                                <constraint firstItem="dN8-J7-DdF" firstAttribute="leading" secondItem="aDO-Jm-g9q" secondAttribute="leading" id="48o-0J-5Q6"/>
                                 <constraint firstItem="VJq-3M-qwq" firstAttribute="height" secondItem="aDO-Jm-g9q" secondAttribute="height" id="AGp-AA-eie"/>
                                 <constraint firstItem="Ob3-Ug-6El" firstAttribute="centerY" secondItem="aDO-Jm-g9q" secondAttribute="centerY" id="GeP-1X-rKa"/>
                                 <constraint firstItem="emB-Bw-hMM" firstAttribute="top" secondItem="aDO-Jm-g9q" secondAttribute="top" id="Mnn-ZP-jSH"/>
                                 <constraint firstItem="W4v-NH-Tyi" firstAttribute="centerY" secondItem="aDO-Jm-g9q" secondAttribute="centerY" id="QRJ-cY-mcz"/>
                                 <constraint firstItem="emB-Bw-hMM" firstAttribute="height" secondItem="aDO-Jm-g9q" secondAttribute="height" id="SmW-oB-bol"/>
+                                <constraint firstAttribute="trailing" secondItem="dN8-J7-DdF" secondAttribute="trailing" id="as5-cc-njK"/>
+                                <constraint firstAttribute="bottom" secondItem="dN8-J7-DdF" secondAttribute="bottom" id="lDr-bL-M6O"/>
                                 <constraint firstItem="VJq-3M-qwq" firstAttribute="top" secondItem="aDO-Jm-g9q" secondAttribute="top" id="v5t-iZ-d8C"/>
                                 <constraint firstItem="VJq-3M-qwq" firstAttribute="left" secondItem="aDO-Jm-g9q" secondAttribute="left" constant="15" id="xyW-gm-jUJ"/>
                             </constraints>

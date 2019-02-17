@@ -16,6 +16,7 @@
                 <outlet property="avatarImgView" destination="6ui-Mh-dab" id="7NA-hE-swX"/>
                 <outlet property="containerView" destination="xWt-Rz-HEn" id="Ebq-Ar-bsL"/>
                 <outlet property="contentView" destination="Q79-Wc-dIi" id="BKx-cn-0it"/>
+                <outlet property="dashedView" destination="ion-EI-xfR" id="gZU-ic-NBJ"/>
                 <outlet property="expandedView" destination="oyl-yI-tyq" id="Q5t-AU-ZV1"/>
                 <outlet property="expandedViewHeightConstraint" destination="hys-QR-IvM" id="ldv-0K-YtW"/>
                 <outlet property="secondTitleLabel" destination="ILh-eS-hED" id="pYS-Nr-sXn"/>
@@ -53,7 +54,7 @@
                                             <rect key="frame" x="0.0" y="154" width="45" height="45"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="45" id="Jbm-Ik-YlS"/>
-                                                <constraint firstAttribute="height" constant="45" id="QPH-YZ-Wzf"/>
+                                                <constraint firstAttribute="width" secondItem="6ui-Mh-dab" secondAttribute="height" multiplier="1:1" id="V50-gW-wMV"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MBD-I4-Y6l" customClass="AnaVodafoneLabel">
@@ -93,6 +94,13 @@
                                                 <action selector="HandleViewTappedAction:" destination="-1" eventType="touchUpInside" id="cSE-8S-sQJ"/>
                                             </connections>
                                         </button>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ion-EI-xfR">
+                                            <rect key="frame" x="-16" y="352.5" width="378" height="0.5"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="0.5" id="h9h-OD-tDV"/>
+                                            </constraints>
+                                        </view>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     <constraints>
@@ -112,11 +120,14 @@
                             </subviews>
                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
+                                <constraint firstItem="ion-EI-xfR" firstAttribute="width" secondItem="xWt-Rz-HEn" secondAttribute="width" id="2E1-zw-G43"/>
                                 <constraint firstItem="cXb-W7-qn8" firstAttribute="left" secondItem="xWt-Rz-HEn" secondAttribute="left" id="B72-Oc-ymt"/>
                                 <constraint firstItem="7LQ-r6-rRj" firstAttribute="height" secondItem="xWt-Rz-HEn" secondAttribute="height" id="DVs-pY-JUZ"/>
                                 <constraint firstItem="cXb-W7-qn8" firstAttribute="height" secondItem="xWt-Rz-HEn" secondAttribute="height" id="Khn-17-dlD"/>
+                                <constraint firstAttribute="bottom" secondItem="ion-EI-xfR" secondAttribute="bottom" id="Qsh-BL-5zX"/>
                                 <constraint firstItem="Yqk-DM-7TO" firstAttribute="centerY" secondItem="xWt-Rz-HEn" secondAttribute="centerY" id="ULh-GK-acn"/>
                                 <constraint firstItem="7LQ-r6-rRj" firstAttribute="left" secondItem="cXb-W7-qn8" secondAttribute="right" constant="10" id="W4c-bp-OdB"/>
+                                <constraint firstItem="ion-EI-xfR" firstAttribute="centerX" secondItem="xWt-Rz-HEn" secondAttribute="centerX" id="dcj-aA-1LA"/>
                                 <constraint firstItem="6ui-Mh-dab" firstAttribute="centerY" secondItem="xWt-Rz-HEn" secondAttribute="centerY" id="lQM-LS-Lve"/>
                                 <constraint firstAttribute="right" secondItem="7LQ-r6-rRj" secondAttribute="right" constant="15" id="m7R-5v-NRS"/>
                                 <constraint firstItem="7LQ-r6-rRj" firstAttribute="top" secondItem="xWt-Rz-HEn" secondAttribute="top" id="xiy-2R-MaK"/>
