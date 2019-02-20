@@ -33,7 +33,7 @@
 
 
 CGFloat durationTime = 0.5;
-
+CGFloat bottomPadding = 0;
 CGFloat fullView = 70 ;
 #define partialView  [[UIScreen mainScreen ] bounds ].size.height - 360
 
@@ -53,7 +53,14 @@ CGFloat fullView = 70 ;
         _seprateView.hidden = true;
         
     }
-    
+    if (@available(iOS 11.0, *)) {
+        UIWindow *window = UIApplication.sharedApplication.keyWindow;
+        CGFloat topPadding = window.safeAreaInsets.top;
+        bottomPadding = window.safeAreaInsets.bottom;
+        
+        fullView = 70 - topPadding;
+        
+    }
     if ([_swipeTitle length] > 0) {
         
         _swipeLabel.hidden = false;
@@ -89,7 +96,7 @@ CGFloat fullView = 70 ;
 
 -(void) prepareUI{
     
-    self.view.frame = CGRectMake(0, [UIScreen mainScreen].bounds.size.height, self.view.frame.size.width, [UIScreen mainScreen].bounds.size.height - fullView - 20);
+    self.view.frame = CGRectMake(0, [UIScreen mainScreen].bounds.size.height, self.view.frame.size.width, [UIScreen mainScreen].bounds.size.height - fullView - 20 - bottomPadding);
     
     [self.view layoutIfNeeded];
     
@@ -162,8 +169,17 @@ CGFloat fullView = 70 ;
         
         [UIView animateWithDuration:duration delay:0.0 options:UIViewAnimationOptionAllowUserInteraction animations:^{
             if (velocity.y >= 0){
-                CGRect aRect = CGRectMake(0, partialView , self.view.frame.size.width, self.view.frame.size.height);
-                self.view.frame = aRect ;
+                if (self.openingPostion == TopPstion) {
+                    
+                    [self dismissView];
+                    return;
+                    
+                }else{
+                    
+                    CGRect aRect = CGRectMake(0, partialView , self.view.frame.size.width, self.view.frame.size.height);
+                    self.view.frame = aRect ;
+                    
+                }
             }else {
                 CGRect aRect = CGRectMake(0, fullView, self.view.frame.size.width, self.view.frame.size.height);
                 self.view.frame = aRect ;
@@ -186,7 +202,7 @@ CGFloat fullView = 70 ;
     CGFloat height = superView.bounds.size.height;
     CGFloat width  = superView.bounds.size.width;
     
-    self.view.frame = CGRectMake(0, [UIScreen mainScreen].bounds.size.height, width, [UIScreen mainScreen].bounds.size.height - fullView - 20);
+    self.view.frame = CGRectMake(0, [UIScreen mainScreen].bounds.size.height, width, [UIScreen mainScreen].bounds.size.height - fullView - 20 - bottomPadding);
     
     [self.view layoutIfNeeded];
     

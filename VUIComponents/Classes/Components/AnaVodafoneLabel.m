@@ -37,6 +37,8 @@
 
 -(void)adjustHeight{
     
+    [self layoutIfNeeded];
+    
     CGRect frame = self.frame;
     
     [self sizeToFit];
