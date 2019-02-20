@@ -26,6 +26,7 @@
 @property (weak, nonatomic) IBOutlet UIView *seprateView;
 
 @property (weak, nonatomic) IBOutlet UIView *shadowView;
+@property (strong, nonatomic)  UIView *BGView;
 @property (weak, nonatomic) IBOutlet AnaVodafoneLabel *swipeLabel;
 
 @end
@@ -88,9 +89,11 @@ CGFloat fullView = 70 ;
 -(void) prepareForInit{
     
     UIPanGestureRecognizer *panRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panGesture:)];
+    UITapGestureRecognizer *dismissViewGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissView)];
     
     panRecognizer.delegate = self ;
     [self.view addGestureRecognizer:panRecognizer];
+    [_BGView addGestureRecognizer:dismissViewGestureRecognizer];
     
 }
 
@@ -107,7 +110,7 @@ CGFloat fullView = 70 ;
         CGRect frame = self.view.frame;
         
         self.view.frame = CGRectMake(0, (_openingPostion == CenterPostion)? partialView : fullView, frame.size.width, frame.size.height);
-        
+        _BGView.alpha = 0.5;
     }];
     
     UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:self.view.bounds byRoundingCorners:( UIRectCornerTopLeft | UIRectCornerTopRight) cornerRadii:CGSizeMake(20.0, 20.0)];
@@ -197,6 +200,11 @@ CGFloat fullView = 70 ;
     
     self.viewController = viewController ;
     [self.viewController addChildViewController:self];
+    _BGView = [UIView new];
+    _BGView.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 200);
+    _BGView.backgroundColor = [UIColor colorWithWhite:0.3 alpha:1];
+    _BGView.alpha = 0;
+    [superView addSubview:_BGView];
     [superView addSubview:self.view];
     [self didMoveToParentViewController:self.viewController];
     CGFloat height = superView.bounds.size.height;
@@ -213,11 +221,7 @@ CGFloat fullView = 70 ;
     frame.origin = CGPointMake(0, 0);
     view.frame = frame;
     [self.containerView addSubview:view];
-    
-    //    [UIView animateWithDuration:durationTime animations:^{
-    //
-    //        self.view.frame = CGRectMake(0, CGRectGetMinY(self.view.frame), width, height);
-    //    }];
+
 }
 
 -(void)dismissView {
@@ -226,11 +230,14 @@ CGFloat fullView = 70 ;
     
     [UIView animateWithDuration:durationTime animations:^{
         self.view.frame = frame ;
+        _BGView.alpha = 0;
+        
     }];
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(durationTime * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         
         [self.view removeFromSuperview];
+        [_BGView removeFromSuperview];
         [self removeFromParentViewController];
         
     });
