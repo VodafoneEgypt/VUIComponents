@@ -25,6 +25,12 @@
 @property (weak, nonatomic) IBOutlet UIView *containerView;
 @property (weak, nonatomic) IBOutlet UIView *dashedView;
 
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *trailingNewIconImg;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *widthNewIconImg;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *leadingNewIconImg;
+
+@property (weak, nonatomic) IBOutlet UIImageView *ImgNewIcon;
+
 @end
 
 @implementation SignpostsWithAvatarCardView
@@ -74,6 +80,21 @@
 -(void)setWithDashedView:(BOOL)withDashedView{
     
     _withDashedView = withDashedView;
+}
+
+-(void)setWithNewIcon:(BOOL)withNewIcon{
+    _withNewIcon = withNewIcon;
+    
+    if(withNewIcon == true) {
+        self.widthNewIconImg.constant = 30 ;
+        if([LanguageHandler sharedInstance].currentLanguage == ENGLISH){
+            self.ImgNewIcon.image = [UIImage imageNamed:@"NewIcon"];
+            self.trailingNewIconImg.constant = 8 ;
+        }else{
+            self.ImgNewIcon.image = [UIImage imageNamed:@"NewIconAr"];
+            self.leadingNewIconImg.constant = 8 ;
+        }
+    }
 }
 
 -(void)setCellColor:(UIColor*)cellColor{
@@ -218,7 +239,7 @@
     _avatarImgSize = avatarImgSize;
     
     self.avatarImageWidthConstraint.constant = _avatarImgSize.width;
-
+    
     if (_avatarImage) {
         
         [self  setAvatarImage:_avatarImage];
@@ -451,6 +472,6 @@
     
     self.expandable = false;
     self.avatarImageWidthConstraint.constant = 0;
-    }
+}
 
 @end

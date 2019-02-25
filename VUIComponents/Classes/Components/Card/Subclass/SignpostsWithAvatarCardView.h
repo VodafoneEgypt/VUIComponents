@@ -77,6 +77,8 @@ typedef void(^TargetBlock)(void);
 
 @property (nonatomic) BOOL withDashedViewCell ;
 
+@property(nonatomic) BOOL withNewIcon;
+
 @property(nonatomic,strong) IBInspectable UIImage* arrowImageView;
 
 @property (nonatomic) CGSize avatarImgSize;

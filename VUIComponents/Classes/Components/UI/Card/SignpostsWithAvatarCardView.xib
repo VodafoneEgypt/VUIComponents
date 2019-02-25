@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignpostsWithAvatarCardView">
             <connections>
+                <outlet property="ImgNewIcon" destination="e4J-8W-Jyi" id="qDa-Ov-OPP"/>
                 <outlet property="arrowImgView" destination="Yqk-DM-7TO" id="Rlb-xD-Uof"/>
                 <outlet property="avatarImageWidthConstraint" destination="Jbm-Ik-YlS" id="jgL-U4-63w"/>
                 <outlet property="avatarImgView" destination="6ui-Mh-dab" id="7NA-hE-swX"/>
@@ -24,9 +25,11 @@
                 <outlet property="tableSignpostWithAvatarCardView" destination="JcY-QE-RnB" id="BZb-Ze-H1m"/>
                 <outlet property="titleLabel" destination="MBD-I4-Y6l" id="lE3-Ze-FVX"/>
                 <outlet property="titleLabelTopConstraint" destination="7cr-dI-pmE" id="bMt-yC-cXH"/>
+                <outlet property="trailingNewIconImg" destination="gN2-uQ-gVI" id="aiG-bb-UOg"/>
                 <outlet property="verticalLineView" destination="cXb-W7-qn8" id="Ksu-Ed-WtM"/>
                 <outlet property="verticalLineViewWidthConstraint" destination="Lbq-Lc-tuS" id="Rkc-2S-9Jw"/>
                 <outlet property="viewButton" destination="qeo-2j-bMz" id="AwI-Ok-ngD"/>
+                <outlet property="widthNewIconImg" destination="Pl3-Jc-VBu" id="v6I-Sd-bZE"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -88,6 +91,13 @@
                                                 <constraint firstAttribute="height" constant="24" id="zzP-N1-42K"/>
                                             </constraints>
                                         </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="e4J-8W-Jyi">
+                                            <rect key="frame" x="323" y="176.5" width="0.0" height="0.0"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="e4J-8W-Jyi" secondAttribute="height" multiplier="1:1" id="GOM-B5-j9Q"/>
+                                                <constraint firstAttribute="width" id="Pl3-Jc-VBu"/>
+                                            </constraints>
+                                        </imageView>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qeo-2j-bMz">
                                             <rect key="frame" x="-16" y="0.0" width="378" height="353"/>
                                             <connections>
@@ -106,13 +116,15 @@
                                     <constraints>
                                         <constraint firstAttribute="right" secondItem="Yqk-DM-7TO" secondAttribute="right" id="06r-cJ-X0u"/>
                                         <constraint firstItem="MBD-I4-Y6l" firstAttribute="top" secondItem="7LQ-r6-rRj" secondAttribute="top" constant="25" id="7cr-dI-pmE"/>
+                                        <constraint firstItem="e4J-8W-Jyi" firstAttribute="leading" secondItem="MBD-I4-Y6l" secondAttribute="trailing" constant="16" id="Bct-jj-6gj"/>
                                         <constraint firstItem="s21-k0-1uu" firstAttribute="centerX" secondItem="MBD-I4-Y6l" secondAttribute="centerX" id="CyP-8e-23m"/>
+                                        <constraint firstItem="e4J-8W-Jyi" firstAttribute="centerY" secondItem="Yqk-DM-7TO" secondAttribute="centerY" id="KwL-le-DdE"/>
                                         <constraint firstItem="ILh-eS-hED" firstAttribute="centerX" secondItem="s21-k0-1uu" secondAttribute="centerX" id="LnK-qN-eqo"/>
                                         <constraint firstItem="s21-k0-1uu" firstAttribute="width" secondItem="MBD-I4-Y6l" secondAttribute="width" id="VwK-k5-nXZ"/>
                                         <constraint firstItem="s21-k0-1uu" firstAttribute="top" secondItem="MBD-I4-Y6l" secondAttribute="bottom" constant="4" id="XiO-J9-tah"/>
                                         <constraint firstItem="ILh-eS-hED" firstAttribute="top" secondItem="s21-k0-1uu" secondAttribute="bottom" constant="5" id="ZsE-VS-che"/>
                                         <constraint firstItem="ILh-eS-hED" firstAttribute="width" secondItem="s21-k0-1uu" secondAttribute="width" id="b6i-3m-2pw"/>
-                                        <constraint firstItem="Yqk-DM-7TO" firstAttribute="leading" secondItem="MBD-I4-Y6l" secondAttribute="trailing" constant="16" id="m5E-pd-Ruy"/>
+                                        <constraint firstItem="Yqk-DM-7TO" firstAttribute="leading" secondItem="e4J-8W-Jyi" secondAttribute="trailing" id="gN2-uQ-gVI"/>
                                         <constraint firstItem="6ui-Mh-dab" firstAttribute="left" secondItem="7LQ-r6-rRj" secondAttribute="left" id="u5r-ks-q1M"/>
                                         <constraint firstItem="MBD-I4-Y6l" firstAttribute="left" secondItem="6ui-Mh-dab" secondAttribute="right" constant="15" id="xCv-e1-U76"/>
                                     </constraints>
@@ -179,10 +191,10 @@
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="-190" y="-13.5"/>
+            <point key="canvasLocation" x="-190.40000000000001" y="-13.943028485757123"/>
         </view>
     </objects>
     <resources>
-        <image name="cardArrow" width="102.40000152587891" height="102.40000152587891"/>
+        <image name="cardArrow" width="64" height="64"/>
     </resources>
 </document>

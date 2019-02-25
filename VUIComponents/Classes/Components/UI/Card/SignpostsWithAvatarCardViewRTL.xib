@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignpostsWithAvatarCardView">
             <connections>
+                <outlet property="ImgNewIcon" destination="lHI-Mh-LHr" id="twx-Cn-dAP"/>
                 <outlet property="arrowImgView" destination="Ob3-Ug-6El" id="jWj-uz-Yw4"/>
                 <outlet property="avatarImageWidthConstraint" destination="evH-Dj-ET8" id="Mdl-Pl-Ug1"/>
                 <outlet property="avatarImgView" destination="W4v-NH-Tyi" id="n34-Gs-bIa"/>
@@ -19,14 +20,17 @@
                 <outlet property="dashedView" destination="dN8-J7-DdF" id="FEI-rR-hds"/>
                 <outlet property="expandedView" destination="kB8-nD-W5R" id="5cA-uW-696"/>
                 <outlet property="expandedViewHeightConstraint" destination="k3N-A0-i07" id="RfL-sj-Ohe"/>
+                <outlet property="leadingNewIconImg" destination="vMg-Lg-FPy" id="7Z2-aH-qKv"/>
                 <outlet property="secondTitleLabel" destination="diC-LQ-9f6" id="ntq-iq-NKa"/>
                 <outlet property="subTitleLabel" destination="5G4-Dp-XrU" id="ORg-lG-8Q8"/>
                 <outlet property="tableSignpostWithAvatarCardView" destination="ga0-si-0Fs" id="rZX-95-Tvu"/>
                 <outlet property="titleLabel" destination="DEg-Qh-TV4" id="6dl-dr-pRT"/>
                 <outlet property="titleLabelTopConstraint" destination="Z3a-Hy-jlr" id="cJ4-77-YJP"/>
+                <outlet property="trailingNewIconImg" destination="vMg-Lg-FPy" id="cpA-ob-ZsE"/>
                 <outlet property="verticalLineView" destination="emB-Bw-hMM" id="Ruo-D5-yt6"/>
                 <outlet property="verticalLineViewWidthConstraint" destination="TdY-nV-bk9" id="o2p-xL-Eir"/>
                 <outlet property="viewButton" destination="gFJ-IW-V9i" id="inz-LS-MJ9"/>
+                <outlet property="widthNewIconImg" destination="V7Z-p3-qWr" id="8mH-gr-hAc"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -88,6 +92,13 @@
                                                 <constraint firstAttribute="height" constant="24" id="eAY-vk-JJY"/>
                                             </constraints>
                                         </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lHI-Mh-LHr">
+                                            <rect key="frame" x="24" y="76.5" width="0.0" height="0.0"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" id="V7Z-p3-qWr"/>
+                                                <constraint firstAttribute="width" secondItem="lHI-Mh-LHr" secondAttribute="height" multiplier="1:1" id="vdR-YM-XDp"/>
+                                            </constraints>
+                                        </imageView>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFJ-IW-V9i">
                                             <rect key="frame" x="-15" y="0.0" width="380" height="153"/>
                                             <connections>
@@ -104,7 +115,9 @@
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     <constraints>
+                                        <constraint firstItem="DEg-Qh-TV4" firstAttribute="left" secondItem="lHI-Mh-LHr" secondAttribute="right" constant="6" id="1Es-Ni-alf"/>
                                         <constraint firstItem="Ob3-Ug-6El" firstAttribute="left" secondItem="VJq-3M-qwq" secondAttribute="left" id="4oP-zm-j79"/>
+                                        <constraint firstItem="lHI-Mh-LHr" firstAttribute="centerY" secondItem="Ob3-Ug-6El" secondAttribute="centerY" id="6Ew-Kj-Feu"/>
                                         <constraint firstItem="diC-LQ-9f6" firstAttribute="centerX" secondItem="5G4-Dp-XrU" secondAttribute="centerX" id="AYe-ZB-tWy"/>
                                         <constraint firstItem="5G4-Dp-XrU" firstAttribute="width" secondItem="DEg-Qh-TV4" secondAttribute="width" id="Fyt-12-BeM"/>
                                         <constraint firstItem="5G4-Dp-XrU" firstAttribute="top" secondItem="DEg-Qh-TV4" secondAttribute="bottom" constant="4" id="Qqh-0C-xrt"/>
@@ -113,8 +126,8 @@
                                         <constraint firstItem="DEg-Qh-TV4" firstAttribute="top" secondItem="VJq-3M-qwq" secondAttribute="top" constant="25" id="Z3a-Hy-jlr"/>
                                         <constraint firstItem="diC-LQ-9f6" firstAttribute="top" secondItem="5G4-Dp-XrU" secondAttribute="bottom" constant="5" id="anu-pv-ke8"/>
                                         <constraint firstAttribute="right" secondItem="W4v-NH-Tyi" secondAttribute="right" id="eMR-le-uPk"/>
-                                        <constraint firstItem="DEg-Qh-TV4" firstAttribute="left" secondItem="VJq-3M-qwq" secondAttribute="left" constant="30" id="lIe-Yz-3Nz"/>
                                         <constraint firstItem="diC-LQ-9f6" firstAttribute="width" secondItem="5G4-Dp-XrU" secondAttribute="width" id="n9s-go-hQC"/>
+                                        <constraint firstItem="lHI-Mh-LHr" firstAttribute="left" secondItem="Ob3-Ug-6El" secondAttribute="right" id="vMg-Lg-FPy"/>
                                     </constraints>
                                 </view>
                             </subviews>
@@ -122,13 +135,13 @@
                             <constraints>
                                 <constraint firstAttribute="right" secondItem="emB-Bw-hMM" secondAttribute="right" id="0IZ-ML-Kvg"/>
                                 <constraint firstItem="emB-Bw-hMM" firstAttribute="left" secondItem="VJq-3M-qwq" secondAttribute="right" constant="10" id="30f-TX-dsp"/>
-                                <constraint firstItem="dN8-J7-DdF" firstAttribute="leading" secondItem="aDO-Jm-g9q" secondAttribute="leading" id="48o-0J-5Q6"/>
+                                <constraint firstItem="dN8-J7-DdF" firstAttribute="left" secondItem="aDO-Jm-g9q" secondAttribute="left" id="48o-0J-5Q6"/>
                                 <constraint firstItem="VJq-3M-qwq" firstAttribute="height" secondItem="aDO-Jm-g9q" secondAttribute="height" id="AGp-AA-eie"/>
                                 <constraint firstItem="Ob3-Ug-6El" firstAttribute="centerY" secondItem="aDO-Jm-g9q" secondAttribute="centerY" id="GeP-1X-rKa"/>
                                 <constraint firstItem="emB-Bw-hMM" firstAttribute="top" secondItem="aDO-Jm-g9q" secondAttribute="top" id="Mnn-ZP-jSH"/>
                                 <constraint firstItem="W4v-NH-Tyi" firstAttribute="centerY" secondItem="aDO-Jm-g9q" secondAttribute="centerY" id="QRJ-cY-mcz"/>
                                 <constraint firstItem="emB-Bw-hMM" firstAttribute="height" secondItem="aDO-Jm-g9q" secondAttribute="height" id="SmW-oB-bol"/>
-                                <constraint firstAttribute="trailing" secondItem="dN8-J7-DdF" secondAttribute="trailing" id="as5-cc-njK"/>
+                                <constraint firstAttribute="right" secondItem="dN8-J7-DdF" secondAttribute="right" id="as5-cc-njK"/>
                                 <constraint firstAttribute="bottom" secondItem="dN8-J7-DdF" secondAttribute="bottom" id="lDr-bL-M6O"/>
                                 <constraint firstItem="VJq-3M-qwq" firstAttribute="top" secondItem="aDO-Jm-g9q" secondAttribute="top" id="v5t-iZ-d8C"/>
                                 <constraint firstItem="VJq-3M-qwq" firstAttribute="left" secondItem="aDO-Jm-g9q" secondAttribute="left" constant="15" id="xyW-gm-jUJ"/>
@@ -179,10 +192,10 @@
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="96" y="148.5"/>
+            <point key="canvasLocation" x="-141" y="134"/>
         </view>
     </objects>
     <resources>
-        <image name="CardArrowRTL" width="102.40000152587891" height="102.40000152587891"/>
+        <image name="CardArrowRTL" width="64" height="64"/>
     </resources>
 </document>
