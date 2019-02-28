@@ -10,12 +10,13 @@
 #import "BaseCardView+Protected.h"
 #import "LanguageHandler.h"
 #import "UIColor+Hex.h"
+#import <VUIComponents/AnaVodafoneLabel.h>
 
 @interface StatusConfirmationCardView (){
     
     __weak IBOutlet NSLayoutConstraint *ButtonWidthConstraint;
     
-    __weak IBOutlet UILabel *textLabel;
+    __weak IBOutlet AnaVodafoneLabel *textLabel;
     
     __weak IBOutlet UIImageView *imageView;
     
@@ -43,7 +44,7 @@
     [_customButton setTitle:buttonTitle forState:UIControlStateNormal];
     CGSize titleSize = [_customButton.titleLabel.text sizeWithAttributes:@{NSFontAttributeName:[UIFont fontWithName:[[LanguageHandler sharedInstance] stringForKey:@"regularFont"] size:16]}];
     [self setButtonWidth: (_buttonWidth)?_buttonWidth:titleSize.width + 50];
-
+    
 }
 
 - (void)setButtonStyleFilePath:(NSString *)buttonStyleFilePath {
@@ -99,14 +100,10 @@
 -(void)initializeContentView{
     
     contentViewHeight = 46;
-
-    CGFloat width = self.frame.size.width - 75;
-
-    CGSize size = CGSizeMake(width, CGFLOAT_MAX);
-
-    CGRect rect = [textLabel.attributedText boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading context:nil];
-
-    contentViewHeight += rect.size.height;
+    
+    [textLabel adjustHeight];
+    
+    contentViewHeight += textLabel.frame.size.height;
 }
 
 -(void)hideAfterSec:(float)seconeds{
@@ -125,7 +122,7 @@
 }
 
 -(void)removeAfterSec:(float)seconeds{
-   
+    
     dispatch_time_t delay = dispatch_time(DISPATCH_TIME_NOW, NSEC_PER_SEC * seconeds);
     dispatch_after(delay, dispatch_get_main_queue(), ^(void){
         
@@ -182,24 +179,24 @@
         [self layoutIfNeeded];
         [super updateConstraints];
     }
-
+    
 }
 
 - (void)updateConstraints {
-
+    
     [self layoutIfNeeded];
-
+    
     if (_buttonWidth>0) {
         buttonLeadingSpacing.constant = 15;
 
     }else{
         buttonLeadingSpacing.constant = 0;
-
+        
     }
     ButtonWidthConstraint.constant = _buttonWidth;
     [self layoutIfNeeded];
     [super updateConstraints];
-
+    
 }
 
 - (instancetype)initWithCoder:(NSCoder *)coder
@@ -207,15 +204,15 @@
     self = [super initWithCoder:coder];
     
     _isInitWithCoder = YES;
-
+    
     if (self) {
         
         if (_buttonWidth>0) {
             buttonLeadingSpacing.constant = 15;
-
+            
         }else{
             buttonLeadingSpacing.constant = 0;
-
+            
         }
         
         ButtonWidthConstraint.constant = _buttonWidth;

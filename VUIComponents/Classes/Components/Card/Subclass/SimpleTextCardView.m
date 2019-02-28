@@ -10,10 +10,11 @@
 #import "BaseCardView+Protected.h"
 #import "LanguageHandler.h"
 #import "UIColor+Hex.h"
+#import <VUIComponents/AnaVodafoneLabel.h>
 
 @interface SimpleTextCardView()
 
-@property (weak, nonatomic) IBOutlet UILabel *textLabel;
+@property (weak, nonatomic) IBOutlet AnaVodafoneLabel *textLabel;
 
 @end
 
@@ -56,15 +57,9 @@
     
     contentViewHeight = 40;
 
-    CGFloat width = self.frame.size.width - 30;
-
-    CGSize size = CGSizeMake(width, CGFLOAT_MAX);
-
-    //TODO:: localize
-
-    CGRect rect = [self.textLabel.attributedText boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading context:nil];
-
-    contentViewHeight += rect.size.height;
+    [_textLabel adjustHeight];
+    
+    contentViewHeight += _textLabel.frame.size.height;
 }
 
 -(void)commonInit{

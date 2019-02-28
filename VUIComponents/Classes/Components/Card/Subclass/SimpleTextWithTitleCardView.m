@@ -10,12 +10,13 @@
 #import "BaseCardView+Protected.h"
 #import "LanguageHandler.h"
 #import "UIColor+Hex.h"
+#import <VUIComponents/AnaVodafoneLabel.h>
 
 @interface SimpleTextWithTitleCardView()
 
-@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet AnaVodafoneLabel *titleLabel;
 
-@property (weak, nonatomic) IBOutlet UILabel *descLabel;
+@property (weak, nonatomic) IBOutlet AnaVodafoneLabel *descLabel;
 
 @property (weak, nonatomic) IBOutlet UIView *sepratorView;
 
@@ -105,19 +106,15 @@
     
     contentViewHeight = 0;
 
-    CGFloat width = self.frame.size.width-30;
-
     contentViewHeight += [_desc  isEqual: @""] ? 40 : 81;
 
-    CGSize size = CGSizeMake(width, CGFLOAT_MAX);
+    [_titleLabel adjustHeight];
+    
+    contentViewHeight += _titleLabel.frame.size.height;
 
-    CGRect rect = [self.titleLabel.attributedText boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading context:nil];
+    [_descLabel adjustHeight];
 
-    contentViewHeight += rect.size.height;
-
-    rect = [self.descLabel.attributedText boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading context:nil];
-
-    contentViewHeight += rect.size.height;
+    contentViewHeight += _descLabel.frame.size.height;
 }
 
 -(void)commonInit{

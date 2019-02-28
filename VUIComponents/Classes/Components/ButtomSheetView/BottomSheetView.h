@@ -17,9 +17,11 @@ typedef enum : NSUInteger {
 @interface BottomSheetView : UIViewController
 @property (strong, nonatomic) IBInspectable NSString *bottomSheetTitle;
 @property (strong, nonatomic) IBInspectable NSString *swipeTitle;
-@property (nonatomic) BottomSheetOpeningPostion *openingPostion;
+@property (nonatomic) BottomSheetOpeningPostion openingPostion;
 
 -(void)showBottomSheetWithView:(UIView*)view andViewController:(UIViewController *)viewController onSuperView:(UIView *)superView ;
+-(void)showBottomSheetWithUIViewController:(UIViewController*)viewController andViewController:(UIViewController *)parentViewController onSuperView:(UIView *)superView ;
+
 -(void)dismissView ;
 
 

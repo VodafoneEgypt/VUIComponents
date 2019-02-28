@@ -109,8 +109,8 @@ CGFloat fullView = 70 ;
     [UIView animateWithDuration:0.6 animations:^{
         CGRect frame = self.view.frame;
         
-        self.view.frame = CGRectMake(0, (_openingPostion == CenterPostion)? partialView : fullView, frame.size.width, frame.size.height);
-        _BGView.alpha = 0.5;
+        self.view.frame = CGRectMake(0, (self->_openingPostion == CenterPostion)? partialView : fullView, frame.size.width, frame.size.height);
+        self->_BGView.alpha = 0.5;
     }];
     
     UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:self.view.bounds byRoundingCorners:( UIRectCornerTopLeft | UIRectCornerTopRight) cornerRadii:CGSizeMake(20.0, 20.0)];
@@ -221,23 +221,52 @@ CGFloat fullView = 70 ;
     frame.origin = CGPointMake(0, 0);
     view.frame = frame;
     [self.containerView addSubview:view];
-
+    
 }
 
+-(void)showBottomSheetWithUIViewController:(UIViewController *)viewController andViewController:(UIViewController *)parentViewController onSuperView:(UIView *)superView{
+    
+    self.viewController = viewController ;
+    [self.viewController addChildViewController:self];
+    _BGView = [UIView new];
+    _BGView.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 200);
+    _BGView.backgroundColor = [UIColor colorWithWhite:0.3 alpha:1];
+    _BGView.alpha = 0;
+    [superView addSubview:_BGView];
+    [superView addSubview:self.view];
+    [self didMoveToParentViewController:self.viewController];
+    CGFloat width  = superView.bounds.size.width;
+    
+    self.view.frame = CGRectMake(0, [UIScreen mainScreen].bounds.size.height, width, [UIScreen mainScreen].bounds.size.height - fullView - 20 - bottomPadding);
+    
+    [self.view layoutIfNeeded];
+    
+    CGRect frame = viewController.view.frame;
+    
+    frame.size.height =  (frame.size.height > self.containerView.frame.size.height) ? self.containerView.frame.size.height : frame.size.height ;
+    frame.size.width =  self.containerView.frame.size.width;
+    frame.origin = CGPointMake(0, 0);
+    viewController.view.frame = frame;
+    
+    [viewController didMoveToParentViewController:self];
+    [self addChildViewController:viewController];
+    [self.containerView addSubview:viewController.view];
+    
+}
 -(void)dismissView {
     CGRect frame = self.view.frame ;
     frame.origin.y = [[UIScreen mainScreen ]bounds].size.height;
     
     [UIView animateWithDuration:durationTime animations:^{
         self.view.frame = frame ;
-        _BGView.alpha = 0;
+        self->_BGView.alpha = 0;
         
     }];
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(durationTime * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         
         [self.view removeFromSuperview];
-        [_BGView removeFromSuperview];
+        [self->_BGView removeFromSuperview];
         [self removeFromParentViewController];
         
     });
